@@ -1,0 +1,40 @@
+{
+ "v": 1,
+ "built": "2026-10-02T01:12:53",
+ "packs": [
+  {
+   "lang": "es",
+   "kind": "examples",
+   "file": "packs/es-examples.json",
+   "n": 1030
+  },
+  {
+   "lang": "es",
+   "kind": "lesson",
+   "file": "packs/es-lesson.json",
+   "n": 5
+  },
+  {
+   "lang": "es",
+   "kind": "reading",
+   "file": "packs/es-reading.json",
+   "n": 6
+  },
+  {
+   "lang": "es",
+   "kind": "listening",
+   "file": "packs/es-listening.json",
+   "n": 12
+  },
+  {
+   "lang": "es",
+   "kind": "audio",
+   "file": "packs/audio/es-index.json",
+   "n": 2148,
+   "voices": [
+    "ef_dora",
+    "em_alex"
+   ]
+  }
+ ]
+}
