@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261002.0112-fef086";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261002.0205-1cc766";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1068,6 +1068,9 @@ body.at-home main#view{max-width:none;padding:0;margin:0}
 .sheet>.art{opacity:0;transition:opacity .45s ease}
 .sheet.drawn>.art{opacity:1}
 .sheet.nofade>.art{transition:none}
+/* 键盘快捷键提示：只有用过实体键盘才显示（手机上不出现「空格」「回车」这类字） */
+kbd.kh{display:none;font:inherit;font-size:.78em;opacity:.6;margin-left:8px;letter-spacing:.05em}
+html.kb kbd.kh{display:inline}
 .sheet-hint{position:absolute;transform:translate(-50%,-100%);margin-top:-14px;max-width:62%;padding:6px 10px 7px;background:rgba(250,244,230,.92);border:1px solid rgba(40,30,20,.55);font-size:13px;line-height:1.45;color:#2b2219;text-align:center;cursor:pointer;animation:hintin .5s ease .4s both;pointer-events:auto}
 .sheet-hint.below{transform:translate(-50%,0);margin-top:14px}
 .sheet-hint span{text-decoration:underline;text-decoration-color:rgba(170,50,30,.6);text-decoration-thickness:1.5px;text-underline-offset:4px}
@@ -1085,12 +1088,31 @@ body.at-home main#view{max-width:none;padding:0;margin:0}
 .sheet .fold{transition:transform .25s ease;transform-box:fill-box;transform-origin:100% 0}
 .sheet:has(.hit.turn:hover) .fold{transform:scale(1.18)}
 .sheet.under{position:absolute;z-index:0}
-.sheet.turning{z-index:2;animation:turn .82s cubic-bezier(.45,.05,.3,1) forwards;backface-visibility:hidden}
-.sheet.turning::after{content:"";position:absolute;inset:0;background:#000;opacity:0;animation:turnshade .82s ease forwards;pointer-events:none}
-@keyframes turn{0%{transform:rotateY(0) }100%{transform:rotateY(-104deg)}}
-@keyframes turnshade{to{opacity:.35}}
+.sheet.under.pre{visibility:hidden}
+/* 翻页：像翻书一样，纸沿左边翻过去，露出纸背，下面的新图纸从阴影里亮起来 */
+.sheet.lifting .fold{transform:scale(1.35);transition:transform .3s cubic-bezier(.3,1.4,.5,1)}
+.sheet.turning{z-index:2;transform-style:preserve-3d;background:transparent!important;animation:turn 1.05s cubic-bezier(.55,.06,.3,1) forwards}
+.sheet.turning>.art,.sheet.turning>svg.live{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.sheet.turning::after{content:"";position:absolute;inset:0;background:#000;opacity:0;animation:turnshade 1.05s ease forwards;pointer-events:none;backface-visibility:hidden}
+.sheet-back{position:absolute;inset:0;transform:rotateY(180deg);backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
+.sheet-back .ghost{position:absolute;inset:0;width:100%;height:100%;transform:scaleX(-1);opacity:.13;filter:grayscale(1)}
+.sheet-back::after{content:"";position:absolute;inset:0;background:#000;opacity:.12}
+.sheet.under::after{content:"";position:absolute;inset:0;background:#000;opacity:.42;pointer-events:none}
+.sheet.under.revealing::after{animation:undershade 1.05s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes turn{0%{transform:rotateY(0)}12%{transform:rotateY(-8deg)}100%{transform:rotateY(-180deg)}}
+@keyframes turnshade{0%{opacity:0}50%{opacity:.28}100%{opacity:.28}}
+@keyframes undershade{0%{opacity:.42}100%{opacity:0}}
+.turn-cap{position:absolute;left:0;right:0;top:44%;z-index:3;display:flex;flex-direction:column;align-items:center;gap:6px;pointer-events:none;opacity:0;animation:capio 1.05s ease forwards}
+.turn-cap b{font-family:"IM Fell English","EB Garamond",Georgia,serif;font-style:italic;font-weight:400;font-size:40px;letter-spacing:.02em;color:#2b2219}
+.turn-cap span{font-family:"Shippori Mincho","EB Garamond",serif;font-size:14px;letter-spacing:.32em;color:#6b5a44}
+.turn-cap.c-ja b{font-family:"Yuji Syuku","Shippori Mincho",serif;font-style:normal;color:#1c1a18}
+.turn-cap.c-es b{color:#1d140e}.turn-cap.c-es span{color:#5a3a22}
+@keyframes capio{0%{opacity:0;transform:translateY(8px)}45%{opacity:0;transform:translateY(8px)}70%{opacity:1;transform:none}88%{opacity:1}100%{opacity:0}}
 .desk .sheet.under{left:auto}
-@media (prefers-reduced-motion:reduce){.sheet.turning{animation:fadeaway .3s forwards}@keyframes fadeaway{to{opacity:0}}}
+@media (prefers-reduced-motion:reduce){.sheet.turning{animation:fadeaway .3s forwards}.turn-cap{display:none}@keyframes fadeaway{to{opacity:0}}}
+/* App 版：换语言是一次同源跳转，用跨文档过渡把画面衔接上 */
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.16s}
 .sheet.boot{background:#e4cc9c}
 html.p-ja .sheet.boot{background:#f2ede1}html.p-es .sheet.boot{background:#caa679}
 /* 菜单层 */
@@ -1770,6 +1792,9 @@ const IDB = {
   open() { return new Promise((ok, no) => { const r = indexedDB.open("babel", 1); r.onupgradeneeded = () => r.result.createObjectStore("docs"); r.onsuccess = () => ok(r.result); r.onerror = () => no(r.error); }); },
   run(db, mode, fn) { return new Promise((ok, no) => { const t = db.transaction("docs", mode), req = fn(t.objectStore("docs")); t.oncomplete = () => ok(req && "result" in req ? req.result : undefined); t.onerror = () => no(t.error); t.onabort = () => no(t.error); }); }
 };
+// 触屏设备：不显示键盘快捷键提示
+const TOUCH = typeof matchMedia === "function" && matchMedia("(hover: none), (pointer: coarse)").matches;
+document.addEventListener("keydown", e => { if (!e.isComposing && e.key && e.key.length <= 6 && !document.documentElement.classList.contains("kb")) document.documentElement.classList.add("kb"); }, { capture: true });
 const Store = {
   db: null, idb: null, mode: "local",
   async init() {
@@ -2500,29 +2525,29 @@ function renderSess(el) {
     if (!s.back) {
       const ctx = it.k === "study" && info.x?.[0] ? `<div class="ctx ${isJa() ? "jp" : isEs() ? "es-t" : "en"}" data-nolink>${esc(info.x[0][0])}</div>` : "";
       main = `${word}${ctx}<div style="flex:1"></div>`;
-      foot = `<div class="rate r4">${(it.k === "study" ? RATE_NEW : RATE_REV).map(([a, b], i) => `<button class="btn ${i === 2 ? "pri" : ""}" data-r="${i}">${a}<small>${b} · ${i + 1}</small></button>`).join("")}</div>
+      foot = `<div class="rate r4">${(it.k === "study" ? RATE_NEW : RATE_REV).map(([a, b], i) => `<button class="btn ${i === 2 ? "pri" : ""}" data-r="${i}">${a}<small>${b}<kbd class="kh">${i + 1}</kbd></small></button>`).join("")}</div>
         <div class="row" style="justify-content:center"><button class="btn sm ghost" id="peek">看释义</button></div>`;
     } else {
       main = `${word}${detailHTML(info)}`;
-      if (it.peek) foot = `<div class="rate r4">${(it.k === "study" ? RATE_NEW : RATE_REV).map(([a, b], i) => `<button class="btn ${i === 1 ? "pri" : ""}" data-r="${i}">${a}<small>${b} · ${i + 1}</small></button>`).join("")}</div>`;
-      else foot = `<div class="row between">${it.rated >= 2 ? `<button class="btn" id="oops">记错了</button>` : "<span></span>"}<button class="btn pri" id="next">继续 <span style="opacity:.7">空格</span></button></div>`;
+      if (it.peek) foot = `<div class="rate r4">${(it.k === "study" ? RATE_NEW : RATE_REV).map(([a, b], i) => `<button class="btn ${i === 1 ? "pri" : ""}" data-r="${i}">${a}<small>${b}<kbd class="kh">${i + 1}</kbd></small></button>`).join("")}</div>`;
+      else foot = `<div class="row between">${it.rated >= 2 ? `<button class="btn" id="oops">记错了</button>` : "<span></span>"}<button class="btn pri" id="next">继续<kbd class="kh">空格</kbd></button></div>`;
     }
     if (!it.spoken) { it.spoken = true; Speech.say(info.w); }
   } else {
     const a = s.ans;
     let prompt = "";
     if (it.type === "en2zh" || it.type === "yomi") prompt = word;
-    else if (it.type === "yomiIn") prompt = `${word}<input type="text" id="spell" class="jp" style="font-size:20px" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="用平假名输入读音，回车确认" ${a ? "disabled" : ""} value="${a ? esc(a.input) : ""}">`;
+    else if (it.type === "yomiIn") prompt = `${word}<input type="text" id="spell" class="jp" style="font-size:20px" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${TOUCH ? "用平假名输入读音" : "用平假名输入读音，回车确认"}" ${a ? "disabled" : ""} value="${a ? esc(a.input) : ""}">`;
     else if (it.type === "audio") prompt = a ? word : `<div class="row" style="justify-content:center;padding:18px 0"><button class="play big" id="replay" aria-label="再听一遍">${ICON.spk}</button></div><p class="muted" style="text-align:center;font-size:14px">听发音，选出意思</p>`;
     else if (it.type === "zh2en") prompt = a ? word : `<div class="def big">${esc(senseText(info, 2))}</div>`;
     else if (it.type === "cloze") prompt = `<div class="ex ${isJa() ? "jp" : isEs() ? "es-t" : "en"}" data-nolink style="font-size:19px">${esc(a ? it.cz.en.replace("_____", "【" + it.cz.ans + "】") : it.cz.en)}<span class="zh">${esc(it.cz.zh)}</span></div>`;
     else if (it.type === "spell") prompt = `<div class="def">${esc(senseText(info, 2))}</div><div class="row">${spkBtn(info.w)}<span class="faint" style="font-size:13px">提示：${esc(info.w[0])}${info.w.slice(1).replace(/[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]/g, " _")}（${info.w.replace(/[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ]/g, "").length} 个字母）</span></div>${isEs() && !a ? `<div class="acc-keys">${["á", "é", "í", "ó", "ú", "ñ", "ü"].map(c => `<button type="button" data-k="${c}">${c}</button>`).join("")}</div>` : ""}
-      <input type="text" id="spell" class="en" style="font-size:20px" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="输入单词，回车确认" ${a ? "disabled" : ""} value="${a ? esc(a.input) : ""}">`;
+      <input type="text" id="spell" class="en" style="font-size:20px" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${TOUCH ? "输入单词" : "输入单词，回车确认"}" ${a ? "disabled" : ""} value="${a ? esc(a.input) : ""}">`;
     const opts = it.opts.length ? `<div class="opts">${it.opts.map((o, i) => `<button class="opt ${it.type === "zh2en" || it.type === "cloze" || it.type === "yomi" ? (isJa() ? "jp" : "en") : ""} ${a ? (o === it.right ? "right" : i === a.pick ? "wrong" : "") : ""}" data-o="${i}" ${a ? "disabled" : ""}><span class="faint num">${i + 1}</span>　${esc(o)}</button>`).join("")}</div>` : "";
     main = `${prompt}${opts}${a ? `<div class="explain ${a.ok ? "ok" : "no"}">${a.ok ? "✓ 答对了" : (a.nearly ? "✗ 差一点，注意重音符号：" : "✗ 正确答案：") + esc(it.type === "en2zh" || it.type === "audio" || it.type === "yomi" ? it.right : it.type === "yomiIn" ? hira(info.p) : info.w)}</div>${it.type === "en2zh" || it.type === "audio" ? "" : ""}${detailHTML(info, true)}` : ""}`;
     if (a) {
-      if (s.kind === "review" && !it.relearn && a.ok) foot = `<div class="rate">${RATE_REV.slice(1).map(([x, y], i) => `<button class="btn ${i === 1 ? "pri" : ""}" data-rr="${i + 1}">${x}<small>${y} · ${i + 2}</small></button>`).join("")}</div>`;
-      else foot = `<div class="row" style="justify-content:flex-end"><button class="btn pri" id="next">继续 <span style="opacity:.7">空格</span></button></div>`;
+      if (s.kind === "review" && !it.relearn && a.ok) foot = `<div class="rate">${RATE_REV.slice(1).map(([x, y], i) => `<button class="btn ${i === 1 ? "pri" : ""}" data-rr="${i + 1}">${x}<small>${y}<kbd class="kh">${i + 2}</kbd></small></button>`).join("")}</div>`;
+      else foot = `<div class="row" style="justify-content:flex-end"><button class="btn pri" id="next">继续<kbd class="kh">空格</kbd></button></div>`;
     }
     if (!it.spoken && (it.type === "en2zh" || it.type === "audio" || it.type === "spell")) { it.spoken = true; Speech.say(info.w); }
     if (a && !a.spoke && (it.type === "zh2en" || it.type === "cloze")) { a.spoke = true; Speech.say(info.w); }
@@ -4362,7 +4387,7 @@ function renderConjSess(el) {
   let main = "";
   const keys = `<div class="acc-keys">${["á", "é", "í", "ó", "ú", "ñ", "ü"].map(c => `<button type="button" data-k="${c}">${c}</button>`).join("")}</div>`;
   if (it.type === "fill") main = `<div class="eyebrow">写出变位</div><div class="cj-prompt"><span class="pp">${PERS[it.p]}</span><b class="es-t">${it.v}</b><span class="tn">${TENSES[it.t]}</span></div>
-    <input type="text" id="cj-in" class="es-t" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="输入变位，回车确认" ${a ? "disabled" : ""} value="${a ? esc(a.input) : ""}">${a ? "" : keys}`;
+    <input type="text" id="cj-in" class="es-t" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${TOUCH ? "输入变位" : "输入变位，回车确认"}" ${a ? "disabled" : ""} value="${a ? esc(a.input) : ""}">${a ? "" : keys}`;
   else if (it.type === "cloze") main = `<div class="eyebrow">句中填空 · ${TENSES[it.t]}</div><div class="cj-sent es-t">${esc(it.sentence).replace("___", `<span class="blank">${a ? esc(it.ans) : "＿＿＿"}</span>`)}</div>
     <input type="text" id="cj-in" class="es-t" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="填入正确的形式" ${a ? "disabled" : ""} value="${a ? esc(a.input) : ""}">${a ? "" : keys}`;
   else main = `<div class="eyebrow">反推：原形 · 时态 · 人称</div><div class="cj-form es-t">${esc(it.form)}</div>
@@ -4371,7 +4396,7 @@ function renderConjSess(el) {
     ${ES.conj[it.v]?.irr?.[it.t]?.[it.p] ? `<span class="pill bad" style="margin-left:6px">不规则</span>` : ""}</div>
     <div class="conj-mini es-t">${ES.conj[it.v][it.t].map((f, p) => `<span class="${p === it.p ? "on" : ""}">${PERS_S[p]} ${esc(f)}</span>`).join("")}</div>` : "";
   el.innerHTML = `<div class="flash stack">${head}<div class="stele-wrap"><div class="entry cj">${main}${expl}<div style="flex:1"></div><div class="meta"><span>${esc(S2.title)}</span><span>${TENSE_ES[it.t]}</span></div></div><div class="plinth"></div></div>
-    ${a ? `<div class="row" style="justify-content:flex-end"><button class="btn pri" id="cj-next">继续 <span style="opacity:.7">回车</span></button></div>` : it.type !== "rev" ? `<div class="row" style="justify-content:flex-end"><button class="btn ghost" id="cj-skip">不会</button><button class="btn pri" id="cj-ok">确认</button></div>` : ""}</div>`;
+    ${a ? `<div class="row" style="justify-content:flex-end"><button class="btn pri" id="cj-next">继续<kbd class="kh">回车</kbd></button></div>` : it.type !== "rev" ? `<div class="row" style="justify-content:flex-end"><button class="btn ghost" id="cj-skip">不会</button><button class="btn pri" id="cj-ok">确认</button></div>` : ""}</div>`;
   $("#quit").onclick = () => { CJ.sess = null; render(); };
   const inp = $("#cj-in");
   const grade = (ok, extra) => {
@@ -4782,7 +4807,7 @@ function renderDictation(P, m) {
   const [sp, en, zh] = lines[D.i]; const v = lineVoice(m, sp);
   P.innerHTML = `<div class="progress-line"><span class="num">第 ${D.i + 1} / ${lines.length} 句</span><div class="bar"><i style="width:${D.i / lines.length * 100}%"></i></div>${D.total ? `<span class="num">累计 ${pct(D.ok, D.total)}%</span>` : ""}</div>
     <div class="transport"><button class="play" id="dp" aria-label="播放本句">${ICON.play}</button><button class="btn sm" id="slow">慢速再听</button>${speedCtlHTML()}</div>
-    <textarea id="din" class="en" style="min-height:90px;font-size:17px" placeholder="⌘/Ctrl + 回车检查" ${D.res ? "disabled" : ""}>${esc(D.input)}</textarea>${isEs() && !D.res ? accKeysHTML() : ""}
+    <textarea id="din" class="en" style="min-height:90px;font-size:17px" placeholder="${TOUCH ? "写下听到的句子" : "写下听到的句子 · ⌘/Ctrl + 回车检查"}" ${D.res ? "disabled" : ""}>${esc(D.input)}</textarea>${isEs() && !D.res ? accKeysHTML() : ""}
     ${D.res ? `<div class="explain"><div class="diff">${D.res.out.map(([t, w]) => `<span class="${t}">${esc(w)}</span>`).join(" ")}</div>
       <div class="row between" style="margin-top:8px"><span class="muted" style="font-size:14px">${esc(zh)}</span><span class="pill ${D.res.ok === D.res.total ? "good" : D.res.ok / D.res.total >= .7 ? "warn" : "bad"} num">${D.res.ok} / ${D.res.total}</span></div></div>
       <p class="faint" style="font-size:13px"><span style="color:var(--good)">绿色</span>写对，${isEs() ? `<span class="diff"><span class="acc" style="font-size:inherit;padding:0">黄色</span></span>只是重音符号写错（算对），` : ""}<span style="color:var(--bad)">红色波浪线</span>漏写或写错，<s>删除线</s>是多写的词。</p>` : ""}
@@ -6803,6 +6828,21 @@ function mountSheet(host, lang, log, opts = {}) {
   }
   return { st, ready, vb, cur: c };
 }
+/* ---- 空闲时把下一种语言的图纸先画好，藏在当前这张下面：点折角时立刻就能翻 ---- */
+let NEXT_PREP = null;
+function prepareNext(host, lang) {
+  const desk = host.parentElement; if (!desk || turning) return;
+  const nx = NEXT_LANG[lang];
+  const go = () => {
+    if (turning || !document.body.classList.contains("at-home") || !host.isConnected) return;
+    const old = $(".sheet.under.pre", desk);
+    if (old && old.dataset.lang === nx && old.clientWidth === host.clientWidth && old.clientHeight === host.clientHeight) return;
+    old?.remove();
+    const u = document.createElement("div"); u.className = "sheet under pre"; desk.insertBefore(u, host);
+    try { NEXT_PREP = { lang: nx, ready: mountSheet(u, nx, S.otherLogs?.[nx] || { days: {} }, { interactive: false }).ready }; } catch (e) { u.remove(); }
+  };
+  Promise.resolve(S.otherLogsReady).then(() => (window.requestIdleCallback || (f => setTimeout(f, 1200)))(go, { timeout: 2500 }));
+}
 /* ---- 第一次来：告诉人点哪里（每种语言一次，打开过菜单就不再出现） ---- */
 const HINT_TXT = { en: "点红圈圈出的砖，开始今天的学习", ja: "点红圈里的石头，开始今天的学习", es: "点箭头指着的台阶，开始今天的学习" };
 function showHint(host, lang, vb, c) {
@@ -6834,7 +6874,7 @@ function towerView(el) {
   $("#sheet", el).classList.remove("boot");
   let prev = null; try { prev = JSON.parse(localStorage.getItem(seenKey(lang)) || "null"); } catch { }
   const host = $("#sheet", el), r = mountSheet(host, lang, S.log, { prev }), st = r.st;
-  r.ready.then(() => { saveSnapshot(host, lang); showHint(host, lang, r.vb, r.cur); });
+  r.ready.then(() => { saveSnapshot(host, lang); showHint(host, lang, r.vb, r.cur); prepareNext(host, lang); });
   try { localStorage.setItem(seenKey(lang), JSON.stringify({ done: st.done, frac: st.frac, group: st.group, idx: st.idx })); localStorage.setItem("bt_lang", lang); } catch { }
   if (S.v3notice) { toast(S.v3notice, 6000); S.profile.v3seen = true; S.v3notice = ""; saveProfile(); }
 }
@@ -6846,23 +6886,40 @@ let _rsz = 0, _rw = window.innerWidth, _rh = window.innerHeight;
 window.addEventListener("resize", () => { clearTimeout(_rsz); _rsz = setTimeout(() => { if (Math.abs(window.innerWidth - _rw) < 2 && Math.abs(window.innerHeight - _rh) < 60) return; _rw = window.innerWidth; _rh = window.innerHeight; if (document.body.classList.contains("at-home") && S.log && !turning && !$(".mlayer")) render(); }, 250); });
 /* ---- 翻页：折角 → 下一张纸 ---- */
 let turning = false;
+const TURN_CAP = { en: ["English", "Turris Babel"], ja: ["日本語", "天之御柱"], es: ["Español", "Templo Mayor"] };
 async function turnPage() {
   if (turning) return; turning = true;
   const cur = curLang(), nx = NEXT_LANG[cur], sheet = $("#sheet"), desk = sheet?.parentElement;
   if (!sheet) return;
   document.body.classList.add("page-turning");
-  $(".mlayer", sheet)?.remove();
-  const under = document.createElement("div"); under.className = "sheet under"; desk.insertBefore(under, sheet);
-  let r = null; try { r = mountSheet(under, nx, S.otherLogs?.[nx] || { days: {} }, { interactive: false }); } catch (e) { console.warn(e); }
-  await Promise.race([r?.ready, sleep(1400)]);
-  // 下一张纸的画面和砖块现在就存进本机，重新加载后第一帧直接贴出来
-  [...ART_SAVE].forEach(fn => fn()); saveSnapshot(under, nx);
-  sheet.classList.add("turning");
-  S.profile.lang = nx; saveProfile();
+  $(".mlayer", sheet)?.remove(); $(".sheet-hint", sheet)?.remove();
+  sheet.classList.add("lifting"); // 折角先翘起来，等下一张纸画好
+  // 下一张纸通常已经在空闲时画好藏在下面（prepareNext），没有就现画
+  let under = $(".sheet.under.pre", desk), ready = NEXT_PREP?.ready;
+  if (!under || under.dataset.lang !== nx) {
+    under?.remove(); await Promise.race([S.otherLogsReady, sleep(800)]); under = document.createElement("div"); under.className = "sheet under"; desk.insertBefore(under, sheet);
+    try { ready = mountSheet(under, nx, S.otherLogs?.[nx] || { days: {} }, { interactive: false }).ready; } catch (e) { console.warn(e); }
+  }
+  under.classList.remove("pre"); NEXT_PREP = null;
+  await Promise.race([ready, sleep(1400)]);
+  // 纸背：同一张纸的背面，透出一点反过来的画
+  const back = document.createElement("div"); back.className = "sheet-back"; back.style.background = SHEETS[cur].BASE;
+  const ghost = sheet.querySelector("svg.live")?.cloneNode(true); if (ghost) { ghost.querySelectorAll(".hit").forEach(h => h.remove()); ghost.setAttribute("class", "ghost"); back.appendChild(ghost); }
+  sheet.appendChild(back);
+  const [a, b2] = TURN_CAP[nx]; const cap = document.createElement("div"); cap.className = "turn-cap c-" + nx; cap.innerHTML = `<b>${a}</b><span>${b2}</span>`; under.appendChild(cap);
+  sheet.style.willChange = "transform";
+  // 等两帧，让合成层就位再开始转，避免第一帧卡顿
+  await new Promise(ok => requestAnimationFrame(() => requestAnimationFrame(ok)));
+  sheet.classList.remove("lifting"); sheet.classList.add("turning"); under.classList.add("revealing");
+  S.profile.lang = nx;
   try { sessionStorage.setItem("bt_turn", nx); localStorage.setItem("bt_lang", nx); } catch { }
-  await Promise.all([sleep(820), Saver.flush().catch(() => { })]);
-  location.hash = "home";
-  location.reload();
+  await sleep(1080);
+  // 动画结束、画面停在下一张纸上之后，再做存盘这些重活
+  saveProfile(); [...ART_SAVE].forEach(fn => fn()); cap.remove(); saveSnapshot(under, nx);
+  await Saver.flush().catch(() => { });
+  // App 版：换一个地址打开（跨文档过渡会把这一帧保持到新页面画好）；网页版：重新加载
+  if (window.BABEL_APP) location.replace(location.pathname + "?l=" + nx + "#home");
+  else { location.hash = "home"; location.reload(); }
 }
 /* ---- 内页：纸张纹理 + 回到塔前 ---- */
 const PAPER_TEX = {};
@@ -7110,7 +7167,7 @@ async function migrateV3() {
   // 共用打卡日历：读出其他语言的打卡日（只读，不改动它们）
   S.ckOther = new Set(); S.otherLogs = {};
   const others = Object.entries(LANGS).filter(([k, v]) => v.ready && k !== curLang());
-  Promise.all(others.map(([, v]) => Store.get((v.ns ? v.ns + "app/" : "app/") + "log").catch(() => null))).then(ls => { ls.forEach((l, i) => { S.otherLogs[others[i][0]] = l && l.days ? l : { days: {} }; for (const [k, d] of Object.entries(l?.days || {})) if (d.ck) S.ckOther.add(k); }); });
+  S.otherLogsReady = Promise.all(others.map(([, v]) => Store.get((v.ns ? v.ns + "app/" : "app/") + "log").catch(() => null))).then(ls => { ls.forEach((l, i) => { S.otherLogs[others[i][0]] = l && l.days ? l : { days: {} }; for (const [k, d] of Object.entries(l?.days || {})) if (d.ck) S.ckOther.add(k); }); });
   S.stats = Object.assign({ grammar: {}, readDone: {}, listenDone: {}, listenScore: {}, mock: [], gread: {}, tests: [], weekly: {} }, stats || {});
   S.mistakes = mistakes && Array.isArray(mistakes.items) ? mistakes : { items: [] };
   S.favs = Object.assign({ w: {}, g: {}, q: {} }, favs || {});
