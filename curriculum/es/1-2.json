@@ -1,0 +1,833 @@
+{
+ "id": "es.1.2",
+ "title": "你好，我是……",
+ "goal": "问候、ser、主语代词、名词的性、冠词、数字 0–10",
+ "lessons": [
+  {
+   "id": "es.1.2.1",
+   "title": "自我介绍：llamarse",
+   "words": [
+    "nombre",
+    "señor",
+    "amigo",
+    "estudiante",
+    "profesor",
+    "compañero",
+    "de nada",
+    "por favor",
+    "vale"
+   ],
+   "grammar": [
+    {
+     "title": "我叫……",
+     "points": [
+      "¿Cómo te llamas? — Me llamo Ana.（你叫什么？——我叫安娜。）对长辈、陌生人用 usted：¿Cómo se llama usted?",
+      "llamarse 的现在时：me llamo, te llamas, se llama, nos llamamos, os llamáis, se llaman。",
+      "也可以说：Soy Ana. / Mi nombre es Ana.",
+      "回答 Gracias 用 De nada；请求时加 por favor；同意说 Vale（西班牙）/ Está bien。"
+     ],
+     "examples": [
+      [
+       "¿Cómo te llamas? — Me llamo Luis. ¿Y tú?",
+       "你叫什么？——我叫路易斯。你呢？"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Cómo te llamas?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你叫什么名字？"
+      ]
+     ]
+    },
+    {
+     "w": "Me llamo …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我叫……"
+      ]
+     ],
+     "x": [
+      [
+       "Me llamo Kenji.",
+       "我叫健二。"
+      ]
+     ]
+    },
+    {
+     "w": "¿Y usted?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "您呢？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "¿Cómo te ___? — Me llamo Ana.",
+     "o": [
+      "llamo",
+      "llamas",
+      "llama",
+      "llaman"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "对陌生长辈问名字：",
+     "o": [
+      "¿Cómo te llamas?",
+      "¿Cómo se llama usted?"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "别人说 Gracias，你回答？",
+     "o": [
+      "Por favor",
+      "De nada",
+      "Perdón",
+      "Vale"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Él ___ Pedro.",
+     "o": [
+      "me llamo",
+      "te llamas",
+      "se llama",
+      "nos llamamos"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Me ___ Kenji.",
+     "a": [
+      "llamo"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "听音，选出听到的句子。",
+     "o": [
+      "¿Cómo te llamas?",
+      "¿Cómo se llama?"
+     ],
+     "a": 0,
+     "say": "¿Cómo te llamas?"
+    },
+    {
+     "t": "o",
+     "a": "Me llamo Ana, ¿y tú?",
+     "p": [
+      "Me llamo",
+      "Ana,",
+      "¿y tú?"
+     ],
+     "zh": "我叫安娜，你呢？"
+    }
+   ]
+  },
+  {
+   "id": "es.1.2.2",
+   "title": "主语代词与 ser",
+   "words": [
+    "yo",
+    "tú",
+    "él",
+    "ella",
+    "usted",
+    "nosotros",
+    "ellos",
+    "español",
+    "chino",
+    "japonés"
+   ],
+   "grammar": [
+    {
+     "title": "ser：是",
+     "points": [
+      "主语代词：yo 我、tú 你、él 他、ella 她、usted 您、nosotros/as 我们、vosotros/as 你们（西班牙）、ellos/ellas 他们、ustedes 您们（拉美也作“你们”）。",
+      "ser 现在时：soy, eres, es, somos, sois, son。",
+      "ser 表示身份、职业、国籍、来源：Soy estudiante. Es japonesa. Somos de China.（职业前不加冠词）",
+      "动词变位已经表明人称，主语代词常省略：Soy chino.（= Yo soy chino.）",
+      "国籍形容词有阴阳性：chino / china, japonés / japonesa, español / española。"
+     ],
+     "examples": [
+      [
+       "Soy de China, pero vivo en Japón.",
+       "我来自中国，但住在日本。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿De dónde eres?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你是哪里人？"
+      ]
+     ]
+    },
+    {
+     "w": "Soy de …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我来自……"
+      ]
+     ],
+     "x": [
+      [
+       "Soy de Shanghái.",
+       "我来自上海。"
+      ]
+     ]
+    },
+    {
+     "w": "¿A qué te dedicas?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你做什么工作？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Nosotros ___ estudiantes.",
+     "o": [
+      "soy",
+      "eres",
+      "somos",
+      "son"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Ella ___ japonesa.",
+     "o": [
+      "soy",
+      "es",
+      "eres",
+      "son"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Mi madre es ___. (中国人，女)",
+     "o": [
+      "chino",
+      "china",
+      "chinos",
+      "chinas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "“我是医生”：",
+     "o": [
+      "Soy un médico.",
+      "Soy médico.",
+      "Estoy médico.",
+      "Es médico yo."
+     ],
+     "a": 1,
+     "e": "职业前不加冠词。"
+    },
+    {
+     "t": "f",
+     "q": "¿De dónde ___ tú?",
+     "a": [
+      "eres"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Ellos ___ de México.",
+     "a": [
+      "son"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Soy de China, pero vivo en Japón.",
+     "zh": "我来自中国，但住在日本。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.2.3",
+   "title": "名词的性与数",
+   "words": [
+    "hombre",
+    "mujer",
+    "niño",
+    "chico",
+    "persona",
+    "libro",
+    "mesa",
+    "coche",
+    "ciudad",
+    "gente"
+   ],
+   "grammar": [
+    {
+     "ref": "concordancia"
+    },
+    {
+     "title": "阳性、阴性、复数",
+     "points": [
+      "以 -o 结尾多为阳性（libro, niño），以 -a 结尾多为阴性（mesa, casa）。",
+      "以 -ción, -sión, -dad, -tad 结尾的是阴性：la ciudad, la información。",
+      "例外要单独记：el día, el mapa, el problema（阳）；la mano, la foto, la radio（阴）。",
+      "复数：元音结尾加 -s（libros），辅音结尾加 -es（ciudades），z → ces（lápiz → lápices）。",
+      "gente（人们）是单数阴性名词：La gente es amable."
+     ],
+     "examples": [
+      [
+       "Los niños y las mujeres están aquí.",
+       "孩子们和女人们在这里。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Qué es esto?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "这是什么？"
+      ]
+     ]
+    },
+    {
+     "w": "Es un/una …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "这是一个……"
+      ]
+     ],
+     "x": [
+      [
+       "Es un libro.",
+       "这是一本书。"
+      ]
+     ]
+    },
+    {
+     "w": "Mucha gente",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "很多人"
+      ]
+     ],
+     "x": [
+      [
+       "Hay mucha gente.",
+       "人很多。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "mesa 是什么性？",
+     "o": [
+      "阳性",
+      "阴性"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "ciudad 的复数是？",
+     "o": [
+      "ciudads",
+      "ciudades",
+      "ciudadas",
+      "ciudad"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "哪个是阳性例外？",
+     "o": [
+      "la mano",
+      "el día",
+      "la casa",
+      "la foto"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "lápiz 的复数是？",
+     "o": [
+      "lápizs",
+      "lápices",
+      "lápizes",
+      "lápiz"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "La gente ___ simpática.",
+     "o": [
+      "es",
+      "son",
+      "están",
+      "somos"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "un libro → dos ___",
+     "a": [
+      "libros"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Es un libro.",
+     "zh": "这是一本书。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.2.4",
+   "title": "冠词",
+   "words": [
+    "el",
+    "la",
+    "los",
+    "las",
+    "un",
+    "una",
+    "cosa",
+    "país",
+    "calle"
+   ],
+   "grammar": [
+    {
+     "ref": "articulos"
+    },
+    {
+     "title": "定冠词与不定冠词",
+     "points": [
+      "定冠词（这个/那个）：el（阳单）la（阴单）los（阳复）las（阴复）。",
+      "不定冠词（一个/一些）：un（阳）una（阴）unos unas（一些）。",
+      "缩合：a + el → al（Voy al cine）；de + el → del（Es del profesor）。",
+      "以重读 a 开头的阴性单数名词用 el：el agua, el aula（但仍是阴性：el agua fría）。",
+      "说星期几前用定冠词表示“在”：el lunes（在周一），los lunes（每周一）。"
+     ],
+     "examples": [
+      [
+       "Voy al parque con el perro del vecino.",
+       "我带着邻居的狗去公园。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "Voy al …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我去……（a + el）"
+      ]
+     ],
+     "x": [
+      [
+       "Voy al banco.",
+       "我去银行。"
+      ]
+     ]
+    },
+    {
+     "w": "Es del …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "是……的（de + el）"
+      ]
+     ],
+     "x": [
+      [
+       "Es del profesor.",
+       "是老师的。"
+      ]
+     ]
+    },
+    {
+     "w": "Una cosa más.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "还有一件事。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "___ casa es grande.",
+     "o": [
+      "El",
+      "La",
+      "Los",
+      "Un"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Voy ___ supermercado.",
+     "o": [
+      "a el",
+      "al",
+      "del",
+      "a la"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "___ agua está fría.",
+     "o": [
+      "La",
+      "El",
+      "Los",
+      "Una"
+     ],
+     "a": 1,
+     "e": "重读 a 开头的阴性单数用 el。"
+    },
+    {
+     "t": "c",
+     "q": "Tengo ___ amigos en Madrid. (一些)",
+     "o": [
+      "un",
+      "unos",
+      "unas",
+      "los"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "El libro es ___ chico.",
+     "o": [
+      "de el",
+      "del",
+      "al",
+      "a el"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "___ calles de Madrid son bonitas. (定冠词)",
+     "a": [
+      "Las"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Voy al banco.",
+     "zh": "我去银行。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.2.5",
+   "title": "数字 0–10",
+   "words": [
+    "uno",
+    "dos",
+    "tres",
+    "cuatro",
+    "cinco",
+    "seis",
+    "siete",
+    "ocho",
+    "nueve",
+    "diez"
+   ],
+   "grammar": [
+    {
+     "title": "数数与年龄",
+     "points": [
+      "0 cero, 1 uno, 2 dos, 3 tres, 4 cuatro, 5 cinco, 6 seis, 7 siete, 8 ocho, 9 nueve, 10 diez。",
+      "uno 在阳性名词前变 un，在阴性名词前变 una：un libro, una mesa。",
+      "年龄用 tener：¿Cuántos años tienes? — Tengo diez años.（不用 ser）",
+      "电话号码常两位两位读：6 12 34 56 78。"
+     ],
+     "examples": [
+      [
+       "Tengo dos hermanos y una hermana.",
+       "我有两个兄弟和一个姐妹。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Cuántos años tienes?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你几岁？"
+      ]
+     ]
+    },
+    {
+     "w": "Tengo … años.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我……岁。"
+      ]
+     ],
+     "x": [
+      [
+       "Tengo treinta años.",
+       "我三十岁。"
+      ]
+     ]
+    },
+    {
+     "w": "¿Cuál es tu número de teléfono?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你的电话号码是多少？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "7 是？",
+     "o": [
+      "seis",
+      "siete",
+      "ocho",
+      "nueve"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Tengo ___ hermana.",
+     "o": [
+      "un",
+      "uno",
+      "una",
+      "unos"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "“我 25 岁”的动词是？",
+     "o": [
+      "ser",
+      "estar",
+      "tener",
+      "haber"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "听音，选出听到的数字。",
+     "o": [
+      "3",
+      "6",
+      "9",
+      "10"
+     ],
+     "a": 1,
+     "say": "seis"
+    },
+    {
+     "t": "c",
+     "q": "听音，选出听到的数字。",
+     "o": [
+      "4",
+      "5",
+      "8",
+      "2"
+     ],
+     "a": 2,
+     "say": "ocho"
+    },
+    {
+     "t": "f",
+     "q": "¿Cuántos años ___? — Tengo nueve años.",
+     "a": [
+      "tienes"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Tengo dos hermanos.",
+     "zh": "我有两个兄弟。"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "Yo ___ estudiante.",
+    "o": [
+     "es",
+     "soy",
+     "eres",
+     "estoy"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "¿Cómo ___ llama usted?",
+    "o": [
+     "te",
+     "se",
+     "me",
+     "le"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "___ problema es difícil.",
+    "o": [
+     "La",
+     "El",
+     "Una",
+     "Las"
+    ],
+    "a": 1,
+    "e": "problema 是阳性。"
+   },
+   {
+    "t": "c",
+    "q": "Vamos ___ cine.",
+    "o": [
+     "a el",
+     "al",
+     "en el",
+     "del"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Mi amiga es ___.",
+    "o": [
+     "japonés",
+     "japonesa",
+     "japoneses",
+     "japonesas"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "noche 的复数是？",
+    "o": [
+     "noches",
+     "nochees",
+     "noche",
+     "nochs"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "5 是？",
+    "o": [
+     "cuatro",
+     "cinco",
+     "seis",
+     "siete"
+    ],
+    "a": 1
+   },
+   {
+    "t": "f",
+    "q": "¿De dónde ___ ustedes? — Somos de Perú.",
+    "a": [
+     "son"
+    ]
+   },
+   {
+    "t": "f",
+    "q": "Tengo veinte ___. (岁)",
+    "a": [
+     "años"
+    ]
+   },
+   {
+    "t": "o",
+    "a": "Me llamo Luis, ¿y tú?",
+    "p": [
+     "Me llamo",
+     "Luis,",
+     "¿y tú?"
+    ],
+    "zh": "我叫路易斯，你呢？"
+   }
+  ]
+ }
+}

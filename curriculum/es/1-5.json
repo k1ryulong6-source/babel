@@ -1,0 +1,814 @@
+{
+ "id": "es.1.5",
+ "title": "在城市里",
+ "goal": "estar 与 ser、位置介词、ir 与交通、问路",
+ "lessons": [
+  {
+   "id": "es.1.5.1",
+   "title": "estar：在哪里",
+   "words": [
+    "estar",
+    "aquí",
+    "allí",
+    "cerca",
+    "lejos",
+    "a la derecha",
+    "a la izquierda",
+    "esquina",
+    "semáforo"
+   ],
+   "grammar": [
+    {
+     "ref": "ser-estar"
+    },
+    {
+     "title": "estar 表示位置和状态",
+     "points": [
+      "estar 现在时：estoy, estás, está, estamos, estáis, están。",
+      "位置一律用 estar：Madrid está en España. ¿Dónde está el baño?",
+      "位置介词：cerca de（近）、lejos de（远）、al lado de（旁边）、delante de（前面）、detrás de（后面）、enfrente de（对面）、entre（之间）、en la esquina（街角）。",
+      "a la derecha（右边）/ a la izquierda（左边）/ todo recto（一直走）。"
+     ],
+     "examples": [
+      [
+       "El hotel está cerca de la estación, a la derecha.",
+       "酒店在车站附近，右手边。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Dónde está …?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "……在哪里？"
+      ]
+     ],
+     "x": [
+      [
+       "¿Dónde está el metro?",
+       "地铁在哪？"
+      ]
+     ]
+    },
+    {
+     "w": "todo recto",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "一直往前走"
+      ]
+     ]
+    },
+    {
+     "w": "Está a cinco minutos.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "走五分钟就到。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "¿Dónde ___ el baño?",
+     "o": [
+      "es",
+      "está",
+      "hay",
+      "son"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Nosotros ___ en casa.",
+     "o": [
+      "somos",
+      "estamos",
+      "están",
+      "hay"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "El banco está ___ de la farmacia. (旁边)",
+     "o": [
+      "al lado",
+      "a lado",
+      "lado",
+      "en lado"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "“一直走”：",
+     "o": [
+      "a la derecha",
+      "todo recto",
+      "a la izquierda",
+      "en la esquina"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "El museo está ___ de aquí. (远)",
+     "a": [
+      "lejos"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "听音，选出听到的方向。",
+     "o": [
+      "a la derecha",
+      "a la izquierda"
+     ],
+     "a": 1,
+     "say": "a la izquierda"
+    },
+    {
+     "t": "o",
+     "a": "¿Dónde está el metro?",
+     "p": [
+      "¿Dónde",
+      "está",
+      "el metro?"
+     ],
+     "zh": "地铁在哪？"
+    }
+   ]
+  },
+  {
+   "id": "es.1.5.2",
+   "title": "城市里的地点",
+   "words": [
+    "tienda",
+    "banco",
+    "hospital",
+    "farmacia",
+    "parque",
+    "plaza",
+    "museo",
+    "cine",
+    "estación",
+    "supermercado"
+   ],
+   "grammar": [
+    {
+     "title": "说城市",
+     "points": [
+      "Hay + 不定冠词：En mi barrio hay un parque y dos supermercados.",
+      "定冠词 + estar：El cine está en la plaza.",
+      "ir a + 地点：去某地：Voy al banco. Vamos a la farmacia.",
+      "en + 地点：在某地：Estoy en el supermercado."
+     ],
+     "examples": [
+      [
+       "En la plaza hay un museo muy bonito.",
+       "广场上有一座很漂亮的博物馆。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Hay … cerca?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "附近有……吗？"
+      ]
+     ],
+     "x": [
+      [
+       "¿Hay un supermercado cerca?",
+       "附近有超市吗？"
+      ]
+     ]
+    },
+    {
+     "w": "Perdone, …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "（对陌生人）打扰一下……"
+      ]
+     ],
+     "x": [
+      [
+       "Perdone, ¿dónde está la estación?",
+       "打扰一下，车站在哪？"
+      ]
+     ]
+    },
+    {
+     "w": "Muchas gracias, muy amable.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "非常感谢，您真好。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Voy ___ farmacia.",
+     "o": [
+      "al",
+      "a la",
+      "a el",
+      "en la"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Estoy ___ el parque.",
+     "o": [
+      "a",
+      "en",
+      "al",
+      "de"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "___ un cine en mi barrio.",
+     "o": [
+      "Está",
+      "Hay",
+      "Es",
+      "Son"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "El hospital ___ cerca de aquí.",
+     "o": [
+      "hay",
+      "está",
+      "es",
+      "tiene"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿Hay ___ supermercado cerca? (不定冠词)",
+     "a": [
+      "un"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Perdone, ¿dónde está la estación?",
+     "p": [
+      "Perdone,",
+      "¿dónde",
+      "está",
+      "la estación?"
+     ],
+     "zh": "打扰一下，车站在哪？"
+    }
+   ]
+  },
+  {
+   "id": "es.1.5.3",
+   "title": "ir 与交通工具",
+   "words": [
+    "ir",
+    "autobús",
+    "tren",
+    "metro",
+    "taxi",
+    "avión",
+    "bicicleta",
+    "billete",
+    "viaje"
+   ],
+   "grammar": [
+    {
+     "title": "ir：去",
+     "points": [
+      "ir 现在时（不规则）：voy, vas, va, vamos, vais, van。",
+      "ir a + 地点：Voy a Madrid. Vamos al cine.",
+      "en + 交通工具：en autobús, en tren, en metro, en coche；但“步行”是 a pie。",
+      "¿Cómo vas al trabajo? — Voy en metro."
+     ],
+     "examples": [
+      [
+       "Voy al trabajo en metro, pero vuelvo a pie.",
+       "我坐地铁上班，但走路回家。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "a pie",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "步行"
+      ]
+     ],
+     "x": [
+      [
+       "Voy a pie.",
+       "我走路去。"
+      ]
+     ]
+    },
+    {
+     "w": "un billete de ida y vuelta",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "往返票"
+      ]
+     ]
+    },
+    {
+     "w": "¡Buen viaje!",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "一路平安！"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Yo ___ a la escuela.",
+     "o": [
+      "va",
+      "voy",
+      "vas",
+      "vamos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Ellos ___ en tren.",
+     "o": [
+      "van",
+      "va",
+      "vamos",
+      "vais"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "“我坐公交去”：",
+     "o": [
+      "Voy por autobús.",
+      "Voy en autobús.",
+      "Voy a autobús.",
+      "Voy con autobús."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "“我走路去”：",
+     "o": [
+      "Voy en pie.",
+      "Voy a pie.",
+      "Voy de pie.",
+      "Voy por pie."
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿Cómo ___ (tú) al trabajo?",
+     "a": [
+      "vas"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Nosotros ___ al cine el sábado.",
+     "a": [
+      "vamos"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "¡Buen viaje!",
+     "p": [
+      "¡Buen",
+      "viaje!"
+     ],
+     "zh": "一路平安！"
+    }
+   ]
+  },
+  {
+   "id": "es.1.5.4",
+   "title": "问路与指路",
+   "words": [
+    "dirección",
+    "seguir",
+    "buscar",
+    "encontrar",
+    "preguntar",
+    "mapa",
+    "centro",
+    "barrio",
+    "lugar"
+   ],
+   "grammar": [
+    {
+     "title": "指路的说法",
+     "points": [
+      "问：¿Cómo llego a …? / ¿Por dónde se va a …? / ¿Está lejos?",
+      "答：Siga todo recto.（一直走）Gire a la derecha.（右转）Tome la primera calle a la izquierda.（第一个路口左转）",
+      "对 usted 的命令式：siga, gire, tome, cruce；对 tú：sigue, gira, toma, cruza。",
+      "encontrar（找到）有词干变化 o → ue：encuentro, encuentras …；seguir e → i：sigo, sigues …"
+     ],
+     "examples": [
+      [
+       "Siga todo recto y gire a la derecha en el semáforo.",
+       "一直走，在红绿灯处右转。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Cómo llego a …?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "怎么去……？"
+      ]
+     ],
+     "x": [
+      [
+       "¿Cómo llego al centro?",
+       "怎么去市中心？"
+      ]
+     ]
+    },
+    {
+     "w": "Gire a la derecha.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "请右转。"
+      ]
+     ]
+    },
+    {
+     "w": "No lo encuentro.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我找不到。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "“请左转”（对 usted）：",
+     "o": [
+      "Gire a la izquierda.",
+      "Gira la izquierda.",
+      "Gire en izquierda.",
+      "Girar a izquierda."
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Yo ___ las llaves. (找)",
+     "o": [
+      "busco",
+      "buscas",
+      "busca",
+      "buscamos"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "No ___ mi móvil. (找不到)",
+     "o": [
+      "encontro",
+      "encuentro",
+      "encuentra",
+      "encontramos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "¿Cómo ___ a la estación?",
+     "o": [
+      "llego",
+      "llegas",
+      "llega",
+      "llegar"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "Siga todo ___.",
+     "a": [
+      "recto"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "¿Cómo llego al centro?",
+     "p": [
+      "¿Cómo",
+      "llego",
+      "al centro?"
+     ],
+     "zh": "怎么去市中心？"
+    }
+   ]
+  },
+  {
+   "id": "es.1.5.5",
+   "title": "ser 与 estar：状态与本质",
+   "words": [
+    "cansado",
+    "contento",
+    "triste",
+    "enfermo",
+    "ocupado",
+    "abierto",
+    "cerrado",
+    "aburrido",
+    "libre"
+   ],
+   "grammar": [
+    {
+     "title": "同一个形容词，ser 和 estar 意思不同",
+     "points": [
+      "estar + 形容词：暂时的状态、感受：Estoy cansado. La tienda está cerrada.",
+      "ser + 形容词：本质、性格、特征：Es simpático. La casa es grande.",
+      "ser aburrido（人很无聊）/ estar aburrido（感到无聊）；ser listo（聪明）/ estar listo（准备好了）；ser malo（坏）/ estar malo（生病）。",
+      "形容词要和主语性数一致：Ella está cansada. Ellos están ocupados."
+     ],
+     "examples": [
+      [
+       "Hoy estoy muy cansada, pero estoy contenta.",
+       "今天我很累，但很开心。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Cómo estás?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你好吗？/ 你怎么样？"
+      ]
+     ]
+    },
+    {
+     "w": "Estoy libre.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我有空。"
+      ]
+     ],
+     "x": [
+      [
+       "¿Estás libre el sábado?",
+       "你周六有空吗？"
+      ]
+     ]
+    },
+    {
+     "w": "¿Qué te pasa?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你怎么了？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Hoy ___ muy cansado.",
+     "o": [
+      "soy",
+      "estoy",
+      "hay",
+      "tengo"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Mi hermano ___ muy simpático.",
+     "o": [
+      "es",
+      "está",
+      "hay",
+      "tiene"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "La farmacia ___ cerrada ahora.",
+     "o": [
+      "es",
+      "está",
+      "hay",
+      "son"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Ella está ___.",
+     "o": [
+      "cansado",
+      "cansada",
+      "cansados",
+      "cansadas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "“我准备好了”：",
+     "o": [
+      "Soy listo.",
+      "Estoy listo.",
+      "Tengo listo.",
+      "Hay listo."
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿Qué te ___? — Estoy enfermo.",
+     "a": [
+      "pasa"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "¿Estás libre el sábado?",
+     "p": [
+      "¿Estás",
+      "libre",
+      "el sábado?"
+     ],
+     "zh": "你周六有空吗？"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "¿Dónde ___ la plaza?",
+    "o": [
+     "es",
+     "está",
+     "hay",
+     "son"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "___ dos farmacias cerca.",
+    "o": [
+     "Están",
+     "Hay",
+     "Son",
+     "Es"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Vamos ___ museo.",
+    "o": [
+     "a el",
+     "al",
+     "en el",
+     "del"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Voy al trabajo ___ bicicleta.",
+    "o": [
+     "en",
+     "a",
+     "por",
+     "de"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Nosotros ___ contentos.",
+    "o": [
+     "somos",
+     "estamos",
+     "están",
+     "hay"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "La película ___ aburrida. (片子本身无聊)",
+    "o": [
+     "es",
+     "está"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "“请一直走”（对 usted）：",
+    "o": [
+     "Siga todo recto.",
+     "Sigue todo recto.",
+     "Seguir recto.",
+     "Sigo todo recto."
+    ],
+    "a": 0
+   },
+   {
+    "t": "f",
+    "q": "Ellos ___ (ir) a Madrid en avión.",
+    "a": [
+     "van"
+    ]
+   },
+   {
+    "t": "f",
+    "q": "No ___ (encontrar, yo) el hotel.",
+    "a": [
+     "encuentro"
+    ]
+   },
+   {
+    "t": "o",
+    "a": "¿Dónde está el metro?",
+    "p": [
+     "¿Dónde",
+     "está",
+     "el metro?"
+    ],
+    "zh": "地铁在哪？"
+   }
+  ]
+ }
+}
