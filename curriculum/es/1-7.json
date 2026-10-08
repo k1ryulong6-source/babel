@@ -1,0 +1,813 @@
+{
+ "id": "es.1.7",
+ "title": "计划与天气",
+ "goal": "ir a + 不定式、词干变化动词、不规则 yo 形式、天气与季节、爱好",
+ "lessons": [
+  {
+   "id": "es.1.7.1",
+   "title": "ir a + 不定式：打算做",
+   "words": [
+    "cumpleaños",
+    "regalo",
+    {
+     "w": "vacaciones",
+     "p": "f",
+     "s": [
+      [
+       "名",
+       "假期（常用复数）"
+      ]
+     ],
+     "x": [
+      [
+       "En agosto voy a estar de vacaciones.",
+       "八月我要去度假。"
+      ]
+     ]
+    },
+    "playa",
+    "montaña",
+    "viajar",
+    "pasaporte",
+    "maleta"
+   ],
+   "grammar": [
+    {
+     "title": "近将来",
+     "points": [
+      "ir（变位）+ a + 动词原形：Voy a comprar un regalo. ¿Qué vas a hacer mañana?",
+      "常与时间词连用：mañana, esta tarde, este fin de semana, el próximo mes, la semana que viene。",
+      "vamos a + 不定式 也可以表示“我们来……吧”：¡Vamos a bailar!",
+      "这是口语里最常用的将来表达，A1 阶段先只用它。"
+     ],
+     "examples": [
+      [
+       "Este verano vamos a viajar a la playa.",
+       "今年夏天我们要去海边旅行。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Qué vas a hacer …?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你……打算做什么？"
+      ]
+     ],
+     "x": [
+      [
+       "¿Qué vas a hacer este fin de semana?",
+       "你这周末打算干嘛？"
+      ]
+     ]
+    },
+    {
+     "w": "¡Feliz cumpleaños!",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "生日快乐！"
+      ]
+     ]
+    },
+    {
+     "w": "Tengo planes.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我有安排了。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Mañana ___ a ver una película.",
+     "o": [
+      "voy",
+      "vas a",
+      "voy a",
+      "ir a"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "¿Qué ___ a hacer tú?",
+     "o": [
+      "vas",
+      "voy",
+      "va",
+      "vamos"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Ellos van ___ viajar a México.",
+     "o": [
+      "de",
+      "a",
+      "en",
+      "por"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "“生日快乐”：",
+     "o": [
+      "¡Buen cumpleaños!",
+      "¡Feliz cumpleaños!",
+      "¡Feliz fiesta!",
+      "¡Buen viaje!"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Nosotros ___ a comprar un regalo.",
+     "a": [
+      "vamos"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "¿Qué vas a hacer este fin de semana?",
+     "p": [
+      "¿Qué",
+      "vas a",
+      "hacer",
+      "este fin de semana?"
+     ],
+     "zh": "你这周末打算干嘛？"
+    }
+   ]
+  },
+  {
+   "id": "es.1.7.2",
+   "title": "词干变化：e → ie, o → ue",
+   "words": [
+    "empezar",
+    "pensar",
+    "preferir",
+    "cerrar",
+    "volver",
+    "dormir",
+    "jugar",
+    "entender",
+    "recordar"
+   ],
+   "grammar": [
+    {
+     "title": "“靴子”动词",
+     "points": [
+      "重读的词干元音会变：e → ie（empezar: empiezo），o → ue（volver: vuelvo），u → ue（jugar: juego）。",
+      "nosotros 和 vosotros 不重读词干，所以<b>不变</b>：empezamos, volvemos, jugamos。",
+      "把变化的四个人称（yo tú él ellos）连起来像一只靴子，所以叫“靴子动词”。",
+      "pensar：pienso；preferir：prefiero；cerrar：cierro；entender：entiendo；dormir：duermo；recordar：recuerdo。",
+      "jugar a + 运动：Juego al fútbol."
+     ],
+     "examples": [
+      [
+       "La clase empieza a las nueve y vuelvo a casa a las dos.",
+       "九点上课，两点回家。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "No entiendo.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我不明白。"
+      ]
+     ]
+    },
+    {
+     "w": "Pienso que …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我认为……"
+      ]
+     ],
+     "x": [
+      [
+       "Pienso que es buena idea.",
+       "我觉得是个好主意。"
+      ]
+     ]
+    },
+    {
+     "w": "¿Prefieres … o …?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你更喜欢……还是……？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "La película ___ a las ocho.",
+     "o": [
+      "empieza",
+      "empeza",
+      "empiezan",
+      "empezamos"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Nosotros ___ a casa a las seis.",
+     "o": [
+      "vuelvemos",
+      "volvemos",
+      "vuelven",
+      "volvimos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Yo ___ ocho horas.",
+     "o": [
+      "dormo",
+      "duermo",
+      "duermes",
+      "dormimos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "¿Tú ___ al tenis?",
+     "o": [
+      "jugas",
+      "juegas",
+      "juega",
+      "jugamos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Lo siento, no ___.",
+     "o": [
+      "entendo",
+      "entiendo",
+      "entiende",
+      "entendemos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿___ (preferir, tú) té o café?",
+     "a": [
+      "Prefieres"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "No entiendo.",
+     "p": [
+      "No",
+      "entiendo."
+     ],
+     "zh": "我不明白。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.7.3",
+   "title": "e → i 与“我”的不规则形式",
+   "words": [
+    "pedir",
+    "repetir",
+    "hacer",
+    "poner",
+    "salir",
+    "decir",
+    "venir",
+    "saber",
+    "conocer"
+   ],
+   "grammar": [
+    {
+     "title": "两组要单独记的",
+     "points": [
+      "e → i（只有 -ir 动词）：pedir → pido, pides, pide, pedimos, pedís, piden；repetir → repito；seguir → sigo。",
+      "只有 yo 不规则：hacer → hago, poner → pongo, salir → salgo, saber → sé, conocer → conozco, dar → doy, ver → veo。",
+      "yo 不规则 + 词干变化：decir → digo, dices, dice…；venir → vengo, vienes, viene…；tener → tengo, tienes…",
+      "saber（知道事实、会做）vs conocer（认识人、熟悉地方）：Sé nadar. Conozco a Ana. Conozco Madrid.（认识人时加 a）"
+     ],
+     "examples": [
+      [
+       "¿Conoces a mi hermano? — No, pero sé que vive en Lima.",
+       "你认识我哥吗？——不认识，但我知道他住在利马。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Puede repetir, por favor?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "您能再说一遍吗？"
+      ]
+     ]
+    },
+    {
+     "w": "No sé.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我不知道。"
+      ]
+     ]
+    },
+    {
+     "w": "¿Qué haces?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你在干嘛？/ 你做什么工作？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Yo ___ los deberes por la tarde.",
+     "o": [
+      "haco",
+      "hago",
+      "hace",
+      "hacemos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Yo ___ de casa a las ocho.",
+     "o": [
+      "salo",
+      "salgo",
+      "sale",
+      "salimos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Siempre ___ (yo) paella en este restaurante.",
+     "o": [
+      "pedo",
+      "pido",
+      "pide",
+      "pedimos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "___ a tu hermana. (我认识)",
+     "o": [
+      "Sé",
+      "Conozco",
+      "Conoce",
+      "Sabo"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "No ___ nadar. (我不会)",
+     "o": [
+      "conozco",
+      "sé",
+      "sabo",
+      "sabe"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿Qué ___ (decir) tú?",
+     "a": [
+      "dices"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Yo ___ (venir) mañana.",
+     "a": [
+      "vengo"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "¿Puede repetir, por favor?",
+     "p": [
+      "¿Puede",
+      "repetir,",
+      "por favor?"
+     ],
+     "zh": "您能再说一遍吗？"
+    }
+   ]
+  },
+  {
+   "id": "es.1.7.4",
+   "title": "天气与季节",
+   "words": [
+    "calor",
+    "frío",
+    "sol",
+    "lluvia",
+    "primavera",
+    "verano",
+    "otoño",
+    "invierno",
+    "tiempo"
+   ],
+   "grammar": [
+    {
+     "title": "hace / hay / está",
+     "points": [
+      "¿Qué tiempo hace? — Hace calor / frío / sol / viento / buen tiempo / mal tiempo.",
+      "llover（下雨）nevar（下雪）是无人称动词：Llueve. Nieva. Está lloviendo.",
+      "Hay niebla（有雾）、Está nublado（多云）。",
+      "季节：la primavera, el verano, el otoño, el invierno；en verano（在夏天）。",
+      "注意区分：Hace frío（天冷）/ Tengo frío（我冷）/ El agua está fría（水是凉的）。"
+     ],
+     "examples": [
+      [
+       "En invierno hace mucho frío y a veces nieva.",
+       "冬天很冷，有时下雪。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Qué tiempo hace?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "天气怎么样？"
+      ]
+     ]
+    },
+    {
+     "w": "Hace buen tiempo.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "天气很好。"
+      ]
+     ]
+    },
+    {
+     "w": "Está lloviendo.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "正在下雨。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Hoy ___ mucho calor.",
+     "o": [
+      "hay",
+      "hace",
+      "está",
+      "es"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "En invierno ___. (下雪)",
+     "o": [
+      "nieva",
+      "nevar",
+      "hace nieve",
+      "es nieve"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "“我冷”：",
+     "o": [
+      "Hace frío.",
+      "Tengo frío.",
+      "Estoy frío.",
+      "Soy frío."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "¿Qué tiempo ___?",
+     "o": [
+      "hay",
+      "hace",
+      "está",
+      "es"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "En ___ hace calor. (夏天)",
+     "a": [
+      "verano"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Hace buen tiempo.",
+     "p": [
+      "Hace",
+      "buen",
+      "tiempo."
+     ],
+     "zh": "天气很好。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.7.5",
+   "title": "爱好与频率",
+   "words": [
+    "deporte",
+    "fútbol",
+    "nadar",
+    "bailar",
+    "cantar",
+    "descansar",
+    "gimnasio",
+    "piscina",
+    "andar"
+   ],
+   "grammar": [
+    {
+     "title": "说说你的空闲时间",
+     "points": [
+      "en mi tiempo libre（在我的空闲时间）+ 动词：En mi tiempo libre leo y nado.",
+      "频率：todos los días（每天）、una vez a la semana（一周一次）、dos veces al mes（一月两次）、casi nunca（几乎不）。",
+      "jugar al + 球类：jugar al fútbol；hacer deporte（做运动）；ir al gimnasio。",
+      "表达喜好可以组合：Me gusta mucho bailar, pero no me gusta nada cantar."
+     ],
+     "examples": [
+      [
+       "Voy al gimnasio dos veces a la semana.",
+       "我一周去两次健身房。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "en mi tiempo libre",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "在我的空闲时间"
+      ]
+     ]
+    },
+    {
+     "w": "una vez a la semana",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "一周一次"
+      ]
+     ]
+    },
+    {
+     "w": "hacer deporte",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "运动"
+      ]
+     ],
+     "x": [
+      [
+       "Hago deporte los sábados.",
+       "我每周六运动。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Juego ___ fútbol.",
+     "o": [
+      "el",
+      "al",
+      "a",
+      "de"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "“一周两次”：",
+     "o": [
+      "dos veces a la semana",
+      "dos vez por semana",
+      "dos veces de semana",
+      "segunda vez semana"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "¿Qué haces en tu tiempo ___?",
+     "o": [
+      "libre",
+      "libro",
+      "libra",
+      "librar"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "No me gusta ___ cantar. (一点也不)",
+     "o": [
+      "nada",
+      "nunca",
+      "no",
+      "tampoco"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "___ deporte todos los días. (我做)",
+     "a": [
+      "Hago"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Voy al gimnasio dos veces a la semana.",
+     "p": [
+      "Voy",
+      "al gimnasio",
+      "dos veces",
+      "a la semana."
+     ],
+     "zh": "我一周去两次健身房。"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "Mañana voy ___ estudiar.",
+    "o": [
+     "de",
+     "a",
+     "en",
+     "para"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Ella ___ a casa tarde.",
+    "o": [
+     "volve",
+     "vuelve",
+     "vuelva",
+     "volvemos"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Yo no ___ la respuesta. (知道)",
+    "o": [
+     "conozco",
+     "sé",
+     "sabo",
+     "sabe"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "___ mucho viento hoy.",
+    "o": [
+     "Hay",
+     "Hace",
+     "Está",
+     "Es"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Nosotros ___ al tenis los domingos.",
+    "o": [
+     "juegamos",
+     "jugamos",
+     "juegan",
+     "jugáis"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Yo ___ la mesa. (摆放)",
+    "o": [
+     "pono",
+     "pongo",
+     "pone",
+     "ponemos"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "¿Qué ___ a hacer el sábado?",
+    "o": [
+     "vas",
+     "voy",
+     "vamos a",
+     "ir"
+    ],
+    "a": 0
+   },
+   {
+    "t": "f",
+    "q": "La tienda ___ (cerrar) a las nueve.",
+    "a": [
+     "cierra"
+    ]
+   },
+   {
+    "t": "f",
+    "q": "En ___ hace frío. (冬天)",
+    "a": [
+     "invierno"
+    ]
+   },
+   {
+    "t": "o",
+    "a": "Pienso que es buena idea.",
+    "p": [
+     "Pienso",
+     "que",
+     "es",
+     "buena idea."
+    ],
+    "zh": "我觉得是个好主意。"
+   }
+  ]
+ }
+}

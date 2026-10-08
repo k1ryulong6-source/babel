@@ -1,0 +1,789 @@
+{
+ "id": "es.1.4",
+ "title": "我的一天",
+ "goal": "-ar/-er/-ir 现在时规则变位、自反动词、钟点与星期",
+ "lessons": [
+  {
+   "id": "es.1.4.1",
+   "title": "-ar 动词现在时",
+   "words": [
+    "hablar",
+    "trabajar",
+    "estudiar",
+    "llamar",
+    "necesitar",
+    "comprar",
+    "tomar",
+    "escuchar",
+    "mirar",
+    "cocinar"
+   ],
+   "grammar": [
+    {
+     "title": "去掉 -ar，加词尾",
+     "points": [
+      "hablar → habl- + o, as, a, amos, áis, an：hablo, hablas, habla, hablamos, habláis, hablan。",
+      "现在时可以表示：现在的习惯（Trabajo en un banco）、此刻（¿Qué miras?）、近期确定的将来（Mañana compro el pan）。",
+      "否定直接在动词前加 no：No hablo inglés.",
+      "tomar 的常用义：吃喝（tomar un café）、乘坐（tomar el autobús）、拿。"
+     ],
+     "examples": [
+      [
+       "Trabajo en una oficina y estudio español por la noche.",
+       "我在办公室工作，晚上学西语。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "tomar un café",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "喝杯咖啡"
+      ]
+     ],
+     "x": [
+      [
+       "¿Tomamos un café?",
+       "我们去喝杯咖啡吧？"
+      ]
+     ]
+    },
+    {
+     "w": "por la mañana / tarde / noche",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "在上午/下午/晚上"
+      ]
+     ]
+    },
+    {
+     "w": "¿Hablas español?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你会说西语吗？"
+      ]
+     ],
+     "x": [
+      [
+       "¿Hablas español? — Un poco.",
+       "你会说西语吗？——会一点。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Yo ___ en un hospital.",
+     "o": [
+      "trabajo",
+      "trabajas",
+      "trabaja",
+      "trabajamos"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "¿Tú ___ música?",
+     "o": [
+      "escucho",
+      "escuchas",
+      "escucha",
+      "escuchan"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Nosotros ___ español.",
+     "o": [
+      "estudio",
+      "estudian",
+      "estudiamos",
+      "estudiáis"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Ellos no ___ inglés.",
+     "o": [
+      "habla",
+      "hablan",
+      "hablamos",
+      "hablas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Mi madre ___ (cocinar) muy bien.",
+     "a": [
+      "cocina"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Yo ___ (necesitar) ayuda.",
+     "a": [
+      "necesito"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Trabajo por la mañana.",
+     "zh": "我上午工作。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.4.2",
+   "title": "-er 与 -ir 动词",
+   "words": [
+    "comer",
+    "beber",
+    "leer",
+    "aprender",
+    "vivir",
+    "escribir",
+    "abrir",
+    "responder",
+    "creer"
+   ],
+   "grammar": [
+    {
+     "title": "-er 和 -ir 只有两处不同",
+     "points": [
+      "comer：como, comes, come, comemos, coméis, comen。",
+      "vivir：vivo, vives, vive, vivimos, vivís, viven。",
+      "-er 和 -ir 只在 nosotros（-emos / -imos）和 vosotros（-éis / -ís）不同。",
+      "¿Dónde vives? — Vivo en Tokio.　¿Qué lees? — Leo un libro."
+     ],
+     "examples": [
+      [
+       "Vivimos en Osaka y comemos en casa.",
+       "我们住在大阪，在家吃饭。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Dónde vives?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你住在哪里？"
+      ]
+     ]
+    },
+    {
+     "w": "Creo que sí / no.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我想是的 / 我想不是。"
+      ]
+     ]
+    },
+    {
+     "w": "aprender a + inf.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "学做……"
+      ]
+     ],
+     "x": [
+      [
+       "Aprendo a cocinar.",
+       "我在学做饭。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Nosotros ___ en Kioto.",
+     "o": [
+      "vivo",
+      "vivimos",
+      "vivemos",
+      "viven"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "¿Qué ___ tú? — Un libro.",
+     "o": [
+      "lees",
+      "lee",
+      "leo",
+      "leen"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Ellos ___ mucho café.",
+     "o": [
+      "bebe",
+      "beben",
+      "bebemos",
+      "bebes"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Nosotros ___ mucho en clase.",
+     "o": [
+      "aprendí",
+      "aprendemos",
+      "aprendéis",
+      "aprenden"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Ella ___ (escribir) un mensaje.",
+     "a": [
+      "escribe"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "¿Dónde ___ (vivir) tú?",
+     "a": [
+      "vives"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Aprendo a cocinar.",
+     "zh": "我在学做饭。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.4.3",
+   "title": "自反动词：起床、洗澡",
+   "words": [
+    "levantarse",
+    "ducharse",
+    "acostarse",
+    "desayunar",
+    "cenar",
+    "desayuno",
+    "almuerzo",
+    "cena"
+   ],
+   "grammar": [
+    {
+     "title": "动作落在自己身上",
+     "points": [
+      "自反动词带 se：levantarse（起床）、ducharse（洗澡）、acostarse（上床睡觉）、llamarse（叫作）。",
+      "变位时 se 变成对应的代词，放在动词前：me levanto, te levantas, se levanta, nos levantamos, os levantáis, se levantan。",
+      "acostarse 有词干变化 o → ue：me acuesto, te acuestas, se acuesta, nos acostamos …",
+      "三餐：desayunar（吃早饭）、comer / almorzar（吃午饭）、cenar（吃晚饭）。"
+     ],
+     "examples": [
+      [
+       "Me levanto a las siete y me ducho.",
+       "我七点起床，然后洗澡。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "todos los días",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "每天"
+      ]
+     ],
+     "x": [
+      [
+       "Me ducho todos los días.",
+       "我每天洗澡。"
+      ]
+     ]
+    },
+    {
+     "w": "primero … luego …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "先……然后……"
+      ]
+     ]
+    },
+    {
+     "w": "Buen provecho.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "请慢用 / 祝你胃口好。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Yo ___ a las siete.",
+     "o": [
+      "levanto",
+      "me levanto",
+      "se levanta",
+      "te levantas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "¿A qué hora ___ tú?",
+     "o": [
+      "te acuestas",
+      "me acuesto",
+      "se acuesta",
+      "acuestas"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Nosotros ___ a las ocho.",
+     "o": [
+      "nos duchamos",
+      "se duchan",
+      "nos ducharnos",
+      "duchamos"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "吃晚饭是？",
+     "o": [
+      "desayunar",
+      "almorzar",
+      "cenar",
+      "comer"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Ella ___ (levantarse) temprano.",
+     "a": [
+      "se levanta"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Me levanto a las siete.",
+     "zh": "我七点起床。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.4.4",
+   "title": "钟点与时间",
+   "words": [
+    "hora",
+    "minuto",
+    "tarde",
+    "ahora",
+    "antes",
+    "después",
+    "luego",
+    "siempre",
+    "nunca",
+    "a veces"
+   ],
+   "grammar": [
+    {
+     "title": "¿Qué hora es?",
+     "points": [
+      "Es la una.（1 点，用单数）Son las dos / las tres …",
+      "y 加分钟：Son las tres y diez。y cuarto（一刻）、y media（半）。menos 减：Son las cinco menos cuarto（4:45）。",
+      "“在几点”用 a：La clase empieza a las nueve.",
+      "de la mañana / de la tarde / de la noche：Son las ocho de la tarde.",
+      "频率：siempre 总是、a veces 有时、nunca 从不（nunca 在动词后要加 no：No como nunca carne / Nunca como carne）。"
+     ],
+     "examples": [
+      [
+       "Siempre desayuno a las siete y media.",
+       "我总是七点半吃早饭。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿A qué hora …?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "几点……？"
+      ]
+     ],
+     "x": [
+      [
+       "¿A qué hora empieza la clase?",
+       "几点上课？"
+      ]
+     ]
+    },
+    {
+     "w": "en punto",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "整点"
+      ]
+     ],
+     "x": [
+      [
+       "Son las tres en punto.",
+       "三点整。"
+      ]
+     ]
+    },
+    {
+     "w": "Hasta luego.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "回头见。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "2:30 怎么说？",
+     "o": [
+      "Son las dos y media.",
+      "Es la dos y media.",
+      "Son las dos y cuarto.",
+      "Son dos y media."
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "1:00 怎么说？",
+     "o": [
+      "Son la una.",
+      "Es la una.",
+      "Es las una.",
+      "Son las uno."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "4:45 怎么说？",
+     "o": [
+      "Son las cuatro y cuarenta.",
+      "Son las cinco menos cuarto.",
+      "Son las cuatro menos cuarto.",
+      "Es las cinco menos cuarto."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "La clase empieza ___ las nueve.",
+     "o": [
+      "en",
+      "a",
+      "de",
+      "por"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "“我从不喝咖啡”：",
+     "o": [
+      "Siempre bebo café.",
+      "Nunca bebo café.",
+      "A veces bebo café.",
+      "Bebo nunca café."
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿A qué ___ cenas?",
+     "a": [
+      "hora"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Siempre desayuno a las siete.",
+     "zh": "我总是七点吃早饭。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.4.5",
+   "title": "星期与一周",
+   "words": [
+    "lunes",
+    "martes",
+    "miércoles",
+    "jueves",
+    "viernes",
+    "sábado",
+    "domingo",
+    "fin de semana",
+    "hoy",
+    "semana"
+   ],
+   "grammar": [
+    {
+     "title": "el lunes / los lunes",
+     "points": [
+      "星期名小写，都是阳性：el lunes … el domingo。",
+      "“在周一”直接用 el lunes（不加 en）；“每周一”用 los lunes。",
+      "lunes 到 viernes 单复数同形：el lunes / los lunes；sábado, domingo 复数加 s。",
+      "¿Qué día es hoy? — Hoy es martes.",
+      "el fin de semana 周末；entre semana 工作日。"
+     ],
+     "examples": [
+      [
+       "Los sábados juego al fútbol y el domingo descanso.",
+       "我每周六踢足球，周日休息。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Qué día es hoy?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "今天星期几？"
+      ]
+     ]
+    },
+    {
+     "w": "el próximo …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "下一个……"
+      ]
+     ],
+     "x": [
+      [
+       "el próximo lunes",
+       "下周一"
+      ]
+     ]
+    },
+    {
+     "w": "¡Buen fin de semana!",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "周末愉快！"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "“每周五”：",
+     "o": [
+      "el viernes",
+      "los viernes",
+      "en viernes",
+      "viernes"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "“周六我工作”：",
+     "o": [
+      "En sábado trabajo.",
+      "El sábado trabajo.",
+      "A sábado trabajo.",
+      "Sábado en trabajo."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "星期三是？",
+     "o": [
+      "martes",
+      "miércoles",
+      "jueves",
+      "lunes"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "¿Qué día ___ hoy?",
+     "o": [
+      "es",
+      "está",
+      "hay",
+      "son"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "¡Buen fin de ___!",
+     "a": [
+      "semana"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Hoy es martes.",
+     "zh": "今天星期二。"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "Mi hermano ___ en un banco.",
+    "o": [
+     "trabaja",
+     "trabajo",
+     "trabajan",
+     "trabajas"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Vosotros ___ en Madrid.",
+    "o": [
+     "vivís",
+     "vivéis",
+     "viven",
+     "vivimos"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Yo ___ a las once.",
+    "o": [
+     "acuesto",
+     "me acuesto",
+     "se acuesta",
+     "me acosto"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "3:15 是？",
+    "o": [
+     "Son las tres y cuarto.",
+     "Son las tres y media.",
+     "Es las tres y cuarto.",
+     "Son las cuatro menos cuarto."
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "“周日我休息”：",
+    "o": [
+     "En domingo descanso.",
+     "El domingo descanso.",
+     "Domingos descanso en.",
+     "A domingo descanso."
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "¿Tú ___ el periódico?",
+    "o": [
+     "lees",
+     "leo",
+     "lee",
+     "leemos"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "“有时”是？",
+    "o": [
+     "siempre",
+     "nunca",
+     "a veces",
+     "ahora"
+    ],
+    "a": 2
+   },
+   {
+    "t": "f",
+    "q": "Nosotros ___ (comer) en casa.",
+    "a": [
+     "comemos"
+    ]
+   },
+   {
+    "t": "f",
+    "q": "¿A qué hora te ___ (levantarse)?",
+    "a": [
+     "levantas"
+    ]
+   },
+   {
+    "t": "o",
+    "a": "Me levanto a las siete y me ducho.",
+    "zh": "我七点起床，然后洗澡。"
+   }
+  ]
+ }
+}

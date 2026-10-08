@@ -1,0 +1,826 @@
+{
+ "id": "es.1.3",
+ "title": "家人与身边的东西",
+ "goal": "tener、物主形容词、形容词性数一致、hay、数字到 100",
+ "lessons": [
+  {
+   "id": "es.1.3.1",
+   "title": "家人与 tener",
+   "words": [
+    "familia",
+    "padre",
+    "madre",
+    "hijo",
+    "hermano",
+    "abuelo",
+    "tío",
+    "primo",
+    "esposo",
+    "tener"
+   ],
+   "grammar": [
+    {
+     "title": "tener：有",
+     "points": [
+      "tener 现在时（不规则）：tengo, tienes, tiene, tenemos, tenéis, tienen。",
+      "Tengo dos hermanos.（我有两个兄弟/兄弟姐妹）。阳性复数可以包括男女：hermanos = 兄弟姐妹，padres = 父母，hijos = 子女。",
+      "tener 的常用搭配：tener hambre（饿）、tener sed（渴）、tener frío/calor（冷/热）、tener sueño（困）、tener prisa（急）、tener ... años（几岁）。",
+      "tener que + 不定式：不得不：Tengo que trabajar."
+     ],
+     "examples": [
+      [
+       "¿Tienes hermanos? — Sí, tengo una hermana.",
+       "你有兄弟姐妹吗？——有，一个姐姐。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "tener hambre",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "饿"
+      ]
+     ],
+     "x": [
+      [
+       "Tengo mucha hambre.",
+       "我很饿。"
+      ]
+     ]
+    },
+    {
+     "w": "tener que + inf.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "不得不……"
+      ]
+     ],
+     "x": [
+      [
+       "Tengo que estudiar.",
+       "我得学习。"
+      ]
+     ]
+    },
+    {
+     "w": "¿Tienes hermanos?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "你有兄弟姐妹吗？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Nosotros ___ tres hijos.",
+     "o": [
+      "tengo",
+      "tienes",
+      "tenemos",
+      "tienen"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "mis padres 的意思是？",
+     "o": [
+      "我的爸爸们",
+      "我的父母",
+      "我的祖父母",
+      "我的叔叔"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "“我很饿”：",
+     "o": [
+      "Estoy hambre.",
+      "Tengo hambre.",
+      "Soy hambre.",
+      "Hay hambre."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Ella ___ que trabajar hoy.",
+     "o": [
+      "tengo",
+      "tiene",
+      "es",
+      "está"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿___ (tú) hermanos?",
+     "a": [
+      "Tienes"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "hermanos 可以指？",
+     "o": [
+      "只有兄弟",
+      "兄弟姐妹",
+      "只有姐妹"
+     ],
+     "a": 1
+    },
+    {
+     "t": "o",
+     "a": "Tengo que estudiar.",
+     "zh": "我得学习。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.3.2",
+   "title": "物主形容词",
+   "words": [
+    "mi",
+    "tu",
+    "su",
+    "nuestro",
+    "vuestro",
+    "bebé",
+    "vecino",
+    "jardín",
+    "gato"
+   ],
+   "grammar": [
+    {
+     "title": "我的、你的、他的……",
+     "points": [
+      "mi(s) 我的、tu(s) 你的、su(s) 他的/她的/您的/他们的、nuestro/a(s) 我们的、vuestro/a(s) 你们的。",
+      "物主形容词和<b>后面的名词</b>保持数（nuestro/vuestro 还要保持性）：mis libros, nuestra casa, nuestros perros。",
+      "tu（你的）没有重音符号；tú（你）有。",
+      "su 含义多，不清楚时可以说 el libro de él / de ella / de usted。"
+     ],
+     "examples": [
+      [
+       "Nuestra casa es pequeña, pero nuestro jardín es grande.",
+       "我们的房子很小，但花园很大。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "Este es mi …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "这是我的……（介绍）"
+      ]
+     ],
+     "x": [
+      [
+       "Este es mi hermano.",
+       "这是我哥哥。"
+      ]
+     ]
+    },
+    {
+     "w": "Esta es mi …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "这是我的……（阴性）"
+      ]
+     ],
+     "x": [
+      [
+       "Esta es mi madre.",
+       "这是我妈妈。"
+      ]
+     ]
+    },
+    {
+     "w": "¡Qué bonito!",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "真漂亮！"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "___ padres son médicos. (我的)",
+     "o": [
+      "Mi",
+      "Mis",
+      "Me",
+      "Mío"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "___ casa es grande. (我们的)",
+     "o": [
+      "Nuestro",
+      "Nuestra",
+      "Nuestros",
+      "Nuestras"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Es ___ perro. (你的)",
+     "o": [
+      "tú",
+      "tu",
+      "tus",
+      "te"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "介绍妈妈：",
+     "o": [
+      "Este es mi madre.",
+      "Esta es mi madre."
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Ellos y ___ hijos viven aquí. (他们的)",
+     "a": [
+      "sus"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Este es mi hermano.",
+     "zh": "这是我哥哥。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.3.3",
+   "title": "形容词的性数一致",
+   "words": [
+    "grande",
+    "pequeño",
+    "nuevo",
+    "viejo",
+    "joven",
+    "alto",
+    "bajo",
+    "bonito",
+    "guapo"
+   ],
+   "grammar": [
+    {
+     "title": "形容词跟着名词变",
+     "points": [
+      "形容词一般放在名词<b>后面</b>：una casa grande, un coche nuevo。",
+      "-o 结尾的形容词有四种形式：alto, alta, altos, altas。",
+      "-e 或辅音结尾的只变数：grande / grandes, joven / jóvenes。",
+      "国籍形容词以辅音结尾也变阴性：español / española。",
+      "bueno, malo 在阳性单数名词前去 o：un buen amigo；grande 在单数名词前变 gran 意为“伟大的”：un gran hombre。"
+     ],
+     "examples": [
+      [
+       "Mis abuelos son viejos, pero muy simpáticos.",
+       "我的祖父母年纪大了，但很和蔼。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Cómo es …?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "……是什么样的？"
+      ]
+     ],
+     "x": [
+      [
+       "¿Cómo es tu ciudad?",
+       "你的城市是什么样的？"
+      ]
+     ]
+    },
+    {
+     "w": "muy + adj.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "很……"
+      ]
+     ],
+     "x": [
+      [
+       "Es muy alto.",
+       "他很高。"
+      ]
+     ]
+    },
+    {
+     "w": "un poco",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "有点儿"
+      ]
+     ],
+     "x": [
+      [
+       "Es un poco caro.",
+       "有点贵。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Las casas son ___.",
+     "o": [
+      "bonito",
+      "bonita",
+      "bonitos",
+      "bonitas"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "Mis hermanos son ___.",
+     "o": [
+      "alto",
+      "altos",
+      "alta",
+      "altas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Tengo dos coches ___.",
+     "o": [
+      "nuevo",
+      "nuevos",
+      "nueva",
+      "nuevas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Ella es muy ___.",
+     "o": [
+      "joven",
+      "jovena",
+      "jóvenes",
+      "jovenes"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Es un ___ amigo.",
+     "o": [
+      "bueno",
+      "buen",
+      "buena",
+      "buenos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿Cómo ___ tu ciudad? — Es grande y bonita.",
+     "a": [
+      "es"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Mi casa es un poco pequeña.",
+     "zh": "我家有点小。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.3.4",
+   "title": "hay：某处有……",
+   "words": [
+    "habitación",
+    "cocina",
+    "baño",
+    "dormitorio",
+    "salón",
+    "puerta",
+    "ventana",
+    "silla",
+    "cama",
+    "sofá"
+   ],
+   "grammar": [
+    {
+     "title": "hay 与 está",
+     "points": [
+      "hay（无变化）表示“有”，后接不定冠词、数字或不带冠词的名词：Hay un sofá en el salón. Hay dos baños.",
+      "要说“某个特定的东西在哪里”用 estar：El sofá está en el salón.",
+      "对比：Hay un banco cerca.（附近有一家银行）/ El banco está cerca.（那家银行在附近）",
+      "否定：No hay leche.　疑问：¿Hay una farmacia por aquí?"
+     ],
+     "examples": [
+      [
+       "En mi piso hay tres habitaciones y un baño.",
+       "我的公寓有三个房间和一个浴室。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Hay … por aquí?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "这附近有……吗？"
+      ]
+     ],
+     "x": [
+      [
+       "¿Hay un baño por aquí?",
+       "这附近有洗手间吗？"
+      ]
+     ]
+    },
+    {
+     "w": "al lado de",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "在……旁边"
+      ]
+     ],
+     "x": [
+      [
+       "La cocina está al lado del salón.",
+       "厨房在客厅旁边。"
+      ]
+     ]
+    },
+    {
+     "w": "en casa",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "在家"
+      ]
+     ],
+     "x": [
+      [
+       "Estoy en casa.",
+       "我在家。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "En la cocina ___ una mesa.",
+     "o": [
+      "hay",
+      "está",
+      "es",
+      "tiene"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "La mesa ___ en la cocina.",
+     "o": [
+      "hay",
+      "está",
+      "es",
+      "tiene"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "¿___ un banco por aquí?",
+     "o": [
+      "Está",
+      "Hay",
+      "Es",
+      "Tiene"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "No ___ sillas.",
+     "o": [
+      "hay",
+      "están",
+      "son",
+      "tienen"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "La cocina está al lado ___ salón.",
+     "a": [
+      "del"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "¿Hay un baño por aquí?",
+     "zh": "这附近有洗手间吗？"
+    }
+   ]
+  },
+  {
+   "id": "es.1.3.5",
+   "title": "数字 11–100",
+   "words": [
+    "once",
+    "doce",
+    "trece",
+    "catorce",
+    "quince",
+    "veinte",
+    "treinta",
+    "cuarenta",
+    "cincuenta",
+    "cien"
+   ],
+   "grammar": [
+    {
+     "title": "组合规律",
+     "points": [
+      "11 once, 12 doce, 13 trece, 14 catorce, 15 quince；16–19 写成一个词：dieciséis, diecisiete, dieciocho, diecinueve。",
+      "20 veinte；21–29 也写成一个词：veintiuno, veintidós, veintitrés …",
+      "30 以后用 y 连接：treinta y uno, cuarenta y cinco, noventa y nueve。",
+      "整十：30 treinta, 40 cuarenta, 50 cincuenta, 60 sesenta, 70 setenta, 80 ochenta, 90 noventa, 100 cien（101 起用 ciento: ciento uno）。"
+     ],
+     "examples": [
+      [
+       "Mi abuela tiene ochenta y cinco años.",
+       "我奶奶八十五岁。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Cuánto es?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "多少钱？"
+      ]
+     ]
+    },
+    {
+     "w": "Son … euros.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "……欧元。"
+      ]
+     ],
+     "x": [
+      [
+       "Son quince euros.",
+       "15 欧元。"
+      ]
+     ]
+    },
+    {
+     "w": "más o menos",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "大概"
+      ]
+     ],
+     "x": [
+      [
+       "Tiene cuarenta años, más o menos.",
+       "他大概四十岁。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "15 是？",
+     "o": [
+      "once",
+      "quince",
+      "cinco",
+      "cincuenta"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "45 是？",
+     "o": [
+      "cuarenta cinco",
+      "cuarenta y cinco",
+      "cuarentaicinco",
+      "cincuenta y cuatro"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "22 是？",
+     "o": [
+      "veinte y dos",
+      "veintidós",
+      "dos y veinte",
+      "veintedós"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "听音，选出听到的数字。",
+     "o": [
+      "13",
+      "30",
+      "33",
+      "3"
+     ],
+     "a": 1,
+     "say": "treinta"
+    },
+    {
+     "t": "c",
+     "q": "听音，选出听到的数字。",
+     "o": [
+      "12",
+      "20",
+      "2",
+      "22"
+     ],
+     "a": 0,
+     "say": "doce"
+    },
+    {
+     "t": "f",
+     "q": "100 = ___",
+     "a": [
+      "cien"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Son quince euros.",
+     "zh": "15 欧元。"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "Ellos ___ dos perros.",
+    "o": [
+     "tiene",
+     "tienen",
+     "tenemos",
+     "hay"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "___ hijos son estudiantes. (我们的)",
+    "o": [
+     "Nuestro",
+     "Nuestros",
+     "Nuestra",
+     "Mi"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Las sillas son ___.",
+    "o": [
+     "nuevo",
+     "nuevas",
+     "nuevos",
+     "nueva"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "En el salón ___ un sofá grande.",
+    "o": [
+     "está",
+     "hay",
+     "es",
+     "son"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "El baño ___ al lado del dormitorio.",
+    "o": [
+     "hay",
+     "está",
+     "es",
+     "tiene"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "70 是？",
+    "o": [
+     "sesenta",
+     "setenta",
+     "siete",
+     "diecisiete"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "“我很困”：",
+    "o": [
+     "Estoy sueño.",
+     "Tengo sueño.",
+     "Soy sueño.",
+     "Hay sueño."
+    ],
+    "a": 1
+   },
+   {
+    "t": "f",
+    "q": "Tengo ___ estudiar mañana.",
+    "a": [
+     "que"
+    ]
+   },
+   {
+    "t": "f",
+    "q": "Esta es ___ madre. (我的)",
+    "a": [
+     "mi"
+    ]
+   },
+   {
+    "t": "o",
+    "a": "¿Hay un baño por aquí?",
+    "zh": "这附近有洗手间吗？"
+   }
+  ]
+ }
+}

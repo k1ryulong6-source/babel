@@ -1,0 +1,842 @@
+{
+ "id": "en.1.3",
+ "title": "句子的骨架",
+ "goal": "词性、句子成分、五种基本句型、be 动词",
+ "lessons": [
+  {
+   "id": "en.1.3.1",
+   "title": "词性：单词的八种身份",
+   "words": [
+    "place",
+    "such",
+    "again",
+    "few",
+    "case",
+    "week",
+    "company",
+    "system",
+    "each",
+    "right",
+    "program",
+    "hear"
+   ],
+   "grammar": [
+    {
+     "ref": "b_pos"
+    },
+    {
+     "title": "看词尾猜词性",
+     "points": [
+      "-tion, -ment, -ness, -er/-or（人）多是名词：information, government, happiness, teacher",
+      "-ful, -less, -al, -ive, -ous, -able 多是形容词：useful, national, active, famous",
+      "-ly 多是副词：quickly, really（但 friendly, lovely 是形容词）",
+      "-ize, -en, -fy 多是动词：realize, widen, simplify",
+      "同一个词可以有几种词性：work（n. 工作 / v. 工作），play（v. 玩 / n. 戏剧），看它在句子里的位置判断。"
+     ],
+     "examples": [
+      [
+       "She works hard at her work.",
+       "她工作很努力。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "work hard",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "努力工作/学习"
+      ]
+     ],
+     "x": [
+      [
+       "You need to work hard.",
+       "你需要努力。"
+      ]
+     ]
+    },
+    {
+     "w": "all day",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "一整天"
+      ]
+     ],
+     "x": [
+      [
+       "It rained all day.",
+       "下了一整天雨。"
+      ]
+     ]
+    },
+    {
+     "w": "for example",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "例如"
+      ]
+     ],
+     "x": [
+      [
+       "Some words, for example \"run\", have many meanings.",
+       "有些词，比如 run，有很多意思。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "happiness 是什么词性？",
+     "o": [
+      "名词",
+      "动词",
+      "形容词",
+      "副词"
+     ],
+     "a": 0,
+     "e": "-ness 是名词后缀。"
+    },
+    {
+     "t": "c",
+     "q": "quickly 是什么词性？",
+     "o": [
+      "名词",
+      "动词",
+      "形容词",
+      "副词"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "useful 是什么词性？",
+     "o": [
+      "名词",
+      "动词",
+      "形容词",
+      "副词"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "She works at a bank. 中 works 是？",
+     "o": [
+      "名词",
+      "动词",
+      "形容词",
+      "副词"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "I have a lot of ___ (work) to do today.",
+     "a": [
+      "work"
+     ],
+     "e": "work 作“工作”讲是不可数名词。"
+    },
+    {
+     "t": "o",
+     "a": "For example, run is a verb.",
+     "zh": "例如，run 是动词。"
+    }
+   ]
+  },
+  {
+   "id": "en.1.3.2",
+   "title": "句子成分：主语、谓语、宾语",
+   "words": [
+    "question",
+    "during",
+    "play",
+    "government",
+    "run",
+    "small",
+    "number",
+    "off",
+    "always",
+    "move",
+    "night",
+    "live"
+   ],
+   "grammar": [
+    {
+     "ref": "b_parts"
+    },
+    {
+     "title": "找主干：谁 + 做什么 + 什么",
+     "points": [
+      "一个英语句子至少要有<b>主语</b>和<b>谓语动词</b>：Birds fly.",
+      "主语通常在句首，是名词或代词；谓语动词紧跟其后；宾语在动词后，是动作的对象。",
+      "中文可以没有动词（“我很忙”），英语不行：I <b>am</b> busy.（不能说 I busy.）",
+      "修饰成分（定语、状语）可以去掉，先找主干再看修饰：The tall man in the car <u>bought</u> a new phone yesterday. → The man bought a phone."
+     ],
+     "examples": [
+      [
+       "My little brother eats an apple every morning.",
+       "我弟弟每天早上吃一个苹果。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "every day",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "每天（作状语，两个词）"
+      ]
+     ],
+     "x": [
+      [
+       "I study English every day.",
+       "我每天学英语。"
+      ]
+     ]
+    },
+    {
+     "w": "in the morning",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "在早上"
+      ]
+     ],
+     "x": [
+      [
+       "I run in the morning.",
+       "我早上跑步。"
+      ]
+     ]
+    },
+    {
+     "w": "get up",
+     "t": "短语动词",
+     "s": [
+      [
+       "",
+       "起床"
+      ]
+     ],
+     "x": [
+      [
+       "I get up at six.",
+       "我六点起床。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "The old man reads a newspaper. 的主语是？",
+     "o": [
+      "The old man",
+      "reads",
+      "a newspaper",
+      "old"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "上句的宾语是？",
+     "o": [
+      "The old man",
+      "reads",
+      "a newspaper",
+      "old"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "“我很累”英语怎么说？",
+     "o": [
+      "I tired.",
+      "I am tired.",
+      "I very tired.",
+      "Me tired."
+     ],
+     "a": 1,
+     "e": "英语句子必须有谓语动词。"
+    },
+    {
+     "t": "c",
+     "q": "哪个句子缺谓语动词？",
+     "o": [
+      "She is happy.",
+      "He likes tea.",
+      "They at home.",
+      "We run."
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "I ___ up at seven every day.",
+     "a": [
+      "get"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "I study English every day.",
+     "zh": "我每天学英语。"
+    }
+   ]
+  },
+  {
+   "id": "en.1.3.3",
+   "title": "五种基本句型",
+   "words": [
+    "point",
+    "believe",
+    "hold",
+    "today",
+    "bring",
+    "happen",
+    "next",
+    "without",
+    "before",
+    "large",
+    "must",
+    "home"
+   ],
+   "grammar": [
+    {
+     "ref": "b_five"
+    },
+    {
+     "title": "所有句子都是这五种的变形",
+     "points": [
+      "① 主 + 谓：He sleeps.",
+      "② 主 + 系 + 表：She is a doctor. / The food smells good.（系动词：be, look, feel, sound, become, seem, get）",
+      "③ 主 + 谓 + 宾：I love music.",
+      "④ 主 + 谓 + 间宾 + 直宾：He gave me a book.（= He gave a book to me.）",
+      "⑤ 主 + 谓 + 宾 + 宾补：They made him happy. / We call him Tom.",
+      "系动词后面接形容词，不接副词：It sounds good.（不是 well）"
+     ],
+     "examples": [
+      [
+       "The soup tastes great.",
+       "汤很好喝。"
+      ],
+      [
+       "My mother bought me a new bag.",
+       "妈妈给我买了个新包。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "look like",
+     "t": "短语动词",
+     "s": [
+      [
+       "",
+       "看起来像"
+      ]
+     ],
+     "x": [
+      [
+       "You look like your father.",
+       "你长得像你爸爸。"
+      ]
+     ]
+    },
+    {
+     "w": "feel good",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "感觉好"
+      ]
+     ],
+     "x": [
+      [
+       "I feel good today.",
+       "我今天感觉很好。"
+      ]
+     ]
+    },
+    {
+     "w": "make sb happy",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "让某人开心"
+      ]
+     ],
+     "x": [
+      [
+       "Music makes me happy.",
+       "音乐让我开心。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "She gave me a pen. 是哪种句型？",
+     "o": [
+      "主谓",
+      "主系表",
+      "主谓宾",
+      "主谓间宾直宾"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "The music sounds ___.",
+     "o": [
+      "well",
+      "good",
+      "goodly",
+      "to good"
+     ],
+     "a": 1,
+     "e": "sound 是系动词，后接形容词。"
+    },
+    {
+     "t": "c",
+     "q": "They call the dog Max. 中 Max 是？",
+     "o": [
+      "宾语",
+      "宾语补足语",
+      "主语",
+      "表语"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "He looks ___. Is he ill?",
+     "o": [
+      "tiredly",
+      "tired",
+      "tire",
+      "tiring"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "He gave a book ___ me.",
+     "a": [
+      "to"
+     ],
+     "e": "give sth to sb。"
+    },
+    {
+     "t": "o",
+     "a": "Music makes me happy.",
+     "zh": "音乐让我开心。"
+    }
+   ]
+  },
+  {
+   "id": "en.1.3.4",
+   "title": "be 动词",
+   "words": [
+    "under",
+    "water",
+    "room",
+    "write",
+    "mother",
+    "area",
+    "national",
+    "money",
+    "story",
+    "young",
+    "fact",
+    "month"
+   ],
+   "grammar": [
+    {
+     "ref": "b_be"
+    },
+    {
+     "title": "am / is / are 怎么选",
+     "points": [
+      "I → am；he / she / it / 单数名词 → is；you / we / they / 复数名词 → are。",
+      "否定：be 后加 not：I'm not, she isn't, they aren't。",
+      "疑问：把 be 提到主语前：Are you a student? — Yes, I am. / No, I'm not.",
+      "be 后面可以接：名词（I am a nurse）、形容词（She is busy）、地点（They are at home）。",
+      "常见错误：I am agree.（agree 是动词，不用 be）→ I agree."
+     ],
+     "examples": [
+      [
+       "Is your sister at home? — No, she isn't.",
+       "你姐姐在家吗？——不在。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "be from",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "来自"
+      ]
+     ],
+     "x": [
+      [
+       "I'm from China.",
+       "我来自中国。"
+      ]
+     ]
+    },
+    {
+     "w": "be late for",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "……迟到"
+      ]
+     ],
+     "x": [
+      [
+       "Don't be late for work.",
+       "上班别迟到。"
+      ]
+     ]
+    },
+    {
+     "w": "be busy",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "忙"
+      ]
+     ],
+     "x": [
+      [
+       "She is busy with her job.",
+       "她忙于工作。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "My parents ___ teachers.",
+     "o": [
+      "am",
+      "is",
+      "are",
+      "be"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "___ he your brother?",
+     "o": [
+      "Am",
+      "Is",
+      "Are",
+      "Do"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "哪个句子是正确的？",
+     "o": [
+      "I am agree.",
+      "I agree.",
+      "I am agree with you.",
+      "I agreeing."
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "She ___ (not be) at school today.",
+     "a": [
+      "isn't",
+      "is not"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "I ___ from Japan.",
+     "a": [
+      "am",
+      "'m"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Are you late for work?",
+     "zh": "你上班迟到了吗？"
+    }
+   ]
+  },
+  {
+   "id": "en.1.3.5",
+   "title": "写对一个句子",
+   "words": [
+    "different",
+    "study",
+    "book",
+    "eye",
+    "job",
+    "word",
+    "though",
+    "business",
+    "issue",
+    "side",
+    "kind",
+    "head"
+   ],
+   "grammar": [
+    {
+     "title": "句子的基本规则",
+     "points": [
+      "句首字母大写，句末加句号、问号或感叹号。",
+      "一个简单句只有一个谓语动词：I want go. ✗ → I want to go. ✓",
+      "主谓一致：主语是第三人称单数（he, she, it, 单数名词），一般现在时动词加 -s：She likes it.",
+      "两个完整句子不能只用逗号连：It's late, I'm tired. ✗ → It's late, and I'm tired. / It's late. I'm tired.",
+      "中文语序“时间 + 地点 + 事情”，英语通常“事情 + 地点 + 时间”：I met him at the station yesterday."
+     ],
+     "examples": [
+      [
+       "I met my friend at the café yesterday.",
+       "我昨天在咖啡馆见了朋友。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "want to do",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "想做某事"
+      ]
+     ],
+     "x": [
+      [
+       "I want to learn more.",
+       "我想学更多。"
+      ]
+     ]
+    },
+    {
+     "w": "at home",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "在家"
+      ]
+     ],
+     "x": [
+      [
+       "I stay at home on Sundays.",
+       "我周日待在家。"
+      ]
+     ]
+    },
+    {
+     "w": "last week",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "上周（前面不加 in）"
+      ]
+     ],
+     "x": [
+      [
+       "I saw him last week.",
+       "我上周见到他了。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "哪个句子是正确的？",
+     "o": [
+      "I want go home.",
+      "I want to go home.",
+      "I want going home.",
+      "I wanting go home."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "She ___ coffee every morning.",
+     "o": [
+      "drink",
+      "drinks",
+      "drinking",
+      "is drink"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "正确的语序是？",
+     "o": [
+      "I yesterday at the station met him.",
+      "I met him at the station yesterday.",
+      "Yesterday at the station him I met.",
+      "I met at the station him yesterday."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "哪个句子标点正确？",
+     "o": [
+      "It's late, I'm tired.",
+      "It's late. I'm tired.",
+      "it's late. I'm tired",
+      "It's late I'm tired."
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "I saw her ___ week.",
+     "a": [
+      "last"
+     ],
+     "e": "last week 前不加 in/on。"
+    },
+    {
+     "t": "o",
+     "a": "I met my friend at home last week.",
+     "zh": "我上周在家见了朋友。"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "famous 是什么词性？",
+    "o": [
+     "名词",
+     "动词",
+     "形容词",
+     "副词"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "“他很忙”的正确英语是？",
+    "o": [
+     "He busy.",
+     "He is busy.",
+     "He very busy.",
+     "He busys."
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "The cake smells ___.",
+    "o": [
+     "nicely",
+     "nice",
+     "nicer than",
+     "to nice"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "They ___ in the office now.",
+    "o": [
+     "is",
+     "are",
+     "am",
+     "be"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Tom ___ to work by bus.",
+    "o": [
+     "go",
+     "goes",
+     "going",
+     "is go"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "He bought ___ a gift.",
+    "o": [
+     "I",
+     "me",
+     "my",
+     "mine"
+    ],
+    "a": 1
+   },
+   {
+    "t": "f",
+    "q": "I want ___ learn English.",
+    "a": [
+     "to"
+    ]
+   },
+   {
+    "t": "f",
+    "q": "___ you from Korea? — No, I'm from China.",
+    "a": [
+     "Are"
+    ]
+   },
+   {
+    "t": "o",
+    "a": "My mother bought me a new bag.",
+    "zh": "妈妈给我买了个新包。"
+   },
+   {
+    "t": "o",
+    "a": "I get up at six every day.",
+    "zh": "我每天六点起床。"
+   }
+  ]
+ }
+}

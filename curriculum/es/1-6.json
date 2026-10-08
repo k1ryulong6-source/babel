@@ -1,0 +1,788 @@
+{
+ "id": "es.1.6",
+ "title": "吃喝与购物",
+ "goal": "gustar、querer/poder、点餐、价格、指示词与颜色",
+ "lessons": [
+  {
+   "id": "es.1.6.1",
+   "title": "gustar：我喜欢",
+   "words": [
+    "gustar",
+    "fruta",
+    "carne",
+    "pescado",
+    "verdura",
+    "chocolate",
+    "helado",
+    "té",
+    "fiesta"
+   ],
+   "grammar": [
+    {
+     "ref": "gustar"
+    },
+    {
+     "title": "“某物让我喜欢”",
+     "points": [
+      "gustar 的结构和中文相反：<b>喜欢的东西是主语</b>：Me gusta el café.（单数）Me gustan las frutas.（复数）",
+      "间接宾语代词：me, te, le, nos, os, les。A mí me gusta… / A ella le gusta…（a + 人 用来强调或说明）。",
+      "后接动词原形用单数：Me gusta leer.",
+      "名词前要加定冠词：Me gusta <b>el</b> chocolate（不说 Me gusta chocolate）。",
+      "同类动词：encantar（非常喜欢）、interesar、doler。"
+     ],
+     "examples": [
+      [
+       "Me gusta mucho el pescado, pero no me gustan las verduras.",
+       "我很喜欢鱼，但不喜欢蔬菜。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "A mí también.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我也是（喜欢）。"
+      ]
+     ]
+    },
+    {
+     "w": "A mí tampoco.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我也不（喜欢）。"
+      ]
+     ]
+    },
+    {
+     "w": "Me encanta …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我超爱……"
+      ]
+     ],
+     "x": [
+      [
+       "Me encanta el helado.",
+       "我超爱冰淇淋。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Me ___ las frutas.",
+     "o": [
+      "gusta",
+      "gustan",
+      "gusto",
+      "gustas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "A mi madre ___ gusta el té.",
+     "o": [
+      "me",
+      "te",
+      "le",
+      "les"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Nos ___ cocinar.",
+     "o": [
+      "gusta",
+      "gustan",
+      "gustamos",
+      "gustar"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "— Me gusta el café. — A mí ___.",
+     "o": [
+      "también",
+      "tampoco",
+      "sí",
+      "no"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "— No me gusta la carne. — A mí ___.",
+     "o": [
+      "también",
+      "tampoco"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿Te ___ la música clásica?",
+     "a": [
+      "gusta"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Me encanta el helado.",
+     "p": [
+      "Me",
+      "encanta",
+      "el helado."
+     ],
+     "zh": "我超爱冰淇淋。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.6.2",
+   "title": "在餐厅点餐",
+   "words": [
+    "querer",
+    "poder",
+    "menú",
+    "cuenta",
+    "camarero",
+    "plato",
+    "vaso",
+    "botella",
+    "postre"
+   ],
+   "grammar": [
+    {
+     "title": "querer 与 poder",
+     "points": [
+      "querer（想要）e → ie：quiero, quieres, quiere, queremos, queréis, quieren。",
+      "poder（能）o → ue：puedo, puedes, puede, podemos, podéis, pueden。",
+      "点餐：Quiero / Quería（更礼貌）una ensalada, por favor. Para mí, el pescado.",
+      "请求：¿Puede traer la cuenta? / ¿Me trae un vaso de agua? / La cuenta, por favor.",
+      "西班牙午餐常见 menú del día：primer plato, segundo plato, postre。"
+     ],
+     "examples": [
+      [
+       "Para mí, el menú del día. ¿Me trae una botella de agua?",
+       "我要今日套餐。能给我拿瓶水吗？"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "La cuenta, por favor.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "请结账。"
+      ]
+     ]
+    },
+    {
+     "w": "Para mí, …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我要……"
+      ]
+     ],
+     "x": [
+      [
+       "Para mí, una ensalada.",
+       "我要一份沙拉。"
+      ]
+     ]
+    },
+    {
+     "w": "¿Qué me recomienda?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "您推荐什么？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Yo ___ un café, por favor.",
+     "o": [
+      "quiero",
+      "quieres",
+      "quiere",
+      "queremos"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "¿___ traer la cuenta? (您能)",
+     "o": [
+      "Puedo",
+      "Puede",
+      "Puedes",
+      "Pueden"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Nosotros no ___ venir mañana.",
+     "o": [
+      "podemos",
+      "puedemos",
+      "pueden",
+      "puedo"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "结账时说？",
+     "o": [
+      "El menú, por favor.",
+      "La cuenta, por favor.",
+      "El postre, por favor.",
+      "Un plato, por favor."
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿Qué ___ (querer) tú de postre?",
+     "a": [
+      "quieres"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Ellos ___ (poder) hablar inglés.",
+     "a": [
+      "pueden"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "La cuenta, por favor.",
+     "p": [
+      "La cuenta,",
+      "por favor."
+     ],
+     "zh": "请结账。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.6.3",
+   "title": "常见食物",
+   "words": [
+    "pan",
+    "leche",
+    "huevo",
+    "galleta",
+    "pollo",
+    "sopa",
+    "ensalada",
+    "patata",
+    "tomate"
+   ],
+   "grammar": [
+    {
+     "title": "吃什么、喝什么",
+     "points": [
+      "comer（吃）、beber / tomar（喝）：¿Qué tomas? — Un zumo de naranja.",
+      "de 表示材料或口味：zumo de naranja, sopa de tomate, bocadillo de jamón。",
+      "不可数的食物不加不定冠词：Como arroz. Bebo leche. 数量用 un poco de, mucho/a。",
+      "西班牙三餐时间较晚：desayuno 8 点前后、comida 14–15 点、cena 21 点以后。"
+     ],
+     "examples": [
+      [
+       "Para desayunar tomo pan con tomate y un café con leche.",
+       "早餐我吃番茄面包，喝拿铁。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "café con leche",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "拿铁（加奶咖啡）"
+      ]
+     ]
+    },
+    {
+     "w": "un poco de …",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "一点……"
+      ]
+     ],
+     "x": [
+      [
+       "un poco de sal",
+       "一点盐"
+      ]
+     ]
+    },
+    {
+     "w": "¡Qué rico está!",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "真好吃！"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "“橙汁”：",
+     "o": [
+      "zumo naranja",
+      "zumo de naranja",
+      "naranja zumo",
+      "zumo por naranja"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Yo ___ arroz con pollo.",
+     "o": [
+      "como",
+      "bebo",
+      "tomo un",
+      "es"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Quiero ___ leche. (一点)",
+     "o": [
+      "un poco",
+      "un poco de",
+      "poco",
+      "una poca"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "西班牙人一般几点吃晚饭？",
+     "o": [
+      "18 点",
+      "21 点以后",
+      "12 点",
+      "16 点"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "sopa ___ tomate (番茄汤)",
+     "a": [
+      "de"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Quiero un café con leche.",
+     "p": [
+      "Quiero",
+      "un café",
+      "con leche."
+     ],
+     "zh": "我要一杯拿铁。"
+    }
+   ]
+  },
+  {
+   "id": "es.1.6.4",
+   "title": "购物与价格",
+   "words": [
+    "costar",
+    "precio",
+    "dinero",
+    "euro",
+    "caro",
+    "barato",
+    "pagar",
+    "tarjeta",
+    "zapato",
+    "bolso"
+   ],
+   "grammar": [
+    {
+     "title": "¿Cuánto cuesta?",
+     "points": [
+      "costar（花费）o → ue：¿Cuánto cuesta este bolso?（单数）¿Cuánto cuestan estos zapatos?（复数）",
+      "也可以问 ¿Cuánto es?（一共多少钱）",
+      "付款：¿Puedo pagar con tarjeta? / en efectivo（现金）。",
+      "试穿：¿Puedo probármelo? 尺码：¿Tiene una talla más grande?",
+      "caro / barato 要和名词性数一致：unos zapatos caros, una camisa barata。"
+     ],
+     "examples": [
+      [
+       "¿Cuánto cuestan estos zapatos? — Cuestan cuarenta euros.",
+       "这双鞋多少钱？——四十欧。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿Cuánto cuesta?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "多少钱？"
+      ]
+     ]
+    },
+    {
+     "w": "con tarjeta / en efectivo",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "刷卡 / 现金"
+      ]
+     ]
+    },
+    {
+     "w": "Es muy caro.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "太贵了。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "¿Cuánto ___ los zapatos?",
+     "o": [
+      "cuesta",
+      "cuestan",
+      "costan",
+      "cuestas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "¿Cuánto ___ este bolso?",
+     "o": [
+      "cuesta",
+      "cuestan",
+      "costa",
+      "costar"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Esta camisa es muy ___.",
+     "o": [
+      "barato",
+      "barata",
+      "baratos",
+      "baratas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "“可以刷卡吗？”：",
+     "o": [
+      "¿Puedo pagar con tarjeta?",
+      "¿Puedo pagar en tarjeta?",
+      "¿Pago tarjeta?",
+      "¿Tarjeta puedo?"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "¿Cuánto ___? — Son veinte euros. (一共)",
+     "a": [
+      "es"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "¿Puedo pagar con tarjeta?",
+     "p": [
+      "¿Puedo",
+      "pagar",
+      "con tarjeta?"
+     ],
+     "zh": "可以刷卡吗？"
+    }
+   ]
+  },
+  {
+   "id": "es.1.6.5",
+   "title": "这个、那个与颜色",
+   "words": [
+    "este",
+    "ese",
+    "esto",
+    "eso",
+    "azul",
+    "verde",
+    "blanco",
+    "negro",
+    "amarillo"
+   ],
+   "grammar": [
+    {
+     "title": "指示词三级",
+     "points": [
+      "este / esta / estos / estas：这（离我近）",
+      "ese / esa / esos / esas：那（离你近）",
+      "aquel / aquella / aquellos / aquellas：那（离两人都远）",
+      "中性 esto / eso / aquello：指不知名的东西或一件事：¿Qué es esto? Eso es verdad.",
+      "颜色是形容词，要一致：una camisa blanca, unos zapatos negros。azul, verde 只变数：las bolsas verdes。"
+     ],
+     "examples": [
+      [
+       "Quiero esta camisa azul, no esa blanca.",
+       "我要这件蓝衬衫，不要那件白的。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "¿De qué color es?",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "是什么颜色的？"
+      ]
+     ]
+    },
+    {
+     "w": "Me lo llevo.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "我买这个了。"
+      ]
+     ]
+    },
+    {
+     "w": "Eso es.",
+     "t": "常用表达",
+     "s": [
+      [
+       "",
+       "就是这样 / 没错。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "___ zapatos son bonitos. (这些)",
+     "o": [
+      "Este",
+      "Esta",
+      "Estos",
+      "Estas"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "¿Qué es ___? (这个东西)",
+     "o": [
+      "este",
+      "esta",
+      "esto",
+      "estos"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "una camisa ___",
+     "o": [
+      "blanco",
+      "blanca",
+      "blancos",
+      "blancas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "los coches ___",
+     "o": [
+      "verde",
+      "verdes",
+      "verdas",
+      "verdos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿De qué ___ es tu bolso? — Es negro.",
+     "a": [
+      "color"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Me lo llevo.",
+     "p": [
+      "Me",
+      "lo",
+      "llevo."
+     ],
+     "zh": "我买这个了。"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "Me ___ los helados.",
+    "o": [
+     "gusta",
+     "gustan",
+     "gusto",
+     "gustas"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "A ellos ___ gusta viajar.",
+    "o": [
+     "le",
+     "les",
+     "nos",
+     "me"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Yo ___ una cerveza, por favor.",
+    "o": [
+     "quiero",
+     "quiere",
+     "queremos",
+     "quieren"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "¿Tú ___ venir a la fiesta?",
+    "o": [
+     "puedes",
+     "podes",
+     "puede",
+     "puedo"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "¿Cuánto ___ estas naranjas?",
+    "o": [
+     "cuesta",
+     "cuestan",
+     "cuestas",
+     "costa"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "___ casa de allí es muy vieja. (远处那座)",
+    "o": [
+     "Esta",
+     "Esa",
+     "Aquella",
+     "Aquel"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "unas flores ___",
+    "o": [
+     "rojo",
+     "roja",
+     "rojos",
+     "rojas"
+    ],
+    "a": 3
+   },
+   {
+    "t": "f",
+    "q": "— No me gusta el café. — A mí ___.",
+    "a": [
+     "tampoco"
+    ]
+   },
+   {
+    "t": "f",
+    "q": "Para ___, el pescado. (我要)",
+    "a": [
+     "mí"
+    ]
+   },
+   {
+    "t": "o",
+    "a": "La cuenta, por favor.",
+    "p": [
+     "La cuenta,",
+     "por favor."
+    ],
+    "zh": "请结账。"
+   }
+  ]
+ }
+}
