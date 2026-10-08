@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1438-8ffe46";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1441-53452e";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1002,6 +1002,7 @@ html.paper .chip:hover{background:var(--hair);color:var(--ink)}
 html.paper .star.on{color:var(--sig)}
 /* 打卡日历 */
 .ck-cal{display:flex;flex-direction:column;gap:4px}
+.ps-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.ps-week select{padding:4px 2px;font-size:13px}
 .ck-wk,.ck-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}
 .ck-wk span{font-size:11px;color:var(--faint);text-align:center}
 .ck-grid i{aspect-ratio:1;border:1px dashed var(--line)}
@@ -6973,9 +6974,11 @@ function settingsModal() {
       ${ja ? `<label class="f">振り仮名<select id="set-furi">${[["all", "全部注音"], ["hard", "难词注音"], ["none", "不注音"]].map(([k, v]) => `<option value="${k}" ${(S.profile.furi || "hard") === k ? "selected" : ""}>${v}</option>`).join("")}</select></label>` : ""}
     </div>
     ${ja ? "" : `<div class="row"><button class="btn sm" id="set-test">试听单词</button><button class="btn sm" id="set-test2">试听例句</button><span class="faint" style="font-size:13px">${esc(TTS.pick()?.name || "")}</span></div>`}
+    <div class="hr"></div><div class="row between"><div><h3 style="margin:0 0 4px">学习计划</h3><p class="faint" style="font-size:13px;margin:0">${planOn() ? "监工模式开启" : "监工模式关闭"} · 上班日 ${PL.set?.min.work} 分钟 · 休息日 ${PL.set?.min.rest} 分钟</p></div><button class="btn sm" id="set-plan">计划设置</button></div>
     ${archiveSectionHTML()}${appSectionHTML()}
-    <div class="row" style="justify-content:flex-end"><button class="btn" data-close>好</button></div>`, (m) => {
+    <div class="row" style="justify-content:flex-end"><button class="btn" data-close>好</button></div>`, (m, close) => {
     bindArchiveSection(m); bindAppSection(m);
+    $("#set-plan", m).onclick = () => { close(); planSettingsModal(); };
     $("#set-acc", m) && ($("#set-acc", m).onchange = e => { if (es) S.profile.esAccent = e.target.value; else S.profile.accent = e.target.value; saveProfile(); });
     $("#set-voice", m) && ($("#set-voice", m).onchange = e => { S.profile.voiceName = e.target.value; saveProfile(); es ? sayEs("Buenos días, ¿cómo estás?") : TTS.speak("Thank you for your order. It will arrive on Monday."); });
     $("#set-spd", m).onchange = e => { S.profile.speed = +e.target.value; saveProfile(); };
@@ -7009,10 +7012,102 @@ function paperAssets(lang) {
 }
 
 
+/* ============ 监工 · 数据：三门语言统一排课的设置、进度、每日清单 ============
+   存在 plan/ 下，三种语言共用（和各语言自己的 log / wp 分开，原来的记录一律不动）：
+   plan/settings  设置：每周主课排布、上班日、可用时间、欠债上限、及格线
+   plan/state     进度：课时完成情况、单元测验、回炉、欠债
+   plan/d_YYYY-MM 每日清单快照（当天第一次打开时生成，当天不再变），按月分文档 */
+const PLAN_LANGS = ["en", "es", "ja"];
+const PLAN_NAME = { en: "英语", es: "西语", ja: "日语" };
+const PLAN_DEFAULT = () => ({
+  v: 1, on: true, start: today(),
+  // 默认排布：主课按天轮换，同一门语言隔天出现（间隔效应）；日语接近 N1，放在上班日的周五
+  pattern: ["es", "en", "es", "en", "ja", "es", "en"],
+  workdays: [0, 1, 2, 3, 4],
+  min: { work: 45, rest: 90 },
+  // 复习最多占当天时间的 35%；欠债每天最多还 2 项、不超过 30% 时间；最多积 5 项，7 天还不上自动勾销
+  reviewShare: .35, debt: { max: 5, perDay: 2, share: .3, expire: 7 },
+  pass: .8, carry: {}
+});
+const PL = { set: null, st: null, days: {}, loaded: false };
+const planStateDefault = () => ({ v: 1, les: {}, units: {}, debt: [], debtLog: [], settled: "" });
+const savePlanSet = () => Saver.mark("plan/settings", () => PL.set);
+const savePlanState = () => Saver.mark("plan/state", () => PL.st);
+const planDayPath = k => "plan/d_" + k.slice(0, 7);
+function savePlanDay(k) {
+  const pre = k.slice(0, 7);
+  Saver.mark(planDayPath(k), () => { const days = {}; for (const [d, v] of Object.entries(PL.days)) if (d.startsWith(pre)) days[d] = v; return { days }; });
+}
+async function planLoad() {
+  let list = [];
+  try { list = await Store.list("plan"); } catch (e) { console.warn("plan", e); }
+  for (const { _id, ...d } of list) {
+    if (_id === "settings") PL.set = d;
+    else if (_id === "state") PL.st = d;
+    else if (_id.startsWith("d_")) Object.assign(PL.days, d.days || {});
+  }
+  PL.loaded = true;
+}
+// 第一次启用：写默认设置；启用当天之前已经做了的学习量记进 carry，砖块不丢
+function planInit() {
+  if (!PL.set) {
+    PL.set = PLAN_DEFAULT();
+    const lg = { [curLang()]: S.log, ...(S.otherLogs || {}) };
+    for (const l of PLAN_LANGS) { const p = dayPoints(lg[l]?.days?.[today()]); if (p) PL.set.carry[l] = p; }
+    PL.isNew = true; savePlanSet();
+  }
+  PL.set = Object.assign(PLAN_DEFAULT(), PL.set);
+  PL.st = Object.assign(planStateDefault(), PL.st || {});
+}
+const planOn = () => !!PL.set?.on;
+const isWorkday = k => (PL.set?.workdays || [0, 1, 2, 3, 4]).includes(dowMon(k));
+const planMinutes = k => isWorkday(k) ? PL.set.min.work : PL.set.min.rest;
+const mainLangOf = k => PL.set.pattern[dowMon(k)] || "en";
+// 按每周天数生成交错的排布：每天挑「欠得最多」的语言，同一语言尽量不连着
+function patternFromCounts(c) {
+  const out = [], got = { en: 0, es: 0, ja: 0 }, tot = PLAN_LANGS.reduce((s, l) => s + (c[l] || 0), 0) || 1;
+  for (let d = 0; d < 7; d++) {
+    let best = null, bv = -1e9;
+    for (const l of PLAN_LANGS) { if (!c[l]) continue; const v = c[l] * (d + 1) / tot - got[l] - (out[d - 1] === l ? .5 : 0); if (v > bv) { bv = v; best = l; } }
+    out.push(best || "en"); got[best || "en"]++;
+  }
+  return out;
+}
+const patternCounts = p => PLAN_LANGS.reduce((o, l) => (o[l] = p.filter(x => x === l).length, o), {});
+
+/* ---- 设置：时间、上班日、每周排布 ---- */
+function planSettingsModal() {
+  const s = PL.set, cnt = patternCounts(s.pattern);
+  const sel = (id, opts, val) => `<select id="${id}">${opts.map(o => `<option value="${o}" ${+val === o ? "selected" : ""}>${o} 分钟</option>`).join("")}</select>`;
+  modal(`<div><div class="eyebrow">PLAN<span class="zh">学习计划</span></div><h2>监工设置</h2></div>
+    <label class="row" style="gap:8px;font-size:14px"><input type="checkbox" id="ps-on" ${s.on ? "checked" : ""}> 监工模式：每天按清单学，完成当天计划才砌砖</label>
+    <div class="fields">
+      <label class="f">上班日可用时间${sel("ps-work", [20, 30, 45, 60, 75, 90, 120], s.min.work)}</label>
+      <label class="f">休息日可用时间${sel("ps-rest", [30, 45, 60, 90, 120, 150, 180], s.min.rest)}</label>
+    </div>
+    <div class="f"><span>哪几天上班</span><div class="row" style="gap:10px">${WEEK.map((w, i) => `<label class="row" style="gap:4px;font-size:14px;color:var(--ink)"><input type="checkbox" class="ps-wd" value="${i}" ${s.workdays.includes(i) ? "checked" : ""}>周${w}</label>`).join("")}</div></div>
+    <div class="f"><span>每周主课天数（合计 7 天，自动交错排开）</span><div class="row" style="gap:12px">${PLAN_LANGS.map(l => `<label class="row" style="gap:4px;font-size:14px;color:var(--ink)">${PLAN_NAME[l]}<input type="number" class="ps-cnt" data-l="${l}" min="0" max="7" value="${cnt[l]}" style="width:52px"></label>`).join("")}</div></div>
+    <div class="f"><span>每天的主课（可单独改）</span><div class="ps-week">${WEEK.map((w, i) => `<label class="f" style="min-width:0">周${w}<select class="ps-day" data-d="${i}">${PLAN_LANGS.map(l => `<option value="${l}" ${s.pattern[i] === l ? "selected" : ""}>${PLAN_NAME[l]}</option>`).join("")}</select></label>`).join("")}</div></div>
+    <p class="faint" style="font-size:13px;margin:0">改动从明天的清单开始生效；今天的清单已经排好，不会变。</p>
+    <div class="row" style="justify-content:flex-end"><button class="btn" data-close>取消</button><button class="btn pri" id="ps-ok">保存</button></div>`, (m, close) => {
+    const days = () => $$(".ps-day", m);
+    $$(".ps-cnt", m).forEach(i => i.onchange = () => {
+      const c = {}; $$(".ps-cnt", m).forEach(x => c[x.dataset.l] = Math.max(0, Math.min(7, +x.value || 0)));
+      const tot = PLAN_LANGS.reduce((a, l) => a + c[l], 0); if (tot !== 7) { toast(`合计 ${tot} 天，需要正好 7 天`); return; }
+      patternFromCounts(c).forEach((l, i) => days()[i].value = l);
+    });
+    $("#ps-ok", m).onclick = () => {
+      const pat = days().map(x => x.value), wd = $$(".ps-wd", m).filter(x => x.checked).map(x => +x.value);
+      Object.assign(s, { on: $("#ps-on", m).checked, pattern: pat, workdays: wd, min: { work: +$("#ps-work", m).value, rest: +$("#ps-rest", m).value } });
+      savePlanSet(); close(); toast("计划设置已保存"); if (current === "today") render();
+    };
+  });
+}
+
 /* ============ 存档：导出 / 导入（网页版 ↔ App 版搬家、日常备份） ============
    导出：把存储里所有学习记录打成一个 JSON 文件；导入：原样写回。
    导入只写文件里有的文档，不删除本机已有的其他记录。 */
-const ARCHIVE_COLLS = ["app", "ja_app", "es_app", "content", "chap", "wp", "ja_wp", "es_wp", "mywords", "ja_mywords", "es_mywords", "audit", "decks", "deckwords", "srs"];
+const ARCHIVE_COLLS = ["app", "ja_app", "es_app", "plan", "content", "chap", "wp", "ja_wp", "es_wp", "mywords", "ja_mywords", "es_mywords", "audit", "decks", "deckwords", "srs"];
 async function exportArchive() {
   await Saver.flush().catch(() => { });
   const docs = {};
@@ -7166,7 +7261,7 @@ async function migrateV3() {
     if (!h0 || h0 === "home") logP.then(l => { if (S.log) return; const el = $("#view"); const old = $("#sheet", el); if (!(old && old.dataset.lang === curLang())) el.innerHTML = `<div class="desk"><div class="sheet" id="sheet"></div></div>`; document.body.classList.add("at-home"); mountSheet($("#sheet"), curLang(), l && l.days ? l : { days: {} }, { interactive: false }); }).catch(() => { });
     [log, stats, mistakes, favs, content, wp, my] = await Promise.all([
       logP, Store.get(appP("stats")), Store.get(appP("mistakes")), Store.get(appP("favs")),
-      Store.list("content"), Store.list(nsPath("wp")), Store.list(nsPath("mywords")), loadLexicon()
+      Store.list("content"), Store.list(nsPath("wp")), Store.list(nsPath("mywords")), loadLexicon(), planLoad()
     ]);
   } catch (e) {
     console.warn("load", e);
@@ -7194,6 +7289,8 @@ async function migrateV3() {
     saveProfile();
   } else S.profile = profile;
   if (/^j[123]$/.test(S.profile.bookJa || "")) { S.profile.bookJa = "n1"; saveProfile(); }
+  await Promise.race([S.otherLogsReady, sleep(1500)]);
+  planInit();
   if (!S.profile.v3) {
     const r = await migrateV3();
     const prev = S.profile.plan?.inputs || {};
