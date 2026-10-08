@@ -27,7 +27,7 @@ def tracked():
             for d, _, fs in os.walk(full):
                 for f in sorted(fs):
                     rel = os.path.relpath(os.path.join(d, f), ROOT).replace(os.sep, "/")
-                    if rel not in SKIP and not f.startswith("."):
+                    if rel not in SKIP and not f.startswith(".") and not f.endswith(".md"):
                         out.append(rel)
     return out
 

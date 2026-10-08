@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1441-53452e";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1443-458e96";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1917,6 +1917,7 @@ const BOOKS = {
   b2: { name: "塔身 · 第 2 册", short: "塔身", desc: "核心 1768 词", tier: "CORPUS" },
   b3: { name: "塔顶 · 第 3 册", short: "塔顶", desc: "TOEIC 商务 568 词", tier: "FASTIGIUM" },
   my: { name: "散砖 · 生词本", short: "生词本", desc: "自选词", tier: "LATERES SPARSI" },
+  cur: { name: "课纲 · 自编词条", short: "课纲", desc: "课纲里写的词条与表达", tier: "CURSUS" },
   n1: { name: "N1 · 語彙", short: "N1", desc: "N1 範囲：漢語・和語・慣用句・四字熟語・オノマトペ・諺", tier: "N1 GOI" },
   n0: { name: "N0 · 語彙", short: "N0", desc: "ネイティブ水準：書き言葉・雅語・成句", tier: "N0 GOI" },
   // 旧版的三册（按词性分）：只为兼容旧存档里的 bookJa，词已全部并入 n1 / n0
@@ -7103,6 +7104,45 @@ function planSettingsModal() {
     };
   });
 }
+
+/* ============ 监工 · 课纲：curriculum/index.json（阶段→单元）+ 每单元一个文件 ============ */
+const CUR = { idx: null, idxP: null, units: {}, loading: {} };
+function curIndex() {
+  return CUR.idxP ||= fetch("curriculum/index.json").then(r => { if (!r.ok) throw new Error("curriculum"); return r.json(); }).then(j => (CUR.idx = j)).catch(e => { CUR.idxP = null; throw e; });
+}
+// 按学习顺序排开的单元列表：[{id, title, file|todo, stage, si, ui}]
+function curUnits(lang) {
+  const L = CUR.idx?.langs?.[lang]; if (!L) return [];
+  return L.stages.flatMap((st, si) => st.units.map((u, ui) => ({ ...u, stage: st, si, ui })));
+}
+const curUnitMeta = id => curUnits(id.split(".")[0]).find(u => u.id === id) || null;
+const unitIdOf = lessonId => lessonId.split(".").slice(0, 3).join(".");
+function curUnit(id) {
+  if (id in CUR.units) return Promise.resolve(CUR.units[id]);
+  const u = curUnitMeta(id);
+  if (!u?.file) return Promise.resolve(null);
+  return CUR.loading[id] ||= fetch(u.file).then(r => r.ok ? r.json() : null).then(j => { CUR.units[id] = j; if (j && id.startsWith(curLang() + ".")) curMergeLex(j); return j; })
+    .catch(() => null).finally(() => { delete CUR.loading[id]; });
+}
+function curLesson(id) { const u = CUR.units[unitIdOf(id)]; return u?.lessons.find(l => l.id === id) || null; }
+// 课纲里自写的词条并入当前语言的词库（书名 cur），这样学词、复习、词条页都能用
+const CUR_ENTRY = o => [o.p || "", o.s || [], o.x || [], o.t || "", o.c || "", o.n || ""];
+function curMergeLex(unit) {
+  for (const l of unit.lessons || []) for (const o of [...(l.words || []), ...(l.special || [])]) {
+    if (!o || typeof o !== "object" || !o.w) continue;
+    const k = o.w.toLowerCase(); if (LEX.low.has(k)) continue;
+    LEX.e[o.w] = CUR_ENTRY(o); LEX.low.set(k, o.w); LEX.bookOf.set(k, "cur");
+  }
+}
+// 已经学到的单元的自写词条：启动时先并入，复习到期时才找得到
+async function curPrepareLang(lang) {
+  try { await curIndex(); } catch { return; }
+  const us = curUnits(lang), started = new Set(Object.keys(PL.st?.les || {}).map(unitIdOf));
+  const need = us.filter((u, i) => u.file && (started.has(u.id) || i === 0));
+  await Promise.all(need.map(u => curUnit(u.id)));
+}
+const lessonWords = l => (l?.words || []).map(o => typeof o === "string" ? o : o.w);
+const lessonSpecial = l => (l?.special || []).map(o => typeof o === "string" ? o : o.w);
 
 /* ============ 存档：导出 / 导入（网页版 ↔ App 版搬家、日常备份） ============
    导出：把存储里所有学习记录打成一个 JSON 文件；导入：原样写回。
