@@ -1,0 +1,892 @@
+{
+ "id": "en.1.6",
+ "title": "过去与将来",
+ "goal": "一般过去时、将来时、现在完成时入门",
+ "lessons": [
+  {
+   "id": "en.1.6.1",
+   "title": "一般过去时：was / were 与规则动词",
+   "words": [
+    "policy",
+    "everything",
+    "love",
+    "process",
+    "music",
+    "including",
+    "consider",
+    "appear",
+    "actually",
+    "buy",
+    "probably",
+    "human"
+   ],
+   "grammar": [
+    {
+     "ref": "b_past"
+    },
+    {
+     "title": "过去发生、已经结束",
+     "points": [
+      "be 的过去式：I / he / she / it → was；you / we / they → were。",
+      "规则动词加 -ed：work → worked；以 e 结尾加 -d：live → lived；辅音 + y → ied：study → studied；重读闭音节双写：stop → stopped。",
+      "-ed 的读法：清辅音后 /t/（worked）；浊辅音和元音后 /d/（played）；t, d 后 /ɪd/（wanted, needed）。",
+      "时间词：yesterday, last night/week/year, ... ago, in 2020, just now。",
+      "否定和疑问用 did，后面动词回到原形：I didn't go. Did you see it?"
+     ],
+     "examples": [
+      [
+       "I worked late yesterday, so I was tired.",
+       "我昨天工作到很晚，所以很累。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "… ago",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "……以前"
+      ]
+     ],
+     "x": [
+      [
+       "I moved here two years ago.",
+       "我两年前搬到这里。"
+      ]
+     ]
+    },
+    {
+     "w": "last night",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "昨晚"
+      ]
+     ],
+     "x": [
+      [
+       "What did you do last night?",
+       "你昨晚做了什么？"
+      ]
+     ]
+    },
+    {
+     "w": "stay up late",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "熬夜"
+      ]
+     ],
+     "x": [
+      [
+       "I stayed up late last night.",
+       "我昨晚熬夜了。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "They ___ at home yesterday.",
+     "o": [
+      "was",
+      "were",
+      "are",
+      "is"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "study 的过去式是？",
+     "o": [
+      "studyed",
+      "studied",
+      "studed",
+      "studyied"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "stop 的过去式是？",
+     "o": [
+      "stoped",
+      "stopped",
+      "stopt",
+      "stopd"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "wanted 的 -ed 读？",
+     "o": [
+      "/t/",
+      "/d/",
+      "/ɪd/"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Did you ___ the email?",
+     "o": [
+      "read",
+      "reads",
+      "readed",
+      "reading"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "I ___ (stay) up late last night.",
+     "a": [
+      "stayed"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "I moved here two years ago.",
+     "zh": "我两年前搬到这里。"
+    }
+   ]
+  },
+  {
+   "id": "en.1.6.2",
+   "title": "不规则动词的过去式",
+   "words": [
+    "wait",
+    "serve",
+    "market",
+    "die",
+    "send",
+    "expect",
+    "sense",
+    "build",
+    "stay",
+    "fall",
+    "nation",
+    "plan"
+   ],
+   "grammar": [
+    {
+     "title": "最常用的 30 个不规则动词",
+     "points": [
+      "go → went　come → came　get → got　make → made　take → took　see → saw　say → said　know → knew",
+      "give → gave　find → found　think → thought　tell → told　become → became　leave → left　feel → felt　put → put",
+      "bring → brought　buy → bought　begin → began　keep → kept　hold → held　write → wrote　stand → stood　hear → heard",
+      "let → let　meet → met　run → ran　pay → paid　sit → sat　speak → spoke",
+      "规律帮助记忆：-ought / -aught 一组（bought, brought, thought, caught, taught）；不变的一组（put, cut, let, set, hit）。"
+     ],
+     "examples": [
+      [
+       "I bought a new phone and gave the old one to my sister.",
+       "我买了新手机，把旧的给了妹妹。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "have a good time",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "玩得开心"
+      ]
+     ],
+     "x": [
+      [
+       "We had a good time at the party.",
+       "我们在派对上玩得很开心。"
+      ]
+     ]
+    },
+    {
+     "w": "make a mistake",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "犯错"
+      ]
+     ],
+     "x": [
+      [
+       "I made a mistake.",
+       "我犯了个错。"
+      ]
+     ]
+    },
+    {
+     "w": "take a break",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "休息一下"
+      ]
+     ],
+     "x": [
+      [
+       "Let's take a break.",
+       "休息一下吧。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "buy 的过去式是？",
+     "o": [
+      "buyed",
+      "bought",
+      "brought",
+      "buied"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "think 的过去式是？",
+     "o": [
+      "thinked",
+      "thought",
+      "thank",
+      "taught"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "We ___ a great time last weekend.",
+     "o": [
+      "have",
+      "had",
+      "has",
+      "haved"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "She ___ me the news yesterday.",
+     "o": [
+      "tell",
+      "told",
+      "telled",
+      "tells"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "put 的过去式是？",
+     "o": [
+      "putted",
+      "put",
+      "puted",
+      "pat"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "I ___ (make) a big mistake.",
+     "a": [
+      "made"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "He ___ (leave) the office at six.",
+     "a": [
+      "left"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "We had a good time at the party.",
+     "zh": "我们在派对上玩得很开心。"
+    }
+   ]
+  },
+  {
+   "id": "en.1.6.3",
+   "title": "将来时：will 与 be going to",
+   "words": [
+    "cut",
+    "college",
+    "interest",
+    "death",
+    "course",
+    "experience",
+    "behind",
+    "reach",
+    "local",
+    "kill",
+    "remain",
+    "effect"
+   ],
+   "grammar": [
+    {
+     "ref": "b_future"
+    },
+    {
+     "title": "说将来的两种方式",
+     "points": [
+      "will + 动词原形：临时决定、预测、承诺：I'll call you later. It will rain tomorrow.",
+      "be going to + 动词原形：已有的打算；有迹象的预测：I'm going to visit Paris next month. Look at the clouds — it's going to rain.",
+      "现在进行时也能表示已安排好的将来：I'm meeting Tom tomorrow.",
+      "时间和条件状语从句里用一般现在时表将来：I'll call you when I get home.（不说 when I will get）"
+     ],
+     "examples": [
+      [
+       "I'm going to start a new job next week.",
+       "我下周要开始一份新工作。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "next week",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "下周"
+      ]
+     ],
+     "x": [
+      [
+       "See you next week.",
+       "下周见。"
+      ]
+     ]
+    },
+    {
+     "w": "call back",
+     "t": "短语动词",
+     "s": [
+      [
+       "",
+       "回电话"
+      ]
+     ],
+     "x": [
+      [
+       "I'll call you back.",
+       "我回头给你回电话。"
+      ]
+     ]
+    },
+    {
+     "w": "as soon as",
+     "t": "连词",
+     "s": [
+      [
+       "",
+       "一……就……"
+      ]
+     ],
+     "x": [
+      [
+       "I'll tell you as soon as I know.",
+       "我一知道就告诉你。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "— The phone is ringing. — I ___ get it.",
+     "o": [
+      "will",
+      "am going to",
+      "going to",
+      "am"
+     ],
+     "a": 0,
+     "e": "临时决定用 will。"
+    },
+    {
+     "t": "c",
+     "q": "Look at those clouds! It ___ rain.",
+     "o": [
+      "will",
+      "is going to",
+      "going",
+      "rains"
+     ],
+     "a": 1,
+     "e": "有迹象的预测。"
+    },
+    {
+     "t": "c",
+     "q": "I'll call you when I ___ home.",
+     "o": [
+      "get",
+      "will get",
+      "got",
+      "getting"
+     ],
+     "a": 0,
+     "e": "时间状语从句主将从现。"
+    },
+    {
+     "t": "c",
+     "q": "We ___ visit our grandparents next Sunday. (已经计划好)",
+     "o": [
+      "will",
+      "are going to",
+      "go to",
+      "going"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "I'll call you ___. (回电话)",
+     "a": [
+      "back"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "I'll tell you as soon as I know.",
+     "zh": "我一知道就告诉你。"
+    }
+   ]
+  },
+  {
+   "id": "en.1.6.4",
+   "title": "现在完成时入门",
+   "words": [
+    "yeah",
+    "suggest",
+    "class",
+    "control",
+    "raise",
+    "care",
+    "perhaps",
+    "late",
+    "hard",
+    "field",
+    "else",
+    "pass"
+   ],
+   "grammar": [
+    {
+     "ref": "b_perfect"
+    },
+    {
+     "title": "过去的事和现在有关",
+     "points": [
+      "结构：have / has + 过去分词：I have finished. She has gone.",
+      "常用过去分词：been, done, gone, seen, eaten, written, taken, given, made, had, finished, lived",
+      "经历：Have you ever been to Japan? I have never seen snow.",
+      "持续到现在：I have lived here for ten years / since 2015.",
+      "和一般过去时的区别：有明确过去时间（yesterday, last year, ago）只能用一般过去时。",
+      "have been to（去过，回来了） vs have gone to（去了，还没回来）。"
+     ],
+     "examples": [
+      [
+       "I have never been to Europe.",
+       "我从来没去过欧洲。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "so far",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "到目前为止"
+      ]
+     ],
+     "x": [
+      [
+       "So far, so good.",
+       "到目前为止一切顺利。"
+      ]
+     ]
+    },
+    {
+     "w": "for a long time",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "很长时间"
+      ]
+     ],
+     "x": [
+      [
+       "I haven't seen him for a long time.",
+       "我很久没见他了。"
+      ]
+     ]
+    },
+    {
+     "w": "have been to",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "去过"
+      ]
+     ],
+     "x": [
+      [
+       "Have you ever been to Kyoto?",
+       "你去过京都吗？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "I ___ here since 2020.",
+     "o": [
+      "live",
+      "lived",
+      "have lived",
+      "am living"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "She ___ to Paris. She is still there.",
+     "o": [
+      "has been",
+      "has gone",
+      "went",
+      "goes"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "I ___ that movie last week.",
+     "o": [
+      "have seen",
+      "saw",
+      "see",
+      "has seen"
+     ],
+     "a": 1,
+     "e": "last week 是明确过去时间。"
+    },
+    {
+     "t": "c",
+     "q": "Have you ___ eaten sushi?",
+     "o": [
+      "ever",
+      "never",
+      "yet",
+      "ago"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "eat 的过去分词是？",
+     "o": [
+      "ate",
+      "eaten",
+      "eated",
+      "eat"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "I haven't seen her ___ a long time.",
+     "a": [
+      "for"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Have you ever been to Kyoto?",
+     "zh": "你去过京都吗？"
+    }
+   ]
+  },
+  {
+   "id": "en.1.6.5",
+   "title": "时态对比复习",
+   "words": [
+    "former",
+    "sell",
+    "major",
+    "sometimes",
+    "require",
+    "along",
+    "development",
+    "themselves",
+    "report",
+    "role",
+    "better",
+    "economic"
+   ],
+   "grammar": [
+    {
+     "title": "五个时态放在一起看",
+     "points": [
+      "一般现在：习惯、事实 —— I work in Osaka.",
+      "现在进行：此刻正在 —— I'm working now.",
+      "一般过去：过去某时，已结束 —— I worked late yesterday.",
+      "现在完成：经历、持续到现在、结果影响现在 —— I've worked here for two years.",
+      "将来：will / be going to —— I'll work from home tomorrow.",
+      "做题先找时间标志词：every day → 一般现在；now / Look! → 进行；yesterday / ago → 过去；for / since / ever / already → 完成；tomorrow / next → 将来。"
+     ],
+     "examples": [
+      [
+       "I usually walk, but today I'm taking a taxi because I got up late.",
+       "我平时走路，但今天打车，因为起晚了。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "these days",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "最近；如今"
+      ]
+     ],
+     "x": [
+      [
+       "I'm very busy these days.",
+       "我最近很忙。"
+      ]
+     ]
+    },
+    {
+     "w": "used to",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "过去常常（现在不了）"
+      ]
+     ],
+     "x": [
+      [
+       "I used to live in Shanghai.",
+       "我以前住在上海。"
+      ]
+     ]
+    },
+    {
+     "w": "from now on",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "从现在起"
+      ]
+     ],
+     "x": [
+      [
+       "From now on, I'll study every day.",
+       "从现在起我每天都学。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "He ___ TV every evening.",
+     "o": [
+      "watches",
+      "is watching",
+      "watched",
+      "has watched"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Don't call now — she ___ dinner.",
+     "o": [
+      "cooks",
+      "is cooking",
+      "cooked",
+      "has cooked"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "We ___ each other since childhood.",
+     "o": [
+      "know",
+      "knew",
+      "have known",
+      "are knowing"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "I ___ my keys yesterday.",
+     "o": [
+      "lose",
+      "lost",
+      "have lost",
+      "am losing"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "I think it ___ snow tomorrow.",
+     "o": [
+      "will",
+      "is",
+      "has",
+      "was"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "I ___ (use) to live in Shanghai.",
+     "a": [
+      "used"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "From now on, I will study every day.",
+     "zh": "从现在起我每天都学。"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "I ___ to the cinema last night.",
+    "o": [
+     "go",
+     "went",
+     "have gone",
+     "will go"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "She ___ in this company for five years.",
+    "o": [
+     "works",
+     "worked",
+     "has worked",
+     "is working"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Did he ___ the meeting?",
+    "o": [
+     "attend",
+     "attended",
+     "attends",
+     "attending"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "write 的过去式是？",
+    "o": [
+     "writed",
+     "wrote",
+     "written",
+     "writ"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "I'm going ___ a new laptop.",
+    "o": [
+     "buy",
+     "to buy",
+     "buying",
+     "bought"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "When I ___ older, I'll travel the world.",
+    "o": [
+     "am",
+     "will be",
+     "was",
+     "be"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Have you finished your homework ___?",
+    "o": [
+     "already",
+     "yet",
+     "ever",
+     "ago"
+    ],
+    "a": 1,
+    "e": "疑问句末尾用 yet。"
+   },
+   {
+    "t": "f",
+    "q": "I ___ (not see) him yesterday.",
+    "a": [
+     "didn't see",
+     "did not see"
+    ]
+   },
+   {
+    "t": "o",
+    "a": "I haven't seen him for a long time.",
+    "zh": "我很久没见他了。"
+   },
+   {
+    "t": "o",
+    "a": "We had a good time last weekend.",
+    "zh": "我们上周末玩得很开心。"
+   }
+  ]
+ }
+}

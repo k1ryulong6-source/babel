@@ -1,0 +1,870 @@
+{
+ "id": "en.1.8",
+ "title": "句子升级",
+ "goal": "被动语态、to do 与 doing、定语从句入门、宾语从句、学期总复习",
+ "lessons": [
+  {
+   "id": "en.1.8.1",
+   "title": "被动语态入门",
+   "words": [
+    "form",
+    "support",
+    "event",
+    "official",
+    "whose",
+    "matter",
+    "everyone",
+    "couple",
+    "site",
+    "project",
+    "hit",
+    "base"
+   ],
+   "grammar": [
+    {
+     "ref": "b_passive"
+    },
+    {
+     "title": "“被……”：be + 过去分词",
+     "points": [
+      "主动：People speak English here. → 被动：English is spoken here.",
+      "be 随时态变：is made（现在）、was made（过去）、will be made（将来）、has been made（完成）、can be made（情态）。",
+      "什么时候用被动：不知道/不重要是谁做的；想强调承受动作的人或物。商务英语（托业）里非常多：The meeting was postponed.",
+      "动作执行者用 by：The book was written by a doctor."
+     ],
+     "examples": [
+      [
+       "This bridge was built in 1990.",
+       "这座桥建于 1990 年。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "be made of",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "由……制成（看得出原料）"
+      ]
+     ],
+     "x": [
+      [
+       "The table is made of wood.",
+       "桌子是木头做的。"
+      ]
+     ]
+    },
+    {
+     "w": "be born",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "出生"
+      ]
+     ],
+     "x": [
+      [
+       "I was born in 1995.",
+       "我出生于 1995 年。"
+      ]
+     ]
+    },
+    {
+     "w": "be called",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "被叫作"
+      ]
+     ],
+     "x": [
+      [
+       "This dish is called ramen.",
+       "这道菜叫拉面。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "This car ___ in Japan.",
+     "o": [
+      "made",
+      "was made",
+      "is make",
+      "making"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "The letters ___ every morning.",
+     "o": [
+      "deliver",
+      "are delivered",
+      "delivered",
+      "is delivered"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "The room ___ yet.",
+     "o": [
+      "hasn't cleaned",
+      "hasn't been cleaned",
+      "didn't clean",
+      "isn't cleaning"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "I ___ in Shanghai.",
+     "o": [
+      "born",
+      "was born",
+      "am born",
+      "borned"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "The table is made ___ wood.",
+     "a": [
+      "of"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "This bridge was built in 1990.",
+     "zh": "这座桥建于 1990 年。"
+    }
+   ]
+  },
+  {
+   "id": "en.1.8.2",
+   "title": "to do 与 doing",
+   "words": [
+    "activity",
+    "star",
+    "table",
+    "court",
+    "produce",
+    "eat",
+    "teach",
+    "oil",
+    "half",
+    "situation",
+    "easy",
+    "cost"
+   ],
+   "grammar": [
+    {
+     "ref": "b_nonfinite"
+    },
+    {
+     "title": "动词后面跟哪一种",
+     "points": [
+      "接 to do：want, hope, decide, plan, need, agree, promise, refuse, learn, try（努力）",
+      "接 doing：enjoy, finish, mind, avoid, practice, keep, suggest, give up",
+      "两者意思不同：stop to do（停下来去做另一件事）/ stop doing（停止正在做的事）；remember to do（记得要去做）/ remember doing（记得做过）。",
+      "介词后面用 doing：I'm good at cooking. Thank you for coming.",
+      "表目的用 to do：I came here to study."
+     ],
+     "examples": [
+      [
+       "I enjoy reading, and I want to read more this year.",
+       "我喜欢读书，今年想多读一些。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "look forward to doing",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "期待（to 是介词，接 doing）"
+      ]
+     ],
+     "x": [
+      [
+       "I look forward to seeing you.",
+       "期待见到你。"
+      ]
+     ]
+    },
+    {
+     "w": "be used to doing",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "习惯于"
+      ]
+     ],
+     "x": [
+      [
+       "I'm used to getting up early.",
+       "我习惯早起。"
+      ]
+     ]
+    },
+    {
+     "w": "decide to do",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "决定做"
+      ]
+     ],
+     "x": [
+      [
+       "We decided to stay.",
+       "我们决定留下。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "I enjoy ___ to music.",
+     "o": [
+      "listen",
+      "to listen",
+      "listening",
+      "listened"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "She decided ___ a new job.",
+     "o": [
+      "find",
+      "to find",
+      "finding",
+      "found"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Please remember ___ the door when you leave.",
+     "o": [
+      "lock",
+      "to lock",
+      "locking",
+      "locked"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "I look forward to ___ from you.",
+     "o": [
+      "hear",
+      "hearing",
+      "heard",
+      "be heard"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "He stopped ___ because he was tired.",
+     "o": [
+      "run",
+      "to run",
+      "running",
+      "ran"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Thank you for ___ (come).",
+     "a": [
+      "coming"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "I look forward to seeing you.",
+     "zh": "期待见到你。"
+    }
+   ]
+  },
+  {
+   "id": "en.1.8.3",
+   "title": "定语从句入门",
+   "words": [
+    "industry",
+    "figure",
+    "street",
+    "image",
+    "itself",
+    "phone",
+    "either",
+    "data",
+    "cover",
+    "quite",
+    "picture",
+    "clear"
+   ],
+   "grammar": [
+    {
+     "ref": "b_clause"
+    },
+    {
+     "title": "用一个句子修饰名词",
+     "points": [
+      "who 修饰人：The man who lives next door is a doctor.",
+      "which 修饰物：The bag which I bought yesterday is red.",
+      "that 人和物都可以（口语最常用）：the book that I read。",
+      "关系词在从句里作宾语时可以省略：The movie (that) we saw was great.",
+      "whose 表示“……的”：the girl whose father is a pilot。",
+      "中文把修饰语放在名词前（“住在隔壁的男人”），英语放在名词后。"
+     ],
+     "examples": [
+      [
+       "The restaurant that we went to last night was excellent.",
+       "我们昨晚去的那家餐厅非常好。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "the one who …",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "……的那个人"
+      ]
+     ],
+     "x": [
+      [
+       "She's the one who helped me.",
+       "她就是帮过我的那个人。"
+      ]
+     ]
+    },
+    {
+     "w": "something that …",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "……的东西"
+      ]
+     ],
+     "x": [
+      [
+       "It's something that everyone needs.",
+       "这是每个人都需要的东西。"
+      ]
+     ]
+    },
+    {
+     "w": "the place where …",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "……的地方"
+      ]
+     ],
+     "x": [
+      [
+       "This is the place where we met.",
+       "这就是我们相遇的地方。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "The woman ___ called you is my boss.",
+     "o": [
+      "which",
+      "who",
+      "whose",
+      "where"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "This is the phone ___ I bought last week.",
+     "o": [
+      "who",
+      "which",
+      "whose",
+      "where"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "I know a boy ___ mother is a singer.",
+     "o": [
+      "who",
+      "which",
+      "whose",
+      "that"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "哪个句子可以省略关系词？",
+     "o": [
+      "The man who called is here.",
+      "The movie that we saw was great.",
+      "The girl whose bag was lost cried.",
+      "The dog that bit me ran away."
+     ],
+     "a": 1,
+     "e": "that 在从句中作宾语可省。"
+    },
+    {
+     "t": "f",
+     "q": "This is the place ___ we met.",
+     "a": [
+      "where"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "She is the one who helped me.",
+     "zh": "她就是帮过我的那个人。"
+    }
+   ]
+  },
+  {
+   "id": "en.1.8.4",
+   "title": "宾语从句与间接疑问",
+   "words": [
+    "practice",
+    "piece",
+    "land",
+    "recent",
+    "describe",
+    "product",
+    "doctor",
+    "wall",
+    "patient",
+    "worker",
+    "news",
+    "test"
+   ],
+   "grammar": [
+    {
+     "title": "I think … / Do you know …?",
+     "points": [
+      "宾语从句：I think (that) he is right. I know (that) she lives here.（that 常省略）",
+      "“是否”用 if / whether：I don't know if he will come.",
+      "间接疑问用<b>陈述语序</b>：Do you know where the station is?（不是 where is the station）",
+      "更礼貌的问法：Could you tell me what time it is? / I wonder why she left.",
+      "否定前移：I don't think it will rain.（比 I think it won't rain 更自然）"
+     ],
+     "examples": [
+      [
+       "Could you tell me where the nearest bank is?",
+       "能告诉我最近的银行在哪吗？"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "I wonder if …",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "我想知道是否……（委婉询问）"
+      ]
+     ],
+     "x": [
+      [
+       "I wonder if you could help me.",
+       "不知你能否帮我。"
+      ]
+     ]
+    },
+    {
+     "w": "I'm not sure …",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "我不确定……"
+      ]
+     ],
+     "x": [
+      [
+       "I'm not sure what he means.",
+       "我不确定他是什么意思。"
+      ]
+     ]
+    },
+    {
+     "w": "Could you tell me …?",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "能告诉我……吗？"
+      ]
+     ],
+     "x": [
+      [
+       "Could you tell me how to get there?",
+       "能告诉我怎么去吗？"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "Do you know where ___?",
+     "o": [
+      "is the station",
+      "the station is",
+      "does the station",
+      "station is the"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "I don't know ___ he will come or not.",
+     "o": [
+      "that",
+      "whether",
+      "what",
+      "which"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Could you tell me what time ___?",
+     "o": [
+      "is it",
+      "it is",
+      "does it",
+      "it"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "更自然的表达是？",
+     "o": [
+      "I think it won't rain.",
+      "I don't think it will rain."
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "I wonder ___ she is angry. (为什么)",
+     "a": [
+      "why"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Could you tell me how to get there?",
+     "zh": "能告诉我怎么去吗？"
+    }
+   ]
+  },
+  {
+   "id": "en.1.8.5",
+   "title": "学期总复习",
+   "words": [
+    "movie",
+    "certain",
+    "North",
+    "personal",
+    "simply",
+    "technology",
+    "catch",
+    "step",
+    "baby",
+    "computer",
+    "type",
+    "attention"
+   ],
+   "grammar": [
+    {
+     "title": "这一学期的语法地图",
+     "points": [
+      "句子 = 主语 + 谓语（+ 宾语/表语）；五种基本句型是一切句子的骨架。",
+      "名词：单复数、可数不可数；冠词 a/an/the；代词主格、宾格、物主、反身。",
+      "时态：一般现在、现在进行、一般过去、将来、现在完成；先找时间标志词。",
+      "修饰：形容词 vs 副词、比较级最高级、介词 in/on/at。",
+      "连接：and/but/so/because/although；定语从句 who/which/that；宾语从句陈述语序。",
+      "动词后接：情态动词 + 原形；被动 be + 过去分词；to do / doing 的固定搭配。",
+      "下一学期（托业 600）会把这些语法放进职场场景，练题型和速度。"
+     ],
+     "examples": [
+      [
+       "Although I started from zero, I have learned a lot this term.",
+       "虽然我从零开始，这学期学到了很多。"
+      ]
+     ]
+    }
+   ],
+   "special": [
+    {
+     "w": "keep doing",
+     "t": "句型",
+     "s": [
+      [
+       "",
+       "坚持做"
+      ]
+     ],
+     "x": [
+      [
+       "Keep practicing every day.",
+       "每天坚持练习。"
+      ]
+     ]
+    },
+    {
+     "w": "step by step",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "一步一步"
+      ]
+     ],
+     "x": [
+      [
+       "We'll do it step by step.",
+       "我们一步一步来。"
+      ]
+     ]
+    },
+    {
+     "w": "little by little",
+     "t": "固定搭配",
+     "s": [
+      [
+       "",
+       "一点一点地"
+      ]
+     ],
+     "x": [
+      [
+       "My English is getting better little by little.",
+       "我的英语一点点在进步。"
+      ]
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "t": "c",
+     "q": "My sister ___ in a bank.",
+     "o": [
+      "work",
+      "works",
+      "working",
+      "is work"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "I ___ my homework already.",
+     "o": [
+      "finish",
+      "finished",
+      "have finished",
+      "will finish"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "There ___ much traffic today.",
+     "o": [
+      "isn't",
+      "aren't",
+      "don't",
+      "doesn't"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "He is the ___ student in our class.",
+     "o": [
+      "tall",
+      "taller",
+      "tallest",
+      "most tall"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The email ___ yesterday.",
+     "o": [
+      "sent",
+      "was sent",
+      "is sent",
+      "sends"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "I'm not sure what ___.",
+     "o": [
+      "does he want",
+      "he wants",
+      "wants he",
+      "he does want"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Keep ___ (practice) every day.",
+     "a": [
+      "practicing",
+      "practising"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "My English is getting better little by little.",
+     "zh": "我的英语一点点在进步。"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "English ___ all over the world.",
+    "o": [
+     "speaks",
+     "is spoken",
+     "spoke",
+     "is speaking"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Do you mind ___ the door?",
+    "o": [
+     "close",
+     "to close",
+     "closing",
+     "closed"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "The man ___ is talking to Mary is my uncle.",
+    "o": [
+     "which",
+     "who",
+     "whose",
+     "where"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Can you tell me how much ___?",
+    "o": [
+     "is this",
+     "this is",
+     "does this",
+     "this"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "I hope ___ you again soon.",
+    "o": [
+     "see",
+     "to see",
+     "seeing",
+     "seen"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "The windows ___ every week.",
+    "o": [
+     "clean",
+     "are cleaned",
+     "cleaned",
+     "cleaning"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "I don't know ___ she likes it.",
+    "o": [
+     "if",
+     "that",
+     "what",
+     "which"
+    ],
+    "a": 0
+   },
+   {
+    "t": "f",
+    "q": "I'm used to ___ (get) up early.",
+    "a": [
+     "getting"
+    ]
+   },
+   {
+    "t": "o",
+    "a": "This is the place where we met.",
+    "zh": "这就是我们相遇的地方。"
+   },
+   {
+    "t": "o",
+    "a": "We decided to stay at home.",
+    "zh": "我们决定待在家里。"
+   }
+  ]
+ }
+}
