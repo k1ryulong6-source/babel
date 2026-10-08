@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261002.0205-1cc766";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1438-8ffe46";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1916,9 +1916,12 @@ const BOOKS = {
   b2: { name: "塔身 · 第 2 册", short: "塔身", desc: "核心 1768 词", tier: "CORPUS" },
   b3: { name: "塔顶 · 第 3 册", short: "塔顶", desc: "TOEIC 商务 568 词", tier: "FASTIGIUM" },
   my: { name: "散砖 · 生词本", short: "生词本", desc: "自选词", tier: "LATERES SPARSI" },
-  j1: { name: "壱 · 漢語", short: "漢語", desc: "書き言葉の漢語 1100", tier: "壱 KANGO" },
-  j2: { name: "弐 · 和語", short: "和語", desc: "動詞・形容詞・副詞 698", tier: "弐 WAGO" },
-  j3: { name: "参 · 熟語", short: "熟語", desc: "慣用句・四字熟語・オノマトペ・諺 1127", tier: "参 JUKUGO" },
+  n1: { name: "N1 · 語彙", short: "N1", desc: "N1 範囲：漢語・和語・慣用句・四字熟語・オノマトペ・諺", tier: "N1 GOI" },
+  n0: { name: "N0 · 語彙", short: "N0", desc: "ネイティブ水準：書き言葉・雅語・成句", tier: "N0 GOI" },
+  // 旧版的三册（按词性分）：只为兼容旧存档里的 bookJa，词已全部并入 n1 / n0
+  j1: { name: "壱 · 漢語", short: "漢語", desc: "", tier: "壱 KANGO" },
+  j2: { name: "弐 · 和語", short: "和語", desc: "", tier: "弐 WAGO" },
+  j3: { name: "参 · 熟語", short: "熟語", desc: "", tier: "参 JUKUGO" },
   bk: { name: "文型", short: "文型", desc: "N1 以上の文型", tier: "BUNKEI" },
   a1: { name: "A1 · 入门", short: "A1", desc: "高频词 515 · 内置", tier: "ACCESO" },
   a2: { name: "A2 · 基础", short: "A2", desc: "AI 按需生成", tier: "PLATAFORMA" }
@@ -1931,7 +1934,7 @@ let BOOK_ORDER = ["b1", "b2", "b3"];
    ns 为存档前缀：英语沿用原来的路径（空前缀），其他语言的进度、生词本各自独立。 */
 const LANGS = {
   en: { name: "英语", code: "EN", ready: true, tts: "en", words: "data/words.json", dict: "dict/", roots: "data/roots.json", syn: "data/syn.json", ext: "data/ext.json", ns: "", exam: "TOEIC" },
-  ja: { name: "日语", code: "JA", ready: true, tts: "ja", words: "ja/words.json", dict: "ja/d/", roots: null, syn: null, ext: null, ns: "ja_", exam: "N0", books: ["j1", "j2", "j3"] },
+  ja: { name: "日语", code: "JA", ready: true, tts: "ja", words: "ja/words.json", dict: "ja/d/", roots: null, syn: null, ext: null, ns: "ja_", exam: "N0", books: ["n1", "n0"] },
   es: { name: "西班牙语", code: "ES", ready: true, tts: "es", words: "es/words.json", dict: null, roots: null, syn: null, ext: null, ns: "es_", exam: "CEFR", books: ["a1", "a2", "b1"] }
 };
 const isJa = () => curLang() === "ja";
@@ -1967,6 +1970,9 @@ async function mergePacks() {
     for (const [b, ws] of Object.entries(j.books)) LEX.books[b] = [...new Set([...(LEX.books[b] || []), ...ws])];
   }
 }
+// 日语：全部等级的词（词性类型 LEX.e[w][3] 只是标签，不再决定分册）
+const jaAllWords = () => BOOK_ORDER.flatMap(b => LEX.books[b] || []);
+const jaByTag = t => jaAllWords().filter(w => LEX.e[w]?.[3] === t);
 function bookWords(b) {
   if (b === "my") return S.my.chunks.flatMap(c => c.words.filter(w => !w.lvl).map(w => w.w));
   if (isEs() && (b === "a2" || b === "b1")) return [...(LEX.books[b] || []), ...S.my.chunks.flatMap(c => c.words.filter(w => w.lvl === b.toUpperCase() && !LEX.low.has(w.w.toLowerCase())).map(w => w.w))];
@@ -2323,7 +2329,7 @@ function updateBadges() { } // 旧版导航上的角标已随导航一起取消
 /* 学习语言在首页右上角的折角切换（见 9f-shell.js） */
 
 /* ============ 单词学习 ============ */
-const WS = { mode: "overview", listBook: "b1", filter: "", listN: 200, sess: null };
+const WS = { mode: "overview", listBook: "b1", filter: "", tag: "", listN: 200, sess: null };
 const RATE_NEW = [["不认识", "本轮再练 3 次"], ["模糊", "本轮再练 2 次"], ["认识", "本轮再考 1 次"], ["太简单", "标为已掌握"]];
 const RATE_REV = [["忘了", "明天再来"], ["模糊", "间隔减半"], ["记得", "按计划拉长"], ["太简单", "间隔加倍"]];
 const TYPE_NAME = { en2zh: "看词选释义", zh2en: "看释义选词", audio: "听发音选释义", cloze: "例句填空", spell: "听音拼写", yomi: "选读音", yomiIn: "写读音" };
@@ -2373,7 +2379,7 @@ VIEWS.words = (el) => {
         <label class="row" style="gap:6px;font-size:13px;color:var(--muted)">每组<select id="gsz" style="width:auto;padding:4px 8px">${[5, 10, 15, 20].map(n => `<option ${n === gsz ? "selected" : ""}>${n}</option>`).join("")}</select>个</label>
       </div>
     </div>
-    <div class="sec-head"><h2>${isJa() ? "三冊" : isEs() ? "CEFR 三级" : "塔的三段"}</h2><span class="muted" style="font-size:13px">${isJa() || isEs() ? `共 ${BOOK_ORDER.reduce((s, b) => s + bookWords(b).length, 0)} ${isJa() ? "语" : "词"}` : `点击切换正在砌的一段；共 ${BOOK_ORDER.reduce((s, b) => s + bookWords(b).length, 0)} 块砖（词）`}</span></div>
+    <div class="sec-head"><h2>${isJa() ? "N1 · N0" : isEs() ? "CEFR 三级" : "塔的三段"}</h2><span class="muted" style="font-size:13px">${isJa() || isEs() ? `共 ${BOOK_ORDER.reduce((s, b) => s + bookWords(b).length, 0)} ${isJa() ? "语" : "词"}` : `点击切换正在砌的一段；共 ${BOOK_ORDER.reduce((s, b) => s + bookWords(b).length, 0)} 块砖（词）`}</span></div>
     <div class="grid3" style="grid-template-columns:repeat(auto-fill,minmax(250px,1fr))">${[...BOOK_ORDER, "my"].map(b => { const s = bookStats(b); return `<div class="deck ${b === book ? "on" : ""}" data-book="${b}" role="button" tabindex="0">
       <div class="tier">${BOOKS[b].tier}</div><div class="row between"><b style="font-size:17px;font-family:var(--serif);font-weight:900">${esc(BOOKS[b].name)}</b>${b === book ? `<span class="now">正在学</span>` : s.due ? `<span class="pill acc num">${s.due} 待复习</span>` : ""}</div>
       <div class="faint" style="font-size:13px">${esc(BOOKS[b].desc)}</div>
@@ -2685,18 +2691,21 @@ document.addEventListener("keydown", sessionKeys);
 function renderWordList(el) {
   const b = WS.listBook; const f = WS.filter.trim().toLowerCase(); const t = today();
   const all = bookWords(b);
-  const rows = all.filter(w => { if (!f) return true; if (w.toLowerCase().includes(f)) return true; const i = wordInfo(w); return (i?.s || []).some(s => s[1].includes(WS.filter.trim())); });
+  // 日语：词性类型（名/動/慣用句/四字熟語…）作为标签筛选
+  const tags = isJa() ? [...new Set(all.map(w => LEX.e[w]?.[3]).filter(Boolean))] : [];
+  const rows = all.filter(w => { if (WS.tag && LEX.e[w]?.[3] !== WS.tag) return false; if (!f) return true; if (w.toLowerCase().includes(f)) return true; const i = wordInfo(w); return (i?.s || []).some(s => s[1].includes(WS.filter.trim())); });
   const st = w => { const r = prog(w); if (!r) return `<span class="pill">未学</span>`; if (r[0] >= MASTER_STAGE) return `<span class="pill good">已掌握</span>`; return `<span class="pill ${r[1] <= t ? "acc" : ""}">阶段 ${r[0]} · ${r[1] <= t ? "今天" : r[1].slice(5)}</span>`; };
   el.innerHTML = `<div class="stack">
     <div class="sec-head"><div><button class="btn sm ghost" id="back">← 返回</button><h1>${esc(BOOKS[b].name)}</h1></div>
-    <input type="text" id="flt" placeholder="搜索单词或中文释义" value="${esc(WS.filter)}" style="max-width:260px"></div>
+    <div class="row" style="flex-wrap:nowrap">${tags.length ? `<select id="tagf" style="width:auto">${[["", "全部类型"], ...tags.map(t => [t, t])].map(([v, n]) => `<option value="${esc(v)}" ${WS.tag === v ? "selected" : ""}>${esc(n)}</option>`).join("")}</select>` : ""}<input type="text" id="flt" placeholder="搜索单词或中文释义" value="${esc(WS.filter)}" style="max-width:260px"></div></div>
     <div class="tbl-wrap"><table><thead><tr><th>#</th><th>单词</th><th>释义</th><th>状态</th><th></th></tr></thead><tbody>
-    ${rows.slice(0, WS.listN).map(w => { const i = wordInfo(w); return `<tr><td class="faint num">${all.indexOf(w) + 1}</td><td class="w"><span class="wd" data-w="${esc(w)}">${esc(w)}</span>${i?.kind ? `<span class="kind ${i.kind}">${i.kind === "col" ? "搭配" : "短语"}</span>` : ""} ${isEs() ? artChip(i?.p) : `<span class="faint" style="font-weight:400;font-size:13px">${esc(i?.p || "")}</span>`}</td><td style="font-size:14px">${esc(senseText(i, 2))}</td><td>${st(w)}</td><td style="white-space:nowrap">${spkBtn(w, 'style="width:28px;height:28px"')} ${starBtn("w", w)}</td></tr>`; }).join("")}
+    ${rows.slice(0, WS.listN).map(w => { const i = wordInfo(w); return `<tr><td class="faint num">${all.indexOf(w) + 1}</td><td class="w"><span class="wd" data-w="${esc(w)}">${esc(w)}</span>${isJa() && i?.t ? ` <span class="pill" style="font-weight:400">${esc(i.t)}</span>` : ""}${i?.kind ? `<span class="kind ${i.kind}">${i.kind === "col" ? "搭配" : "短语"}</span>` : ""} ${isEs() ? artChip(i?.p) : `<span class="faint" style="font-weight:400;font-size:13px">${esc(i?.p || "")}</span>`}</td><td style="font-size:14px">${esc(senseText(i, 2))}</td><td>${st(w)}</td><td style="white-space:nowrap">${spkBtn(w, 'style="width:28px;height:28px"')} ${starBtn("w", w)}</td></tr>`; }).join("")}
     </tbody></table></div>
     ${rows.length > WS.listN ? `<button class="btn" id="more">显示更多（还有 ${rows.length - WS.listN} 个）</button>` : ""}
     ${!rows.length ? `<div class="empty">${b === "my" && !all.length ? "生词本为空" : "没有匹配的单词"}</div>` : ""}
   </div>`;
-  $("#back").onclick = () => { WS.mode = "overview"; WS.filter = ""; render(); };
+  $("#back").onclick = () => { WS.mode = "overview"; WS.filter = ""; WS.tag = ""; render(); };
+  $("#tagf") && ($("#tagf").onchange = e => { WS.tag = e.target.value; WS.listN = 200; render(); });
   $("#more") && ($("#more").onclick = () => { WS.listN += 300; render(); });
   const inp = $("#flt"); let tm;
   inp.oninput = () => { clearTimeout(tm); tm = setTimeout(() => { WS.filter = inp.value; WS.listN = 200; const pos = inp.selectionStart; render(); const n = $("#flt"); n.focus(); n.setSelectionRange(pos, pos); }, 250); };
@@ -3297,11 +3306,12 @@ function phraseIndex() {
 function jaPhraseIndex(text) {
   const out = [];
   const pat = w => { w = w.replace(/^〜/, "").replace(/^[をがにでとはもの]/, "").trim(); if (w.length < 3) return null; const endV = /[うくぐすつぬぶむるい]$/.test(w) && KJ.test(w); return new RegExp(escRe(endV ? w.slice(0, -1) : w) + (endV ? "[ぁ-ゖ]{0,4}" : ""), "g"); };
-  for (const w of bookWords("j3")) {
+  for (const w of jaAllWords()) {
     const info = wordInfo(w); if (!/慣用句|諺/.test(info?.t || "") || !KJ.test(w)) continue;
     const re = pat(w); if (re && re.test(text)) out.push({ base: w, re: new RegExp(re.source, "g"), type: "phr", zh: firstSense(info).replace(/^\S+ /, ""), local: true });
   }
-  for (const b of ["j1", "j2"]) for (const w of bookWords(b)) {
+  for (const w of jaAllWords()) {
+    if (/慣用句|諺|四字熟語|オノマトペ/.test(LEX.e[w]?.[3] || "")) continue;
     const stem = /[ぁ-ゖ]$/.test(w) && KJ.test(w) ? w.slice(0, -1) : w; if (stem.length < 2 || !text.includes(stem)) continue;
     const info = wordInfo(w);
     for (const c of String(info?.c || "").split(/[、,]/).map(x => x.trim()).filter(x => x.length >= 3 && x.includes(stem))) {
@@ -5580,7 +5590,7 @@ JSON のみで返答：{"title":"題名","text":"本文"}`, { cache: false });
 const CS_JA = { tab: "慣用句", q: "" };
 const CORPUS_TABS = [["慣用句", "惯用句"], ["四字熟語", "四字熟语"], ["オノマトペ", "拟声拟态语"], ["諺", "谚语"], ["文型", "N1+ 文型"]];
 VIEWS_JA.corpus = (el) => {
-  const listOf = t => t === "文型" ? (LEX.bunkei || []).map(x => x[0]) : bookWords("j3").filter(w => LEX.e[w]?.[3] === t);
+  const listOf = t => t === "文型" ? (LEX.bunkei || []).map(x => x[0]) : jaByTag(t);
   const all = listOf(CS_JA.tab);
   const q = CS_JA.q.trim(), hq = hira(q);
   const rows = all.filter(w => { if (!q) return true; const e = LEX.e[w]; return w.includes(q) || hira(e?.[0] || "").includes(hq) || (e?.[1] || []).some(s => s[1].includes(q)); });
@@ -6550,7 +6560,7 @@ const MENU = (() => {
       ]];
     }
     if (lang === "ja") {
-      const corp = t => { const all = t === "文型" ? (LEX.bunkei || []).map(x => x[0]) : bookWords("j3").filter(w => LEX.e[w]?.[3] === t); return all.length ? all.filter(w => prog(w)).length / all.length : 0; };
+      const corp = t => { const all = t === "文型" ? (LEX.bunkei || []).map(x => x[0]) : jaByTag(t); return all.length ? all.filter(w => prog(w)).length / all.length : 0; };
       const ar = (d.ar || []).length;
       return [[
         { zh: "読解", icon: "", frac: clamp01(ar), sub: ar ? `今日 ${ar} 篇` : "一篇", act: () => { AS.open = null; go("reading"); } },
@@ -7183,6 +7193,7 @@ async function migrateV3() {
     S.profile.plan = generatePlan({ level: "beginner", target: "toeic", score: 730, minutes: 45, days: 6, examDate: "", deck: "all" });
     saveProfile();
   } else S.profile = profile;
+  if (/^j[123]$/.test(S.profile.bookJa || "")) { S.profile.bookJa = "n1"; saveProfile(); }
   if (!S.profile.v3) {
     const r = await migrateV3();
     const prev = S.profile.plan?.inputs || {};
