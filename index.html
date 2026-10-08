@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1502-8f6851";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1510-f6a59b";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1002,6 +1002,21 @@ html.paper .chip:hover{background:var(--hair);color:var(--ink)}
 html.paper .star.on{color:var(--sig)}
 /* 打卡日历 */
 .ck-cal{display:flex;flex-direction:column;gap:4px}
+.plan-tag{position:absolute;left:14px;top:calc(env(safe-area-inset-top,0px) + 14px);z-index:6;display:flex;gap:8px;align-items:baseline;padding:6px 12px 7px;background:rgba(250,244,230,.93);border:1px solid rgba(40,30,20,.6);color:#2b2219;font-size:14px;cursor:pointer;box-shadow:2px 3px 0 rgba(40,30,20,.18)}
+.plan-tag b{font-family:var(--disp);font-weight:400;font-size:15px;color:#a33a26}
+.plan-tag i{font-style:normal;color:#2E6A45}
+.plan-tag.t-ja{font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;background:rgba(250,248,242,.95)}
+.plan-tag.t-es{background:rgba(232,212,178,.95)}
+.pl-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.pl-week>div{border:1px solid var(--line);padding:6px 4px;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:12px}
+.pl-week>div b{font-weight:700}.pl-week>div span{color:var(--muted)}.pl-week>div i{font-style:normal;font-family:var(--disp);font-size:14px}
+.pl-week>div.now{border-color:var(--sig);border-width:2px}.pl-week>div.ok i{color:var(--good)}.pl-week>div.miss i{color:var(--sig)}
+.ord-ans,.ord-pool{display:flex;flex-wrap:wrap;gap:8px;min-height:44px;align-items:center}
+.ord-ans{border-bottom:2px solid var(--ink);padding:6px 0}
+.tok{border:1px solid var(--ink);background:none;padding:6px 12px;font-size:16px;cursor:pointer}
+.ord-ans .tok{background:var(--accent-soft)}
+.tok:disabled{opacity:.6;cursor:default}
+.lesson-body li{margin:4px 0}
 .ps-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.ps-week select{padding:4px 2px;font-size:13px}
 .ck-wk,.ck-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}
 .ck-wk span{font-size:11px;color:var(--faint);text-align:center}
@@ -2044,7 +2059,7 @@ function applyRating(w, r, countStats = true) {
   const iv = r === 1 ? Math.max(1, Math.round(INTERVALS[st] / 2)) : INTERVALS[st];
   rec[0] = st; rec[1] = addDays(t, iv); rec[4] = t; if (!rec[5]) rec[5] = t;
   setProg(w, rec);
-  if (countStats) { bump("rv"); if (r >= 1) bump("rvOk"); }
+  if (countStats) { bump("rv"); if (r >= 1) bump("rvOk"); planOnReview(); }
 }
 // 新词毕业进入复习：first = 首次评分
 function graduate(w, first) {
@@ -2561,7 +2576,7 @@ function renderSess(el) {
     if (a && !a.spoke && (it.type === "zh2en" || it.type === "cloze")) { a.spoke = true; Speech.say(info.w); }
   }
   el.innerHTML = `<div class="flash stack">${head}<div class="stele-wrap"><div class="entry">${main}<div style="flex:1"></div>${meta}</div><div class="plinth"></div></div>${foot}</div>`;
-  $("#quit").onclick = () => { WS.mode = "overview"; WS.sess = null; render(); };
+  $("#quit").onclick = () => { const r = WS.sess?.ret; WS.mode = "overview"; WS.sess = null; r ? go(r) : render(); };
   $("#peek") && ($("#peek").onclick = () => { it.peek = true; s.back = true; render(); });
   $$("[data-r]", el).forEach(b => b.onclick = () => rateCard(+b.dataset.r));
   $$("[data-rr]", el).forEach(b => b.onclick = () => rateAfterQuiz(+b.dataset.rr));
@@ -2668,8 +2683,9 @@ function renderSessEnd(el) {
     ${wrong.length ? `<div class="stack" style="gap:6px;align-items:center"><div class="eyebrow">本轮出错的词（点开看词条）</div><div class="row" style="justify-content:center;gap:6px">${wrong.map(w => `<span class="wd chip en" data-w="${esc(w)}">${esc(w)}</span>`).join("")}</div></div>` : ""}
     ${s.kind === "learn" ? (isEs() ? `<p class="verse es-t" style="font-size:14px">Vamos, hagamos ladrillo y cozámoslo con fuego.<cite>GÉNESIS 11 : 3</cite></p>` : isJa() ? `<p class="verse jp" style="font-size:13px">さあ、れんがを造って、よく焼こう。<cite>創世記 11 : 3</cite></p>` : `<p class="verse" style="font-size:13px">来吧！我们要做砖，把砖烧透了。<cite>GENESIS 11 : 3</cite></p>`) : ""}
     <div class="row" style="justify-content:center">${s.kind === "learn" ? `<button class="btn pri" id="again">${isJa() || isEs() ? "再学一组" : "再砌一组"}</button>` : ""}<button class="btn ${s.kind === "learn" ? "" : "pri"}" id="back">返回</button></div></div></div>`;
-  $("#back").onclick = () => { WS.mode = "overview"; WS.sess = null; render(); };
+  $("#back").onclick = () => { WS.mode = "overview"; WS.sess = null; s.ret ? go(s.ret) : render(); };
   $("#again") && ($("#again").onclick = () => startLearn(activeBook()));
+  if (s.ret) { $("#again")?.remove(); $("#back").textContent = s.ret === "lesson" ? "回到课时" : "回到今日任务"; $("#back").classList.add("pri"); }
 }
 function sessionKeys(e) {
   if (current !== "words" || WS.mode !== "session" || !WS.sess || document.querySelector(".modal-bg") || Drawer.isOpen()) return;
@@ -6556,6 +6572,7 @@ const MENU = (() => {
         { zh: "阅读", lat: "Lectio", icon: "read", frac: clamp01((d.rd || 0) / Math.max(1, tp.reading || 1)), sub: tp.reading ? `今日 ${tp.reading} 篇` : "一篇短文", act: () => { RS.open = null; AS.open = null; go("reading"); } },
         { zh: "听力", lat: "Auditio", icon: "ear", frac: clamp01(lsMin / (tp.listen || 10)), sub: `${tp.lmode || "精听"} ${tp.listen || 10} 分钟`, act: () => { LS.open = null; go("listening"); } }
       ], [
+        { zh: "今日任务", lat: "Hodie", icon: "check", sub: planOn() ? "三门语言的当天清单" : "监工模式已关闭", act: () => go("today") },
         { zh: "词典", lat: "Lexicon", icon: "dict", sub: "查词 · 收藏 · 词根", act: () => go("dict") },
         { zh: "测试", lat: "Probatio", icon: "test", sub: "摸底 · 每周测验", act: () => { TS.mode = "home"; go("test"); } },
         { ...ck, frac: null }, set, ...audit
@@ -6570,6 +6587,7 @@ const MENU = (() => {
         { zh: "文法", frac: corp("文型"), sub: "N1+ 文型", act: () => { CS_JA.tab = "文型"; CS_JA.q = ""; go("corpus"); } },
         { zh: "四字熟語", frac: corp("四字熟語"), sub: "", act: () => { CS_JA.tab = "四字熟語"; CS_JA.q = ""; go("corpus"); } }
       ], [
+        { zh: "本日", frac: null, act: () => go("today") },
         { zh: "辞書", frac: null, act: () => go("dict") },
         { zh: "語彙庫", frac: null, act: () => { CS_JA.tab = "慣用句"; go("corpus"); } },
         { ...ck, zh: "打卡" }, { ...set, zh: "設定", frac: null }, ...audit.map(a => ({ ...a, zh: "抽查", frac: null }))
@@ -6581,6 +6599,7 @@ const MENU = (() => {
       { zh: "阅读", lat: "Lectura", icon: "codex", frac: clamp01((d.rq || 0) / 5), act: () => { ESR.open = null; AS.open = null; go("reading"); } },
       { zh: "听力", lat: "Escucha", icon: "shell", frac: clamp01(lsMin / 10), sub: `对话 · 独白 · 今日 ${lsMin} 分钟`, act: () => { LS.open = null; go("listening"); } }
     ], [
+      { zh: "今日任务", lat: "Hoy", icon: "seal", frac: null, act: () => go("today") },
       { zh: "变位", lat: "Conjugación", icon: "fret", frac: clamp01((d.cq || 0) / 20), act: () => { CJ.sess = null; go("conj"); } },
       { zh: "发音", lat: "Pronunciación", icon: "shell", frac: clamp01((d.pq || 0) / 10), act: () => go("pron") },
       { ...ck }, { ...set, frac: null }, ...audit.map(a => ({ ...a, frac: null }))
@@ -6889,6 +6908,17 @@ function towerView(el) {
   r.ready.then(() => { saveSnapshot(host, lang); showHint(host, lang, r.vb, r.cur); prepareNext(host, lang); });
   try { localStorage.setItem(seenKey(lang), JSON.stringify({ done: st.done, frac: st.frac, group: st.group, idx: st.idx })); localStorage.setItem("bt_lang", lang); } catch { }
   if (S.v3notice) { toast(S.v3notice, 6000); S.profile.v3seen = true; S.v3notice = ""; saveProfile(); }
+  planTag();
+}
+// 首页的「今日任务」签条：显示完成数，点开就是当天清单
+function planTag() {
+  const host = $("#sheet"); if (!host || current !== "home" || !PL.set) return;
+  let tag = $(".plan-tag", host);
+  if (!planOn()) { tag?.remove(); return; }
+  if (!tag) { tag = document.createElement("button"); tag.className = "plan-tag t-" + curLang(); tag.onclick = e => { e.stopPropagation(); go("today"); }; host.appendChild(tag); }
+  const ds = dayStatus();
+  tag.innerHTML = `<span>今日任务</span><b class="num">${ds ? `${ds.done}/${ds.n}` : "…"}</b>${ds?.all ? "<i>✓</i>" : ""}`;
+  tag.classList.toggle("all", !!ds?.all);
 }
 VIEWS.home = VIEWS_JA.home = VIEWS_ES.home = towerView;
 // 计划、进度、口语三个页面已取消（计划数据仍在，用来决定每天的新词量等目标）
@@ -6946,9 +6976,9 @@ function paperTexture(lang) {
   return PAPER_TEX[lang];
 }
 const PAGE_NAMES = {
-  en: { words: ["背单词", "Vocabula"], grammar: ["语法", "Grammatica"], reading: ["阅读", "Lectio"], listening: ["听力", "Auditio"], dict: ["词典", "Lexicon"], test: ["测试", "Probatio"] },
-  ja: { words: ["語彙", "ごい"], reading: ["読解", "どっかい"], dict: ["辞書", "じしょ"], corpus: ["語彙庫", "ごいこ"] },
-  es: { words: ["单词", "Vocabulario"], grammar: ["语法", "Gramática"], reading: ["阅读", "Lectura"], conj: ["变位", "Conjugación"], pron: ["发音", "Pronunciación"], listening: ["听力", "Escucha"], dict: ["词典", "Diccionario"] }
+  en: { today: ["今日任务", "Hodie"], lesson: ["课时", "Lectio"], utest: ["单元测验", "Probatio"], mistq: ["错题复习", "Errata"], words: ["背单词", "Vocabula"], grammar: ["语法", "Grammatica"], reading: ["阅读", "Lectio"], listening: ["听力", "Auditio"], dict: ["词典", "Lexicon"], test: ["测试", "Probatio"] },
+  ja: { today: ["本日の課題", "ほんじつ"], lesson: ["課", "か"], utest: ["単元テスト", "たんげん"], mistq: ["誤答の復習", "ごとう"], words: ["語彙", "ごい"], reading: ["読解", "どっかい"], dict: ["辞書", "じしょ"], corpus: ["語彙庫", "ごいこ"] },
+  es: { today: ["今日任务", "Hoy"], lesson: ["课时", "Lección"], utest: ["单元测验", "Examen"], mistq: ["错题复习", "Errores"], words: ["单词", "Vocabulario"], grammar: ["语法", "Gramática"], reading: ["阅读", "Lectura"], conj: ["变位", "Conjugación"], pron: ["发音", "Pronunciación"], listening: ["听力", "Escucha"], dict: ["词典", "Diccionario"] }
 };
 function pageBar() {
   let bar = $("#pagebar");
@@ -7143,6 +7173,520 @@ async function curPrepareLang(lang) {
 }
 const lessonWords = l => (l?.words || []).map(o => typeof o === "string" ? o : o.w);
 const lessonSpecial = l => (l?.special || []).map(o => typeof o === "string" ? o : o.w);
+
+/* ============ 监工 · 排课引擎：每日清单、时间伸缩、欠债、锁课 ============
+   每天第一次打开时生成当天清单（快照，当天不再变）：
+   ① 三门语言的到期复习（量少，按到期多少分配，合计不超过当天时间的 35%）＋ 到期错题
+   ② 还欠债（最多 2 项、不超过 30% 时间）
+   ③ 当天主课语言的课时：时间不够就拆成两半（单词+语法 / 特殊词汇+练习），时间多就连上下一课
+   课时的四部分都完成才算学完；学完才会出现下一课（锁课）。单元课时学完 → 单元测验（80% 及格），不及格 → 回炉 → 重测。 */
+// 估算耗时（分钟）：新词含学习和当场小测；语法含阅读讲解；练习按每题算
+const EST = { word: 1.2, special: 1.2, gram: 6, ex: .9, review: .2, mist: .6, test: 18, rem: 15, base: 3 };
+const BRICK_MIN = 30; // 30 分钟的计划量 = 一块砖
+const LES_PARTS = ["w", "g", "s", "x"];
+const PART_NAME = { w: "新词", g: "语法", s: "特殊词汇", x: "练习" };
+const SPECIAL_NAME = { en: "固定搭配", es: "常用表达", ja: "惯用句·熟语" };
+const lesRec = id => PL.st.les[id] || { p: {} };
+const lesRecW = id => (PL.st.les[id] ||= { p: {} });
+const unitRec = id => PL.st.units[id] || {};
+const unitRecW = id => (PL.st.units[id] ||= {});
+const lessonEst = l => l ? Math.round(EST.base + (l.words || []).length * EST.word + (l.special || []).length * EST.special + (l.grammar || []).length * EST.gram + (planExercises(l).length) * EST.ex) : 30;
+const partsEst = (l, parts) => { if (!l) return 15; const m = { w: (l.words || []).length * EST.word, g: (l.grammar || []).length * EST.gram, s: (l.special || []).length * EST.special, x: planExercises(l).length * EST.ex }; return Math.round(EST.base + parts.reduce((s, p) => s + m[p], 0)); };
+const lesPartsDone = id => LES_PARTS.filter(p => lesRec(id).p[p]);
+// 某门语言接下来该学什么（由完成记录推出来，不另存指针）
+function nextItem(lang) {
+  for (const u of curUnits(lang)) {
+    if (!u.file) return { kind: "gap", unit: u };
+    const ur = unitRec(u.id);
+    if (ur.pass) continue;
+    for (let i = 1; i <= (u.n || 5); i++) { const id = `${u.id}.${i}`; if (!lesRec(id).done) return { kind: "lesson", id, unit: u }; }
+    if (ur.rem && !ur.rem.done) return { kind: "rem", unit: u };
+    return { kind: "test", unit: u };
+  }
+  return { kind: "end" };
+}
+// 课时序号后面的那一项（同单元下一课，或单元测验）
+function itemAfter(lang, lessonId) {
+  const [l, s, u, i] = lessonId.split("."), meta = curUnitMeta(`${l}.${s}.${u}`);
+  if (+i < (meta?.n || 5)) return { kind: "lesson", id: `${l}.${s}.${u}.${+i + 1}`, unit: meta };
+  return { kind: "test", unit: meta };
+}
+const lessonTitle = id => curLesson(id)?.title || id;
+const unitTitle = id => curUnitMeta(id)?.title || id;
+
+/* ---- 到期数：当前语言直接数；其他语言读它们的记忆进度（只读） ---- */
+async function planDueCounts(k) {
+  const out = {};
+  for (const l of PLAN_LANGS) {
+    let wp = null, mk = null;
+    if (l === curLang()) { wp = S.wp; mk = S.mistakes; }
+    else {
+      const ns = LANGS[l].ns;
+      try { wp = (await Store.list(ns + "wp")).map(({ _id, ...d }) => d); } catch { wp = []; }
+      try { mk = await Store.get((ns ? ns + "app/" : "app/") + "mistakes"); } catch { }
+    }
+    let due = 0; for (const b of wp || []) for (const [w, r] of Object.entries(b.m || {})) if (!w.startsWith("cj:") && r[1] <= k && (l !== curLang() || LEX.low.has(w) || S.my.map.has(w))) due++;
+    const md = (mk?.items || []).filter(m => (m.due || k) <= k).length;
+    out[l] = { due, mist: md };
+  }
+  return out;
+}
+
+/* ---- 结算过去的日子：没完成的课时 / 测验 / 回炉记成欠债 ---- */
+function planSettle(k) {
+  const st = PL.st, set = PL.set;
+  const past = Object.keys(PL.days).filter(d => d < k && !PL.days[d].settled).sort();
+  for (const d of past) {
+    const day = PL.days[d];
+    if (!day.free) for (const t of day.tasks || []) {
+      if (!t.req || taskDone(t, d) || !["lesson", "test", "rem"].includes(t.kind)) continue;
+      if (st.debt.some(x => x.ref === t.ref && x.kind === t.kind)) continue;
+      st.debt.push({ id: uid(), from: d, lang: t.lang, kind: t.kind, ref: t.ref, parts: t.parts, est: t.est });
+    }
+    day.settled = true; savePlanDay(d);
+  }
+  // 已经还上的欠债去掉；超期的、超出上限的勾销（单词本身仍在复习曲线里，不会丢）
+  st.debt = st.debt.filter(x => !debtPaid(x));
+  const keep = [];
+  for (const x of st.debt) {
+    if (addDays(x.from, set.debt.expire) < k) st.debtLog.push({ ...x, end: k, how: "expired" });
+    else keep.push(x);
+  }
+  while (keep.length > set.debt.max) st.debtLog.push({ ...keep.shift(), end: k, how: "overflow" });
+  st.debt = keep; st.settled = k;
+  if (st.debtLog.length > 200) st.debtLog = st.debtLog.slice(-200);
+  savePlanState();
+}
+function debtPaid(x) {
+  if (x.kind === "lesson") return !!lesRec(x.ref).done;
+  if (x.kind === "test") return !!unitRec(x.ref).pass || (unitRec(x.ref).tests || []).some(t => t.at > x.from);
+  if (x.kind === "rem") return !!unitRec(x.ref).rem?.done || !!unitRec(x.ref).pass;
+  return true;
+}
+
+/* ---- 生成当天清单 ---- */
+let _planBuilding = null;
+function planEnsureToday() { return _planBuilding ||= _planEnsureToday().finally(() => { _planBuilding = null; }); }
+async function _planEnsureToday() {
+  const k = today();
+  if (!PL.set) return null;
+  try { await curIndex(); } catch (e) { console.warn("curriculum", e); }
+  if (PL.st.settled !== k) planSettle(k);
+  if (PL.days[k]) return PL.days[k];
+  if (!planOn()) { PL.days[k] = { free: true }; savePlanDay(k); return PL.days[k]; }
+  // 很久没打开（3 天以上）：提示回归模式
+  const lastDay = Object.keys(PL.days).filter(d => d < k).sort().pop();
+  if (lastDay && addDays(lastDay, 3) < k && PL.st.debt.length) PL.returning = { since: lastDay, n: PL.st.debt.length };
+  const budget = planMinutes(k), main = mainLangOf(k), due = await planDueCounts(k);
+  const tasks = [];
+  // ① 复习：合计不超过 35% 时间；每门至少 min(到期, 10)，其余按到期数比例分
+  const cap = Math.floor(budget * PL.set.reviewShare / EST.review);
+  const want = PLAN_LANGS.map(l => due[l].due), base = want.map(n => Math.min(n, 10));
+  let left = Math.max(0, cap - base.reduce((a, b) => a + b, 0));
+  const extra = want.map((n, i) => n - base[i]), exSum = extra.reduce((a, b) => a + b, 0);
+  const alloc = base.map((b, i) => b + (exSum ? Math.min(extra[i], Math.floor(left * extra[i] / exSum)) : 0));
+  PLAN_LANGS.forEach((l, i) => { if (alloc[i]) tasks.push({ id: "rv-" + l, lang: l, kind: "review", tgt: alloc[i], est: Math.max(1, Math.round(alloc[i] * EST.review)), req: true }); });
+  PLAN_LANGS.forEach(l => { const n = Math.min(due[l].mist, 10); if (n) tasks.push({ id: "mk-" + l, lang: l, kind: "mist", tgt: n, est: Math.max(1, Math.round(n * EST.mist)), req: true }); });
+  // ② 欠债：最旧的先还
+  let debtMin = 0, debtN = 0; const mainItem = nextItem(main);
+  for (const x of PL.st.debt) {
+    if (debtN >= PL.set.debt.perDay) break;
+    if (x.lang === main && mainItem.kind === x.kind && (mainItem.id || mainItem.unit?.id) === x.ref) continue; // 今天主课就是它
+    const est = x.est || 20; if (debtN && debtMin + est > budget * PL.set.debt.share) break;
+    tasks.push({ id: "db-" + x.id, lang: x.lang, kind: x.kind, ref: x.ref, parts: x.parts, est, req: true, debt: x.from });
+    debtMin += est; debtN++;
+  }
+  // ③ 主课
+  let room = budget - tasks.reduce((s, t) => s + t.est, 0);
+  const addMain = async (it, after) => {
+    if (it.kind === "lesson") {
+      await curUnit(unitIdOf(it.id)); const l = curLesson(it.id);
+      const doneP = lesPartsDone(it.id), todo = LES_PARTS.filter(p => !doneP.includes(p)), full = partsEst(l, todo);
+      let parts = todo;
+      // 时间不够一整课：先上前半（新词＋语法），后半留到下次
+      if (!after && room < full * .75 && todo.length > 2) { parts = todo.filter(p => p === "w" || p === "g"); if (!parts.length) parts = todo.slice(0, 2); }
+      const est = partsEst(l, parts);
+      tasks.push({ id: "ls-" + it.id, lang: main, kind: "lesson", ref: it.id, parts, est, req: true, ...(after ? { after } : {}) });
+      room -= est; return parts.length === todo.length;
+    }
+    if (it.kind === "test") { tasks.push({ id: "ut-" + it.unit.id, lang: main, kind: "test", ref: it.unit.id, est: EST.test, req: true, ...(after ? { after } : {}) }); room -= EST.test; return false; }
+    if (it.kind === "rem") { tasks.push({ id: "rm-" + it.unit.id, lang: main, kind: "rem", ref: it.unit.id, est: EST.rem, req: true }); room -= EST.rem; return false; }
+    tasks.push({ id: "fr-" + main, lang: main, kind: "free", est: Math.max(15, room), req: true, note: it.kind === "gap" ? `「${it.unit.title}」内容待生成` : "课纲已学完" });
+    return false;
+  };
+  const whole = await addMain(mainItem);
+  // 休息日时间多：上完这一课后接着上下一课（上一课完成后才解锁）
+  if (whole && mainItem.kind === "lesson") {
+    const nx = itemAfter(main, mainItem.id);
+    if (nx.kind === "lesson") { await curUnit(unitIdOf(nx.id)); if (room >= lessonEst(curLesson(nx.id)) * .9) await addMain(nx, "ls-" + mainItem.id); }
+    else if (room >= EST.test) await addMain(nx, "ls-" + mainItem.id);
+  }
+  PL.days[k] = { main, budget, work: isWorkday(k), tasks, rv: {}, mk: {}, credit: {} };
+  savePlanDay(k);
+  return PL.days[k];
+}
+
+/* ---- 任务进度 ---- */
+function taskProgress(t, k = today()) {
+  const day = PL.days[k] || {};
+  if (t.kind === "review") { const c = day.rv?.[t.lang] || 0; return { cur: Math.min(c, t.tgt), tgt: t.tgt, done: c >= t.tgt || !!day.rvClear?.[t.lang] }; }
+  if (t.kind === "mist") { const c = day.mk?.[t.lang] || 0; return { cur: Math.min(c, t.tgt), tgt: t.tgt, done: c >= t.tgt || !!day.mkClear?.[t.lang] }; }
+  if (t.kind === "lesson") { const d = lesPartsDone(t.ref); const n = t.parts.filter(p => d.includes(p)).length; return { cur: n, tgt: t.parts.length, done: n >= t.parts.length }; }
+  if (t.kind === "test") { const ur = unitRec(t.ref); const done = !!ur.pass || (ur.tests || []).some(x => x.at === k) || (t.debt && (ur.tests || []).some(x => x.at >= t.debt)); return { cur: done ? 1 : 0, tgt: 1, done }; }
+  if (t.kind === "rem") { const done = !!unitRec(t.ref).rem?.done || !!unitRec(t.ref).pass; return { cur: done ? 1 : 0, tgt: 1, done }; }
+  if (t.kind === "free") { const done = !!day.freeDone?.[t.lang]; return { cur: done ? 1 : 0, tgt: 1, done }; }
+  return { cur: 0, tgt: 1, done: false };
+}
+const taskDone = (t, k) => taskProgress(t, k).done;
+const taskLocked = (t, day) => !!t.after && !taskDone(day.tasks.find(x => x.id === t.after) || {}, today());
+function dayStatus(k = today()) {
+  const day = PL.days[k]; if (!day || day.free) return null;
+  const req = day.tasks.filter(t => t.req), done = req.filter(t => taskDone(t, k));
+  const byLang = {}; for (const l of PLAN_LANGS) { const ts = req.filter(t => t.lang === l); if (ts.length) byLang[l] = { n: ts.length, done: ts.filter(t => taskDone(t, k)).length, est: ts.reduce((s, t) => s + t.est, 0), frac: ts.reduce((s, t) => { const p = taskProgress(t, k); return s + t.est * (p.tgt ? p.cur / p.tgt : 0); }, 0) / Math.max(1, ts.reduce((s, t) => s + t.est, 0)) }; }
+  return { n: req.length, done: done.length, all: done.length === req.length, byLang };
+}
+// 每次有进度时检查：某门语言今天的份完成 → 这门语言的塔加砖；全部完成 → 自动打卡
+function planCheck() {
+  const k = today(), day = PL.days[k], ds = dayStatus(k); if (!ds) return;
+  let changed = false;
+  for (const [l, s] of Object.entries(ds.byLang)) {
+    if (s.done === s.n && day.credit[l] == null) { day.credit[l] = Math.round(s.est / BRICK_MIN * 100) / 100; changed = true; if (l === curLang()) toast(`今天的${PLAN_NAME[l]}任务完成，${PLAN_NAME[l]}塔砌上 ${day.credit[l].toFixed(1)} 块砖`, 4000); }
+  }
+  if (ds.all && !day.doneAt) { day.doneAt = Date.now(); changed = true; if (!dayLog(k).ck) { dayLog(k).ck = true; saveLog(); } toast("今日计划全部完成，已自动打卡", 4000); }
+  if (changed) savePlanDay(k);
+}
+// 复习、错题的计数挂钩
+function planOnReview() { const day = PL.days[today()]; if (!day || day.free) return; day.rv[curLang()] = (day.rv[curLang()] || 0) + 1; savePlanDay(today()); planCheck(); }
+function planOnMistake() { const day = PL.days[today()]; if (!day || day.free) return; day.mk[curLang()] = (day.mk[curLang()] || 0) + 1; savePlanDay(today()); planCheck(); }
+
+/* ---- 切换语言去做任务：存档后换页，回来自动打开那个任务 ---- */
+async function planSwitchTo(lang, taskId) {
+  S.profile.lang = lang; saveProfile();
+  try { sessionStorage.setItem("bt_plan_task", taskId); localStorage.setItem("bt_lang", lang); } catch { }
+  toast(`切换到${PLAN_NAME[lang]}…`);
+  await Saver.flush().catch(() => { });
+  if (window.BABEL_APP) location.replace(location.pathname + "?l=" + lang + "#today"); else { location.hash = "today"; location.reload(); }
+}
+function planOpenTask(t) {
+  if (t.lang !== curLang()) return planSwitchTo(t.lang, t.id);
+  const day = PL.days[today()];
+  if (day && taskLocked(t, day)) return toast("先完成上一项，才会解锁这一项");
+  if (t.kind === "review") return startPlanReview(Math.max(5, t.tgt - (day?.rv?.[t.lang] || 0)));
+  if (t.kind === "mist") return startPlanMistakes(t.tgt);
+  if (t.kind === "lesson") { LR.id = t.ref; LR.parts = t.parts; LR.step = null; LR.quiz = null; return go("lesson"); }
+  if (t.kind === "test") { UT.unit = t.ref; UT.quiz = null; UT.result = null; return go("utest"); }
+  if (t.kind === "rem") { UT.unit = t.ref; UT.quiz = null; UT.result = null; UT.rem = true; return go("utest"); }
+  if (t.kind === "free") return freeModal(t);
+}
+function startPlanReview(n) {
+  const ws = shuffle(dueWords()).slice(0, n);
+  if (!ws.length) { const day = PL.days[today()]; if (day) { (day.rvClear ||= {})[curLang()] = true; savePlanDay(today()); planCheck(); } toast("到期的词已经全部复习完"); render(); return; }
+  const style = S.profile.reviewStyle || "quiz";
+  newSess("review", "今日复习", ws.map(w => style === "card" ? { w, k: "card" } : { w, k: "quiz", type: typeForStage(w, prog(w)?.[0] || 1) }));
+  WS.sess.ret = "today"; go("words");
+}
+function freeModal(t) {
+  const lang = t.lang, go2 = v => { close(); go(v); };
+  const links = { en: [["reading", "阅读一篇"], ["listening", "听力 15 分钟"], ["grammar", "语法错题"]], es: [["reading", "阅读一篇"], ["listening", "听力 15 分钟"], ["conj", "变位练习"]], ja: [["reading", "読解一篇"], ["corpus", "语汇库练习"], ["dict", "查词"]] }[lang];
+  const close = modal(`<div><div class="eyebrow">LIBER<span class="zh">自由练习</span></div><h2>${esc(t.note || "自由练习")}</h2></div>
+    <p class="muted" style="font-size:14px;margin:0">今天的课还没有内容。用 ${t.est} 分钟做下面任意练习，做完点「我已完成」。</p>
+    <div class="row">${links.map(([v, n]) => `<button class="btn" data-v="${v}">${n}</button>`).join("")}</div>
+    <div class="row" style="justify-content:flex-end"><button class="btn" data-close>关闭</button><button class="btn pri" id="fr-ok">我已完成</button></div>`, (m, c) => {
+    $$("[data-v]", m).forEach(b => b.onclick = () => go2(b.dataset.v));
+    $("#fr-ok", m).onclick = () => { const day = PL.days[today()]; (day.freeDone ||= {})[lang] = true; savePlanDay(today()); planCheck(); c(); render(); };
+  });
+}
+
+/* ---- 今日任务页 ---- */
+function taskLabel(t) {
+  if (t.kind === "review") return ["单词复习", `到期词 ${t.tgt} 个`];
+  if (t.kind === "mist") return ["错题复习", `${t.tgt} 道到期错题`];
+  if (t.kind === "lesson") return [`第 ${t.ref.split(".").slice(1).join("-")} 课 · ${lessonTitle(t.ref)}`, t.parts.length < 4 ? t.parts.map(p => PART_NAME[p]).join(" + ") + (t.parts.includes("w") ? "（前半课）" : "（后半课）") : "新词 · 语法 · " + SPECIAL_NAME[t.lang] + " · 练习"];
+  if (t.kind === "test") return [`单元测验 · ${unitTitle(t.ref)}`, `20 题，正确率 ${Math.round(PL.set.pass * 100)}% 及格`];
+  if (t.kind === "rem") return [`回炉 · ${unitTitle(t.ref)}`, "复习薄弱课时后重新测验"];
+  return ["自由练习", t.note || ""];
+}
+VIEWS.today = VIEWS_JA.today = VIEWS_ES.today = async (el) => {
+  if (!PL.set) { el.innerHTML = `<div class="card empty">计划数据还在加载…</div>`; return; }
+  if (!planOn()) {
+    el.innerHTML = `<div class="stack"><div class="sec-head"><div><div class="eyebrow">HODIE<span class="zh">今日任务</span></div><h1>监工模式已关闭</h1></div></div>
+      <p class="muted">打开后，每天按清单学习：三门语言统一排课，完成当天计划才砌砖。</p><div class="row"><button class="btn pri" id="pl-on">打开监工模式</button><button class="btn" id="pl-set">计划设置</button></div></div>`;
+    $("#pl-on").onclick = () => { PL.set.on = true; savePlanSet(); delete PL.days[today()]; render(); };
+    $("#pl-set").onclick = planSettingsModal; return;
+  }
+  const k = today();
+  if (!PL.days[k] || PL.days[k].free) { el.innerHTML = `<div class="card empty">正在排今天的课…</div>`; if (PL.days[k]?.free) { delete PL.days[k]; } await planEnsureToday(); if (current === "today") render(); return; }
+  const day = PL.days[k], ds = dayStatus(k), langs = [curLang(), ...PLAN_LANGS.filter(l => l !== curLang())];
+  const debt = PL.st.debt;
+  const wk = [...Array(7)].map((_, i) => { const kk = addDays(addDays(k, -dowMon(k)), i), d = PL.days[kk], s = d && !d.free ? dayStatus(kk) : null; return { kk, main: d?.main || mainLangOf(kk), s, fut: kk > k }; });
+  const row = t => {
+    const p = taskProgress(t), [nm, sub] = taskLabel(t), lock = taskLocked(t, day), other = t.lang !== curLang();
+    return `<tr class="${p.done ? "done" : ""}"><td class="nm">${esc(nm)}<small>${esc(sub)}${t.debt ? ` · 欠债（${t.debt.slice(5).replace("-", "/")}）` : ""} · 约 ${t.est} 分钟</small></td>
+      <td class="n num">${t.kind === "review" || t.kind === "mist" || t.kind === "lesson" ? `${p.cur}<span> / ${p.tgt}</span>` : p.done ? "✓" : "—"}</td>
+      <td class="act"><button class="btn sm ${p.done || lock ? "" : "pri"}" data-t="${esc(t.id)}" ${lock ? "disabled" : ""}>${lock ? "未解锁" : p.done ? (t.kind === "lesson" ? "回看" : "再练") : other ? `去${PLAN_NAME[t.lang]}` : "开始"}</button></td></tr>`;
+  };
+  el.innerHTML = `<div class="stack">
+    <div class="sec-head"><div><div class="eyebrow">HODIE<span class="zh">今日任务</span></div><h1>${k.slice(5).replace("-", " 月 ")} 日 · ${PLAN_NAME[day.main]}日</h1></div>
+      <span class="muted" style="font-size:13px">${day.work ? "上班日" : "休息日"} · 约 ${day.budget} 分钟 · 完成 ${ds.done} / ${ds.n}</span></div>
+    ${PL.isNew ? `<div class="notice info">监工模式已开启：每天打开这里照单完成。课时学完才会解锁下一课；没做完的课变成「欠债」顺延；单元测验 ${Math.round(PL.set.pass * 100)}% 及格。时间和排布可以在「计划设置」里改。</div>` : ""}
+    ${PL.returning ? `<div class="notice row between"><span>已经 ${Math.round((parseKey(k) - parseKey(PL.returning.since)) / 864e5)} 天没来了，积了 ${PL.returning.n} 项欠债。可以清零重新起步：</span><button class="btn sm" id="pl-fresh">清空欠债</button></div>` : ""}
+    ${ds.all ? `<div class="notice info">今天的计划全部完成 ✓ 砖已经砌上。想多学可以提前上下一课。</div>` : ""}
+    ${langs.map(l => { const ts = day.tasks.filter(t => t.lang === l); if (!ts.length) return ""; const b = ds.byLang[l]; return `<section class="blk"><div class="h"><div class="eyebrow">${LANGS[l].code}</div><h2>${PLAN_NAME[l]}${l === day.main ? " · 主课" : ""}</h2><span class="muted" style="font-size:13px">${b.done}/${b.n}${day.credit[l] != null ? ` · 已砌 ${day.credit[l].toFixed(1)} 块砖` : ""}</span></div>
+      <div class="b"><table class="tbl">${ts.map(row).join("")}</table></div></section>`; }).join("")}
+    ${ds.all && nextItem(curLang()).kind === "lesson" ? `<div class="row"><button class="btn" id="pl-more">加练：${esc(PLAN_NAME[curLang()])}下一课</button></div>` : ""}
+    <section class="blk"><div class="h"><div class="eyebrow">HEBDOMAS</div><h2>本周</h2>${debt.length ? `<span class="muted" style="font-size:13px">欠债 ${debt.length} 项</span>` : ""}</div>
+      <div class="b"><div class="pl-week">${wk.map(d => `<div class="${d.kk === k ? "now" : ""} ${d.s?.all ? "ok" : d.s && !d.fut && d.kk < k ? "miss" : ""}"><b>周${WEEK[dowMon(d.kk)]}</b><span>${PLAN_NAME[d.main]}</span><i>${d.s ? (d.s.all ? "✓" : `${d.s.done}/${d.s.n}`) : d.fut ? "" : "—"}</i></div>`).join("")}</div>
+      ${debt.length ? `<ul class="muted" style="font-size:13px;margin:8px 0 0;padding-left:18px">${debt.map(x => `<li>${PLAN_NAME[x.lang]} · ${x.kind === "lesson" ? lessonTitle(x.ref) : x.kind === "test" ? "单元测验 " + unitTitle(x.ref) : "回炉 " + unitTitle(x.ref)}（${x.from.slice(5).replace("-", "/")} 起，${addDays(x.from, PL.set.debt.expire).slice(5).replace("-", "/")} 前不还自动勾销）</li>`).join("")}</ul>` : ""}</div></section>
+    <div class="row"><button class="btn" id="pl-report">导出周报</button><button class="btn" id="pl-import">导入计划参数</button><button class="btn" id="pl-set">计划设置</button><button class="btn ghost sm" id="pl-curr">课纲进度</button></div>
+  </div>`;
+  PL.isNew = false;
+  $$("[data-t]", el).forEach(b => b.onclick = () => { const t = day.tasks.find(x => x.id === b.dataset.t); if (t) planOpenTask(t); });
+  $("#pl-set").onclick = planSettingsModal;
+  $("#pl-report").onclick = () => weeklyReportModal();
+  $("#pl-import").onclick = () => importParamsModal();
+  $("#pl-curr").onclick = () => curriculumModal();
+  $("#pl-fresh") && ($("#pl-fresh").onclick = () => { for (const x of PL.st.debt) PL.st.debtLog.push({ ...x, end: k, how: "fresh" }); PL.st.debt = []; PL.returning = null; savePlanState(); toast("欠债已清空，从今天重新开始"); render(); });
+  $("#pl-more") && ($("#pl-more").onclick = async () => { const it = nextItem(curLang()); await curUnit(unitIdOf(it.id)); const t = { id: "ex-" + it.id, lang: curLang(), kind: "lesson", ref: it.id, parts: LES_PARTS.filter(p => !lesRec(it.id).p[p]), est: lessonEst(curLesson(it.id)), req: false }; if (!day.tasks.some(x => x.id === t.id)) { day.tasks.push(t); savePlanDay(k); } planOpenTask(t); });
+};
+// 课纲进度一览
+function curriculumModal() {
+  const lang = curLang(), L = CUR.idx?.langs?.[lang]; if (!L) return;
+  modal(`<div class="row between" style="align-items:flex-end"><div><div class="eyebrow">CURSUS<span class="zh">课纲</span></div><h2>${PLAN_NAME[lang]} · ${esc(L.goal)}</h2></div><button class="btn sm" data-close>关闭</button></div>
+    ${L.stages.map(st => `<div class="stack" style="gap:6px"><h3 style="margin:8px 0 0">${esc(st.title)}</h3><p class="faint" style="font-size:13px;margin:0">${esc(st.goal)}</p>
+      <table class="tbl">${st.units.map(u => { const ur = unitRec(u.id), n = [...Array(u.n || 5)].filter((_, i) => lesRec(`${u.id}.${i + 1}`).done).length; return `<tr><td class="nm">${esc(u.title)}<small>${esc(u.goal || "")}</small></td><td class="n num">${u.file ? `${n}<span> / ${u.n || 5}</span>` : "—"}</td><td style="font-size:13px" class="muted">${ur.pass ? `✓ 测验 ${Math.round((ur.tests || []).slice(-1)[0]?.acc * 100 || 0)}%` : u.file ? (n ? "进行中" : "") : "待生成"}</td></tr>`; }).join("")}</table></div>`).join("")}`, m => m.classList.add("wide"));
+}
+
+/* ============ 监工 · 课时、单元测验、回炉、错题复习 ============ */
+// 课时练习 = 课纲里写的题 + 引用的语法课自带的题（英语语法课、西语语法课各取前 5 题）
+function planExercises(l) {
+  if (!l) return [];
+  const lang = l.id.split(".")[0], out = (l.exercises || []).map(x => ({ ...x, ref: l.id }));
+  for (const g of l.grammar || []) {
+    if (!g.ref) continue;
+    if (lang === "en") (topicById(g.ref)?.q || []).slice(0, 5).forEach(q => out.push({ t: "c", q: q.q, o: q.o, a: q.a, e: q.e, ref: l.id }));
+    if (lang === "es") (ESG.list?.find(x => x.topic === g.ref)?.drills || []).slice(0, 5).forEach(d => out.push(d.t === "choice" ? { t: "c", q: d.q, o: d.opts, a: d.a, e: d.why, ref: l.id } : { t: "f", q: d.q, a: [String(d.a)], e: d.why, ref: l.id }));
+  }
+  return out;
+}
+const planSay = text => { if (curLang() === "es") sayEs(text); else if (curLang() === "en") Speech.say(text); };
+
+/* ---- 通用答题：一次一题。练习模式答错的题排到最后再答，直到答对；测验模式只答一遍 ---- */
+const normAns = s => String(s ?? "").trim().toLowerCase().replace(/[’‘]/g, "'").replace(/\s+/g, " ").replace(/[\s。．.!！?？,，、]+$/g, "").replace(/^[¿¡]+/, "");
+const stripAcc = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "");
+function quizStart(items, { title = "", retry = true, onWrong, onAnswer, onDone } = {}) {
+  items = items.map((x, i) => ({ ...x, _i: i }));
+  return { title, items, queue: items.map((_, i) => i), pos: 0, first: {}, ans: null, typed: "", built: [], retry, onWrong, onAnswer, onDone, finished: false };
+}
+function orderTokens(it) {
+  const parts = it.p || String(it.a).split(" ");
+  if (!it._shuf) { let s = shuffle(parts.map((t, i) => ({ t, i }))); for (let k = 0; k < 5 && s.every((x, j) => x.i === j); k++) s = shuffle(s); it._shuf = s; }
+  return it._shuf;
+}
+function quizCheck(it, input) {
+  if (it.t === "c") return { ok: input === it.a };
+  if (it.t === "f") { const v = normAns(input); if (it.a.some(a => normAns(a) === v)) return { ok: true }; if (it.a.some(a => stripAcc(normAns(a)) === stripAcc(v))) return { ok: true, near: true }; return { ok: false }; }
+  const sep = curLang() === "ja" ? "" : " ", got = input.map(i => orderTokens(it).find(x => x.i === i).t).join(sep);
+  const n = s => normAns(s).replace(curLang() === "ja" ? /\s/g : /$^/, "");
+  return { ok: n(got) === n(it.a) };
+}
+function renderQuiz(el, Q, onQuit) {
+  if (Q.pos >= Q.queue.length) { if (!Q.finished) { Q.finished = true; const n = Q.items.length, ok = Object.values(Q.first).filter(Boolean).length; Q.onDone?.({ n, ok, wrong: Q.items.filter(x => Q.first[x._i] === false) }); } return; }
+  const it = Q.items[Q.queue[Q.pos]], a = Q.ans, lang = curLang(), cls = lang === "ja" ? "jp" : lang === "es" ? "es-t" : "en";
+  const stem = esc(it.t === "o" ? (it.zh || "把下面的词连成句子") : it.q).replace(/___/g, `<span class="blank">＿＿＿</span>`);
+  let body = "";
+  if (it.t === "c") body = `<div class="opts">${it.o.map((o, i) => `<button class="opt ${cls} ${a ? (i === it.a ? "right" : i === a.input ? "wrong" : "") : ""}" data-o="${i}" ${a ? "disabled" : ""}>${String.fromCharCode(65 + i)}. ${esc(o)}</button>`).join("")}</div>`;
+  else if (it.t === "f") body = a ? `<div class="${cls}" style="font-size:18px">${a.ok ? "✓" : "✗"} ${esc(a.input)}${a.ok && !a.near ? "" : `　→　<b>${esc(it.a[0])}</b>`}</div>` : `<form class="row" id="qz-f" style="flex-wrap:nowrap"><input type="text" id="qz-in" class="${cls}" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="填入答案" style="flex:1;font-size:18px"><button class="btn" type="submit">检查</button></form>`;
+  else { const toks = orderTokens(it), used = new Set(Q.built); body = `<div class="ord-ans ${cls}">${Q.built.map((i, j) => `<button class="tok" data-rm="${j}" ${a ? "disabled" : ""}>${esc(toks.find(x => x.i === i).t)}</button>`).join("") || `<span class="faint" style="font-size:13px">依次点下面的词</span>`}</div>
+      <div class="ord-pool ${cls}">${toks.filter(x => !used.has(x.i)).map(x => `<button class="tok" data-add="${x.i}" ${a ? "disabled" : ""}>${esc(x.t)}</button>`).join("")}</div>
+      ${a ? `<div class="${cls}" style="font-size:17px">${a.ok ? "✓" : "✗ 正确："} ${a.ok ? "" : esc(it.a)}</div>` : `<div class="row"><button class="btn" id="qz-ord" ${Q.built.length === toks.length ? "" : "disabled"}>检查</button><button class="btn ghost sm" id="qz-clr">重排</button></div>`}`; }
+  const left = Q.queue.length - Q.pos;
+  el.innerHTML = `<div class="stack">
+    <div class="progress-line"><button class="btn sm ghost" id="qz-quit">← 退出</button><div class="bar"><i style="width:${Math.round(Q.pos / Q.queue.length * 100)}%"></i></div><span class="num">${Q.pos + 1} / ${Q.queue.length}</span></div>
+    <div class="eyebrow">${esc(Q.title)}${Q.first[it._i] === false ? " · 再答一次" : ""}</div>
+    <div class="q"><div class="stem ${cls}">${it.say ? `<button class="btn sm" id="qz-say" style="margin-right:10px">▶ 播放</button>` : ""}${stem}</div>${body}
+      ${a ? `<div class="explain ${a.ok ? "ok" : "no"}">${a.ok ? (a.near ? "✓ 正确，注意重音符号。" : "✓ 正确。") : "✗ "}${esc(it.e || (it.t === "o" && it.zh ? it.zh : ""))}</div>` : ""}</div>
+    ${a ? `<div class="row"><button class="btn pri" id="qz-next">${left > 1 || (!a.ok && Q.retry) ? "下一题" : "完成"}</button></div>` : ""}
+  </div>`;
+  const answer = input => {
+    const r = quizCheck(it, input); Q.ans = { ...r, input };
+    if (Q.first[it._i] === undefined) { Q.first[it._i] = r.ok; Q.onAnswer?.(it, r.ok); if (!r.ok) Q.onWrong?.(it, input); }
+    if (!r.ok && Q.retry) Q.queue.push(it._i);
+    renderQuiz(el, Q, onQuit);
+  };
+  $$("[data-o]", el).forEach(b => b.onclick = () => answer(+b.dataset.o));
+  $("#qz-f", el) && ($("#qz-f", el).onsubmit = e => { e.preventDefault(); const v = $("#qz-in", el).value; if (v.trim()) answer(v); });
+  $("#qz-in", el)?.focus();
+  $$("[data-add]", el).forEach(b => b.onclick = () => { Q.built.push(+b.dataset.add); renderQuiz(el, Q, onQuit); });
+  $$("[data-rm]", el).forEach(b => b.onclick = () => { Q.built.splice(+b.dataset.rm, 1); renderQuiz(el, Q, onQuit); });
+  $("#qz-ord", el) && ($("#qz-ord", el).onclick = () => answer(Q.built.slice()));
+  $("#qz-clr", el) && ($("#qz-clr", el).onclick = () => { Q.built = []; renderQuiz(el, Q, onQuit); });
+  $("#qz-say", el) && ($("#qz-say", el).onclick = () => planSay(it.say));
+  if (it.say && !a && !it._said) { it._said = 1; setTimeout(() => planSay(it.say), 300); }
+  $("#qz-next", el) && ($("#qz-next", el).onclick = () => { Q.pos++; Q.ans = null; Q.built = []; renderQuiz(el, Q, onQuit); window.scrollTo({ top: 0 }); });
+  $("#qz-quit", el).onclick = () => onQuit?.();
+}
+// 练习、测验答错的题进错题本（带下次复习日：明天）
+function planAddMistake(it, my) {
+  const q = it.t === "o" ? (it.zh || "连词成句") + "：" + (it.p || String(it.a).split(" ")).join(" / ") : it.q;
+  const ex = S.mistakes.items.find(m => m.src === "plan" && m.q === q && m.ref === it.ref);
+  if (ex) { ex.n = (ex.n || 1) + 1; ex.due = addDays(today(), 1); ex.st = 0; }
+  else S.mistakes.items.unshift({ id: uid(), lang: curLang(), src: "plan", topic: it.ref, ref: it.ref, kind: it.t, q, o: it.t === "c" ? it.o : it.t === "f" ? it.a : [it.a], a: it.t === "c" ? it.a : 0, e: it.e || it.zh || "", my: it.t === "c" ? my : -1, typed: it.t === "f" ? String(my) : "", p: it.p, n: 1, t: Date.now(), due: addDays(today(), 1), st: 0 });
+  saveMistakes();
+}
+function planQuizStat(ok) { const day = PL.days[today()]; if (!day || day.free) return; const q = (day.qz ||= {})[curLang()] ||= { n: 0, ok: 0 }; q.n++; if (ok) q.ok++; savePlanDay(today()); }
+
+/* ---- 课时页 ---- */
+const LR = { id: null, parts: null, step: null, quiz: null };
+function lessonAutoParts(l) {
+  const rec = lesRecW(l.id); let ch = false;
+  rec.start ||= today();
+  if (!rec.p.w && lessonWords(l).every(w => prog(w))) { rec.p.w = today(); ch = true; }
+  if (!rec.p.s && lessonSpecial(l).every(w => prog(w))) { rec.p.s = today(); ch = true; }
+  if (!rec.done && LES_PARTS.every(p => rec.p[p])) { rec.done = today(); ch = true; toast(`「${l.title}」学完了`, 3000); }
+  if (ch) { savePlanState(); planCheck(); }
+  return rec;
+}
+function grammarHTML(g, lang) {
+  if (g.ref && lang === "en") { const t = topicById(g.ref); return t ? `<div class="stack" style="gap:8px"><h3>${esc(t.name)}</h3><div class="lesson-body">${t.intro}</div></div>` : ""; }
+  if (g.ref && lang === "es") { const t = ESG.list?.find(x => x.topic === g.ref); return t ? `<div class="stack" style="gap:8px"><h3>${esc(t.title)}</h3><ul>${t.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul>${t.table ? `<div class="tbl-wrap"><table>${t.table.map((r, i) => `<tr>${r.map(c => i ? `<td class="es-t">${esc(c)}</td>` : `<th>${esc(c)}</th>`).join("")}</tr>`).join("")}</table></div>` : ""}</div>` : ""; }
+  if (g.ref && lang === "ja") { const b = (LEX.bunkei || []).find(x => x[0] === g.ref); return b ? `<div class="stack" style="gap:6px"><h3 class="jp">${esc(b[0])}</h3><div>${esc(b[2])}</div>${b[5] ? `<div class="muted" style="font-size:13px">接续：<span class="jp">${esc(b[5])}</span></div>` : ""}<div class="jp" style="font-size:17px">${esc(b[3])}</div><div class="muted" style="font-size:14px">${esc(b[4])}</div>${b[6] ? `<div class="faint" style="font-size:13px">${esc(b[6])}</div>` : ""}</div>` : ""; }
+  const cls = lang === "ja" ? "jp" : lang === "es" ? "es-t" : "en";
+  return `<div class="stack" style="gap:8px"><h3>${esc(g.title)}</h3><ul class="lesson-body">${g.points.map(p => `<li>${p}</li>`).join("")}</ul>${(g.examples || []).map(([a, b]) => `<div><div class="${cls}" style="font-size:17px">${esc(a)}${lang !== "ja" ? ` ${spkBtn(a, 'style="width:26px;height:26px"')}` : ""}</div><div class="muted" style="font-size:14px">${esc(b)}</div></div>`).join("")}</div>`;
+}
+function wordRows(ws, lang) {
+  return `<table class="tbl">${ws.map(w => { const i = wordInfo(w), r = prog(w); return `<tr><td class="nm"><span class="wd ${lang === "ja" ? "jp" : lang === "es" ? "es-t" : "en"}" data-w="${esc(w)}">${esc(w)}</span><small>${esc(lang === "ja" ? hira(i?.p || "") : i?.p || "")}${i?.t ? " · " + esc(i.t) : ""}</small></td><td style="font-size:14px">${esc(firstSense(i))}</td><td class="act">${r ? `<span class="pill good">已学</span>` : `<span class="pill">未学</span>`}</td></tr>`; }).join("")}</table>`;
+}
+VIEWS.lesson = VIEWS_JA.lesson = VIEWS_ES.lesson = async (el) => {
+  if (!LR.id) return go("today");
+  const lang = curLang();
+  if (!LR.id.startsWith(lang + ".")) return go("today");
+  if (lang === "es" && !ESG.list) await esLessons().catch(() => { });
+  await curUnit(unitIdOf(LR.id));
+  const l = curLesson(LR.id); if (current !== "lesson") return;
+  if (!l) { el.innerHTML = `<div class="card empty">课时内容读取失败，请联网后再试。</div>`; return; }
+  if (LR.quiz) return renderQuiz(el, LR.quiz, () => { LR.quiz = null; render(); });
+  const rec = lessonAutoParts(l), today_ = LR.parts || LES_PARTS, exs = planExercises(l);
+  const ws = lessonWords(l), sp = lessonSpecial(l), wLeft = ws.filter(w => !prog(w)), sLeft = sp.filter(w => !prog(w));
+  const mark = p => rec.p[p] ? `<span class="pill good">完成</span>` : today_.includes(p) ? `<span class="pill acc">今天</span>` : `<span class="pill">下次</span>`;
+  el.innerHTML = `<div class="stack">
+    <div class="sec-head"><div><div class="eyebrow">${esc(l.id)} · ${esc(unitTitle(unitIdOf(l.id)))}</div><h1>${esc(l.title)}</h1></div><button class="btn sm" id="lr-back">← 今日任务</button></div>
+    ${rec.done ? `<div class="notice info row between"><span>这一课已经学完 ✓</span><button class="btn sm pri" id="lr-home">回到今日任务</button></div>` : ""}
+    <section class="blk"><div class="h"><div class="eyebrow">I</div><h2>新词</h2>${mark("w")}</div><div class="b stack" style="gap:10px">${wordRows(ws, lang)}
+      ${wLeft.length ? `<div class="row"><button class="btn pri" id="lr-w">学习新词（${wLeft.length}）</button></div>` : ""}</div></section>
+    <section class="blk"><div class="h"><div class="eyebrow">II</div><h2>语法</h2>${mark("g")}</div><div class="b stack">${(l.grammar || []).map(g => grammarHTML(g, lang)).join(`<div class="hr"></div>`)}
+      ${rec.p.g ? "" : `<div class="row"><button class="btn pri" id="lr-g">读完了</button></div>`}</div></section>
+    <section class="blk"><div class="h"><div class="eyebrow">III</div><h2>${SPECIAL_NAME[lang]}</h2>${mark("s")}</div><div class="b stack" style="gap:10px">${wordRows(sp, lang)}
+      <div class="stack" style="gap:6px">${sp.map(w => { const x = wordInfo(w)?.x?.[0]; return x ? `<div><span class="${lang === "ja" ? "jp" : lang === "es" ? "es-t" : "en"}">${esc(x[0])}</span> <span class="muted" style="font-size:13px">${esc(x[1])}</span></div>` : ""; }).join("")}</div>
+      ${sLeft.length ? `<div class="row"><button class="btn pri" id="lr-s">学习${SPECIAL_NAME[lang]}（${sLeft.length}）</button></div>` : ""}</div></section>
+    <section class="blk" style="border-bottom:0"><div class="h"><div class="eyebrow">IV</div><h2>练习</h2>${mark("x")}</div><div class="b stack" style="gap:10px">
+      <p class="muted" style="margin:0">${exs.length} 题 · 答错的题会在最后再出一次，直到答对；错题自动进入错题本，之后按间隔复习。${rec.p.x ? ` 上次一次答对 ${rec.p.x.ok} / ${rec.p.x.n}。` : ""}</p>
+      <div class="row"><button class="btn ${rec.p.x ? "" : "pri"}" id="lr-x">${rec.p.x ? "再练一遍" : "开始练习"}</button></div></div></section>
+  </div>`;
+  $("#lr-back").onclick = () => go("today");
+  $("#lr-home") && ($("#lr-home").onclick = () => go("today"));
+  const learn = (list, title) => { newSess("learn", title, list.map(w => ({ w, k: "study" }))); WS.sess.ret = "lesson"; go("words"); };
+  $("#lr-w") && ($("#lr-w").onclick = () => learn(wLeft, l.title + " · 新词"));
+  $("#lr-s") && ($("#lr-s").onclick = () => learn(sLeft, l.title + " · " + SPECIAL_NAME[lang]));
+  $("#lr-g") && ($("#lr-g").onclick = () => { lesRecW(l.id).p.g = today(); savePlanState(); lessonAutoParts(l); render(); });
+  $("#lr-x").onclick = () => {
+    LR.quiz = quizStart(shuffle(exs), { title: l.title + " · 练习", onWrong: planAddMistake, onAnswer: (it, ok) => planQuizStat(ok),
+      onDone: r => { const R = lesRecW(l.id); if (!R.p.x) R.p.x = { at: today(), n: r.n, ok: r.ok }; savePlanState(); LR.quiz = null; lessonAutoParts(l); toast(`练习完成：一次答对 ${r.ok} / ${r.n}`); render(); window.scrollTo({ top: 0 }); } });
+    render(); window.scrollTo({ top: 0 });
+  };
+};
+
+/* ---- 单元测验与回炉 ---- */
+const UT = { unit: null, quiz: null, result: null, rem: false };
+async function unitPool(uid_) {
+  const u = await curUnit(uid_); if (!u) return null;
+  if (curLang() === "es" && !ESG.list) await esLessons().catch(() => { });
+  return { u, pool: u.lessons.flatMap(planExercises), extra: (u.test?.extra || []).map(x => ({ ...x, ref: uid_ })), n: u.test?.n || 20 };
+}
+VIEWS.utest = VIEWS_JA.utest = VIEWS_ES.utest = async (el) => {
+  if (!UT.unit || !UT.unit.startsWith(curLang() + ".")) return go("today");
+  const P = await unitPool(UT.unit); if (current !== "utest") return;
+  if (!P) { el.innerHTML = `<div class="card empty">单元内容读取失败，请联网后再试。</div>`; return; }
+  if (UT.quiz) return renderQuiz(el, UT.quiz, () => confirmBox("退出？本次作答不会保存。", "退出", () => { UT.quiz = null; render(); }));
+  const ur = unitRec(UT.unit), pass = PL.set.pass;
+  if (UT.rem) return remedialView(el, P, ur);
+  const R = UT.result;
+  el.innerHTML = `<div class="stack">
+    <div class="sec-head"><div><div class="eyebrow">PROBATIO<span class="zh">单元测验</span></div><h1>${esc(P.u.title)}</h1></div><button class="btn sm" id="ut-back">← 今日任务</button></div>
+    ${R ? `<div class="card stack"><h2>${R.acc >= pass ? "通过 ✓" : "没有通过"}</h2><p style="font-size:18px" class="num">${R.ok} / ${R.n} · ${Math.round(R.acc * 100)}%</p>
+      <p class="muted">${R.acc >= pass ? "这个单元结业了，下一单元已解锁。" : `及格线 ${Math.round(pass * 100)}%。薄弱的课时已经排进「回炉」：复习后重新测验。错题都进了错题本。`}</p>
+      <div class="row"><button class="btn pri" id="ut-home">回到今日任务</button>${R.acc >= pass ? "" : `<button class="btn" id="ut-rem">现在回炉</button>`}</div></div>`
+    : `<div class="card stack"><p>从本单元 ${P.u.lessons.length} 课的练习里抽题，加上测验专用题，共 ${Math.min(P.n, P.pool.length + P.extra.length)} 题。每题只答一次，正确率 ${Math.round(pass * 100)}% 及格。</p>
+      ${(ur.tests || []).length ? `<p class="muted" style="font-size:14px">之前的成绩：${ur.tests.map(t => Math.round(t.acc * 100) + "%").join("、")}</p>` : ""}
+      <div class="row"><button class="btn pri" id="ut-go">开始测验</button></div></div>`}
+  </div>`;
+  $("#ut-back").onclick = () => go("today");
+  $("#ut-home") && ($("#ut-home").onclick = () => { UT.result = null; go("today"); });
+  $("#ut-rem") && ($("#ut-rem").onclick = () => { UT.result = null; UT.rem = true; render(); });
+  $("#ut-go") && ($("#ut-go").onclick = () => {
+    const n = Math.min(P.n, P.pool.length + P.extra.length), items = shuffle([...P.extra, ...shuffle(P.pool).slice(0, Math.max(0, n - P.extra.length))]).slice(0, n);
+    UT.quiz = quizStart(items, { title: P.u.title + " · 单元测验", retry: false, onWrong: planAddMistake, onAnswer: (it, ok) => planQuizStat(ok), onDone: r => finishUnitTest(P, r) });
+    render(); window.scrollTo({ top: 0 });
+  });
+};
+function finishUnitTest(P, r) {
+  const ur = unitRecW(UT.unit), acc = r.n ? r.ok / r.n : 0, wrongBy = {};
+  for (const it of r.wrong) { const ref = it.ref?.split(".").length === 4 ? it.ref : null; if (ref) wrongBy[ref] = (wrongBy[ref] || 0) + 1; }
+  (ur.tests ||= []).push({ at: today(), n: r.n, ok: r.ok, acc: Math.round(acc * 1000) / 1000, wrong: wrongBy });
+  if (acc >= PL.set.pass) { ur.pass = today(); delete ur.rem; }
+  else {
+    const weak = Object.entries(wrongBy).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([id]) => id);
+    ur.rem = { at: today(), les: weak.length ? weak : P.u.lessons.slice(-2).map(l => l.id), qs: r.wrong.slice(0, 15).map(({ _i, _shuf, _said, ...x }) => x), done: false };
+  }
+  savePlanState(); UT.quiz = null; UT.result = { n: r.n, ok: r.ok, acc }; planCheck(); render(); window.scrollTo({ top: 0 });
+}
+function remedialView(el, P, ur) {
+  const rem = ur.rem; if (!rem) { UT.rem = false; return go("today"); }
+  const lang = curLang(), les = rem.les.map(id => P.u.lessons.find(l => l.id === id)).filter(Boolean);
+  el.innerHTML = `<div class="stack">
+    <div class="sec-head"><div><div class="eyebrow">RECOQUERE<span class="zh">回炉</span></div><h1>${esc(P.u.title)}</h1></div><button class="btn sm" id="rm-back">← 今日任务</button></div>
+    ${rem.done ? `<div class="notice info row between"><span>回炉完成 ✓ 可以重新测验了。</span><button class="btn sm pri" id="rm-test">重新测验</button></div>` : `<p class="muted">上次测验错得最多的课时如下。先把语法重看一遍，再做一组回炉练习（上次的错题 + 这几课的题）。这几课的单词也已经排进今天的复习。</p>`}
+    ${les.map(l => `<details class="card"><summary><b>${esc(l.title)}</b></summary><div class="stack" style="margin-top:10px">${(l.grammar || []).map(g => grammarHTML(g, lang)).join("")}</div></details>`).join("")}
+    ${rem.done ? "" : `<div class="row"><button class="btn pri" id="rm-go">开始回炉练习</button></div>`}
+  </div>`;
+  $("#rm-back").onclick = () => { UT.rem = false; go("today"); };
+  $("#rm-test") && ($("#rm-test").onclick = () => { UT.rem = false; UT.result = null; render(); });
+  $("#rm-go") && ($("#rm-go").onclick = () => {
+    // 这几课的单词提前到今天复习
+    for (const l of les) for (const w of [...lessonWords(l), ...lessonSpecial(l)]) { const r = prog(w); if (r && r[1] > today()) { r[1] = today(); setProg(w, r); } }
+    const more = shuffle(les.flatMap(planExercises)).slice(0, 10);
+    UT.quiz = quizStart(shuffle([...rem.qs, ...more]), { title: P.u.title + " · 回炉", onWrong: planAddMistake, onAnswer: (it, ok) => planQuizStat(ok),
+      onDone: () => { unitRecW(UT.unit).rem.done = today(); savePlanState(); UT.quiz = null; planCheck(); toast("回炉完成，可以重新测验了"); render(); } });
+    render(); window.scrollTo({ top: 0 });
+  });
+}
+
+/* ---- 错题复习：到期的错题按 1、3、7 天间隔再考，连对两次移出错题本 ---- */
+function mistakeItem(m) {
+  const kind = m.kind === "fill" ? "f" : m.kind === "choice" || !m.kind ? "c" : m.kind;
+  if (kind === "c") return { t: "c", q: m.q, o: m.o, a: m.a, e: m.e, mk: m.id };
+  if (kind === "f") return { t: "f", q: m.q, a: m.o, e: m.e, mk: m.id };
+  const ans = m.o[0]; return { t: "o", a: ans, p: m.p, zh: m.e || m.q, e: m.e, mk: m.id };
+}
+function startPlanMistakes(n) {
+  const k = today(), due = S.mistakes.items.filter(m => (m.due || k) <= k && m.o?.length).slice(0, n);
+  if (!due.length) { const day = PL.days[k]; if (day) { (day.mkClear ||= {})[curLang()] = true; savePlanDay(k); planCheck(); } toast("没有到期的错题"); render(); return; }
+  UT.unit = null;
+  MQ.quiz = quizStart(due.map(mistakeItem), { title: "错题复习", retry: false,
+    onAnswer: (it, ok) => {
+      const m = S.mistakes.items.find(x => x.id === it.mk); if (!m) return;
+      if (ok) { m.st = (m.st || 0) + 1; if (m.st >= 2) S.mistakes.items = S.mistakes.items.filter(x => x !== m); else m.due = addDays(k, m.st === 1 ? 3 : 7); }
+      else { m.st = 0; m.n = (m.n || 1) + 1; m.due = addDays(k, 1); }
+      saveMistakes(); planOnMistake(); planQuizStat(ok);
+    },
+    onDone: r => { MQ.quiz = null; toast(`错题复习完成：${r.ok} / ${r.n}`); go("today"); } });
+  go("mistq");
+}
+const MQ = { quiz: null };
+VIEWS.mistq = VIEWS_JA.mistq = VIEWS_ES.mistq = (el) => { if (!MQ.quiz) return go("today"); renderQuiz(el, MQ.quiz, () => { MQ.quiz = null; go("today"); }); };
+
+/* ============ 监工 · 周报与参数导入 ============ */
+function weeklyReportModal() { toast("周报导出将在下一步加入"); }
+function importParamsModal() { toast("参数导入将在下一步加入"); }
 
 /* ============ 存档：导出 / 导入（网页版 ↔ App 版搬家、日常备份） ============
    导出：把存储里所有学习记录打成一个 JSON 文件；导入：原样写回。
@@ -7340,8 +7884,16 @@ async function migrateV3() {
     S.v3notice = `词库已升级为三册共 ${BOOK_ORDER.reduce((s, b) => s + bookWords(b).length, 0)} 词（带多个释义和例句），旧词表已停用。${r.moved ? `你之前学过的 ${r.moved} 个词的进度都保留了` : ""}${r.toMy ? `，其中 ${r.toMy} 个不在新词书里的放进了生词本` : ""}。`;
   } else if (!S.profile.v3seen) S.v3notice = "";
   try { sessionStorage.removeItem("bt_turn"); } catch { }
+  await Promise.race([curPrepareLang(curLang()), sleep(2500)]).catch(() => { });
+  let pend = null; try { pend = sessionStorage.getItem("bt_plan_task"); sessionStorage.removeItem("bt_plan_task"); } catch { }
   const h = location.hash.slice(1);
   go(viewOf(h) ? h : "home");
+  planEnsureToday().then(day => {
+    planTag();
+    if (current === "today") render();
+    const t = pend && day?.tasks?.find(x => x.id === pend);
+    if (t && t.lang === curLang()) planOpenTask(t);
+  }).catch(e => console.warn("plan", e));
   setTimeout(() => paperTexture(curLang()), 1200);
 })();
 
