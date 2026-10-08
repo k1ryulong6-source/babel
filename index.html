@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1511-e76dcf";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1512-3c3a12";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -7696,9 +7696,134 @@ function startPlanMistakes(n) {
 const MQ = { quiz: null };
 VIEWS.mistq = VIEWS_JA.mistq = VIEWS_ES.mistq = (el) => { if (!MQ.quiz) return go("today"); renderQuiz(el, MQ.quiz, () => { MQ.quiz = null; go("today"); }); };
 
-/* ============ 监工 · 周报与参数导入 ============ */
-function weeklyReportModal() { toast("周报导出将在下一步加入"); }
-function importParamsModal() { toast("参数导入将在下一步加入"); }
+/* ============ 监工 · 周报与参数导入 ============
+   周报：一键生成本周（周一到今天）的学习数据文本，复制给 Claude 复盘；
+   导入：粘贴 Claude 调整后的参数 JSON，只接受白名单字段，先列出改动再确认。 */
+const pctS = (a, b) => b ? Math.round(a / b * 100) + "%" : "—";
+const md = s => String(s ?? "").replace(/\|/g, "／").replace(/\n/g, " ");
+function planParams() {
+  const s = PL.set;
+  return { babelPlan: 1, on: s.on, pattern: s.pattern, workdays: s.workdays, min: s.min, reviewShare: s.reviewShare, debt: s.debt, pass: s.pass };
+}
+async function weeklyReportText(offset = 0) {
+  const k0 = addDays(addDays(today(), -dowMon(today())), -7 * offset), k1 = offset ? addDays(k0, 6) : today();
+  const days = []; for (let k = k0; k <= k1; k = addDays(k, 1)) days.push(k);
+  const inWk = k => k && k >= k0 && k <= k1;
+  const logs = { [curLang()]: S.log, ...(S.otherLogs || {}) };
+  const mks = { [curLang()]: S.mistakes };
+  for (const l of PLAN_LANGS) if (l !== curLang()) { try { mks[l] = await Store.get((LANGS[l].ns ? LANGS[l].ns + "app/" : "app/") + "mistakes"); } catch { } }
+  const due = await planDueCounts(today()).catch(() => ({}));
+  // 各语言用到的单元先读进来，才能写出课时标题
+  const unitIds = new Set([...Object.keys(PL.st.les), ...Object.keys(PL.st.units)].map(unitIdOf));
+  for (const l of PLAN_LANGS) { const it = nextItem(l); if (it.unit) unitIds.add(it.unit.id); }
+  await Promise.all([...unitIds].map(id => curUnit(id).catch(() => null)));
+  const L = [];
+  let planDays = 0, doneDays = 0, reqN = 0, reqDone = 0, estAll = 0, estDone = 0, qn = 0, qok = 0;
+  const dayRows = [];
+  for (const k of days) {
+    const d = PL.days[k];
+    if (!d || d.free) { dayRows.push(`| ${k.slice(5)} 周${WEEK[dowMon(k)]} | ${d?.free ? "监工关闭" : "未打开"} | — | — | — |`); continue; }
+    const ds = dayStatus(k); planDays++; if (ds.all) doneDays++;
+    reqN += ds.n; reqDone += ds.done;
+    for (const t of d.tasks.filter(t => t.req)) { estAll += t.est; if (taskDone(t, k)) estDone += t.est; }
+    for (const q of Object.values(d.qz || {})) { qn += q.n; qok += q.ok; }
+    const miss = d.tasks.filter(t => t.req && !taskDone(t, k)).map(t => `${PLAN_NAME[t.lang]}${taskLabel(t)[0]}`);
+    dayRows.push(`| ${k.slice(5)} 周${WEEK[dowMon(k)]} | ${PLAN_NAME[d.main]}日 · ${d.work ? "上班" : "休息"} ${d.budget}′ | ${ds.done}/${ds.n}${ds.all ? " ✓" : ""} | ${Object.entries(d.credit || {}).map(([l, c]) => PLAN_NAME[l] + c.toFixed(1)).join(" ") || "—"} | ${md(miss.join("；")) || "—"} |`);
+  }
+  const dl = PL.st.debtLog.filter(x => inWk(x.end)), added = [...PL.st.debt, ...PL.st.debtLog].filter(x => inWk(addDays(x.from, 1)));
+  L.push(`# 巴别塔周报 · ${k0} ～ ${k1}`, "", `生成于 ${new Date().toLocaleString("zh-CN", { hour12: false })}。学习者：英语初中水平（目标托业 800）、西语零基础、日语约 N1（目标母语级）。`, "");
+  L.push("## 总体", `- 计划完成天数：${doneDays} / ${planDays} 天（${pctS(doneDays, planDays)}）`, `- 必做任务：${reqDone} / ${reqN}（${pctS(reqDone, reqN)}）`, `- 计划时长：约 ${estAll} 分钟，已完成约 ${estDone} 分钟`, `- 课时练习与测验一次答对率：${pctS(qok, qn)}（${qn} 题）`,
+    `- 欠债：当前 ${PL.st.debt.length} 项；本周新增约 ${added.length} 项，勾销 ${dl.length} 项${dl.length ? `（${dl.map(x => `${PLAN_NAME[x.lang]}${x.kind === "lesson" ? lessonTitle(x.ref) : unitTitle(x.ref)}·${x.how === "expired" ? "超期" : x.how === "overflow" ? "超上限" : "手动清零"}`).join("；")}）` : ""}`, "");
+  L.push("## 每日", "| 日期 | 主课 · 时间 | 完成 | 加砖 | 未完成 |", "|---|---|---|---|---|", ...dayRows, "");
+  for (const l of PLAN_LANGS) {
+    const lg = logs[l]?.days || {}, sum = f => days.reduce((s, k) => s + (+lg[k]?.[f] || 0), 0);
+    const lesDone = Object.entries(PL.st.les).filter(([id, r]) => id.startsWith(l + ".") && inWk(r.done) && !r.skip).map(([id, r]) => `${id}「${lessonTitle(id)}」${r.p?.x ? `（练习一次答对 ${r.p.x.ok}/${r.p.x.n}）` : ""}`);
+    const tests = Object.entries(PL.st.units).filter(([id]) => id.startsWith(l + ".")).flatMap(([id, u]) => (u.tests || []).filter(t => inWk(t.at)).map(t => `${unitTitle(id)} ${Math.round(t.acc * 100)}%（${t.ok}/${t.n}）${t.acc >= PL.set.pass ? "通过" : "未通过 → 回炉"}`));
+    const it = nextItem(l), pos = it.kind === "lesson" ? `${it.unit.stage.title} · ${it.unit.title} · 第 ${it.id.split(".")[3]} 课「${lessonTitle(it.id)}」` : it.kind === "test" ? `${it.unit.title} · 等待单元测验` : it.kind === "rem" ? `${it.unit.title} · 回炉中` : it.kind === "gap" ? `「${it.unit.title}」课纲内容待生成` : "课纲已学完";
+    const unitsLeft = curUnits(l).filter(u => u.file && !unitRec(u.id).pass).length;
+    const q = days.reduce((a, k) => { const x = PL.days[k]?.qz?.[l]; return x ? [a[0] + x.n, a[1] + x.ok] : a; }, [0, 0]);
+    const mk = (mks[l]?.items || []), mkWk = mk.filter(m => m.t && inWk(dateKey(new Date(m.t))));
+    const byRef = {}; for (const m of mkWk) if (m.ref) byRef[m.ref] = (byRef[m.ref] || 0) + 1;
+    const weak = Object.entries(byRef).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([r, n]) => `${r.split(".").length === 4 ? lessonTitle(r) : unitTitle(r)}（${n} 题）`);
+    L.push(`## ${PLAN_NAME[l]}`, `- 当前位置：${pos}；已写好内容、尚未结业的单元还剩 ${unitsLeft} 个${unitsLeft <= 2 ? "（课纲内容快用完了，需要生成后续单元）" : ""}`,
+      `- 本周学完课时：${lesDone.length ? lesDone.join("；") : "无"}`, `- 单元测验：${tests.length ? tests.join("；") : "无"}`,
+      `- 单词：新学 ${sum("nw")} 个，复习 ${sum("rv")} 次，复习正确率 ${pctS(sum("rvOk"), sum("rv"))}；目前到期未复习 ${due[l]?.due ?? "—"} 个`,
+      `- 课时练习/测验一次答对率：${pctS(q[1], q[0])}（${q[0]} 题）`,
+      `- 错题本：共 ${mk.length} 道，本周新增 ${mkWk.length} 道，到期待复习 ${due[l]?.mist ?? "—"} 道${weak.length ? `；错得最多：${weak.join("、")}` : ""}`, "");
+  }
+  L.push("## 当前计划参数", "```json", "{\n" + Object.entries(planParams()).map(([f, v]) => ` "${f}": ${JSON.stringify(v)}`).join(",\n") + "\n}", "```", "",
+    "## 请复盘", "请根据以上数据复盘本周：完成情况、薄弱点、欠债原因。如果需要调整，请给出修改后的参数 JSON（字段同上，只写要改的字段即可；pattern 是周一到周日每天的主课语言，en/es/ja；min 是上班日/休息日分钟数；debt.max 欠债上限、perDay 每天最多还几项、share 还债最多占当天时间比例、expire 几天后勾销；pass 是单元测验及格线；也可以加 \"cursor\": {\"en\": \"en.1.3.1\"} 表示把该语言直接跳到某一课）。");
+  return L.join("\n");
+}
+async function weeklyReportModal() {
+  let off = 0;
+  const close = modal(`<div class="row between" style="align-items:flex-end"><div><div class="eyebrow">RELATIO<span class="zh">周报</span></div><h2>本周学习数据</h2></div><div class="seg" id="wr-wk"><button data-o="0" class="on">本周</button><button data-o="1">上周</button></div></div>
+    <p class="muted" style="font-size:13px;margin:0">复制下面的文本发给 Claude 复盘；Claude 给出的参数 JSON 可以在「导入计划参数」里粘贴。</p>
+    <textarea id="wr-t" readonly style="min-height:320px;font-size:13px;font-family:ui-monospace,Menlo,monospace">生成中…</textarea>
+    <div class="row" style="justify-content:flex-end"><button class="btn" data-close>关闭</button><button class="btn pri" id="wr-copy">复制</button></div>`, (m) => {
+    m.classList.add("wide");
+    const fill = async () => { $("#wr-t", m).value = "生成中…"; try { $("#wr-t", m).value = await weeklyReportText(off); } catch (e) { $("#wr-t", m).value = "生成失败：" + (e?.message || e); } };
+    $$("#wr-wk button", m).forEach(b => b.onclick = () => { off = +b.dataset.o; $$("#wr-wk button", m).forEach(x => x.classList.toggle("on", x === b)); fill(); });
+    $("#wr-copy", m).onclick = async () => { const t = $("#wr-t", m); try { await navigator.clipboard.writeText(t.value); toast("周报已复制"); } catch { t.select(); document.execCommand?.("copy"); toast("已选中全文，请长按复制"); } };
+    fill();
+  });
+  return close;
+}
+// 参数校验：只认白名单字段，越界的值拒绝
+function parsePlanParams(text) {
+  const raw = String(text).match(/\{[\s\S]*\}/)?.[0]; if (!raw) throw new Error("没有找到 JSON");
+  let j; try { j = JSON.parse(raw); } catch { throw new Error("JSON 格式不对"); }
+  const out = {}, errs = [], num = (v, a, b) => typeof v === "number" && v >= a && v <= b;
+  if ("on" in j) { if (typeof j.on === "boolean") out.on = j.on; else errs.push("on 应为 true/false"); }
+  if ("pattern" in j) { if (Array.isArray(j.pattern) && j.pattern.length === 7 && j.pattern.every(x => PLAN_LANGS.includes(x))) out.pattern = j.pattern; else errs.push("pattern 应为 7 个 en/es/ja"); }
+  if ("workdays" in j) { if (Array.isArray(j.workdays) && j.workdays.every(x => Number.isInteger(x) && x >= 0 && x <= 6)) out.workdays = [...new Set(j.workdays)].sort(); else errs.push("workdays 应为 0–6 的数组（0 = 周一）"); }
+  if ("min" in j) { const m = j.min || {}; const o = { ...PL.set.min }; if ("work" in m) { if (num(m.work, 10, 240)) o.work = Math.round(m.work); else errs.push("min.work 应在 10–240"); } if ("rest" in m) { if (num(m.rest, 10, 300)) o.rest = Math.round(m.rest); else errs.push("min.rest 应在 10–300"); } out.min = o; }
+  if ("reviewShare" in j) { if (num(j.reviewShare, .1, .6)) out.reviewShare = j.reviewShare; else errs.push("reviewShare 应在 0.1–0.6"); }
+  if ("debt" in j) { const d = j.debt || {}, o = { ...PL.set.debt }; const lim = { max: [1, 10], perDay: [0, 4], share: [.1, .6], expire: [1, 30] };
+    for (const [f, [a, b]] of Object.entries(lim)) if (f in d) { if (num(d[f], a, b)) o[f] = d[f]; else errs.push(`debt.${f} 应在 ${a}–${b}`); } out.debt = o; }
+  if ("pass" in j) { if (num(j.pass, .5, 1)) out.pass = j.pass; else errs.push("pass 应在 0.5–1"); }
+  if ("cursor" in j) { const c = {}; for (const [l, id] of Object.entries(j.cursor || {})) { if (PLAN_LANGS.includes(l) && typeof id === "string" && curUnits(l).some(u => id.startsWith(u.id + ".") && +id.split(".")[3] >= 1 && +id.split(".")[3] <= (u.n || 5) && id.split(".").length === 4)) c[l] = id; else errs.push(`cursor.${l} 找不到课时 ${id}`); } if (Object.keys(c).length) out.cursor = c; }
+  const unknown = Object.keys(j).filter(x => !["babelPlan", "on", "pattern", "workdays", "min", "reviewShare", "debt", "pass", "cursor"].includes(x));
+  if (unknown.length) errs.push("忽略未知字段：" + unknown.join(", "));
+  return { out, errs };
+}
+// 跳到某一课：之前的课时标记为跳过（不影响单词进度），之前的单元视为结业
+function planJumpTo(lang, id) {
+  const [, s, u, i] = id.split(".").map(Number), k = today();
+  for (const um of curUnits(lang)) {
+    const [, us, uu] = um.id.split(".").map(Number), before = us < s || (us === s && uu < u);
+    if (before) { if (!unitRec(um.id).pass) unitRecW(um.id).pass = k; }
+    for (let n = 1; n <= (um.n || 5); n++) {
+      const lid = `${um.id}.${n}`, isBefore = before || (us === s && uu === u && n < i);
+      if (isBefore && !lesRec(lid).done) { const r = lesRecW(lid); r.done = k; r.skip = true; }
+    }
+  }
+}
+function importParamsModal() {
+  modal(`<div><div class="eyebrow">IMPORT<span class="zh">导入计划参数</span></div><h2>粘贴 Claude 给的参数</h2></div>
+    <textarea id="ip-t" placeholder='{"min":{"work":40,"rest":100},"pattern":["es","en","es","en","ja","es","en"]}' style="min-height:160px;font-size:13px;font-family:ui-monospace,Menlo,monospace"></textarea>
+    <div id="ip-out" style="font-size:14px"></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn" data-close>取消</button><button class="btn" id="ip-check">检查</button><button class="btn pri" id="ip-ok" disabled>应用</button></div>`, (m, close) => {
+    let parsed = null;
+    const show = v => typeof v === "object" ? JSON.stringify(v) : String(v);
+    $("#ip-check", m).onclick = () => {
+      try {
+        const { out, errs } = parsePlanParams($("#ip-t", m).value); parsed = out;
+        const rows = Object.entries(out).map(([f, v]) => f === "cursor" ? Object.entries(v).map(([l, id]) => `<li>${PLAN_NAME[l]}跳到 <b>${esc(id)}</b>（之前的课时标为跳过）</li>`).join("") : `<li><b>${esc(f)}</b>：${esc(show(PL.set[f]))} → <b>${esc(show(v))}</b></li>`).join("");
+        $("#ip-out", m).innerHTML = `${rows ? `<ul style="margin:0;padding-left:18px">${rows}</ul>` : `<p class="muted">没有可应用的改动</p>`}${errs.length ? `<p class="muted" style="color:var(--bad)">${errs.map(esc).join("<br>")}</p>` : ""}${rows ? `<label class="row" style="gap:6px;font-size:13px;margin-top:8px"><input type="checkbox" id="ip-today"> 今天还没开始的话，按新参数重排今天的清单</label>` : ""}`;
+        $("#ip-ok", m).disabled = !rows;
+      } catch (e) { $("#ip-out", m).innerHTML = `<p style="color:var(--bad)">${esc(e.message)}</p>`; $("#ip-ok", m).disabled = true; }
+    };
+    $("#ip-ok", m).onclick = () => {
+      if (!parsed) return;
+      const { cursor, ...rest } = parsed; Object.assign(PL.set, rest); savePlanSet();
+      if (cursor) { for (const [l, id] of Object.entries(cursor)) planJumpTo(l, id); savePlanState(); }
+      const k = today(), d = PL.days[k], started = d && !d.free && d.tasks.some(t => taskProgress(t, k).cur > 0);
+      if ($("#ip-today", m)?.checked && !started) { delete PL.days[k]; }
+      close(); toast(started && $("#ip-today", m)?.checked ? "参数已更新；今天已经开始，从明天起生效" : "计划参数已更新"); planEnsureToday().then(() => render());
+    };
+  });
+}
 
 /* ============ 存档：导出 / 导入（网页版 ↔ App 版搬家、日常备份） ============
    导出：把存储里所有学习记录打成一个 JSON 文件；导入：原样写回。
