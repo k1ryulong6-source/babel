@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1510-f6a59b";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1511-e76dcf";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -6052,17 +6052,29 @@ function dayPoints(d) {
   if (Array.isArray(d.ar)) p += d.ar.length * 10;
   return p;
 }
-function brickModel(log) {
-  const days = log?.days || {};
-  let total = 0; for (const k of Object.keys(days)) total += dayPoints(days[k]);
+// 启用监工计划之后：每天这门语言的计划份额全部完成，才按计划量（30 分钟 = 1 块）加砖；
+// 启用之前的日子、关闭监工的日子仍按学习量折算 —— 以前砌的砖一块不少
+function brickDayPts(log, lang, k) {
+  const set = PL.set, start = set?.start, d = PL.days[k];
+  if (!start || k < start || d?.free) return dayPoints(log?.days?.[k]);
+  return (k === start ? set.carry?.[lang] || 0 : 0) + (d?.credit?.[lang] || 0) * BRICK_PTS;
+}
+function brickModel(log, lang = curLang()) {
+  const keys = new Set(Object.keys(log?.days || {}));
+  if (PL.set?.start) { for (const k of Object.keys(PL.days)) keys.add(k); keys.add(PL.set.start); }
+  let total = 0; for (const k of keys) total += brickDayPts(log, lang, k);
   total = Math.round(total * 10) / 10;
-  const done = Math.floor(total / BRICK_PTS), frac = (total - done * BRICK_PTS) / BRICK_PTS;
-  return { total, done, frac, today: dayPoints(days[today()]) };
+  const done = Math.floor(total / BRICK_PTS); let frac = (total - done * BRICK_PTS) / BRICK_PTS;
+  // 今天还没完成：按进度先描出一部分，但不会把砖涂满
+  const td = PL.days[today()];
+  if (PL.set?.start && td && !td.free && td.credit?.[lang] == null) { const s = dayStatus()?.byLang[lang]; if (s) frac = Math.min(.95, frac + s.frac * s.est / BRICK_MIN); }
+  return { total, done, frac, today: brickDayPts(log, lang, today()) };
 }
 // 第 n 块（从 0 数）砖是哪一天砌满的
-function brickDate(log, n) {
-  const days = log?.days || {}; let acc = 0; const need = (n + 1) * BRICK_PTS;
-  for (const k of Object.keys(days).sort()) { acc += dayPoints(days[k]); if (acc >= need) return k; }
+function brickDate(log, n, lang = curLang()) {
+  const keys = new Set(Object.keys(log?.days || {})); for (const k of Object.keys(PL.days)) keys.add(k);
+  let acc = 0; const need = (n + 1) * BRICK_PTS;
+  for (const k of [...keys].sort()) { acc += brickDayPts(log, lang, k); if (acc >= need) return k; }
   return null;
 }
 
@@ -6758,7 +6770,7 @@ const SHEETS = { en: SHEET_EN, ja: SHEET_JA, es: SHEET_ES };
 const NEXT_LANG = { en: "ja", ja: "es", es: "en" };
 const PAPER = { en: { base: "#e4cc9c", ink: "#2b2219" }, ja: { base: "#f2ede1", ink: "#1c1a18" }, es: { base: "#caa679", ink: "#1d140e" } };
 function sheetState(lang, log) {
-  const SH = SHEETS[lang], m = brickModel(log), group = Math.floor(m.done / SH.PER) + 1, idx = m.done % SH.PER;
+  const SH = SHEETS[lang], m = brickModel(log, lang), group = Math.floor(m.done / SH.PER) + 1, idx = m.done % SH.PER;
   return { done: m.done, frac: m.frac, total: m.total, group, idx, inked: lang === "en" ? Math.min(5, group - 1) : lang === "es" ? Math.min(6, group - 1) : 0, today: m.today };
 }
 function sheetVB(lang, W, H, st) {
@@ -6853,7 +6865,7 @@ function mountSheet(host, lang, log, opts = {}) {
     cur.addEventListener("keydown", key(openMenu));
     turn.addEventListener("click", turnPage); turn.addEventListener("keydown", key(turnPage));
     host.querySelectorAll(".hit.done").forEach(p => p.addEventListener("click", () => {
-      const i = +p.dataset.b, k = brickDate(log, i);
+      const i = +p.dataset.b, k = brickDate(log, i, lang);
       toast(`${SH.groupName(Math.floor(i / SH.PER) + 1)} · ${SH.unit(i % SH.PER)} —— ${k ? `砌于 ${+k.slice(5, 7)} 月 ${+k.slice(8)} 日` : "已完成"}`);
     }));
   }
@@ -7841,11 +7853,11 @@ async function migrateV3() {
     document.documentElement.classList.add("paper", "p-" + curLang()); paperAssets(curLang());
     // 先把塔画出来（只需要打卡记录），词库还在加载
     const h0 = location.hash.slice(1);
-    const logP = Store.get(appP("log"));
-    if (!h0 || h0 === "home") logP.then(l => { if (S.log) return; const el = $("#view"); const old = $("#sheet", el); if (!(old && old.dataset.lang === curLang())) el.innerHTML = `<div class="desk"><div class="sheet" id="sheet"></div></div>`; document.body.classList.add("at-home"); mountSheet($("#sheet"), curLang(), l && l.days ? l : { days: {} }, { interactive: false }); }).catch(() => { });
+    const logP = Store.get(appP("log")), planP = planLoad();
+    if (!h0 || h0 === "home") Promise.all([logP, planP]).then(([l]) => l).then(l => { if (S.log) return; const el = $("#view"); const old = $("#sheet", el); if (!(old && old.dataset.lang === curLang())) el.innerHTML = `<div class="desk"><div class="sheet" id="sheet"></div></div>`; document.body.classList.add("at-home"); mountSheet($("#sheet"), curLang(), l && l.days ? l : { days: {} }, { interactive: false }); }).catch(() => { });
     [log, stats, mistakes, favs, content, wp, my] = await Promise.all([
       logP, Store.get(appP("stats")), Store.get(appP("mistakes")), Store.get(appP("favs")),
-      Store.list("content"), Store.list(nsPath("wp")), Store.list(nsPath("mywords")), loadLexicon(), planLoad()
+      Store.list("content"), Store.list(nsPath("wp")), Store.list(nsPath("mywords")), loadLexicon(), planP
     ]);
   } catch (e) {
     console.warn("load", e);
