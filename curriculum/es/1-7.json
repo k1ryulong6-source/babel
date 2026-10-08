@@ -10,7 +10,22 @@
     "fiesta",
     "cumpleaños",
     "regalo",
-    "película",
+    {
+     "w": "vacaciones",
+     "p": "f",
+     "s": [
+      [
+       "名",
+       "假期（常用复数）"
+      ]
+     ],
+     "x": [
+      [
+       "En agosto voy a estar de vacaciones.",
+       "八月我要去度假。"
+      ]
+     ]
+    },
     "playa",
     "montaña",
     "viajar",
