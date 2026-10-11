@@ -9,6 +9,7 @@ App 里 AudioBank 按 fnv(声音id + "|" + 文本) 找录音；新录音的声�
 
   python3 tools/tts_batch.py --dry-run                     只统计条数和字数
   python3 tools/tts_batch.py --sample                      先录一小组样音（tools/.tts_cache/sample/index.html），确认音色
+  加 --voice m 换成男声（默认 f 女声）；单词用 Studio 声音，句子用 Chirp3-HD 声音，见 VOICE_SETS
   python3 tools/tts_batch.py --sets cur,words              录课纲句子和单词，写入录音包
   python3 tools/tts_batch.py --sets cur,words,examples     再加上词典例句（体积大）
 """
@@ -18,7 +19,16 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "tools", ".tts_cache")
 VOICE_ID = {"en": "gf_en", "es": "gf_es"}
-GOOGLE_VOICE = {"en": "en-US-Neural2-F", "es": "es-ES-Neural2-A"}
+# 单词用 Studio（单词发音最好），句子用 Chirp3-HD（句子自然、比 Studio 便宜很多）。Neural2 的 /ɪ/ 偏开，不再使用。
+VOICE_SETS = {
+    "f": {"en": ("en-US-Studio-O", "en-US-Chirp3-HD-Kore"), "es": ("es-ES-Studio-C", "es-ES-Chirp3-HD-Kore")},
+    "m": {"en": ("en-US-Studio-Q", "en-US-Chirp3-HD-Charon"), "es": ("es-ES-Studio-F", "es-ES-Chirp3-HD-Charon")},
+}
+GOOGLE_VOICE = VOICE_SETS["f"]
+# 单独出现时 TTS 会读错或读得不确定的词：固定成课程想要的读音
+WORD_IPA = {"en": {"read": "ɹiːd", "live": "lɪv"}}
+# 句子里的同形异音词：按上下文规则指定读音
+SENT_IPA = {"en": [(re.compile(r"\b(?:have|has|had|'ve|'d|already|just|never|ever)\s+read\b|\bread\b[^.?!]*\b(?:yesterday|last|ago)\b", re.I), "read", "ɹɛd")]}
 PER_BUNDLE = 100
 J = lambda p: json.load(open(os.path.join(ROOT, p), encoding="utf-8"))
 
@@ -52,6 +62,22 @@ def tts_input(t):
     t = re.sub(r"(^|\s)[—–-]\s*", r"\1", t)
     t = re.sub(r"/[^/\s][^/]*/", "", t)
     return norm(t)
+
+
+def is_word(t):
+    """单词和短词组（不超过 3 个词、不以句末标点结尾）用单词声音，其余用句子声音。"""
+    return len(t.split()) <= 3 and not re.search(r"[.?!¿¡]", t)
+
+
+def voice_for(lang, t):
+    return GOOGLE_VOICE[lang][0 if is_word(t) else 1]
+
+
+def prons_for(lang, t):
+    if is_word(t):
+        ipa = WORD_IPA.get(lang, {}).get(t.lower())
+        return [(t, ipa)] if ipa else []
+    return [(w, ipa) for rx, w, ipa in SENT_IPA.get(lang, []) if rx.search(t)]
 
 
 # ---------- 收集文本 ----------
@@ -121,7 +147,8 @@ def collect(lang, sets):
 
 # ---------- 合成 ----------
 def cache_path(lang, t):
-    return os.path.join(CACHE, VOICE_ID[lang], key(lang, t) + ".mp3")
+    # 按实际使用的 Google 声音分目录缓存，换声音不会误用旧录音
+    return os.path.join(CACHE, voice_for(lang, t), key(lang, t) + ".mp3")
 
 
 def synth_one(lang, t, kbps):
@@ -129,7 +156,7 @@ def synth_one(lang, t, kbps):
     if os.path.exists(p):
         return p
     from tts_google import synth
-    raw = synth(tts_input(t), lang, GOOGLE_VOICE[lang])
+    raw = synth(tts_input(t), lang, voice_for(lang, t), prons=prons_for(lang, t))
     os.makedirs(os.path.dirname(p), exist_ok=True)
     with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as f:
         f.write(raw)
@@ -183,7 +210,7 @@ def write_bundles(lang, texts):
 
 
 SAMPLE = {
-    "en": ["ship", "sheep", "sip", "seat", "sit", "cap", "cup", "stop", "keep", "help", "map", "live", "read", "Our company has a new system.", "I read the report yesterday.", "Each team will try it this week.", "Please stop and help me keep the map."],
+    "en": ["ship", "sheep", "sip", "seat", "sit", "cap", "cup", "stop", "keep", "help", "map", "live", "read", "take off", "Our company has a new system.", "I read the report yesterday.", "I read the news every morning.", "Where do you live?", "Each team will try it this week.", "Please stop and help me keep the map."],
     "es": ["pero", "perro", "caro", "carro", "cinco", "ciudad", "calle", "Me llamo Ana. ¿Cómo te llamas?", "El perro corre por la calle.", "Tengo diez años."],
 }
 
@@ -193,7 +220,7 @@ def sample(kbps):
     for lang, ts in SAMPLE.items():
         for t in ts:
             p = synth_one(lang, t, kbps)
-            rows.append(f'<tr><td>{lang}</td><td>{html.escape(t)}</td><td><audio controls preload="none" src="../{VOICE_ID[lang]}/{os.path.basename(p)}"></audio></td></tr>')
+            rows.append(f'<tr><td>{lang}</td><td>{html.escape(t)}</td><td><audio controls preload="none" src="../{voice_for(lang, t)}/{os.path.basename(p)}"></audio></td></tr>')
     out = os.path.join(CACHE, "sample", "index.html")
     os.makedirs(os.path.dirname(out), exist_ok=True)
     open(out, "w", encoding="utf-8").write(f'<!doctype html><meta charset="utf-8"><title>样音</title><table>{"".join(rows)}</table>')
@@ -208,7 +235,9 @@ if __name__ == "__main__":
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--sample", action="store_true")
+    ap.add_argument("--voice", choices=sorted(VOICE_SETS), default="f", help="f 女声 / m 男声")
     a = ap.parse_args()
+    GOOGLE_VOICE = VOICE_SETS[a.voice]
     if a.sample:
         sample(a.kbps)
         sys.exit()
@@ -216,7 +245,10 @@ if __name__ == "__main__":
     for lang in a.langs.split(","):
         texts = collect(lang, sets)
         if a.dry_run:
-            print(f"[{lang}] {len(texts)} 条 · {sum(len(t) for t in texts)} 字 · 已缓存 {sum(os.path.exists(cache_path(lang, t)) for t in texts)}")
+            by = {}
+            for t in texts:
+                by[voice_for(lang, t)] = by.get(voice_for(lang, t), 0) + len(t)
+            print(f"[{lang}] {len(texts)} 条 · {sum(len(t) for t in texts)} 字（{'，'.join(f'{v} {n} 字' for v, n in by.items())}）· 已缓存 {sum(os.path.exists(cache_path(lang, t)) for t in texts)}")
             continue
         write_bundles(lang, run(lang, texts, a.kbps, a.workers))
     if not a.dry_run:

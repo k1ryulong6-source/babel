@@ -6,7 +6,7 @@
   python3 tools/tts_google.py --list es-ES          列出某语言可用的声音
   python3 tools/tts_google.py --say "perro" --lang es --out perro.mp3
 """
-import argparse, base64, json, os, sys, urllib.request
+import argparse, base64, html, json, os, re, sys, urllib.request
 
 API = "https://texttospeech.googleapis.com/v1"
 # 默认声音：每种语言一女一男（可用 --voice 覆盖）
@@ -34,9 +34,19 @@ def voices(lang_code):
     return [v for v in call(f"voices?languageCode={lang_code}")["voices"]]
 
 
-def synth(text, lang, voice=None, rate=1.0, ssml=False):
+def synth(text, lang, voice=None, rate=1.0, ssml=False, prons=()):
+    """prons：[(词, IPA)]，强制指定发音。Chirp3-HD 用 customPronunciations，其他声音用 SSML phoneme。"""
     code, defaults = VOICES[lang]
-    body = {"input": {"ssml" if ssml else "text": text}, "voice": {"languageCode": code, "name": voice or defaults[0]},
+    voice = voice or defaults[0]
+    inp = {"ssml" if ssml else "text": text}
+    if prons and "Chirp3" in voice:
+        inp["customPronunciations"] = {"pronunciations": [{"phrase": w, "phoneticEncoding": "PHONETIC_ENCODING_IPA", "pronunciation": ipa} for w, ipa in prons]}
+    elif prons:
+        s = html.escape(text, quote=False)
+        for w, ipa in prons:
+            s = re.sub(rf"\b{re.escape(w)}\b", lambda m: f'<phoneme alphabet="ipa" ph="{ipa}">{m.group(0)}</phoneme>', s, flags=re.I)
+        inp = {"ssml": f"<speak>{s}</speak>"}
+    body = {"input": inp, "voice": {"languageCode": code, "name": voice},
             "audioConfig": {"audioEncoding": "MP3", "speakingRate": rate, "sampleRateHertz": 24000}}
     return base64.b64decode(call("text:synthesize", body)["audioContent"])
 
