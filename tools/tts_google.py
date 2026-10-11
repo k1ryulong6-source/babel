@@ -6,7 +6,7 @@
   python3 tools/tts_google.py --list es-ES          列出某语言可用的声音
   python3 tools/tts_google.py --say "perro" --lang es --out perro.mp3
 """
-import argparse, base64, html, json, os, re, sys, urllib.request
+import argparse, base64, html, json, os, re, sys, time, urllib.error, urllib.request
 
 API = "https://texttospeech.googleapis.com/v1"
 # 默认声音：每种语言一女一男（可用 --voice 覆盖）
@@ -24,10 +24,20 @@ def key():
     return k
 
 
-def call(path, body=None):
+def call(path, body=None, tries=6):
     req = urllib.request.Request(f"{API}/{path}{'&' if '?' in path else '?'}key={key()}", data=json.dumps(body).encode() if body else None, headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            # 限流和服务端错误：退避重试；其他错误（如 400）直接抛出
+            if e.code not in (429, 500, 502, 503, 504) or i == tries - 1:
+                raise
+        except (urllib.error.URLError, TimeoutError):
+            if i == tries - 1:
+                raise
+        time.sleep(2 ** i)
 
 
 def voices(lang_code):
