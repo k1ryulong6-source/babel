@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261011.1754-f56585";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261011.1759-b63393";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -3049,7 +3049,7 @@ VIEWS.dict = (el) => {
     <div id="dq-sug" class="row" style="gap:6px"></div>
     <div class="dict-layout">
       <div class="card" id="dict-entry">${DS.word ? "" : `<p class="muted">36,000 词</p>`}</div>
-      <aside class="stack" style="gap:10px"><div class="card stack" style="gap:8px"><div class="eyebrow">最近查过</div><div class="row" style="gap:6px">${(S.profile.lookups || []).slice(0, 24).map(w => `<span class="wd chip en" data-w="${esc(w)}">${esc(w)}</span>`).join("") || `<span class="faint" style="font-size:13px">暂无</span>`}</div></div></aside>
+      <aside class="stack" style="gap:10px"><div class="card row between" style="gap:8px"><span style="font-size:14px">日中词典 <span class="faint" id="zd-st2">…</span></span><button class="btn sm" id="zd-open">导入</button></div><div class="card stack" style="gap:8px"><div class="eyebrow">最近查过</div><div class="row" style="gap:6px">${(S.profile.lookups || []).slice(0, 24).map(w => `<span class="wd chip en" data-w="${esc(w)}">${esc(w)}</span>`).join("") || `<span class="faint" style="font-size:13px">暂无</span>`}</div></div></aside>
     </div></div>`;
   const inp = $("#dq"), sug = $("#dq-sug");
   $("#dq-f").onsubmit = e => { e.preventDefault(); const v = inp.value.trim(); if (!v) return; DS.word = v; DS.hist = [v]; sug.innerHTML = ""; renderEntry($("#dict-entry"), v); Speech.say(v); };
@@ -4270,6 +4270,118 @@ function clozeOfJa(w) {
   return null;
 }
 
+/* ---- 日中词典：本地导入（Yomitan 格式 zip），只存在这台设备的 IndexedDB 里，不上传 ----
+   t：词 → [[读音, 释义文本, 词典名]]；r：读音（平假名）→ [词]；meta：词典名 → {title, n, at} */
+const ZHD = {
+  db: null, metaCache: null,
+  open() {
+    return this.db ||= new Promise((ok, no) => {
+      const r = indexedDB.open("babel_zhdict", 1);
+      r.onupgradeneeded = () => { const d = r.result; for (const n of ["t", "r", "meta"]) if (!d.objectStoreNames.contains(n)) d.createObjectStore(n); };
+      r.onsuccess = () => ok(r.result); r.onerror = () => no(r.error);
+    }).catch(e => { this.db = null; throw e; });
+  },
+  async get(store, key) { const db = await this.open(); return new Promise((ok, no) => { const q = db.transaction(store).objectStore(store).get(key); q.onsuccess = () => ok(q.result); q.onerror = () => no(q.error); }); },
+  async meta() {
+    if (this.metaCache) return this.metaCache;
+    if (!window.indexedDB) return (this.metaCache = []);
+    const db = await this.open().catch(() => null); if (!db) return (this.metaCache = []);
+    return (this.metaCache = await new Promise(ok => { const q = db.transaction("meta").objectStore("meta").getAll(); q.onsuccess = () => ok(q.result || []); q.onerror = () => ok([]); }));
+  },
+  // 查一个词：先按写法，再按读音（输入的是假名时）
+  async find(word, reading) {
+    if (!(await this.meta()).length) return [];
+    const out = [], seen = new Set(), push = (term, rows) => { for (const [r, g, d] of rows || []) { const k = term + "\t" + g; if (seen.has(k) || (reading && r && term !== word && hira(r) !== hira(reading))) continue; seen.add(k); out.push({ term, r, g, d }); } };
+    push(word, await this.get("t", word).catch(() => null));
+    if (!out.length && /^[ぁ-ゖァ-ヺー]+$/.test(word)) for (const t of ((await this.get("r", hira(word)).catch(() => null)) || []).slice(0, 6)) push(t, await this.get("t", t).catch(() => null));
+    return out;
+  },
+  async import(file, note) {
+    await needLib("jszip");
+    const zip = await JSZip.loadAsync(file);
+    const idx = zip.file("index.json") ? JSON.parse(await zip.file("index.json").async("string")) : {};
+    const title = String(idx.title || file.name.replace(/\.zip$/i, "")).slice(0, 60);
+    const banks = Object.keys(zip.files).filter(n => /(^|\/)term_bank_\d+\.json$/.test(n)).sort((a, b) => +a.match(/(\d+)\.json$/)[1] - +b.match(/(\d+)\.json$/)[1]);
+    if (!banks.length) throw new Error("压缩包里没有 term_bank_*.json，不是 Yomitan 格式的词典");
+    const db = await this.open(); let n = 0;
+    for (let bi = 0; bi < banks.length; bi++) {
+      note(`导入中 ${bi + 1} / ${banks.length} · 已写入 ${n} 条`);
+      const rows = JSON.parse(await zip.file(banks[bi]).async("string"));
+      const T = new Map(), R = new Map();
+      for (const row of rows) {
+        const [term, rd, , , , gl] = row; if (!term) continue;
+        const g = (Array.isArray(gl) ? gl : [gl]).map(ycText).map(x => x.trim()).filter(Boolean).join("\n").replace(/\n{3,}/g, "\n\n").slice(0, 2000);
+        if (!g) continue;
+        (T.get(term) || T.set(term, []).get(term)).push([rd || "", g, title]);
+        const hr = hira(rd || term); if (/^[ぁ-ゖー]+$/.test(hr)) (R.get(hr) || R.set(hr, new Set()).get(hr)).add(term);
+        n++;
+      }
+      await new Promise((ok, no) => {
+        const tx = db.transaction(["t", "r"], "readwrite"), st = tx.objectStore("t"), sr = tx.objectStore("r");
+        for (const [k, v] of T) { const q = st.get(k); q.onsuccess = () => { const old = q.result || [], has = new Set(old.map(x => x[1])); st.put([...old, ...v.filter(x => !has.has(x[1]))], k); }; }
+        for (const [k, v] of R) { const q = sr.get(k); q.onsuccess = () => sr.put([...new Set([...(q.result || []), ...v])].slice(0, 40), k); };
+        tx.oncomplete = ok; tx.onerror = () => no(tx.error); tx.onabort = () => no(tx.error || new Error("写入被中止（存储空间不够？）"));
+      });
+    }
+    await new Promise(ok => { const tx = db.transaction("meta", "readwrite"); tx.objectStore("meta").put({ title, n, at: today() }, title); tx.oncomplete = ok; tx.onerror = ok; });
+    this.metaCache = null; try { navigator.storage?.persist?.(); } catch { }
+    return { title, n };
+  },
+  async clear() { const db = await this.open(); await new Promise(ok => { const tx = db.transaction(["t", "r", "meta"], "readwrite"); for (const n of ["t", "r", "meta"]) tx.objectStore(n).clear(); tx.oncomplete = ok; tx.onerror = ok; }); this.metaCache = null; }
+};
+// Yomitan 的结构化释义 → 纯文本（注音 rt 去掉，块级元素换行）
+function ycText(c) {
+  if (c == null) return "";
+  if (typeof c === "string") return c;
+  if (Array.isArray(c)) return c.map(ycText).join("");
+  if (c.type === "text") return c.text || "";
+  if (c.type === "image" || c.tag === "img" || c.tag === "rt" || c.tag === "rp") return "";
+  if (c.tag === "br") return "\n";
+  const inner = ycText(c.content);
+  return /^(div|li|p|tr|ul|ol|details|summary|table)$/.test(c.tag || "") ? inner + "\n" : inner;
+}
+function zhDictModal() {
+  modal(`<div><div class="eyebrow">NICHŪ<span class="zh">日中词典</span></div><h2>导入日中词典</h2></div>
+    <div id="zd-list" class="muted" style="font-size:14px">读取中…</div>
+    <div class="explain" style="font-size:13px;line-height:1.8">支持 <b>Yomitan / Yomichan 格式</b>的词典压缩包（zip，里面有 term_bank_1.json 等文件）。<br>
+      去哪找：在 GitHub 搜 <b>MarvNC/yomitan-dictionaries</b>，里面的词典合集（含 Shoui 的双语词典合集）有日中 / 日汉双解词典；下载 zip 到手机或电脑，原样选中导入，不用解压。<br>
+      词典只存在这台设备里，不会上传，也不会进存档；换设备要重新导入。</div>
+    <div class="row" style="justify-content:flex-end"><button class="btn ghost sm" id="zd-clear" style="color:var(--bad)">删除已导入的</button><label class="btn pri" style="cursor:pointer">选择 zip 文件<input type="file" id="zd-in" accept=".zip,application/zip" hidden></label></div>
+    <div id="zd-st" class="faint" style="font-size:13px"></div>`, (m, close) => {
+    const list = () => ZHD.meta().then(ms => { $("#zd-list", m).innerHTML = ms.length ? ms.map(d => `<div>✓ <b>${esc(d.title)}</b> · ${d.n.toLocaleString()} 条 · ${esc(d.at)} 导入</div>`).join("") : "还没有导入日中词典。"; $("#zd-clear", m).hidden = !ms.length; });
+    list();
+    $("#zd-in", m).onchange = async e => {
+      const f = e.target.files?.[0]; e.target.value = ""; if (!f) return;
+      const st = $("#zd-st", m); st.textContent = "读取压缩包…";
+      try { const r = await ZHD.import(f, t => st.textContent = t); st.textContent = `导入完成：${r.title}，${r.n.toLocaleString()} 条`; list(); if (current === "dict") render(); }
+      catch (er) { st.textContent = "导入失败：" + (er?.message || er); }
+    };
+    $("#zd-clear", m).onclick = async () => { if (!confirm("删除这台设备上导入的日中词典？")) return; await ZHD.clear(); list(); toast("已删除"); if (current === "dict") render(); };
+  });
+}
+
+/* ---- 查词：输入归一化（全角半角、片假名、ヶ/か、长音）+ 最长匹配兜底 ---- */
+function jaVariants(w) {
+  const out = [], add = x => { x = x.trim(); if (x && !out.includes(x)) out.push(x); };
+  const n = w.normalize("NFKC").replace(/^[〜~～「『（(【]+|[」』）)】。、．.,!！?？]+$/g, "");
+  add(w); add(n);
+  if (/^[ァ-ヺー]+$/.test(n)) add(hira(n));
+  if (/^[ぁ-ゖー]+$/.test(n)) add(n.replace(/[ぁ-ゖ]/g, c => String.fromCharCode(c.charCodeAt(0) + 0x60)));
+  if (/[ヶケヵカか箇个]/.test(n)) for (const v of ["ヶ", "か", "カ", "箇", "ケ"]) add(n.replace(/(?<=[\d一二三四五六七八九十何数幾])[ヶケヵカか箇个](?=[\p{Script=Han}])/gu, v));
+  add(n.replace(/([ぁ-ゖ])ー+/g, "$1").replace(/[っッ]+$/, ""));
+  return out;
+}
+async function jaResolveQuery(word) {
+  const vars = jaVariants(word);
+  for (const v of vars) { if (LEX.low.has(v) || S.my.map.has(v) || JA.yomi?.has(v)) return { word: v }; }
+  for (const v of vars) { const m = jaScan(v, 0, v.length); if (m && m.L === v.length) return { word: m.base, ctx: { surface: word, why: m.why.join("・") } }; }
+  for (const v of vars) { if ((await jaDict(v).catch(() => [])).length || (await ZHD.find(v).catch(() => [])).length) return { word: v }; }
+  // 整个词找不到：取开头能查到的最长部分
+  const v = vars[1] || vars[0];
+  for (let L = Math.min(14, v.length - 1); L >= 1; L--) { const m = jaScan(v, 0, L); if (m && m.L === L) return { word: m.base, ctx: { surface: v.slice(0, L), why: m.why.join("・") }, partial: v }; }
+  return { word };
+}
+
 /* ---- 日语词条 ---- */
 const aiJaCache = new Map();
 async function renderJaEntry(el, raw, ctx = {}) {
@@ -4278,12 +4390,18 @@ async function renderJaEntry(el, raw, ctx = {}) {
   let word = String(raw || "").trim();
   await Promise.all([jaLoad().catch(() => { }), jaKanji().catch(() => { })]);
   // 词形还原：输入的是活用形时
-  if (!LEX.low.has(word) && !S.my.map.has(word) && !JA.yomi?.has(word)) { const m = jaScan(word, 0, word.length); if (m && m.L === word.length) { ctx = { surface: word, why: m.why.join("・"), ...ctx }; word = m.base; } }
+  let partial = "";
+  if (!LEX.low.has(word) && !S.my.map.has(word) && !JA.yomi?.has(word)) { const q = await jaResolveQuery(word); if (q.ctx) ctx = { ...q.ctx, ...ctx }; partial = q.partial || ""; word = q.word; }
   const dict = await jaDict(word).catch(() => []);
   if (el._tok !== token) return;
   const info = wordInfo(word);
   const y = JA.yomi?.get(word);
   const reading = info?.p || dict[0]?.[1]?.[0] || y?.r || "";
+  let zh = await ZHD.find(word, reading).catch(() => []);
+  for (const v of jaVariants(word).slice(1)) { if (zh.length) break; zh = await ZHD.find(v, reading).catch(() => []); }
+  const zhOn = (await ZHD.meta().catch(() => [])).length > 0;
+  if (el._tok !== token) return;
+  const hasZh = !!(info?.s?.length && !/^[\x00-\x7f]+$/.test(info.s[0][1])) || zh.length;
   S.profile.lookupsJa = [word, ...(S.profile.lookupsJa || []).filter(x => x !== word)].slice(0, 40); saveProfile();
   const r = prog(word); const ai = aiJaCache.get(word) || (info?.jj ? { jj: info.jj } : null);
   const kanjiRows = [...new Set(word.match(KJG) || [])].map(ch => [ch, JA.kanji?.[ch]]).filter(([, k]) => k);
@@ -4293,22 +4411,25 @@ async function renderJaEntry(el, raw, ctx = {}) {
       <div style="min-width:0"><div class="hw jp">${esc(word)}</div>${reading && reading !== word ? `<div class="ipa jp">${esc(hira(reading))}</div>` : ""}
       ${ctx.surface && ctx.surface !== word ? `<div class="faint" style="font-size:13px">原文 <b class="jp">${esc(ctx.surface)}</b>${ctx.why ? ` ← ${esc(ctx.why)}` : ""}</div>` : ""}</div>
       <div class="row" style="gap:6px;flex-wrap:nowrap">${starBtn("w", word)}</div></div>
-    ${status || (!info && dict.length) ? `<div class="row" style="gap:6px">${status}${!info && dict.length ? `<button class="btn sm pri" id="e-add">加入生词本</button>` : ""}${info?.book === "my" ? `<button class="btn sm ghost" id="e-rm" style="color:var(--bad)">移出生词本</button>` : ""}${info?.book === "bk" && !r ? `<button class="btn sm pri" id="e-rev">加入复习</button>` : ""}</div>` : ""}
+    ${status || (!info && (dict.length || zh.length)) ? `<div class="row" style="gap:6px">${status}${!info && (dict.length || zh.length) ? `<button class="btn sm pri" id="e-add">加入生词本</button>` : ""}${info?.book === "my" ? `<button class="btn sm ghost" id="e-rm" style="color:var(--bad)">移出生词本</button>` : ""}${info?.book === "bk" && !r ? `<button class="btn sm pri" id="e-rev">加入复习</button>` : ""}</div>` : ""}
     ${info?.s?.length ? `<div class="senses">${info.s.map(([p, z], i) => `<div class="sense"><span class="no num">${i + 1}</span>${p ? `<span class="pos">${esc(p)}</span>` : ""}<span>${esc(z)}</span></div>`).join("")}</div>` : ""}
+    ${partial ? `<div class="explain" style="font-size:13px">没有找到整个「${esc(partial)}」，下面是开头能查到的部分。</div>` : ""}
+    ${zh.length ? `<div class="stack" style="gap:6px"><div class="eyebrow">日中辞典<span class="zh">${esc([...new Set(zh.map(z => z.d))].join(" · "))}</span></div>${zh.slice(0, 6).map(z => `<div class="jmd">${z.term !== word || (z.r && hira(z.r) !== hira(reading)) ? `<div class="jp" style="font-size:16px">${esc(z.term)}${z.r ? `【${esc(z.r)}】` : ""}</div>` : ""}<div class="zhd" style="font-size:15px;line-height:1.75">${esc(z.g).replace(/\n/g, "<br>")}</div></div>`).join("")}</div>` : ""}
     ${info?.c ? `<div class="stack" style="gap:6px"><div class="eyebrow">搭配<span class="zh">コロケーション</span></div><div class="row" style="gap:6px">${info.c.split(/[、,]/).filter(Boolean).map(x => `<span class="colloc jp">${esc(x.trim())}</span>`).join("")}</div></div>` : ""}
     ${info?.n ? `<div class="explain">${esc(info.n)}</div>` : ""}
     ${(info?.x || []).length ? `<div class="stack" style="gap:8px"><div class="eyebrow">例文</div>${info.x.map(([ja, zh]) => `<div class="ex jp" data-lang="ja">${jaHTML(ja)}<span class="zh">${esc(zh)}</span></div>`).join("")}</div>` : ""}
     ${ai ? `<div class="stack" style="gap:8px"><div class="eyebrow">AI 解说<span class="zh">国語辞典風</span></div>${ai.jj ? `<div class="kokugo jp" data-lang="ja">${jaHTML(ai.jj)}</div>` : ""}${(ai.zh || []).length ? `<div style="font-size:15px">${ai.zh.map(([p, z]) => `<b>${esc(p)}</b> ${esc(z)}`).join("；")}</div>` : ""}${ai.col ? `<div class="row" style="gap:6px">${ai.col.split(/[、,]/).map(x => `<span class="colloc jp">${esc(x.trim())}</span>`).join("")}</div>` : ""}${ai.note ? `<div class="explain">${esc(ai.note)}</div>` : ""}${(ai.x || []).map(([ja, zh]) => `<div class="ex jp" data-lang="ja">${jaHTML(ja)}<span class="zh">${esc(zh)}</span></div>`).join("")}</div>` : ""}
-    ${dict.length ? `<div class="stack" style="gap:6px"><div class="eyebrow">辞書<span class="zh">JMdict · 英文释义</span></div>${dict.slice(0, 4).map(d => `<div class="jmd"><div class="jp" style="font-size:16px">${esc(d[0].slice(0, 3).join("・") || d[1][0])}${d[0].length ? `【${esc(d[1].slice(0, 2).join("・"))}】` : ""}${d[3] ? ` <span class="pill good">常用</span>` : ""}</div>${d[2].map(([p, g, t], i) => `<div class="dict-tr"><span class="faint num">${i + 1}</span> ${p ? `<span class="pos">${esc(p)}</span> ` : ""}${esc(g)}${t ? ` <span class="faint">〔${esc(t)}〕</span>` : ""}</div>`).join("")}</div>`).join("")}</div>` : ""}
+    ${dict.length ? `<div class="stack" style="gap:6px"><div class="eyebrow">辞書<span class="zh">JMdict · 英文释义</span>${hasZh ? "" : ` <span class="pill">暂无中文</span>${zhOn ? "" : ` <button class="btn sm ghost" id="e-zhd">导入日中词典</button>`}`}</div>${dict.slice(0, 4).map(d => `<div class="jmd"><div class="jp" style="font-size:16px">${esc(d[0].slice(0, 3).join("・") || d[1][0])}${d[0].length ? `【${esc(d[1].slice(0, 2).join("・"))}】` : ""}${d[3] ? ` <span class="pill good">常用</span>` : ""}</div>${d[2].map(([p, g, t], i) => `<div class="dict-tr"><span class="faint num">${i + 1}</span> ${p ? `<span class="pos">${esc(p)}</span> ` : ""}${esc(g)}${t ? ` <span class="faint">〔${esc(t)}〕</span>` : ""}</div>`).join("")}</div>`).join("")}</div>` : ""}
     ${kanjiRows.length ? `<div class="stack" style="gap:6px"><div class="eyebrow">漢字</div><div class="kgrid">${kanjiRows.map(([ch, k]) => `<div class="kc"><b class="jp">${esc(ch)}</b><div><div><span class="faint">音</span> ${esc(k[0] || "—")}</div><div><span class="faint">訓</span> ${esc(k[1] || "—")}</div><div class="faint en" style="font-size:12px">${esc(k[2])}${k[3] ? ` · ${+k[3] <= 8 ? "常用" : "人名用"}` : " · 表外"}</div></div></div>`).join("")}</div></div>` : ""}
-    ${!info && !dict.length ? `<div class="muted">辞書に「${esc(word)}」が見つかりません。${aiOK() ? "可以让 AI 解释。" : ""}</div>` : ""}
+    ${!info && !dict.length && !zh.length ? `<div class="muted">辞書に「${esc(word)}」が見つかりません。${aiOK() ? "可以让 AI 解释。" : ""}</div>` : ""}
     ${aiOK() ? `<div class="row"><button class="btn sm ai" id="e-ai">${ai ? "再解释一次" : "AI 解说（国語辞典 + 中文）"}</button><span id="e-ai-st"></span></div>` : ""}
   </div>`;
   const add = $("#e-add", el);
   if (add) add.onclick = () => {
-    const s = ai?.zh?.length ? ai.zh : dict[0][2].slice(0, 2).map(([p, g]) => [p, g]);
+    const s = ai?.zh?.length ? ai.zh : zh.length ? [["", zh[0].g.split("\n").find(x => /[\u4e00-\u9fff]/.test(x) && !/^[ぁ-ゖァ-ヺ]/.test(x))?.slice(0, 80) || zh[0].g.split("\n")[0].slice(0, 80)]] : dict[0][2].slice(0, 2).map(([p, g]) => [p, g]);
     addMyWord({ w: word, p: hira(reading), s, x: ai?.x || [], src: "dict", c: ai?.col || "", n: ai?.note || "" }); toast("已加入生词本"); renderJaEntry(el, word, ctx);
   };
+  $("#e-zhd", el) && ($("#e-zhd", el).onclick = zhDictModal);
   $("#e-rm", el) && ($("#e-rm", el).onclick = () => { removeMyWord(word); toast("已移出生词本"); renderJaEntry(el, word, ctx); });
   $("#e-rev", el) && ($("#e-rev", el).onclick = () => { const t = today(); setProg(word, [1, t, 0, 0, t, t]); toast("已加入今天的复习"); renderJaEntry(el, word, ctx); });
   const aib = $("#e-ai", el);
@@ -5752,10 +5873,12 @@ VIEWS_JA.dict = (el) => {
     <form class="row" id="dq-f" style="flex-wrap:nowrap"><input type="text" id="dq" class="jp" placeholder="漢字・かな・活用形（食べさせられた）" autocomplete="off" value="${esc(DS.word || "")}" style="font-size:18px"><button class="btn pri" type="submit">検索</button></form>
     <div id="dq-sug" class="row" style="gap:6px"></div>
     <div class="dict-layout">
-      <div class="card" id="dict-entry">${DS.word ? "" : `<p class="muted">JMdict 7 万余语 · 词书 ${BOOK_ORDER.reduce((s, b) => s + bookWords(b).length, 0)} 语带中文释义</p>`}</div>
-      <aside class="stack" style="gap:10px"><div class="card stack" style="gap:8px"><div class="eyebrow">最近查过</div><div class="row" style="gap:6px">${(S.profile.lookupsJa || []).slice(0, 24).map(w => `<span class="wd chip jp" data-w="${esc(w)}">${esc(w)}</span>`).join("") || `<span class="faint" style="font-size:13px">暂无</span>`}</div></div></aside>
+      <div class="card" id="dict-entry">${DS.word ? "" : `<p class="muted">JMdict 7 万余语 · 词书 ${BOOK_ORDER.reduce((s, b) => s + bookWords(b).length, 0)} 语带中文释义<span id="zd-sum"></span></p>`}</div>
+      <aside class="stack" style="gap:10px"><div class="card row between" style="gap:8px"><span style="font-size:14px">日中词典 <span class="faint" id="zd-st2">…</span></span><button class="btn sm" id="zd-open">导入</button></div><div class="card stack" style="gap:8px"><div class="eyebrow">最近查过</div><div class="row" style="gap:6px">${(S.profile.lookupsJa || []).slice(0, 24).map(w => `<span class="wd chip jp" data-w="${esc(w)}">${esc(w)}</span>`).join("") || `<span class="faint" style="font-size:13px">暂无</span>`}</div></div></aside>
     </div></div>`;
   const inp = $("#dq"), sug = $("#dq-sug");
+  $("#zd-open").onclick = zhDictModal;
+  ZHD.meta().then(ms => { const n = ms.reduce((a, d) => a + d.n, 0); $("#zd-st2") && ($("#zd-st2").textContent = ms.length ? `已导入 ${ms.length} 部` : "未导入"); $("#zd-sum") && n && ($("#zd-sum").textContent = ` · 日中词典 ${n.toLocaleString()} 条`); }).catch(() => { });
   const show = v => { DS.word = v; sug.innerHTML = ""; renderJaEntry($("#dict-entry"), v); };
   $("#dq-f").onsubmit = e => { e.preventDefault(); const v = inp.value.trim(); if (v) show(v); };
   let tm; inp.oninput = () => { clearTimeout(tm); tm = setTimeout(() => {
