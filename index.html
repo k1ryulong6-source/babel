@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261008.1513-55ea00";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261011.1557-7ca1f3";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1192,6 +1192,103 @@ html.p-ja .sheet.boot{background:#f2ede1}html.p-es .sheet.boot{background:#caa67
 .ecell.off{opacity:.55}
 .ecell:active{background:rgba(29,20,14,.06)}
 .mturn.es{font-family:"IM Fell English",serif!important;font-style:italic;color:#9c2a1c!important;padding:6px 8px!important;background:#e3c99d!important;font-size:15px!important}
+/* ================= v3：纸 · 墨 · 印 —— 首页与内页共用的一套组件 =================
+   纸条（.slip3）：浅一号的纸 + 双细线边；主按钮（.cta3）：墨色长条 + 蜡封（日语为朱印）；
+   砖块进度（.bricks3）；底部导航（.nav3）；页头（.ph3）。三种语言只换纸、墨、印的颜色和字体。 */
+:root{--nav3-h:calc(64px + env(safe-area-inset-bottom,0px))}
+.slip3{position:relative;background:var(--card-solid,#f1e2c0);border:1px solid var(--line);box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 3px 12px rgba(50,30,10,.14);color:var(--ink)}
+.slip3::after{content:"";position:absolute;inset:4px;border:.6px solid var(--line);pointer-events:none;opacity:.7}
+.eye3{font-family:var(--latin);font-style:italic;color:var(--sig);font-size:14px;letter-spacing:.03em;line-height:1.3}
+html.p-ja .eye3{font-style:normal;font-size:12px;letter-spacing:.28em}
+.mut3{color:var(--muted);font-size:12.5px;line-height:1.55;margin:0}
+.rule3{height:5px;border-top:1.4px solid var(--ink);border-bottom:.7px solid var(--ink);opacity:.62;margin:10px 0}
+.bricks3{display:flex;gap:2px;margin-top:6px}.bricks3 i{flex:1;height:8px;border:.8px solid var(--ink);opacity:.5}
+.bricks3 i.f{background:var(--sig);border-color:var(--sig);opacity:1}.bricks3 i.h{background:linear-gradient(90deg,var(--sig) 50%,transparent 50%);border-color:var(--sig);opacity:1}
+.seal3{width:36px;height:36px;border-radius:50%;flex:none;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#c4553b,var(--sig) 55%,#6e1f12);color:#f6dccb;font-family:"IM Fell English",serif;font-size:16px;box-shadow:0 2px 3px rgba(0,0,0,.3)}
+.seal3.s-ja{border-radius:4px;background:var(--sig);font-family:"Shippori Mincho",serif;font-weight:700;font-size:15px;color:#fbefe8}
+.cta3{display:flex;align-items:center;gap:12px;width:100%;min-height:54px;border:0;background:var(--ink);color:var(--card-solid,#f3e8d0);padding:0 18px 0 9px;font-family:var(--ui);font-size:16.5px;font-weight:700;cursor:pointer;box-shadow:0 4px 0 rgba(0,0,0,.18);text-align:left}
+.cta3:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(0,0,0,.18)}
+.cta3 small{margin-left:auto;font-weight:400;font-size:12.5px;opacity:.75;font-family:var(--en);font-style:italic;white-space:nowrap}
+html.p-ja .cta3 small{font-style:normal}
+.cta3:disabled{opacity:.45}
+.cun{font-family:"Noto Sans Cuneiform","Segoe UI Historic",serif}
+.lg3{font-family:"Marcellus SC","Marcellus",serif;font-size:11px;padding:1px 6px;border:1px solid var(--ink);letter-spacing:.06em;flex:none;color:var(--ink)}
+.sect3{display:flex;align-items:baseline;gap:8px;margin:14px 0 2px}.sect3 b{font-family:var(--zhd);font-size:14px}.sect3 i{font-family:var(--latin);font-style:italic;color:var(--sig);font-size:12px}
+html.p-ja .sect3 i{font-style:normal;letter-spacing:.2em;font-size:11px}
+.row3{display:flex;align-items:center;gap:11px;width:100%;padding:11px 0;border:0;border-bottom:.8px dashed var(--line);background:none;text-align:left;color:var(--ink);cursor:pointer;font:inherit}
+.row3:last-child{border-bottom:0}
+.row3 .t{flex:1;min-width:0}.row3 .t b{display:block;font-size:14.5px;font-weight:500;line-height:1.4}.row3 .t small{display:block;font-size:11.5px;color:var(--muted);line-height:1.45}
+.row3.done .t b{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--sig)}
+.row3.lock{opacity:.55}
+.box3{width:20px;height:20px;border:1.3px solid var(--ink);flex:none;display:grid;place-items:center;font-size:13px}
+.row3.done .box3{background:var(--ink);color:var(--card-solid)}.row3.lock .box3{border-style:dashed}
+.arr3{font-size:22px;color:var(--muted)}
+/* ---- 底部导航 ---- */
+.nav3{position:fixed;left:0;right:0;bottom:0;z-index:45;height:var(--nav3-h);padding:6px 4px env(safe-area-inset-bottom,0px);display:grid;grid-template-columns:repeat(5,1fr);background:var(--card-solid,#f1e2c0);border-top:1.4px solid var(--ink);box-shadow:0 -4px 14px rgba(40,25,10,.12)}
+.nav3::before{content:"";position:absolute;left:0;right:0;top:3px;border-top:.6px solid var(--ink);opacity:.55}
+.nav3 button{border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:1px;color:var(--muted);cursor:pointer;padding:4px 0 0;font:inherit}
+.nav3 svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.nav3 b{font-size:11px;font-weight:500}.nav3 em{font-family:var(--latin);font-style:italic;font-size:9px;opacity:.75;line-height:1}
+html.p-ja .nav3 em{font-style:normal;letter-spacing:.08em}
+.nav3 button.on{color:var(--ink)}.nav3 button.on b{font-weight:700}.nav3 button.on svg{stroke:var(--sig);stroke-width:1.7}
+.nav3 button.on::after{content:"";width:16px;height:3px;background:var(--sig);margin-top:2px}
+body.focus .nav3,body.page-turning .nav3{display:none}
+html.paper main#view{padding-bottom:calc(var(--nav3-h) + 24px)}
+body.focus main#view{padding-bottom:40px}
+/* ---- 首页 ---- */
+.home3{position:absolute;inset:0;z-index:5;pointer-events:none}
+.home3>*{pointer-events:auto}
+.tabs3{position:absolute;left:14px;top:calc(env(safe-area-inset-top,0px) + 14px);display:flex;border:1.2px solid var(--ink);background:rgba(250,244,230,.82);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.tabs3 button{border:0;border-left:1px solid var(--line);background:none;padding:6px 12px 7px;font-family:"Marcellus SC","Marcellus",serif;font-size:13px;letter-spacing:.08em;color:var(--muted);cursor:pointer}
+.tabs3 button:first-child{border-left:0}.tabs3 button i{font-style:normal;font-family:var(--zhd);font-weight:600;font-size:12px;margin-left:4px}
+.tabs3 button.on{background:var(--ink);color:var(--card-solid,#f3e8d0)}
+.chip3{position:absolute;left:14px;top:calc(env(safe-area-inset-top,0px) + 58px);padding:5px 10px;background:rgba(250,244,230,.82);border:1px solid var(--line);font-size:12px;color:var(--muted)}
+.chip3 b{color:var(--ink)}.chip3 .cun{color:var(--sig);font-size:14px}.chip3 i{font-family:var(--latin);font-style:italic}
+html.p-ja .chip3 i{font-style:normal}
+.note3{position:absolute;left:12px;right:12px;bottom:calc(var(--nav3-h) + 12px);padding:10px 16px 16px;display:flex;flex-direction:column;max-height:calc(100% - var(--nav3-h) - 130px);transition:top .25s ease}
+.note3.open{top:calc(env(safe-area-inset-top,0px) + 100px)}
+.grab3{align-self:center;width:44px;height:16px;border:0;background:none;cursor:pointer;position:relative;margin:-4px 0 0}
+.grab3::before{content:"";position:absolute;left:4px;right:4px;top:6px;height:4px;border-radius:2px;background:var(--ink);opacity:.25}
+.cunband3{font-size:12px;letter-spacing:6px;opacity:.2;white-space:nowrap;overflow:hidden;line-height:1.2}
+.fret3{height:10px;background:repeating-linear-gradient(90deg,transparent 0 2px,var(--sig) 2px 4px,transparent 4px 12px);opacity:.8;-webkit-mask:linear-gradient(transparent 0 30%,#000 30% 70%,transparent 70%);mask:linear-gradient(transparent 0 30%,#000 30% 70%,transparent 70%);border-top:2px solid var(--sig);border-bottom:2px solid var(--sig)}
+html.p-es .note3{border:2px solid var(--sig)}
+.hd3{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin-top:4px}
+.hd3 h2{font-family:var(--zhd);font-weight:900;font-size:22px;line-height:1.25;margin:0}
+html.p-ja .hd3 h2{font-family:"Shippori Mincho",var(--zhd);font-weight:800}
+.cnt3{text-align:right;flex:none}.cnt3 b{display:block;font-family:"Marcellus",serif;font-weight:400;font-size:26px;line-height:1}.cnt3 b small{font-size:15px;color:var(--muted)}.cnt3 span{font-size:12px;color:var(--muted)}
+.cur3{display:flex;gap:12px;align-items:center;cursor:pointer;margin-bottom:14px}
+.cur3 .t{flex:1;min-width:0}.cur3 .t b{display:block;font-size:15.5px;line-height:1.35}.cur3 .t small{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.badge3{flex:none;min-width:46px;border:1.2px solid var(--ink);padding:5px 6px 4px;text-align:center;font-family:"Marcellus",serif;font-size:13px;line-height:1.1;position:relative}
+.badge3 small{font-size:8.5px;color:var(--muted);letter-spacing:.06em}
+.badge3 b{position:absolute;right:-8px;top:-8px;width:18px;height:18px;border-radius:50%;background:var(--sig);color:#fff;font-size:11px;display:grid;place-items:center;font-weight:400}
+.badge3.ic{display:grid;place-items:center;height:46px;font-size:18px}.badge3.ic svg{width:22px;height:22px;stroke:var(--ink);fill:none;stroke-width:1.4}
+.list3{display:none;flex:1;min-height:0;overflow:auto;margin:-6px 0 12px;-webkit-overflow-scrolling:touch}
+.note3.open .list3{display:block}.note3.open .cur3{display:none}
+.links3{display:flex;gap:16px;padding:10px 0 2px}.links3 button{border:0;background:none;color:var(--sig);font-family:var(--latin);font-style:italic;font-size:14px;cursor:pointer;padding:4px 0;text-decoration:underline;text-underline-offset:3px}
+html.p-ja .links3 button{font-style:normal;font-size:13px}
+.sheet-hint{display:none!important}
+/* ---- 内页：页头、卡片、网格 ---- */
+.page3{display:flex;flex-direction:column;gap:14px;padding-top:6px}
+.ph3 h1{font-family:var(--zhd);font-weight:900;font-size:26px;line-height:1.25;margin:2px 0 4px}
+html.p-ja .ph3 h1{font-family:"Shippori Mincho",var(--zhd);font-weight:800}
+.ph3{padding-bottom:10px;border-bottom:1.4px solid var(--ink);box-shadow:0 3px 0 -2px var(--ink)}
+.pad3{padding:14px 16px 16px}.pad3 .cta3{margin-top:14px}
+.list-pad3{padding:2px 16px}
+.t3{font-family:var(--zhd);font-size:17px;margin:2px 0}
+.stage3{padding:0 16px}.stage3 summary{list-style:none;display:flex;align-items:center;gap:10px;justify-content:space-between;padding:14px 0;cursor:pointer}
+.stage3 summary::-webkit-details-marker{display:none}
+.stage3 summary b{display:block;font-family:var(--zhd);font-size:16px}.stage3 summary small{display:block;font-size:12px;color:var(--muted)}
+.unit3{padding:10px 0;border-top:.8px dashed var(--line)}.unit3.here .uh b{color:var(--sig)}
+.unit3 .uh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.unit3 .uh b{font-size:14.5px}
+.les3{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.les3 button{width:34px;height:30px;border:1.1px solid var(--ink);background:none;font-family:"Marcellus",serif;font-size:14px;color:var(--ink);cursor:pointer}
+.les3 button.done{background:var(--ink);color:var(--card-solid)}.les3 button.cur{background:var(--sig);border-color:var(--sig);color:#fff}.les3 button.lock{border-style:dashed;opacity:.45;cursor:default}
+.grid3{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile3{padding:14px 14px 14px;text-align:left;cursor:pointer;font:inherit;border:1px solid var(--line)}
+.tile3 b{display:block;font-family:var(--zhd);font-size:15.5px}.tile3 small{display:block;font-size:12px;color:var(--muted);margin-top:3px;line-height:1.4}
+.stat3{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}.stat3 b{display:block;font-family:"Marcellus",serif;font-weight:400;font-size:26px}.stat3 span{font-size:11px;color:var(--muted)}
+.cal3{max-width:300px;margin:0 auto}.cal3>div{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.cal3>div:first-child{font-size:11px;color:var(--muted);text-align:center;margin-bottom:4px}
+.cal3 i{aspect-ratio:1;border:1px solid var(--line)}.cal3 i.ck{background:var(--ink)}.cal3 i.all{outline:2px solid var(--sig);outline-offset:-2px}.cal3 i.now{border-color:var(--sig);border-width:2px}.cal3 i.fut{opacity:.3}
 </style>
 
 <main id="view"><div class="desk"><div class="sheet boot" id="sheet"></div></div></main>
@@ -2339,8 +2436,9 @@ function render(opts) {
   if (!home) { pageBar(); paperTexture(curLang()); }
   (viewOf(current) || viewOf("home"))(el, opts); updateBadges();
   // 背单词、测验、模拟时隐藏导航，进入沉浸模式
-  const focus = (current === "words" && WS.mode === "session" && WS.sess && WS.sess.pos < WS.sess.q.length) || (current === "test" && TS.run && !TS.run.graded) || (current === "grammar" && GS.tab === "mock");
+  const focus = (current === "words" && WS.mode === "session" && WS.sess && WS.sess.pos < WS.sess.q.length) || (current === "test" && TS.run && !TS.run.graded) || (current === "grammar" && GS.tab === "mock") || (current === "lesson" && LR.quiz) || (current === "utest" && UT.quiz) || current === "mistq" || (current === "conj" && CJ.sess);
   document.body.classList.toggle("focus", !!focus);
+  nav3();
 }
 function updateBadges() { } // 旧版导航上的角标已随导航一起取消
 /* 学习语言在首页右上角的折角切换（见 9f-shell.js） */
@@ -6112,12 +6210,14 @@ const SHEET_EN = (() => {
   ];
   const charcoal = { c: C, w: [1.6, 2.9], o: [.55, .9], n: 3, jit: 1 };
   const faint = { c: SEP, w: [.6, 1], o: [.28, .42], n: 1, jit: .8 };
+  // 蓝图线：还没砌到的塔层，轮廓清楚但比炭笔淡
+  const plan = { c: SEP, w: [.9, 1.5], o: [.52, .7], n: 2, jit: .7 };
   function paper(pen, vb) {
-    const y0 = vb.y - 20, h = vb.h + 40;
-    const o = [`<rect x="-20" y="${f(y0)}" width="430" height="${f(h)}" fill="${BASE}"/>`,
-      `<rect x="-20" y="${f(y0)}" width="430" height="${f(h)}" filter="url(#${P}paper)" opacity="0.85"/>`,
-      `<rect x="-20" y="${f(y0)}" width="430" height="${f(h)}" filter="url(#${P}rough)" opacity="0.55"/>`,
-      `<rect x="-20" y="${f(y0)}" width="430" height="${f(h)}" filter="url(#${P}fib)" opacity="0.35"/>`];
+    const y0 = vb.y - 20, h = vb.h + 40, x0 = (vb.x || 0) - 20, w0 = (vb.w || 390) + 40;
+    const o = [`<rect x="${f(x0)}" y="${f(y0)}" width="${f(w0)}" height="${f(h)}" fill="${BASE}"/>`,
+      `<rect x="${f(x0)}" y="${f(y0)}" width="${f(w0)}" height="${f(h)}" filter="url(#${P}paper)" opacity="0.85"/>`,
+      `<rect x="${f(x0)}" y="${f(y0)}" width="${f(w0)}" height="${f(h)}" filter="url(#${P}rough)" opacity="0.55"/>`,
+      `<rect x="${f(x0)}" y="${f(y0)}" width="${f(w0)}" height="${f(h)}" filter="url(#${P}fib)" opacity="0.35"/>`];
     // 水渍：模糊的一团 + 一圈干掉的边
     const r = SK.rng(71);
     for (let i = 0; i < 9; i++) {
@@ -6131,7 +6231,7 @@ const SHEET_EN = (() => {
     return o.join("");
   }
   function ledge(pen, y, a, b, th, ink) {
-    if (!ink) { pen.line(a, y, b, y, faint); pen.line(a, y + th, b, y + th, { ...faint, o: [.2, .3] }); return; }
+    if (!ink) { pen.line(a, y, b, y, plan); pen.line(a, y + th, b, y + th, { ...plan, o: [.36, .5] }); return; }
     pen.line(a, y, b, y, { ...charcoal, w: [2.2, 3.1] });
     pen.line(a, y + th, b, y + th, { ...charcoal, w: [1.3, 2.1], n: 2 });
     pen.line(a, y, a, y + th, { ...charcoal, w: [1.3, 1.8], n: 1 }); pen.line(b, y, b, y + th, { ...charcoal, w: [1.3, 1.8], n: 1 });
@@ -6158,7 +6258,13 @@ const SHEET_EN = (() => {
         out.push(`<path d="M${f(xa + pen.j(.8))} ${f(y0 - 2)} Q${f((xa + xb) / 2 + pen.j(1.5))} ${f((y0 + y1) / 2)} ${f(xb + pen.j(.8))} ${f(y1 + 3)}" stroke="${C}" stroke-width="${pen.rand(.75, 1.2).toFixed(2)}" opacity="${(.24 + dense * .16 + pen.r() * .1).toFixed(2)}" fill="none" stroke-linecap="round"/>`);
       }
       pen.raw(out.join(""));
-    } else { pen.line(L[0], y0, L[1], y1, faint); pen.line(R[0], y0, R[1], y1, faint); }
+    } else {
+      pen.line(L[0], y0, L[1], y1, plan); pen.line(R[0], y0, R[1], y1, plan);
+      // 右侧淡淡几笔阴影，让未建的塔层也有体积
+      const W0 = R[0] - L[0], W1 = R[1] - L[1], out = [];
+      for (let u = .74; u < .98; u += .018 + pen.r() * .012) { const xa = L[0] + W0 * u, xb = L[1] + W1 * u; out.push(`<path d="M${f(xa)} ${f(y0 - 2)} L${f(xb)} ${f(y1 + 3)}" stroke="${SEP}" stroke-width="0.6" opacity="0.2"/>`); }
+      pen.raw(out.join(""));
+    }
     const w = t.win;
     for (let k = 0; k < w.n; k++) {
       const s = windowShape(w, k), shade = s.br > L[0] + (R[0] - L[0]) * .7;
@@ -6168,7 +6274,7 @@ const SHEET_EN = (() => {
         pen.line(s.bl, w.yb, s.tl, w.ys, { c: C, w: [.9, 1.5], o: [.6, .85], n: 2, jit: .6 });
         pen.line(s.br, w.yb, s.tr, w.ys, { c: C, w: [.9, 1.5], o: [.6, .85], n: 2, jit: .6 });
         for (let i = 0; i < 2; i++) pen.raw(`<path d="M${f(s.tl + pen.j(.5))} ${f(w.ys + pen.j(.5))} A${f(w.ht)} ${f(s.ry)} 0 0 1 ${f(s.tr + pen.j(.5))} ${f(w.ys + pen.j(.5))}" stroke="${C}" stroke-width="${pen.rand(.9, 1.5).toFixed(2)}" opacity="${pen.rand(.6, .85).toFixed(2)}" fill="none"/>`);
-      } else pen.raw(`<path d="${s.d}" fill="none" stroke="${SEP}" stroke-width="0.7" stroke-dasharray="4 3" opacity="0.4"/>`);
+      } else pen.raw(`<path d="${s.d}" fill="none" stroke="${SEP}" stroke-width="0.95" stroke-dasharray="4 2.5" opacity="0.6"/>`);
     }
   }
   function art(st, vb) {
@@ -6198,9 +6304,9 @@ const SHEET_EN = (() => {
     // 高度标尺
     g.line(16.2, 650.5, 15.5, 300.2, { ...scaf, w: [1.1, 1.2] });
     [650.5, 452.3, 300.3].forEach(y => g.line(11.5, y, 20.3, y, { ...scaf, w: [.9, 1.4] }));
-    const titleY = Math.max(40, vb.y + 40);
+    const titleY = Math.max(40, vb.y + 130);
     const defs = SK.filters(P) + pen.defsSvg();
-    const vig = `<rect x="0" y="${f(vb.y)}" width="390" height="${f(vb.h)}" fill="url(#${P}vig)"/><rect x="0" y="${f(vb.y)}" width="390" height="${f(vb.h)}" filter="url(#${P}grain)" opacity="0.26" style="mix-blend-mode:multiply"/>`;
+    const vig = `<rect x="${f(vb.x)}" y="${f(vb.y)}" width="${f(vb.w)}" height="${f(vb.h)}" fill="url(#${P}vig)"/><rect x="${f(vb.x)}" y="${f(vb.y)}" width="${f(vb.w)}" height="${f(vb.h)}" filter="url(#${P}grain)" opacity="0.26" style="mix-blend-mode:multiply"/>`;
     return `<defs>${defs}</defs>${paper(pen, vb)}<g filter="url(#${P}coal)">${pen.svg()}</g><rect x="14" y="${titleY}" width="170" height="60" fill="${BASE}" opacity="0.7" filter="url(#${P}smudge)"/>${vig}`;
   }
   /* ---- 动态层：砖、红粉笔圈、文字、折角 ---- */
@@ -6240,12 +6346,12 @@ const SHEET_EN = (() => {
     const rp = new SK.Pen(77, "enr");
     rp.line(right ? tx - 1 : tx + 30, ty + 4, right ? tx - 11 : tx + 40, ty + 16, { c: RED, w: [2, 2.6], o: [.62, .7], n: 3, jit: .6 });
     const bricks = pen.svg(), defs = pen.defsSvg() + rp.defsSvg();
-    const band = `<clipPath id="enband"><rect x="0" y="630" width="390" height="230"/></clipPath>`;
-    const titleY = Math.max(70, vb.y + 70);
+    const band = `<clipPath id="enband"><rect x="${f(vb.x)}" y="630" width="${f(vb.w)}" height="230"/></clipPath>`;
+    const titleY = Math.max(70, vb.y + 160);
     return {
       svg: `<defs>${defs}${band}<radialGradient id="ENvigU" gradientUnits="userSpaceOnUse" cx="195" cy="${f(vb.y + vb.h * .48)}" r="${f(390 * .72)}" gradientTransform="translate(195 ${f(vb.y + vb.h * .48)}) scale(1 ${f(vb.h / 390)}) translate(-195 ${f(-(vb.y + vb.h * .48))})"><stop offset="0.55" stop-color="#6b4420" stop-opacity="0"/><stop offset="1" stop-color="#5a3514" stop-opacity="0.55"/></radialGradient></defs>
 <g filter="url(#${P}coal)">${bricks}${red.join("")}${rp.svg()}</g>
-<g clip-path="url(#enband)"><rect x="0" y="630" width="390" height="230" fill="url(#ENvigU)"/><rect x="0" y="630" width="390" height="230" filter="url(#${P}grain)" opacity="0.2" style="mix-blend-mode:multiply"/></g>
+<g clip-path="url(#enband)"><rect x="${f(vb.x)}" y="630" width="${f(vb.w)}" height="230" fill="url(#ENvigU)"/><rect x="${f(vb.x)}" y="630" width="${f(vb.w)}" height="230" filter="url(#${P}grain)" opacity="0.2" style="mix-blend-mode:multiply"/></g>
 <text x="26" y="${titleY}" class="t-fell" font-style="italic" font-size="28" fill="${SEP}" opacity="0.85">Turris Babel</text>
 <text x="28" y="${titleY + 20}" class="t-fell" font-style="italic" font-size="12" fill="${SEP}" opacity="0.7">delineatio ab imo · gradus ${SK.roman(st.group)}</text>
 <text x="11" y="500" class="t-fell" font-style="italic" font-size="10" fill="${SEP}" opacity="0.7" transform="rotate(-90 11 500)">CCCXL cubiti</text>
@@ -6254,7 +6360,7 @@ const SHEET_EN = (() => {
       done: hits
     };
   }
-  return { P, lang: "en", BASE, PER, anchor: "bottom", fold: { next: "#f2ede1", flap: "#d7bf8f", shade: .18 }, art, live, unit: i => `第 ${i + 1} 块砖`, groupName: n => `gradus ${SK.roman(n)}` };
+  return { P, lang: "en", BASE, PER, anchor: "bottom", zoom: 1.55, fold: { next: "#f2ede1", flap: "#d7bf8f", shade: .18 }, art, live, unit: i => `第 ${i + 1} 块砖`, groupName: n => `gradus ${SK.roman(n)}` };
 })();
 
 /* ============ JA · 天之御柱：和纸水墨 ============
@@ -6773,12 +6879,14 @@ function sheetState(lang, log) {
   const SH = SHEETS[lang], m = brickModel(log, lang), group = Math.floor(m.done / SH.PER) + 1, idx = m.done % SH.PER;
   return { done: m.done, frac: m.frac, total: m.total, group, idx, inked: lang === "en" ? Math.min(5, group - 1) : lang === "es" ? Math.min(6, group - 1) : 0, today: m.today };
 }
-function sheetVB(lang, W, H, st) {
-  const SH = SHEETS[lang], h = 390 * H / W;
-  let y = SH.anchor === "middle" ? (844 - h) / 2 : 844 - h;
-  // 有「焦点」的图纸（日语）：当前段必须整段在画面里，下边留 40、上边留 90 给标注
-  if (SH.focus && st) { const fc = SH.focus(st); y = Math.max(y, fc.bottom + 40 - h); y = Math.min(y, fc.top - 90); }
-  return { x: 0, y, w: 390, h };
+// 首页底部给今日便条和导航留的高度（像素）
+const homeReserve = H => Math.round(Math.min(H * .46, 372));
+function sheetVB(lang, W, H, st, reserve = 0) {
+  const SH = SHEETS[lang], z = reserve ? SH.zoom || 1 : 1, w = 390 * z, h = w * H / W, hv = h * (H - reserve) / H;
+  let y = SH.anchor === "middle" ? (844 - hv) / 2 : 844 - hv;
+  // 有「焦点」的图纸（日语）：当前段必须整段在可见部分里，下边留 40、上边留 90 给标注
+  if (SH.focus && st) { const fc = SH.focus(st); y = Math.max(y, fc.bottom + 40 - hv); y = Math.min(y, fc.top - 90); }
+  return { x: (390 - w) / 2, y, w, h, hv };
 }
 // 全局滤镜：动态层和内页都引用这里的 id
 function fxDefs() {
@@ -6791,7 +6899,7 @@ function fxDefs() {
 const ART = new Map();
 function rasterSVG(inner, vb, W, H) {
   const dpr = Math.min(2, window.devicePixelRatio || 1), cw = Math.round(W * dpr), ch = Math.round(H * dpr);
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${cw}" height="${ch}" viewBox="0 ${SK.f(vb.y)} 390 ${SK.f(vb.h)}" preserveAspectRatio="none">${inner}</svg>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${cw}" height="${ch}" viewBox="${SK.f(vb.x || 0)} ${SK.f(vb.y)} ${SK.f(vb.w || 390)} ${SK.f(vb.h)}" preserveAspectRatio="none">${inner}</svg>`;
   const url = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }));
   return new Promise((ok, no) => {
     const img = new Image();
@@ -6801,7 +6909,7 @@ function rasterSVG(inner, vb, W, H) {
   });
 }
 // 栅格结果再存一份 JPEG 到本机：下次打开直接贴图，不用重新跑滤镜
-const ART_V = 1, ART_SAVE = new Set();
+const ART_V = 2, ART_SAVE = new Set();
 function artCanvas(lang, st, vb, W, H) {
   const dpr = Math.min(2, window.devicePixelRatio || 1), sig = [st.inked, Math.round(W), Math.round(H), dpr, Math.round(vb.y)].join("|");
   const key = lang + "|" + sig, lsKey = `bt_art${ART_V}_${lang}`;
@@ -6819,18 +6927,20 @@ function artCanvas(lang, st, vb, W, H) {
 const f1 = SK.f;
 function mountSheet(host, lang, log, opts = {}) {
   const SH = SHEETS[lang], st = sheetState(lang, log);
-  const W = host.clientWidth || 390, H = host.clientHeight || 844, vb = sheetVB(lang, W, H, st);
+  const W = host.clientWidth || 390, H = host.clientHeight || 844, vb = sheetVB(lang, W, H, st, opts.reserve ?? homeReserve(H));
   host.classList.add("s-" + lang); host.style.background = SH.BASE;
   const liveOf = s => SH.live(s, vb);
-  const L = liveOf(st);
-  const y = vb.y, fd = SH.fold;
-  const fold = `<g class="fold" aria-hidden="true"><polygon points="344,${f1(y)} 390,${f1(y)} 390,${f1(y + 46)}" fill="${fd.next}"/><polygon points="344,${f1(y)} 344,${f1(y + 46)} 390,${f1(y + 46)}" fill="#000" opacity="${fd.shade}" filter="url(#${SH.P}blur)"/><polygon points="344,${f1(y)} 390,${f1(y + 46)} 344,${f1(y + 46)}" fill="${fd.flap}"/><line x1="344" y1="${f1(y)}" x2="390" y2="${f1(y + 46)}" stroke="#3a2a18" stroke-width="0.6" opacity="0.5"/></g>`;
+  let L = liveOf(st);
+  // 当前的砖必须在便条上方看得见：不在就把视窗挪过去
+  if (L.cur && !SH.focus) { const top = vb.y + 70, bot = vb.y + vb.hv - 24; let dy = 0; if (L.cur.y + L.cur.h > bot) dy = L.cur.y + L.cur.h - bot; else if (L.cur.y < top) dy = L.cur.y - top; if (dy) { vb.y += dy; L = liveOf(st); } }
+  const y = vb.y, fd = SH.fold, zf = vb.w / 390;
+  const fold = `<g class="fold" aria-hidden="true"><g transform="translate(${(vb.x + vb.w - 390 * zf).toFixed(2)} ${(y - y * zf).toFixed(2)}) scale(${zf.toFixed(4)})"><polygon points="344,${f1(y)} 390,${f1(y)} 390,${f1(y + 46)}" fill="${fd.next}"/><polygon points="344,${f1(y)} 344,${f1(y + 46)} 390,${f1(y + 46)}" fill="#000" opacity="${fd.shade}" filter="url(#${SH.P}blur)"/><polygon points="344,${f1(y)} 390,${f1(y + 46)} 344,${f1(y + 46)}" fill="${fd.flap}"/><line x1="344" y1="${f1(y)}" x2="390" y2="${f1(y + 46)}" stroke="#3a2a18" stroke-width="0.6" opacity="0.5"/></g></g>`;
   const c = L.cur, nx = NEXT_LANG[lang], nxName = { en: "英语", ja: "日语", es: "西班牙语" }[nx];
   const area = L.area && opts.interactive !== false ? `<polygon class="hit area" points="${L.area.map(p => f1(p[0]) + "," + f1(p[1])).join(" ")}" fill="transparent" aria-hidden="true"/>` : "";
   const hits = opts.interactive === false ? "" : `${area}${L.done.map(b => `<polygon class="hit done" data-b="${b.i}" points="${b.q.map(p => f1(p[0]) + "," + f1(p[1])).join(" ")}" fill="transparent"/>`).join("")}
 <rect class="hit cur" x="${f1(c.x)}" y="${f1(c.y)}" width="${f1(c.w)}" height="${f1(c.h)}" fill="transparent" tabindex="0" role="button" aria-label="${esc(c.label)}，打开菜单"/>
-<rect class="hit turn" x="326" y="${f1(y)}" width="64" height="64" fill="transparent" tabindex="0" role="button" aria-label="翻到${nxName}"/>`;
-  const svgOpen = `<svg class="live" viewBox="0 ${f1(vb.y)} 390 ${f1(vb.h)}" preserveAspectRatio="none" aria-hidden="false">`;
+<rect class="hit turn" x="${f1(vb.x + vb.w - 64 * zf)}" y="${f1(y)}" width="${f1(64 * zf)}" height="${f1(64 * zf)}" fill="transparent" tabindex="0" role="button" aria-label="翻到${nxName}"/>`;
+  const svgOpen = `<svg class="live" viewBox="${f1(vb.x)} ${f1(vb.y)} ${f1(vb.w)} ${f1(vb.h)}" preserveAspectRatio="none" aria-hidden="false">`;
   // 换页/重画时先留住旧画面（同一语言），新画面好了再替换，避免中间闪一下底色
   const oldArt = host.classList.contains("drawn") && host.dataset.lang === lang ? host.querySelector(".art") : null;
   host.innerHTML = `<div class="art"></div>${svgOpen}${L.svg}${fold}${hits}</svg>`;
@@ -6844,7 +6954,7 @@ function mountSheet(host, lang, log, opts = {}) {
     artBox.replaceChildren(cv); host.classList.add("drawn");
   }).catch(e => {
     console.warn("art raster", e);
-    artBox.innerHTML = `<svg viewBox="0 ${f1(vb.y)} 390 ${f1(vb.h)}" preserveAspectRatio="none">${SH.art(st, vb)}</svg>`; host.classList.add("drawn");
+    artBox.innerHTML = `<svg viewBox="${f1(vb.x)} ${f1(vb.y)} ${f1(vb.w)} ${f1(vb.h)}" preserveAspectRatio="none">${SH.art(st, vb)}</svg>`; host.classList.add("drawn");
   });
   // 进度比上次看到时多了：旧的一层淡出，新的一层显出来
   if (opts.prev && opts.prev.done + opts.prev.frac < st.done + st.frac - .004) {
@@ -6922,19 +7032,9 @@ function towerView(el) {
   if (S.v3notice) { toast(S.v3notice, 6000); S.profile.v3seen = true; S.v3notice = ""; saveProfile(); }
   planTag();
 }
-// 首页的「今日任务」签条：显示完成数，点开就是当天清单
-function planTag() {
-  const host = $("#sheet"); if (!host || current !== "home" || !PL.set) return;
-  let tag = $(".plan-tag", host);
-  if (!planOn()) { tag?.remove(); return; }
-  if (!tag) { tag = document.createElement("button"); tag.className = "plan-tag t-" + curLang(); tag.onclick = e => { e.stopPropagation(); go("today"); }; host.appendChild(tag); }
-  const ds = dayStatus();
-  tag.innerHTML = `<span>今日任务</span><b class="num">${ds ? `${ds.done}/${ds.n}` : "…"}</b>${ds?.all ? "<i>✓</i>" : ""}`;
-  tag.classList.toggle("all", !!ds?.all);
-}
 VIEWS.home = VIEWS_JA.home = VIEWS_ES.home = towerView;
 // 计划、进度、口语三个页面已取消（计划数据仍在，用来决定每天的新词量等目标）
-delete VIEWS.plan; delete VIEWS.progress; delete VIEWS_JA.progress; delete VIEWS_ES.progress; delete VIEWS.chat;
+delete VIEWS.plan; delete VIEWS.chat;
 // 转屏、改窗口大小：首页按新尺寸重画
 let _rsz = 0, _rw = window.innerWidth, _rh = window.innerHeight;
 window.addEventListener("resize", () => { clearTimeout(_rsz); _rsz = setTimeout(() => { if (Math.abs(window.innerWidth - _rw) < 2 && Math.abs(window.innerHeight - _rh) < 60) return; _rw = window.innerWidth; _rh = window.innerHeight; if (document.body.classList.contains("at-home") && S.log && !turning && !$(".mlayer")) render(); }, 250); });
@@ -6988,9 +7088,9 @@ function paperTexture(lang) {
   return PAPER_TEX[lang];
 }
 const PAGE_NAMES = {
-  en: { today: ["今日任务", "Hodie"], lesson: ["课时", "Lectio"], utest: ["单元测验", "Probatio"], mistq: ["错题复习", "Errata"], words: ["背单词", "Vocabula"], grammar: ["语法", "Grammatica"], reading: ["阅读", "Lectio"], listening: ["听力", "Auditio"], dict: ["词典", "Lexicon"], test: ["测试", "Probatio"] },
-  ja: { today: ["本日の課題", "ほんじつ"], lesson: ["課", "か"], utest: ["単元テスト", "たんげん"], mistq: ["誤答の復習", "ごとう"], words: ["語彙", "ごい"], reading: ["読解", "どっかい"], dict: ["辞書", "じしょ"], corpus: ["語彙庫", "ごいこ"] },
-  es: { today: ["今日任务", "Hoy"], lesson: ["课时", "Lección"], utest: ["单元测验", "Examen"], mistq: ["错题复习", "Errores"], words: ["单词", "Vocabulario"], grammar: ["语法", "Gramática"], reading: ["阅读", "Lectura"], conj: ["变位", "Conjugación"], pron: ["发音", "Pronunciación"], listening: ["听力", "Escucha"], dict: ["词典", "Diccionario"] }
+  en: { course: ["课程", "Cursus"], me: ["我的", "Ego"], progress: ["学习统计", "Annales"], today: ["今日任务", "Hodie"], lesson: ["课时", "Lectio"], utest: ["单元测验", "Probatio"], mistq: ["错题复习", "Errata"], words: ["背单词", "Vocabula"], grammar: ["语法", "Grammatica"], reading: ["阅读", "Lectio"], listening: ["听力", "Auditio"], dict: ["词典", "Lexicon"], test: ["测试", "Probatio"] },
+  ja: { course: ["課程", "かてい"], me: ["わたし", "わたし"], progress: ["進度", "しんど"], today: ["本日の課題", "ほんじつ"], lesson: ["課", "か"], utest: ["単元テスト", "たんげん"], mistq: ["誤答の復習", "ごとう"], words: ["語彙", "ごい"], reading: ["読解", "どっかい"], dict: ["辞書", "じしょ"], corpus: ["語彙庫", "ごいこ"] },
+  es: { course: ["课程", "Curso"], me: ["我的", "Yo"], progress: ["进度", "Progreso"], today: ["今日任务", "Hoy"], lesson: ["课时", "Lección"], utest: ["单元测验", "Examen"], mistq: ["错题复习", "Errores"], words: ["单词", "Vocabulario"], grammar: ["语法", "Gramática"], reading: ["阅读", "Lectura"], conj: ["变位", "Conjugación"], pron: ["发音", "Pronunciación"], listening: ["听力", "Escucha"], dict: ["词典", "Diccionario"] }
 };
 function pageBar() {
   let bar = $("#pagebar");
@@ -7824,6 +7924,153 @@ function importParamsModal() {
     };
   });
 }
+
+/* ============ v3 外壳：首页的语言页签 + 今日便条，全局底部导航，课程页，我的页 ============
+   首页、内页同一套「纸·墨·印」：纸条卡片（.slip）、墨色主按钮加蜡封（.cta）、砖块进度（.bricks）。 */
+const UI_TXT = {
+  en: { day: ["dies Lunae", "dies Martis", "dies Mercurii", "dies Iovis", "dies Veneris", "dies Saturni", "dies Solis"], hodie: "Hodie", go: "继续砌砖", seal: "B", les: "LECTIO", min: n => `about ${n} min`, nav: ["Hodie", "Cursus", "Iterum", "Lexicon", "Ego"] },
+  ja: { day: ["月曜", "火曜", "水曜", "木曜", "金曜", "土曜", "日曜"], hodie: "ほんじつ", go: "石を積む", seal: "巴", les: "課", min: n => `約 ${n} 分`, nav: ["ほんじつ", "かてい", "ふくしゅう", "じしょ", "わたし"] },
+  es: { day: ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"], hodie: "Hoy", go: "继续砌台阶", seal: "B", les: "LECCIÓN", min: n => `unos ${n} min`, nav: ["Hoy", "Curso", "Repaso", "Diccionario", "Yo"] }
+};
+const ICO3 = {
+  home: '<path d="M6 21V9l6-5 6 5v12M4 21h16M9 21v-5h6v5"/>',
+  course: '<path d="M3 6c3-1.5 6-1.5 9 0 3-1.5 6-1.5 9 0v13c-3-1.5-6-1.5-9 0-3-1.5-6-1.5-9 0Z"/><path d="M12 6v13"/>',
+  review: '<path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"/>',
+  dict: '<path d="M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2z"/><path d="M5 18a2 2 0 0 1 2-2h12M9 8h6"/>',
+  me: '<circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/>'
+};
+const sealHTML = (lang = curLang()) => `<span class="seal3 s-${lang}">${UI_TXT[lang].seal}</span>`;
+const bricksHTML = (frac, n = 10) => `<span class="bricks3">${[...Array(n)].map((_, i) => `<i class="${i < Math.floor(frac * n) ? "f" : i < frac * n ? "h" : ""}"></i>`).join("")}</span>`;
+const ctaHTML = (label, small = "", id = "", extra = "") => `<button class="cta3" ${id ? `id="${id}"` : ""} ${extra}>${sealHTML()}<span>${esc(label)}</span>${small ? `<small>${esc(small)}</small>` : ""}</button>`;
+
+/* ---- 全局底部导航 ---- */
+const NAV3 = [["home", "今日", "home"], ["course", "课程", "course"], ["words", "复习", "review"], ["dict", "词典", "dict"], ["me", "我的", "me"]];
+const NAV_OF = { home: "home", today: "home", course: "course", lesson: "course", utest: "course", grammar: "course", reading: "course", listening: "course", test: "course", conj: "course", pron: "course", corpus: "course", words: "words", mistq: "words", dict: "dict", me: "me", progress: "me" };
+function nav3() {
+  let n = $("#nav3");
+  if (!n) { n = document.createElement("nav"); n.id = "nav3"; document.body.appendChild(n); n.addEventListener("click", e => { const b = e.target.closest("[data-nav]"); if (!b) return; const v = b.dataset.nav; if (v === "words") { WS.mode = "overview"; WS.sess = null; } if (v === "dict") DS.word = DS.word || null; go(v); }); }
+  const lang = curLang(), on = NAV_OF[current] || "";
+  n.className = "nav3 n-" + lang;
+  n.innerHTML = NAV3.map(([v, zh, ic], i) => `<button data-nav="${v}" class="${on === v ? "on" : ""}" aria-label="${zh}"><svg viewBox="0 0 24 24">${ICO3[ic]}</svg><b>${zh}</b><em>${UI_TXT[lang].nav[i]}</em></button>`).join("");
+}
+
+/* ---- 首页：语言页签、连续天数、今日便条 ---- */
+function switchLang(l) {
+  const cur = curLang(); if (l === cur || turning) return;
+  if (l === NEXT_LANG[cur]) return turnPage();
+  S.profile.lang = l; saveProfile();
+  try { localStorage.setItem("bt_lang", l); } catch { }
+  Saver.flush().catch(() => { }).finally(() => { if (window.BABEL_APP) location.replace(location.pathname + "?l=" + l + "#home"); else { location.hash = "home"; location.reload(); } });
+}
+// 便条上推荐的下一件事：当前语言优先，跳过已完成和未解锁的
+function nextTask(day) {
+  if (!day || day.free) return null;
+  const open = day.tasks.filter(t => t.req && !taskDone(t, today()) && !taskLocked(t, day));
+  return open.find(t => t.lang === curLang() && (t.kind === "lesson" || t.kind === "test" || t.kind === "rem")) || open.find(t => t.lang === curLang()) || open[0] || null;
+}
+function taskBadge(t) {
+  if (t.kind === "lesson") { const [, s, u, i] = t.ref.split("."); return `<span class="badge3">${SK.roman(+s)}·${u}<br><small>${UI_TXT[curLang()].les}</small><b>${i}</b></span>`; }
+  const ic = t.kind === "review" || t.kind === "mist" ? "review" : "course";
+  return `<span class="badge3 ic"><svg viewBox="0 0 24 24">${ICO3[ic]}</svg></span>`;
+}
+function taskFrac(t) { const p = taskProgress(t); return p.tgt ? p.cur / p.tgt : 0; }
+function slipRow(t) {
+  const day = PL.days[today()], p = taskProgress(t), lock = taskLocked(t, day), [nm, sub] = taskLabel(t);
+  return `<button class="row3 ${p.done ? "done" : ""} ${lock ? "lock" : ""}" data-t="${esc(t.id)}"><span class="box3">${p.done ? "✓" : ""}</span><span class="t"><b>${esc(nm)}</b><small>${esc(lock ? "上一项完成后解锁" : t.debt ? `欠债 · ${t.debt.slice(5).replace("-", "/")}` : sub)} · 约 ${t.est} 分钟</small></span><span class="lg3">${LANGS[t.lang].code}</span></button>`;
+}
+function planTag() {
+  const host = $("#sheet"); if (!host || current !== "home" || !PL.set) return;
+  host.querySelector(".plan-tag")?.remove();
+  const lang = curLang(), T = UI_TXT[lang], k = today();
+  let ui = host.querySelector(".home3");
+  if (!ui) { ui = document.createElement("div"); ui.className = "home3 h-" + lang; host.appendChild(ui); }
+  const st = sheetState(lang, S.log), SH = SHEETS[lang], stk = streak();
+  const tabs = `<div class="tabs3">${["en", "ja", "es"].map(l => `<button data-lang="${l}" class="${l === lang ? "on" : ""}">${LANGS[l].code}<i>${PLAN_NAME[l].slice(0, 1)}</i></button>`).join("")}</div>`;
+  const chip = `<div class="chip3">连续 ${stk ? `<span class="cun">${babNum(stk)}</span> ` : ""}<b>${stk}</b> 天 · <i>${esc(SH.groupName(st.group))} · ${esc(SH.unit(st.idx))}</i></div>`;
+  const day = PL.days[k], ds = dayStatus(k);
+  let body;
+  if (!planOn()) body = `<div class="hd3"><div><div class="eye3">${T.hodie}</div><h2>监工模式已关闭</h2></div></div><div class="rule3"></div><p class="mut3">打开后每天按清单学习，完成当天计划才砌砖。</p>${ctaHTML("打开监工模式", "", "h3-on")}`;
+  else if (!day || day.free) body = `<div class="hd3"><div><div class="eye3">${T.hodie}</div><h2>正在排今天的课…</h2></div></div>`;
+  else {
+    const t = nextTask(day), main = PLAN_NAME[day.main];
+    const head = `<div class="hd3"><div><div class="eye3">${T.hodie} · ${T.day[dowMon(k)]}</div><h2>今天是${main}日</h2></div><div class="cnt3"><b>${ds.done}<small>/${ds.n}</small></b><span>${day.work ? "上班日" : "休息日"} · ${day.budget}′</span></div></div><div class="rule3"></div>`;
+    const cur = t ? `<div class="cur3" data-t="${esc(t.id)}">${taskBadge(t)}<span class="t"><b>${esc(taskLabel(t)[0])}</b><small>${t.lang !== lang ? `点开会切换到${PLAN_NAME[t.lang]} · ` : ""}${esc(taskLabel(t)[1])}</small>${bricksHTML(taskFrac(t))}</span></div>` : `<div class="cur3"><span class="badge3 ic">✓</span><span class="t"><b>今日工程全部完成</b><small>砖已经砌上。还想学可以提前上下一课。</small>${bricksHTML(1)}</span></div>`;
+    const list = `<div class="list3">${["lesson", "test", "rem", "free"].some(x => day.tasks.some(t => t.kind === x)) ? `<div class="sect3"><b>主课</b><i>${lang === "ja" ? "かだい" : lang === "es" ? "Lección" : "Lectio"}</i></div>${day.tasks.filter(t => !["review", "mist"].includes(t.kind)).map(slipRow).join("")}` : ""}
+      ${day.tasks.some(t => ["review", "mist"].includes(t.kind)) ? `<div class="sect3"><b>每日复习</b><i>${lang === "ja" ? "ふくしゅう" : lang === "es" ? "Repaso" : "Iterum"}</i></div>${day.tasks.filter(t => ["review", "mist"].includes(t.kind)).map(slipRow).join("")}` : ""}
+      <div class="links3"><button data-act="report">周报</button><button data-act="set">计划设置</button><button data-act="today">完整清单</button></div></div>`;
+    body = head + cur + list + (t ? ctaHTML(t.lang !== lang ? `去${PLAN_NAME[t.lang]}：${taskLabel(t)[0].replace(/ · .*/, "")}` : T.go, T.min(t.est), "h3-go") : nextItem(lang).kind === "lesson" ? ctaHTML("加练：提前上下一课", "", "h3-more") : ctaHTML("去复习", "", "h3-rev"));
+  }
+  ui.innerHTML = `${tabs}${chip}<div class="slip3 note3 ${ui.dataset.open ? "open" : ""}"><button class="grab3" aria-label="展开或收起今日清单"></button>${lang === "es" ? `<div class="fret3"></div>` : `<div class="cunband3 cun">${"𒀭𒆠𒂗𒆤𒋞𒌋".repeat(5)}</div>`}${body}</div>`;
+  const note = ui.querySelector(".note3");
+  const setOpen = o => { ui.dataset.open = o ? "1" : ""; note.classList.toggle("open", !!o); };
+  ui.querySelector(".grab3").onclick = e => { e.stopPropagation(); setOpen(!ui.dataset.open); };
+  // 上拉展开、下拉收起
+  let y0 = null; note.addEventListener("touchstart", e => { y0 = e.touches[0].clientY; }, { passive: true });
+  note.addEventListener("touchend", e => { if (y0 == null) return; const dy = e.changedTouches[0].clientY - y0; y0 = null; if (dy < -40) setOpen(true); else if (dy > 40 && !note.querySelector(".list3")?.scrollTop) setOpen(false); }, { passive: true });
+  $$(".tabs3 [data-lang]", ui).forEach(b => b.onclick = e => { e.stopPropagation(); switchLang(b.dataset.lang); });
+  $$("[data-t]", ui).forEach(b => b.onclick = e => { e.stopPropagation(); const t = day?.tasks.find(x => x.id === b.dataset.t); if (t) planOpenTask(t); });
+  $("#h3-go", ui) && ($("#h3-go", ui).onclick = e => { e.stopPropagation(); const t = nextTask(day); if (t) planOpenTask(t); });
+  $("#h3-on", ui) && ($("#h3-on", ui).onclick = e => { e.stopPropagation(); PL.set.on = true; savePlanSet(); delete PL.days[k]; planEnsureToday().then(() => planTag()); });
+  $("#h3-rev", ui) && ($("#h3-rev", ui).onclick = e => { e.stopPropagation(); WS.mode = "overview"; go("words"); });
+  $("#h3-more", ui) && ($("#h3-more", ui).onclick = e => { e.stopPropagation(); go("today"); setTimeout(() => $("#pl-more")?.click(), 400); });
+  $$("[data-act]", ui).forEach(b => b.onclick = e => { e.stopPropagation(); const a = b.dataset.act; if (a === "report") weeklyReportModal(); else if (a === "set") planSettingsModal(); else go("today"); });
+  ui.addEventListener("click", e => { if (e.target === ui && ui.dataset.open) setOpen(false); });
+}
+
+/* ---- 课程页：当前语言的课纲进度 + 自由练习入口 ---- */
+const FREE_LINKS = {
+  en: [["grammar", "语法课程", "零基础 · 进阶 · TOEIC Part 5"], ["reading", "阅读", "分级短文 · TOEIC Part 6/7"], ["listening", "听力", "泛听 · 精听 · 听写"], ["test", "测试", "摸底 · 每周测验"]],
+  es: [["pron", "发音", "字母 · 拼读 · 最小对立"], ["conj", "变位", "七个时态的变位练习"], ["grammar", "语法专项", "ser/estar · 冠词 · gustar"], ["reading", "分级阅读", "A1–B1 短文"], ["listening", "听力", "对话 · 独白"]],
+  ja: [["reading", "読解", "导入文章 · 生成 N0 读物"], ["corpus", "語彙庫", "惯用句 · 四字熟语 · 拟态语 · 文型"]]
+};
+VIEWS.course = VIEWS_JA.course = VIEWS_ES.course = async (el) => {
+  const lang = curLang();
+  try { await curIndex(); } catch { }
+  const L = CUR.idx?.langs?.[lang], it = nextItem(lang);
+  if (it.unit?.id) await curUnit(it.unit.id);
+  if (current !== "course") return;
+  const curU = it.unit?.id;
+  el.innerHTML = `<div class="page3">
+    <header class="ph3"><div class="eye3">${lang === "ja" ? "かてい" : lang === "es" ? "Curso" : "Cursus"}</div><h1>${PLAN_NAME[lang]}课程</h1><p class="mut3">${esc(L?.goal || "")}</p></header>
+    ${it.kind === "lesson" ? `<div class="slip3 pad3"><div class="eye3">${lang === "ja" ? "つぎ" : "Proximum"}</div><h3 class="t3">${esc(it.unit.stage.title)} · ${esc(it.unit.title)}</h3><p class="mut3">第 ${it.id.split(".")[3]} 课「${esc(lessonTitle(it.id))}」</p>${bricksHTML(lesPartsDone(it.id).length / 4)}${ctaHTML("上这一课", "", "c3-go")}</div>` : ""}
+    ${(L?.stages || []).map(st => { const us = st.units, done = us.filter(u => unitRec(u.id).pass).length, open = us.some(u => u.id === curU); return `<details class="slip3 stage3" ${open ? "open" : ""}><summary><span><b>${esc(st.title)}</b><small>${esc(st.goal)}</small></span><span class="lg3">${done}/${us.length}</span></summary>
+      ${us.map(u => { const n = u.n || 5, ld = [...Array(n)].filter((_, i) => lesRec(`${u.id}.${i + 1}`).done).length, ur = unitRec(u.id), here = u.id === curU; return `<div class="unit3 ${here ? "here" : ""}"><div class="uh"><b>${esc(u.title)}</b><span class="mut3">${ur.pass ? "✓ 结业" : u.file ? `${ld}/${n}` : "待生成"}</span></div>${u.file ? `<div class="les3">${[...Array(n)].map((_, i) => { const id = `${u.id}.${i + 1}`, r = lesRec(id), cur = it.id === id; return `<button data-l="${id}" class="${r.done ? "done" : cur ? "cur" : "lock"}" ${r.done || cur ? "" : "disabled"} title="${esc(lessonTitle(id))}">${i + 1}</button>`; }).join("")}${ur.tests?.length ? `<span class="mut3">测验 ${Math.round(ur.tests.slice(-1)[0].acc * 100)}%</span>` : ""}</div>` : `<p class="mut3">${esc(u.goal || "")}</p>`}</div>`; }).join("")}</details>`; }).join("")}
+    <div class="sect3"><b>自由练习</b><i>${lang === "ja" ? "じゆう" : "Libera"}</i></div>
+    <div class="grid3">${FREE_LINKS[lang].map(([v, n, d]) => `<button class="slip3 tile3" data-v="${v}"><b>${n}</b><small>${d}</small></button>`).join("")}</div>
+  </div>`;
+  $("#c3-go", el) && ($("#c3-go", el).onclick = () => { LR.id = it.id; LR.parts = null; LR.quiz = null; go("lesson"); });
+  $$("[data-l]", el).forEach(b => b.onclick = async () => { await curUnit(unitIdOf(b.dataset.l)); LR.id = b.dataset.l; LR.parts = null; LR.quiz = null; go("lesson"); });
+  $$("[data-v]", el).forEach(b => b.onclick = () => { const v = b.dataset.v; if (v === "grammar") { GS.tab = "topics"; ESG.open = null; ESG.tab = "list"; } if (v === "reading") { RS.open = null; AS.open = null; ESR.open = null; } if (v === "listening") LS.open = null; if (v === "conj") CJ.sess = null; if (v === "test") TS.mode = "home"; go(v); });
+};
+
+/* ---- 我的：打卡、统计、计划、设置、存档 ---- */
+VIEWS.me = VIEWS_JA.me = VIEWS_ES.me = (el) => {
+  const lang = curLang(), k = today(), W = 6, start = addDays(addDays(k, -dowMon(k)), -(W - 1) * 7), { learned, mastered } = totalLearned(), m = brickModel(S.log, lang);
+  const cells = []; for (let i = 0; i < W * 7; i++) { const kk = addDays(start, i), fut = kk > k, d = PL.days[kk], s = d && !d.free ? dayStatus(kk) : null; cells.push(`<i class="${fut ? "fut" : ""} ${isCk(kk) ? "ck" : ""} ${s?.all ? "all" : ""} ${kk === k ? "now" : ""}" title="${kk}"></i>`); }
+  const row = (id, t, s) => `<button class="row3" id="${id}"><span class="t"><b>${t}</b><small>${s}</small></span><span class="arr3">›</span></button>`;
+  el.innerHTML = `<div class="page3">
+    <header class="ph3"><div class="eye3">${UI_TXT[lang].nav[4]}</div><h1>我的</h1></header>
+    <div class="slip3 pad3"><div class="stat3"><div><b>${streak()}</b><span>连续天数</span></div><div><b>${m.done}</b><span>${PLAN_NAME[lang]}砖块</span></div><div><b>${learned}</b><span>已学单词</span></div><div><b>${mastered}</b><span>已掌握</span></div></div>
+      <div class="rule3"></div><div class="cal3"><div>${WEEK.map(w => `<span>${w}</span>`).join("")}</div><div>${cells.join("")}</div></div><p class="mut3">实心 = 打卡；红框 = 当天计划全部完成</p></div>
+    <div class="slip3 list-pad3">${row("me-plan", "计划设置", "时间、上班日、每周主课排布、监工开关")}${row("me-report", "周报", "复制本周数据给 Claude 复盘")}${row("me-import", "导入计划参数", "粘贴 Claude 调整后的参数")}${row("me-today", "完整清单", "今天的全部任务与欠债")}</div>
+    <div class="slip3 list-pad3">${row("me-set", "朗读与显示", "声音、语速、振り仮名、存档导出导入")}${row("me-prog", "学习统计", "热力图、正确率、易错词")}${row("me-ck", "打卡", dayLog().ck ? "今天已打卡" : "今天还没打卡")}</div>
+  </div>`;
+  $("#me-plan").onclick = planSettingsModal; $("#me-report").onclick = () => weeklyReportModal(); $("#me-import").onclick = () => importParamsModal();
+  $("#me-today").onclick = () => go("today"); $("#me-set").onclick = settingsModal; $("#me-prog").onclick = () => go("progress"); $("#me-ck").onclick = checkinModal;
+};
+
+/* ---- 西语词典：在西语词库里查词（词形还原后找词条） ---- */
+VIEWS_ES.dict = (el) => {
+  el.innerHTML = `<div class="page3"><header class="ph3"><div class="eye3">Diccionario</div><h1>西语词典</h1></header>
+    <form class="row" id="esd-f" style="flex-wrap:nowrap"><input type="text" id="esd-q" class="es-t" placeholder="palabra · 变位形也可（comí, vamos）" autocomplete="off" autocapitalize="off" value="${esc(DS.word || "")}" style="font-size:18px"><button class="btn pri" type="submit">查</button></form>
+    <div id="esd-sug" class="row" style="gap:6px"></div><div class="slip3 pad3" id="esd-e"><p class="mut3">词库 ${Object.keys(LEX.e).length} 词 · 输入单词或变位形</p></div></div>`;
+  const inp = $("#esd-q"), sug = $("#esd-sug");
+  const show = v => { DS.word = v; sug.innerHTML = ""; renderEsEntry($("#esd-e"), v); };
+  $("#esd-f").onsubmit = e => { e.preventDefault(); const v = inp.value.trim(); if (v) show(v); };
+  let tm; inp.oninput = () => { clearTimeout(tm); tm = setTimeout(() => { const v = stripAcc(inp.value.trim().toLowerCase()); if (!v) { sug.innerHTML = ""; return; } const hits = []; for (const w of LEX.low.keys()) { if (stripAcc(w).startsWith(v)) { hits.push(LEX.low.get(w)); if (hits.length >= 14) break; } } sug.innerHTML = hits.map(w => `<span class="wd chip es-t" data-w="${esc(w)}">${esc(w)}</span>`).join(""); }, 180); };
+  sug.addEventListener("click", e => { const s = e.target.closest(".wd"); if (!s) return; e.stopPropagation(); inp.value = s.dataset.w; show(s.dataset.w); }, true);
+  if (DS.word) renderEsEntry($("#esd-e"), DS.word); else inp.focus();
+};
 
 /* ============ 存档：导出 / 导入（网页版 ↔ App 版搬家、日常备份） ============
    导出：把存储里所有学习记录打成一个 JSON 文件；导入：原样写回。
