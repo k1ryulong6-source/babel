@@ -26,7 +26,16 @@ VOICE_SETS = {
 }
 GOOGLE_VOICE = VOICE_SETS["f"]
 # 单独出现时 TTS 会读错或读得不确定的词：固定成课程想要的读音
-WORD_IPA = {"en": {"read": "ɹiːd", "live": "lɪv"}}
+# 同形异音词按词典第一个义项的读音（与 data/words.json 里显示的音标一致）
+WORD_IPA = {"en": {
+    "read": "ɹiːd", "live": "lɪv", "lead": "liːd", "close": "kloʊz", "use": "juːz", "tear": "tɛɹ", "wind": "wɪnd",
+    "wound": "wuːnd", "record": "ˈɹɛkɚd", "present": "ˈpɹɛzənt", "object": "ˈɑbdʒɛkt", "project": "ˈpɹɑdʒɛkt",
+    "subject": "ˈsʌbdʒɪkt", "content": "ˈkɑntɛnt", "desert": "ˈdɛzɚt", "minute": "ˈmɪnɪt", "contract": "ˈkɑntɹækt",
+    "conduct": "kənˈdʌkt", "progress": "ˈpɹɑɡɹɛs", "perfect": "ˈpɝfɪkt", "excuse": "ɪkˈskjuːs", "estimate": "ˈɛstəmeɪt",
+    "separate": "ˈsɛpəɹət", "attribute": "əˈtɹɪbjuːt", "convert": "kənˈvɝt", "produce": "pɹəˈduːs", "permit": "pɚˈmɪt",
+    "refuse": "ɹɪˈfjuːz", "suspect": "səˈspɛkt", "row": "ɹoʊ", "house": "haʊs", "conflict": "ˈkɑnflɪkt",
+    "contest": "ˈkɑntɛst", "entrance": "ˈɛntɹəns", "transfer": "tɹænsˈfɝ", "upset": "ʌpˈsɛt",
+}}
 # 句子里的同形异音词：按上下文规则指定读音
 SENT_IPA = {"en": [(re.compile(r"\b(?:have|has|had|'ve|'d|already|just|never|ever)\s+read\b|\bread\b[^.?!]*\b(?:yesterday|last|ago)\b", re.I), "read", "ɹɛd")]}
 PER_BUNDLE = 100
@@ -147,8 +156,9 @@ def collect(lang, sets):
 
 # ---------- 合成 ----------
 def cache_path(lang, t):
-    # 按实际使用的 Google 声音分目录缓存，换声音不会误用旧录音
-    return os.path.join(CACHE, voice_for(lang, t), key(lang, t) + ".mp3")
+    # 按实际使用的 Google 声音分目录缓存，换声音不会误用旧录音；指定了读音的再带上读音的哈希，改规则会自动重录
+    pr = prons_for(lang, t)
+    return os.path.join(CACHE, voice_for(lang, t), key(lang, t) + (f"_{fnv(repr(pr))}" if pr else "") + ".mp3")
 
 
 def synth_one(lang, t, kbps):
