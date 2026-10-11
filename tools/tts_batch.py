@@ -39,6 +39,8 @@ WORD_IPA = {"en": {
 # 句子里的同形异音词：按上下文规则指定读音
 SENT_IPA = {"en": [(re.compile(r"\b(?:have|has|had|'ve|'d|already|just|never|ever)\s+read\b|\bread\b[^.?!]*\b(?:yesterday|last|ago)\b", re.I), "read", "ɹɛd")]}
 PER_BUNDLE = 100
+_cut = "silenceremove=start_periods=1:start_threshold=-50dB:start_silence={}:detection=peak"
+TRIM = ",".join([_cut.format(0.1), "areverse", _cut.format(0.2), "areverse"])
 J = lambda p: json.load(open(os.path.join(ROOT, p), encoding="utf-8"))
 
 
@@ -171,8 +173,9 @@ def synth_one(lang, t, kbps):
     with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as f:
         f.write(raw)
         tmp = f.name
-    # 压成单声道小码率 MP3（语音够用），控制仓库体积
-    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", tmp, "-ac", "1", "-ar", "22050", "-b:a", f"{kbps}k", "-f", "mp3", p + ".part"], check=True)
+    # 压成单声道小码率 MP3（语音够用），控制仓库体积；同时把开头和结尾的静音裁到约 0.1 / 0.2 秒
+    # （Chirp3-HD 的句子开头常有 0.4–0.7 秒静音，点播放后会明显卡一下）
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", tmp, "-af", TRIM, "-ac", "1", "-ar", "22050", "-b:a", f"{kbps}k", "-f", "mp3", p + ".part"], check=True)
     os.replace(p + ".part", p)
     os.unlink(tmp)
     return p
