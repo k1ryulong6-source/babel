@@ -135,7 +135,7 @@ def synth_one(lang, t, kbps):
         f.write(raw)
         tmp = f.name
     # 压成单声道小码率 MP3（语音够用），控制仓库体积
-    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", tmp, "-ac", "1", "-ar", "22050", "-b:a", f"{kbps}k", p + ".part"], check=True)
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", tmp, "-ac", "1", "-ar", "22050", "-b:a", f"{kbps}k", "-f", "mp3", p + ".part"], check=True)
     os.replace(p + ".part", p)
     os.unlink(tmp)
     return p
@@ -183,7 +183,7 @@ def write_bundles(lang, texts):
 
 
 SAMPLE = {
-    "en": ["ship", "sheep", "sip", "seat", "sit", "cap", "cup", "live", "read", "Our company has a new system.", "I read the report yesterday.", "Each team will try it this week."],
+    "en": ["ship", "sheep", "sip", "seat", "sit", "cap", "cup", "stop", "keep", "help", "map", "live", "read", "Our company has a new system.", "I read the report yesterday.", "Each team will try it this week.", "Please stop and help me keep the map."],
     "es": ["pero", "perro", "caro", "carro", "cinco", "ciudad", "calle", "Me llamo Ana. ¿Cómo te llamas?", "El perro corre por la calle.", "Tengo diez años."],
 }
 
