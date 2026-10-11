@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261011.1559-bb588c";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261011.1754-f56585";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1359,6 +1359,36 @@ html.paper main#view{max-width:640px;padding-top:12px}
 .act3{position:sticky;bottom:calc(env(safe-area-inset-bottom,0px) + 10px);z-index:20;margin-top:6px;padding-top:12px;background:linear-gradient(transparent,var(--bg) 45%)}
 body:not(.focus) .act3{bottom:calc(var(--nav3-h) + 10px)}
 html.paper body .modal-bg,html.paper body .drawer-bg{z-index:60}html.paper body .drawer{z-index:61}html.paper body .toast{z-index:70}
+/* ---- 课时 v2：一步一屏 ---- */
+.v2{display:flex;flex-direction:column;min-height:calc(100dvh - 120px)}
+.v2top{display:flex;align-items:center;gap:12px;margin-bottom:14px}.v2top .bricks3{flex:1;margin:0}
+.v2b{flex:1;display:flex;flex-direction:column;gap:14px}
+.v2 .t2{font-family:var(--zhd);font-weight:900;font-size:23px;line-height:1.3;margin:0}
+html.p-ja .v2 .t2{font-family:"Shippori Mincho",var(--zhd);font-weight:800}
+.lead3{font-size:15.5px;line-height:1.8;margin:0}.lead3 b{color:var(--sig)}
+.exs3{padding:14px 16px;display:flex;flex-direction:column;gap:12px}.exs3>div+div{border-top:.8px dashed var(--line);padding-top:12px}
+.exs3 small,.ln3 small,.ex3 small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.big3{font-size:20px;line-height:1.45}.big3 u{text-decoration-color:var(--sig);text-decoration-thickness:2px;text-underline-offset:4px}
+html.p-en .big3,html.p-en .dlg3 .en,html.p-en .ex3 .en{font-family:var(--en)}
+.tip3{border-left:3px solid var(--sig);background:color-mix(in srgb,var(--sig) 7%,transparent);padding:10px 12px;font-size:14px;line-height:1.75}
+.tip3>b:first-child{display:block;font-size:13px;color:var(--sig);margin-bottom:2px}
+body:has(.v2) #pagebar{display:none}
+.tip3.soft{border-left-color:var(--ink);background:color-mix(in srgb,var(--ink) 5%,transparent)}.tip3.soft>b:first-child{color:var(--ink)}
+.chk3{padding:12px 14px}.chk3 .q{border:0;padding:6px 0 0}
+.dlg3{display:flex;flex-direction:column;gap:10px}
+.ln3{display:flex;gap:10px;align-items:flex-start;background:var(--card-solid);border:1px solid var(--line);padding:10px 12px;font-size:17px;line-height:1.5}
+.ln3>b{flex:none;font-family:"Marcellus",serif;font-weight:400;color:var(--sig);min-width:16px}
+.ln3.spB{margin-left:28px}
+.wcard3{padding:20px 18px 18px;text-align:center}
+.hw3{font-size:40px;line-height:1.15;font-family:var(--en)}html.p-ja .hw3{font-family:"Shippori Mincho",serif}
+.ipa3{color:var(--muted);font-size:16px;margin-top:4px}
+.sns3{text-align:left;padding-left:20px;margin:0;font-size:16px;line-height:1.7}.sns3 i{color:var(--sig);font-family:var(--latin)}
+.ex3{text-align:left;margin-top:12px;font-size:17px}
+.wcard3 .tip3{text-align:left;margin-top:12px}
+.sum3{margin:0;padding-left:20px;font-size:15px;line-height:1.8}
+.play3{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--card-solid);color:var(--sig);display:inline-grid;place-items:center;vertical-align:middle;cursor:pointer;padding:0}
+.play3 svg{width:16px;height:16px}
+.v2 .q .stem{font-size:19px;line-height:1.6}
 </style>
 
 <main id="view"><div class="desk"><div class="sheet boot" id="sheet"></div></div></main>
@@ -7338,9 +7368,9 @@ function curUnit(id) {
 }
 function curLesson(id) { const u = CUR.units[unitIdOf(id)]; return u?.lessons.find(l => l.id === id) || null; }
 // 课纲里自写的词条并入当前语言的词库（书名 cur），这样学词、复习、词条页都能用
-const CUR_ENTRY = o => [o.p || "", o.s || [], o.x || [], o.t || "", o.c || "", o.n || ""];
+const CUR_ENTRY = o => [o.p || "", o.s || [], o.x ? (Array.isArray(o.x[0]) ? o.x : [o.x]) : [], o.tt || (o.t === "word" ? "" : o.t) || "", o.c || "", o.n || ""];
 function curMergeLex(unit) {
-  for (const l of unit.lessons || []) for (const o of [...(l.words || []), ...(l.special || [])]) {
+  for (const l of unit.lessons || []) for (const o of [...(l.words || []), ...(l.special || []), ...(l.steps || []).filter(x => x.t === "word" && x.s)]) {
     if (!o || typeof o !== "object" || !o.w) continue;
     const k = o.w.toLowerCase(); if (LEX.low.has(k)) continue;
     LEX.e[o.w] = CUR_ENTRY(o); LEX.low.set(k, o.w); LEX.bookOf.set(k, "cur");
@@ -7353,8 +7383,8 @@ async function curPrepareLang(lang) {
   const need = us.filter((u, i) => u.file && (started.has(u.id) || i === 0));
   await Promise.all(need.map(u => curUnit(u.id)));
 }
-const lessonWords = l => (l?.words || []).map(o => typeof o === "string" ? o : o.w);
-const lessonSpecial = l => (l?.special || []).map(o => typeof o === "string" ? o : o.w);
+const lessonWords = l => isV2(l) ? v2Words(l) : (l?.words || []).map(o => typeof o === "string" ? o : o.w);
+const lessonSpecial = l => isV2(l) ? v2Words(l, true) : (l?.special || []).map(o => typeof o === "string" ? o : o.w);
 
 /* ============ 监工 · 排课引擎：每日清单、时间伸缩、欠债、锁课 ============
    每天第一次打开时生成当天清单（快照，当天不再变）：
@@ -7372,8 +7402,8 @@ const lesRec = id => PL.st.les[id] || { p: {} };
 const lesRecW = id => (PL.st.les[id] ||= { p: {} });
 const unitRec = id => PL.st.units[id] || {};
 const unitRecW = id => (PL.st.units[id] ||= {});
-const lessonEst = l => l ? Math.round(EST.base + (l.words || []).length * EST.word + (l.special || []).length * EST.special + (l.grammar || []).length * EST.gram + (planExercises(l).length) * EST.ex) : 30;
-const partsEst = (l, parts) => { if (!l) return 15; const m = { w: (l.words || []).length * EST.word, g: (l.grammar || []).length * EST.gram, s: (l.special || []).length * EST.special, x: planExercises(l).length * EST.ex }; return Math.round(EST.base + parts.reduce((s, p) => s + m[p], 0)); };
+const lessonEst = l => isV2(l) ? Math.round(EST.base + l.steps.length * 1.1) : l ? Math.round(EST.base + (l.words || []).length * EST.word + (l.special || []).length * EST.special + (l.grammar || []).length * EST.gram + (planExercises(l).length) * EST.ex) : 30;
+const partsEst = (l, parts) => { if (!l) return 15; if (isV2(l)) return Math.round(EST.base + l.steps.length * 1.1 * parts.length / 4); const m = { w: (l.words || []).length * EST.word, g: (l.grammar || []).length * EST.gram, s: (l.special || []).length * EST.special, x: planExercises(l).length * EST.ex }; return Math.round(EST.base + parts.reduce((s, p) => s + m[p], 0)); };
 const lesPartsDone = id => LES_PARTS.filter(p => lesRec(id).p[p]);
 // 某门语言接下来该学什么（由完成记录推出来，不另存指针）
 function nextItem(lang) {
@@ -7555,7 +7585,7 @@ function planOpenTask(t) {
   if (day && taskLocked(t, day)) return toast("先完成上一项，才会解锁这一项");
   if (t.kind === "review") return startPlanReview(Math.max(5, t.tgt - (day?.rv?.[t.lang] || 0)));
   if (t.kind === "mist") return startPlanMistakes(t.tgt);
-  if (t.kind === "lesson") { LR.id = t.ref; LR.parts = t.parts; LR.step = null; LR.quiz = null; return go("lesson"); }
+  if (t.kind === "lesson") { LR.id = t.ref; LR.parts = t.parts; LR.step = null; LR.quiz = null; LR.from = current === "lesson" ? "home" : current; return go("lesson"); }
   if (t.kind === "test") { UT.unit = t.ref; UT.quiz = null; UT.result = null; return go("utest"); }
   if (t.kind === "rem") { UT.unit = t.ref; UT.quiz = null; UT.result = null; UT.rem = true; return go("utest"); }
   if (t.kind === "free") return freeModal(t);
@@ -7642,6 +7672,7 @@ function curriculumModal() {
 // 课时练习 = 课纲里写的题 + 引用的语法课自带的题（英语语法课、西语语法课各取前 5 题）
 function planExercises(l) {
   if (!l) return [];
+  if (isV2(l)) return v2Exercises(l);
   const lang = l.id.split(".")[0], out = (l.exercises || []).map(x => ({ ...x, ref: l.id }));
   for (const g of l.grammar || []) {
     if (!g.ref) continue;
@@ -7746,6 +7777,8 @@ VIEWS.lesson = VIEWS_JA.lesson = VIEWS_ES.lesson = async (el) => {
   await curUnit(unitIdOf(LR.id));
   const l = curLesson(LR.id); if (current !== "lesson") return;
   if (!l) { el.innerHTML = `<div class="card empty">课时内容读取失败，请联网后再试。</div>`; return; }
+  if (isV2(l)) { document.body.classList.add("focus"); return v2Render(el, l); }
+  LR.v2 = null;
   if (LR.quiz) return renderQuiz(el, LR.quiz, () => { LR.quiz = null; render(); });
   const rec = lessonAutoParts(l), today_ = LR.parts || LES_PARTS, exs = planExercises(l);
   const ws = lessonWords(l), sp = lessonSpecial(l), wLeft = ws.filter(w => !prog(w)), sLeft = sp.filter(w => !prog(w));
@@ -8108,8 +8141,8 @@ VIEWS.course = VIEWS_JA.course = VIEWS_ES.course = async (el) => {
     <div class="sect3"><b>自由练习</b><i>${lang === "ja" ? "じゆう" : "Libera"}</i></div>
     <div class="grid3">${FREE_LINKS[lang].map(([v, n, d]) => `<button class="slip3 tile3" data-v="${v}"><b>${n}</b><small>${d}</small></button>`).join("")}</div>
   </div>`;
-  $("#c3-go", el) && ($("#c3-go", el).onclick = () => { LR.id = it.id; LR.parts = null; LR.quiz = null; go("lesson"); });
-  $$("[data-l]", el).forEach(b => b.onclick = async () => { await curUnit(unitIdOf(b.dataset.l)); LR.id = b.dataset.l; LR.parts = null; LR.quiz = null; go("lesson"); });
+  $("#c3-go", el) && ($("#c3-go", el).onclick = () => { LR.id = it.id; LR.parts = null; LR.quiz = null; LR.from = "course"; go("lesson"); });
+  $$("[data-l]", el).forEach(b => b.onclick = async () => { await curUnit(unitIdOf(b.dataset.l)); LR.id = b.dataset.l; LR.parts = null; LR.quiz = null; LR.from = "course"; go("lesson"); });
   $$("[data-v]", el).forEach(b => b.onclick = () => { const v = b.dataset.v; if (v === "grammar") { GS.tab = "topics"; ESG.open = null; ESG.tab = "list"; } if (v === "reading") { RS.open = null; AS.open = null; ESR.open = null; } if (v === "listening") LS.open = null; if (v === "conj") CJ.sess = null; if (v === "test") TS.mode = "home"; go(v); });
 };
 
@@ -8141,6 +8174,133 @@ VIEWS_ES.dict = (el) => {
   sug.addEventListener("click", e => { const s = e.target.closest(".wd"); if (!s) return; e.stopPropagation(); inp.value = s.dataset.w; show(s.dataset.w); }, true);
   if (DS.word) renderEsEntry($("#esd-e"), DS.word); else inp.focus();
 };
+
+/* ============ 课时 v2：一步一屏的引导式教学 ============
+   课纲里写 steps 的课时用这个播放器（旧格式的课时仍用原来的页面）。步骤类型：
+   intro  情境导入：一段对话或几句话，可逐句播放，带中文
+   teach  讲解：一次一个知识点 —— 讲解、例句、易错提示，末尾可带一道马上检查的小题（check）
+   word   新词卡：词、读音、释义、例句、记忆提示；连续几张词卡后自动插入一轮回忆小测（recall）
+   speak  跟读：播放后自己跟读
+   c / f / o  练习题（选择 / 填空 / 连词成句），答错的放到最后再做一次
+   sum    小结：本课要点
+   进度存在 PL.st.les[id].step，退出后回来接着上。 */
+const isV2 = l => Array.isArray(l?.steps);
+const v2Words = (l, sp) => (l?.steps || []).filter(s => s.t === "word" && !!s.sp === !!sp).map(s => s.w);
+const V2_EX = new Set(["c", "f", "o"]);
+function v2Exercises(l) {
+  const out = [];
+  for (const s of l.steps || []) { if (V2_EX.has(s.t)) out.push({ ...s, ref: l.id }); if (s.t === "teach" && s.check) out.push({ ...s.check, ref: l.id }); }
+  return out;
+}
+// 把连续的词卡后面接一轮回忆小测；练习错题在最后重做
+function v2Flow(l) {
+  const out = []; let run = [];
+  const flush = () => { if (run.length) { out.push({ t: "recall", ws: run.slice() }); run = []; } };
+  // 讲解后的小题单独一屏，免得往下翻
+  for (const s of l.steps) { if (s.t === "word") { out.push(s); run.push(s.w); } else { flush(); if (s.t === "teach" && s.check) { const { check, ...t } = s; out.push(t, { ...check, chk: s.title }); } else out.push(s); } }
+  flush();
+  return out;
+}
+const V2_KIND = { intro: "情境", teach: "讲解", word: "新词", recall: "回忆", speak: "跟读", c: "练习", f: "练习", o: "练习", sum: "小结", redo: "错题重做" };
+const v2Kind = s => s.chk ? "小题" : V2_KIND[s.t] || "";
+function v2State(l) {
+  if (LR.v2?.id !== l.id) { const flow = v2Flow(l), rec = lesRec(l.id); const fresh = rec.done || !rec.step; LR.v2 = { id: l.id, flow, i: fresh ? 0 : Math.min(rec.step, flow.length - 1), ans: null, redo: [], sub: 0, rq: null, nEx: fresh ? 0 : rec.xn?.[0] || 0, okEx: fresh ? 0 : rec.xn?.[1] || 0 }; }
+  return LR.v2;
+}
+function v2Save(l, V) {
+  const rec = lesRecW(l.id); rec.start ||= today(); rec.step = V.i; rec.xn = [V.nEx || 0, V.okEx || 0];
+  const half = Math.floor(V.flow.length / 2);
+  if (V.i >= half) { rec.p.w ||= today(); rec.p.g ||= today(); }
+  savePlanState();
+}
+function v2Finish(l, V) {
+  const rec = lesRecW(l.id); for (const p of LES_PARTS) rec.p[p] ||= (p === "x" ? { at: today(), n: V.nEx || 0, ok: V.okEx || 0 } : today());
+  rec.done ||= today(); rec.step = 0; delete rec.xn; savePlanState(); planCheck();
+  // 本课的词都进入复习
+  for (const w of [...v2Words(l), ...v2Words(l, true)]) if (!prog(w) && wordInfo(w)) graduate(w, 1);
+}
+const ES_GEN3 = { m: "阳性名词 · el", f: "阴性名词 · la", mf: "阴阳同形 · el / la" };
+const cls3 = () => curLang() === "ja" ? "jp" : curLang() === "es" ? "es-t" : "en";
+const playBtn = t => curLang() === "ja" ? "" : `<button class="play3" data-say="${esc(t)}" aria-label="播放">${ICON.spk}</button>`;
+function exBody(it, A, built) {
+  const c = cls3(), stem = esc(it.t === "o" ? (it.zh || "把下面的词连成句子") : it.q).replace(/___/g, `<span class="blank">＿＿＿</span>`);
+  let b = "";
+  if (it.t === "c") b = `<div class="opts">${it.o.map((o, i) => `<button class="opt ${c} ${A ? (i === it.a ? "right" : i === A.input ? "wrong" : "") : ""}" data-o="${i}" ${A ? "disabled" : ""}>${String.fromCharCode(65 + i)}. ${esc(o)}</button>`).join("")}</div>`;
+  else if (it.t === "f") b = A ? `<div class="${c}" style="font-size:18px">${A.ok ? "✓" : "✗"} ${esc(A.input)}${A.ok && !A.near ? "" : `　→　<b>${esc(it.a[0])}</b>`}</div>` : `<input type="text" id="v2-in" class="${c}" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="填入答案" style="font-size:18px">`;
+  else { const toks = orderTokens(it), used = new Set(built); b = `<div class="ord-ans ${c}">${built.map((i, j) => `<button class="tok" data-rm="${j}" ${A ? "disabled" : ""}>${esc(toks.find(x => x.i === i).t)}</button>`).join("") || `<span class="mut3">依次点下面的词</span>`}</div><div class="ord-pool ${c}">${toks.filter(x => !used.has(x.i)).map(x => `<button class="tok" data-add="${x.i}" ${A ? "disabled" : ""}>${esc(x.t)}</button>`).join("")}</div>${A && !A.ok ? `<div class="${c}" style="font-size:17px">正确：${esc(it.a)}</div>` : ""}`; }
+  return `<div class="q"><div class="stem ${c}">${it.say ? playBtn(it.say) : ""}${stem}</div>${b}${A ? `<div class="explain ${A.ok ? "ok" : "no"}">${A.ok ? (A.near ? "✓ 正确，注意重音符号。" : "✓ 正确。") : "✗ "}${esc(it.e || (it.t === "o" ? it.zh || "" : ""))}</div>` : ""}</div>`;
+}
+function v2Render(el, l) {
+  const V = v2State(l), lang = curLang(), c = cls3();
+  if (V.i >= V.flow.length) V.i = V.flow.length - 1;
+  const s = V.redoing ? V.redo[V.sub] : V.flow[V.i], n = V.flow.length, kind = V.redoing ? "redo" : s.t;
+  const prog3 = `<div class="v2top"><button class="btn ghost sm" id="v2-quit">← 退出</button>${bricksHTML((V.i + (V.ans ? 1 : 0)) / n, Math.min(n, 14))}<span class="mut3 num">${V.i + 1} / ${n}</span></div>`;
+  const head = `<div class="eye3">${esc(l.id.split(".").slice(1).join("·"))} · ${kind === "redo" ? V2_KIND.redo : v2Kind(s)}</div>`;
+  let body = "", cta = "下一步", ready = true;
+  if (s.t === "intro") body = `${head}<h2 class="t2">${esc(s.title || l.title)}</h2>${s.note ? `<p class="lead3">${s.note}</p>` : ""}<div class="dlg3">${(s.lines || []).map(([sp, t, zh]) => `<div class="ln3 ${sp ? "sp" + sp : ""}">${sp ? `<b>${esc(sp)}</b>` : ""}<div><div class="${c}">${esc(t)} ${playBtn(t)}</div><small>${esc(zh || "")}</small></div></div>`).join("")}</div>`;
+  else if (s.t === "teach") {
+    body = `${head}<h2 class="t2">${esc(s.title)}</h2>${(s.body || []).map(p => `<p class="lead3">${p}</p>`).join("")}
+      ${s.ex?.length ? `<div class="slip3 exs3">${s.ex.map(([t, zh]) => `<div><div class="${c} big3">${t} ${playBtn(String(t).replace(/<[^>]+>/g, ""))}</div><small>${esc(zh)}</small></div>`).join("")}</div>` : ""}
+      ${s.tip ? `<div class="tip3"><b>${esc(s.tipTitle || "中国学生常错")}</b>${s.tip}</div>` : ""}
+      ${s.check ? `<div class="slip3 chk3"><div class="eye3">${lang === "ja" ? "たしかめ" : "Proba"} · 马上试一题</div>${exBody(s.check, V.ans, V.built || [])}</div>` : ""}`;
+    if (s.check && !V.ans) { ready = s.check.t !== "o" || (V.built || []).length === orderTokens(s.check).length; cta = s.check.t === "c" ? "先选一个答案" : "检查"; if (s.check.t === "c") ready = false; }
+  } else if (s.t === "word") {
+    const info = wordInfo(s.w) || { w: s.w, s: [], x: [] }, x = s.x || info.x?.[0];
+    body = `${head}<div class="slip3 wcard3"><div class="hw3 ${c}">${esc(info.w || s.w)}</div><div class="ipa3">${esc(lang === "ja" ? hira(info.p || "") : lang === "es" ? (ES_GEN3[info.p] ?? info.p ?? "") : info.p || "")} ${playBtn(info.w || s.w)}</div>
+      <div class="rule3"></div><ol class="sns3">${(info.s || []).slice(0, 3).map(([p, z]) => `<li><i>${esc(p || "")}</i> ${esc(z)}</li>`).join("")}</ol>
+      ${x ? `<div class="ex3"><div class="${c}">${esc(x[0])} ${playBtn(x[0])}</div><small>${esc(x[1] || "")}</small></div>` : ""}
+      ${s.hint ? `<div class="tip3 soft"><b>记忆提示</b>${s.hint}</div>` : info.n ? `<div class="tip3 soft"><b>注意</b>${esc(info.n)}</div>` : ""}</div>`;
+  } else if (s.t === "recall") {
+    V.rq ||= { ws: shuffle(s.ws), k: 0, wrong: [] };
+    const R = V.rq, w = R.ws[R.k];
+    if (w) {
+      const info = wordInfo(w), pool = shuffle([...new Set([...s.ws.filter(x => x !== w), ...shuffle(lessonWords(l).concat(v2Words(l))).filter(x => x !== w)])]).slice(0, 3);
+      R.opts ||= shuffle([w, ...pool]);
+      body = `${head}<h2 class="t2">还记得吗？</h2><div class="slip3 wcard3"><div class="hw3 ${c}">${esc(info?.w || w)}</div><div class="ipa3">${playBtn(info?.w || w)}</div></div>
+        <div class="opts">${R.opts.map((o, i) => { const z = firstSense(wordInfo(o)); return `<button class="opt ${R.pick != null ? (o === w ? "right" : i === R.pick ? "wrong" : "") : ""}" data-r="${i}" ${R.pick != null ? "disabled" : ""}>${esc(z)}</button>`; }).join("")}</div>`;
+      ready = R.pick != null; cta = ready ? "下一个" : "选出意思";
+    }
+  } else if (s.t === "speak") body = `${head}<h2 class="t2">跟读</h2><p class="lead3">先听，再大声跟读两遍。注意${esc(s.focus || "节奏和重音")}。</p><div class="slip3 exs3"><div class="${c} big3">${esc(s.text)}</div><small>${esc(s.zh || "")}</small><div style="margin-top:12px">${lang === "ja" ? "" : `<button class="btn" data-say="${esc(s.text)}">▶ 播放</button> <button class="btn" data-say-slow="${esc(s.text)}">▶ 慢速</button>`}</div></div>`;
+  else if (V2_EX.has(s.t)) { body = `${head}<h2 class="t2">${V.redoing ? "再做一次" : s.chk ? "马上试一题" : "练习"}</h2>${s.chk && !V.redoing ? `<p class="mut3">刚学的：${esc(s.chk)}</p>` : ""}${exBody(s, V.ans, V.built || [])}`; if (!V.ans) { ready = s.t !== "c" && (s.t !== "o" || (V.built || []).length === orderTokens(s).length); cta = s.t === "c" ? "先选一个答案" : "检查"; } }
+  else if (s.t === "sum") { body = `${head}<h2 class="t2">本课小结</h2><div class="slip3 pad3"><ul class="sum3">${(s.points || []).map(p => `<li>${p}</li>`).join("")}</ul></div><p class="mut3">本课的新词已经排进复习；练习里答错的题进了错题本，之后会按间隔再考。</p>`; cta = "完成本课"; }
+  el.innerHTML = `<div class="v2">${prog3}<div class="v2b">${body}</div><div class="act3">${ctaHTML(cta, "", "v2-next", ready ? "" : "disabled")}</div></div>`;
+  // ---- 交互 ----
+  $$("[data-say]", el).forEach(b => b.onclick = () => planSay(b.dataset.say));
+  $$("[data-say-slow]", el).forEach(b => b.onclick = () => { if (lang === "es") sayEs(b.dataset.saySlow, { rate: .75 }); else Speech.say(b.dataset.saySlow, { rate: .75 }); });
+  $("#v2-quit", el).onclick = () => { v2Save(l, V); go(current === "lesson" && LR.from ? LR.from : "home"); };
+  const ex = s.t === "teach" ? s.check : V2_EX.has(s.t) ? s : null;
+  const answer = input => {
+    const r = quizCheck(ex, input); V.ans = { ...r, input };
+    if (!V.redoing) { V.nEx = (V.nEx || 0) + 1; if (r.ok) V.okEx = (V.okEx || 0) + 1; planQuizStat(r.ok); }
+    if (!r.ok) { planAddMistake({ ...ex, ref: l.id }, input); if (!V.redoing && V2_EX.has(s.t)) V.redo.push(s); }
+    v2Render(el, l);
+  };
+  if (ex && !V.ans) {
+    $$("[data-o]", el).forEach(b => b.onclick = () => answer(+b.dataset.o));
+    $$("[data-add]", el).forEach(b => b.onclick = () => { (V.built ||= []).push(+b.dataset.add); v2Render(el, l); });
+    $$("[data-rm]", el).forEach(b => b.onclick = () => { V.built.splice(+b.dataset.rm, 1); v2Render(el, l); });
+    const inp = $("#v2-in", el); if (inp) { inp.focus(); inp.onkeydown = e => { if (e.key === "Enter" && inp.value.trim()) answer(inp.value); }; }
+  }
+  if (s.t === "recall" && V.rq && V.rq.pick == null) $$("[data-r]", el).forEach(b => b.onclick = () => {
+    const R = V.rq, w = R.ws[R.k], ok = R.opts[+b.dataset.r] === w; R.pick = +b.dataset.r;
+    if (ok) { if (!prog(w)) graduate(w, 2); else applyRating(w, 2); } else { if (!prog(w)) graduate(w, 0); else applyRating(w, 0); R.ws.push(w); }
+    v2Render(el, l);
+  });
+  if (s.say && !V.ans && !s._said) { s._said = 1; setTimeout(() => planSay(s.say), 300); }
+  $("#v2-next", el).onclick = () => {
+    if (ex && !V.ans) { if (ex.t === "f") { const v = $("#v2-in", el)?.value || ""; if (v.trim()) answer(v); } else if (ex.t === "o") answer((V.built || []).slice()); return; }
+    if (s.t === "recall" && V.rq) { V.rq.k++; V.rq.pick = null; V.rq.opts = null; if (V.rq.k < V.rq.ws.length) return v2Render(el, l); V.rq = null; }
+    V.ans = null; V.built = [];
+    if (V.redoing) { V.sub++; if (V.sub < V.redo.length) return v2Render(el, l); V.redoing = false; V.redo = []; V.sub = 0; }
+    if (s.t === "sum") {
+      if (V.redo.length) { V.redoing = true; V.sub = 0; return v2Render(el, l); }
+      v2Finish(l, V); toast(`「${l.title}」学完了`, 3000); LR.v2 = null; go(LR.from || "home"); return;
+    }
+    // 小结之前先把做错的题重做一遍
+    if (V.flow[V.i + 1]?.t === "sum" && V.redo.length && !V.redoneOnce) { V.redoneOnce = true; V.redoing = true; V.sub = 0; return v2Render(el, l); }
+    V.i = Math.min(V.i + 1, n - 1); v2Save(l, V); v2Render(el, l); window.scrollTo({ top: 0 });
+  };
+}
 
 /* ============ 存档：导出 / 导入（网页版 ↔ App 版搬家、日常备份） ============
    导出：把存储里所有学习记录打成一个 JSON 文件；导入：原样写回。
