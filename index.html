@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261011.1759-b63393";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261011.1801-e14794";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -2407,10 +2407,13 @@ const AudioBank = {
     for (const p of (Packs.idx?.packs || []).filter(p => p.kind === "audio")) { const j = await Packs.json(p); if (j) this.index = Object.assign(this.index || {}, j); }
   },
   key: (v, t) => fnv(v + "|" + normText(t)),
-  has(v, t) { return !!this.index?.[this.key(v, t)]; },
+  // Google 神经语音录的新录音（tools/tts_batch.py 生成，声音 id gf_en / gf_es）优先，没有再用旧录音
+  gv: v => /^e[fm]_/.test(v) ? (/^ef_/.test(v) ? "gf_es" : null) : /^af_/.test(v) ? "gf_en" : null,
+  pick(v, t) { const g = this.gv(v); return g && this.index?.[this.key(g, t)] ? g : v; },
+  has(v, t) { return !!this.index?.[this.key(this.pick(v, t), t)]; },
   load(b) { return this.bundles[b] ||= fetch((b.includes("/") ? b : "audio/" + b) + ".json").then(r => { if (!r.ok) throw new Error("audio " + r.status); return r.json(); }).catch(e => { delete this.bundles[b]; throw e; }); },
-  async get(v, t) { const k = this.key(v, t); const b = this.index?.[k]; if (!b) return null; const bundle = await this.load(b); return bundle[k] ? "data:audio/mpeg;base64," + bundle[k] : null; },
-  prefetch(v, t) { const b = this.index?.[this.key(v, t)]; if (b) this.load(b).catch(() => { }); }
+  async get(v, t) { const k = this.key(this.pick(v, t), t); const b = this.index?.[k]; if (!b) return null; const bundle = await this.load(b); return bundle[k] ? "data:audio/mpeg;base64," + bundle[k] : null; },
+  prefetch(v, t) { const b = this.index?.[this.key(this.pick(v, t), t)]; if (b) this.load(b).catch(() => { }); }
 };
 const Speech = {
   au: typeof Audio !== "undefined" ? new Audio() : null, token: 0, t0: 0,
