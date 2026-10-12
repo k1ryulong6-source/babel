@@ -35,11 +35,19 @@
      "note": "先听一遍。这一课学会：说自己叫什么、问别人叫什么，以及什么时候用「你」、什么时候用「您」。"
     },
     {
-     "t": "teach",
-     "title": "“我叫……”：Me llamo",
-     "body": [
-      "西语不说“我的名字是”，而是说 <b>Me llamo</b> + 名字，字面意思是“我把自己叫作……”。",
-      "<b>me llamo</b> 我叫 · <b>te llamas</b> 你叫 · <b>se llama</b> 他/她/您叫"
+     "t": "key",
+     "title": "“我叫……”：me llamo / te llamas / se llama",
+     "what": [
+      "西语不说“我的名字是”，而是说 <b>Me llamo</b> + 名字。",
+      "<b>me llamo</b> 我叫 · <b>te llamas</b> 你叫 · <b>se llama</b> 他 / 她 / 您叫",
+      "问名字：<i>¿Cómo te llamas?</i>（对熟人）/ <i>¿Cómo se llama usted?</i>（对长辈、陌生人）"
+     ],
+     "why": [
+      "llamar 是“叫、称呼”，llamarse 字面是“把<b>自己</b>叫作”。前面的 me / te / se 就是“自己”：我把自己叫作 → me llamo。",
+      "所以问名字用 <b>cómo</b>（怎样称呼你自己），而不是 qué（什么）。"
+     ],
+     "zh": [
+      "中文“我叫王磊”的“叫”后面直接是名字；西语多了一个“自己”（me / te / se），而且它放在动词<b>前面</b>。"
      ],
      "ex": [
       [
@@ -53,28 +61,87 @@
       [
        "Él se llama Pablo.",
        "他叫巴勃罗。"
+      ],
+      [
+       "¿Cómo se llama tu profesora?",
+       "你的老师（女）叫什么？"
       ]
      ],
-     "tip": "问名字用 <b>cómo</b>（怎样），不用 qué：不说 <s>¿Qué te llamas?</s>",
-     "check": {
-      "t": "c",
-      "q": "对同学说“你叫什么名字？”",
-      "o": [
-       "¿Cómo te llamas?",
+     "err": [
+      [
        "¿Qué te llamas?",
-       "¿Cómo llamas?",
-       "¿Cómo me llamo?"
+       "¿Cómo te llamas?",
+       "问名字用 cómo"
       ],
-      "a": 0,
-      "e": "问名字用 cómo；对同学用 te llamas。"
-     }
+      [
+       "Yo llamo Ana.",
+       "Me llamo Ana.",
+       "少了 me（自己）"
+      ],
+      [
+       "Me llama Ana.",
+       "Me llamo Ana.",
+       "我 → llamo，词尾 -o"
+      ]
+     ],
+     "sum": "<b>Me llamo</b> + 名字；问名字用 <b>¿Cómo te llamas?</b>",
+     "drill": [
+      {
+       "t": "c",
+       "q": "对同学说“你叫什么名字？”",
+       "o": [
+        "¿Cómo te llamas?",
+        "¿Qué te llamas?",
+        "¿Cómo llamas?",
+        "¿Cómo me llamo?"
+       ],
+       "a": 0,
+       "e": "问名字用 cómo；对同学用 te llamas。"
+      },
+      {
+       "t": "c",
+       "q": "—¿Cómo te llamas? —___ Pedro.",
+       "o": [
+        "Me llamo",
+        "Te llamas",
+        "Se llama",
+        "Llamo"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "Ella se ___ Carmen.",
+       "a": [
+        "llama"
+       ],
+       "e": "她 → se llama。"
+      },
+      {
+       "t": "tr",
+       "zh": "我叫王丽。",
+       "a": [
+        "Me llamo Wang Li.",
+        "Soy Wang Li."
+       ]
+      }
+     ]
     },
     {
-     "t": "teach",
+     "t": "key",
      "title": "“你”和“您”：tú 与 usted",
-     "body": [
-      "西语的“你”分两种：<b>tú</b> 对朋友、同学、家人、小孩；<b>usted</b> 对长辈、陌生人、顾客、上司，表示尊敬。",
-      "usted 后面的动词用第三人称，和“他/她”一样：<i>¿Cómo se llama usted?</i>"
+     "what": [
+      "西语的“你”分两种：",
+      "<b>tú</b>：朋友、同学、家人、小孩 —— 动词用“你”的形式：<i>te llamas, eres</i>",
+      "<b>usted</b>：长辈、陌生人、顾客、上司 —— 动词用<b>第三人称</b>，和“他 / 她”一样：<i>se llama, es</i>"
+     ],
+     "why": [
+      "usted 来自古老的 vuestra merced（“阁下”），本来就是第三人称的称呼，所以动词至今按“他”变。",
+      "书面常缩写成 Ud.。"
+     ],
+     "zh": [
+      "中文“你 / 您”只换一个字，动词不变；西语换成 usted 后，<b>动词也要跟着变</b>成第三人称。",
+      "西班牙年轻人之间几乎都用 tú；拿不准时先用 usted，对方说 <i>Puedes tutearme</i>（可以用 tú 称呼我）再换。"
      ],
      "ex": [
       [
@@ -84,22 +151,59 @@
       [
        "¿Cómo se llama usted?",
        "您贵姓？（对老师、长辈）"
+      ],
+      [
+       "¿Usted es el señor García?",
+       "您是加西亚先生吗？"
       ]
      ],
-     "tip": "西班牙年轻人之间几乎都用 tú。拿不准时先用 usted，对方说 <i>Puedes tutearme</i>（你可以用 tú 称呼我）再换。",
-     "tipTitle": "怎么选",
-     "check": {
-      "t": "c",
-      "q": "在酒店前台问一位老先生的名字：",
-      "o": [
-       "¿Cómo te llamas?",
-       "¿Cómo se llama usted?",
+     "err": [
+      [
        "¿Cómo te llama usted?",
-       "¿Cómo llamas tú?"
+       "¿Cómo se llama usted?",
+       "usted 配第三人称 se llama"
       ],
-      "a": 1,
-      "e": "对长辈、顾客用 usted，动词用第三人称 se llama。"
-     }
+      [
+       "Usted eres profesor.",
+       "Usted es profesor.",
+       "usted 配 es"
+      ]
+     ],
+     "sum": "<b>usted = 您</b>，动词和“他 / 她”一样。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "在酒店前台问一位老先生的名字：",
+       "o": [
+        "¿Cómo te llamas?",
+        "¿Cómo se llama usted?",
+        "¿Cómo te llama usted?",
+        "¿Cómo llamas tú?"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Usted ___ de México, ¿verdad?",
+       "o": [
+        "eres",
+        "es",
+        "soy",
+        "son"
+       ],
+       "a": 1,
+       "e": "usted 配第三人称 es。"
+      },
+      {
+       "t": "tr",
+       "zh": "您叫什么名字？",
+       "a": [
+        "¿Cómo se llama usted?",
+        "¿Cómo se llama?",
+        "¿Cuál es su nombre?"
+       ]
+      }
+     ]
     },
     {
      "t": "teach",
@@ -231,27 +335,8 @@
      "focus": "llamo 的 ll 读得像“呀”的开头；重音在 LLA"
     },
     {
-     "t": "c",
-     "q": "—¿Cómo te llamas? —___ Pedro.",
-     "o": [
-      "Me llamo",
-      "Te llamas",
-      "Se llama",
-      "Llamo"
-     ],
-     "a": 0,
-     "e": "回答“我叫”用 me llamo。"
-    },
-    {
-     "t": "c",
-     "q": "对老师说“您叫什么名字？”",
-     "o": [
-      "¿Cómo te llamas?",
-      "¿Cómo se llama usted?",
-      "¿Cómo me llamo?",
-      "¿Qué se llama?"
-     ],
-     "a": 1
+     "t": "dict",
+     "a": "Hola, me llamo Ana."
     },
     {
      "t": "f",
@@ -273,6 +358,14 @@
      "e": "encantado 随说话人自己的性别变化，女生说 encantada。"
     },
     {
+     "t": "tr",
+     "zh": "你好，我叫安娜。你叫什么名字？",
+     "a": [
+      "Hola, me llamo Ana. ¿Cómo te llamas?",
+      "Hola, soy Ana. ¿Cómo te llamas?"
+     ]
+    },
+    {
      "t": "o",
      "a": "Me llamo Ana y soy estudiante.",
      "zh": "我叫安娜，我是学生。"
@@ -280,8 +373,8 @@
     {
      "t": "sum",
      "points": [
-      "说名字：<i>Me llamo …</i>；问名字：<i>¿Cómo te llamas?</i>（用 cómo，不用 qué）。",
-      "tú 对熟人，usted 对长辈和陌生人；usted 的动词和“他/她”同形：<i>se llama</i>。",
+      "<b>重点</b>：说名字 <i>Me llamo …</i>；问名字 <i>¿Cómo te llamas?</i>（用 cómo，不用 qué）。",
+      "<b>重点</b>：tú 对熟人，usted 对长辈和陌生人；usted 的动词和“他 / 她”同形：<i>se llama, es</i>。",
       "por favor 请 · gracias 谢谢 · de nada 不客气 · vale 好的。"
      ]
     }
@@ -350,12 +443,19 @@
      }
     },
     {
-     "t": "teach",
-     "title": "ser（是）的变位",
-     "body": [
-      "ser 是最不规则的动词之一，要整个背下来：",
+     "t": "key",
+     "title": "ser（是）的变位 —— 必须背熟",
+     "what": [
+      "ser 是西语最常用、也最不规则的动词，六个形式要整个背下来：",
       "yo <b>soy</b> · tú <b>eres</b> · él / ella / usted <b>es</b>",
       "nosotros <b>somos</b> · vosotros <b>sois</b> · ellos / ellas / ustedes <b>son</b>"
+     ],
+     "why": [
+      "西语动词的词尾会随“谁”变化：一个动词有六个人称形式。听到 <i>somos</i> 就知道是“我们”，所以主语代词常常<b>省略</b>：",
+      "<i>Soy de China.</i> 比 <i>Yo soy de China.</i> 更自然；强调或对比时才说 yo：<i>Yo soy de Madrid, ¿y tú?</i>"
+     ],
+     "zh": [
+      "中文“是”永远是“是”；西语的“是”有六张脸。好消息：学会 ser 的这套“人称词尾”的感觉，以后所有动词都按同样的人称分六格。"
      ],
      "ex": [
       [
@@ -363,32 +463,96 @@
        "我是学生。"
       ],
       [
+       "¿Eres de Pekín?",
+       "你是北京人吗？"
+      ],
+      [
        "Somos amigos.",
        "我们是朋友。"
       ],
       [
-       "¿Eres de Pekín?",
-       "你是北京人吗？"
+       "Ellas son profesoras de inglés.",
+       "她们是英语老师。"
       ]
      ],
-     "tip": "西语动词的词尾已经说明了“谁”，主语代词常常省略：<i>Soy de China</i> 比 <i>Yo soy de China</i> 更自然。强调或对比时才加：<i>Yo soy de Madrid, ¿y tú?</i>",
-     "tipTitle": "省略主语",
-     "check": {
-      "t": "f",
-      "q": "Nosotros ___ amigos. (ser)",
-      "a": [
-       "somos"
+     "err": [
+      [
+       "Yo es estudiante.",
+       "Yo soy estudiante.",
+       "yo → soy"
       ],
-      "e": "nosotros → somos。"
-     }
+      [
+       "Nosotros son amigos.",
+       "Nosotros somos amigos.",
+       "nosotros → somos"
+      ],
+      [
+       "Ellos es de México.",
+       "Ellos son de México.",
+       "ellos → son"
+      ]
+     ],
+     "sum": "<b>soy, eres, es, somos, sois, son</b> —— 每天念三遍。",
+     "drill": [
+      {
+       "t": "f",
+       "q": "Nosotros ___ amigos. (ser)",
+       "a": [
+        "somos"
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Tú ___ estudiante, ¿verdad?",
+       "o": [
+        "eres",
+        "es",
+        "soy",
+        "sois"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Ellos ___ de México.",
+       "o": [
+        "es",
+        "son",
+        "somos",
+        "eres"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "María ___ española. (ser)",
+       "a": [
+        "es"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我们是同班同学。",
+       "a": [
+        "Somos compañeros de clase.",
+        "Nosotros somos compañeros de clase."
+       ]
+      }
+     ]
     },
     {
-     "t": "teach",
-     "title": "ser 用来说身份、国籍、职业",
-     "body": [
+     "t": "key",
+     "title": "用 ser 说身份：职业不加冠词，国籍跟着性别变",
+     "what": [
       "<b>ser de</b> + 地方 = 来自……：<i>Es de Pekín.</i>",
       "ser + 职业：职业前<b>不加冠词</b>：<i>Soy profesor.</i>（不说 <s>Soy un profesor</s>）",
-      "国籍要和人的性别一致，而且<b>小写</b>：chino / china，japonés / japonesa，español / española。"
+      "国籍是形容词，要和人的<b>性别、单复数</b>一致，而且<b>小写</b>：chino / china / chinos / chinas；japonés / japonesa；español / española"
+     ],
+     "why": [
+      "职业、国籍在这里是在说“属于哪一类人”，西语把它当成形容词一样用，所以不加 un / una。只有加了修饰语才加冠词：<i>Es <b>un</b> profesor muy bueno.</i>（他是个很好的老师）"
+     ],
+     "zh": [
+      "中文“我是中国人”需要“人”；西语直接用形容词：<i>Soy chino / china.</i> 中文国籍不分男女，西语要分：男生 chino，女生 china。"
      ],
      "ex": [
       [
@@ -398,21 +562,69 @@
       [
        "Él es español.",
        "他是西班牙人。"
+      ],
+      [
+       "Somos de Shanghái.",
+       "我们是上海人。"
+      ],
+      [
+       "Es un profesor muy bueno.",
+       "他是一位很好的老师。（有修饰语才加 un）"
       ]
      ],
-     "tip": "中文“我是中国人”，西语直接用形容词：<i>Soy chino / china.</i> 不需要“人”这个词。",
-     "check": {
-      "t": "c",
-      "q": "Yuki es ___.（日本人，女）",
-      "o": [
-       "japonés",
-       "japonesa",
-       "japoneses",
-       "Japón"
+     "err": [
+      [
+       "Soy un estudiante.",
+       "Soy estudiante.",
+       "职业前不加冠词"
       ],
-      "a": 1,
-      "e": "阴性 japonesa；去掉重音符号。"
-     }
+      [
+       "Ella es chino.",
+       "Ella es china.",
+       "女性用 china"
+      ],
+      [
+       "Soy China.",
+       "Soy china / chino.",
+       "国籍形容词小写；China 是国家"
+      ]
+     ],
+     "sum": "职业不加冠词；国籍小写、跟着人变阴阳单复。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "“我是老师”最自然的说法：",
+       "o": [
+        "Soy un profesor.",
+        "Soy profesor.",
+        "Es profesor.",
+        "Yo es profesor."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Yuki es ___.（日本人，女）",
+       "o": [
+        "japonés",
+        "japonesa",
+        "japoneses",
+        "Japón"
+       ],
+       "a": 1,
+       "e": "阴性 japonesa；去掉重音符号。"
+      },
+      {
+       "t": "tr",
+       "zh": "她是西班牙人，是医生。",
+       "a": [
+        "Es española y es médica.",
+        "Ella es española y es médica.",
+        "Es española. Es médica.",
+        "Ella es española. Es médica."
+       ]
+      }
+     ]
     },
     {
      "t": "word",
@@ -518,45 +730,27 @@
      "focus": "¿Y tú? 句末语调上扬"
     },
     {
-     "t": "c",
-     "q": "Ellos ___ de México.",
-     "o": [
-      "es",
-      "son",
-      "somos",
-      "eres"
-     ],
-     "a": 1
+     "t": "dict",
+     "a": "Somos compañeros de clase."
     },
     {
      "t": "c",
-     "q": "Tú ___ estudiante, ¿verdad?",
+     "q": "Usted ___ profesora, ¿no?",
      "o": [
       "eres",
       "es",
       "soy",
-      "sois"
+      "son"
      ],
-     "a": 0
+     "a": 1
     },
     {
-     "t": "f",
-     "q": "María ___ española. (ser)",
+     "t": "tr",
+     "zh": "你是哪里人？",
      "a": [
-      "es"
+      "¿De dónde eres?",
+      "¿De dónde eres tú?"
      ]
-    },
-    {
-     "t": "c",
-     "q": "“我是老师”最自然的说法：",
-     "o": [
-      "Soy un profesor.",
-      "Soy profesor.",
-      "Es profesor.",
-      "Yo es profesor."
-     ],
-     "a": 1,
-     "e": "职业前不加冠词，主语 yo 一般省略。"
     },
     {
      "t": "o",
@@ -567,8 +761,8 @@
      "t": "sum",
      "points": [
       "主语代词：yo, tú, él, ella, usted / nosotros, vosotros, ellos, ellas, ustedes。",
-      "ser：soy, eres, es, somos, sois, son —— 说身份、国籍、职业、来自哪里。",
-      "主语常省略；职业前不加冠词；国籍小写并随性别变化。"
+      "<b>重点</b>：ser —— soy, eres, es, somos, sois, son；主语常省略。",
+      "<b>重点</b>：职业前不加冠词；国籍小写并随性别、单复数变化。"
      ]
     }
    ]
@@ -605,12 +799,19 @@
      "note": "注意 un libro 和 una foto：为什么一个用 un、一个用 una？这一课就讲这个。"
     },
     {
-     "t": "teach",
+     "t": "key",
      "title": "每个名词都有“性别”",
-     "body": [
-      "西语名词分<b>阳性</b>和<b>阴性</b>，跟真实性别无关：libro（书）是阳性，mesa（桌子）是阴性。",
-      "规律：<b>-o</b> 结尾多为阳性，<b>-a</b> 结尾多为阴性；<b>-ción / -dad</b> 结尾一定是阴性。",
-      "常见例外要单独记：el día、el mapa、el problema 是阳性；la mano、la foto 是阴性。"
+     "what": [
+      "西语名词分<b>阳性</b>和<b>阴性</b>，和真实性别无关：libro（书）是阳性，mesa（桌子）是阴性。",
+      "规律：<b>-o</b> 结尾多为阳性；<b>-a</b> 结尾多为阴性；<b>-ción / -sión / -dad / -tad</b> 结尾一定是阴性；<b>-or</b> 多为阳性。",
+      "常见例外单独记：<b>el día, el mapa, el problema, el idioma</b>（-a 却是阳性）；<b>la mano, la foto, la moto, la radio</b>（-o 却是阴性）。"
+     ],
+     "why": [
+      "名词的性决定了跟它搭配的冠词、形容词、代词都要变：<i><b>el</b> libro nuev<b>o</b></i> / <i><b>la</b> mesa nuev<b>a</b></i>。一个名词的性记错，整句话就跟着错。",
+      "所以背名词时<b>连冠词一起背</b>：不背 libro，背 el libro。"
+     ],
+     "zh": [
+      "中文名词没有性别，“新书”“新桌子”的“新”不变；西语的“新”要跟着名词变：libro nuevo，mesa nueva。"
      ],
      "ex": [
       [
@@ -618,20 +819,83 @@
        "书（阳）· 桌子（阴）"
       ],
       [
-       "la ciudad · la universidad",
-       "城市 · 大学（-dad 阴性）"
+       "la ciudad · la universidad · la canción",
+       "城市 · 大学 · 歌（都是阴性）"
+      ],
+      [
+       "el día · el problema · la mano",
+       "天 · 问题 · 手（例外）"
+      ],
+      [
+       "La ciudad es muy bonita.",
+       "这座城市很漂亮。（形容词跟着变 -a）"
       ]
      ],
-     "check": {
-      "t": "c",
-      "q": "ciudad 是阳性还是阴性？",
-      "o": [
-       "阳性",
-       "阴性"
+     "err": [
+      [
+       "el ciudad",
+       "la ciudad",
+       "-dad 一定是阴性"
       ],
-      "a": 1,
-      "e": "-dad 结尾都是阴性：la ciudad。"
-     }
+      [
+       "la problema",
+       "el problema",
+       "-ma 结尾的希腊来源词多为阳性"
+      ],
+      [
+       "el mano",
+       "la mano",
+       "-o 结尾的例外"
+      ]
+     ],
+     "sum": "背名词连冠词：<b>el</b> día，<b>la</b> mano，<b>la</b> ciudad。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "ciudad 是阳性还是阴性？",
+       "o": [
+        "阳性",
+        "阴性"
+       ],
+       "a": 1,
+       "e": "-dad 结尾都是阴性：la ciudad。"
+      },
+      {
+       "t": "c",
+       "q": "哪个是阳性名词？",
+       "o": [
+        "mano",
+        "foto",
+        "día",
+        "ciudad"
+       ],
+       "a": 2,
+       "e": "día 以 -a 结尾却是阳性。"
+      },
+      {
+       "t": "c",
+       "q": "___ mesa",
+       "o": [
+        "el",
+        "la",
+        "los",
+        "un"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "___ problema",
+       "o": [
+        "el",
+        "la",
+        "una",
+        "las"
+       ],
+       "a": 0,
+       "e": "el problema 是例外。"
+      }
+     ]
     },
     {
      "t": "teach",
@@ -656,32 +920,112 @@
      }
     },
     {
-     "t": "teach",
-     "title": "变复数",
-     "body": [
+     "t": "key",
+     "title": "变复数；gente 是单数",
+     "what": [
       "元音结尾 <b>+ s</b>：libro → libros，mesa → mesas。",
       "辅音结尾 <b>+ es</b>：ciudad → ciudades，profesor → profesores。",
-      "-z 结尾变 <b>-ces</b>：lápiz → lápices。"
+      "-z 结尾变 <b>-ces</b>：lápiz → lápices。",
+      "冠词、形容词也一起变复数：<i>los chicos altos, las casas nuevas</i>。"
+     ],
+     "why": [
+      "西语里名词一变复数，跟它有关的词全都要变，这叫“性数一致”，是西语语法的地基。"
+     ],
+     "zh": [
+      "中文靠“们”“一些”表示复数，而且常常不标：“我有书”。西语必须标：<i>Tengo libros.</i>",
+      "但<b>gente</b>（人们）正相反：中文感觉是很多人，西语却是<b>阴性单数</b>：<i>La gente <b>es</b> simpática.</i> <b>persona</b> 也永远是阴性，哪怕说的是男人：<i>Él es una buena persona.</i>"
      ],
      "ex": [
       [
        "dos libros, tres mesas",
        "两本书，三张桌子"
+      ],
+      [
+       "Las ciudades grandes son caras.",
+       "大城市（东西）贵。"
+      ],
+      [
+       "La gente es muy amable aquí.",
+       "这里的人很友善。"
+      ],
+      [
+       "Juan es una persona muy simpática.",
+       "胡安是个很好相处的人。"
       ]
      ],
-     "tip": "<b>gente</b>（人们）在西语里是<b>单数</b>：<i>La gente <b>es</b> simpática.</i>，不说 <s>la gente son</s>。<b>persona</b> 永远是阴性，哪怕说的是男人：<i>Él es una buena persona.</i>",
-     "check": {
-      "t": "c",
-      "q": "ciudad 的复数是？",
-      "o": [
-       "ciudads",
-       "ciudades",
-       "ciudadas",
-       "ciudad"
+     "err": [
+      [
+       "La gente son amables.",
+       "La gente es amable.",
+       "gente 是单数"
       ],
-      "a": 1,
-      "e": "辅音结尾加 -es。"
-     }
+      [
+       "dos ciudads",
+       "dos ciudades",
+       "辅音结尾加 -es"
+      ],
+      [
+       "Muchas gentes",
+       "Mucha gente",
+       "一般不用复数"
+      ]
+     ],
+     "sum": "元音 +s，辅音 +es，-z 变 -ces；<b>gente 单数、persona 阴性</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "ciudad 的复数是？",
+       "o": [
+        "ciudads",
+        "ciudades",
+        "ciudadas",
+        "ciudad"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "un profesor → dos ___",
+       "a": [
+        "profesores"
+       ]
+      },
+      {
+       "t": "c",
+       "q": "La gente ___ muy amable.",
+       "o": [
+        "es",
+        "son",
+        "eres",
+        "somos"
+       ],
+       "a": 0,
+       "e": "gente 是单数。"
+      },
+      {
+       "t": "c",
+       "q": "“很多女孩”：",
+       "o": [
+        "muchos chicas",
+        "muchas chicas",
+        "mucha chicas",
+        "muchas chicos"
+       ],
+       "a": 1,
+       "e": "形容词跟着名词变成阴性复数。"
+      },
+      {
+       "t": "tr",
+       "zh": "这里的人很友善。",
+       "a": [
+        "La gente es muy amable aquí.",
+        "Aquí la gente es muy amable.",
+        "La gente aquí es muy amable.",
+        "La gente es amable aquí.",
+        "Aquí la gente es amable."
+       ]
+      }
+     ]
     },
     {
      "t": "word",
@@ -787,58 +1131,19 @@
      "focus": "gente 的 g 在 e 前读喉音（像用力哈气的“赫”）"
     },
     {
-     "t": "c",
-     "q": "___ mesa",
-     "o": [
-      "el",
-      "la",
-      "los",
-      "un"
-     ],
-     "a": 1
+     "t": "dict",
+     "a": "Hay mucha gente en la ciudad."
     },
     {
-     "t": "c",
-     "q": "“很多女孩”：",
-     "o": [
-      "muchos chicas",
-      "muchas chicas",
-      "mucha chicas",
-      "muchas chicos"
-     ],
-     "a": 1,
-     "e": "形容词跟着名词变成阴性复数。"
-    },
-    {
-     "t": "f",
-     "q": "un profesor → dos ___",
+     "t": "tr",
+     "zh": "这是我朋友的书。",
      "a": [
-      "profesores"
+      "Es el libro de mi amigo.",
+      "Es el libro de mi amiga.",
+      "Este es el libro de mi amigo.",
+      "Este es el libro de mi amiga.",
+      "Es un libro de mi amigo."
      ]
-    },
-    {
-     "t": "c",
-     "q": "哪个是阳性名词？",
-     "o": [
-      "mano",
-      "foto",
-      "día",
-      "ciudad"
-     ],
-     "a": 2,
-     "e": "día 以 -a 结尾却是阳性。"
-    },
-    {
-     "t": "c",
-     "q": "La gente ___ muy amable.",
-     "o": [
-      "es",
-      "son",
-      "eres",
-      "somos"
-     ],
-     "a": 0,
-     "e": "gente 是单数。"
     },
     {
      "t": "o",
@@ -848,9 +1153,9 @@
     {
      "t": "sum",
      "points": [
-      "名词有阴阳性：-o 多阳、-a 多阴，-ción / -dad 一定阴；例外 el día、la mano 单独记。",
+      "<b>重点</b>：名词有阴阳性 —— -o 多阳、-a 多阴，-ción / -dad 一定阴；例外 el día、la mano 单独记。背名词连冠词。",
       "人：-o 变 -a，辅音加 -a；-e / -ista 男女同形。",
-      "复数：元音 +s，辅音 +es，-z 变 -ces。gente 是单数，persona 永远阴性。"
+      "<b>重点</b>：复数 元音 +s，辅音 +es，-z 变 -ces；gente 是单数，persona 永远阴性。"
      ]
     }
    ]
@@ -887,72 +1192,117 @@
      "note": "西语名词前几乎总带冠词。注意 la calle、un hotel、al lado del banco。"
     },
     {
-     "t": "teach",
-     "title": "定冠词：el / la / los / las",
-     "body": [
-      "说<b>双方都知道是哪个</b>的东西，相当于“这个、那个”。",
-      "冠词和名词<b>同性同数</b>：el libro · la mesa · los libros · las mesas"
+     "t": "key",
+     "title": "el / la 还是 un / una？",
+     "what": [
+      "<b>定冠词</b> el / la / los / las：说<b>双方都知道是哪个</b>的东西，相当于“这个、那个”。",
+      "<b>不定冠词</b> un / una / unos / unas：<b>第一次提到</b>、对方不知道是哪个，相当于“一个、一些”。",
+      "冠词和名词<b>同性同数</b>。"
+     ],
+     "why": [
+      "冠词告诉听话人：“这个东西你认识吗？”认识用 el / la，不认识用 un / una。所以同一样东西，第一次说 un，再说就换 el：<i>Hay <b>un</b> hotel. <b>El</b> hotel es nuevo.</i>"
+     ],
+     "zh": [
+      "中文几乎不用冠词，“我有车”“车在外面”都不加。西语名词前几乎都要有冠词或其他限定词。",
+      "另一个大区别：说<b>一类事物的总称</b>，中文不加词，西语加<b>定冠词</b>：“我喜欢猫” → <i>Me gustan <b>los</b> gatos.</i>　“咖啡很贵” → <i><b>El</b> café es caro.</i>"
      ],
      "ex": [
       [
-       "La calle es muy larga.",
-       "这条街很长。"
+       "Tengo un coche. El coche es rojo.",
+       "我有一辆车。车是红色的。"
       ],
       [
-       "Los niños están en casa.",
-       "孩子们在家。"
-      ]
-     ],
-     "tip": "中文说“我喜欢猫”不用冠词；西语说一类事物的总称也要加定冠词：<i>Me gustan <b>los</b> gatos.</i>",
-     "check": {
-      "t": "c",
-      "q": "___ ciudades",
-      "o": [
-       "el",
-       "la",
-       "los",
-       "las"
-      ],
-      "a": 3,
-      "e": "ciudad 阴性，复数用 las。"
-     }
-    },
-    {
-     "t": "teach",
-     "title": "不定冠词：un / una / unos / unas",
-     "body": [
-      "<b>第一次提到</b>、对方不知道是哪个时用，相当于“一个、一些”。",
-      "第一次提到用 un / una，再提到就换成 el / la：<i>Hay un hotel. El hotel es nuevo.</i>"
-     ],
-     "ex": [
-      [
-       "Tengo un coche.",
-       "我有一辆车。"
+       "¿Dónde está la estación?",
+       "车站在哪儿？（大家都知道的那个车站）"
       ],
       [
        "Hay una tienda aquí.",
        "这儿有一家店。"
+      ],
+      [
+       "Me gusta el café.",
+       "我喜欢咖啡。（泛指一类）"
       ]
      ],
-     "check": {
-      "t": "c",
-      "q": "这条街上有一家酒店（第一次提到）：Hay ___ hotel en la calle.",
-      "o": [
-       "el",
-       "un",
-       "una",
-       "la"
+     "err": [
+      [
+       "Me gusta café.",
+       "Me gusta el café.",
+       "泛指一类要加定冠词"
       ],
-      "a": 1
-     }
+      [
+       "Hay el hotel aquí.",
+       "Hay un hotel aquí.",
+       "hay（有）后面用不定冠词"
+      ],
+      [
+       "la problema",
+       "el problema",
+       "冠词跟名词的性"
+      ]
+     ],
+     "sum": "认识的用 el / la，第一次说用 un / una；<b>泛指一类也用 el / la</b>；hay 后面用 un / una。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ ciudades",
+       "o": [
+        "el",
+        "la",
+        "los",
+        "las"
+       ],
+       "a": 3,
+       "e": "ciudad 阴性，复数用 las。"
+      },
+      {
+       "t": "c",
+       "q": "这条街上有一家酒店（第一次提到）：Hay ___ hotel en la calle.",
+       "o": [
+        "el",
+        "un",
+        "una",
+        "la"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "“我喜欢咖啡”：Me gusta ___ café.",
+       "o": [
+        "un",
+        "el",
+        "la",
+        "（不加）"
+       ],
+       "a": 1,
+       "e": "泛指一类用定冠词。"
+      },
+      {
+       "t": "tr",
+       "zh": "我有一辆车，车是红色的。",
+       "a": [
+        "Tengo un coche y el coche es rojo.",
+        "Tengo un coche. El coche es rojo.",
+        "Tengo un coche rojo."
+       ]
+      }
+     ]
     },
     {
-     "t": "teach",
-     "title": "缩合：al 和 del",
-     "body": [
-      "a + el → <b>al</b>：<i>Voy al banco.</i>（不说 <s>a el banco</s>）",
-      "de + el → <b>del</b>：<i>Es el coche del profesor.</i>",
-      "只有 el 会缩合；a la、de la、a los 都不变。"
+     "t": "key",
+     "title": "缩合：a + el = al，de + el = del",
+     "what": [
+      "<b>a + el → al</b>：<i>Voy al banco.</i>（不说 <s>a el banco</s>）",
+      "<b>de + el → del</b>：<i>Es el coche del profesor.</i>",
+      "只有 el 会缩合；<b>a la、de la、a los、de las</b> 都不变。",
+      "专有名词里的 El 不缩合：<i>Voy a El Salvador.</i>"
+     ],
+     "why": [
+      "两个元音挨着读起来别扭（a el），西语就把它们合成一个词。这是强制的，不缩合就是错。"
+     ],
+     "zh": [
+      "中文“去银行”“老师的车”，“去”和“的”永远不变。西语里 a（去）、de（的）碰到 el 就要变形。"
      ],
      "ex": [
       [
@@ -961,16 +1311,77 @@
       ],
       [
        "Es la casa de la profesora.",
-       "这是老师（女）的家。"
+       "这是老师（女）的家。（de la 不缩合）"
+      ],
+      [
+       "Vengo del trabajo.",
+       "我下班回来。"
+      ],
+      [
+       "Vamos a los parques.",
+       "我们去公园。（a los 不缩合）"
       ]
      ],
-     "check": {
-      "t": "f",
-      "q": "Voy ___ museo. (a + el)",
-      "a": [
-       "al"
+     "err": [
+      [
+       "Voy a el banco.",
+       "Voy al banco.",
+       "a + el 必须缩合"
+      ],
+      [
+       "el libro de el profesor",
+       "el libro del profesor",
+       "de + el 必须缩合"
+      ],
+      [
+       "Voy al tienda.",
+       "Voy a la tienda.",
+       "只有 el 缩合"
       ]
-     }
+     ],
+     "sum": "a / de 碰到 <b>el</b> 才合并：al、del。",
+     "drill": [
+      {
+       "t": "f",
+       "q": "Voy ___ museo. (a + el)",
+       "a": [
+        "al"
+       ]
+      },
+      {
+       "t": "c",
+       "q": "Voy ___ tienda.",
+       "o": [
+        "al",
+        "a la",
+        "a el",
+        "del"
+       ],
+       "a": 1,
+       "e": "tienda 阴性，a la 不缩合。"
+      },
+      {
+       "t": "c",
+       "q": "Es el libro ___ profesor.",
+       "o": [
+        "de el",
+        "del",
+        "de la",
+        "al"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "我去银行，然后去博物馆。",
+       "a": [
+        "Voy al banco y después al museo.",
+        "Voy al banco y luego al museo.",
+        "Voy al banco y después voy al museo.",
+        "Voy al banco y luego voy al museo."
+       ]
+      }
+     ]
     },
     {
      "t": "word",
@@ -1067,27 +1478,8 @@
      "focus": "al 和 a la 都要读清楚"
     },
     {
-     "t": "c",
-     "q": "Voy ___ tienda.",
-     "o": [
-      "al",
-      "a la",
-      "a el",
-      "del"
-     ],
-     "a": 1,
-     "e": "tienda 阴性，a la 不缩合。"
-    },
-    {
-     "t": "c",
-     "q": "Es el libro ___ profesor.",
-     "o": [
-      "de el",
-      "del",
-      "de la",
-      "al"
-     ],
-     "a": 1
+     "t": "dict",
+     "a": "Está allí, al lado del banco."
     },
     {
      "t": "f",
@@ -1115,9 +1507,8 @@
     {
      "t": "sum",
      "points": [
-      "定冠词 el / la / los / las：双方都知道是哪个；泛指一类也用。",
-      "不定冠词 un / una / unos / unas：第一次提到。",
-      "a + el = al，de + el = del；只有 el 缩合。"
+      "<b>重点</b>：认识的用 el / la / los / las，第一次说用 un / una；泛指一类也用定冠词；hay 后用 un / una。",
+      "<b>重点</b>：a + el = al，de + el = del；只有 el 缩合。"
      ]
     }
    ]
@@ -1184,11 +1575,18 @@
      }
     },
     {
-     "t": "teach",
-     "title": "说年龄用 tener",
-     "body": [
-      "西语说年龄不用 ser，用 <b>tener</b>（有）：<i>Tengo diez años</i> = “我有十年” = 我十岁。",
-      "tener：tengo · tienes · tiene · tenemos · tenéis · tienen"
+     "t": "key",
+     "title": "说年龄用 tener（有），不用 ser",
+     "what": [
+      "西语说年龄：<b>tener</b> + 数字 + <b>años</b>：<i>Tengo diez años</i> = “我有十年” = 我十岁。",
+      "tener 的变位：tengo · tienes · tiene · tenemos · tenéis · tienen",
+      "问年龄：<i>¿Cuántos años tienes?</i>（你几岁？）/ <i>¿Cuántos años tiene usted?</i>"
+     ],
+     "why": [
+      "西语把年龄看成“拥有的岁月”，所以用“有”。同样的思路还有 <i>tener hambre</i>（饿，“有饿”）、<i>tener frío</i>（冷）、<i>tener razón</i>（有道理），以后会大量遇到。"
+     ],
+     "zh": [
+      "中文“我十岁”没有动词，按中文思路很多人说成 <s>Soy diez años</s>（我是十岁）。西语一定用 tener。"
      ],
      "ex": [
       [
@@ -1196,18 +1594,70 @@
        "我十岁。"
       ],
       [
-       "¿Cuántos años tiene usted?",
-       "您多大年纪？"
+       "Mi hijo tiene seis años.",
+       "我儿子六岁。"
+      ],
+      [
+       "¿Cuántos años tiene tu madre?",
+       "你妈妈多大年纪？"
+      ],
+      [
+       "Tenemos hambre.",
+       "我们饿了。（同样用 tener）"
       ]
      ],
-     "tip": "不要直译“我是十岁”：<s>Soy diez años</s> ✗ → <i>Tengo diez años.</i> ✓",
-     "check": {
-      "t": "f",
-      "q": "Mi hermano ___ ocho años. (tener)",
-      "a": [
-       "tiene"
+     "err": [
+      [
+       "Soy diez años.",
+       "Tengo diez años.",
+       "年龄用 tener"
+      ],
+      [
+       "Tengo diez.",
+       "Tengo diez años.",
+       "完整说法带 años"
+      ],
+      [
+       "¿Cuántos años eres?",
+       "¿Cuántos años tienes?",
+       "问年龄也用 tener"
       ]
-     }
+     ],
+     "sum": "年龄、饿、冷、有道理 —— 都用 <b>tener</b>。",
+     "drill": [
+      {
+       "t": "f",
+       "q": "Mi hermano ___ ocho años. (tener)",
+       "a": [
+        "tiene"
+       ]
+      },
+      {
+       "t": "f",
+       "q": "Yo ___ siete años. (tener)",
+       "a": [
+        "tengo"
+       ]
+      },
+      {
+       "t": "c",
+       "q": "“你几岁？”",
+       "o": [
+        "¿Cuántos años eres?",
+        "¿Cuántos años tienes?",
+        "¿Qué años tienes?",
+        "¿Cuánto años tienes?"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "我儿子四岁。",
+       "a": [
+        "Mi hijo tiene cuatro años."
+       ]
+      }
+     ]
     },
     {
      "t": "teach",
@@ -1341,6 +1791,10 @@
      "focus": "每个词的重音：SIE-te, O-cho, NUE-ve, DIEZ"
     },
     {
+     "t": "dict",
+     "a": "Mi hija tiene tres años."
+    },
+    {
      "t": "c",
      "q": "cinco + tres = ___",
      "o": [
@@ -1363,24 +1817,6 @@
      "a": 0
     },
     {
-     "t": "f",
-     "q": "Yo ___ siete años. (tener)",
-     "a": [
-      "tengo"
-     ]
-    },
-    {
-     "t": "c",
-     "q": "“一张桌子”：",
-     "o": [
-      "uno mesa",
-      "un mesa",
-      "una mesa",
-      "unos mesa"
-     ],
-     "a": 2
-    },
-    {
      "t": "c",
      "q": "听到的数字是？",
      "o": [
@@ -1399,11 +1835,18 @@
      "zh": "我儿子四岁。"
     },
     {
+     "t": "write",
+     "prompt": "用西语写一段 4–5 句的自我介绍：名字、哪里人、做什么工作、几岁（或家人几岁）。",
+     "hint": "检查清单：me llamo / soy；职业前不加 un；国籍跟着性别变；年龄用 tener。",
+     "focus": "llamarse, ser 变位, 职业不加冠词, 国籍性数一致, tener años",
+     "model": "Hola, me llamo Wang Lei. Soy chino, de Shanghái. Soy ingeniero. Tengo treinta años. Tengo una hija; tiene cinco años."
+    },
+    {
      "t": "sum",
      "points": [
-      "0–10：cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez。",
-      "uno 在名词前变 un / una。",
-      "说年龄用 tener：<i>Tengo … años</i>；问电话用 <i>¿Cuál es tu número?</i>"
+      "0–10：cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez；uno 在名词前变 un / una。",
+      "<b>重点</b>：说年龄用 tener —— <i>Tengo … años</i>，不说 soy … años。",
+      "问电话用 <i>¿Cuál es tu número?</i>"
      ]
     }
    ]
@@ -1513,6 +1956,30 @@
      "¿y tú?"
     ],
     "zh": "我叫路易斯，你呢？"
+   },
+   {
+    "t": "tr",
+    "zh": "我叫王丽，我是学生。",
+    "a": [
+     "Me llamo Wang Li y soy estudiante.",
+     "Me llamo Wang Li. Soy estudiante.",
+     "Soy Wang Li y soy estudiante."
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "他们是中国人。",
+    "a": [
+     "Son chinos.",
+     "Ellos son chinos."
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "我有一辆车和两本书。",
+    "a": [
+     "Tengo un coche y dos libros."
+    ]
    }
   ]
  }
