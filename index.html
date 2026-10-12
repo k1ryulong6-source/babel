@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.0114-02035a";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.0115-6386b9";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -8414,6 +8414,7 @@ VIEWS.course = VIEWS_JA.course = VIEWS_ES.course = async (el) => {
   el.innerHTML = `<div class="page3">
     <header class="ph3"><div class="eye3">${lang === "ja" ? "かてい" : lang === "es" ? "Curso" : "Cursus"}</div><h1>${PLAN_NAME[lang]}课程</h1><p class="mut3">${esc(L?.goal || "")}</p></header>
     ${it.kind === "lesson" ? `<div class="slip3 pad3"><div class="eye3">${lang === "ja" ? "つぎ" : "下一课"}</div><h3 class="t3">${esc(lessonTitle(it.id))}</h3><p class="mut3">${esc(it.unit.title)}，第 ${it.id.split(".")[3]} 课</p>${bricksHTML(lesPartsDone(it.id).length / 4)}${ctaHTML("上这一课", "", "c3-go")}</div>` : ""}
+    ${(() => { const pu = { en: "en.1.3", es: "es.1.2", ja: "ja.1.1" }[lang], u = (L?.stages || []).flatMap(s => s.units).find(x => x.id === pu); return u ? `<div class="slip3 pad3"><div class="eye3">新版课时试点</div><h3 class="t3">${esc(u.title)}</h3><p class="mut3">一步一屏的新教法，不受课程顺序限制，可以直接上。</p><div class="les3">${[...Array(u.n || 5)].map((_, i) => { const id = `${pu}.${i + 1}`; return `<button data-l="${id}" class="${lesRec(id).done ? "done" : "cur"}" title="${esc(lessonTitle(id))}">${i + 1}</button>`; }).join("")}</div></div>` : ""; })()}
     ${(L?.stages || []).map(st => { const us = st.units, done = us.filter(u => unitRec(u.id).pass).length, open = us.some(u => u.id === curU); return `<details class="slip3 stage3" ${open ? "open" : ""}><summary><span><b>${esc(noDot(st.title))}</b><small>${esc(st.goal)}</small></span><span class="lg3">${done}/${us.length}</span></summary>
       ${us.map(u => { const n = u.n || 5, ld = [...Array(n)].filter((_, i) => lesRec(`${u.id}.${i + 1}`).done).length, ur = unitRec(u.id), here = u.id === curU; return `<div class="unit3 ${here ? "here" : ""}"><div class="uh"><b>${esc(u.title)}</b><span class="mut3">${ur.pass ? "✓ 结业" : u.file ? `${ld}/${n}` : "待生成"}</span></div>${u.file ? `<div class="les3">${[...Array(n)].map((_, i) => { const id = `${u.id}.${i + 1}`, r = lesRec(id), cur = it.id === id; return `<button data-l="${id}" class="${r.done ? "done" : cur ? "cur" : "lock"}" ${r.done || cur ? "" : "disabled"} title="${esc(lessonTitle(id))}">${i + 1}</button>`; }).join("")}${ur.tests?.length ? `<span class="mut3">测验 ${Math.round(ur.tests.slice(-1)[0].acc * 100)}%</span>` : ""}</div>` : `<p class="mut3">${esc(u.goal || "")}</p>`}</div>`; }).join("")}</details>`; }).join("")}
     <div class="sect3"><b>自由练习</b><i>${lang === "ja" ? "じゆう" : "Libera"}</i></div>
