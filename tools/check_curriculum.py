@@ -36,6 +36,13 @@ def check_ex(x, where, errs):
     elif t == "f":
         if not x.get("q") or "___" not in x["q"] or not isinstance(x.get("a"), list) or not x["a"]:
             errs.append(f"{where}: 填空题不完整 {x}")
+    elif t == "tr":
+        a = x.get("a")
+        if not x.get("zh") or not a or not all(isinstance(v, str) and v for v in (a if isinstance(a, list) else [a])):
+            errs.append(f"{where}: 中译外不完整（要有 zh 和 a） {x}")
+    elif t == "dict":
+        if not x.get("a"):
+            errs.append(f"{where}: 听写缺 a {x}")
     elif t == "o":
         parts = x.get("p") or str(x.get("a", "")).split()
         if not x.get("a") or len(parts) < 2:
@@ -46,7 +53,7 @@ def check_ex(x, where, errs):
         errs.append(f"{where}: 未知题型 {t}")
 
 
-V2_TYPES = {"intro", "teach", "word", "speak", "sum", "c", "f", "o"}
+V2_TYPES = {"intro", "teach", "word", "speak", "sum", "key", "write", "c", "f", "o", "tr", "dict"}
 
 
 def check_steps(l, lid, lex, word_owner, errs, warns):
@@ -83,6 +90,21 @@ def check_steps(l, lid, lex, word_owner, errs, warns):
             word_owner.setdefault(w.lower(), lid)
             if not s.get("sp"):
                 n_w += 1
+        elif t == "key":
+            if not s.get("title") or not s.get("what"):
+                errs.append(f"{where}: 重点缺 title / what")
+            if any(len(x) != 2 for x in s.get("ex", [])):
+                errs.append(f"{where}: 重点例句应为 [原文, 中文]")
+            if any(len(x) not in (2, 3) for x in s.get("err", [])):
+                errs.append(f"{where}: 常错应为 [错, 对, 说明]")
+            if len(s.get("drill", [])) < 2:
+                warns.append(f"{where}: 重点「{s.get('title')}」只有 {len(s.get('drill', []))} 道练习")
+            for j, d in enumerate(s.get("drill", []), 1):
+                check_ex(d, f"{where} 重点练习{j}", errs)
+                n_x += 1
+        elif t == "write":
+            if not s.get("prompt"):
+                errs.append(f"{where}: 写作缺 prompt")
         elif t == "speak":
             if not s.get("text"):
                 errs.append(f"{where}: 跟读缺 text")
@@ -96,8 +118,8 @@ def check_steps(l, lid, lex, word_owner, errs, warns):
         errs.append(f"{lid}: 最后一步应是小结 sum")
     if n_x < 5:
         warns.append(f"{lid}: 只有 {n_x} 道练习")
-    if len(steps) > 40:
-        warns.append(f"{lid}: {len(steps)} 步，偏长")
+    if len(steps) > 70:
+        warns.append(f"{lid}: {len(steps)} 步，偏长，考虑拆课")
     return n_w, n_x
 
 
