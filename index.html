@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.1329-e45199";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.1331-ccd4ce";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -2740,7 +2740,7 @@ function render(opts) {
   if (!home) { pageBar(); paperTexture(curLang()); }
   (viewOf(current) || viewOf("home"))(el, opts); updateBadges();
   // 背单词、测验、模拟时隐藏导航，进入沉浸模式
-  const focus = (current === "words" && WS.mode === "session" && WS.sess && WS.sess.pos < WS.sess.q.length) || (current === "test" && TS.run && !TS.run.graded) || (current === "grammar" && GS.tab === "mock") || (current === "lesson" && LR.quiz) || (current === "utest" && UT.quiz) || current === "mistq" || (current === "conj" && CJ.sess);
+  const focus = (current === "words" && WS.mode === "session" && WS.sess && WS.sess.pos < WS.sess.q.length) || (current === "test" && TS.run && !TS.run.graded) || (current === "grammar" && GS.tab === "mock") || (current === "lesson" && LR.quiz) || (current === "utest" && UT.quiz) || current === "mistq" || (current === "conj" && CJ.sess) || (current === "place" && PT.quiz);
   document.body.classList.toggle("focus", !!focus);
   nav3();
 }
@@ -7524,7 +7524,7 @@ function paperTexture(lang) {
   return PAPER_TEX[lang];
 }
 const PAGE_NAMES = {
-  en: { course: ["课程", "Cursus"], me: ["我的", "Ego"], progress: ["学习统计", "Annales"], today: ["今日任务", "Hodie"], lesson: ["课时", "Lectio"], utest: ["单元测验", "Probatio"], mistq: ["错题复习", "Errata"], words: ["背单词", "Vocabula"], grammar: ["语法", "Grammatica"], reading: ["阅读", "Lectio"], listening: ["听力", "Auditio"], dict: ["词典", "Lexicon"], test: ["测试", "Probatio"] },
+  en: { course: ["课程", "Cursus"], me: ["我的", "Ego"], progress: ["学习统计", "Annales"], today: ["今日任务", "Hodie"], lesson: ["课时", "Lectio"], utest: ["单元测验", "Probatio"], place: ["分级测试", "Gradus"], mistq: ["错题复习", "Errata"], words: ["背单词", "Vocabula"], grammar: ["语法", "Grammatica"], reading: ["阅读", "Lectio"], listening: ["听力", "Auditio"], dict: ["词典", "Lexicon"], test: ["测试", "Probatio"] },
   ja: { course: ["課程", "かてい"], me: ["わたし", "わたし"], progress: ["進度", "しんど"], today: ["本日の課題", "ほんじつ"], lesson: ["課", "か"], utest: ["単元テスト", "たんげん"], mistq: ["誤答の復習", "ごとう"], words: ["語彙", "ごい"], reading: ["読解", "どっかい"], dict: ["辞書", "じしょ"], corpus: ["語彙庫", "ごいこ"] },
   es: { course: ["课程", "Curso"], me: ["我的", "Yo"], progress: ["进度", "Progreso"], today: ["今日任务", "Hoy"], lesson: ["课时", "Lección"], utest: ["单元测验", "Examen"], mistq: ["错题复习", "Errores"], words: ["单词", "Vocabulario"], grammar: ["语法", "Gramática"], reading: ["阅读", "Lectura"], conj: ["变位", "Conjugación"], pron: ["发音", "Pronunciación"], listening: ["听力", "Escucha"], dict: ["词典", "Diccionario"] }
 };
@@ -8275,6 +8275,46 @@ function startPlanMistakes(n) {
     onDone: r => { MQ.quiz = null; toast(`错题复习完成：${r.ok} / ${r.n}`); go("today"); } });
   go("mistq");
 }
+/* ---- 英语分级测试：第一学期的单元按顺序测，每单元 6 题，答对 5 题算会了（免修），一直测到第一个没过的单元为止 ---- */
+const PT = { quiz: null, units: null, k: 0, res: [] };
+const PT_N = 6, PT_PASS = 5;
+const placeDone = () => !!PL.st?.place;
+VIEWS.place = async (el) => {
+  if (curLang() !== "en") return go("course");
+  if (PT.quiz) return renderQuiz(el, PT.quiz, () => confirmBox("退出分级测试？已经测过的单元结果会保留。", "退出", () => { PT.quiz = null; placeFinish(); }));
+  const us = (CUR.idx?.langs?.en?.stages?.[0]?.units || []).filter(u => u.file);
+  const R = PL.st.place;
+  el.innerHTML = `<div class="page3"><header class="ph3"><div class="eye3">Gradus</div><h1>英语分级测试</h1><p class="mut3">第一学期「补基础」共 ${us.length} 个单元。按顺序每个单元出 ${PT_N} 道题，答对 ${PT_PASS} 道就算已经会了，这个单元免修；遇到第一个没过的单元就停下，从那里开始上课。大约 10–20 分钟。</p></header>
+    ${R ? `<div class="slip3 pad3"><h3 class="t3">${R.passed.length ? `免修 ${R.passed.length} 个单元` : "从第一单元开始学"}</h3><ul class="sum3">${R.res.map(x => `<li>${esc(unitTitle(x.u))}：${x.ok} / ${x.n}${x.ok >= PT_PASS ? " ✓ 免修" : " —— 从这里开始"}</li>`).join("")}</ul><p class="mut3">测于 ${esc(R.at)}。免修单元的课时记为已完成，单词没有加进复习（需要时可以在「背单词」里学）。</p></div>` : ""}
+    ${R ? "" : ctaHTML("开始测试", "", "pt-go")}<div style="height:10px"></div><button class="btn ghost" id="pt-back">← 返回课程</button></div>`;
+  $("#pt-back", el).onclick = () => go("course");
+  $("#pt-go", el) && ($("#pt-go", el).onclick = async () => { PT.units = us.filter(u => !unitRec(u.id).pass); PT.k = 0; PT.res = []; await placeNext(); });
+};
+async function placeNext() {
+  const u = PT.units[PT.k]; if (!u) return placeFinish();
+  const P = await unitPool(u.id); if (!P) return placeFinish();
+  const items = shuffle([...P.pool, ...P.extra].filter(x => x.t === "c" || x.t === "f" || x.t === "o")).slice(0, PT_N);
+  PT.quiz = quizStart(items, { title: `分级测试 · ${u.title}（${PT.k + 1}/${PT.units.length}）`, retry: false, onDone: r => {
+    PT.res.push({ u: u.id, n: r.n, ok: r.ok }); PT.quiz = null;
+    if (r.ok >= Math.min(PT_PASS, r.n - 1)) { PT.k++; placeNext(); } else placeFinish();
+  } });
+  render(); window.scrollTo({ top: 0 });
+}
+async function placeFinish() {
+  const k = today(), fresh = PL.days[k] && !PL.days[k].free && !PL.days[k].tasks?.some(t => taskDone(t, k)), passed = [];
+  for (const x of PT.res) {
+    if (x.ok < Math.min(PT_PASS, x.n - 1)) break;
+    const u = await curUnit(x.u); if (!u) break;
+    passed.push(x.u);
+    const ur = unitRecW(x.u); ur.pass ||= today(); ur.placed = true;
+    for (const l of u.lessons) { const rec = lesRecW(l.id); for (const p of LES_PARTS) rec.p[p] ||= today(); rec.done ||= today(); rec.placed = true; }
+  }
+  PL.st.place = { at: today(), res: PT.res.slice(), passed };
+  savePlanState(); PT.quiz = null;
+  // 今天的计划按新的进度重排
+  if (fresh) { delete PL.days[k]; await planEnsureToday().catch(() => { }); }
+  toast(passed.length ? `免修 ${passed.length} 个单元` : "从第一单元开始学", 3000); render();
+}
 /* ---- 重点笔记复习：每个到期的重点出一题；答对按 1、2、4、7、15… 天拉长间隔，答错明天再来 ---- */
 const keysOf = lang => Object.entries(PL.st?.keys || {}).filter(([id]) => id.startsWith(lang + "."));
 const keysDue = (lang, k = today()) => keysOf(lang).filter(([, r]) => r[1] <= k);
@@ -8552,6 +8592,7 @@ VIEWS.course = VIEWS_JA.course = VIEWS_ES.course = async (el) => {
   el.innerHTML = `<div class="page3">
     <header class="ph3"><div class="eye3">${lang === "ja" ? "かてい" : lang === "es" ? "Curso" : "Cursus"}</div><h1>${PLAN_NAME[lang]}课程</h1><p class="mut3">${esc(L?.goal || "")}</p></header>
     ${it.kind === "lesson" ? `<div class="slip3 pad3"><div class="eye3">${lang === "ja" ? "つぎ" : lang === "es" ? "Próxima" : "Proximum"}</div><h3 class="t3">${esc(lessonTitle(it.id))}</h3><p class="mut3">${esc(it.unit.title)}，第 ${it.id.split(".")[3]} 课</p>${bricksHTML(lesPartsDone(it.id).length / 4)}${ctaHTML("上这一课", "", "c3-go")}</div>` : ""}
+    ${lang === "en" && !placeDone() ? `<button class="slip3 pad3 row between" id="c3-place" style="width:100%;text-align:left"><span><b>先做分级测试</b><br><small class="mut3">已经会的单元直接免修，10–20 分钟</small></span><span>›</span></button>` : ""}
     ${keysOf(lang).length ? `<button class="slip3 pad3 row between" id="c3-keys" style="width:100%;text-align:left"><span><b>重点笔记</b><br><small class="mut3">学过 ${keysOf(lang).length} 个重点${keysDue(lang).length ? `，今天该复习 ${keysDue(lang).length} 个` : ""}</small></span><span>›</span></button>` : ""}
     ${(() => { const pu = { en: "en.1.3", es: "es.1.2", ja: "ja.1.1" }[lang], u = (L?.stages || []).flatMap(s => s.units).find(x => x.id === pu); return u ? `<div class="slip3 pad3"><div class="eye3">新版课时试点</div><h3 class="t3">${esc(u.title)}</h3><p class="mut3">一步一屏的新教法，不受课程顺序限制，可以直接上。</p><div class="les3">${[...Array(u.n || 5)].map((_, i) => { const id = `${pu}.${i + 1}`; return `<button data-l="${id}" class="${lesRec(id).done ? "done" : "cur"}" title="${esc(lessonTitle(id))}">${i + 1}</button>`; }).join("")}</div></div>` : ""; })()}
     ${(L?.stages || []).map(st => { const us = st.units, done = us.filter(u => unitRec(u.id).pass).length, open = us.some(u => u.id === curU); return `<details class="slip3 stage3" ${open ? "open" : ""}><summary><span><b>${esc(noDot(st.title))}</b><small>${esc(st.goal)}</small></span><span class="lg3">${done}/${us.length}</span></summary>
@@ -8560,6 +8601,7 @@ VIEWS.course = VIEWS_JA.course = VIEWS_ES.course = async (el) => {
     <div class="grid3">${FREE_LINKS[lang].map(([v, n, d]) => `<button class="slip3 tile3" data-v="${v}"><b>${n}</b><small>${d}</small></button>`).join("")}</div>
   </div>`;
   $("#c3-keys", el) && ($("#c3-keys", el).onclick = keyNotesModal);
+  $("#c3-place", el) && ($("#c3-place", el).onclick = () => go("place"));
   $("#c3-go", el) && ($("#c3-go", el).onclick = () => { LR.id = it.id; LR.parts = null; LR.quiz = null; LR.from = "course"; go("lesson"); });
   $$("[data-l]", el).forEach(b => b.onclick = async () => { await curUnit(unitIdOf(b.dataset.l)); LR.id = b.dataset.l; LR.parts = null; LR.quiz = null; LR.from = "course"; go("lesson"); });
   $$("[data-v]", el).forEach(b => b.onclick = () => { const v = b.dataset.v; if (v === "grammar") { GS.tab = "topics"; ESG.open = null; ESG.tab = "list"; } if (v === "reading") { RS.open = null; AS.open = null; ESR.open = null; } if (v === "listening") LS.open = null; if (v === "conj") CJ.sess = null; if (v === "test") TS.mode = "home"; go(v); });
