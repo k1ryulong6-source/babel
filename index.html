@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.0119-bd7bf1";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.0129-cf3e90";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1389,175 +1389,153 @@ body:has(.v2) #pagebar{display:none}
 .play3{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--card-solid);color:var(--sig);display:inline-grid;place-items:center;vertical-align:middle;cursor:pointer;padding:0}
 .play3 svg{width:16px;height:16px}
 .v2 .q .stem{font-size:19px;line-height:1.6}
-/* ================= v4 现代化：内页去掉做旧装饰 =================
-   纯色纸底、单层圆角卡片、实心按钮；去掉双线框、蜡封、虚线、拉丁小字。三种语言只换底色和强调色。 */
-html.paper{--r4:14px;--r4s:11px;--sh4:0 1px 2px rgba(40,26,12,.05),0 4px 16px rgba(40,26,12,.06)}
-html.paper.p-en:not(#_){--bg4:#f6efe1;--card4:#fffbf4;--tint4:rgba(91,59,29,.07);--line4:rgba(60,40,20,.12)}
-html.paper.p-ja:not(#_){--bg4:#f5f2ea;--card4:#fffefa;--tint4:rgba(28,26,24,.055);--line4:rgba(28,26,24,.1)}
-html.paper.p-es:not(#_){--bg4:#f3e6d1;--card4:#fdf6ea;--tint4:rgba(29,20,14,.07);--line4:rgba(29,20,14,.13)}
-html.paper body:not(.at-home)::before{background:var(--bg4)!important}
-html.paper body:not(.at-home){--card-solid:var(--card4);--line:var(--line4)}
-/* 卡片 */
-html.paper body :is(.card,.blk,.stele,.entry,.deck,.topic,.gloss,.ls-card,.slip3){border:1px solid var(--line4);border-image:none;border-radius:var(--r4);background:var(--card4);box-shadow:var(--sh4)}
+html.paper.p-en:not(#_){--tower4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232b2219' stroke-width='.42' stroke-linecap='round' stroke-linejoin='round' opacity='.09'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M4.5 21 6 17h12l1.5 4'/%3E%3Cpath d='M7 17l1.2-4h7.6L17 17'/%3E%3Cpath d='M9 13l1-3.5h4L15 13'/%3E%3Cpath d='M10.6 9.5l.7-3h1.4l.7 3'/%3E%3Cpath d='M12 6.5V4'/%3E%3Cpath d='M8.5 21v-2M12 21v-2M15.5 21v-2M10.3 17v-1.6M13.7 17v-1.6'/%3E%3C/svg%3E")}
+html.paper.p-ja:not(#_){--tower4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231c1a18' stroke-width='.42' stroke-linecap='round' stroke-linejoin='round' opacity='.09'%3E%3Cpath d='M5 4.5h14M6.5 3h11'/%3E%3Cpath d='M8 4.5V21M16 4.5V21'/%3E%3Cpath d='M8 8.5h8M8 15h8'/%3E%3Cpath d='M5 21h14'/%3E%3Cpath d='M10.5 11.7h3'/%3E%3C/svg%3E")}
+html.paper.p-es:not(#_){--tower4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231d140e' stroke-width='.42' stroke-linecap='round' stroke-linejoin='round' opacity='.09'%3E%3Cpath d='M2.5 21h19'/%3E%3Cpath d='M4 21v-3.5h16V21'/%3E%3Cpath d='M6 17.5V14h12v3.5'/%3E%3Cpath d='M8 14v-3.5h8V14'/%3E%3Cpath d='M8.5 10.5V7h2.6v3.5M12.9 10.5V7h2.6v3.5'/%3E%3Cpath d='M8.2 7l1.6-2 1.6 2M12.6 7l1.6-2 1.6 2'/%3E%3Cpath d='M11 21V10.5M13 21V10.5'/%3E%3C/svg%3E")}
+/* ================= v5 纸 · 墨 · 印：复古的材质，现代的版式 =================
+   内页和首页用同一张纸（英语羊皮纸、日语和纸、西语树皮纸），纹理调淡；
+   纸条卡片 + 细墨线 + 宋体标题 + 斜体拉丁小字 + 蜡封；去掉虚线、双线框和「·」信息行。 */
+html.paper{--r5:5px;--sh5:0 1px 0 rgba(255,255,255,.45) inset,0 2px 10px rgba(60,38,14,.10)}
+html.paper.p-en:not(#_){--g5:#ead8b0;--s5:#f6ebd1;--l5:rgba(43,34,25,.34);--l5s:rgba(43,34,25,.16);--t5:rgba(91,59,29,.1)}
+html.paper.p-ja:not(#_){--g5:#f1ece0;--s5:#fbf8f1;--l5:rgba(28,26,24,.28);--l5s:rgba(28,26,24,.13);--t5:rgba(28,26,24,.07)}
+html.paper.p-es:not(#_){--g5:#dcc196;--s5:#efddbc;--l5:rgba(29,20,14,.34);--l5s:rgba(29,20,14,.16);--t5:rgba(29,20,14,.09)}
+html.paper body{--rframe:none;--rframe-acc:none;--rframe-soft:none;--rline:none}
+/* 纸：和首页同一张纸，盖一层同色把纹理调淡 */
+html.paper body:not(.at-home)::after{content:"";position:fixed;inset:0;z-index:-1;background:var(--g5);opacity:.6;pointer-events:none}
+html.paper body:not(.at-home){--card-solid:var(--s5);--line:var(--l5s)}
+/* 纸条卡片：单层细墨线、小圆角、轻阴影 */
+html.paper body :is(.card,.blk,.stele,.entry,.deck,.topic,.gloss,.ls-card,.slip3,.tile,.kc){border:1px solid var(--l5);border-image:none;border-radius:var(--r5);background:var(--s5);box-shadow:var(--sh5)}
 html.paper body .slip3::after{display:none}
-html.paper body :is(.card,.blk) :is(.card,.blk){border:0;border-top:1px solid var(--line4);border-radius:0;box-shadow:none;background:none}
-html.paper body :is(.deck.on,.topic.next){border:1.5px solid var(--sig)}
-/* 标题：去掉粗双线、拉丁小字 */
-html.paper body .sec-head{border:0;box-shadow:none;padding-bottom:2px;margin-bottom:0}
-html.paper body .eyebrow:has(>.zh),html.paper body :is(.h,.h>div)>.eyebrow{display:none}
-html.paper body .eyebrow{font-family:var(--ui);font-style:normal;text-transform:none;letter-spacing:.02em;font-size:12.5px;font-weight:600;color:var(--sig)}
-html.paper body .eyebrow .zh{display:none}
-html.paper body h1{font-size:26px;font-weight:700;letter-spacing:.01em}
-html.paper body .blk>.h h2,html.paper body .card>.h h2{font-size:17px;font-weight:700}
-html.paper body :is(.hr,.rule3){height:1px;border:0;background:var(--line4);opacity:1;margin:12px 0}
-html.paper body .eye3{font-family:var(--ui);font-style:normal;letter-spacing:.02em;font-size:12.5px;font-weight:600;color:var(--sig)}
-html.paper body .sect3 i{display:none}
-html.paper body .sect3 b{font-family:var(--ui);font-size:13px;font-weight:600;color:var(--muted)}
-/* 按钮 */
-html.paper body .btn{border:1px solid var(--line4);border-image:none!important;border-radius:var(--r4s);background:var(--card4);color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(40,26,12,.06);padding:8px 16px}
-html.paper body .btn:hover:not(:disabled){background:var(--tint4)}
-html.paper body .btn.pri,html.paper body .btn.sm.pri{background:var(--ink);border-color:var(--ink);color:var(--card4);padding-left:16px;box-shadow:0 2px 6px rgba(40,26,12,.16)}
-html.paper body .btn.sm.pri{padding-left:12px}
-html.paper body .btn.pri::before{display:none}
-html.paper body .btn.sm{border-radius:9px}
-html.paper body .btn.ghost{border:0;background:none;box-shadow:none;text-decoration:none;color:var(--sig);font-weight:600}
-html.paper body .cta3{border-radius:var(--r4);padding:0 20px;box-shadow:0 6px 18px rgba(40,26,12,.2);gap:10px}
-html.paper body .cta3 .seal3{display:none}
-html.paper body .cta3 small{font-family:var(--ui);font-style:normal;font-size:13px;opacity:.7}
-html.paper body .cta3:active{transform:scale(.98);box-shadow:0 3px 10px rgba(40,26,12,.18)}
-/* 分段切换：浅色轨道 + 白色选中块 */
-html.paper body .seg{border:0;border-radius:12px;background:var(--tint4);padding:3px;gap:2px;display:inline-flex}
-html.paper body .seg button{border:0!important;border-radius:9px;min-height:34px;padding:4px 14px;background:none;color:var(--muted);font-weight:600}
-html.paper body .seg button.on{background:var(--card4);color:var(--ink);box-shadow:0 1px 3px rgba(40,26,12,.14)}
-/* 输入框 */
-html.paper body :is(input[type=text],input[type=number],input[type=date],input[type=search],select,textarea){border:1px solid var(--line4);border-radius:var(--r4s);background:var(--card4)}
-html.paper body :is(input,select,textarea):focus{border-color:var(--sig);box-shadow:0 0 0 3px color-mix(in srgb,var(--sig) 18%,transparent)}
-/* 进度：圆角细条 */
-html.paper body .bar{height:8px;border:0;border-radius:99px;background:var(--tint4)}
-html.paper body .bar::after{display:none}
-html.paper body .bar>i{border-radius:99px}
-html.paper body .bricks3{gap:3px}
-html.paper body .bricks3 i{height:6px;border:0;border-radius:3px;background:var(--tint4);opacity:1}
-html.paper body .bricks3 i.f{background:var(--sig)}
-html.paper body .bricks3 i.h{background:linear-gradient(90deg,var(--sig) 50%,var(--tint4) 50%)}
-html.paper body .cells i{border:0;border-radius:2px;background:var(--tint4)}
-/* 选项、评分、提示、弹层 */
-html.paper body .opt{border:1px solid var(--line4);border-radius:12px;background:var(--card4);box-shadow:none}
-html.paper body .opt.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 8%,var(--card4))}
-html.paper body .opt.wrong{border-color:var(--sig);background:color-mix(in srgb,var(--sig) 7%,var(--card4))}
-html.paper body .rate .btn{border-radius:12px}
-html.paper body :is(.notice,.tip3){border:0;border-radius:12px;background:color-mix(in srgb,var(--sig) 8%,transparent)}
-html.paper body :is(.notice.info,.tip3.soft){background:var(--tint4)}
-html.paper body .explain{border-left-width:2px}
-html.paper body :is(.modal,.toast){border:0;border-image:none;border-radius:18px;box-shadow:0 18px 50px rgba(30,20,10,.28)}
-html.paper body .toast{border-radius:12px}
-html.paper body .ln3{border-radius:12px;border-color:var(--line4)}
-html.paper body .play3{border-color:var(--line4)}
-/* 列表与虚线 → 细实线 */
-html.paper body :is(.row3,.unit3,.exs3>div+div){border-style:solid;border-color:var(--line4);border-width:0 0 1px}
-html.paper body .unit3{border-width:1px 0 0}
-html.paper body .exs3>div+div{border-width:1px 0 0}
-html.paper body .box3{border:1.5px solid var(--line4);border-radius:6px}
-html.paper body .row3.done .box3{border-color:var(--ink)}
-html.paper body .row3.lock .box3{border-style:solid;opacity:.5}
-html.paper body .badge3{border:0;border-radius:12px;background:var(--tint4);font-family:var(--ui);font-weight:700}
-html.paper body .badge3 small{display:none}
-html.paper body .tbl :is(td,th){border-color:var(--line4)}
-html.paper body:not(.at-home) :is(.num,.ring b,.stat .v,.pl-week i,.deck .tier){font-family:var(--ui);font-variant-numeric:tabular-nums lining-nums}
-html.paper body .deck .tier{display:none}
-html.paper body .pill{border-radius:99px;border:0;background:var(--tint4);color:var(--ink);font-family:var(--ui);font-weight:600;font-size:12.5px;padding:2px 10px}
-html.paper body .pill::before{display:none}
-html.paper body .pl-week>div{border-radius:10px;border-color:var(--line4)}
-html.paper body .pl-week>div.now{border-color:var(--sig)}
-html.paper body .tbl :is(td,th){border-style:solid;border-left:0;border-right:0}
-html.paper body .tbl tr:last-child td{border-bottom:0}
-html.paper body .tbl .n{font-family:var(--ui);font-size:17px;font-weight:700}
-html.paper body .ring{border-left:0;padding:0 18px 0 0}
-html.paper body .ring .in b{font-family:var(--ui);font-weight:700;font-size:40px}
-html.paper body .ring .rb{height:6px;border-radius:3px;background:var(--tint4)}
-html.paper body .ring .rb::after{display:none}
-html.paper body .ring .rb i{border-radius:3px;background:var(--sig)}
-html.paper body :is(.deck.on,.topic.next){background:var(--card4)!important;color:var(--ink);border:1.5px solid var(--sig)!important;border-image:none!important;border-radius:var(--r4)}
+html.paper body :is(.card,.blk) :is(.card,.blk){border:0;border-top:1px solid var(--l5s);border-radius:0;box-shadow:none;background:none}
+html.paper body :is(.deck.on,.topic.next){background:var(--s5)!important;color:var(--ink);border:1px solid var(--l5)!important;border-image:none!important;border-radius:var(--r5);box-shadow:inset 3px 0 0 var(--sig),var(--sh5)}
 html.paper body :is(.deck.on,.topic.next) :is(.muted,.faint){color:var(--muted)}
 html.paper body .deck.on .bar>i{background:var(--sig)}
-html.paper body .deck .now{border-radius:99px;padding:1px 10px;font-size:12px;font-weight:600}
-html.paper body .grid3{border:0}
-html.paper body{--rframe:none;--rframe-acc:none;--rframe-soft:none;--rline:none}
-html.paper body :is(.lv,.chip){border:0;border-image:none;border-radius:99px;background:var(--tint4);font-family:var(--ui);font-weight:600;font-size:12px;letter-spacing:0;padding:2px 9px}
-html.paper body :is(.tile,.kc){border:1px solid var(--line4);border-image:none;border-radius:var(--r4);background:var(--card4);box-shadow:var(--sh4)}
-html.paper body .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;background:none}
-html.paper body .stat,html.paper body .stat+.stat{border:1px solid var(--line4);border-radius:var(--r4);background:var(--card4);box-shadow:var(--sh4);padding:12px 14px}
-html.paper body .stat .k{font-family:var(--ui);font-size:12.5px}
-html.paper body .stat .v{font-family:var(--ui);font-weight:700;font-size:28px}
-html.paper body .ph3{border:0;box-shadow:none;padding-bottom:0}
-html.paper body .passage{border-top:1px solid var(--line4)}
+html.paper body .deck .tier{display:none}
+html.paper body .deck .now{border-radius:2px;padding:1px 8px;font-size:12px;font-weight:600}
+html.paper body .card.arch,html.paper body .es :is(.stele,.entry){background:var(--s5);background-image:none;border:1px solid var(--l5);border-radius:var(--r5);padding:16px 18px}
+html.paper body .es :is(.stele,.entry)::after{display:none}
+html.paper body:not(#_) .entry{border:1px solid var(--l5);border-radius:var(--r5)!important;background:var(--s5)!important;box-shadow:var(--sh5)!important}
 html.paper body .reader{border:0;background:none;box-shadow:none;padding:0;border-radius:0}
+html.paper body .grid3{border:0}
+/* 标题：宋体 + 斜体拉丁小字，下面一条细墨线 */
+html.paper body .sec-head{border:0;border-bottom:1px solid var(--l5);box-shadow:none;padding-bottom:10px;margin-bottom:0}
+html.paper body :is(.card,.modal,.blk) .sec-head{border:0;padding-bottom:0}
+html.paper body :is(.h,.h>div)>.eyebrow{display:none}
+html.paper body .eyebrow .zh{display:none}
+html.paper body :is(.eyebrow,.eye3,.sect3 i,.links3 button){font-synthesis:none}
+html.paper body .sec-head .eyebrow{text-transform:lowercase}
+html.paper body :is(.eyebrow,.eye3){font-family:var(--latin);font-style:italic;text-transform:none;letter-spacing:.01em;font-size:15px;font-weight:400;color:var(--sig)}
+html.paper.p-ja body :is(.eyebrow,.eye3){font-style:normal;font-size:12px;letter-spacing:.24em}
+html.paper body h1{font-family:var(--zhd);font-weight:900;font-size:27px;letter-spacing:.02em}
+html.paper.p-ja body h1{font-family:"Shippori Mincho",var(--zhd);font-weight:800}
+html.paper body .blk>.h h2,html.paper body .card>.h h2{font-size:17px;font-weight:700}
+html.paper body :is(.hr,.rule3){height:1px;border:0;background:var(--l5);opacity:1;margin:12px 0}
+html.paper body .ph3{border:0;border-bottom:1px solid var(--l5);box-shadow:none;padding-bottom:10px}
+html.paper body .sect3 b{font-family:var(--zhd);font-size:14px;font-weight:700;color:var(--ink)}
+/* 数字：宋体衬线、等高数字（不再用像 O 和 o 的旧式数字） */
+html.paper body:not(.at-home) :is(.num,.ring .in b,.stat .v,.pl-week i,.cnt3 b,.stat3 b,.tbl .n),html.paper body .cnt3 b{font-family:var(--zhd);font-weight:700;font-variant-numeric:lining-nums tabular-nums}
+/* 按钮：描墨边 / 墨色实底，大按钮带蜡封 */
+html.paper body .btn{border:1px solid var(--ink);border-image:none!important;border-radius:3px;background:transparent;color:var(--ink);font-family:var(--ui);font-weight:600;box-shadow:none;min-height:40px;padding:7px 14px}
+html.paper body .btn:hover:not(:disabled){background:var(--t5);color:var(--ink)}
+html.paper body .btn.pri,html.paper body .btn.sm.pri{background:var(--ink);border-color:var(--ink);color:var(--s5);padding-left:14px;box-shadow:0 2px 0 rgba(0,0,0,.14)}
+html.paper body .btn.pri:hover:not(:disabled){background:var(--ink);color:var(--s5);filter:brightness(1.15)}
+html.paper body .btn.pri::before{display:none}
+html.paper body .btn.sm{min-height:34px;padding:4px 11px}
+html.paper body .btn.ghost{border:0;background:none;box-shadow:none;color:var(--sig);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+html.paper body .cta3{border-radius:4px;padding:0 18px 0 9px;gap:12px;box-shadow:0 3px 0 rgba(0,0,0,.16),0 8px 18px rgba(60,38,14,.16)}
+html.paper body .cta3 .seal3{display:grid;width:32px;height:32px}
+html.paper body .cta3 small{font-family:var(--ui);font-style:normal;font-size:13px;opacity:.7}
+html.paper body .cta3:active{transform:translateY(2px);box-shadow:0 1px 0 rgba(0,0,0,.16)}
+/* 分段切换：墨线框，选中墨色实底 */
+html.paper body .seg{border:1px solid var(--ink);border-image:none;border-radius:3px;background:transparent;padding:0;gap:0;display:inline-flex;overflow:hidden}
+html.paper body .seg button{border:0;border-radius:0;min-height:36px;padding:5px 13px;background:none;color:var(--ink);font-weight:600}
+html.paper body .seg button+button{border-left:1px solid var(--l5)!important}
+html.paper body .seg button.on{background:var(--ink);color:var(--s5);box-shadow:none}
+/* 输入框 */
+html.paper body :is(input[type=text],input[type=number],input[type=date],input[type=search],select,textarea){border:1px solid var(--l5);border-image:none;border-radius:3px;background:var(--s5)}
+html.paper body :is(input,select,textarea):focus{border-color:var(--sig);box-shadow:0 0 0 3px color-mix(in srgb,var(--sig) 16%,transparent)}
+html.paper body .ps-week select{-webkit-appearance:none;appearance:none;background-image:none;padding:4px 2px;min-height:38px;font-size:13px;text-align:center;text-align-last:center}
+/* 进度：一块块砖 */
+html.paper body :is(.bar,.ring .rb){height:9px;border:0;border-radius:1.5px;background:var(--t5);-webkit-mask:repeating-linear-gradient(90deg,#000 0 calc(10% - 3px),transparent calc(10% - 3px) 10%);mask:repeating-linear-gradient(90deg,#000 0 calc(10% - 3px),transparent calc(10% - 3px) 10%)}
+html.paper body :is(.bar,.ring .rb)::after{display:none}
+html.paper body :is(.bar>i,.ring .rb i){border-radius:0;background:var(--sig)}
+html.paper body .ring{border-left:0;padding:0 18px 0 0}
+html.paper body .ring .in b{font-size:40px}
+html.paper body .bricks3{gap:3px}
+html.paper body .bricks3 i{height:8px;border:.8px solid var(--l5);border-radius:1.5px;background:transparent;opacity:1}
+html.paper body .bricks3 i.f{background:var(--sig);border-color:var(--sig)}
+html.paper body .bricks3 i.h{background:linear-gradient(90deg,var(--sig) 50%,transparent 50%);border-color:var(--sig)}
+html.paper body .cells i{border:.8px solid var(--l5);border-radius:1.5px;background:transparent}
+html.paper body .les3 button{width:36px;height:32px;border:1px solid var(--l5);border-radius:3px;font-family:var(--zhd);font-weight:700;font-size:14px}
+html.paper body .les3 button.lock{border-style:solid;opacity:.45}
+html.paper body .les3 button.done{border-color:var(--ink)}
+/* 标签 */
+html.paper body :is(.pill,.lv,.chip,.lg3){border:1px solid var(--l5);border-image:none;border-radius:3px;background:transparent;color:var(--ink);font-family:var(--ui);font-weight:600;font-size:12px;letter-spacing:0;padding:1px 8px}
+html.paper body .pill::before{display:none}
+/* 选项、评分、提示、弹层 */
+html.paper body .opt{border:1px solid var(--l5);border-radius:4px;background:var(--s5);box-shadow:none}
+html.paper body .opt.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 9%,var(--s5))}
+html.paper body .opt.wrong{border-color:var(--sig);background:color-mix(in srgb,var(--sig) 8%,var(--s5))}
+html.paper body .rate{border:0;gap:8px}
+html.paper body:not(#_) .rate .btn{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;min-height:62px;padding:10px 14px;border:1px solid var(--l5)!important;border-radius:4px;background:var(--s5);color:var(--ink);font-family:var(--ui);font-size:16px}
+html.paper body:not(#_) .rate .btn::before{display:none}
+html.paper body:not(#_) .rate .btn small{grid-column:auto;color:var(--muted);font-size:12px}
+html.paper body:not(#_) .rate .btn.pri{background:var(--ink);border-color:var(--ink)!important;color:var(--s5)}
+html.paper body:not(#_) .rate .btn.pri small{color:color-mix(in srgb,var(--s5) 70%,transparent)}
+html.paper body:not(#_) .rate .btn:hover:not(:disabled){background:var(--t5);color:var(--ink)}
+html.paper body:not(#_) .rate .btn.pri:hover:not(:disabled){background:var(--ink);color:var(--s5)}
+html.paper body:not(#_) .rate .btn:hover small{color:var(--muted)}
+html.paper body :is(.notice,.tip3){border:0;border-left:3px solid var(--sig);border-radius:0 4px 4px 0;background:color-mix(in srgb,var(--sig) 7%,transparent)}
+html.paper body :is(.notice.info,.tip3.soft){border-left-color:var(--ink);background:var(--t5)}
+html.paper body :is(.modal,.toast){background:var(--s5);border:1px solid var(--l5);border-image:none;border-radius:6px;box-shadow:0 18px 50px rgba(30,20,10,.3)}
+html.paper body .ln3{border-radius:4px;border-color:var(--l5)}
+html.paper body .play3{border-color:var(--l5)}
+/* 列表：细墨线 */
+html.paper body :is(.row3,.unit3,.exs3>div+div){border-style:solid;border-color:var(--l5s);border-width:0 0 1px}
+html.paper body .unit3{border-width:1px 0 0}
+html.paper body .exs3>div+div{border-width:1px 0 0}
+html.paper body .box3{border:1.2px solid var(--ink);border-radius:2px}
+html.paper body .row3.lock .box3{border-style:solid;opacity:.45}
+html.paper body .badge3{border:1px solid var(--ink);border-radius:3px;background:transparent}
+html.paper body .tbl :is(td,th){border-style:solid;border-left:0;border-right:0;border-color:var(--l5s)}
+html.paper body .tbl tr:last-child td{border-bottom:0}
+html.paper body .tbl .n{font-size:17px}
+html.paper body .pl-week>div{border-radius:3px;border-color:var(--l5)}
+html.paper body .pl-week>div.now{border-color:var(--sig);border-width:1.5px}
+html.paper body .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;background:none}
+html.paper body .stat,html.paper body .stat+.stat{border:1px solid var(--l5);border-radius:var(--r5);background:var(--s5);box-shadow:var(--sh5);padding:12px 14px}
+html.paper body .stat .k{font-family:var(--ui);font-size:12.5px}
+html.paper body .stat .v{font-size:28px}
+html.paper body .stat3 b{font-size:24px}
+html.paper body .cal3 i{border-radius:2px;border-color:var(--l5)}
+html.paper body .stage3 summary b{font-family:var(--zhd);font-weight:700}
+html.paper body .tile3 b{font-family:var(--zhd);font-weight:700}
+html.paper body .cj-path{background:none;border-top:1px solid var(--l5)}
+html.paper body .cj-step{border-bottom:1px solid var(--l5s)}
+html.paper body .cj-step.on{background:var(--t5);box-shadow:inset 3px 0 0 var(--sig)}
+html.paper body .cj-step .n{font-family:var(--zhd);font-weight:700;font-size:18px}
+html.paper body .passage{border-top:1px solid var(--l5)}
 html.paper body .passage .blank{font-family:var(--ui);font-size:14px}
 html.paper:is(.p-en,.p-es) body:not(#_) .hw{font-family:"EB Garamond",Georgia,serif}
-html.paper body .ps-week select{-webkit-appearance:none;appearance:none;background-image:none;padding:4px 2px;min-height:38px;font-size:13px;text-align:center;text-align-last:center}
-html.paper body:not(#_) .entry{border:1px solid var(--line4);border-radius:var(--r4)!important;background:var(--card4)!important;box-shadow:var(--sh4)!important}
 html.paper body:not(#_) .wordhead .reg :is(.cun,svg){display:none}
-html.paper:is(.p-en,.p-es) body:not(#_) .entry .hw{font-family:"EB Garamond",Georgia,serif}
-html.paper body .rate{border:0;gap:8px}
-html.paper body .rate .btn{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;min-height:62px;padding:10px 14px;border:1px solid var(--line4);border-radius:12px;background:var(--card4);color:var(--ink);font-size:16px}
-html.paper body .rate .btn::before{display:none}
-html.paper body .rate .btn small{grid-column:auto;color:var(--muted);font-size:12px}
-html.paper body:not(#_) .rate .btn{border:1px solid var(--line4)!important;font-family:var(--ui)}
-html.paper body:not(#_) .rate .btn.pri{border-color:var(--ink)!important}
-html.paper body .rate .btn.pri{background:var(--ink);border-color:var(--ink);color:var(--card4)}
-html.paper body .rate .btn.pri small{color:color-mix(in srgb,var(--card4) 70%,transparent)}
-html.paper body .rate .btn:hover:not(:disabled){background:var(--tint4);color:var(--ink)}
-html.paper body .rate .btn.pri:hover:not(:disabled){background:var(--ink);color:var(--card4)}
-html.paper body .rate .btn:hover small{color:var(--muted)}
-html.paper body .card.arch,html.paper body .es :is(.stele,.entry){background:var(--card4);background-image:none;border:1px solid var(--line4);border-radius:var(--r4);padding:16px 18px}
-html.paper body .es :is(.stele,.entry)::after{display:none}
-html.paper body .cj-path{background:none;gap:4px}
-html.paper body .cj-step{border:0;border-radius:12px;padding:10px 8px}
-html.paper body .cj-step.on{background:var(--tint4);box-shadow:none}
-html.paper body .cj-step .n{font-family:var(--ui);font-weight:700;font-size:17px}
-html.paper body .ph3>.eye3{display:none}
-html.paper body .les3 button{width:36px;height:32px;border:1px solid var(--line4);border-radius:8px;font-family:var(--ui);font-weight:600;font-size:13.5px}
-html.paper body .les3 button.lock{border-style:solid;opacity:.5}
-html.paper body .les3 button.done{border-color:var(--ink)}
-html.paper body .lg3{border:0;border-radius:99px;background:var(--tint4);font-family:var(--ui);font-weight:600;font-size:12px;padding:2px 10px;letter-spacing:0}
-html.paper body .stat3 b{font-family:var(--ui);font-weight:700;font-size:24px}
-html.paper body .tile3 b{font-family:var(--ui);font-weight:700}
-html.paper body .cal3 i{border-radius:5px;border-color:var(--line4)}
-html.paper body .stage3 summary b{font-family:var(--ui);font-weight:700}
-html.paper .nav3{border-top:1px solid var(--line4);background:color-mix(in srgb,var(--card4) 92%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 -6px 20px rgba(40,26,12,.06)}
-/* 页头：返回箭头 + 页名，毛玻璃 */
-html.paper #pagebar{background:color-mix(in srgb,var(--bg4) 86%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line4);box-shadow:none}
-html.paper #pagebar .back span,html.paper #pagebar .pb-t em,html.paper #pagebar .sync span{display:none}
-html.paper #pagebar .pb-t b{font-family:var(--ui);font-weight:600;font-size:16px}
-/* 底部导航：去掉拉丁小字 */
+/* 页头：返回「turris」+ 页名（宋体 + 拉丁小字） */
+html.paper #pagebar{background:color-mix(in srgb,var(--s5) 90%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--l5);box-shadow:0 2px 10px rgba(60,38,14,.08)}
+html.paper #pagebar .sync span{display:none}
+/* 底部导航：纸底、墨线图标，选中处一块红砖 */
+html.paper .nav3{border-top:1px solid var(--l5);background:color-mix(in srgb,var(--s5,var(--card-solid)) 94%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 -4px 14px rgba(40,25,10,.08)}
 html.paper .nav3 em{display:none}
 html.paper .nav3 b{font-size:11.5px}
-html.paper .nav3 button.on::after{width:4px;height:4px;border-radius:50%}
-/* 首页底部的今日卡片 */
-html.paper body .note3{border-radius:20px;border:0!important;box-shadow:0 -2px 30px rgba(30,20,10,.22)}
-html.paper body :is(.cunband3,.fret3){display:none}
-html.paper body .hd3 h2{font-weight:700}
-html.paper body .cnt3 b{font-family:var(--ui);font-weight:700;font-size:24px}
-html.paper body .links3 button{font-family:var(--ui);font-style:normal;font-size:13.5px;font-weight:600;text-decoration:none}
-html.paper body .chip3{border:0;border-radius:99px;padding:5px 12px;background:rgba(255,250,240,.86);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-html.paper body .tabs3{border:0;border-radius:12px;padding:3px;background:rgba(255,250,240,.86);overflow:hidden}
-html.paper body .tabs3 button{border:0;border-radius:9px;font-family:var(--ui);font-weight:600;letter-spacing:.02em}
-html.paper.p-en:not(#_){--mark4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 14' fill='%23a33a26'%3E%3Crect x='0.5' y='7.5' width='12' height='6' rx='1.6'/%3E%3Crect x='13.5' y='7.5' width='12' height='6' rx='1.6'/%3E%3Crect x='7' y='0.5' width='12' height='6' rx='1.6'/%3E%3C/svg%3E");--tower4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232b2219' stroke-width='.42' stroke-linecap='round' stroke-linejoin='round' opacity='.09'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M4.5 21 6 17h12l1.5 4'/%3E%3Cpath d='M7 17l1.2-4h7.6L17 17'/%3E%3Cpath d='M9 13l1-3.5h4L15 13'/%3E%3Cpath d='M10.6 9.5l.7-3h1.4l.7 3'/%3E%3Cpath d='M12 6.5V4'/%3E%3Cpath d='M8.5 21v-2M12 21v-2M15.5 21v-2M10.3 17v-1.6M13.7 17v-1.6'/%3E%3C/svg%3E")}
-html.paper.p-ja:not(#_){--mark4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 14'%3E%3Crect x='0.5' y='0' width='14' height='14' rx='2.2' fill='%23c0392b'/%3E%3Cpath d='M4.2 3.6h6.6M5.6 3.6v7.2M9.4 3.6v7.2M5.6 7.3h3.8M3.8 10.8h7.4' stroke='%23fbefe8' stroke-width='1.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E");--tower4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231c1a18' stroke-width='.42' stroke-linecap='round' stroke-linejoin='round' opacity='.09'%3E%3Cpath d='M5 4.5h14M6.5 3h11'/%3E%3Cpath d='M8 4.5V21M16 4.5V21'/%3E%3Cpath d='M8 8.5h8M8 15h8'/%3E%3Cpath d='M5 21h14'/%3E%3Cpath d='M10.5 11.7h3'/%3E%3C/svg%3E")}
-html.paper.p-es:not(#_){--mark4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 14' fill='%239c2a1c'%3E%3Crect x='0' y='9' width='26' height='5' rx='1.2'/%3E%3Crect x='4' y='4.5' width='18' height='4' rx='1.2'/%3E%3Crect x='8' y='0' width='10' height='4' rx='1.2'/%3E%3C/svg%3E");--tower4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231d140e' stroke-width='.42' stroke-linecap='round' stroke-linejoin='round' opacity='.09'%3E%3Cpath d='M2.5 21h19'/%3E%3Cpath d='M4 21v-3.5h16V21'/%3E%3Cpath d='M6 17.5V14h12v3.5'/%3E%3Cpath d='M8 14v-3.5h8V14'/%3E%3Cpath d='M8.5 10.5V7h2.6v3.5M12.9 10.5V7h2.6v3.5'/%3E%3Cpath d='M8.2 7l1.6-2 1.6 2M12.6 7l1.6-2 1.6 2'/%3E%3Cpath d='M11 21V10.5M13 21V10.5'/%3E%3C/svg%3E")}
-/* 塔的元素：标题上方的砖、卡片里的塔线稿、砖块进度、扁平印章、导航里的塔 */
-html.paper body:not(.at-home) :is(.sec-head,.ph3) h1::before{content:"";display:block;width:26px;height:14px;margin:0 0 10px;background:var(--mark4) no-repeat center/contain}
+html.paper .nav3 button.on::after{width:14px;height:4px;border-radius:1px;background:var(--sig)}
+/* 首页：今日卡片是一张纸条，压在塔图上 */
+html.paper body .note3{border-radius:8px;box-shadow:0 -2px 24px rgba(30,20,10,.25)}
+html.paper body .hd3 h2{font-weight:900}
+html.paper body .cnt3 b{font-size:26px}
+html.paper body .chip3{border:1px solid var(--l5);border-radius:3px;background:rgba(250,244,230,.88)}
+html.paper body .tabs3{border:1px solid var(--ink);border-radius:3px;padding:0;background:rgba(250,244,230,.88);overflow:hidden}
+html.paper body .tabs3 button{border-radius:0}
+/* 主要卡片右下角：很淡的塔线稿 */
 html.paper body :is(.stele,.slip3.pad3,.note3){background-image:var(--tower4);background-repeat:no-repeat;background-position:right -22px bottom -26px;background-size:150px 150px}
 html.paper body:not(#_) .entry{background-image:var(--tower4)!important;background-repeat:no-repeat!important;background-position:right -26px bottom -30px!important;background-size:170px 170px!important}
-html.paper body :is(.bar,.ring .rb){height:9px;border-radius:3px;-webkit-mask:repeating-linear-gradient(90deg,#000 0 calc(10% - 3px),transparent calc(10% - 3px) 10%);mask:repeating-linear-gradient(90deg,#000 0 calc(10% - 3px),transparent calc(10% - 3px) 10%)}
-html.paper body :is(.bar>i,.ring .rb i){border-radius:0}
-html.paper body .bricks3 i{height:8px;border-radius:2.5px}
-html.paper body .cta3 .seal3{display:grid;width:30px;height:30px;font-size:14px;background:var(--sig);color:var(--sig-ink,#fbefe8);box-shadow:none;font-family:"EB Garamond",Georgia,serif;font-weight:600}
-html.paper.p-ja body .cta3 .seal3{border-radius:5px;font-family:"Shippori Mincho",serif}
-html.paper.p-es body .cta3 .seal3{border-radius:7px}
-html.paper body .cta3{padding-left:12px}
-html.paper #pagebar .back span{display:inline-flex}
-html.paper #pagebar .back .tw4{width:22px;height:22px;stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
 </style>
 
 <main id="view"><div class="desk"><div class="sheet boot" id="sheet"></div></div></main>
@@ -7494,7 +7472,7 @@ function pageBar() {
     $("#pb-back").onclick = () => go("home");
   }
   const lang = curLang(), nm = PAGE_NAMES[lang][current] || ["", ""];
-  $("#pb-back span", bar).innerHTML = `<svg class="tw4" viewBox="0 0 24 24" aria-hidden="true">${ICO3["tower_" + lang]}</svg>`;
+  $("#pb-back span", bar).textContent = { en: "turris", ja: "柱へ", es: "templo" }[lang];
   $("#pb-back", bar).setAttribute("aria-label", "回到塔前");
   $(".pb-t b", bar).textContent = nm[0]; $(".pb-t em", bar).textContent = nm[1];
   setSync();
@@ -7931,7 +7909,7 @@ VIEWS.today = VIEWS_JA.today = VIEWS_ES.today = async (el) => {
       <td class="act"><button class="btn sm ${p.done || lock ? "" : "pri"}" data-t="${esc(t.id)}" ${lock ? "disabled" : ""}>${lock ? "未解锁" : p.done ? (t.kind === "lesson" ? "回看" : "再练") : other ? `去${PLAN_NAME[t.lang]}` : "开始"}</button></td></tr>`;
   };
   el.innerHTML = `<div class="stack">
-    <div class="sec-head"><div><div class="eyebrow">${k.slice(5).replace("-", " 月 ").replace(/^0/, "")} 日 周${WEEK[dowMon(k)]}</div><h1>今天是${PLAN_NAME[day.main]}日</h1></div>
+    <div class="sec-head"><div><div class="eyebrow">${UI_TXT[curLang()].hodie}</div><h1>今天是${PLAN_NAME[day.main]}日</h1></div>
       <span class="pill num">完成 ${ds.done}/${ds.n}</span></div>
     ${PL.isNew ? `<div class="notice info">监工模式已开启：每天打开这里照单完成。课时学完才会解锁下一课；没做完的课变成「欠债」顺延；单元测验 ${Math.round(PL.set.pass * 100)}% 及格。时间和排布可以在「计划设置」里改。</div>` : ""}
     ${PL.returning ? `<div class="notice row between"><span>已经 ${Math.round((parseKey(k) - parseKey(PL.returning.since)) / 864e5)} 天没来了，积了 ${PL.returning.n} 项欠债。可以清零重新起步：</span><button class="btn sm" id="pl-fresh">清空欠债</button></div>` : ""}
@@ -8392,7 +8370,7 @@ function planTag() {
   else if (!day || day.free) body = `<div class="hd3"><div><div class="eye3">${T.hodie}</div><h2>正在排今天的课…</h2></div></div>`;
   else {
     const t = nextTask(day), main = PLAN_NAME[day.main];
-    const head = `<div class="hd3"><div><div class="eye3">${k.slice(5).replace("-", " 月 ").replace(/^0/, "")} 日 周${WEEK[dowMon(k)]}</div><h2>今天是${main}日</h2></div><div class="cnt3"><b>${ds.done}<small>/${ds.n}</small></b><span>已完成</span></div></div><div class="rule3"></div>`;
+    const head = `<div class="hd3"><div><div class="eye3">${T.hodie}</div><h2>今天是${main}日</h2></div><div class="cnt3"><b>${ds.done}<small>/${ds.n}</small></b><span>已完成</span></div></div><div class="rule3"></div>`;
     const cur = t ? `<div class="cur3" data-t="${esc(t.id)}">${taskBadge(t)}<span class="t"><b>${esc(taskLabel(t)[0])}</b><small>${t.lang !== lang ? `会切换到${PLAN_NAME[t.lang]}` : esc(taskLabel(t)[1])}</small>${bricksHTML(taskFrac(t))}</span></div>` : `<div class="cur3"><span class="badge3 ic">✓</span><span class="t"><b>今日工程全部完成</b><small>砖已经砌上。还想学可以提前上下一课。</small>${bricksHTML(1)}</span></div>`;
     const list = `<div class="list3">${["lesson", "test", "rem", "free"].some(x => day.tasks.some(t => t.kind === x)) ? `<div class="sect3"><b>主课</b><i>${lang === "ja" ? "かだい" : lang === "es" ? "Lección" : "Lectio"}</i></div>${day.tasks.filter(t => !["review", "mist"].includes(t.kind)).map(slipRow).join("")}` : ""}
       ${day.tasks.some(t => ["review", "mist"].includes(t.kind)) ? `<div class="sect3"><b>每日复习</b><i>${lang === "ja" ? "ふくしゅう" : lang === "es" ? "Repaso" : "Iterum"}</i></div>${day.tasks.filter(t => ["review", "mist"].includes(t.kind)).map(slipRow).join("")}` : ""}
@@ -8433,7 +8411,7 @@ VIEWS.course = VIEWS_JA.course = VIEWS_ES.course = async (el) => {
   const curU = it.unit?.id;
   el.innerHTML = `<div class="page3">
     <header class="ph3"><div class="eye3">${lang === "ja" ? "かてい" : lang === "es" ? "Curso" : "Cursus"}</div><h1>${PLAN_NAME[lang]}课程</h1><p class="mut3">${esc(L?.goal || "")}</p></header>
-    ${it.kind === "lesson" ? `<div class="slip3 pad3"><div class="eye3">${lang === "ja" ? "つぎ" : "下一课"}</div><h3 class="t3">${esc(lessonTitle(it.id))}</h3><p class="mut3">${esc(it.unit.title)}，第 ${it.id.split(".")[3]} 课</p>${bricksHTML(lesPartsDone(it.id).length / 4)}${ctaHTML("上这一课", "", "c3-go")}</div>` : ""}
+    ${it.kind === "lesson" ? `<div class="slip3 pad3"><div class="eye3">${lang === "ja" ? "つぎ" : lang === "es" ? "Próxima" : "Proximum"}</div><h3 class="t3">${esc(lessonTitle(it.id))}</h3><p class="mut3">${esc(it.unit.title)}，第 ${it.id.split(".")[3]} 课</p>${bricksHTML(lesPartsDone(it.id).length / 4)}${ctaHTML("上这一课", "", "c3-go")}</div>` : ""}
     ${(() => { const pu = { en: "en.1.3", es: "es.1.2", ja: "ja.1.1" }[lang], u = (L?.stages || []).flatMap(s => s.units).find(x => x.id === pu); return u ? `<div class="slip3 pad3"><div class="eye3">新版课时试点</div><h3 class="t3">${esc(u.title)}</h3><p class="mut3">一步一屏的新教法，不受课程顺序限制，可以直接上。</p><div class="les3">${[...Array(u.n || 5)].map((_, i) => { const id = `${pu}.${i + 1}`; return `<button data-l="${id}" class="${lesRec(id).done ? "done" : "cur"}" title="${esc(lessonTitle(id))}">${i + 1}</button>`; }).join("")}</div></div>` : ""; })()}
     ${(L?.stages || []).map(st => { const us = st.units, done = us.filter(u => unitRec(u.id).pass).length, open = us.some(u => u.id === curU); return `<details class="slip3 stage3" ${open ? "open" : ""}><summary><span><b>${esc(noDot(st.title))}</b><small>${esc(st.goal)}</small></span><span class="lg3">${done}/${us.length}</span></summary>
       ${us.map(u => { const n = u.n || 5, ld = [...Array(n)].filter((_, i) => lesRec(`${u.id}.${i + 1}`).done).length, ur = unitRec(u.id), here = u.id === curU; return `<div class="unit3 ${here ? "here" : ""}"><div class="uh"><b>${esc(u.title)}</b><span class="mut3">${ur.pass ? "✓ 结业" : u.file ? `${ld}/${n}` : "待生成"}</span></div>${u.file ? `<div class="les3">${[...Array(n)].map((_, i) => { const id = `${u.id}.${i + 1}`, r = lesRec(id), cur = it.id === id; return `<button data-l="${id}" class="${r.done ? "done" : cur ? "cur" : "lock"}" ${r.done || cur ? "" : "disabled"} title="${esc(lessonTitle(id))}">${i + 1}</button>`; }).join("")}${ur.tests?.length ? `<span class="mut3">测验 ${Math.round(ur.tests.slice(-1)[0].acc * 100)}%</span>` : ""}</div>` : `<p class="mut3">${esc(u.goal || "")}</p>`}</div>`; }).join("")}</details>`; }).join("")}
