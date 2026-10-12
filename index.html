@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.0115-6386b9";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.0119-bd7bf1";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1542,6 +1542,22 @@ html.paper body .links3 button{font-family:var(--ui);font-style:normal;font-size
 html.paper body .chip3{border:0;border-radius:99px;padding:5px 12px;background:rgba(255,250,240,.86);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 html.paper body .tabs3{border:0;border-radius:12px;padding:3px;background:rgba(255,250,240,.86);overflow:hidden}
 html.paper body .tabs3 button{border:0;border-radius:9px;font-family:var(--ui);font-weight:600;letter-spacing:.02em}
+html.paper.p-en:not(#_){--mark4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 14' fill='%23a33a26'%3E%3Crect x='0.5' y='7.5' width='12' height='6' rx='1.6'/%3E%3Crect x='13.5' y='7.5' width='12' height='6' rx='1.6'/%3E%3Crect x='7' y='0.5' width='12' height='6' rx='1.6'/%3E%3C/svg%3E");--tower4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232b2219' stroke-width='.42' stroke-linecap='round' stroke-linejoin='round' opacity='.09'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M4.5 21 6 17h12l1.5 4'/%3E%3Cpath d='M7 17l1.2-4h7.6L17 17'/%3E%3Cpath d='M9 13l1-3.5h4L15 13'/%3E%3Cpath d='M10.6 9.5l.7-3h1.4l.7 3'/%3E%3Cpath d='M12 6.5V4'/%3E%3Cpath d='M8.5 21v-2M12 21v-2M15.5 21v-2M10.3 17v-1.6M13.7 17v-1.6'/%3E%3C/svg%3E")}
+html.paper.p-ja:not(#_){--mark4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 14'%3E%3Crect x='0.5' y='0' width='14' height='14' rx='2.2' fill='%23c0392b'/%3E%3Cpath d='M4.2 3.6h6.6M5.6 3.6v7.2M9.4 3.6v7.2M5.6 7.3h3.8M3.8 10.8h7.4' stroke='%23fbefe8' stroke-width='1.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E");--tower4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231c1a18' stroke-width='.42' stroke-linecap='round' stroke-linejoin='round' opacity='.09'%3E%3Cpath d='M5 4.5h14M6.5 3h11'/%3E%3Cpath d='M8 4.5V21M16 4.5V21'/%3E%3Cpath d='M8 8.5h8M8 15h8'/%3E%3Cpath d='M5 21h14'/%3E%3Cpath d='M10.5 11.7h3'/%3E%3C/svg%3E")}
+html.paper.p-es:not(#_){--mark4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 14' fill='%239c2a1c'%3E%3Crect x='0' y='9' width='26' height='5' rx='1.2'/%3E%3Crect x='4' y='4.5' width='18' height='4' rx='1.2'/%3E%3Crect x='8' y='0' width='10' height='4' rx='1.2'/%3E%3C/svg%3E");--tower4:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231d140e' stroke-width='.42' stroke-linecap='round' stroke-linejoin='round' opacity='.09'%3E%3Cpath d='M2.5 21h19'/%3E%3Cpath d='M4 21v-3.5h16V21'/%3E%3Cpath d='M6 17.5V14h12v3.5'/%3E%3Cpath d='M8 14v-3.5h8V14'/%3E%3Cpath d='M8.5 10.5V7h2.6v3.5M12.9 10.5V7h2.6v3.5'/%3E%3Cpath d='M8.2 7l1.6-2 1.6 2M12.6 7l1.6-2 1.6 2'/%3E%3Cpath d='M11 21V10.5M13 21V10.5'/%3E%3C/svg%3E")}
+/* 塔的元素：标题上方的砖、卡片里的塔线稿、砖块进度、扁平印章、导航里的塔 */
+html.paper body:not(.at-home) :is(.sec-head,.ph3) h1::before{content:"";display:block;width:26px;height:14px;margin:0 0 10px;background:var(--mark4) no-repeat center/contain}
+html.paper body :is(.stele,.slip3.pad3,.note3){background-image:var(--tower4);background-repeat:no-repeat;background-position:right -22px bottom -26px;background-size:150px 150px}
+html.paper body:not(#_) .entry{background-image:var(--tower4)!important;background-repeat:no-repeat!important;background-position:right -26px bottom -30px!important;background-size:170px 170px!important}
+html.paper body :is(.bar,.ring .rb){height:9px;border-radius:3px;-webkit-mask:repeating-linear-gradient(90deg,#000 0 calc(10% - 3px),transparent calc(10% - 3px) 10%);mask:repeating-linear-gradient(90deg,#000 0 calc(10% - 3px),transparent calc(10% - 3px) 10%)}
+html.paper body :is(.bar>i,.ring .rb i){border-radius:0}
+html.paper body .bricks3 i{height:8px;border-radius:2.5px}
+html.paper body .cta3 .seal3{display:grid;width:30px;height:30px;font-size:14px;background:var(--sig);color:var(--sig-ink,#fbefe8);box-shadow:none;font-family:"EB Garamond",Georgia,serif;font-weight:600}
+html.paper.p-ja body .cta3 .seal3{border-radius:5px;font-family:"Shippori Mincho",serif}
+html.paper.p-es body .cta3 .seal3{border-radius:7px}
+html.paper body .cta3{padding-left:12px}
+html.paper #pagebar .back span{display:inline-flex}
+html.paper #pagebar .back .tw4{width:22px;height:22px;stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
 </style>
 
 <main id="view"><div class="desk"><div class="sheet boot" id="sheet"></div></div></main>
@@ -7478,7 +7494,7 @@ function pageBar() {
     $("#pb-back").onclick = () => go("home");
   }
   const lang = curLang(), nm = PAGE_NAMES[lang][current] || ["", ""];
-  $("#pb-back span", bar).textContent = { en: "turris", ja: "柱へ", es: "templo" }[lang];
+  $("#pb-back span", bar).innerHTML = `<svg class="tw4" viewBox="0 0 24 24" aria-hidden="true">${ICO3["tower_" + lang]}</svg>`;
   $("#pb-back", bar).setAttribute("aria-label", "回到塔前");
   $(".pb-t b", bar).textContent = nm[0]; $(".pb-t em", bar).textContent = nm[1];
   setSync();
@@ -8317,7 +8333,11 @@ const ICO3 = {
   course: '<path d="M3 6c3-1.5 6-1.5 9 0 3-1.5 6-1.5 9 0v13c-3-1.5-6-1.5-9 0-3-1.5-6-1.5-9 0Z"/><path d="M12 6v13"/>',
   review: '<path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16M20 21v-5h-5"/>',
   dict: '<path d="M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2z"/><path d="M5 18a2 2 0 0 1 2-2h12M9 8h6"/>',
-  me: '<circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/>'
+  me: '<circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/>',
+  // 三种语言各自的塔：巴别塔、天之御柱、大神庙
+  tower_en: '<path d="M3 21h18"/><path d="M4.5 21 6 17h12l1.5 4"/><path d="M7 17l1.2-4h7.6L17 17"/><path d="M9 13l1-3.5h4L15 13"/><path d="M10.6 9.5l.7-3h1.4l.7 3"/><path d="M12 6.5V4"/><path d="M8.5 21v-2M12 21v-2M15.5 21v-2M10.3 17v-1.6M13.7 17v-1.6"/>',
+  tower_ja: '<path d="M5 4.5h14M6.5 3h11"/><path d="M8 4.5V21M16 4.5V21"/><path d="M8 8.5h8M8 15h8"/><path d="M5 21h14"/><path d="M10.5 11.7h3"/>',
+  tower_es: '<path d="M2.5 21h19"/><path d="M4 21v-3.5h16V21"/><path d="M6 17.5V14h12v3.5"/><path d="M8 14v-3.5h8V14"/><path d="M8.5 10.5V7h2.6v3.5M12.9 10.5V7h2.6v3.5"/><path d="M8.2 7l1.6-2 1.6 2M12.6 7l1.6-2 1.6 2"/><path d="M11 21V10.5M13 21V10.5"/>',
 };
 const sealHTML = (lang = curLang()) => `<span class="seal3 s-${lang}">${UI_TXT[lang].seal}</span>`;
 const bricksHTML = (frac, n = 10) => `<span class="bricks3">${[...Array(n)].map((_, i) => `<i class="${i < Math.floor(frac * n) ? "f" : i < frac * n ? "h" : ""}"></i>`).join("")}</span>`;
@@ -8331,7 +8351,7 @@ function nav3() {
   if (!n) { n = document.createElement("nav"); n.id = "nav3"; document.body.appendChild(n); n.addEventListener("click", e => { const b = e.target.closest("[data-nav]"); if (!b) return; const v = b.dataset.nav; if (v === "words") { WS.mode = "overview"; WS.sess = null; } if (v === "dict") DS.word = DS.word || null; go(v); }); }
   const lang = curLang(), on = NAV_OF[current] || "";
   n.className = "nav3 n-" + lang;
-  n.innerHTML = NAV3.map(([v, zh, ic], i) => `<button data-nav="${v}" class="${on === v ? "on" : ""}" aria-label="${zh}"><svg viewBox="0 0 24 24">${ICO3[ic]}</svg><b>${zh}</b><em>${UI_TXT[lang].nav[i]}</em></button>`).join("");
+  n.innerHTML = NAV3.map(([v, zh, ic], i) => `<button data-nav="${v}" class="${on === v ? "on" : ""}" aria-label="${zh}"><svg viewBox="0 0 24 24">${ICO3[ic === "home" ? "tower_" + lang : ic]}</svg><b>${zh}</b><em>${UI_TXT[lang].nav[i]}</em></button>`).join("");
 }
 
 /* ---- 首页：语言页签、连续天数、今日便条 ---- */
