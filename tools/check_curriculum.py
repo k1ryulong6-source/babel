@@ -46,6 +46,61 @@ def check_ex(x, where, errs):
         errs.append(f"{where}: 未知题型 {t}")
 
 
+V2_TYPES = {"intro", "teach", "word", "speak", "sum", "c", "f", "o"}
+
+
+def check_steps(l, lid, lex, word_owner, errs, warns):
+    """v2 课时（steps）：步骤类型、词条、讲解小题、练习数量。返回 (新词数, 题数)。"""
+    steps = l["steps"]
+    n_w = n_x = 0
+    kinds = [s.get("t") for s in steps]
+    for k, s in enumerate(steps, 1):
+        t, where = s.get("t"), f"{lid} 第{k}步"
+        if t not in V2_TYPES:
+            errs.append(f"{where}: 未知步骤类型 {t}")
+        elif t == "intro":
+            if not s.get("lines") or any(len(x) != 3 for x in s["lines"]):
+                errs.append(f"{where}: 情境导入的 lines 应为 [[说话人, 原文, 中文]]")
+        elif t == "teach":
+            if not s.get("title") or not s.get("body"):
+                errs.append(f"{where}: 讲解缺 title / body")
+            if any(len(x) != 2 for x in s.get("ex", [])):
+                errs.append(f"{where}: 讲解例句应为 [原文, 中文]")
+            if s.get("check"):
+                check_ex(s["check"], where + " 小题", errs)
+                n_x += 1
+        elif t == "word":
+            w = s.get("w", "")
+            if not w:
+                errs.append(f"{where}: 词卡缺 w")
+            elif s.get("s"):
+                if s.get("x") is not None and (not isinstance(s["x"], list) or len(s["x"]) != 2):
+                    errs.append(f"{where}: 自写词卡的 x 应为 [例句, 中文]")
+            elif w.lower() not in lex:
+                errs.append(f"{where}: 词库里没有「{w}」，需要写 s 释义")
+            if w.lower() in word_owner and word_owner[w.lower()] != lid:
+                warns.append(f"{lid}: 「{w}」已在 {word_owner[w.lower()]} 出现")
+            word_owner.setdefault(w.lower(), lid)
+            if not s.get("sp"):
+                n_w += 1
+        elif t == "speak":
+            if not s.get("text"):
+                errs.append(f"{where}: 跟读缺 text")
+        elif t == "sum":
+            if not s.get("points"):
+                errs.append(f"{where}: 小结缺 points")
+        else:
+            check_ex(s, where, errs)
+            n_x += 1
+    if kinds[-1:] != ["sum"]:
+        errs.append(f"{lid}: 最后一步应是小结 sum")
+    if n_x < 5:
+        warns.append(f"{lid}: 只有 {n_x} 道练习")
+    if len(steps) > 40:
+        warns.append(f"{lid}: {len(steps)} 步，偏长")
+    return n_w, n_x
+
+
 def main():
     idx = J("curriculum/index.json")
     errs, warns, stats = [], [], {}
@@ -75,6 +130,11 @@ def main():
                         errs.append(f"{u['file']}: 第 {i} 课 id 应为 {lid}，实为 {l.get('id')}")
                     if not l.get("title"):
                         errs.append(f"{lid}: 缺标题")
+                    if "steps" in l:
+                        n_w, n_x = check_steps(l, lid, lex, word_owner, errs, warns)
+                        n_words += n_w
+                        n_ex += n_x
+                        continue
                     for o in l.get("words", []) + l.get("special", []):
                         if isinstance(o, str):
                             if o.lower() not in lex:
