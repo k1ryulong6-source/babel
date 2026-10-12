@@ -21,3 +21,7 @@ BABEL Language learing app
 3. 词典只存在这台设备的 IndexedDB 里（库名 `babel_zhdict`），不上传、不进存档，也不放进仓库；换设备需要重新导入。
 
 查词时会自动处理：活用形还原、片假名 / 半角输入、ヶ / か / カ / 箇 写法、长音「ー」；整个词查不到时显示开头能查到的最长部分。
+
+## 日语音调数据
+
+`ja/accent.txt` 来自 [kanjium](https://github.com/mifunetoshiro/kanjium)（Uros O. 整理，基于 EDRDG 的 EDICT 等数据），许可证 **CC BY-SA 4.0**。格式：`词\t读音（与词相同时留空）\t降调位置`（0 平板型；1 头高型；n 表示第 n 拍后降调，多个用逗号分隔）。本文件按同一许可证（CC BY-SA 4.0）提供。

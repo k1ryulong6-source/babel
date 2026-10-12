@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.1342-668e91";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.1345-aab27e";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1371,6 +1371,9 @@ html.p-ja .v2 .t2{font-family:"Shippori Mincho",var(--zhd);font-weight:800}
 .big3{font-size:20px;line-height:1.45}.big3 u{text-decoration-color:var(--sig);text-decoration-thickness:2px;text-underline-offset:4px}
 html.p-en .big3,html.p-en .dlg3 .en,html.p-en .ex3 .en{font-family:var(--en)}
 .tip3{border-left:3px solid var(--sig);background:color-mix(in srgb,var(--sig) 7%,transparent);padding:10px 12px;font-size:14px;line-height:1.75}
+.acc3{display:inline-flex;align-items:flex-end;font-size:17px;letter-spacing:.04em;margin-right:12px;padding-top:4px}
+.acc3>span{padding:2px 1px 0}.acc3 .h{border-top:1.5px solid currentColor}.acc3 .u{border-left:1.5px solid currentColor}.acc3 .d{border-right:1.5px solid currentColor}
+.acc3 sup{font-size:10px;color:var(--muted);margin-left:3px;align-self:flex-start}
 .kbadge{display:inline-block;vertical-align:3px;background:var(--sig);color:#fff;font:700 12px/1.6 var(--zh,sans-serif);padding:0 8px;border-radius:9px;margin-right:8px;letter-spacing:.1em}
 .kh3{font-weight:800;font-size:14px;color:var(--sig);margin:16px 0 4px;letter-spacing:.05em}
 .lvl3{display:inline-block;min-width:1.4em;color:var(--sig);font-size:.8em}
@@ -4267,6 +4270,24 @@ function jaLoad() {
     JA.yomi = m; return m;
   }).catch(e => { JA.loading = null; throw e; });
 }
+// 音调（アクセント）：kanjium 的 accents.txt（CC BY-SA 4.0），词 → [[读音, "0,2"]]；数字是降调前的拍数，0 为平板型
+function jaAccentLoad() {
+  return JA.aLoading ||= fetch("ja/accent.txt").then(r => { if (!r.ok) throw new Error("accent"); return r.text(); }).then(t => {
+    const m = new Map(); for (const ln of t.split("\n")) { const [w, r, a] = ln.split("\t"); if (w) (m.get(w) || m.set(w, []).get(w)).push([r || w, a]); }
+    return (JA.acc = m);
+  }).catch(e => { JA.aLoading = null; throw e; });
+}
+const MORA_SMALL = /[ゃゅょぁぃぅぇぉゎャュョァィゥェォヮ]/;
+const morae = kana => { const out = []; for (const ch of kana) { if (MORA_SMALL.test(ch) && out.length) out[out.length - 1] += ch; else out.push(ch); } return out; };
+function accentHTML(word, reading) {
+  const list = JA.acc?.get(word) || JA.acc?.get(hira(reading || "")); if (!list) return "";
+  const r = hira(reading || ""), hit = list.find(([k]) => hira(k) === r) || (!r || list.length === 1 ? list[0] : null); if (!hit) return "";
+  const ms = morae(hira(hit[0])), ns = [...new Set(String(hit[1]).split(",").map(Number).filter(n => !isNaN(n) && n <= ms.length))].slice(0, 2);
+  return ns.map(n => {
+    const hi = i => n === 0 ? i > 0 : n === 1 ? i === 0 : i > 0 && i < n;
+    return `<span class="acc3" title="${n === 0 ? "平板型" : n === 1 ? "頭高型" : n === ms.length ? "尾高型" : "中高型"}">${ms.map((m, i) => `<span class="${hi(i) ? "h" : "l"}${i && hi(i) && !hi(i - 1) ? " u" : ""}${n > 0 && i === n - 1 ? " d" : ""}">${esc(m)}</span>`).join("")}<sup>${n}</sup></span>`;
+  }).join("");
+}
 function jaKanji() { return JA.kLoading ||= fetch("ja/kanji.json").then(r => r.json()).then(j => (JA.kanji = j)).catch(e => { JA.kLoading = null; throw e; }); }
 function jaShard(i) { return JA.shards[i] ||= fetch(`ja/d/${i}.json`).then(r => { if (!r.ok) throw new Error("dict"); return r.json(); }).catch(e => { delete JA.shards[i]; throw e; }); }
 const shardOf = s => parseInt(fnv(s), 16) % 64;
@@ -4604,7 +4625,7 @@ async function renderJaEntry(el, raw, ctx = {}) {
   const token = (el._tok = (el._tok || 0) + 1);
   el.innerHTML = `<div class="thinking">検索中…</div>`;
   let word = String(raw || "").trim();
-  await Promise.all([jaLoad().catch(() => { }), jaKanji().catch(() => { })]);
+  await Promise.all([jaLoad().catch(() => { }), jaKanji().catch(() => { }), jaAccentLoad().catch(() => { })]);
   // 词形还原：输入的是活用形时
   let partial = "";
   if (!LEX.low.has(word) && !S.my.map.has(word) && !JA.yomi?.has(word)) { const q = await jaResolveQuery(word); if (q.ctx) ctx = { ...q.ctx, ...ctx }; partial = q.partial || ""; word = q.word; }
@@ -4624,7 +4645,7 @@ async function renderJaEntry(el, raw, ctx = {}) {
   const status = info ? `<span class="pill ${info.book === "my" ? "acc" : ""}">${esc(BOOKS[info.book]?.short || "")}${info.t ? "，" + esc(info.t) : ""}</span>${info.book !== "bk" || r ? `<span class="pill ${r && r[0] >= MASTER_STAGE ? "good" : ""}">${STAGE_TXT(r)}</span>` : ""}` : "";
   el.innerHTML = `<div class="entry-page stack" style="gap:14px">
     <div class="row between" style="align-items:flex-start;flex-wrap:nowrap">
-      <div style="min-width:0"><div class="hw jp">${esc(word)}</div>${reading && reading !== word ? `<div class="ipa jp">${esc(hira(reading))}</div>` : ""}
+      <div style="min-width:0"><div class="hw jp">${esc(word)}</div>${accentHTML(word, reading) ? `<div class="jp" style="margin-top:4px">${accentHTML(word, reading)}</div>` : reading && reading !== word ? `<div class="ipa jp">${esc(hira(reading))}</div>` : ""}
       ${ctx.surface && ctx.surface !== word ? `<div class="faint" style="font-size:13px">原文 <b class="jp">${esc(ctx.surface)}</b>${ctx.why ? ` ← ${esc(ctx.why)}` : ""}</div>` : ""}</div>
       <div class="row" style="gap:6px;flex-wrap:nowrap">${starBtn("w", word)}</div></div>
     ${status || (!info && (dict.length || zh.length)) ? `<div class="row" style="gap:6px">${status}${!info && (dict.length || zh.length) ? `<button class="btn sm pri" id="e-add">加入生词本</button>` : ""}${info?.book === "my" ? `<button class="btn sm ghost" id="e-rm" style="color:var(--bad)">移出生词本</button>` : ""}${info?.book === "bk" && !r ? `<button class="btn sm pri" id="e-rev">加入复习</button>` : ""}</div>` : ""}
@@ -6087,7 +6108,7 @@ VIEWS_JA.dict = (el) => {
     <form class="row" id="dq-f" style="flex-wrap:nowrap"><input type="text" id="dq" class="jp" placeholder="汉字、假名或活用形，如 食べさせられた" autocomplete="off" value="${esc(DS.word || "")}" style="font-size:18px"><button class="btn pri" type="submit">検索</button></form>
     <div id="dq-sug" class="row" style="gap:6px"></div>
     <div class="dict-layout">
-      <div class="card" id="dict-entry">${DS.word ? "" : `<p class="muted">JMdict 7 万余语，词书 ${BOOK_ORDER.reduce((s, b) => s + bookWords(b).length, 0)} 语带中文释义<span id="zd-sum"></span></p>`}</div>
+      <div class="card" id="dict-entry">${DS.word ? "" : `<p class="muted">JMdict 7 万余语，音调来自 kanjium（CC BY-SA 4.0），词书 ${BOOK_ORDER.reduce((s, b) => s + bookWords(b).length, 0)} 语带中文释义<span id="zd-sum"></span></p>`}</div>
       <aside class="stack" style="gap:10px"><div class="card row between" style="gap:8px"><span style="font-size:14px">日中词典 <span class="faint" id="zd-st2">…</span></span><button class="btn sm" id="zd-open">导入</button></div><div class="card stack" style="gap:8px"><div class="eyebrow">最近查过</div><div class="row" style="gap:6px">${(S.profile.lookupsJa || []).slice(0, 24).map(w => `<span class="wd chip jp" data-w="${esc(w)}">${esc(w)}</span>`).join("") || `<span class="faint" style="font-size:13px">暂无</span>`}</div></div></aside>
     </div></div>`;
   const inp = $("#dq"), sug = $("#dq-sug");
@@ -8155,7 +8176,7 @@ VIEWS.lesson = VIEWS_JA.lesson = VIEWS_ES.lesson = async (el) => {
   await curUnit(unitIdOf(LR.id));
   const l = curLesson(LR.id); if (current !== "lesson") return;
   if (!l) { el.innerHTML = `<div class="card empty">课时内容读取失败，请联网后再试。</div>`; return; }
-  if (isV2(l)) { const pid = prevLessonId(l.id); if (pid && LR.v2?.id !== l.id) await curUnit(unitIdOf(pid)).catch(() => { }); if (current !== "lesson") return; document.body.classList.add("focus"); return v2Render(el, l); }
+  if (isV2(l)) { if (lang === "ja" && !JA.acc) await jaAccentLoad().catch(() => { }); const pid = prevLessonId(l.id); if (pid && LR.v2?.id !== l.id) await curUnit(unitIdOf(pid)).catch(() => { }); if (current !== "lesson") return; document.body.classList.add("focus"); return v2Render(el, l); }
   LR.v2 = null;
   if (LR.quiz) return renderQuiz(el, LR.quiz, () => { LR.quiz = null; render(); });
   const rec = lessonAutoParts(l), today_ = LR.parts || LES_PARTS, exs = planExercises(l);
@@ -8764,7 +8785,7 @@ function v2Render(el, l) {
     if (s.check && !V.ans) { ready = s.check.t !== "o" || (V.built || []).length === orderTokens(s.check).length; cta = s.check.t === "c" ? "先选一个答案" : "检查"; if (s.check.t === "c") ready = false; }
   } else if (s.t === "word") {
     const info = wordInfo(s.w) || { w: s.w, s: [], x: [] }, x = s.x || info.x?.[0];
-    body = `${head}<div class="slip3 wcard3"><div class="hw3 ${c}">${esc(info.w || s.w)}</div><div class="ipa3">${esc(lang === "ja" ? hira(info.p || "") : lang === "es" ? (ES_GEN3[info.p] ?? info.p ?? "") : info.p || "")} ${playBtn(info.w || s.w)}</div>
+    body = `${head}<div class="slip3 wcard3"><div class="hw3 ${c}">${esc(info.w || s.w)}</div><div class="ipa3">${lang === "ja" && accentHTML(info.w || s.w, info.p) ? `<span class="jp">${accentHTML(info.w || s.w, info.p)}</span>` : esc(lang === "ja" ? hira(info.p || "") : lang === "es" ? (ES_GEN3[info.p] ?? info.p ?? "") : info.p || "")} ${playBtn(info.w || s.w)}</div>
       <div class="rule3"></div><ol class="sns3">${(info.s || []).slice(0, 3).map(([p, z]) => `<li><i>${esc(p || "")}</i> ${esc(z)}</li>`).join("")}</ol>
       ${x ? `<div class="ex3"><div class="${c}">${esc(x[0])} ${playBtn(x[0])}</div><small>${esc(x[1] || "")}</small></div>` : ""}
       ${s.hint ? `<div class="tip3 soft"><b>记忆提示</b>${s.hint}</div>` : info.n ? `<div class="tip3 soft"><b>注意</b>${esc(info.n)}</div>` : ""}</div>`;
