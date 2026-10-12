@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.1331-ccd4ce";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.1332-990b20";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -2621,12 +2621,13 @@ const Speech = {
   canSpeak(v, t) { return AudioBank.has(v || DEFAULT_VOICE, t) || TTS.ok; },
   _end() { if (this.t0) { track.add((Date.now() - this.t0) / 1000); this.t0 = 0; } },
   async say(text, { rate = S.profile?.speed || 1, onend, onstart, voice = DEFAULT_VOICE, lang } = {}) {
-    if (isJa()) { onend?.(); return; }
+    // 日语：只放预录音（声音 id gf_ja），没有录音就不出声
+    if (isJa()) { voice = "gf_ja"; lang = "ja"; if (!AudioBank.has(voice, text)) { onend?.(); return; } }
     if (isEs() && !lang) lang = esLang();
     const my = ++this.token; this._stopMedia(); TTS.stop();
     let src = null;
     // 预置录音：英语用 Kokoro 美音；西语只有西班牙本土口音（es-MX 用设备语音）
-    const bank = isEs() ? (/^e[fm]_/.test(voice) ? voice : lang === "es-ES" ? ES_VOICE : null) : (!lang || lang.startsWith("en")) ? voice : null;
+    const bank = isJa() ? voice : isEs() ? (/^e[fm]_/.test(voice) ? voice : lang === "es-ES" ? ES_VOICE : null) : (!lang || lang.startsWith("en")) ? voice : null;
     if (bank) { try { src = await AudioBank.get(bank, text); } catch { } }
     if (my !== this.token) return;
     if (src && this.au) {
@@ -8040,7 +8041,7 @@ function planExercises(l) {
   }
   return out;
 }
-const planSay = text => { if (curLang() === "es") sayEs(text); else if (curLang() === "en") Speech.say(text); };
+const planSay = text => { if (curLang() === "es") sayEs(text); else Speech.say(text); };
 
 /* ---- 通用答题：一次一题。练习模式答错的题排到最后再答，直到答对；测验模式只答一遍 ---- */
 const normAns = s => String(s ?? "").trim().toLowerCase().replace(/[’‘]/g, "'").replace(/\s+/g, " ").replace(/[\s。．.!！?？,，、]+$/g, "").replace(/^[¿¡]+/, "");
@@ -8711,7 +8712,8 @@ function v2Finish(l, V) {
 }
 const ES_GEN3 = { m: "阳性名词（el）", f: "阴性名词（la）", mf: "阴阳同形（el / la）" };
 const cls3 = () => curLang() === "ja" ? "jp" : curLang() === "es" ? "es-t" : "en";
-const playBtn = t => curLang() === "ja" ? "" : `<button class="play3" data-say="${esc(t)}" aria-label="播放">${ICON.spk}</button>`;
+const jaHasAudio = t => AudioBank.has("gf_ja", t);
+const playBtn = t => curLang() === "ja" && !jaHasAudio(t) ? "" : `<button class="play3" data-say="${esc(t)}" aria-label="播放">${ICON.spk}</button>`;
 const TYPED_HINT = { tr: { en: "翻译成英语", es: "翻译成西语", ja: "日本語に訳す" }, dict: { en: "听写：听录音，写下整句", es: "听写：听录音，写下整句", ja: "書き取り" } };
 function typedStem(it) { return it.t === "tr" ? `<small class="mut3">${TYPED_HINT.tr[curLang()]}</small><br>${esc(it.zh || it.q || "")}` : `<small class="mut3">${TYPED_HINT.dict[curLang()]}</small>`; }
 function typedResult(it, A, cls) {
@@ -8788,7 +8790,7 @@ function v2Render(el, l) {
       ${W.sent ? `<div class="slip3 pad3 ${c}" style="white-space:pre-wrap">${esc(W.text)}</div>${W.fb ? writeFeedback(W.fb, c) : W.err ? `<p class="mut3">${esc(W.err)}</p>` : W.busy ? `<p class="thinking">批改中…</p>` : ""}${s.model ? `<div class="kh3">参考范文</div><div class="slip3 pad3 ${c}" style="white-space:pre-wrap">${esc(s.model)}</div>` : ""}`
       : `<textarea id="v2-wr" class="${c}" rows="6" style="width:100%;font-size:17px" placeholder="${aiOK() ? "写完点「提交」，AI 会帮你批改" : "写完点「提交」，然后对照参考范文自己检查"}">${esc(W.text || "")}</textarea>`}`;
     if (!W.sent) cta = "提交"; else if (W.busy) ready = false;
-  } else if (s.t === "speak") body = `${head}<h2 class="t2">跟读</h2><p class="lead3">先听，再大声跟读两遍。注意${esc(s.focus || "节奏和重音")}。</p><div class="slip3 exs3"><div class="${c} big3">${esc(s.text)}</div><small>${esc(s.zh || "")}</small><div style="margin-top:12px">${lang === "ja" ? "" : `<button class="btn" data-say="${esc(s.text)}">▶ 播放</button> <button class="btn" data-say-slow="${esc(s.text)}">▶ 慢速</button>`}</div></div>`;
+  } else if (s.t === "speak") body = `${head}<h2 class="t2">跟读</h2><p class="lead3">先听，再大声跟读两遍。注意${esc(s.focus || "节奏和重音")}。</p><div class="slip3 exs3"><div class="${c} big3">${esc(s.text)}</div><small>${esc(s.zh || "")}</small><div style="margin-top:12px">${lang === "ja" && !jaHasAudio(s.text) ? "" : `<button class="btn" data-say="${esc(s.text)}">▶ 播放</button> <button class="btn" data-say-slow="${esc(s.text)}">▶ 慢速</button>`}</div></div>`;
   else if (V2_EX.has(s.t)) { body = `${head}<h2 class="t2">${V.redoing ? "再做一次" : s.warm ? "先回忆一下" : s.kd ? `<span class="kbadge">重点</span>练一练` : s.chk ? "马上试一题" : "练习"}</h2>${s.chk && !V.redoing ? `<p class="mut3">刚学的：${esc(s.chk)}</p>` : s.warm ? `<p class="mut3">上一课的重点：${esc(s.warm)}</p>` : s.kd ? `<p class="mut3">${esc(s.kd)}${V.redoing ? "" : " · 错了会再出，直到做对"}</p>` : ""}${exBody(s, V.ans, V.built || [])}`; if (!V.ans) { ready = s.t !== "c" && (s.t !== "o" || (V.built || []).length === orderTokens(s).length); cta = s.t === "c" ? "先选一个答案" : "检查"; } }
   else if (s.t === "sum") { body = `${head}<h2 class="t2">本课小结</h2><div class="slip3 pad3"><ul class="sum3">${(s.points || []).map(p => `<li>${p}</li>`).join("")}</ul></div><p class="mut3">本课的新词已经排进复习；练习里答错的题进了错题本，之后会按间隔再考。</p>`; cta = "完成本课"; }
   el.innerHTML = `<div class="v2">${prog3}<div class="v2b">${body}</div><div class="act3">${ctaHTML(cta, "", "v2-next", ready ? "" : "disabled")}</div></div>`;
