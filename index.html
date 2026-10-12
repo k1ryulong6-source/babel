@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.1345-aab27e";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.1729-190ee3";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1374,6 +1374,7 @@ html.p-en .big3,html.p-en .dlg3 .en,html.p-en .ex3 .en{font-family:var(--en)}
 .acc3{display:inline-flex;align-items:flex-end;font-size:17px;letter-spacing:.04em;margin-right:12px;padding-top:4px}
 .acc3>span{padding:2px 1px 0}.acc3 .h{border-top:1.5px solid currentColor}.acc3 .u{border-left:1.5px solid currentColor}.acc3 .d{border-right:1.5px solid currentColor}
 .acc3 sup{font-size:10px;color:var(--muted);margin-left:3px;align-self:flex-start}
+.lnk3{background:none;border:0;padding:4px 0;color:var(--muted);font-size:12px;text-decoration:underline;cursor:pointer}
 .kbadge{display:inline-block;vertical-align:3px;background:var(--sig);color:#fff;font:700 12px/1.6 var(--zh,sans-serif);padding:0 8px;border-radius:9px;margin-right:8px;letter-spacing:.1em}
 .kh3{font-weight:800;font-size:14px;color:var(--sig);margin:16px 0 4px;letter-spacing:.05em}
 .lvl3{display:inline-block;min-width:1.4em;color:var(--sig);font-size:.8em}
@@ -8427,6 +8428,8 @@ async function weeklyReportText(offset = 0) {
       `- 课时练习/测验一次答对率：${pctS(q[1], q[0])}（${q[0]} 题）`,
       `- 错题本：共 ${mk.length} 道，本周新增 ${mkWk.length} 道，到期待复习 ${due[l]?.mist ?? "—"} 道${weak.length ? `；错得最多：${weak.join("、")}` : ""}`, "");
   }
+  const bad = PL.st.badAudio || [];
+  if (bad.length) L.push("## 读音不对的录音（请重录）", ...bad.slice(-60).map(x => `- [${x.l}] ${x.t}（${x.at.slice(5)}）`), "");
   L.push("## 当前计划参数", "```json", "{\n" + Object.entries(planParams()).map(([f, v]) => ` "${f}": ${JSON.stringify(v)}`).join(",\n") + "\n}", "```", "",
     "## 请复盘", "请根据以上数据复盘本周：完成情况、薄弱点、欠债原因。如果需要调整，请给出修改后的参数 JSON（字段同上，只写要改的字段即可；pattern 是周一到周日每天的主课语言，en/es/ja；min 是上班日/休息日分钟数；debt.max 欠债上限、perDay 每天最多还几项、share 还债最多占当天时间比例、expire 几天后勾销；pass 是单元测验及格线；也可以加 \"cursor\": {\"en\": \"en.1.3.1\"} 表示把该语言直接跳到某一课）。");
   return L.join("\n");
@@ -8739,7 +8742,7 @@ const TYPED_HINT = { tr: { en: "翻译成英语", es: "翻译成西语", ja: "�
 function typedStem(it) { return it.t === "tr" ? `<small class="mut3">${TYPED_HINT.tr[curLang()]}</small><br>${esc(it.zh || it.q || "")}` : `<small class="mut3">${TYPED_HINT.dict[curLang()]}</small>`; }
 function typedResult(it, A, cls) {
   const model = ansList(it)[0];
-  return `<div class="${cls}" style="font-size:17px">${A.ok ? "✓" : "✗"} ${esc(A.input)}</div>${A.ok && !A.near && ansList(it).length < 2 ? "" : `<div class="${cls}" style="font-size:17px">${A.ok ? "参考答案" : "正确答案"}：<b>${esc(model)}</b>${ansList(it).length > 1 ? `<br><small class="mut3">也可以说：${ansList(it).slice(1, 3).map(esc).join(" / ")}</small>` : ""}</div>`}${!A.ok && it.t === "tr" && !A.self ? `<button class="btn ghost sm" data-self>我的说法意思也对</button>` : ""}`;
+  return `<div class="${cls}" style="font-size:17px">${A.ok ? "✓" : "✗"} ${esc(A.input)}</div>${A.ok && !A.near && ansList(it).length < 2 ? "" : `<div class="${cls}" style="font-size:17px">${A.ok ? "参考答案" : "正确答案"}：<b>${esc(model)}</b> ${playBtn(model)}${ansList(it).length > 1 ? `<br><small class="mut3">也可以说：${ansList(it).slice(1, 3).map(esc).join(" / ")}</small>` : ""}</div>`}${!A.ok && it.t === "tr" && !A.self ? `<button class="btn ghost sm" data-self>我的说法意思也对</button>` : ""}`;
 }
 function exBody(it, A, built) {
   const c = cls3(), stem = it.t === "tr" || it.t === "dict" ? typedStem(it) : esc(it.t === "o" ? (it.zh || "把下面的词连成句子") : it.q).replace(/___/g, `<span class="blank">＿＿＿</span>`);
@@ -8769,6 +8772,15 @@ function writeFeedback(fb, c) {
   return `<div class="kh3">批改</div>${(fb.notes || []).length ? `<ul class="err3">${fb.notes.map(([a, b, why]) => `<li><div class="${c}"><s>${esc(a)}</s></div><div class="${c}">✓ ${esc(b)}</div><small>${esc(why || "")}</small></li>`).join("")}</ul>` : `<p class="lead3">没有发现错误。</p>`}
     ${fb.fixed ? `<div class="kh3">改好的版本</div><div class="slip3 pad3 ${c}" style="white-space:pre-wrap">${esc(fb.fixed)}</div>` : ""}${fb.good ? `<p class="mut3">👍 ${esc(fb.good)}</p>` : ""}${fb.tip ? `<div class="tip3 soft"><b>下次注意</b>${esc(fb.tip)}</div>` : ""}`;
 }
+// 「读音不对」：记下来，周报里列出，下次重录
+const curVoice3 = () => curLang() === "ja" ? "gf_ja" : curVoice();
+function reportAudio(text) {
+  const st = PL.st; if (!st) return;
+  const list = (st.badAudio ||= []);
+  if (!list.some(x => x.t === text && x.l === curLang())) { list.push({ l: curLang(), t: text, at: today() }); if (list.length > 300) list.shift(); savePlanState(); }
+  toast("已记下，会在周报里列出，下次统一重录", 2600);
+}
+document.addEventListener("click", e => { const b = e.target.closest("[data-badaudio]"); if (b) { e.preventDefault(); e.stopPropagation(); reportAudio(b.dataset.badaudio); b.disabled = true; b.textContent = "已记下"; } }, true);
 function v2Render(el, l) {
   const V = v2State(l), lang = curLang(), c = cls3();
   if (V.i >= V.flow.length) V.i = V.flow.length - 1;
@@ -8788,6 +8800,7 @@ function v2Render(el, l) {
     body = `${head}<div class="slip3 wcard3"><div class="hw3 ${c}">${esc(info.w || s.w)}</div><div class="ipa3">${lang === "ja" && accentHTML(info.w || s.w, info.p) ? `<span class="jp">${accentHTML(info.w || s.w, info.p)}</span>` : esc(lang === "ja" ? hira(info.p || "") : lang === "es" ? (ES_GEN3[info.p] ?? info.p ?? "") : info.p || "")} ${playBtn(info.w || s.w)}</div>
       <div class="rule3"></div><ol class="sns3">${(info.s || []).slice(0, 3).map(([p, z]) => `<li><i>${esc(p || "")}</i> ${esc(z)}</li>`).join("")}</ol>
       ${x ? `<div class="ex3"><div class="${c}">${esc(x[0])} ${playBtn(x[0])}</div><small>${esc(x[1] || "")}</small></div>` : ""}
+      ${AudioBank.has(curVoice3(), info.w || s.w) ? `<button class="lnk3" data-badaudio="${esc(info.w || s.w)}">读音不对？</button>` : ""}
       ${s.hint ? `<div class="tip3 soft"><b>记忆提示</b>${s.hint}</div>` : info.n ? `<div class="tip3 soft"><b>注意</b>${esc(info.n)}</div>` : ""}</div>`;
   } else if (s.t === "recall") {
     V.rq ||= { ws: shuffle(s.ws), k: 0, wrong: [] };
@@ -8804,7 +8817,7 @@ function v2Render(el, l) {
     body = `${head}<h2 class="t2"><span class="kbadge">重点</span>${esc(k.title)}</h2>`;
     if (s.t === "k1") body += sec("是什么", k.what) + sec("为什么这样用", k.why);
     if (s.t === "k2") body += sec("和中文比一比", k.zh) + ((k.ex || []).length ? `<div class="kh3">例句 · 由易到难</div><div class="slip3 exs3">${k.ex.map(([t, zh], i) => `<div><div class="${c} big3"><span class="lvl3">${"①②③④⑤⑥⑦⑧"[i] || ""}</span>${t} ${playBtn(String(t).replace(/<[^>]+>/g, ""))}</div><small>${esc(zh)}</small></div>`).join("")}</div>` : "");
-    if (s.t === "k3") body += `<div class="kh3">中国学生最常犯的错</div><ul class="err3">${k.err.map(([w, r, why]) => `<li><div class="${c}"><s>${esc(w)}</s></div><div class="${c}">✓ ${esc(r)}</div>${why ? `<small>${why}</small>` : ""}</li>`).join("")}</ul>${k.sum ? `<div class="tip3"><b>一句话记住</b>${k.sum}</div>` : ""}`;
+    if (s.t === "k3") body += `<div class="kh3">中国学生最常犯的错</div><ul class="err3">${k.err.map(([w, r, why]) => `<li><div class="${c}"><s>${esc(w)}</s></div><div class="${c}">✓ ${esc(r)} ${playBtn(r)}</div>${why ? `<small>${why}</small>` : ""}</li>`).join("")}</ul>${k.sum ? `<div class="tip3"><b>一句话记住</b>${k.sum}</div>` : ""}`;
   } else if (s.t === "write") {
     const W = V.wr || {};
     body = `${head}<h2 class="t2">写一写</h2><p class="lead3">${s.prompt}</p>${s.hint ? `<p class="mut3">${s.hint}</p>` : ""}
@@ -8954,23 +8967,29 @@ async function appInstall() {
   if (r?.outcome === "accepted") toast("正在安装…");
 }
 // 离线：把全部词库、录音、内容包下载进本机缓存（约 70MB），没网也能用
+// 离线下载只下当前语言用得到的文件（三门语言的录音合计几百 MB）
+function offlineWanted(f, lang) {
+  const OWN = { en: /^(data\/|dict\/|audio\/gen_|curriculum\/en\/)/, es: /^(es\/|packs\/|audio\/ges_|curriculum\/es\/)/, ja: /^(ja\/|audio\/gja_|curriculum\/ja\/)/ };
+  if (Object.entries(OWN).some(([l, rx]) => l !== lang && rx.test(f))) return false;
+  return true;
+}
 async function appOffline(btn, note) {
   try {
     const files = APP.files ||= await fetch("files.json").then(r => r.json());
-    const list = Object.keys(files).filter(f => !/^(sw\.js|files\.json)$/.test(f));
+    const list = Object.keys(files).filter(f => !/^(sw\.js|files\.json)$/.test(f) && offlineWanted(f, curLang())), total = list.length;
     let done = 0, fail = 0; btn.disabled = true;
-    const work = async () => { while (list.length) { const f = list.shift(); try { const r = await fetch(f); if (!r.ok) fail++; await r.arrayBuffer(); } catch { fail++; } done++; if (done % 5 === 0) note.textContent = `下载中 ${done} / ${Object.keys(files).length - 2}`; } };
+    const work = async () => { while (list.length) { const f = list.shift(); try { const r = await fetch(f); if (!r.ok) fail++; await r.arrayBuffer(); } catch { fail++; } done++; if (done % 5 === 0) note.textContent = `下载中 ${done} / ${total}`; } };
     await Promise.all([work(), work(), work(), work()]);
-    note.textContent = fail ? `完成，${fail} 个文件没下载成功，可以再点一次` : "全部内容已存进手机，没网也能用";
-    try { if (!fail) localStorage.setItem("bt_offline", APP_BUILD); } catch { }
+    note.textContent = fail ? `完成，${fail} 个文件没下载成功，可以再点一次` : `${PLAN_NAME[curLang()]}的内容已存进手机，没网也能用`;
+    try { if (!fail) localStorage.setItem("bt_offline_" + curLang(), APP_BUILD); } catch { }
   } catch (e) { note.textContent = "下载失败，请联网后重试"; }
   btn.disabled = false;
 }
 function appSectionHTML() {
   if (!window.BABEL_APP) return "";
-  let off = ""; try { off = localStorage.getItem("bt_offline") || ""; } catch { }
+  let off = ""; try { off = localStorage.getItem("bt_offline_" + curLang()) || localStorage.getItem("bt_offline") || ""; } catch { }
   return `<div class="hr"></div><div><h3 style="margin:0 0 4px">App</h3><p class="faint" style="font-size:13px;margin:0">版本 ${esc(APP_BUILD)}${off ? (off === APP_BUILD ? "，已离线下载" : "，离线内容有更新") : ""}。打开时有网会自动更新。AI 解说和 AI 生成在 App 版里暂时没有。</p></div>
-    <div class="row">${isStandalone() ? "" : `<button class="btn sm" id="app-inst">安装到桌面</button>`}<button class="btn sm" id="app-off">离线下载全部内容</button><span class="faint" id="app-note" style="font-size:13px"></span></div>`;
+    <div class="row">${isStandalone() ? "" : `<button class="btn sm" id="app-inst">安装到桌面</button>`}<button class="btn sm" id="app-off">离线下载${PLAN_NAME[curLang()]}内容</button><span class="faint" id="app-note" style="font-size:13px"></span></div>`;
 }
 function bindAppSection(m) {
   $("#app-inst", m) && ($("#app-inst", m).onclick = appInstall);
