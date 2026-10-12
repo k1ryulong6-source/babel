@@ -6,44 +6,258 @@
   {
    "id": "en.1.5.1",
    "title": "一般现在时",
-   "words": [
-    "social",
-    "understand",
-    "whether",
-    "watch",
-    "together",
-    "follow",
-    "center",
-    "parent",
-    "stop",
-    "face",
-    "anything",
-    "create"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "ref": "b_present"
+     "t": "intro",
+     "title": "周末的习惯",
+     "lines": [
+      [
+       "A",
+       "What do you usually do on weekends?",
+       "你周末一般做什么？"
+      ],
+      [
+       "B",
+       "I often go shopping with my mother.",
+       "我常和妈妈去购物。"
+      ],
+      [
+       "B",
+       "My brother never gets up before ten!",
+       "我弟弟从来不在十点前起床！"
+      ],
+      [
+       "A",
+       "The shops open at nine, right?",
+       "商店九点开门，对吧？"
+      ]
+     ],
+     "note": "usually、often、never，还有 gets、open —— 说“经常、习惯、事实”用一般现在时。"
     },
     {
-     "title": "习惯、事实、时刻表",
-     "points": [
-      "用法：经常做的事（I walk to work）、客观事实（Water boils at 100°C）、时刻表（The train leaves at 8）。",
-      "第三人称单数加 -s：plays, works；加 -es：goes, does, watches；辅音 + y 变 ies：study → studies；have → has。",
-      "常见时间词：always, usually, often, sometimes, never, every day, on Mondays。",
-      "频率副词位置：放在实义动词前、be 动词后：She often eats out. / He is always late."
-     ],
-     "examples": [
-      [
-       "My father usually goes to work at eight.",
-       "我爸爸通常八点去上班。"
-      ]
-     ]
-    }
-   ],
-   "special": [
+     "t": "word",
+     "w": "social"
+    },
     {
+     "t": "word",
+     "w": "understand"
+    },
+    {
+     "t": "word",
+     "w": "whether"
+    },
+    {
+     "t": "word",
+     "w": "watch"
+    },
+    {
+     "t": "word",
+     "w": "together"
+    },
+    {
+     "t": "word",
+     "w": "follow"
+    },
+    {
+     "t": "key",
+     "title": "一般现在时用来说什么",
+     "what": [
+      "① <b>习惯、经常做的事</b>：I walk to work. She often goes shopping.",
+      "② <b>客观事实、真理</b>：Water boils at 100°C. The sun rises in the east.",
+      "③ <b>时刻表、日程</b>（即使是将来）：The train leaves at 8 tomorrow. The class starts at nine.",
+      "主语是三单时动词加 -s（上一单元讲过）：she works, it opens, he has。"
+     ],
+     "why": [
+      "一般现在时说的不是“现在这一刻”，而是“一直如此、反复发生”的事。所以它常和 always, usually, often, every day 一起出现。"
+     ],
+     "zh": [
+      "中文“我走路上班”“火车八点开”没有时态标记；英语要选时态。时刻表这一点最反直觉：说明天的火车也用现在时 —— 因为时刻表是固定的事实。",
+      "“现在这一刻正在做”不用一般现在时，用进行时（第 3 课）。"
+     ],
+     "ex": [
+      [
+       "I walk to work every day.",
+       "我每天走路上班。"
+      ],
+      [
+       "Water boils at 100 degrees.",
+       "水在 100 度沸腾。"
+      ],
+      [
+       "The train leaves at 7:30 tomorrow.",
+       "火车明天 7:30 开。"
+      ],
+      [
+       "She usually takes a shower at night.",
+       "她通常晚上洗澡。"
+      ]
+     ],
+     "err": [
+      [
+       "The train will leave at 7:30.（时刻表）",
+       "The train leaves at 7:30.",
+       "时刻表用一般现在时更自然"
+      ],
+      [
+       "She study English every day.",
+       "She studies English every day.",
+       "三单 -s"
+      ]
+     ],
+     "sum": "<b>习惯、事实、时刻表</b> → 一般现在时。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "She ___ English every day.",
+       "o": [
+        "study",
+        "studys",
+        "studies",
+        "studying"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "The train ___ at 7:30 tomorrow.",
+       "o": [
+        "leave",
+        "leaves",
+        "left",
+        "leaving"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "My brother ___ two cats.",
+       "o": [
+        "have",
+        "has",
+        "haves",
+        "having"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "我每天走路上班。",
+       "a": [
+        "I walk to work every day.",
+        "I go to work on foot every day.",
+        "Every day I walk to work."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "center"
+    },
+    {
+     "t": "word",
+     "w": "parent"
+    },
+    {
+     "t": "word",
+     "w": "stop"
+    },
+    {
+     "t": "word",
+     "w": "face"
+    },
+    {
+     "t": "word",
+     "w": "anything"
+    },
+    {
+     "t": "word",
+     "w": "create"
+    },
+    {
+     "t": "key",
+     "title": "频率副词放哪里：实义动词前、be 动词后",
+     "what": [
+      "always 总是 &gt; usually 通常 &gt; often 经常 &gt; sometimes 有时 &gt; rarely 很少 &gt; never 从不",
+      "放在<b>实义动词前</b>：She <b>often</b> eats out.",
+      "放在 <b>be 动词后</b>：He is <b>always</b> late.",
+      "有助动词时放在<b>助动词后</b>：I can <b>never</b> remember his name."
+     ],
+     "why": [
+      "频率副词修饰的是动作本身，所以贴着动词；be 动词没有“动作”，频率副词就放在它后面，紧挨着表语。"
+     ],
+     "zh": [
+      "中文“他总是迟到”“总是”在动词前；英语 be 动词句子要说 He is always late，不说 <s>He always is late</s>。"
+     ],
+     "ex": [
+      [
+       "I usually get up at seven.",
+       "我通常七点起床。"
+      ],
+      [
+       "He is never at home on Sundays.",
+       "他周日从不在家。"
+      ],
+      [
+       "We sometimes go out for dinner.",
+       "我们有时出去吃饭。"
+      ]
+     ],
+     "err": [
+      [
+       "He always is late.",
+       "He is always late.",
+       "be 动词后"
+      ],
+      [
+       "I go often shopping.",
+       "I often go shopping.",
+       "实义动词前"
+      ]
+     ],
+     "sum": "<b>实义动词前，be 动词后</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "频率副词的位置正确的是？",
+       "o": [
+        "He always is late.",
+        "He is always late.",
+        "Always he is late."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "She ___ coffee in the morning.",
+       "o": [
+        "drinks usually",
+        "usually drinks",
+        "usually drink",
+        "is usually drink"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "He often ___ (go) shopping on weekends.",
+       "a": [
+        "goes"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "他从来不吃早饭。",
+       "a": [
+        "He never eats breakfast.",
+        "He never has breakfast."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "on weekends",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -51,15 +265,15 @@
       ]
      ],
      "x": [
-      [
-       "I relax on weekends.",
-       "我周末放松。"
-      ]
-     ]
+      "I relax on weekends.",
+      "我周末放松。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "go shopping",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -67,15 +281,15 @@
       ]
      ],
      "x": [
-      [
-       "We go shopping on Sundays.",
-       "我们周日去购物。"
-      ]
-     ]
+      "We go shopping on Sundays.",
+      "我们周日去购物。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "take a shower",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -83,111 +297,303 @@
       ]
      ],
      "x": [
-      [
-       "I take a shower every night.",
-       "我每晚洗澡。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "She ___ English every day.",
-     "o": [
-      "study",
-      "studys",
-      "studies",
-      "studying"
+      "I take a shower every night.",
+      "我每晚洗澡。"
      ],
-     "a": 2
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "The train ___ at 7:30 tomorrow.",
-     "o": [
-      "leave",
-      "leaves",
-      "left",
-      "leaving"
-     ],
-     "a": 1,
-     "e": "时刻表用一般现在时。"
-    },
-    {
-     "t": "c",
-     "q": "频率副词的位置正确的是？",
-     "o": [
-      "He always is late.",
-      "He is always late.",
-      "Always he is late.",
-      "He is late always is."
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "My brother ___ two cats.",
-     "o": [
-      "have",
-      "has",
-      "haves",
-      "having"
-     ],
-     "a": 1
-    },
-    {
-     "t": "f",
-     "q": "He often ___ (go) shopping on weekends.",
-     "a": [
-      "goes"
-     ]
+     "t": "speak",
+     "text": "What do you usually do on weekends?",
+     "zh": "你周末一般做什么？",
+     "focus": "USUALLY 和 WEEKENDS 重读，do you 连读"
     },
     {
      "t": "o",
      "a": "I take a shower every night.",
      "zh": "我每晚洗澡。"
+    },
+    {
+     "t": "dict",
+     "a": "I take a shower every night."
+    },
+    {
+     "t": "tr",
+     "zh": "商店九点开门。",
+     "a": [
+      "The shop opens at nine.",
+      "The shops open at nine.",
+      "The store opens at nine.",
+      "The stores open at nine."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：一般现在时说习惯、事实、时刻表；三单加 -s。",
+      "<b>重点</b>：频率副词放实义动词前、be 动词后：I often go，he is always late。",
+      "on weekends 周末；go shopping 购物；take a shower 洗澡。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.5.2",
    "title": "do / does：问句与否定",
-   "words": [
-    "public",
-    "already",
-    "speak",
-    "read",
-    "level",
-    "allow",
-    "add",
-    "office",
-    "spend",
-    "door",
-    "health",
-    "person"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "借助助动词 do / does",
-     "points": [
-      "一般现在时的否定：主语 + don't / doesn't + 动词原形：I don't eat meat. She doesn't like coffee.",
-      "一般疑问句：Do / Does + 主语 + 动词原形？Does he work here? — Yes, he does. / No, he doesn't.",
-      "用了 does / doesn't，后面的动词就回到原形：She doesn't likes ✗ → She doesn't like ✓",
-      "be 动词的句子不用 do：Are you tired?（不是 Do you tired?）"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "你做什么工作？",
+     "lines": [
       [
-       "Does your sister live in Osaka? — No, she doesn't.",
-       "你妹妹住在大阪吗？——不是。"
+       "A",
+       "What do you do?",
+       "你是做什么的？"
+      ],
+      [
+       "B",
+       "I work in an office. I don't like it much.",
+       "我在办公室上班，不太喜欢。"
+      ],
+      [
+       "A",
+       "Does your wife work there too?",
+       "你妻子也在那儿工作吗？"
+      ],
+      [
+       "B",
+       "No, she doesn't. She's a teacher.",
+       "不，她是老师。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "don't、does、doesn't：一般现在时的否定和疑问要“请”助动词 do 帮忙。"
+    },
     {
+     "t": "word",
+     "w": "public"
+    },
+    {
+     "t": "word",
+     "w": "already"
+    },
+    {
+     "t": "word",
+     "w": "speak"
+    },
+    {
+     "t": "word",
+     "w": "read"
+    },
+    {
+     "t": "word",
+     "w": "level"
+    },
+    {
+     "t": "word",
+     "w": "allow"
+    },
+    {
+     "t": "key",
+     "title": "否定和疑问：借 do / does，动词回到原形",
+     "what": [
+      "否定：主语 + <b>don't / doesn't</b> + 动词<b>原形</b>：I don't eat meat. She doesn't like coffee.",
+      "疑问：<b>Do / Does</b> + 主语 + 动词<b>原形</b>？Does he work here? — Yes, he does. / No, he doesn't.",
+      "三单的 -s 已经“跑到” does 上了，后面的动词就<b>不再加 s</b>：She doesn't <b>like</b>（不是 likes）。"
+     ],
+     "why": [
+      "英语否定和疑问需要一个“助动词”来承担 not 和语序变化。实义动词自己不能直接加 not（<s>I like not</s>），所以借 do。时态和人称由 do / does 来标，主动词退回原形。"
+     ],
+     "zh": [
+      "中文否定加“不”、疑问加“吗”就行：“他不喜欢”“他喜欢吗”。英语要变结构：He <b>doesn't like</b>，<b>Does</b> he like…?"
+     ],
+     "ex": [
+      [
+       "I don't eat meat.",
+       "我不吃肉。"
+      ],
+      [
+       "She doesn't like coffee.",
+       "她不喜欢咖啡。"
+      ],
+      [
+       "Does he work here? — No, he doesn't.",
+       "他在这儿工作吗？——不。"
+      ],
+      [
+       "What do you do?",
+       "你是做什么工作的？"
+      ]
+     ],
+     "err": [
+      [
+       "She doesn't likes coffee.",
+       "She doesn't like coffee.",
+       "does 之后用原形"
+      ],
+      [
+       "He not work here.",
+       "He doesn't work here.",
+       "要借 doesn't"
+      ],
+      [
+       "Does she works here?",
+       "Does she work here?",
+       ""
+      ]
+     ],
+     "sum": "<b>do / does 一出现，主动词就回原形</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "He ___ like fish.",
+       "o": [
+        "don't",
+        "doesn't",
+        "isn't",
+        "not"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "She doesn't ___ TV.",
+       "o": [
+        "watches",
+        "watch",
+        "watching",
+        "watched"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "___ your parents live in Beijing?",
+       "o": [
+        "Do",
+        "Does",
+        "Are",
+        "Is"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "— Does he work here? — No, he ___.",
+       "a": [
+        "doesn't",
+        "does not"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "她不喜欢咖啡。",
+       "a": [
+        "She doesn't like coffee.",
+        "She does not like coffee."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "add"
+    },
+    {
+     "t": "word",
+     "w": "office"
+    },
+    {
+     "t": "word",
+     "w": "spend"
+    },
+    {
+     "t": "word",
+     "w": "door"
+    },
+    {
+     "t": "word",
+     "w": "health"
+    },
+    {
+     "t": "word",
+     "w": "person"
+    },
+    {
+     "t": "key",
+     "title": "be 动词的句子不用 do",
+     "what": [
+      "句子的谓语是 <b>be</b>（am / is / are）时，否定和疑问直接用 be：Are you tired? I'm not hungry.",
+      "谓语是<b>实义动词</b>时才用 do / does：Do you like it? I don't know."
+     ],
+     "why": [
+      "be 本身就能当“助动词”用（可以直接加 not、可以提前），所以不需要 do 帮忙。"
+     ],
+     "zh": [
+      "中国学生常把两套混在一起：<s>Do you tired?</s>（形容词前没有实义动词）、<s>Are you like music?</s>（like 是实义动词）。判断方法：句子里有没有实义动词。"
+     ],
+     "ex": [
+      [
+       "Are you hungry? — No, I'm not.",
+       "你饿吗？——不饿。"
+      ],
+      [
+       "Do you like music? — Yes, I do.",
+       "你喜欢音乐吗？——喜欢。"
+      ],
+      [
+       "She isn't at home. She doesn't feel well.",
+       "她不在家。她不太舒服。"
+      ]
+     ],
+     "err": [
+      [
+       "Do you tired?",
+       "Are you tired?",
+       "tired 是形容词，用 be"
+      ],
+      [
+       "Are you like music?",
+       "Do you like music?",
+       "like 是实义动词，用 do"
+      ]
+     ],
+     "sum": "<b>有实义动词用 do，没有就用 be</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ you hungry?",
+       "o": [
+        "Do",
+        "Does",
+        "Are",
+        "Is"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "___ she speak English?",
+       "o": [
+        "Is",
+        "Does",
+        "Do",
+        "Are"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "你累吗？",
+       "a": [
+        "Are you tired?"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "I don't think so.",
-     "t": "句型",
      "s": [
       [
        "",
@@ -195,15 +601,15 @@
       ]
      ],
      "x": [
-      [
-       "— Is it hard? — I don't think so.",
-       "——难吗？——我觉得不难。"
-      ]
-     ]
+      "— Is it hard? — I don't think so.",
+      "——难吗？——我觉得不难。"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "Do you know …?",
-     "t": "句型",
      "s": [
       [
        "",
@@ -211,15 +617,15 @@
       ]
      ],
      "x": [
-      [
-       "Do you know his name?",
-       "你知道他的名字吗？"
-      ]
-     ]
+      "Do you know his name?",
+      "你知道他的名字吗？"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "What do you do?",
-     "t": "句型",
      "s": [
       [
        "",
@@ -227,58 +633,17 @@
       ]
      ],
      "x": [
-      [
-       "What do you do? — I'm a nurse.",
-       "你做什么工作？——我是护士。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "He ___ like fish.",
-     "o": [
-      "don't",
-      "doesn't",
-      "isn't",
-      "not"
+      "What do you do? — I'm a nurse.",
+      "你做什么工作？——我是护士。"
      ],
-     "a": 1
+     "tt": "句型",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "___ your parents live in Beijing?",
-     "o": [
-      "Do",
-      "Does",
-      "Are",
-      "Is"
-     ],
-     "a": 0
-    },
-    {
-     "t": "c",
-     "q": "She doesn't ___ TV.",
-     "o": [
-      "watches",
-      "watch",
-      "watching",
-      "watched"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "___ you hungry?",
-     "o": [
-      "Do",
-      "Does",
-      "Are",
-      "Is"
-     ],
-     "a": 2,
-     "e": "hungry 是形容词，用 be。"
+     "t": "speak",
+     "text": "Does your wife work there too? No, she doesn't.",
+     "zh": "你妻子也在那儿工作吗？不。",
+     "focus": "问句句末上扬，doesn't 重读"
     },
     {
      "t": "c",
@@ -292,62 +657,277 @@
      "a": 1
     },
     {
-     "t": "f",
-     "q": "— Does he work here? — No, he ___.",
-     "a": [
-      "doesn't",
-      "does not"
-     ]
-    },
-    {
      "t": "o",
      "a": "Do you know his name?",
      "zh": "你知道他的名字吗？"
+    },
+    {
+     "t": "dict",
+     "a": "Do you know his name?"
+    },
+    {
+     "t": "tr",
+     "zh": "你是做什么工作的？",
+     "a": [
+      "What do you do?",
+      "What's your job?",
+      "What is your job?",
+      "What do you do for a living?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：否定 don't / doesn't + 原形；疑问 Do / Does + 主语 + 原形；简短回答 Yes, he does.",
+      "<b>重点</b>：be 动词句子不用 do：Are you tired? / Do you like it?",
+      "I don't think so. 我不这么认为；What do you do? 你做什么工作？"
+     ]
     }
    ]
   },
   {
    "id": "en.1.5.3",
    "title": "现在进行时",
-   "words": [
-    "art",
-    "sure",
-    "war",
-    "history",
-    "party",
-    "within",
-    "grow",
-    "result",
-    "open",
-    "morning",
-    "walk",
-    "reason"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "ref": "b_prog"
+     "t": "intro",
+     "title": "此刻在做什么",
+     "lines": [
+      [
+       "A",
+       "What are you doing?",
+       "你在做什么？"
+      ],
+      [
+       "B",
+       "I'm waiting for my friend. She's running late.",
+       "我在等朋友。她要迟到了。"
+      ],
+      [
+       "A",
+       "Who are you talking to on the phone?",
+       "你在跟谁打电话？"
+      ],
+      [
+       "B",
+       "My mom. She's cooking dinner at the moment.",
+       "我妈。她现在在做晚饭。"
+      ]
+     ],
+     "note": "am / is / are + -ing：说“此刻正在发生”的事。"
     },
     {
-     "title": "此刻正在做",
-     "points": [
-      "结构：am / is / are + 动词 -ing：I'm reading. They are playing.",
-      "-ing 变法：一般直接加（work → working）；去不发音的 e（make → making）；重读闭音节双写末尾辅音（run → running, sit → sitting）；ie → ying（lie → lying）。",
-      "时间词：now, right now, at the moment, Look! Listen!",
-      "也表示近期临时状态：I'm living with my parents this month.",
-      "状态动词一般不用进行时：know, like, want, need, believe, own。"
+     "t": "word",
+     "w": "art"
+    },
+    {
+     "t": "word",
+     "w": "sure"
+    },
+    {
+     "t": "word",
+     "w": "war"
+    },
+    {
+     "t": "word",
+     "w": "history"
+    },
+    {
+     "t": "word",
+     "w": "party"
+    },
+    {
+     "t": "word",
+     "w": "within"
+    },
+    {
+     "t": "key",
+     "title": "现在进行时 vs 一般现在时",
+     "what": [
+      "<b>现在进行时</b> am / is / are + -ing：<b>此刻正在</b>，或<b>这段时间暂时</b>如此 —— I'm reading now. I'm living with my parents this month.",
+      "<b>一般现在时</b>：<b>经常、长期</b>如此 —— I read every night. I live in Shanghai.",
+      "信号词：now, right now, at the moment, Look!, Listen! → 进行时；every day, usually, often → 一般现在时"
      ],
-     "examples": [
+     "why": [
+      "两种时态的区别是“临时”和“一贯”：I work in a bank（我的工作）/ I'm working in a bank this summer（这个暑假临时在银行干活）。"
+     ],
+     "zh": [
+      "中文用“在”“正在”表示进行（我在看书），但也常常不标；英语必须二选一。最常见的错误是说此刻的事却用一般现在时：<s>Look! He runs.</s>"
+     ],
+     "ex": [
       [
        "Look! It's raining.",
        "看！下雨了。"
+      ],
+      [
+       "It rains a lot here in June.",
+       "这里六月经常下雨。"
+      ],
+      [
+       "I'm staying at a hotel this week.",
+       "我这周住酒店。"
+      ],
+      [
+       "She usually walks, but today she's taking a taxi.",
+       "她平时走路，今天打车。"
       ]
+     ],
+     "err": [
+      [
+       "Listen! Someone knocks at the door.",
+       "Listen! Someone is knocking at the door.",
+       "此刻正在发生"
+      ],
+      [
+       "I am go to work every day.",
+       "I go to work every day.",
+       "习惯用一般现在时"
+      ]
+     ],
+     "sum": "<b>此刻、临时 → 进行时；经常、长期 → 一般现在时</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Listen! Someone ___ at the door.",
+       "o": [
+        "knock",
+        "knocks",
+        "is knocking",
+        "knocked"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "She usually ___ to work, but today she ___ a taxi.",
+       "o": [
+        "walks / is taking",
+        "is walking / takes",
+        "walk / take"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "run 的 -ing 形式是？",
+       "o": [
+        "runing",
+        "running",
+        "runnig"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "你在做什么？我在等我的朋友。",
+       "a": [
+        "What are you doing? I'm waiting for my friend.",
+        "What are you doing? I am waiting for my friend."
+       ]
+      }
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "grow"
+    },
+    {
+     "t": "word",
+     "w": "result"
+    },
+    {
+     "t": "word",
+     "w": "open"
+    },
+    {
+     "t": "word",
+     "w": "morning"
+    },
+    {
+     "t": "word",
+     "w": "walk"
+    },
+    {
+     "t": "word",
+     "w": "reason"
+    },
+    {
+     "t": "key",
+     "title": "状态动词一般不用进行时",
+     "what": [
+      "表示<b>状态、感觉、想法、拥有</b>的动词一般不用进行时：know, like, love, want, need, believe, understand, have（拥有）, belong",
+      "I <b>know</b> the answer.（不说 I'm knowing）　I <b>want</b> a coffee.（不说 I'm wanting）"
+     ],
+     "why": [
+      "进行时表示“正在进行、有开始有结束的动作”。知道、喜欢、需要是一种状态，本身没有“进行中”的过程。"
+     ],
+     "zh": [
+      "中文“我现在知道了”有“现在”，于是很多人说 <s>I'm knowing now</s>。",
+      "注意 have 表示“吃、喝、度过”时是动作，可以用进行时：I'm having lunch.（我在吃午饭）"
+     ],
+     "ex": [
+      [
+       "I know the answer now.",
+       "我现在知道答案了。"
+      ],
+      [
+       "I need some help.",
+       "我需要帮助。"
+      ],
+      [
+       "I'm having lunch with Tom.",
+       "我在和汤姆吃午饭。（have = 吃）"
+      ]
+     ],
+     "err": [
+      [
+       "I am knowing the answer.",
+       "I know the answer.",
+       ""
+      ],
+      [
+       "She is wanting a new phone.",
+       "She wants a new phone.",
+       ""
+      ]
+     ],
+     "sum": "know / like / want / need / believe：<b>不用 -ing</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "I ___ the answer now.",
+       "o": [
+        "know",
+        "am knowing",
+        "knowing",
+        "knows"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "哪句正确？",
+       "o": [
+        "I'm having a car.",
+        "I have a car.",
+        "I'm have a car."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "哪句正确？",
+       "o": [
+        "I'm having lunch now.",
+        "I have lunch now.（此刻）"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "at the moment",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -355,15 +935,15 @@
       ]
      ],
      "x": [
-      [
-       "He's busy at the moment.",
-       "他此刻很忙。"
-      ]
-     ]
+      "He's busy at the moment.",
+      "他此刻很忙。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "wait for",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -371,15 +951,15 @@
       ]
      ],
      "x": [
-      [
-       "I'm waiting for the bus.",
-       "我在等公交。"
-      ]
-     ]
+      "I'm waiting for the bus.",
+      "我在等公交。"
+     ],
+     "tt": "短语动词",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "talk to",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -387,58 +967,17 @@
       ]
      ],
      "x": [
-      [
-       "Who are you talking to?",
-       "你在跟谁说话？"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "Listen! Someone ___ at the door.",
-     "o": [
-      "knock",
-      "knocks",
-      "is knocking",
-      "knocked"
+      "Who are you talking to?",
+      "你在跟谁说话？"
      ],
-     "a": 2
+     "tt": "短语动词",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "run 的 -ing 形式是？",
-     "o": [
-      "runing",
-      "running",
-      "runnig",
-      "runeing"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "make 的 -ing 形式是？",
-     "o": [
-      "makeing",
-      "making",
-      "makking",
-      "maked"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "I ___ the answer now.",
-     "o": [
-      "know",
-      "am knowing",
-      "knowing",
-      "knows"
-     ],
-     "a": 0,
-     "e": "know 是状态动词。"
+     "t": "speak",
+     "text": "I'm waiting for my friend.",
+     "zh": "我在等朋友。",
+     "focus": "I'm 读得很轻，WAIT 重读"
     },
     {
      "t": "f",
@@ -451,48 +990,265 @@
      "t": "o",
      "a": "Who are you talking to?",
      "zh": "你在跟谁说话？"
+    },
+    {
+     "t": "dict",
+     "a": "Who are you talking to?"
+    },
+    {
+     "t": "tr",
+     "zh": "我妈妈正在做晚饭。",
+     "a": [
+      "My mother is cooking dinner.",
+      "My mom is cooking dinner.",
+      "My mother is making dinner.",
+      "My mom is making dinner."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "进行时 am / is / are + -ing；-ing 变法：make → making，run → running。",
+      "<b>重点</b>：此刻、临时用进行时，经常、长期用一般现在时。",
+      "<b>重点</b>：know / like / want / need 等状态动词不用进行时。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.5.4",
    "title": "There be：某处有某物",
-   "words": [
-    "low",
-    "win",
-    "research",
-    "girl",
-    "guy",
-    "early",
-    "food",
-    "himself",
-    "moment",
-    "air",
-    "teacher",
-    "force"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "There is / There are",
-     "points": [
-      "表示“某处有某物”：There is a park near my house. There are two banks on this street.",
-      "be 和后面<b>最近的名词</b>一致：There is a pen and two books. / There are two books and a pen.",
-      "否定：There isn't any milk. / There aren't any chairs.　疑问：Is there a station near here?",
-      "不要和 have 混用：“桌上有一本书”→ There is a book on the table.（不说 The table has a book）",
-      "过去：There was / There were；将来：There will be。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "附近有银行吗？",
+     "lines": [
       [
-       "Is there a convenience store near here?",
-       "这附近有便利店吗？"
+       "A",
+       "Excuse me, is there a bank near here?",
+       "打扰一下，附近有银行吗？"
+      ],
+      [
+       "B",
+       "Yes, there are two banks on this street.",
+       "有，这条街上有两家。"
+      ],
+      [
+       "B",
+       "There's a café next to the first one.",
+       "第一家旁边有家咖啡馆。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "“某处有某物”英语用 there is / there are，不用 have。"
+    },
     {
+     "t": "word",
+     "w": "low"
+    },
+    {
+     "t": "word",
+     "w": "win"
+    },
+    {
+     "t": "word",
+     "w": "research"
+    },
+    {
+     "t": "word",
+     "w": "girl"
+    },
+    {
+     "t": "word",
+     "w": "guy"
+    },
+    {
+     "t": "word",
+     "w": "early"
+    },
+    {
+     "t": "key",
+     "title": "“某处有某物”：There be，不是 have",
+     "what": [
+      "<b>There is</b> + 单数 / 不可数：There is a park near my house. There is some milk.",
+      "<b>There are</b> + 复数：There are two banks on this street.",
+      "<b>have</b> 表示“某人拥有”：I have a car. 不能用来说“某处有”。"
+     ],
+     "why": [
+      "There be 是“存在句”：先用 there 占住主语位置，把真正的新信息（有什么）放到后面。英语喜欢把新信息放在句尾。"
+     ],
+     "zh": [
+      "中文“桌上有一本书”“这附近有银行”用“有”，很多人就直译成 <s>The desk has a book</s>、<s>Here has a bank</s>。英语里“地点 + 有”一律用 there be。"
+     ],
+     "ex": [
+      [
+       "There is a book on the table.",
+       "桌上有一本书。"
+      ],
+      [
+       "There are lots of people in the park.",
+       "公园里有很多人。"
+      ],
+      [
+       "Is there a station near here?",
+       "这附近有车站吗？"
+      ],
+      [
+       "There isn't any milk in the fridge.",
+       "冰箱里没有牛奶了。"
+      ]
+     ],
+     "err": [
+      [
+       "The table has a book.",
+       "There is a book on the table.",
+       ""
+      ],
+      [
+       "Here has a bank.",
+       "There is a bank here.",
+       ""
+      ],
+      [
+       "Have a bank near here?",
+       "Is there a bank near here?",
+       ""
+      ]
+     ],
+     "sum": "<b>地点 + 有 → There is / There are</b>；人拥有 → have。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "“这附近有车站吗？”",
+       "o": [
+        "Has a station near here?",
+        "Is there a station near here?",
+        "Is a station near here?"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "There ___ a lot of people in the park.",
+       "o": [
+        "is",
+        "are",
+        "has",
+        "have"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "There ___ some water in the bottle.",
+       "o": [
+        "is",
+        "are",
+        "have",
+        "be"
+       ],
+       "a": 0,
+       "e": "water 不可数。"
+      },
+      {
+       "t": "tr",
+       "zh": "桌上有一本书。",
+       "a": [
+        "There is a book on the table.",
+        "There's a book on the table.",
+        "There is a book on the desk.",
+        "There's a book on the desk."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "food"
+    },
+    {
+     "t": "word",
+     "w": "himself"
+    },
+    {
+     "t": "word",
+     "w": "moment"
+    },
+    {
+     "t": "word",
+     "w": "air"
+    },
+    {
+     "t": "word",
+     "w": "teacher"
+    },
+    {
+     "t": "word",
+     "w": "force"
+    },
+    {
+     "t": "key",
+     "title": "There be 的就近原则、否定和疑问",
+     "what": [
+      "be 和<b>紧挨着的第一个名词</b>一致：There <b>is</b> a pen and two books. / There <b>are</b> two books and a pen.",
+      "否定：There isn't / aren't + any：There aren't any chairs.",
+      "疑问：Is / Are there …? — Yes, there is. / No, there aren't."
+     ],
+     "why": [
+      "说到 is 的时候，说话人脑子里只有下一个名词，所以 be 跟着它走。"
+     ],
+     "zh": [
+      "中国学生常按“总数”选 are：<s>There are a pen and two books.</s> 口语里母语者也会说 there's 加复数，但考试按就近原则。"
+     ],
+     "ex": [
+      [
+       "There is a pen and two books on the desk.",
+       "桌上有一支笔和两本书。"
+      ],
+      [
+       "Are there any questions? — No, there aren't.",
+       "有问题吗？——没有。"
+      ]
+     ],
+     "err": [
+      [
+       "There are a pen and two books.",
+       "There is a pen and two books.",
+       "就近原则"
+      ]
+     ],
+     "sum": "<b>be 看紧挨着的那个名词</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "There ___ a pen and two books on the desk.",
+       "o": [
+        "is",
+        "are"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "There ___ (not be) any chairs in the room.",
+       "a": [
+        "aren't",
+        "are not"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "这条街上有两家银行。",
+       "a": [
+        "There are two banks on this street.",
+        "There are two banks in this street.",
+        "There are two banks on the street."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "near here",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -500,15 +1256,15 @@
       ]
      ],
      "x": [
-      [
-       "Is there a bank near here?",
-       "这附近有银行吗？"
-      ]
-     ]
+      "Is there a bank near here?",
+      "这附近有银行吗？"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "next to",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -516,15 +1272,15 @@
       ]
      ],
      "x": [
-      [
-       "The café is next to the bank.",
-       "咖啡馆就在银行旁边。"
-      ]
-     ]
+      "The café is next to the bank.",
+      "咖啡馆就在银行旁边。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "on the left",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -532,114 +1288,289 @@
       ]
      ],
      "x": [
-      [
-       "It's on the left.",
-       "在左边。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "There ___ a lot of people in the park.",
-     "o": [
-      "is",
-      "are",
-      "has",
-      "have"
+      "It's on the left.",
+      "在左边。"
      ],
-     "a": 1
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "There ___ some water in the bottle.",
-     "o": [
-      "is",
-      "are",
-      "have",
-      "be"
-     ],
-     "a": 0,
-     "e": "water 不可数。"
-    },
-    {
-     "t": "c",
-     "q": "There ___ a pen and two books on the desk.",
-     "o": [
-      "is",
-      "are"
-     ],
-     "a": 0,
-     "e": "就近原则：a pen。"
-    },
-    {
-     "t": "c",
-     "q": "“这附近有车站吗？”",
-     "o": [
-      "Has a station near here?",
-      "Is there a station near here?",
-      "Is a station near here have?",
-      "There is a station near here?"
-     ],
-     "a": 1
-    },
-    {
-     "t": "f",
-     "q": "There ___ (not be) any chairs in the room.",
-     "a": [
-      "aren't",
-      "are not"
-     ]
+     "t": "speak",
+     "text": "Is there a bank near here?",
+     "zh": "附近有银行吗？",
+     "focus": "Is there 连读，句末上扬"
     },
     {
      "t": "o",
      "a": "The café is next to the bank.",
      "zh": "咖啡馆就在银行旁边。"
+    },
+    {
+     "t": "dict",
+     "a": "Excuse me, is there a bank near here?"
+    },
+    {
+     "t": "tr",
+     "zh": "咖啡馆在银行旁边。",
+     "a": [
+      "The café is next to the bank.",
+      "The cafe is next to the bank."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：地点 + 有 → There is / are，不用 have。",
+      "<b>重点</b>：就近原则 There is a pen and two books；否定 there aren't any；疑问 Is there …?",
+      "near here 附近；next to 在旁边；on the left 在左边。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.5.5",
    "title": "疑问词",
-   "words": [
-    "offer",
-    "enough",
-    "education",
-    "across",
-    "although",
-    "remember",
-    "foot",
-    "second",
-    "boy",
-    "maybe",
-    "able",
-    "age"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "ref": "b_question"
+     "t": "intro",
+     "title": "问一问",
+     "lines": [
+      [
+       "A",
+       "What time do you get up?",
+       "你几点起床？"
+      ],
+      [
+       "B",
+       "At six. How often do you go to the gym?",
+       "六点。你多久去一次健身房？"
+      ],
+      [
+       "A",
+       "Twice a week. How long does it take to get there?",
+       "一周两次。去那儿要多久？"
+      ],
+      [
+       "B",
+       "About twenty minutes.",
+       "大约二十分钟。"
+      ]
+     ],
+     "note": "what time、how often、how long：问句的“疑问词 + 一般疑问句语序”。"
     },
     {
-     "title": "特殊疑问句",
-     "points": [
-      "what 什么　who 谁　where 哪里　when 什么时候　why 为什么　how 怎样　which 哪个　whose 谁的",
-      "how 的组合：how many（多少，可数）、how much（多少/多少钱）、how long（多长时间）、how often（多久一次）、how old（几岁）、how far（多远）",
-      "结构：疑问词 + 一般疑问句语序：Where do you live? What is she doing?",
-      "问主语时直接用陈述语序：Who called you?（不是 Who did call you?）"
-     ],
-     "examples": [
-      [
-       "How often do you go to the gym? — Twice a week.",
-       "你多久去一次健身房？——一周两次。"
-      ]
-     ]
-    }
-   ],
-   "special": [
+     "t": "word",
+     "w": "offer"
+    },
     {
+     "t": "word",
+     "w": "enough"
+    },
+    {
+     "t": "word",
+     "w": "education"
+    },
+    {
+     "t": "word",
+     "w": "across"
+    },
+    {
+     "t": "word",
+     "w": "although"
+    },
+    {
+     "t": "word",
+     "w": "remember"
+    },
+    {
+     "t": "key",
+     "title": "疑问词 + 一般疑问句语序",
+     "what": [
+      "特殊疑问句 = <b>疑问词 + 一般疑问句</b>：",
+      "Where <b>do you</b> live?　What <b>is she</b> doing?　When <b>does the</b> class start?",
+      "<b>问主语</b>时例外，直接用陈述语序：<b>Who</b> called you?（不说 Who did call you?）　<b>What</b> happened?"
+     ],
+     "why": [
+      "先把“是不是”问句造出来（Do you live…?），再把疑问词放到最前面替换掉要问的部分。问主语时疑问词本身就是主语，不需要再倒装。"
+     ],
+     "zh": [
+      "中文疑问词放在原位：“你住<b>哪儿</b>？”英语要提到句首，还要倒装：<b>Where do you</b> live? 常见错误：<s>Where you live?</s>、<s>What you are doing?</s>"
+     ],
+     "ex": [
+      [
+       "Where do you live?",
+       "你住在哪儿？"
+      ],
+      [
+       "What time does the train leave?",
+       "火车几点开？"
+      ],
+      [
+       "Who broke the window?",
+       "谁打破了窗户？"
+      ],
+      [
+       "What happened?",
+       "发生了什么？"
+      ]
+     ],
+     "err": [
+      [
+       "Where you live?",
+       "Where do you live?",
+       "要加 do"
+      ],
+      [
+       "What you are doing?",
+       "What are you doing?",
+       "be 提前"
+      ],
+      [
+       "Who did call you?",
+       "Who called you?",
+       "问主语不倒装"
+      ]
+     ],
+     "sum": "<b>疑问词 + do / be + 主语</b>；问主语时直接说。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ broke the window?",
+       "o": [
+        "Who",
+        "Who did",
+        "Whom",
+        "Whose"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "正确的问句是？",
+       "o": [
+        "Where you live?",
+        "Where do you live?",
+        "Where you do live?"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "你住在哪儿？",
+       "a": [
+        "Where do you live?"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "火车几点开？",
+       "a": [
+        "What time does the train leave?",
+        "When does the train leave?"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "foot"
+    },
+    {
+     "t": "word",
+     "w": "second"
+    },
+    {
+     "t": "word",
+     "w": "boy"
+    },
+    {
+     "t": "word",
+     "w": "maybe"
+    },
+    {
+     "t": "word",
+     "w": "able"
+    },
+    {
+     "t": "word",
+     "w": "age"
+    },
+    {
+     "t": "key",
+     "title": "how 的组合：how many / much / long / often / far",
+     "what": [
+      "<b>how many</b> + 可数复数：多少个　<b>how much</b>：多少（不可数）/ 多少钱",
+      "<b>how long</b>：多长时间　<b>how often</b>：多久一次（回答 every day, twice a week）",
+      "<b>how far</b>：多远　<b>how old</b>：几岁"
+     ],
+     "why": [
+      "how + 形容词 / 副词 = “多……”。问“多久一次”和“多长时间”是两回事：How often（频率）/ How long（时长）。"
+     ],
+     "zh": [
+      "中文“多久”可以指频率也可以指时长（“多久去一次”“去多久”），英语要分开。"
+     ],
+     "ex": [
+      [
+       "How often do you play tennis? — Twice a week.",
+       "你多久打一次网球？——一周两次。"
+      ],
+      [
+       "How long does it take to get there? — About twenty minutes.",
+       "去那儿要多久？——大约二十分钟。"
+      ],
+      [
+       "How far is the station?",
+       "车站有多远？"
+      ]
+     ],
+     "err": [
+      [
+       "How long do you play tennis?（问频率）",
+       "How often do you play tennis?",
+       ""
+      ],
+      [
+       "How much people",
+       "How many people",
+       ""
+      ]
+     ],
+     "sum": "频率 how often，时长 how long。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ do you play tennis? — Twice a week.",
+       "o": [
+        "How long",
+        "How often",
+        "How many",
+        "How much"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "___ long does it take to get there?",
+       "a": [
+        "How"
+       ]
+      },
+      {
+       "t": "c",
+       "q": "___ do you go to work? — By train.",
+       "o": [
+        "What",
+        "How",
+        "Where",
+        "When"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "How often …?",
-     "t": "句型",
      "s": [
       [
        "",
@@ -647,15 +1578,15 @@
       ]
      ],
      "x": [
-      [
-       "How often do you cook?",
-       "你多久做一次饭？"
-      ]
-     ]
+      "How often do you cook?",
+      "你多久做一次饭？"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "How long does it take?",
-     "t": "句型",
      "s": [
       [
        "",
@@ -663,15 +1594,15 @@
       ]
      ],
      "x": [
-      [
-       "How long does it take to get there?",
-       "到那里要多久？"
-      ]
-     ]
+      "How long does it take to get there?",
+      "到那里要多久？"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "What time …?",
-     "t": "句型",
      "s": [
       [
        "",
@@ -679,24 +1610,17 @@
       ]
      ],
      "x": [
-      [
-       "What time is it?",
-       "几点了？"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "___ do you go to work? — By train.",
-     "o": [
-      "What",
-      "How",
-      "Where",
-      "When"
+      "What time is it?",
+      "几点了？"
      ],
-     "a": 1
+     "tt": "句型",
+     "sp": true
+    },
+    {
+     "t": "speak",
+     "text": "How long does it take to get there?",
+     "zh": "去那儿要多久？",
+     "focus": "HOW LONG 和 THERE 重读"
     },
     {
      "t": "c",
@@ -710,39 +1634,35 @@
      "a": 2
     },
     {
-     "t": "c",
-     "q": "___ do you play tennis? — Twice a week.",
-     "o": [
-      "How long",
-      "How often",
-      "How many",
-      "How much"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "___ broke the window?",
-     "o": [
-      "Who",
-      "Who did",
-      "Whom",
-      "Whose"
-     ],
-     "a": 0,
-     "e": "问主语用陈述语序。"
-    },
-    {
-     "t": "f",
-     "q": "___ long does it take to get there?",
-     "a": [
-      "How"
-     ]
-    },
-    {
      "t": "o",
      "a": "What time do you get up?",
      "zh": "你几点起床？"
+    },
+    {
+     "t": "dict",
+     "a": "What time do you get up?"
+    },
+    {
+     "t": "tr",
+     "zh": "你多久去一次健身房？",
+     "a": [
+      "How often do you go to the gym?"
+     ]
+    },
+    {
+     "t": "write",
+     "prompt": "写一段 4–5 句的英文自我介绍，说说你的日常：做什么工作、每天几点做什么、周末通常做什么、现在正在学什么。",
+     "hint": "检查清单：三单 -s？频率副词位置？否定用 don't / doesn't？此刻的事用进行时？",
+     "focus": "present simple vs continuous, do/does, frequency adverbs, there be, questions",
+     "model": "I work in an office in Hangzhou. I usually get up at seven and take the subway to work. I don't work on weekends. On Saturdays I often go shopping with my wife. At the moment I'm learning English, and I study for an hour every day."
+    },
+    {
+     "t": "sum",
+     "points": [
+      "what / who / where / when / why / how / which / whose。",
+      "<b>重点</b>：疑问词 + do / be + 主语 + 动词；问主语直接说：Who called you?",
+      "<b>重点</b>：how often 频率，how long 时长，how far 距离，how many / much 数量。"
+     ]
     }
    ]
   }
