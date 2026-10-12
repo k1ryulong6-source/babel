@@ -6,27 +6,39 @@
   {
    "id": "es.1.1.1",
    "title": "五个元音与音节",
-   "words": [
-    "hola",
-    "adiós",
-    "gracias",
-    "sí",
-    "no",
-    "casa",
-    "agua",
-    "día",
-    "noche"
-   ],
-   "grammar": [
+   "steps": [
     {
+     "t": "intro",
+     "title": "打招呼",
+     "lines": [
+      [
+       "A",
+       "¡Hola! ¿Qué tal?",
+       "你好！怎么样？"
+      ],
+      [
+       "B",
+       "Muy bien, gracias. ¿Y tú?",
+       "很好，谢谢。你呢？"
+      ],
+      [
+       "A",
+       "Bien. ¡Adiós, hasta mañana!",
+       "还好。再见，明天见！"
+      ]
+     ],
+     "note": "西语是“写什么读什么”的语言，只要五个元音读准，大部分单词看到就能读。"
+    },
+    {
+     "t": "teach",
      "title": "元音短而清楚，写什么读什么",
-     "points": [
+     "body": [
       "西语只有 5 个元音：a e i o u，永远读同一个音，<b>短促、不拖长、不变成双元音</b>。a 像“啊”，e 像“诶”（不滑），i 像“衣”，o 像“喔”（不读成“欧”），u 像“乌”。",
       "强元音 a e o，弱元音 i u。弱 + 强 / 强 + 弱 / 弱 + 弱 在同一个音节里构成<b>二重元音</b>：a-gua, gra-cias, bien, ciu-dad。",
       "两个强元音分开成两个音节：le-er, pa-se-o；带重音符号的弱元音也独立：dí-a, rí-o。",
       "音节一般以元音结尾：ca-sa, no-che, a-mi-go；两个辅音之间分开：tar-de, li-bro（bl, br, pl, pr, tr, cl, cr 等不拆）。"
      ],
-     "examples": [
+     "ex": [
       [
        "Hola, ¿qué tal?",
        "你好，怎么样？"
@@ -36,12 +48,137 @@
        "晚安。"
       ]
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "hola"
+    },
+    {
+     "t": "word",
+     "w": "adiós"
+    },
+    {
+     "t": "word",
+     "w": "gracias"
+    },
+    {
+     "t": "word",
+     "w": "sí"
+    },
+    {
+     "t": "word",
+     "w": "no"
+    },
+    {
+     "t": "word",
+     "w": "casa"
+    },
+    {
+     "t": "key",
+     "title": "五个元音：短、纯、不滑动",
+     "what": [
+      "西语只有 5 个元音 <b>a e i o u</b>，在任何位置都读同一个音：",
+      "a ≈ “啊”　e ≈ “诶”（嘴形不动）　i ≈ “衣”　o ≈ “喔”（嘴形不动）　u ≈ “乌”",
+      "每个元音<b>短促、清楚、口型从头到尾不变</b>；不重读的元音也照样读清楚，不弱化。"
+     ],
+     "why": [
+      "这和英语正好相反：英语的 o 常读成滑动的 /əʊ/（no → “闹”），不重读的元音变成含糊的 /ə/；西语里 no 就是干脆的“喏”，casa 的两个 a 一样清楚。",
+      "元音读准了，西语听起来就“干净”；元音一滑，就是“英语口音的西语”。"
+     ],
+     "zh": [
+      "中文“欧”“诶”在口语里常带滑动（“欧”其实是 ou）。读西语的 o 和 e 时，<b>口型摆好就别动</b>。"
+     ],
+     "ex": [
+      [
+       "casa — cosa",
+       "房子 — 东西"
+      ],
+      [
+       "no, noche, hola",
+       "o 不滑成“欧”"
+      ],
+      [
+       "¿Qué tal? — Muy bien.",
+       "怎么样？——很好。"
+      ],
+      [
+       "El agua está buena.",
+       "水很好。"
+      ]
+     ],
+     "err": [
+      [
+       "no 读成 /nəʊ/（像英语 know）",
+       "no：干脆的 /no/",
+       "o 不滑"
+      ],
+      [
+       "noche 的 e 读成含糊的 /ə/",
+       "noche：e 读清楚",
+       "不弱化"
+      ]
+     ],
+     "sum": "<b>五个元音短、纯、不滑</b>，不重读也读清楚。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "casa",
+        "cosa"
+       ],
+       "a": 0,
+       "say": "casa"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "sí",
+        "se"
+       ],
+       "a": 0,
+       "say": "sí"
+      },
+      {
+       "t": "c",
+       "q": "noche 的 o 应该读成？",
+       "o": [
+        "欧（滑音）",
+        "短促的“喔”",
+        "乌",
+        "啊"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "西语有几个元音？",
+       "o": [
+        "5",
+        "7",
+        "10",
+        "12"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "agua"
+    },
+    {
+     "t": "word",
+     "w": "día"
+    },
+    {
+     "t": "word",
+     "w": "noche"
+    },
+    {
+     "t": "word",
      "w": "¡Hola!",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -49,15 +186,15 @@
       ]
      ],
      "x": [
-      [
-       "¡Hola, Ana!",
-       "你好，安娜！"
-      ]
-     ]
+      "¡Hola, Ana!",
+      "你好，安娜！"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "Muchas gracias.",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -65,15 +202,15 @@
       ]
      ],
      "x": [
-      [
-       "Muchas gracias por todo.",
-       "谢谢你做的一切。"
-      ]
-     ]
+      "Muchas gracias por todo.",
+      "谢谢你做的一切。"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "Adiós.",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -81,24 +218,17 @@
       ]
      ],
      "x": [
-      [
-       "Adiós, hasta mañana.",
-       "再见，明天见。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "西语有几个元音？",
-     "o": [
-      "5",
-      "7",
-      "10",
-      "12"
+      "Adiós, hasta mañana.",
+      "再见，明天见。"
      ],
-     "a": 0
+     "tt": "常用表达",
+     "sp": true
+    },
+    {
+     "t": "speak",
+     "text": "Hola, ¿qué tal? Muy bien, gracias.",
+     "zh": "你好，怎么样？很好，谢谢。",
+     "focus": "每个元音都短而清楚"
     },
     {
      "t": "c",
@@ -125,38 +255,6 @@
     },
     {
      "t": "c",
-     "q": "noche 的 o 应该读成？",
-     "o": [
-      "欧（滑音）",
-      "短促的“喔”",
-      "乌",
-      "啊"
-     ],
-     "a": 1,
-     "e": "西语元音不滑动。"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "casa",
-      "cosa"
-     ],
-     "a": 0,
-     "say": "casa"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "sí",
-      "se"
-     ],
-     "a": 0,
-     "say": "sí"
-    },
-    {
-     "t": "c",
      "q": "leer 怎么分音节？",
      "o": [
       "leer",
@@ -178,44 +276,259 @@
      "t": "o",
      "a": "Hola, ¿qué tal?",
      "zh": "你好，怎么样？"
+    },
+    {
+     "t": "dict",
+     "a": "Hola, ¿qué tal?"
+    },
+    {
+     "t": "tr",
+     "zh": "非常感谢。",
+     "a": [
+      "Muchas gracias."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：a e i o u 永远读同一个音，短、纯、不滑动，不重读也读清楚。",
+      "强元音 a e o，弱元音 i u；弱 + 强组成二重元音（a-gua），两个强元音分开（le-er）。",
+      "¡Hola! · Muchas gracias. · Adiós."
+     ]
     }
    ]
   },
   {
    "id": "es.1.1.2",
    "title": "重音规则与重音符号",
-   "words": [
-    "café",
-    "teléfono",
-    "árbol",
-    "médico",
-    "música",
-    "película",
-    "fácil",
-    "difícil",
-    "número"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "看拼写就知道重音在哪",
-     "points": [
-      "规则 1：以<b>元音、n 或 s</b> 结尾的词，重音在<b>倒数第二个音节</b>：CA-sa, HA-blan, LU-nes。",
-      "规则 2：以 n、s 以外的<b>辅音</b>结尾的词，重音在<b>最后一个音节</b>：ha-BLAR, ciu-DAD, es-pa-ÑOL。",
-      "不符合这两条规则的词，必须写<b>重音符号</b>标出重音：ca-FÉ, ÁR-bol, TE-LÉ-fo-no → te-LÉ-fo-no, MÚ-si-ca。",
-      "重音符号还能区分同形词：sí（是）/ si（如果）；tú（你）/ tu（你的）；él（他）/ el（定冠词）；qué / que。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "请再说一遍",
+     "lines": [
       [
-       "El médico toma café.",
-       "医生在喝咖啡。"
+       "A",
+       "¿Cómo se dice \"phone\" en español?",
+       "“phone”用西语怎么说？"
+      ],
+      [
+       "B",
+       "Teléfono.",
+       "teléfono。"
+      ],
+      [
+       "A",
+       "Otra vez, por favor.",
+       "请再说一遍。"
+      ],
+      [
+       "B",
+       "Te-lé-fo-no.",
+       "te-lé-fo-no。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "西语重音有规则：看拼写就知道重音在哪；不符合规则的，就写重音符号。"
+    },
     {
+     "t": "word",
+     "w": "café"
+    },
+    {
+     "t": "word",
+     "w": "teléfono"
+    },
+    {
+     "t": "word",
+     "w": "árbol"
+    },
+    {
+     "t": "word",
+     "w": "médico"
+    },
+    {
+     "t": "word",
+     "w": "música"
+    },
+    {
+     "t": "word",
+     "w": "película"
+    },
+    {
+     "t": "key",
+     "title": "重音规则：两条规则 + 重音符号",
+     "what": [
+      "<b>规则 1</b>：以<b>元音、n、s</b> 结尾 → 重音在<b>倒数第二个</b>音节：CA-sa，HA-blan，LU-nes",
+      "<b>规则 2</b>：以 n、s 以外的<b>辅音</b>结尾 → 重音在<b>最后一个</b>音节：ha-BLAR，ciu-DAD，es-pa-ÑOL",
+      "<b>不符合规则</b>的词，必须写<b>重音符号</b>：ca-FÉ，ÁR-bol，te-LÉ-fo-no，MÚ-si-ca"
+     ],
+     "why": [
+      "重音符号就是“例外标记”：看到它就重读那个音节；看不到就按两条规则。所以西语单词的重音一看就知道，不用像英语那样一个个记。",
+      "重音位置能改变意思：papa（土豆）/ papá（爸爸）；hablo（我说）/ habló（他说了）。"
+     ],
+     "zh": [
+      "中文靠声调区分字，西语靠重音位置区分词。中国学生常把重音平均分配，或把每个词都重读在第一个音节。"
+     ],
+     "ex": [
+      [
+       "CA-sa · ha-BLAR · ca-FÉ",
+       "规则 1 · 规则 2 · 例外"
+      ],
+      [
+       "papa — papá",
+       "土豆 — 爸爸"
+      ],
+      [
+       "La música es fácil.",
+       "音乐很简单。"
+      ],
+      [
+       "Mi número de teléfono.",
+       "我的电话号码。"
+      ]
+     ],
+     "err": [
+      [
+       "TE-le-fo-no",
+       "te-LÉ-fo-no",
+       "看重音符号"
+      ],
+      [
+       "ha-BLAN",
+       "HA-blan",
+       "n 结尾，倒数第二音节"
+      ]
+     ],
+     "sum": "<b>元音 / n / s 结尾 → 倒数第二；其他辅音结尾 → 最后；有符号 → 听符号的</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "hablan 的重音在？",
+       "o": [
+        "HA-blan",
+        "ha-BLAN"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "ciudad 的重音在？",
+       "o": [
+        "CIU-dad",
+        "ciu-DAD"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "哪个词的重音符号是必需的？",
+       "o": [
+        "casa",
+        "café",
+        "comer",
+        "lunes"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "papa",
+        "papá"
+       ],
+       "a": 1,
+       "say": "papá"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出重音正确的读法。",
+       "o": [
+        "TE-le-fo-no",
+        "te-LÉ-fo-no"
+       ],
+       "a": 1,
+       "say": "teléfono"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "fácil"
+    },
+    {
+     "t": "word",
+     "w": "difícil"
+    },
+    {
+     "t": "word",
+     "w": "número"
+    },
+    {
+     "t": "key",
+     "title": "重音符号区分同形词",
+     "what": [
+      "有些词只靠重音符号区分意思：",
+      "<b>sí</b> 是 / <b>si</b> 如果　<b>tú</b> 你 / <b>tu</b> 你的　<b>él</b> 他 / <b>el</b> 定冠词",
+      "<b>qué, cómo, dónde, cuándo</b>（疑问词）/ que, como, donde, cuando（连词）"
+     ],
+     "why": [
+      "写的时候漏掉重音符号，意思就变了：Tu hablas 是错的，Tú hablas 才是“你说”。"
+     ],
+     "zh": [
+      "中文没有这种标记，中国学生最常漏写，尤其是疑问词：<s>¿Como estás?</s>"
+     ],
+     "ex": [
+      [
+       "Sí, si quieres.",
+       "好啊，如果你想的话。"
+      ],
+      [
+       "Tú y tu hermano.",
+       "你和你的兄弟。"
+      ],
+      [
+       "¿Qué es esto?",
+       "这是什么？"
+      ]
+     ],
+     "err": [
+      [
+       "¿Como estas?",
+       "¿Cómo estás?",
+       "疑问词和 estás 都要符号"
+      ]
+     ],
+     "sum": "<b>疑问词一律带符号</b>；sí / si、tú / tu、él / el 靠符号区分。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "tu 和 tú 的区别？",
+       "o": [
+        "没有区别",
+        "tu 你的 / tú 你",
+        "tu 你 / tú 你的"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "¿Cómo se ___ \"book\" en español? — Libro.",
+       "a": [
+        "dice"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "用西语怎么说？",
+       "a": [
+        "¿Cómo se dice en español?"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "¿Cómo se dice … en español?",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -223,15 +536,15 @@
       ]
      ],
      "x": [
-      [
-       "¿Cómo se dice \"手机\" en español?",
-       "“手机”用西语怎么说？"
-      ]
-     ]
+      "¿Cómo se dice \"手机\" en español?",
+      "“手机”用西语怎么说？"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "¿Qué significa …?",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -239,138 +552,265 @@
       ]
      ],
      "x": [
-      [
-       "¿Qué significa \"árbol\"?",
-       "árbol 是什么意思？"
-      ]
-     ]
+      "¿Qué significa \"árbol\"?",
+      "árbol 是什么意思？"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "Otra vez, por favor.",
-     "t": "常用表达",
      "s": [
       [
        "",
        "请再说一遍。"
       ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "hablan 的重音在？",
-     "o": [
-      "HA-blan",
-      "ha-BLAN"
      ],
-     "a": 0,
-     "e": "以 n 结尾，重音在倒数第二音节。"
+     "tt": "常用表达",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "ciudad 的重音在？",
-     "o": [
-      "CIU-dad",
-      "ciu-DAD"
-     ],
-     "a": 1,
-     "e": "以 d 结尾，重音在最后。"
-    },
-    {
-     "t": "c",
-     "q": "哪个词的重音符号是必需的？",
-     "o": [
-      "casa",
-      "café",
-      "comer",
-      "lunes"
-     ],
-     "a": 1,
-     "e": "café 以元音结尾，按规则应重读 ca，实际重读 fé，所以要标。"
-    },
-    {
-     "t": "c",
-     "q": "tu 和 tú 的区别？",
-     "o": [
-      "没有区别",
-      "tu 你的 / tú 你",
-      "tu 你 / tú 你的",
-      "tú 是复数"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "听音，选出重音正确的读法。",
-     "o": [
-      "TE-le-fo-no",
-      "te-LÉ-fo-no"
-     ],
-     "a": 1,
-     "say": "teléfono"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "papa",
-      "papá"
-     ],
-     "a": 1,
-     "say": "papá",
-     "e": "papá 爸爸（重音在后）；papa 土豆。"
-    },
-    {
-     "t": "f",
-     "q": "¿Cómo se ___ \"book\" en español? — Libro.",
-     "a": [
-      "dice"
-     ]
+     "t": "speak",
+     "text": "¿Cómo se dice teléfono en español?",
+     "zh": "teléfono 用西语怎么说？",
+     "focus": "te-LÉ-fo-no，es-pa-ÑOL"
     },
     {
      "t": "o",
      "a": "Otra vez, por favor.",
      "zh": "请再说一遍。"
+    },
+    {
+     "t": "dict",
+     "a": "Otra vez, por favor."
+    },
+    {
+     "t": "tr",
+     "zh": "这是什么意思？",
+     "a": [
+      "¿Qué significa esto?",
+      "¿Qué quiere decir esto?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：元音 / n / s 结尾重读倒数第二音节；其他辅音结尾重读最后；不合规则写重音符号。",
+      "<b>重点</b>：sí / si、tú / tu、él / el；疑问词一律带重音符号。",
+      "¿Cómo se dice …? · ¿Qué significa …? · Otra vez, por favor."
+     ]
     }
    ]
   },
   {
    "id": "es.1.1.3",
    "title": "r 与 rr",
-   "words": [
-    "arroz",
-    "perro",
-    "pero",
-    "río",
-    "rojo",
-    "correr",
-    "ropa",
-    "carta",
-    "tren"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "单击与颤音",
-     "points": [
-      "单个 r 在词中：舌尖轻轻<b>弹一下</b>上齿龈（单击音），像快速说英语 butter 中间的 t：pe-ro, ca-ra。",
-      "rr 以及<b>词首的 r</b>、n/l/s 后的 r：舌尖<b>连续颤动</b>（大舌音）：pe-rro, ro-jo, rí-o, hon-ra。",
-      "pero（但是）≠ perro（狗）；caro（贵）≠ carro（车）—— 意思完全不同。",
-      "练习大舌音：先说“得了得了”加快，或把舌尖放松在上齿龈后吹气；练不出来时先用单击音代替，别读成英语的 r。",
-      "l 是清楚的“了”的声母，词尾也不变暗：sol, papel。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "狗吃米饭",
+     "lines": [
       [
+       "",
        "El perro come arroz.",
        "狗吃米饭。"
+      ],
+      [
+       "",
+       "Pero el gato no.",
+       "但猫不吃。"
+      ],
+      [
+       "",
+       "¡Qué rico!",
+       "真好吃！"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "perro 和 pero、arroz 和 caro：r 和 rr 是两个不同的音，读错就是另一个词。"
+    },
     {
+     "t": "teach",
+     "title": "l 和 r 也要分清",
+     "body": [
+      "<b>l</b>：舌尖<b>顶住</b>上齿龈不动，气从两边出 —— lago, pelo。",
+      "<b>r</b>：舌尖<b>弹一下就离开</b> —— raro, pero。",
+      "pelo（头发）≠ pero（但是）。"
+     ],
+     "ex": [
+      [
+       "pelo — pero",
+       "头发 — 但是"
+      ]
+     ],
+     "check": {
+      "t": "c",
+      "q": "听音，选出听到的词。",
+      "o": [
+       "pelo",
+       "pero"
+      ],
+      "a": 0,
+      "say": "pelo"
+     }
+    },
+    {
+     "t": "word",
+     "w": "arroz"
+    },
+    {
+     "t": "word",
+     "w": "perro"
+    },
+    {
+     "t": "word",
+     "w": "pero"
+    },
+    {
+     "t": "word",
+     "w": "río"
+    },
+    {
+     "t": "word",
+     "w": "rojo"
+    },
+    {
+     "t": "word",
+     "w": "correr"
+    },
+    {
+     "t": "key",
+     "title": "r（单击）和 rr（颤音）：pero 不是 perro",
+     "what": [
+      "<b>单击 r</b>（两个元音之间、辅音后的单个 r）：舌尖向上<b>轻弹一下</b>上齿龈，只碰一次 —— pe<b>r</b>o，ca<b>r</b>a，pa<b>r</b>a。",
+      "<b>颤音 rr</b>（写成 rr、<b>词首</b>的 r、<b>n / l / s 后</b>的 r）：舌尖放松，被气流吹得<b>连续颤动</b> 3–5 次 —— pe<b>rr</b>o，<b>r</b>ojo，<b>r</b>ío，hon<b>r</b>a。",
+      "两者区别<b>就在颤几下</b>：一下 vs 好几下。"
+     ],
+     "why": [
+      "西语里大量词只靠这一点区分：pero 但是 / perro 狗，caro 贵 / carro 车，coro 合唱 / corro 我跑。",
+      "单击 r 其实很容易：美式英语 butter、water 中间那个轻快的 t（“巴的”的“的”）就是它。颤音才需要专门练。"
+     ],
+     "zh": [
+      "中文和英语都没有颤音，所以中国学生常把 rr 读成单击 r，或者读成英语卷舌的 r（舌头往后卷），两种都不对。",
+      "<b>练颤音</b>：① 舌尖放在上齿龈后，很放松；② 快速说“得了得了得了”，越来越快；③ 或者先发“t-r”“d-r”（tres, dra）借力；④ 每天练几分钟，一般两三周能颤起来。颤不出来时，先用清楚的单击 r 代替，<b>不要</b>用英语的卷舌 r。"
+     ],
+     "ex": [
+      [
+       "pero — perro",
+       "但是 — 狗"
+      ],
+      [
+       "caro — carro",
+       "贵 — 车"
+      ],
+      [
+       "El perro corre por la calle.",
+       "狗在街上跑。"
+      ],
+      [
+       "Roberto come arroz rojo.",
+       "罗伯托吃红米饭。（词首 r 也颤）"
+      ]
+     ],
+     "err": [
+      [
+       "perro 读成 pero",
+       "perro：舌尖连续颤",
+       "意思变成“但是”"
+      ],
+      [
+       "rojo 用英语卷舌 r",
+       "rojo：词首 r 颤音",
+       "舌头不要往后卷"
+      ],
+      [
+       "pero 读成颤音",
+       "pero：只弹一下",
+       ""
+      ]
+     ],
+     "sum": "<b>r 弹一下，rr 和词首 r 颤好几下</b>；颤不出来先用清楚的单击音，别卷舌。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "pero",
+        "perro"
+       ],
+       "a": 1,
+       "say": "perro",
+       "e": "rr 要颤音。"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "pero",
+        "perro"
+       ],
+       "a": 0,
+       "say": "pero",
+       "e": "单击，只弹一下。"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "caro",
+        "carro"
+       ],
+       "a": 0,
+       "say": "caro"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "caro",
+        "carro"
+       ],
+       "a": 1,
+       "say": "carro"
+      },
+      {
+       "t": "c",
+       "q": "rojo 开头的 r 读？",
+       "o": [
+        "单击",
+        "颤音"
+       ],
+       "a": 1,
+       "e": "词首的 r 读颤音。"
+      },
+      {
+       "t": "c",
+       "q": "哪个词里的 r 读颤音？",
+       "o": [
+        "cara",
+        "pero",
+        "río",
+        "para"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "ropa"
+    },
+    {
+     "t": "word",
+     "w": "carta"
+    },
+    {
+     "t": "word",
+     "w": "tren"
+    },
+    {
+     "t": "word",
      "w": "¡Qué rico!",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -378,64 +818,41 @@
       ]
      ],
      "x": [
-      [
-       "Este arroz está muy rico. ¡Qué rico!",
-       "这米饭很好吃。真好吃！"
-      ]
-     ]
+      "Este arroz está muy rico. ¡Qué rico!",
+      "这米饭很好吃。真好吃！"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "Un momento.",
-     "t": "常用表达",
      "s": [
       [
        "",
        "稍等一下。"
       ]
-     ]
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "No pasa nada.",
-     "t": "常用表达",
      "s": [
       [
        "",
        "没关系。"
       ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "pero",
-      "perro"
      ],
-     "a": 1,
-     "say": "perro",
-     "e": "rr 要颤音。"
+     "tt": "常用表达",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "caro",
-      "carro"
-     ],
-     "a": 0,
-     "say": "caro"
-    },
-    {
-     "t": "c",
-     "q": "rojo 开头的 r 读？",
-     "o": [
-      "单击",
-      "颤音"
-     ],
-     "a": 1,
-     "e": "词首的 r 读颤音。"
+     "t": "speak",
+     "text": "El perro de Roberto corre rápido.",
+     "zh": "罗伯托的狗跑得很快。",
+     "focus": "perro、Roberto、corre、rápido 全是颤音"
     },
     {
      "t": "c",
@@ -449,17 +866,6 @@
      "a": 1
     },
     {
-     "t": "c",
-     "q": "哪个词里的 r 读颤音？",
-     "o": [
-      "cara",
-      "pero",
-      "río",
-      "para"
-     ],
-     "a": 2
-    },
-    {
      "t": "f",
      "q": "No pasa ___. (没关系)",
      "a": [
@@ -467,59 +873,279 @@
      ]
     },
     {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "corro",
-      "coro"
-     ],
-     "a": 0,
-     "say": "corro"
-    },
-    {
      "t": "o",
      "a": "El perro come arroz.",
      "zh": "狗吃米饭。"
+    },
+    {
+     "t": "dict",
+     "a": "El perro come arroz."
+    },
+    {
+     "t": "tr",
+     "zh": "没关系。",
+     "a": [
+      "No pasa nada.",
+      "No importa."
+     ]
+    },
+    {
+     "t": "tr",
+     "zh": "这辆车很贵。",
+     "a": [
+      "El coche es caro.",
+      "El carro es caro.",
+      "Este coche es caro.",
+      "Este carro es caro."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：单个 r 弹一下（pero），rr、词首 r、n/l/s 后的 r 连续颤（perro, rojo, honra）。",
+      "pero 但是 ≠ perro 狗；caro 贵 ≠ carro 车。",
+      "颤音练不出来先用清楚的单击音，不要用英语的卷舌 r。"
+     ]
     }
    ]
   },
   {
    "id": "es.1.1.4",
    "title": "c/z、g/j、h、ll/y、ñ、qu/gu",
-   "words": [
-    "zumo",
-    "jamón",
-    "llave",
-    "mañana",
-    "queso",
-    "cerveza",
-    "ojo",
-    "cuchara",
-    "cuchillo"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "几个要记的拼读规则",
-     "points": [
-      "<b>c</b>：在 a o u 前读 /k/（casa, como）；在 e i 前读 /θ/（西班牙，咬舌）或 /s/（拉美）：cena, cine。<b>z</b> 永远读 /θ/ 或 /s/：zumo, plaza。",
-      "<b>g</b>：在 a o u 前读 /g/（gato）；在 e i 前读 /x/，同 j（gente, gigante）。要读 /g/ 就写 gue, gui（guitarra），u 不发音；güe, güi 的 u 发音（pingüino）。",
-      "<b>j</b>：喉部摩擦音 /x/，像用力的“喝”：jamón, hijo, rojo。",
-      "<b>h</b>：永远不发音：hola, hora, hijo。",
-      "<b>ll / y</b>：多数地区都读成“耶”的辅音：calle, llave, yo。<b>ñ</b>：像“扭”的声母：mañana, España。",
-      "<b>qu</b>：读 /k/，u 不发音：queso, quién。<b>v</b> 和 b 读音相同。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "明天见",
+     "lines": [
       [
-       "Hoy hay queso y jamón.",
-       "今天有奶酪和火腿。"
+       "A",
+       "¿Qué hora es?",
+       "几点了？"
+      ],
+      [
+       "B",
+       "Son las diez. Hasta mañana.",
+       "十点了。明天见。"
+      ],
+      [
+       "A",
+       "¡Qué bien! Mañana hay jamón y queso.",
+       "太好了！明天有火腿和奶酪。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "jamón、mañana、queso、cerveza、llave：几个字母的读法和英语、拼音都不一样。"
+    },
     {
+     "t": "word",
+     "w": "zumo"
+    },
+    {
+     "t": "word",
+     "w": "jamón"
+    },
+    {
+     "t": "word",
+     "w": "llave"
+    },
+    {
+     "t": "word",
+     "w": "mañana"
+    },
+    {
+     "t": "word",
+     "w": "queso"
+    },
+    {
+     "t": "word",
+     "w": "cerveza"
+    },
+    {
+     "t": "key",
+     "title": "c / z、g / j、qu / gu：看后面的元音",
+     "what": [
+      "<b>c</b>：在 a o u 前读 /k/（casa, como）；在 <b>e i</b> 前读咬舌的 /θ/（西班牙）或 /s/（拉美）：cena, cine",
+      "<b>z</b> 永远读 /θ/ 或 /s/：zumo, cerveza",
+      "<b>g</b>：在 a o u 前读 /g/（gato）；在 <b>e i</b> 前读喉音 /x/，和 j 一样：gente, girar",
+      "<b>j</b> 永远读 /x/：jamón, ojo —— 像用力哈气的“赫”",
+      "要在 e i 前读 /k/、/g/，就写 <b>que, qui, gue, gui</b>（u 不读）：queso, guitarra"
+     ],
+     "why": [
+      "西语拼写是一套“自动规则”：同一个字母在 e、i 前面会变软。记住“e、i 前变”，c 和 g 就都会读了。"
+     ],
+     "zh": [
+      "中国学生容易按拼音读：j 读成“几”、z 读成“兹”、qu 读成“去”。西语 j 是喉音（hijo 像“伊和”），z 是咬舌音（西班牙），qu 就是 /k/。"
+     ],
+     "ex": [
+      [
+       "casa, cena, cine",
+       "/k/ · /θ/ · /θ/"
+      ],
+      [
+       "gato, gente, jamón",
+       "/g/ · /x/ · /x/"
+      ],
+      [
+       "queso, guitarra",
+       "u 不读"
+      ],
+      [
+       "Una cerveza y un zumo, por favor.",
+       "一杯啤酒和一杯果汁，谢谢。"
+      ]
+     ],
+     "err": [
+      [
+       "jamón 读成“佳萌”",
+       "jamón：j 是喉音“哈”",
+       ""
+      ],
+      [
+       "queso 读成“去索”",
+       "queso /ˈkeso/",
+       "u 不读"
+      ],
+      [
+       "gente 读成 /ˈgente/",
+       "gente /ˈxente/",
+       "g 在 e 前读喉音"
+      ]
+     ],
+     "sum": "<b>c、g 在 e、i 前变软</b>；j 永远喉音；que / qui / gue / gui 的 u 不读。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "gente 的 g 读？",
+       "o": [
+        "/g/",
+        "/x/（同 j）",
+        "不读",
+        "/dʒ/"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "queso 的 u 读不读？",
+       "o": [
+        "读",
+        "不读"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "cine 的 c 在西班牙读？",
+       "o": [
+        "/k/",
+        "/θ/（咬舌）",
+        "/tʃ/",
+        "/ʃ/"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "哪个词的 g 读 /g/？",
+       "o": [
+        "gente",
+        "girar",
+        "guitarra",
+        "general"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "ojo"
+    },
+    {
+     "t": "word",
+     "w": "cuchara"
+    },
+    {
+     "t": "word",
+     "w": "cuchillo"
+    },
+    {
+     "t": "key",
+     "title": "h 不读；ll / y；ñ",
+     "what": [
+      "<b>h</b> 永远不发音：hola, hijo, hora",
+      "<b>ll</b> 和 <b>y</b>（在元音前）多数地区读同一个音，像“呀”的开头 /ʝ/：llave, calle, yo；阿根廷读得像“沙”",
+      "<b>ñ</b> 像“妞”的声母 /ɲ/：mañana, España, niño"
+     ],
+     "why": [
+      "h 在古西语里就已经不读了，只在拼写里留下来。ll 和 y 的合并（yeísmo）是现代西语的主流读法。"
+     ],
+     "zh": [
+      "中国学生常把 hola 读成“齁拉”、把 ll 读成两个 l。"
+     ],
+     "ex": [
+      [
+       "hola, hijo, hora",
+       "h 不读"
+      ],
+      [
+       "llave, calle, yo",
+       "ll / y"
+      ],
+      [
+       "mañana, España",
+       "ñ"
+      ]
+     ],
+     "err": [
+      [
+       "hola 读成 /ˈhola/",
+       "hola /ˈola/",
+       "h 不读"
+      ],
+      [
+       "calle 读成“卡勒”",
+       "calle /ˈkaʝe/",
+       "ll 读 /ʝ/"
+      ]
+     ],
+     "sum": "<b>h 不读，ll ≈ y，ñ ≈ 妞</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "hijo 的 h 读不读？",
+       "o": [
+        "读“喝”",
+        "不读",
+        "读“衣”"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "cama",
+        "caña"
+       ],
+       "a": 1,
+       "say": "caña",
+       "e": "ñ 像“扭”的声母。"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "jamón",
+        "llamón"
+       ],
+       "a": 0,
+       "say": "jamón"
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "¿Qué hora es?",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -527,109 +1153,41 @@
       ]
      ],
      "x": [
-      [
-       "¿Qué hora es? — Son las tres.",
-       "几点了？——三点。"
-      ]
-     ]
+      "¿Qué hora es? — Son las tres.",
+      "几点了？——三点。"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "Hasta mañana.",
-     "t": "常用表达",
      "s": [
       [
        "",
        "明天见。"
       ]
-     ]
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "¡Qué bien!",
-     "t": "常用表达",
      "s": [
       [
        "",
        "太好了！"
       ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "hijo 的 h 读不读？",
-     "o": [
-      "读“喝”",
-      "不读",
-      "读“衣”",
-      "读 /k/"
      ],
-     "a": 1
+     "tt": "常用表达",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "gente 的 g 读？",
-     "o": [
-      "/g/",
-      "/x/（同 j）",
-      "不读",
-      "/dʒ/"
-     ],
-     "a": 1,
-     "e": "g 在 e i 前读 /x/。"
-    },
-    {
-     "t": "c",
-     "q": "queso 的 u 读不读？",
-     "o": [
-      "读",
-      "不读"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "cine 的 c 在西班牙读？",
-     "o": [
-      "/k/",
-      "/θ/（咬舌）",
-      "/tʃ/",
-      "/ʃ/"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "cama",
-      "caña"
-     ],
-     "a": 1,
-     "say": "caña",
-     "e": "ñ 像“扭”的声母。"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "jamón",
-      "llamón"
-     ],
-     "a": 0,
-     "say": "jamón"
-    },
-    {
-     "t": "c",
-     "q": "哪个词的 g 读 /g/？",
-     "o": [
-      "gente",
-      "girar",
-      "guitarra",
-      "general"
-     ],
-     "a": 2,
-     "e": "gui 中 u 不发音，g 读 /g/。"
+     "t": "speak",
+     "text": "Hasta mañana. Una cerveza y un zumo.",
+     "zh": "明天见。一杯啤酒和一杯果汁。",
+     "focus": "h 不读，ñ、z 读准"
     },
     {
      "t": "f",
@@ -642,46 +1200,237 @@
      "t": "o",
      "a": "Hasta mañana.",
      "zh": "明天见。"
+    },
+    {
+     "t": "dict",
+     "a": "Hasta mañana."
+    },
+    {
+     "t": "tr",
+     "zh": "几点了？",
+     "a": [
+      "¿Qué hora es?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：c、g 在 e / i 前变软（cena /θ/、gente /x/）；j 永远喉音；que / qui / gue / gui 的 u 不读。",
+      "<b>重点</b>：h 不读；ll 和 y 读法相同；ñ 像“妞”。",
+      "¿Qué hora es? · Hasta mañana. · ¡Qué bien!"
+     ]
     }
    ]
   },
   {
    "id": "es.1.1.5",
    "title": "连读与语调",
-   "words": [
-    "¿qué tal?",
-    "buenos días",
-    "buenas tardes",
-    "buenas noches",
-    "hasta luego",
-    "mucho gusto",
-    "encantado",
-    "bienvenido",
-    "perdón",
-    "lo siento"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "一口气读完的意群",
-     "points": [
-      "西语说话时，前一词末尾的辅音和后一词开头的元音<b>连读</b>：los_amigos → lo-sa-mi-gos；mis_hijos → mi-si-jos。",
-      "前一词末尾元音和后一词开头元音也连成一个音节：la_amiga → laa-mi-ga，¿qué_es? → quees。",
-      "西语节奏是<b>音节等长</b>：每个音节差不多一样长，不像英语有长短轻重之分。",
-      "陈述句语调句末下降；一般疑问句（¿Tienes hambre?）句末上扬；特殊疑问句（¿Dónde vives?）句末一般下降。",
-      "问句和感叹句开头要写倒过来的 ¿ ¡。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "认识新朋友",
+     "lines": [
       [
-       "¿Qué tal estás? — Muy bien, gracias.",
-       "你好吗？——很好，谢谢。"
+       "A",
+       "Buenos días. ¿Cómo estás?",
+       "早上好。你好吗？"
+      ],
+      [
+       "B",
+       "Muy bien, gracias. ¿Y tú?",
+       "很好，谢谢。你呢？"
+      ],
+      [
+       "A",
+       "Bien. Te presento a mis amigos.",
+       "还好。给你介绍我的朋友们。"
+      ],
+      [
+       "B",
+       "Encantada. Bienvenidos.",
+       "很高兴认识你们。欢迎。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "mis amigos 读成 mi-sa-mi-gos：西语句子是一串一串连起来说的。"
+    },
     {
+     "t": "word",
+     "w": "¿qué tal?"
+    },
+    {
+     "t": "word",
+     "w": "buenos días"
+    },
+    {
+     "t": "word",
+     "w": "buenas tardes"
+    },
+    {
+     "t": "word",
+     "w": "buenas noches"
+    },
+    {
+     "t": "word",
+     "w": "hasta luego"
+    },
+    {
+     "t": "word",
+     "w": "mucho gusto"
+    },
+    {
+     "t": "key",
+     "title": "连读：词和词之间不断开",
+     "what": [
+      "前一词的<b>辅音</b> + 后一词的<b>元音</b> → 连在一起：los_amigos → lo-sa-mi-gos，mis_hijos → mi-si-jos（h 不读）",
+      "前一词的<b>元音</b> + 后一词的<b>元音</b> → 合成一个音节：la_amiga → la-mi-ga，¿qué_es? → quees",
+      "整个意群（一口气说的一串词）像一个长单词。"
+     ],
+     "why": [
+      "西语是“音节等长”的语言：每个音节差不多一样长，词和词之间不停顿。连读让音节保持“辅音 + 元音”的整齐节奏。"
+     ],
+     "zh": [
+      "中国学生一个词一个词地读（mis / amigos），听起来像在念单词表；听力里也会因为连读认不出熟词：¿Qué es eso? 听起来是 quesés-so。"
+     ],
+     "ex": [
+      [
+       "los amigos → lo-sa-mi-gos",
+       ""
+      ],
+      [
+       "¿Qué es esto?",
+       "这是什么？（qué es 连读）"
+      ],
+      [
+       "Te presento a mis amigos.",
+       "给你介绍我的朋友们。"
+      ]
+     ],
+     "err": [
+      [
+       "los / amigos 分开读",
+       "lo-sa-mi-gos",
+       ""
+      ]
+     ],
+     "sum": "<b>辅音 + 元音、元音 + 元音：一律连起来</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "los amigos 连读后最接近？",
+       "o": [
+        "los / amigos 分开",
+        "lo-sa-mi-gos",
+        "los-sa-mi-gos"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "mis hijos 连读后最接近？",
+       "o": [
+        "mis / hi-jos",
+        "mi-si-jos",
+        "mis-hi-jos"
+       ],
+       "a": 1,
+       "e": "h 不读，s 连到元音上。"
+      },
+      {
+       "t": "dict",
+       "a": "Te presento a mis amigos."
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "encantado"
+    },
+    {
+     "t": "word",
+     "w": "bienvenido"
+    },
+    {
+     "t": "word",
+     "w": "perdón"
+    },
+    {
+     "t": "word",
+     "w": "lo siento"
+    },
+    {
+     "t": "key",
+     "title": "语调和倒写的问号、叹号",
+     "what": [
+      "陈述句：句末<b>下降</b>。",
+      "一般疑问句（回答是 / 否）：句末<b>上扬</b> —— ¿Tienes hambre? ↗",
+      "特殊疑问句（有疑问词）：句末一般<b>下降</b> —— ¿Dónde vives? ↘",
+      "书写：问句和感叹句<b>开头也要写</b>倒置的符号：¿…?　¡…!"
+     ],
+     "why": [
+      "西语一般疑问句常常和陈述句词序完全一样（Tienes hambre. / ¿Tienes hambre?），只靠语调区分。所以开头的 ¿ 提前告诉读者“这是问句”，好用上扬的语调读。"
+     ],
+     "zh": [
+      "中文问句加“吗”，语调不一定上扬；西语一般疑问句必须上扬，否则听起来就是陈述。"
+     ],
+     "ex": [
+      [
+       "Tienes hambre. ↘ / ¿Tienes hambre? ↗",
+       "你饿了。/ 你饿吗？"
+      ],
+      [
+       "¿Dónde vives? ↘",
+       "你住哪儿？"
+      ],
+      [
+       "¡Qué bien!",
+       "太好了！"
+      ]
+     ],
+     "err": [
+      [
+       "Tienes hambre?（只写一个问号）",
+       "¿Tienes hambre?",
+       "开头要写 ¿"
+      ]
+     ],
+     "sum": "<b>是非问句上扬，疑问词问句下降；开头写 ¿ ¡</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "一般疑问句句末语调？",
+       "o": [
+        "下降",
+        "上扬",
+        "平"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "问句开头要写？",
+       "o": [
+        "?",
+        "¿",
+        "¡",
+        "不写"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "听音，这是陈述还是一般疑问？",
+       "o": [
+        "陈述句",
+        "一般疑问句"
+       ],
+       "a": 1,
+       "say": "¿Tienes hambre?"
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "¿Y tú?",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -689,65 +1438,41 @@
       ]
      ],
      "x": [
-      [
-       "Estoy bien, ¿y tú?",
-       "我很好，你呢？"
-      ]
-     ]
+      "Estoy bien, ¿y tú?",
+      "我很好，你呢？"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "Muy bien.",
-     "t": "常用表达",
      "s": [
       [
        "",
        "很好。"
       ]
-     ]
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "Encantado / Encantada.",
-     "t": "常用表达",
      "s": [
       [
        "",
        "很高兴认识你（男/女说话人）。"
       ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "los amigos 连读后最接近？",
-     "o": [
-      "los / amigos 分开",
-      "lo-sa-mi-gos",
-      "los-sa-mi-gos",
-      "lo-s-a-mi-gos"
      ],
-     "a": 1
+     "tt": "常用表达",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "一般疑问句句末语调？",
-     "o": [
-      "下降",
-      "上扬",
-      "平"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "问句开头要写？",
-     "o": [
-      "?",
-      "¿",
-      "¡",
-      "不写"
-     ],
-     "a": 1
+     "t": "speak",
+     "text": "Buenos días. ¿Cómo estás?",
+     "zh": "早上好，你好吗？",
+     "focus": "buenos días 连读，¿Cómo estás? 句末下降"
     },
     {
      "t": "c",
@@ -757,16 +1482,6 @@
       "Encantada"
      ],
      "a": 1
-    },
-    {
-     "t": "c",
-     "q": "听音，这是陈述还是一般疑问？",
-     "o": [
-      "陈述句",
-      "一般疑问句"
-     ],
-     "a": 1,
-     "say": "¿Tienes hambre?"
     },
     {
      "t": "c",
@@ -791,6 +1506,37 @@
      "t": "o",
      "a": "Muy bien, gracias.",
      "zh": "很好，谢谢。"
+    },
+    {
+     "t": "tr",
+     "zh": "早上好，你好吗？",
+     "a": [
+      "Buenos días, ¿cómo estás?",
+      "Buenos días. ¿Cómo estás?",
+      "Buenos días, ¿qué tal?"
+     ]
+    },
+    {
+     "t": "tr",
+     "zh": "对不起。",
+     "a": [
+      "Lo siento.",
+      "Perdón."
+     ]
+    },
+    {
+     "t": "write",
+     "prompt": "用西语写 3–4 句话的问候和自我介绍（打招呼、问对方好、说名字、说再见）。写完大声读，注意元音、r / rr 和连读。",
+     "focus": "greetings, vowels, linking, intonation",
+     "model": "¡Hola! Buenos días. Me llamo Lin. ¿Cómo estás? Encantada. ¡Hasta luego!"
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：连读 —— 辅音 + 元音、元音 + 元音连起来：lo-sa-mi-gos。",
+      "<b>重点</b>：是非问句句末上扬，疑问词问句下降；问句、感叹句开头写 ¿ ¡。",
+      "Buenos días / buenas tardes / buenas noches；hasta luego；mucho gusto；lo siento。"
+     ]
     }
    ]
   }
