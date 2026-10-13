@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261013.0528-b199bb";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261013.0537-810910";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -8902,6 +8902,7 @@ function v2Render(el, l) {
   $("#rd-all", el) && ($("#rd-all", el).onclick = () => { const ts = (s.lines || []).map(x => x[0]).filter(t => t && (lang !== "ja" || jaHasAudio(t))); let k = 0; const nx = () => { if (k < ts.length && V.flow[V.i] === s) Speech.say(ts[k++], { onend: () => setTimeout(nx, 350) }); }; Speech.stop(); nx(); });
   $("#v2-quit", el).onclick = () => { v2Save(l, V); go(current === "lesson" && LR.from ? LR.from : "home"); };
   const ex = s.t === "teach" ? s.check : V2_EX.has(s.t) ? s : null;
+  if (ex?.say && !V.ans && V.saidAt !== `${V.i}.${V.sub}.${V.redoing}`) { V.saidAt = `${V.i}.${V.sub}.${V.redoing}`; setTimeout(() => Speech.say(ex.say), 300); }
   const answer = input => {
     const r = quizCheck(ex, input); V.ans = { ...r, input };
     if (!V.redoing) { V.nEx = (V.nEx || 0) + 1; if (r.ok) V.okEx = (V.okEx || 0) + 1; planQuizStat(r.ok); }
