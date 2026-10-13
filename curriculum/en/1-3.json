@@ -1983,6 +1983,142 @@
      ]
     }
    ]
+  },
+  {
+   "id": "en.1.3.6",
+   "title": "单元阅读：Mr. Chen's Day",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Mr. Chen's Day",
+     "note": "先关掉译文读一遍，只用学过的词和本单元的重点。读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "Mr. Chen works for a small company in the city.",
+       "陈先生在城里一家小公司工作。"
+      ],
+      [
+       "He gets up at six every day.",
+       "他每天六点起床。"
+      ],
+      [
+       "He reads the news and drinks a cup of coffee.",
+       "他看新闻，喝一杯咖啡。"
+      ],
+      [
+       "The coffee is hot, but the news is not always good.",
+       "咖啡很热，新闻却不总是好消息。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "At the office, he works hard.",
+       "在办公室，他工作很努力。"
+      ],
+      [
+       "His boss gives him a lot of work, and he never says no.",
+       "老板给他很多工作，他从不说不。"
+      ],
+      [
+       "His job is not easy, but he likes it.",
+       "他的工作不轻松，但他喜欢。"
+      ],
+      [
+       "At lunch, he sends his wife a message: \"See you tonight!\"",
+       "午饭时，他给妻子发了条消息：“晚上见！”"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "In the evening, Mr. Chen goes home by bus.",
+       "晚上，陈先生坐公交车回家。"
+      ],
+      [
+       "His daughter shows him her new book.",
+       "女儿给他看她的新书。"
+      ],
+      [
+       "It is a story about a cat in a big city.",
+       "那是一个关于大城市里一只猫的故事。"
+      ],
+      [
+       "He reads it to her before bed. She looks very happy.",
+       "睡前他读给她听。她看起来很开心。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "What does Mr. Chen do every morning?",
+     "o": [
+      "He reads the news and drinks coffee.",
+      "He goes to the gym.",
+      "He reads a story to his daughter."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is true about his job?",
+     "o": [
+      "It is easy and boring.",
+      "He wants a new job.",
+      "It is not easy, but he likes it."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "In \"His boss gives him a lot of work\", which word is the verb?",
+     "o": [
+      "gives",
+      "boss",
+      "work"
+     ],
+     "a": 0,
+     "e": "谓语动词是 gives —— 主 + 谓 + 人 + 物。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "How does his daughter feel at the end?",
+     "o": [
+      "happy",
+      "tired",
+      "angry"
+     ],
+     "a": 0,
+     "e": "She looks very happy. —— 系动词 look + 形容词。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "他的老板给他很多工作。",
+     "a": [
+      "His boss gives him a lot of work.",
+      "His boss gives him lots of work.",
+      "His boss gives a lot of work to him."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "主谓宾：He reads the news. / 主系表：The coffee is hot. She looks very happy.",
+      "<b>重点</b>：主谓人物 —— His boss gives him a lot of work. / His daughter shows him her new book.",
+      "三单：works、gets、reads、goes —— 主语是 he / she，动词加 -s。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

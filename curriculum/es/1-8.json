@@ -1444,6 +1444,149 @@
      ]
     }
    ]
+  },
+  {
+   "id": "es.1.8.6",
+   "title": "单元阅读：Una semana difícil",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Una semana difícil",
+     "note": "先关掉译文读一遍。短文只用学过的词和本单元的重点；读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "Esta semana ha sido muy difícil para Javier.",
+       "这一周对哈维尔来说很不容易。"
+      ],
+      [
+       "Es ingeniero y trabaja en una oficina en Barcelona.",
+       "他是工程师，在巴塞罗那的一家办公室工作。"
+      ],
+      [
+       "El lunes su jefe le ha dado un proyecto nuevo y muy importante.",
+       "周一老板交给他一个很重要的新项目。"
+      ],
+      [
+       "Esta semana ha trabajado más de diez horas cada día.",
+       "这周他每天都工作了十个多小时。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Hoy le duele la cabeza y también la espalda.",
+       "今天他头疼，背也疼。"
+      ],
+      [
+       "Por la tarde ha ido al médico.",
+       "下午他去看了医生。"
+      ],
+      [
+       "La médica le ha dicho: «Usted trabaja mucho. Necesita descansar más.»",
+       "医生对他说：“您工作太多了，需要多休息。”"
+      ],
+      [
+       "También le ha dado una medicina para el dolor.",
+       "医生还给了他止疼的药。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Javier todavía no ha terminado el proyecto, pero ya está mejor.",
+       "哈维尔还没做完项目，但已经好些了。"
+      ],
+      [
+       "Su hermana le ha mandado un mensaje: «¡Que te mejores! ¡Mucho ánimo!»",
+       "姐姐给他发来消息：“早日康复！加油！”"
+      ],
+      [
+       "Para Javier, ahora la salud es más importante que el trabajo.",
+       "对哈维尔来说，现在健康比工作更重要。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Qué ha pasado el lunes?",
+     "o": [
+      "Ha terminado el proyecto.",
+      "Ha ido al médico.",
+      "Su jefe le ha dado un proyecto nuevo."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué le duele?",
+     "o": [
+      "Los pies.",
+      "La cabeza y la espalda.",
+      "El estómago."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué le ha dicho la médica?",
+     "o": [
+      "Que trabaja poco.",
+      "Que necesita descansar más.",
+      "Que tiene que trabajar más."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Ha terminado Javier el proyecto?",
+     "o": [
+      "El texto no lo dice.",
+      "Todavía no.",
+      "Sí, ya lo ha terminado."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "«Me ___ los pies.»",
+     "o": [
+      "duelen",
+      "duelo",
+      "duele"
+     ],
+     "a": 0,
+     "e": "doler 像 gustar：疼的部位是主语，los pies 复数 → duelen。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "健康比工作更重要。",
+     "a": [
+      "La salud es más importante que el trabajo."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：现在完成时 haber + 过去分词 —— ha sido、ha trabajado、ha ido、le ha dicho（不规则）。",
+      "ya / todavía no：todavía no ha terminado / ya está mejor。",
+      "<b>重点</b>：doler 像 gustar —— le duele la cabeza / me duelen los pies。",
+      "比较：más importante que；mejor（bueno 的比较级）。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

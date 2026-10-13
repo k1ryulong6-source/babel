@@ -1740,6 +1740,126 @@
      ]
     }
    ]
+  },
+  {
+   "id": "en.1.1.6",
+   "title": "单元阅读：Ben's First Day",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Ben's First Day",
+     "note": "先关掉译文读一遍，只用学过的词和本单元的重点。读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "Hi, I'm Ben. Today is my first day in a new city.",
+       "嗨，我是本。今天是我在一座新城市的第一天。"
+      ],
+      [
+       "I want to go to a café, but I can't find it.",
+       "我想去一家咖啡馆，可是找不到。"
+      ],
+      [
+       "I see a man with a big black hat.",
+       "我看见一个戴着黑色大帽子的男人。"
+      ],
+      [
+       "\"Excuse me, how do I get to Main Street?\" I say.",
+       "“打扰一下，去主街怎么走？”我说。"
+      ],
+      [
+       "\"Look at this map,\" he says. \"It's that way. Go up the hill.\"",
+       "“看这张地图，”他说，“在那边。往山上走。”"
+      ],
+      [
+       "\"Thank you for your help!\" I say.",
+       "“谢谢你的帮助！”我说。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "At the café, I sit down and take a photo of my cake.",
+       "到了咖啡馆，我坐下来，给我的蛋糕拍了张照片。"
+      ],
+      [
+       "Now I know one good thing about this city.",
+       "现在我知道这座城市的一个好处了。"
+      ],
+      [
+       "People here like to help.",
+       "这里的人乐于助人。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "本今天在做什么？",
+     "o": [
+      "第一天来到一座新城市",
+      "在家休息",
+      "第一天去上学"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "本想去哪里？",
+     "o": [
+      "一家咖啡馆",
+      "火车站",
+      "学校"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "那个男人让本怎么走？",
+     "o": [
+      "看地图，往山上走",
+      "往山下走",
+      "坐公交车"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "本觉得这座城市怎么样？",
+     "o": [
+      "这里太大了",
+      "这里的人乐于助人",
+      "这里的蛋糕太贵"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "谢谢你的帮助！",
+     "a": [
+      "Thank you for your help!",
+      "Thank you for your help.",
+      "Thanks for your help!"
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "读音复习：hat /æ/、hill /ɪ/、take /eɪ/、go /əʊ/、see /iː/。",
+      "<b>重点</b>：字母名和读音不同 —— a 在 hat 里念 /æ/，在 take 里念 /eɪ/（词尾不发音的 e）。",
+      "常用句：How do I get to …? / Thank you for … / Look at …"
+     ]
+    }
+   ]
   }
  ],
  "test": {

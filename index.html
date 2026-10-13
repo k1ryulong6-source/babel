@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261013.0107-faf85b";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261013.0118-0a561d";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1386,6 +1386,7 @@ body:has(.v2) #pagebar{display:none}
 .tip3.soft{border-left-color:var(--ink);background:color-mix(in srgb,var(--ink) 5%,transparent)}.tip3.soft>b:first-child{color:var(--ink)}
 .chk3{padding:12px 14px}.chk3 .q{border:0;padding:6px 0 0}
 .dlg3{display:flex;flex-direction:column;gap:10px}
+.rd3{display:flex;flex-direction:column;gap:6px;font-size:18px;line-height:1.7}.rd3 .rl3 small{display:block;color:var(--muted);font-size:13px;line-height:1.5}.rd3 .rp3{height:8px}
 .ln3{display:flex;gap:10px;align-items:flex-start;background:var(--card-solid);border:1px solid var(--line);padding:10px 12px;font-size:17px;line-height:1.5}
 .ln3>b{flex:none;font-family:"Marcellus",serif;font-weight:400;color:var(--sig);min-width:16px}
 .ln3.spB{margin-left:28px}
@@ -8758,7 +8759,8 @@ function prevLessonId(id) {
 }
 // 课前回顾：上一课每个重点出一题（取最后一题，通常最综合）
 function warmItems(l) {
-  const pid = prevLessonId(l.id), pl = pid && curLesson(pid);
+  let pid = prevLessonId(l.id); if (pid && curLesson(pid)?.story) pid = prevLessonId(pid);
+  const pl = pid && curLesson(pid);
   if (!pl || !isV2(pl) || !lesRec(pid).done) return [];
   return v2Keys(pl).filter(k => (k.drill || []).length).slice(0, 3).map(k => ({ ...k.drill[k.drill.length - 1], warm: k.title, kid: k.id }));
 }
@@ -8771,8 +8773,8 @@ function v2Flow(l) {
   flush();
   return out;
 }
-const V2_KIND = { intro: "情境", teach: "讲解", word: "新词", recall: "回忆", speak: "跟读", c: "练习", f: "练习", o: "练习", sum: "小结", redo: "错题重做" };
-const v2Kind = s => s.warm ? "课前回顾" : s.kd ? "重点 · 练到对" : s.chk ? "小题" : /^k[123]$/.test(s.t) ? "重点" : s.t === "write" ? "写作" : V2_KIND[s.t] || "";
+const V2_KIND = { read: "单元阅读", intro: "情境", teach: "讲解", word: "新词", recall: "回忆", speak: "跟读", c: "练习", f: "练习", o: "练习", sum: "小结", redo: "错题重做" };
+const v2Kind = s => s.warm ? "课前回顾" : s.rdq ? "阅读理解" : s.kd ? "重点 · 练到对" : s.chk ? "小题" : /^k[123]$/.test(s.t) ? "重点" : s.t === "write" ? "写作" : V2_KIND[s.t] || "";
 function v2State(l) {
   if (LR.v2?.id !== l.id) { const flow = v2Flow(l), rec = lesRec(l.id); const fresh = rec.done || !rec.step; LR.v2 = { id: l.id, flow, i: fresh ? 0 : Math.min(rec.step, flow.length - 1), ans: null, redo: [], sub: 0, rq: null, nEx: fresh ? 0 : rec.xn?.[0] || 0, okEx: fresh ? 0 : rec.xn?.[1] || 0 }; }
   return LR.v2;
@@ -8847,6 +8849,13 @@ function v2Render(el, l) {
   const head = `<div class="eye3">${kind === "redo" ? V2_KIND.redo : v2Kind(s)}</div>`;
   let body = "", cta = "下一步", ready = true;
   if (s.t === "intro") body = `${head}<h2 class="t2">${esc(s.title || l.title)}</h2>${s.note ? `<p class="lead3">${s.note}</p>` : ""}<div class="dlg3">${(s.lines || []).map(([sp, t, zh]) => `<div class="ln3 ${sp ? "sp" + sp : ""}">${sp ? `<b>${esc(sp)}</b>` : ""}<div><div class="${c}">${esc(t)} ${playBtn(t)}</div><small>${esc(zh || "")}</small></div></div>`).join("")}</div>`;
+  else if (s.t === "read") {
+    const lines = s.lines || [];
+    body = `${head}<h2 class="t2">${esc(s.title)}</h2>${s.note ? `<p class="lead3">${s.note}</p>` : ""}
+      <div class="row" style="gap:8px;margin:6px 0 10px">${lang === "ja" && !lines.some(([t]) => t && jaHasAudio(t)) ? "" : `<button class="btn" id="rd-all">▶ 全文朗读</button>`}<button class="btn" id="rd-zh">${V.rdZh ? "隐藏译文" : "显示译文"}</button></div>
+      <div class="slip3 pad3 rd3">${lines.map(([t, zh]) => t ? `<div class="rl3"><div class="${c}">${esc(t)} ${playBtn(t)}</div>${V.rdZh ? `<small>${esc(zh || "")}</small>` : ""}</div>` : `<div class="rp3"></div>`).join("")}</div>
+      <p class="mut3">先不看译文读一遍，遇到不懂的句子点 ▶ 听一听；读完再做后面的理解题。</p>`;
+  }
   else if (s.t === "teach") {
     body = `${head}<h2 class="t2">${esc(s.title)}</h2>${(s.body || []).map(p => `<p class="lead3">${p}</p>`).join("")}
       ${s.ex?.length ? `<div class="slip3 exs3">${s.ex.map(([t, zh]) => `<div><div class="${c} big3">${t} ${playBtn(String(t).replace(/<[^>]+>/g, ""))}</div><small>${esc(zh)}</small></div>`).join("")}</div>` : ""}
@@ -8883,12 +8892,14 @@ function v2Render(el, l) {
       : `<textarea id="v2-wr" class="${c}" rows="6" style="width:100%;font-size:17px" placeholder="${aiOK() ? "写完点「提交」，AI 会帮你批改" : "写完点「提交」，然后对照参考范文自己检查"}">${esc(W.text || "")}</textarea>`}`;
     if (!W.sent) cta = "提交"; else if (W.busy) ready = false;
   } else if (s.t === "speak") body = `${head}<h2 class="t2">跟读</h2><p class="lead3">先听，再大声跟读两遍。注意${esc(s.focus || "节奏和重音")}。</p><div class="slip3 exs3"><div class="${c} big3">${esc(s.text)}</div><small>${esc(s.zh || "")}</small><div style="margin-top:12px">${lang === "ja" && !jaHasAudio(s.text) ? "" : `<button class="btn" data-say="${esc(s.text)}">▶ 播放</button> <button class="btn" data-say-slow="${esc(s.text)}">▶ 慢速</button>`}</div></div>`;
-  else if (V2_EX.has(s.t)) { body = `${head}<h2 class="t2">${V.redoing ? "再做一次" : s.warm ? "先回忆一下" : s.kd ? `<span class="kbadge">重点</span>练一练` : s.chk ? "马上试一题" : "练习"}</h2>${s.chk && !V.redoing ? `<p class="mut3">刚学的：${esc(s.chk)}</p>` : s.warm ? `<p class="mut3">上一课的重点：${esc(s.warm)}</p>` : s.kd ? `<p class="mut3">${esc(s.kd)}${V.redoing ? "" : " · 错了会再出，直到做对"}</p>` : ""}${exBody(s, V.ans, V.built || [])}`; if (!V.ans) { ready = s.t !== "c" && (s.t !== "o" || (V.built || []).length === orderTokens(s).length); cta = s.t === "c" ? "先选一个答案" : "检查"; } }
+  else if (V2_EX.has(s.t)) { body = `${head}<h2 class="t2">${V.redoing ? "再做一次" : s.warm ? "先回忆一下" : s.rdq ? "阅读理解" : s.kd ? `<span class="kbadge">重点</span>练一练` : s.chk ? "马上试一题" : "练习"}</h2>${s.chk && !V.redoing ? `<p class="mut3">刚学的：${esc(s.chk)}</p>` : s.rdq ? (() => { const rd = V.flow.find(x => x.t === "read"); return rd ? `<details class="slip3 pad3" style="margin-bottom:10px"><summary class="mut3">回看短文</summary><div class="rd3" style="margin-top:8px">${rd.lines.map(([t]) => t ? `<div class="${c}">${esc(t)}</div>` : `<div class="rp3"></div>`).join("")}</div></details>` : ""; })() : s.warm ? `<p class="mut3">上一课的重点：${esc(s.warm)}</p>` : s.kd ? `<p class="mut3">${esc(s.kd)}${V.redoing ? "" : " · 错了会再出，直到做对"}</p>` : ""}${exBody(s, V.ans, V.built || [])}`; if (!V.ans) { ready = s.t !== "c" && (s.t !== "o" || (V.built || []).length === orderTokens(s).length); cta = s.t === "c" ? "先选一个答案" : "检查"; } }
   else if (s.t === "sum") { body = `${head}<h2 class="t2">本课小结</h2><div class="slip3 pad3"><ul class="sum3">${(s.points || []).map(p => `<li>${p}</li>`).join("")}</ul></div><p class="mut3">本课的新词已经排进复习；练习里答错的题进了错题本，之后会按间隔再考。</p>`; cta = "完成本课"; }
   el.innerHTML = `<div class="v2">${prog3}<div class="v2b">${body}</div><div class="act3">${ctaHTML(cta, "", "v2-next", ready ? "" : "disabled")}</div></div>`;
   // ---- 交互 ----
   $$("[data-say]", el).forEach(b => b.onclick = () => planSay(b.dataset.say));
   $$("[data-say-slow]", el).forEach(b => b.onclick = () => { if (lang === "es") sayEs(b.dataset.saySlow, { rate: .75 }); else Speech.say(b.dataset.saySlow, { rate: .75 }); });
+  $("#rd-zh", el) && ($("#rd-zh", el).onclick = () => { V.rdZh = !V.rdZh; v2Render(el, l); });
+  $("#rd-all", el) && ($("#rd-all", el).onclick = () => { const ts = (s.lines || []).map(x => x[0]).filter(t => t && (lang !== "ja" || jaHasAudio(t))); let k = 0; const nx = () => { if (k < ts.length && V.flow[V.i] === s) Speech.say(ts[k++], { onend: () => setTimeout(nx, 350) }); }; Speech.stop(); nx(); });
   $("#v2-quit", el).onclick = () => { v2Save(l, V); go(current === "lesson" && LR.from ? LR.from : "home"); };
   const ex = s.t === "teach" ? s.check : V2_EX.has(s.t) ? s : null;
   const answer = input => {

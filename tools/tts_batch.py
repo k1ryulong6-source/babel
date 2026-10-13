@@ -164,6 +164,8 @@ def collect_curriculum(lang):
                         x = s.get("x") or ((lex.get(s.get("w")) or [None, None, []])[2] or [None])[0]
                         if x:
                             out.append(x[0])
+                    elif t == "read":
+                        out += [x[0] for x in s.get("lines", []) if x and x[0]]
                     elif t == "speak":
                         out.append(s.get("text", ""))
                     elif t == "key":

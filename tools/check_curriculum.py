@@ -53,7 +53,7 @@ def check_ex(x, where, errs):
         errs.append(f"{where}: 未知题型 {t}")
 
 
-V2_TYPES = {"intro", "teach", "word", "speak", "sum", "key", "write", "c", "f", "o", "tr", "dict"}
+V2_TYPES = {"intro", "teach", "word", "speak", "sum", "key", "write", "read", "c", "f", "o", "tr", "dict"}
 
 
 def check_steps(l, lid, lex, word_owner, errs, warns):
@@ -68,6 +68,9 @@ def check_steps(l, lid, lex, word_owner, errs, warns):
         elif t == "intro":
             if not s.get("lines") or any(len(x) != 3 for x in s["lines"]):
                 errs.append(f"{where}: 情境导入的 lines 应为 [[说话人, 原文, 中文]]")
+        elif t == "read":
+            if not s.get("title") or not s.get("lines") or any(len(x) != 2 for x in s["lines"]):
+                errs.append(f"{where}: 单元阅读应有 title 和 lines [[原文, 中文]]（空行 [\"\", \"\"] 分段）")
         elif t == "teach":
             if not s.get("title") or not s.get("body"):
                 errs.append(f"{where}: 讲解缺 title / body")

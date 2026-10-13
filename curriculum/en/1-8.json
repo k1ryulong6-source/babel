@@ -1555,6 +1555,151 @@
      ]
     }
    ]
+  },
+  {
+   "id": "en.1.8.6",
+   "title": "单元阅读：The Moon Bridge",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "The Moon Bridge",
+     "note": "先关掉译文读一遍，只用学过的词和本单元的重点。读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "In my hometown, there is an old stone bridge that was built about three hundred years ago.",
+       "我的家乡有一座古老的石桥，大约建于三百年前。"
+      ],
+      [
+       "It is called the Moon Bridge because it looks like a half moon.",
+       "它叫月亮桥，因为样子像半个月亮。"
+      ],
+      [
+       "The bridge is made of local stone, and it is still used by people every day.",
+       "桥是用本地的石头建的，至今每天还有人走。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Last year, the city decided to build a new road, and some people wanted to pull the old bridge down.",
+       "去年，市里决定修一条新路，有人想把老桥拆掉。"
+      ],
+      [
+       "My grandfather, who was born near the bridge, was very sad.",
+       "在桥边出生的爷爷非常难过。"
+      ],
+      [
+       "He remembered playing on it when he was a child.",
+       "他记得小时候在桥上玩。"
+      ],
+      [
+       "He wrote a letter to the newspaper and asked, \"Could you tell me why we have to lose our history?\"",
+       "他给报社写了封信，问道：“能告诉我为什么我们非要失去自己的历史吗？”"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "His letter was read by thousands of people.",
+       "他的信被成千上万的人读到了。"
+      ],
+      [
+       "Step by step, more and more people joined him, and in the end, the plan was changed.",
+       "慢慢地，越来越多的人支持他，最后计划被改了。"
+      ],
+      [
+       "Now the new road goes around the bridge, and the place where my grandfather played is a small park.",
+       "现在新路绕桥而过，爷爷小时候玩耍的地方成了一座小公园。"
+      ],
+      [
+       "I'm looking forward to walking across it with him this summer.",
+       "我很期待今年夏天和他一起走过这座桥。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Why is the bridge called the Moon Bridge?",
+     "o": [
+      "It looks like a half moon.",
+      "It was built at night.",
+      "It is made of moon stone."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What did the city want to do last year?",
+     "o": [
+      "close a park",
+      "build a new bridge",
+      "build a new road"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What did the grandfather do?",
+     "o": [
+      "He built a new bridge.",
+      "He wrote a letter to the newspaper.",
+      "He moved to another city."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What happened in the end?",
+     "o": [
+      "The plan was changed.",
+      "The bridge was pulled down.",
+      "The road was not built."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "\"My grandfather, ___ was born near the bridge, was very sad.\"",
+     "o": [
+      "which",
+      "who",
+      "where"
+     ],
+     "a": 1,
+     "e": "先行词是人 → who。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "这座桥是三百年前建的。",
+     "a": [
+      "The bridge was built three hundred years ago.",
+      "This bridge was built three hundred years ago.",
+      "The bridge was built 300 years ago."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：被动 —— was built / is called / is made of / is used / was read / was changed（be + 过去分词）。",
+      "<b>重点</b>：定语从句 —— a bridge that was built…、my grandfather, who was born…、the place where…。",
+      "to do / doing：decided to build、remembered playing（记得做过）、look forward to walking。",
+      "间接疑问：Could you tell me why we have to …?（问句放进句子里用陈述语序）"
+     ]
+    }
+   ]
   }
  ],
  "test": {

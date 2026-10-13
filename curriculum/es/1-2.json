@@ -1850,6 +1850,137 @@
      ]
     }
    ]
+  },
+  {
+   "id": "es.1.2.6",
+   "title": "单元阅读：Mi clase de español",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Mi clase de español",
+     "note": "先关掉译文读一遍。短文只用学过的词和本单元的重点；读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "¡Hola! Me llamo Lei. Soy chino y soy estudiante.",
+       "你好！我叫雷，是中国人，是学生。"
+      ],
+      [
+       "Mi profesora se llama Carmen. Es española, de Madrid.",
+       "我的老师叫卡门，是西班牙人，来自马德里。"
+      ],
+      [
+       "Mi compañero se llama Kenji. Él es japonés.",
+       "我的同学叫健司，他是日本人。"
+      ],
+      [
+       "La clase es pequeña: somos ocho personas.",
+       "班很小：我们一共八个人。"
+      ],
+      [
+       "Kenji y yo somos amigos.",
+       "健司和我是朋友。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "La profesora es muy buena y la clase es fácil.",
+       "老师很好，课也不难。"
+      ],
+      [
+       "Después de clase, Kenji y yo vamos al café de la calle Mayor.",
+       "下课后，健司和我去马约尔街的咖啡馆。"
+      ],
+      [
+       "Allí hablamos en español con la gente.",
+       "我们在那里和人们用西班牙语聊天。"
+      ],
+      [
+       "«¡Hasta mañana, chicos!», dice la profesora.",
+       "“明天见，同学们！”老师说。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "雷是哪国人？",
+     "o": [
+      "中国人",
+      "西班牙人",
+      "日本人"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "卡门是谁？",
+     "o": [
+      "同学",
+      "服务员",
+      "老师"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "班上一共几个人？",
+     "o": [
+      "六个",
+      "十个",
+      "八个"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "下课后他们去哪儿？",
+     "o": [
+      "车站",
+      "图书馆",
+      "马约尔街的咖啡馆"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "“卡门是西班牙人”怎么说？",
+     "o": [
+      "Carmen está española.",
+      "Carmen es español.",
+      "Carmen es española."
+     ],
+     "a": 2,
+     "e": "国籍用 ser，跟着性别变：española。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "我叫雷，是学生。",
+     "a": [
+      "Me llamo Lei y soy estudiante.",
+      "Me llamo Lei. Soy estudiante."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：ser —— soy chino / es española / somos amigos（身份、国籍用 ser）。",
+      "<b>重点</b>：国籍跟性别变：español → española；职业不加冠词：soy estudiante。",
+      "me llamo / se llama；缩合：vamos al café（a + el = al）。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

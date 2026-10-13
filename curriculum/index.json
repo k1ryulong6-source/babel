@@ -15,56 +15,56 @@
        "id": "en.1.1",
        "title": "字母与元音",
        "goal": "26 个字母、短元音、长元音、双元音；最常用的生活词",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/en/1-1.json"
       },
       {
        "id": "en.1.2",
        "title": "辅音与拼读",
        "goal": "辅音、辅音组合、重音、连读与弱读；见词能读",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/en/1-2.json"
       },
       {
        "id": "en.1.3",
        "title": "句子的骨架",
        "goal": "词性、句子成分、五种基本句型、be 动词",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/en/1-3.json"
       },
       {
        "id": "en.1.4",
        "title": "名词、冠词、代词",
        "goal": "单复数、可数不可数、a/an/the、人称代词与物主代词",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/en/1-4.json"
       },
       {
        "id": "en.1.5",
        "title": "现在的事",
        "goal": "一般现在时、现在进行时、there be、疑问句与否定句",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/en/1-5.json"
       },
       {
        "id": "en.1.6",
        "title": "过去与将来",
        "goal": "一般过去时、将来时、现在完成时入门",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/en/1-6.json"
       },
       {
        "id": "en.1.7",
        "title": "修饰与连接",
        "goal": "形容词副词与比较、介词、连词、情态动词",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/en/1-7.json"
       },
       {
        "id": "en.1.8",
        "title": "句子升级",
        "goal": "被动语态、to do 与 doing、定语从句入门、综合复习",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/en/1-8.json"
       }
      ]
@@ -347,56 +347,56 @@
        "id": "es.1.1",
        "title": "发音与拼读复习",
        "goal": "元音、音节、重音规则、r/rr、c/z/g/j/ll/ñ、连读与语调",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/es/1-1.json"
       },
       {
        "id": "es.1.2",
        "title": "你好，我是……",
        "goal": "问候、ser、主语代词、名词的性、冠词、数字 0–20",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/es/1-2.json"
       },
       {
        "id": "es.1.3",
        "title": "家人与身边的东西",
        "goal": "tener、物主形容词、形容词性数一致、hay、数字到 100",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/es/1-3.json"
       },
       {
        "id": "es.1.4",
        "title": "我的一天",
        "goal": "-ar/-er/-ir 现在时规则变位、自反动词、钟点与星期",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/es/1-4.json"
       },
       {
        "id": "es.1.5",
        "title": "在城市里",
        "goal": "estar 与 ser、位置介词、ir 与 ir a、问路",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/es/1-5.json"
       },
       {
        "id": "es.1.6",
        "title": "吃喝与购物",
        "goal": "gustar、querer/poder、指示词、价格与点餐",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/es/1-6.json"
       },
       {
        "id": "es.1.7",
        "title": "计划与天气",
        "goal": "ir a + 不定式、词干变化动词、天气与季节、频率",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/es/1-7.json"
       },
       {
        "id": "es.1.8",
        "title": "A1 收尾",
        "goal": "现在完成时入门、比较、A1 综合复习",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/es/1-8.json"
       }
      ]
@@ -679,42 +679,42 @@
        "id": "ja.1.1",
        "title": "社会と報道",
        "goal": "新闻常用汉语词、硬的文型（〜をもって・〜に即して…）",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/ja/1-1.json"
       },
       {
        "id": "ja.1.2",
        "title": "経済と仕事",
        "goal": "职场与经济词汇、复合动词、〜を余儀なくされる 等",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/ja/1-2.json"
       },
       {
        "id": "ja.1.3",
        "title": "心と人間関係",
        "goal": "和语动词与形容词、心理描写、〜てやまない 等",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/ja/1-3.json"
       },
       {
        "id": "ja.1.4",
        "title": "体の慣用句",
        "goal": "顔・目・口・手・足・腹 的惯用句与谚语",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/ja/1-4.json"
       },
       {
        "id": "ja.1.5",
        "title": "四字熟語とオノマトペ",
        "goal": "高频四字熟语、拟声拟态语的语感",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/ja/1-5.json"
       },
       {
        "id": "ja.1.6",
        "title": "敬語と書き言葉",
        "goal": "尊敬语・谦让语・郑重语、商务书信惯用语",
-       "n": 5,
+       "n": 6,
        "file": "curriculum/ja/1-6.json"
       }
      ]
