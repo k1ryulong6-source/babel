@@ -1,0 +1,1745 @@
+{
+ "id": "es.2.1",
+ "title": "简单过去时 · 规则",
+ "goal": "",
+ "lessons": [
+  {
+   "id": "es.2.1.1",
+   "title": "-ar 动词的简单过去时",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "¿Qué hiciste ayer?",
+     "lines": [
+      [
+       "Lucía",
+       "¿Qué tal ayer? ¿Celebraste tu cumpleaños?",
+       "昨天怎么样？你过生日了吗？"
+      ],
+      [
+       "Pablo",
+       "Sí. Invité a unos amigos a casa y preparé una paella.",
+       "过了。我请了几个朋友来家里，做了海鲜饭。"
+      ],
+      [
+       "Lucía",
+       "¡Qué bien! ¿Y bailasteis?",
+       "真好！你们跳舞了吗？"
+      ],
+      [
+       "Pablo",
+       "Un poco. Charlamos mucho y escuchamos música hasta las dos.",
+       "跳了一点。我们聊了很多，听音乐到两点。"
+      ],
+      [
+       "Lucía",
+       "Por eso estás cansado hoy.",
+       "难怪你今天这么累。"
+      ]
+     ],
+     "note": "西语第二学期从“讲过去的事”开始。先看 -ar 动词：celebraste、invité、preparé、charlamos。"
+    },
+    {
+     "t": "word",
+     "w": "anoche"
+    },
+    {
+     "t": "word",
+     "w": "anteayer"
+    },
+    {
+     "t": "word",
+     "w": "visitar"
+    },
+    {
+     "t": "word",
+     "w": "celebrar"
+    },
+    {
+     "t": "word",
+     "w": "invitar"
+    },
+    {
+     "t": "word",
+     "w": "preparar"
+    },
+    {
+     "t": "key",
+     "title": "-ar 动词简单过去时：-é, -aste, -ó, -amos, -asteis, -aron",
+     "what": [
+      "去掉 -ar，加：yo <b>-é</b> · tú <b>-aste</b> · él/ella/usted <b>-ó</b> · nosotros <b>-amos</b> · vosotros <b>-asteis</b> · ellos/ustedes <b>-aron</b>",
+      "hablar → hablé, hablaste, habló, hablamos, hablasteis, hablaron"
+     ],
+     "why": [
+      "简单过去时（pretérito indefinido）讲<b>过去某个时间完成的一件事</b>：ayer, anoche, el año pasado。",
+      "yo 和 él 的词尾都带重音符号，这是和现在时区分的关键。"
+     ],
+     "zh": [
+      "中文用“了”表示完成：我昨天做了饭。西语把“了”做在动词词尾里：preparé。中国学生最常漏掉重音：preparé ≠ prepare。"
+     ],
+     "ex": [
+      [
+       "Ayer trabajé hasta las ocho.",
+       "我昨天工作到八点。"
+      ],
+      [
+       "¿Visitaste el museo?",
+       "你参观博物馆了吗？"
+      ],
+      [
+       "Ellos alquilaron un piso en el centro.",
+       "他们在市中心租了一套公寓。"
+      ]
+     ],
+     "err": [
+      [
+       "Ayer yo preparo la cena.",
+       "Ayer yo preparé la cena.",
+       "ayer → 过去时"
+      ],
+      [
+       "Él celebro su cumpleaños.",
+       "Él celebró su cumpleaños.",
+       "él 的词尾是 -ó，带重音"
+      ]
+     ],
+     "sum": "<b>-é, -aste, -ó, -amos, -asteis, -aron</b>；yo 和 él 都带重音。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Anoche (yo) ___ con mis padres.",
+       "o": [
+        "cené",
+        "ceno",
+        "cenó"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "¿Tú ___ el partido ayer?",
+       "o": [
+        "ganaste",
+        "ganó",
+        "ganastés"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "Ellos ___ (alquilar) un coche el verano pasado.",
+       "a": [
+        "alquilaron"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我昨晚给你发了消息。",
+       "a": [
+        "Te mandé un mensaje anoche.",
+        "Anoche te mandé un mensaje.",
+        "Te envié un mensaje anoche."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "regresar"
+    },
+    {
+     "t": "word",
+     "w": "alquilar"
+    },
+    {
+     "t": "word",
+     "w": "ganar"
+    },
+    {
+     "t": "word",
+     "w": "mandar"
+    },
+    {
+     "t": "word",
+     "w": "pasear"
+    },
+    {
+     "t": "word",
+     "w": "charlar"
+    },
+    {
+     "t": "key",
+     "title": "重音决定意思：hablo（我说）≠ habló（他说了）",
+     "what": [
+      "<b>hablo</b>（重音在 ha）= 我（现在）说",
+      "<b>habló</b>（重音在 ló）= 他 / 她（过去）说了",
+      "同理：preparo / preparó、llego / llegó、trabajo / trabajó"
+     ],
+     "why": [
+      "只差一个重音位置，时间和人称都变了。听力里要靠重音分辨，写的时候重音符号不能省。"
+     ],
+     "zh": [
+      "中文声调变了意思也会变（买 / 卖），西语的重音位置也一样有“辨义”作用。"
+     ],
+     "ex": [
+      [
+       "Yo trabajo en un banco.",
+       "我在银行工作。"
+      ],
+      [
+       "Ella trabajó en un banco.",
+       "她（以前）在银行工作过。"
+      ]
+     ],
+     "err": [
+      [
+       "Mi hermano llego ayer.",
+       "Mi hermano llegó ayer.",
+       "第三人称过去时要写重音"
+      ]
+     ],
+     "sum": "<b>-o</b>（我，现在）vs <b>-ó</b>（他，过去）—— 看重音。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "“他昨天到了。”",
+       "o": [
+        "Llego ayer.",
+        "Llegué ayer.",
+        "Llegó ayer."
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "“我每天工作。”",
+       "o": [
+        "Trabajé todos los días.",
+        "Trabajó todos los días.",
+        "Trabajo todos los días."
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Invité a unos amigos a casa y preparé una paella.",
+     "zh": "我请了几个朋友来家里，做了海鲜饭。",
+     "focus": "invité、preparé 重音在最后"
+    },
+    {
+     "t": "c",
+     "q": "El sábado pasado ___ el cumpleaños de mi madre.",
+     "o": [
+      "celebraron",
+      "celebramos",
+      "celebro"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Después de comer, (nosotros) ___ por el parque.",
+     "o": [
+      "pasear",
+      "paseé",
+      "paseamos"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Anteayer (yo) ___ (regresar) de Londres.",
+     "a": [
+      "regresé"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "¿___ (tú) a Ana a la fiesta?",
+     "a": [
+      "Invitaste"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Preparé una paella para mis amigos",
+     "p": [
+      "Preparé",
+      "una paella",
+      "para",
+      "mis amigos"
+     ],
+     "zh": "我给朋友们做了海鲜饭。"
+    },
+    {
+     "t": "dict",
+     "a": "Anoche charlamos hasta las dos."
+    },
+    {
+     "t": "tr",
+     "zh": "去年夏天我们参观了格拉纳达。",
+     "a": [
+      "El verano pasado visitamos Granada.",
+      "Visitamos Granada el verano pasado."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：anoche、anteayer、visitar、celebrar、invitar、preparar、regresar、alquilar、ganar、mandar、pasear、charlar。",
+      "<b>重点</b>：-ar 过去时词尾 -é, -aste, -ó, -amos, -asteis, -aron。",
+      "<b>重点</b>：hablo（我说）≠ habló（他说了）—— 重音不能省。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.1.2",
+   "title": "-er 与 -ir 动词的简单过去时",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Una noticia",
+     "lines": [
+      [
+       "Marta",
+       "¿Recibiste mi mensaje?",
+       "你收到我的消息了吗？"
+      ],
+      [
+       "Javi",
+       "Sí, anoche. ¿Qué ocurrió?",
+       "收到了，昨晚收到的。发生什么事了？"
+      ],
+      [
+       "Marta",
+       "¡Vendí mi piso! Y decidí volver a Valencia.",
+       "我把房子卖了！还决定回瓦伦西亚。"
+      ],
+      [
+       "Javi",
+       "¡Qué noticia! ¿Y tu trabajo?",
+       "真是个大消息！那你的工作呢？"
+      ],
+      [
+       "Marta",
+       "Una empresa de allí me ofreció un puesto. Lo discutimos ayer.",
+       "那边的一家公司给了我一个职位。我们昨天谈过了。"
+      ]
+     ],
+     "note": "-er 和 -ir 动词的过去时词尾完全一样：recibiste、ocurrió、vendí、decidí。"
+    },
+    {
+     "t": "word",
+     "w": "nacer"
+    },
+    {
+     "t": "word",
+     "w": "vender"
+    },
+    {
+     "t": "word",
+     "w": "romper"
+    },
+    {
+     "t": "word",
+     "w": "subir"
+    },
+    {
+     "t": "word",
+     "w": "decidir"
+    },
+    {
+     "t": "word",
+     "w": "recibir"
+    },
+    {
+     "t": "key",
+     "title": "-er / -ir 动词：-í, -iste, -ió, -imos, -isteis, -ieron",
+     "what": [
+      "-er 和 -ir 用同一套词尾：yo <b>-í</b> · tú <b>-iste</b> · él <b>-ió</b> · nosotros <b>-imos</b> · vosotros <b>-isteis</b> · ellos <b>-ieron</b>",
+      "comer → comí, comiste, comió, comimos, comisteis, comieron；vivir → viví, viviste, vivió…"
+     ],
+     "why": [
+      "比现在时简单：现在时 -er / -ir 还有区别（comemos / vivimos），过去时完全合并了。"
+     ],
+     "zh": [
+      "和 -ar 对照着记：-é / -í、-ó / -ió、-aron / -ieron。"
+     ],
+     "ex": [
+      [
+       "Ayer comí con mi jefe.",
+       "我昨天和老板吃了午饭。"
+      ],
+      [
+       "¿Dónde naciste?",
+       "你在哪儿出生？"
+      ],
+      [
+       "Recibieron el paquete el lunes.",
+       "他们周一收到了包裹。"
+      ]
+     ],
+     "err": [
+      [
+       "Ella recibó la noticia.",
+       "Ella recibió la noticia.",
+       "第三人称是 -ió"
+      ],
+      [
+       "Ellos decidieran ir.",
+       "Ellos decidieron ir.",
+       "ellos 是 -ieron"
+      ]
+     ],
+     "sum": "<b>-í, -iste, -ió, -imos, -isteis, -ieron</b>（-er 和 -ir 一样）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿Dónde ___ tú?",
+       "o": [
+        "naciste",
+        "nació",
+        "nacé"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "El niño ___ un vaso.",
+       "o": [
+        "rompieron",
+        "rompió",
+        "rompó"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Ayer (nosotros) ___ (vender) el coche.",
+       "a": [
+        "vendimos"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我昨天收到了一个包裹。",
+       "a": [
+        "Ayer recibí un paquete.",
+        "Recibí un paquete ayer."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "compartir"
+    },
+    {
+     "t": "word",
+     "w": "ocurrir"
+    },
+    {
+     "t": "word",
+     "w": "discutir"
+    },
+    {
+     "t": "word",
+     "w": "ofrecer"
+    },
+    {
+     "t": "word",
+     "w": "noticia"
+    },
+    {
+     "t": "word",
+     "w": "paquete"
+    },
+    {
+     "t": "key",
+     "title": "nosotros 形：过去时和现在时一模一样",
+     "what": [
+      "-ar：<b>hablamos</b> = 我们说 / 我们说了",
+      "-ir：<b>vivimos</b> = 我们住 / 我们住过",
+      "（-er 不同：comemos 现在 / comimos 过去）"
+     ],
+     "why": [
+      "所以看到 hablamos、vivimos，要靠<b>时间词</b>判断：Ayer hablamos（过去）/ Siempre hablamos（现在）。"
+     ],
+     "zh": [
+      "这点和中文很像：中文动词本来就不变，“我们昨天聊天”靠“昨天”表达过去。"
+     ],
+     "ex": [
+      [
+       "Ayer hablamos con el profesor.",
+       "我们昨天和老师谈了。"
+      ],
+      [
+       "Normalmente hablamos en inglés.",
+       "我们平时说英语。"
+      ]
+     ],
+     "err": [
+      [
+       "Ayer comemos paella.",
+       "Ayer comimos paella.",
+       "-er 动词 nosotros 过去时是 -imos"
+      ]
+     ],
+     "sum": "-ar / -ir 的 nosotros 过去 = 现在，<b>看时间词</b>；-er 是 -imos。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Ayer (nosotros) ___ paella.",
+       "o": [
+        "comemos",
+        "comieron",
+        "comimos"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "“Vivimos en Madrid durante tres años.” 这里 vivimos 是：",
+       "o": [
+        "将来时",
+        "现在时（现在住）",
+        "过去时（住过三年）"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "¡Vendí mi piso! Y decidí volver a Valencia.",
+     "zh": "我把房子卖了！还决定回瓦伦西亚。",
+     "focus": "vendí、decidí 重音在最后的 í"
+    },
+    {
+     "t": "c",
+     "q": "¿Qué ___ anoche? Hay mucha policía en la calle.",
+     "o": [
+      "ocurren",
+      "ocurrió",
+      "ocurrí"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Me ___ un trabajo en Valencia, pero no lo acepté.",
+     "o": [
+      "ofrecen",
+      "ofrecí",
+      "ofrecieron"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Ayer ___ (yo) una noticia muy buena.",
+     "a": [
+      "recibí"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Mis padres ___ (decidir) vender la casa.",
+     "a": [
+      "decidieron"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Compartimos un piso en Madrid",
+     "p": [
+      "Compartimos",
+      "un piso",
+      "en Madrid"
+     ],
+     "zh": "我们在马德里合租一套公寓。"
+    },
+    {
+     "t": "dict",
+     "a": "El paquete llegó ayer por la tarde."
+    },
+    {
+     "t": "tr",
+     "zh": "你在哪儿出生的？",
+     "a": [
+      "¿Dónde naciste?",
+      "¿Dónde nació usted?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：nacer、vender、romper、subir、decidir、recibir、compartir、ocurrir、discutir、ofrecer、noticia、paquete。",
+      "<b>重点</b>：-er / -ir 过去时词尾 -í, -iste, -ió, -imos, -isteis, -ieron。",
+      "<b>重点</b>：hablamos / vivimos 现在和过去同形，看时间词。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.1.3",
+   "title": "时间标志词",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Hace dos años",
+     "lines": [
+      [
+       "Ana",
+       "¿Cuándo llegaste a España?",
+       "你什么时候来的西班牙？"
+      ],
+      [
+       "Wei",
+       "Hace dos años. Primero viví en Madrid durante un año.",
+       "两年前。我先在马德里住了一年。"
+      ],
+      [
+       "Ana",
+       "¿Y luego?",
+       "后来呢？"
+      ],
+      [
+       "Wei",
+       "El año pasado encontré trabajo en Sevilla, y entonces me mudé.",
+       "去年我在塞维利亚找到工作，于是就搬了过来。"
+      ],
+      [
+       "Ana",
+       "¿Y has vuelto a Madrid?",
+       "你回过马德里吗？"
+      ],
+      [
+       "Wei",
+       "Sí, la última vez fue el mes pasado.",
+       "回过，上一次是上个月。"
+      ]
+     ],
+     "note": "过去时离不开时间词。会用 hace + 时间、durante、la última vez，讲经历就顺了。"
+    },
+    {
+     "t": "word",
+     "w": "la semana pasada"
+    },
+    {
+     "t": "word",
+     "w": "el mes pasado"
+    },
+    {
+     "t": "word",
+     "w": "el año pasado"
+    },
+    {
+     "t": "word",
+     "w": "hace + 时间"
+    },
+    {
+     "t": "word",
+     "w": "el otro día"
+    },
+    {
+     "t": "word",
+     "w": "de repente"
+    },
+    {
+     "t": "key",
+     "title": "hace + 时间 = ……以前",
+     "what": [
+      "<b>hace</b> + 时间段 + 过去时：Llegué hace dos años.（两年前到的）",
+      "也可放句首：Hace dos años llegué a España.",
+      "问：¿Cuánto tiempo hace que …? / ¿Cuándo …?"
+     ],
+     "why": [
+      "这里的 hace 不是“做”，而是固定用法“距今……”。后面直接跟时间，不加 de、不加 antes。"
+     ],
+     "zh": [
+      "中文“两年前”的“前”在后面；西语 hace 在前：hace dos años。别说 dos años antes（那是“两年前（相对于某个过去时间）”）。"
+     ],
+     "ex": [
+      [
+       "Empecé a estudiar español hace seis meses.",
+       "我半年前开始学西班牙语。"
+      ],
+      [
+       "Hace una semana vi a Pedro.",
+       "一周前我见到了佩德罗。"
+      ]
+     ],
+     "err": [
+      [
+       "Llegué dos años hace.",
+       "Llegué hace dos años.",
+       "hace 放在时间前"
+      ],
+      [
+       "Lo compré hace de tres días.",
+       "Lo compré hace tres días.",
+       "不加 de"
+      ]
+     ],
+     "sum": "<b>hace + 时间</b>（……以前），后面不加 de。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "“我三天前买的。”",
+       "o": [
+        "Lo compré tres días hace.",
+        "Lo compré hace tres días.",
+        "Lo compré hace de tres días."
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Terminé la carrera ___ cinco años.",
+       "a": [
+        "hace"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我两年前来到西班牙。",
+       "a": [
+        "Llegué a España hace dos años.",
+        "Hace dos años llegué a España.",
+        "Vine a España hace dos años."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "por fin"
+    },
+    {
+     "t": "word",
+     "w": "al final"
+    },
+    {
+     "t": "word",
+     "w": "entonces"
+    },
+    {
+     "t": "word",
+     "w": "más tarde"
+    },
+    {
+     "t": "word",
+     "w": "durante"
+    },
+    {
+     "t": "word",
+     "w": "la última vez"
+    },
+    {
+     "t": "key",
+     "title": "过去时还是现在完成时：看时间词（西班牙的用法）",
+     "what": [
+      "<b>简单过去时</b>：已经结束的时间 —— ayer, anoche, la semana pasada, el año pasado, hace + 时间, en 2020",
+      "<b>现在完成时</b>：还没结束的时间 —— hoy, esta mañana, esta semana, este año, ya, todavía no, nunca"
+     ],
+     "why": [
+      "“今天早上”如果说话时还是今天，就用完成时：Esta mañana he desayunado poco。",
+      "拉美很多地方几乎都用简单过去时，这里按西班牙的标准学，两种都能听懂。"
+     ],
+     "zh": [
+      "中文“我吃了早饭”不分；西语要看时间框：今天之内 → he desayunado；昨天 → desayuné。"
+     ],
+     "ex": [
+      [
+       "Hoy he trabajado mucho.",
+       "我今天工作了很多。"
+      ],
+      [
+       "Ayer trabajé mucho.",
+       "我昨天工作了很多。"
+      ],
+      [
+       "Este año he viajado tres veces.",
+       "今年我旅行了三次。"
+      ]
+     ],
+     "err": [
+      [
+       "Ayer he visto a Juan.",
+       "Ayer vi a Juan.",
+       "ayer → 简单过去时"
+      ],
+      [
+       "Esta semana fui al gimnasio tres veces.",
+       "Esta semana he ido al gimnasio tres veces.",
+       "本周还没结束 → 完成时（西班牙）"
+      ]
+     ],
+     "sum": "<b>ayer / pasado / hace</b> → 简单过去时；<b>hoy / este / ya</b> → 现在完成时。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "La semana pasada ___ a mis abuelos.",
+       "o": [
+        "visito",
+        "visité",
+        "he visitado"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Hoy ___ dos cafés.",
+       "o": [
+        "tomaron",
+        "he tomado",
+        "tomé"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "El año pasado ___ en Londres.",
+       "o": [
+        "he vivido",
+        "vivo",
+        "viví"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Hace dos años. Primero viví en Madrid durante un año.",
+     "zh": "两年前。我先在马德里住了一年。",
+     "focus": "hace 的 h 不发音；durante un año 连读"
+    },
+    {
+     "t": "c",
+     "q": "___ empezó a llover y nos mojamos.",
+     "o": [
+      "De repente",
+      "Durante",
+      "Hace"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Viví en París ___ cinco años.",
+     "o": [
+      "por fin",
+      "hace",
+      "durante"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Esperé tres horas y ___ llegó el autobús.",
+     "o": [
+      "durante",
+      "por fin",
+      "el mes pasado"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "¿Cuándo fue la ___ vez que fuiste al cine?",
+     "a": [
+      "última"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "___ otro día vi a tu hermano en el metro.",
+     "a": [
+      "El"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Llegué a España hace dos años",
+     "p": [
+      "Llegué",
+      "a España",
+      "hace",
+      "dos años"
+     ],
+     "zh": "我两年前来到西班牙。"
+    },
+    {
+     "t": "dict",
+     "a": "El año pasado encontré trabajo en Sevilla."
+    },
+    {
+     "t": "tr",
+     "zh": "最后我们没出去。",
+     "a": [
+      "Al final no salimos.",
+      "Al final, no salimos."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "时间词：la semana pasada、el mes pasado、el año pasado、hace + 时间、el otro día、de repente、por fin、al final、entonces、más tarde、durante、la última vez。",
+      "<b>重点</b>：hace + 时间 = ……以前。",
+      "<b>重点</b>：ayer / pasado / hace → 简单过去时；hoy / este / ya → 现在完成时。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.1.4",
+   "title": "讲周末",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "¿Qué tal el fin de semana?",
+     "lines": [
+      [
+       "Carlos",
+       "¿Qué tal el fin de semana?",
+       "周末过得怎么样？"
+      ],
+      [
+       "Elena",
+       "¡Genial! El sábado hice una excursión a un pueblo con unos amigos.",
+       "棒极了！周六我和几个朋友去了一个小镇。"
+      ],
+      [
+       "Carlos",
+       "¿Y qué visitasteis?",
+       "你们参观了什么？"
+      ],
+      [
+       "Elena",
+       "Primero visitamos una exposición y luego dimos un paseo por el río.",
+       "先看了一个展览，然后沿着河散了步。"
+      ],
+      [
+       "Carlos",
+       "¡Qué envidia! Yo me quedé en casa y vi el partido.",
+       "真羡慕！我待在家看了比赛。"
+      ],
+      [
+       "Elena",
+       "Bueno, ¿y ganó tu equipo?",
+       "那你的球队赢了吗？"
+      ]
+     ],
+     "note": "周一见面第一句：¿Qué tal el fin de semana? 这一课学会按顺序讲一个周末。"
+    },
+    {
+     "t": "word",
+     "w": "excursión"
+    },
+    {
+     "t": "word",
+     "w": "concierto"
+    },
+    {
+     "t": "word",
+     "w": "pueblo"
+    },
+    {
+     "t": "word",
+     "w": "exposición"
+    },
+    {
+     "t": "word",
+     "w": "partido"
+    },
+    {
+     "t": "word",
+     "w": "paseo"
+    },
+    {
+     "t": "key",
+     "title": "按顺序讲：primero, luego, después, más tarde, al final",
+     "what": [
+      "开头：<b>primero</b>（首先）",
+      "接着：<b>luego</b> / <b>después</b>（然后）、<b>más tarde</b>（后来）、<b>entonces</b>（于是）",
+      "结尾：<b>al final</b>（最后）、<b>por fin</b>（终于 —— 等了很久）"
+     ],
+     "why": [
+      "讲故事时连接词比动词更能让人听懂。一段话里至少用三个，听起来就“有条理”。",
+      "al final 是“最后（结果）”，por fin 带“总算、终于”的情绪，别混。"
+     ],
+     "zh": [
+      "中文“然后……然后……然后……”一直重复；西语换着用 luego / después / más tarde 更自然。"
+     ],
+     "ex": [
+      [
+       "Primero desayunamos, luego fuimos a la playa y al final cenamos en el puerto.",
+       "我们先吃早饭，然后去海滩，最后在港口吃了晚饭。"
+      ],
+      [
+       "Esperé una hora y por fin llegó.",
+       "我等了一个小时，他终于来了。"
+      ]
+     ],
+     "err": [
+      [
+       "Al fin de semana fui al cine.",
+       "El fin de semana fui al cine.",
+       "“周末”是 el fin de semana"
+      ],
+      [
+       "Esperé dos horas y al final llegó el tren. （想强调“总算”）",
+       "Esperé dos horas y por fin llegó el tren.",
+       "“终于”用 por fin"
+      ]
+     ],
+     "sum": "<b>primero → luego / después → más tarde → al final</b>；等了很久 → <b>por fin</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Esperé el autobús cuarenta minutos y ___ llegó.",
+       "o": [
+        "primero",
+        "por fin",
+        "luego"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "___ fuimos al museo y luego comimos.",
+       "o": [
+        "Por fin",
+        "Primero",
+        "Al final"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "我们先吃早饭，然后去了海滩。",
+       "a": [
+        "Primero desayunamos y luego fuimos a la playa.",
+        "Primero desayunamos y después fuimos a la playa."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "quedar con"
+    },
+    {
+     "t": "word",
+     "w": "dar un paseo"
+    },
+    {
+     "t": "word",
+     "w": "tomar el sol"
+    },
+    {
+     "t": "word",
+     "w": "pasarlo bien"
+    },
+    {
+     "t": "word",
+     "w": "¿Qué tal el fin de semana?"
+    },
+    {
+     "t": "word",
+     "w": "¡Qué envidia!"
+    },
+    {
+     "t": "key",
+     "title": "quedar：约见、约在某处、剩下",
+     "what": [
+      "<b>quedar con</b> + 人：和某人约见 —— Quedé con Ana.",
+      "<b>quedar en</b> + 地点 / 时间：约在…… —— Quedamos en la plaza a las seis.",
+      "<b>quedarse</b>（自反）：留下、待着 —— Me quedé en casa."
+     ],
+     "why": [
+      "quedar 一词多义，带不带 se、后面跟 con 还是 en，意思不同。西班牙人约人几乎都用 quedar。"
+     ],
+     "zh": [
+      "中文“约朋友”不分“约人”和“约地点”，西语用介词区分：con 人、en 地点。"
+     ],
+     "ex": [
+      [
+       "El viernes quedé con mis compañeros.",
+       "周五我和同事们约了见面。"
+      ],
+      [
+       "¿Dónde quedamos? —En la puerta del cine.",
+       "我们约在哪儿？——电影院门口。"
+      ],
+      [
+       "Me quedé en casa porque llovía.",
+       "因为下雨，我待在家里。"
+      ]
+     ],
+     "err": [
+      [
+       "Quedé a Ana en el bar.",
+       "Quedé con Ana en el bar.",
+       "约人用 con"
+      ],
+      [
+       "Quedé en casa todo el día.",
+       "Me quedé en casa todo el día.",
+       "待着用 quedarse"
+      ]
+     ],
+     "sum": "<b>quedar con</b> 人 / <b>quedar en</b> 地点 / <b>quedarse</b> 待着。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "El sábado ___ con unos amigos en el centro.",
+       "o": [
+        "quedó",
+        "me quedé",
+        "quedé"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Estaba cansado, así que ___ en casa.",
+       "o": [
+        "quedé con",
+        "quedamos",
+        "me quedé"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Primero visitamos una exposición y luego dimos un paseo por el río.",
+     "zh": "先看了一个展览，然后沿着河散了步。",
+     "focus": "exposición 的 x 读 /ks/；río 的 r 单击"
+    },
+    {
+     "t": "c",
+     "q": "El domingo ___ una excursión a la montaña.",
+     "o": [
+      "hicimos",
+      "hacimos",
+      "hacemos"
+     ],
+     "a": 0,
+     "e": "hacer 的过去时不规则：hice, hiciste, hizo, hicimos… 下个单元细讲。"
+    },
+    {
+     "t": "c",
+     "q": "Fuimos a un ___ de música clásica.",
+     "o": [
+      "concierto",
+      "partido",
+      "pueblo"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Por la tarde ___ en la playa.",
+     "o": [
+      "dimos el sol",
+      "tomamos el sol",
+      "hicimos el sol"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Lo ___ muy bien en la fiesta.",
+     "a": [
+      "pasamos"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Después de cenar dimos un ___ por el río.",
+     "a": [
+      "paseo"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "El sábado quedé con unos amigos",
+     "p": [
+      "El sábado",
+      "quedé",
+      "con",
+      "unos amigos"
+     ],
+     "zh": "周六我和几个朋友约了见面。"
+    },
+    {
+     "t": "dict",
+     "a": "Primero visitamos una exposición y luego dimos un paseo."
+    },
+    {
+     "t": "tr",
+     "zh": "周末过得怎么样？",
+     "a": [
+      "¿Qué tal el fin de semana?",
+      "¿Qué tal tu fin de semana?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "周末：excursión、concierto、pueblo、exposición、partido、paseo、dar un paseo、tomar el sol、pasarlo bien、¡Qué envidia!",
+      "<b>重点</b>：primero → luego / después → más tarde → al final；por fin = 终于。",
+      "<b>重点</b>：quedar con 人 / quedar en 地点 / quedarse 待着。",
+      "hice、hicimos、dimos、fuimos 是不规则过去时，下一单元学。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.1.5",
+   "title": "单元复习：拼写变化与综合",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Un día largo",
+     "lines": [
+      [
+       "Diego",
+       "Ayer llegué tardísimo a casa.",
+       "我昨天到家特别晚。"
+      ],
+      [
+       "Sara",
+       "¿Por qué? ¿Qué pasó?",
+       "为什么？出什么事了？"
+      ],
+      [
+       "Diego",
+       "Busqué aparcamiento durante media hora. Al final aparqué muy lejos.",
+       "我找车位找了半小时，最后停得很远。"
+      ],
+      [
+       "Sara",
+       "¡Qué rollo! ¿Y luego?",
+       "真烦！后来呢？"
+      ],
+      [
+       "Diego",
+       "Luego empecé a cocinar, pero no encontré la sal.",
+       "后来开始做饭，却找不到盐。"
+      ],
+      [
+       "Sara",
+       "¡Pobre! ¿Y tocaste la guitarra por lo menos?",
+       "真可怜！那你至少弹吉他了吧？"
+      ],
+      [
+       "Diego",
+       "Sí, toqué un poco antes de dormir.",
+       "弹了，睡前弹了一会儿。"
+      ]
+     ],
+     "note": "llegué、busqué、aparqué、empecé、toqué —— yo 形的拼写在变，读音没变。"
+    },
+    {
+     "t": "word",
+     "w": "acabar"
+    },
+    {
+     "t": "word",
+     "w": "intentar"
+    },
+    {
+     "t": "word",
+     "w": "tardar"
+    },
+    {
+     "t": "word",
+     "w": "sacar"
+    },
+    {
+     "t": "word",
+     "w": "tocar"
+    },
+    {
+     "t": "word",
+     "w": "cruzar"
+    },
+    {
+     "t": "key",
+     "title": "拼写变化：-car → qué、-gar → gué、-zar → cé（只在 yo）",
+     "what": [
+      "<b>-car</b>：buscar → bus<b>qué</b>、tocar → to<b>qué</b>、sacar → sa<b>qué</b>",
+      "<b>-gar</b>：llegar → lle<b>gué</b>、pagar → pa<b>gué</b>、jugar → ju<b>gué</b>",
+      "<b>-zar</b>：empezar → empe<b>cé</b>、cruzar → cru<b>cé</b>、organizar → organi<b>cé</b>",
+      "其他人称正常：buscaste, buscó…"
+     ],
+     "why": [
+      "为什么变？为了<b>保持读音</b>：c 在 e 前读 /θ/，所以 /k/ 音要写成 qu；g 在 e 前读 /x/，所以要加 u；z 在 e 前西语习惯写成 c。"
+     ],
+     "zh": [
+      "这和第一学期学的拼读规则一脉相承：c / qu、g / gu、z / c 都是“看后面的元音”。"
+     ],
+     "ex": [
+      [
+       "Llegué a la oficina a las nueve.",
+       "我九点到的办公室。"
+      ],
+      [
+       "Saqué muchas fotos en Toledo.",
+       "我在托莱多拍了很多照片。"
+      ],
+      [
+       "Empecé a trabajar en 2021.",
+       "我 2021 年开始工作。"
+      ]
+     ],
+     "err": [
+      [
+       "Yo llegé tarde.",
+       "Yo llegué tarde.",
+       "-gar → -gué"
+      ],
+      [
+       "Yo buscé las llaves.",
+       "Yo busqué las llaves.",
+       "-car → -qué"
+      ],
+      [
+       "Yo empezé a las ocho.",
+       "Yo empecé a las ocho.",
+       "-zar → -cé"
+      ]
+     ],
+     "sum": "yo 形：<b>-qué, -gué, -cé</b>（为了保持读音）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Ayer (yo) ___ una hora en el tráfico.",
+       "o": [
+        "tardí",
+        "tardé",
+        "tardó"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "(Yo) ___ la calle sin mirar.",
+       "o": [
+        "cruzó",
+        "crucé",
+        "cruzé"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "(Yo) ___ (pagar) la cuenta con tarjeta.",
+       "a": [
+        "pagué"
+       ]
+      },
+      {
+       "t": "f",
+       "q": "(Yo) ___ (practicar) español con un amigo.",
+       "a": [
+        "practiqué"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "aparcar"
+    },
+    {
+     "t": "word",
+     "w": "explicar"
+    },
+    {
+     "t": "word",
+     "w": "practicar"
+    },
+    {
+     "t": "word",
+     "w": "organizar"
+    },
+    {
+     "t": "word",
+     "w": "entrada"
+    },
+    {
+     "t": "word",
+     "w": "contestar"
+    },
+    {
+     "t": "key",
+     "title": "tardar + 时间 + en + 动词原形：花了多久才……",
+     "what": [
+      "<b>tardar</b> + 时间 + <b>en</b> + 动词原形：Tardé dos horas en llegar.",
+      "问：¿Cuánto tardaste en …?"
+     ],
+     "why": [
+      "西语用 tardar 表达“花时间”，主语是人；不用 pasar 或 usar。"
+     ],
+     "zh": [
+      "中文“我花了两个小时才到”—— 别直译 usé dos horas。"
+     ],
+     "ex": [
+      [
+       "Tardé tres días en terminar el informe.",
+       "我花了三天才写完报告。"
+      ],
+      [
+       "¿Cuánto tardaste en llegar?",
+       "你花了多久才到？"
+      ]
+     ],
+     "err": [
+      [
+       "Usé dos horas para llegar.",
+       "Tardé dos horas en llegar.",
+       "“花时间”用 tardar en"
+      ]
+     ],
+     "sum": "<b>tardar + 时间 + en + 原形</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Tardé media hora ___ encontrar aparcamiento.",
+       "o": [
+        "para",
+        "de",
+        "en"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "我花了两个小时才到。",
+       "a": [
+        "Tardé dos horas en llegar.",
+        "Tardé dos horas en llegar a casa."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Busqué aparcamiento durante media hora. Al final aparqué muy lejos.",
+     "zh": "我找车位找了半小时，最后停得很远。",
+     "focus": "busqué、aparqué 的 qu 读 /k/"
+    },
+    {
+     "t": "c",
+     "q": "Intenté llamarte, pero nadie ___.",
+     "o": [
+      "contesté",
+      "contestó",
+      "contestaron"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Compré dos ___ para el concierto.",
+     "o": [
+      "partidos",
+      "entradas",
+      "paseos"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "La reunión ___ a las siete.",
+     "o": [
+      "acaba ayer",
+      "acabó",
+      "acabé"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "(Yo) ___ (organizar) una cena para el equipo.",
+     "a": [
+      "organicé"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "La profesora nos ___ (explicar) el subjuntivo.",
+     "a": [
+      "explicó"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Saqué muchas fotos en el viaje",
+     "p": [
+      "Saqué",
+      "muchas fotos",
+      "en el viaje"
+     ],
+     "zh": "旅行中我拍了很多照片。"
+    },
+    {
+     "t": "dict",
+     "a": "Busqué aparcamiento durante media hora."
+    },
+    {
+     "t": "tr",
+     "zh": "我昨天到家很晚。",
+     "a": [
+      "Ayer llegué muy tarde a casa.",
+      "Ayer llegué a casa muy tarde.",
+      "Llegué muy tarde a casa ayer."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：acabar、intentar、tardar、sacar、tocar、cruzar、aparcar、explicar、practicar、organizar、entrada、contestar。",
+      "<b>重点</b>：yo 形拼写变化 -qué / -gué / -cé。",
+      "<b>重点</b>：tardar + 时间 + en + 原形。",
+      "本单元：规则动词简单过去时 + 时间词 + 讲周末。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.1.6",
+   "title": "单元阅读：Un sábado en Toledo",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Un sábado en Toledo",
+     "note": "先关掉译文读一遍，把所有过去时动词圈出来，想想原形是什么。",
+     "lines": [
+      [
+       "El sábado pasado mi amiga Carmen y yo visitamos Toledo.",
+       "上周六我和朋友卡门去了托莱多。"
+      ],
+      [
+       "Alquilamos un coche y salimos de Madrid a las nueve.",
+       "我们租了一辆车，九点从马德里出发。"
+      ],
+      [
+       "Tardamos una hora en llegar.",
+       "我们花了一个小时才到。"
+      ],
+      [
+       "Aparqué cerca de la estación y subimos a pie al centro.",
+       "我把车停在车站附近，我们步行上到市中心。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Primero visitamos la catedral. Carmen sacó muchas fotos.",
+       "我们先参观了大教堂。卡门拍了很多照片。"
+      ],
+      [
+       "Luego paseamos por las calles pequeñas y compramos mazapán, un dulce típico de la ciudad.",
+       "然后我们在小街上散步，还买了当地特色甜点杏仁糖。"
+      ],
+      [
+       "A las dos comimos en un restaurante muy bonito.",
+       "两点我们在一家很漂亮的餐厅吃了午饭。"
+      ],
+      [
+       "De repente empezó a llover, así que entramos en un museo.",
+       "突然下起了雨，于是我们进了一家博物馆。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Por la tarde salió el sol otra vez.",
+       "下午太阳又出来了。"
+      ],
+      [
+       "Regresamos a Madrid a las ocho, cansadas pero contentas.",
+       "我们八点回到马德里，累，但很开心。"
+      ],
+      [
+       "Al final, lo pasamos muy bien. ¡Quiero volver pronto!",
+       "总之，我们玩得很开心。我想很快再去！"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Cómo viajaron a Toledo?",
+     "o": [
+      "En tren.",
+      "En autobús.",
+      "En un coche alquilado."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Cuánto tardaron en llegar?",
+     "o": [
+      "Dos horas.",
+      "Media hora.",
+      "Una hora."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué hicieron primero en Toledo?",
+     "o": [
+      "Comieron en un restaurante.",
+      "Visitaron la catedral.",
+      "Compraron mazapán."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Por qué entraron en un museo?",
+     "o": [
+      "Porque estaban cansadas.",
+      "Porque Carmen quería ver arte.",
+      "Porque empezó a llover."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "“Tardamos una hora en llegar” 的意思是：",
+     "o": [
+      "我们花了一个小时才到",
+      "我们等了一个小时",
+      "我们晚到了一个小时"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "我们八点回到了马德里。",
+     "a": [
+      "Regresamos a Madrid a las ocho.",
+      "Volvimos a Madrid a las ocho."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "规则过去时：visitamos、alquilamos、tardamos、aparqué、sacó、paseamos、comimos、empezó、regresamos。",
+      "拼写变化：aparqué（-car → -qué）。",
+      "讲顺序：primero、luego、de repente、por la tarde、al final。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "Ayer (yo) ___ con mi jefe.",
+    "o": [
+     "comí",
+     "comió",
+     "como"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Mis amigos ___ un piso en Barcelona.",
+    "o": [
+     "alquiló",
+     "alquilamos",
+     "alquilaron"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Llegué a Madrid ___ tres años.",
+    "o": [
+     "durante",
+     "hace",
+     "desde"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Esta mañana ___ un café con leche.",
+    "o": [
+     "tomé ayer",
+     "he tomado",
+     "tomo"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "(Yo) ___ las llaves por toda la casa.",
+    "o": [
+     "busqué",
+     "buscó",
+     "buscé"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "El sábado quedé ___ mis primos.",
+    "o": [
+     "a",
+     "en",
+     "con"
+    ],
+    "a": 2
+   },
+   {
+    "t": "tr",
+    "zh": "我昨晚给妈妈打了电话。",
+    "a": [
+     "Anoche llamé a mi madre.",
+     "Llamé a mi madre anoche."
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "你什么时候来的西班牙？",
+    "a": [
+     "¿Cuándo llegaste a España?",
+     "¿Cuándo viniste a España?"
+    ]
+   }
+  ]
+ }
+}
