@@ -1,0 +1,1872 @@
+{
+ "id": "en.2.1",
+ "title": "职场日常词汇",
+ "goal": "办公室、会议、日程；时态综合复习",
+ "lessons": [
+  {
+   "id": "en.2.1.1",
+   "title": "办公室与设备",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "新同事的第一天",
+     "lines": [
+      [
+       "A",
+       "Welcome to the team, Ryan. This is your cubicle, next to the window.",
+       "欢迎加入，瑞安。这是你的隔间，在窗户旁边。"
+      ],
+      [
+       "B",
+       "Thanks. Where can I find a stapler and some binders?",
+       "谢谢。订书机和文件夹在哪儿拿？"
+      ],
+      [
+       "A",
+       "All the stationery is in the supply closet at the end of the hall.",
+       "文具都在走廊尽头的储物间。"
+      ],
+      [
+       "B",
+       "Great. And is there a copier on this floor?",
+       "好的。这层有复印机吗？"
+      ],
+      [
+       "A",
+       "Yes, it's next to the filing cabinets. The receptionist can give you a code.",
+       "有，在文件柜旁边。前台会给你密码。"
+      ]
+     ],
+     "note": "TOEIC 的场景几乎都在办公室。先把“办公室里有什么”说熟。"
+    },
+    {
+     "t": "word",
+     "w": "cubicle"
+    },
+    {
+     "t": "word",
+     "w": "workstation"
+    },
+    {
+     "t": "word",
+     "w": "binder"
+    },
+    {
+     "t": "word",
+     "w": "stapler"
+    },
+    {
+     "t": "word",
+     "w": "copier"
+    },
+    {
+     "t": "word",
+     "w": "projector"
+    },
+    {
+     "t": "key",
+     "title": "描述办公室：There is / are + 地点介词",
+     "what": [
+      "说“某处有某物”：<b>There is</b> + 单数 / 不可数，<b>There are</b> + 复数。",
+      "地点介词：<b>next to</b>（旁边）、<b>across from</b>（对面）、<b>at the end of</b>（尽头）、<b>on the wall</b>（墙上）、<b>in the corner</b>（角落）。"
+     ],
+     "why": [
+      "TOEIC Part 1（看图）和 Part 3（对话）里，问“东西在哪儿”是最常见的题。答案往往就是一个介词短语。",
+      "There be 后面跟着的名词决定 is / are（就近原则）：There is a copier and two printers.（离 is 最近的是 a copier）"
+     ],
+     "zh": [
+      "中文“墙上有一块白板”→ 英语把地点放后面：<b>There is a whiteboard on the wall.</b>，不说 On the wall has a whiteboard。"
+     ],
+     "ex": [
+      [
+       "There is a projector in the meeting room.",
+       "会议室里有一台投影仪。"
+      ],
+      [
+       "There are two filing cabinets next to the copier.",
+       "复印机旁边有两个文件柜。"
+      ],
+      [
+       "The bulletin board is across from the elevator.",
+       "公告栏在电梯对面。"
+      ]
+     ],
+     "err": [
+      [
+       "The wall has a whiteboard.",
+       "There is a whiteboard on the wall.",
+       "“某处有某物”用 There be"
+      ],
+      [
+       "There are a copier in the hall.",
+       "There is a copier in the hall.",
+       "单数用 is"
+      ]
+     ],
+     "sum": "<b>There is / are + 物 + 地点介词短语</b>；地点放句末。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "There ___ some binders in the supply closet.",
+       "o": [
+        "is",
+        "has",
+        "are"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "“复印机在文件柜旁边。”",
+       "o": [
+        "The copier is next to the filing cabinets.",
+        "The copier is next the filing cabinets.",
+        "Next to the filing cabinets has the copier."
+       ],
+       "a": 0
+      },
+      {
+       "t": "tr",
+       "zh": "会议室里有一台投影仪。",
+       "a": [
+        "There is a projector in the meeting room.",
+        "There's a projector in the meeting room.",
+        "There is a projector in the conference room."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "whiteboard"
+    },
+    {
+     "t": "word",
+     "w": "filing cabinet"
+    },
+    {
+     "t": "word",
+     "w": "bulletin board"
+    },
+    {
+     "t": "word",
+     "w": "supply closet"
+    },
+    {
+     "t": "word",
+     "w": "stationery"
+    },
+    {
+     "t": "word",
+     "w": "receptionist"
+    },
+    {
+     "t": "key",
+     "title": "可数还是不可数：stationery、equipment、furniture",
+     "what": [
+      "<b>stationery</b>（文具）、<b>equipment</b>（设备）、<b>furniture</b>（家具）、<b>information</b>、<b>advice</b> 都是<b>不可数</b>：不加 -s，不用 a。",
+      "要数个数时说单个东西：a stapler、two binders，或者 a piece of equipment / furniture。"
+     ],
+     "why": [
+      "这些词是“一类东西的总称”，就像中文“文具”不说“三个文具”。TOEIC Part 5 常考：many equipment ✗ → much equipment / a lot of equipment ✓。"
+     ],
+     "zh": [
+      "中文“很多设备”“一些家具”数不数都行，英语要分清：many 只跟可数复数，much 跟不可数。"
+     ],
+     "ex": [
+      [
+       "We need some new office equipment.",
+       "我们需要一些新的办公设备。"
+      ],
+      [
+       "All the stationery is in the supply closet.",
+       "所有文具都在储物间。"
+      ],
+      [
+       "We bought three pieces of furniture.",
+       "我们买了三件家具。"
+      ]
+     ],
+     "err": [
+      [
+       "We ordered many new equipments.",
+       "We ordered a lot of new equipment.",
+       "equipment 不可数"
+      ],
+      [
+       "The stationeries are in the closet.",
+       "The stationery is in the closet.",
+       "不可数，用 is"
+      ]
+     ],
+     "sum": "<b>stationery / equipment / furniture</b> 不加 s，用 much / a lot of / a piece of。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "The company bought a lot of new ___.",
+       "o": [
+        "equipments",
+        "equipment",
+        "an equipment"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "How ___ furniture do we need for the lounge?",
+       "o": [
+        "many",
+        "a",
+        "much"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "所有文具都在储物间。",
+       "a": [
+        "All the stationery is in the supply closet.",
+        "All of the stationery is in the supply closet."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "All the stationery is in the supply closet at the end of the hall.",
+     "zh": "文具都在走廊尽头的储物间。",
+     "focus": "stationery 重音在第一个音节；at the end of 连读"
+    },
+    {
+     "t": "c",
+     "q": "You can find a stapler in the ___ at the end of the hall.",
+     "o": [
+      "bulletin board",
+      "supply closet",
+      "receptionist"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Please put the notice on the ___.",
+     "o": [
+      "stapler",
+      "binder",
+      "bulletin board"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The ___ will give you a visitor's pass at the front desk.",
+     "o": [
+      "workstation",
+      "receptionist",
+      "projector"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Each new employee gets a computer ___ with two monitors.",
+     "a": [
+      "workstation"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "There is a whiteboard on the wall.",
+     "zh": "墙上有一块白板。"
+    },
+    {
+     "t": "dict",
+     "a": "The copier is next to the filing cabinets."
+    },
+    {
+     "t": "tr",
+     "zh": "这层有复印机吗？",
+     "a": [
+      "Is there a copier on this floor?",
+      "Is there a photocopier on this floor?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "办公室：cubicle、workstation、filing cabinet、bulletin board、supply closet、copier、projector、whiteboard、receptionist。",
+      "<b>重点</b>：There is / are + 物 + 地点介词（next to、across from、at the end of、on the wall）。",
+      "<b>重点</b>：stationery、equipment、furniture 不可数。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.1.2",
+   "title": "会议与日程",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "改会议时间",
+     "lines": [
+      [
+       "A",
+       "I'm afraid I can't make it to the meeting on Thursday.",
+       "恐怕我周四的会去不了了。"
+      ],
+      [
+       "B",
+       "No problem. Let's reschedule it. What's your availability next week?",
+       "没关系，我们改个时间。你下周什么时候有空？"
+      ],
+      [
+       "A",
+       "I'm free on Tuesday afternoon. Could we postpone it until then?",
+       "周二下午有空。能推迟到那时吗？"
+      ],
+      [
+       "B",
+       "Sure. I'll update the agenda and send it to all attendees.",
+       "可以。我会更新议程，发给所有参会者。"
+      ],
+      [
+       "A",
+       "Thanks. And could someone take the minutes? I'd like to read them later.",
+       "谢谢。能找人做会议记录吗？我想之后看看。"
+      ]
+     ],
+     "note": "会议改期是 TOEIC Part 3 和 Part 7 最高频的话题之一。"
+    },
+    {
+     "t": "word",
+     "w": "agenda"
+    },
+    {
+     "t": "word",
+     "w": "minutes"
+    },
+    {
+     "t": "word",
+     "w": "attendee"
+    },
+    {
+     "t": "word",
+     "w": "participate"
+    },
+    {
+     "t": "word",
+     "w": "summarize"
+    },
+    {
+     "t": "word",
+     "w": "availability"
+    },
+    {
+     "t": "key",
+     "title": "改期的四个动词：postpone、reschedule、cancel、move up",
+     "what": [
+      "<b>postpone</b> / <b>put off</b>：推迟（往后挪）",
+      "<b>reschedule</b>：重新安排时间（前后都可能）",
+      "<b>cancel</b>：取消；<b>move up</b> / <b>bring forward</b>：提前"
+     ],
+     "why": [
+      "TOEIC 的题常把 postpone 换成 delay / put off / push back 来考同义替换：听到 postponed，选项里常写 delayed。",
+      "postpone + 名词 / doing：postpone the meeting、postpone making a decision（后面不接 to do）。"
+     ],
+     "zh": [
+      "中文“推迟到周二”→ postpone it <b>until</b> Tuesday / <b>to</b> Tuesday 都可以；“提前到周一”→ move it <b>up to</b> Monday。"
+     ],
+     "ex": [
+      [
+       "The meeting has been postponed until next week.",
+       "会议推迟到下周了。"
+      ],
+      [
+       "Can we move the deadline up to Friday?",
+       "能把截止日期提前到周五吗？"
+      ],
+      [
+       "We need to reschedule the client visit.",
+       "我们得重新安排客户来访的时间。"
+      ]
+     ],
+     "err": [
+      [
+       "Let's postpone to discuss it.",
+       "Let's postpone discussing it.",
+       "postpone 后接 doing"
+      ],
+      [
+       "The meeting was postponed to earlier.",
+       "The meeting was moved up.",
+       "提前用 move up"
+      ]
+     ],
+     "sum": "<b>postpone / put off</b> 推迟，<b>move up</b> 提前，<b>reschedule</b> 改时间，<b>cancel</b> 取消。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "The launch was ___ because the product wasn't ready.",
+       "o": [
+        "attended",
+        "postponed",
+        "moved up"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "We decided to postpone ___ the new system.",
+       "o": [
+        "install",
+        "to install",
+        "installing"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "会议推迟到下周了。",
+       "a": [
+        "The meeting has been postponed until next week.",
+        "The meeting was postponed until next week.",
+        "The meeting has been postponed to next week."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "reschedule"
+    },
+    {
+     "t": "word",
+     "w": "postpone"
+    },
+    {
+     "t": "word",
+     "w": "adjourn"
+    },
+    {
+     "t": "word",
+     "w": "convene"
+    },
+    {
+     "t": "word",
+     "w": "brainstorm"
+    },
+    {
+     "t": "word",
+     "w": "deadline"
+    },
+    {
+     "t": "key",
+     "title": "说日程安排：现在进行时和 will",
+     "what": [
+      "已经<b>定好的安排</b>（有时间、有人约好）用<b>现在进行时</b>：I'm meeting the client at three.",
+      "临时决定、答应、预测用 <b>will</b>：I'll send you the agenda.",
+      "时刻表、固定日程用一般现在时：The workshop starts at 9 a.m."
+     ],
+     "why": [
+      "Part 3 的问题“What will the man do next?”答案常藏在 I'll …（临时决定）里；问“When is the meeting?”答案常在 We're meeting … / It starts at … 里。"
+     ],
+     "zh": [
+      "中文“我下午见客户”没有时态标记，英语要看是不是已经安排好：已安排 → I'm meeting；刚决定 → I'll meet。"
+     ],
+     "ex": [
+      [
+       "I'm having lunch with a supplier tomorrow.",
+       "我明天和一个供应商吃午饭。"
+      ],
+      [
+       "OK, I'll update the schedule now.",
+       "好，我现在就更新日程。"
+      ],
+      [
+       "The conference starts at nine sharp.",
+       "会议九点整开始。"
+      ]
+     ],
+     "err": [
+      [
+       "I meet the client tomorrow at three.",
+       "I'm meeting the client tomorrow at three.",
+       "约好的安排用进行时"
+      ],
+      [
+       "The phone is ringing. I answer it.",
+       "The phone is ringing. I'll answer it.",
+       "临时决定用 will"
+      ]
+     ],
+     "sum": "约好的 → <b>be doing</b>；当场决定 → <b>will</b>；时刻表 → <b>一般现在时</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "A: We're out of paper. B: I ___ some from the supply closet.",
+       "o": [
+        "'m getting",
+        "get",
+        "'ll get"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Ms. Park ___ the new interns next Monday. It's on her calendar.",
+       "o": [
+        "will meets",
+        "is meeting",
+        "meets"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "我明天下午见客户。",
+       "a": [
+        "I'm meeting the client tomorrow afternoon.",
+        "I am meeting the client tomorrow afternoon.",
+        "I'm meeting a client tomorrow afternoon."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Could we postpone it until Tuesday afternoon?",
+     "zh": "能推迟到周二下午吗？",
+     "focus": "postpone 重音在第二音节 post-PONE"
+    },
+    {
+     "t": "c",
+     "q": "Please read the ___ before the meeting so you know what we'll discuss.",
+     "o": [
+      "minutes",
+      "agenda",
+      "deadline"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Who is taking the ___ today?",
+     "o": [
+      "minutes",
+      "attendee",
+      "agenda"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "All ___ must register at the front desk.",
+     "o": [
+      "deadlines",
+      "agendas",
+      "attendees"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The meeting was ___ at 5 p.m. and will continue tomorrow.",
+     "o": [
+      "convened",
+      "summarized",
+      "adjourned"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Could you ___ the main points in one paragraph?",
+     "a": [
+      "summarize",
+      "summarise"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Everyone is welcome to ___ in the discussion.",
+     "a": [
+      "participate"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Let's reschedule the meeting for next Tuesday.",
+     "zh": "我们把会改到下周二吧。"
+    },
+    {
+     "t": "dict",
+     "a": "I'll update the agenda and send it to all attendees."
+    },
+    {
+     "t": "tr",
+     "zh": "你下周什么时候有空？",
+     "a": [
+      "What's your availability next week?",
+      "When are you available next week?",
+      "When are you free next week?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "会议：agenda（议程）、minutes（会议记录）、attendee、participate、summarize、adjourn、convene、brainstorm、deadline。",
+      "<b>重点</b>：postpone / put off 推迟、move up 提前、reschedule 改时间；postpone doing。",
+      "<b>重点</b>：约好的安排用进行时，临时决定用 will，时刻表用一般现在时。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.1.3",
+   "title": "邮件常用句",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "一封通知邮件",
+     "lines": [
+      [
+       "",
+       "To: All staff  From: Office Manager  Subject: Office closure",
+       "收件人：全体员工  发件人：办公室经理  主题：办公室关闭"
+      ],
+      [
+       "",
+       "I'm writing to notify you that the office will be closed on Friday for maintenance.",
+       "特此通知：周五办公室因维修关闭。"
+      ],
+      [
+       "",
+       "Please save your work prior to leaving on Thursday.",
+       "请在周四离开前保存好工作。"
+      ],
+      [
+       "",
+       "Please find attached the updated floor plan.",
+       "附件是更新后的楼层平面图。"
+      ],
+      [
+       "",
+       "If you have any questions, please let me know.",
+       "如有任何问题，请告诉我。"
+      ]
+     ],
+     "note": "TOEIC Part 6 和 Part 7 一大半是邮件。固定句型认熟，读题速度会快很多。"
+    },
+    {
+     "t": "word",
+     "w": "memo"
+    },
+    {
+     "t": "word",
+     "w": "update"
+    },
+    {
+     "t": "word",
+     "w": "attachment"
+    },
+    {
+     "t": "word",
+     "w": "inbox"
+    },
+    {
+     "t": "word",
+     "w": "enclose"
+    },
+    {
+     "t": "word",
+     "w": "notify"
+    },
+    {
+     "t": "key",
+     "title": "邮件的开头和结尾：固定句型",
+     "what": [
+      "开头说目的：<b>I'm writing to</b> inform you / confirm / ask about …；<b>I'm writing regarding</b> + 名词",
+      "附件：<b>Please find attached</b> …；<b>I have attached</b> …；纸质信用 <b>Enclosed is / are</b> …",
+      "结尾：<b>Please let me know if</b> you have any questions. / <b>I look forward to hearing from you.</b>"
+     ],
+     "why": [
+      "Part 7 的第一题几乎总是“What is the purpose of the e-mail?”—— 答案就在 I'm writing to … 那一句。先找这句，能省一半时间。",
+      "look forward to 后面接 <b>名词或 doing</b>，是 Part 5 常考点。"
+     ],
+     "zh": [
+      "中文邮件常用“您好！关于……”直接开始；英语商务邮件第一句通常就点明目的：I'm writing to …。"
+     ],
+     "ex": [
+      [
+       "I'm writing to confirm your reservation for May 3.",
+       "特此确认您 5 月 3 日的预订。"
+      ],
+      [
+       "Please find attached the revised contract.",
+       "附件是修改后的合同。"
+      ],
+      [
+       "I look forward to hearing from you.",
+       "期待您的回复。"
+      ]
+     ],
+     "err": [
+      [
+       "I look forward to hear from you.",
+       "I look forward to hearing from you.",
+       "to 是介词，后接 doing"
+      ],
+      [
+       "Please find the attached the file.",
+       "Please find attached the file.",
+       "固定句：find attached + 名词"
+      ]
+     ],
+     "sum": "目的 → <b>I'm writing to …</b>；附件 → <b>Please find attached …</b>；结尾 → <b>look forward to doing</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "I look forward to ___ with you.",
+       "o": [
+        "work",
+        "working",
+        "worked"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "What does “I'm writing to inform you that our office is moving” tell you?",
+       "o": [
+        "对方需要回信",
+        "写信人正在搬家",
+        "邮件的目的：通知办公室搬迁"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "期待您的回复。",
+       "a": [
+        "I look forward to hearing from you.",
+        "I'm looking forward to hearing from you."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "inquire"
+    },
+    {
+     "t": "word",
+     "w": "confidential"
+    },
+    {
+     "t": "word",
+     "w": "prior to"
+    },
+    {
+     "t": "word",
+     "w": "as of"
+    },
+    {
+     "t": "word",
+     "w": "until further notice"
+    },
+    {
+     "t": "word",
+     "w": "on behalf of"
+    },
+    {
+     "t": "key",
+     "title": "书面介词短语：prior to、as of、until further notice、on behalf of",
+     "what": [
+      "<b>prior to</b> = before（正式）：prior to the meeting",
+      "<b>as of</b> + 日期 = 从……起：As of May 1, the price will rise.",
+      "<b>until further notice</b> = 在另行通知之前；<b>on behalf of</b> = 代表……"
+     ],
+     "why": [
+      "这些短语在通知、公告里极常见，TOEIC 会换成普通说法考同义替换：prior to → before，as of → starting，on behalf of → representing。",
+      "prior to 的 to 是介词，后面接名词或 doing：prior to leaving。"
+     ],
+     "zh": [
+      "中文“自 5 月 1 日起”很容易写成 from May 1 on；通知里更地道的是 <b>As of May 1</b> / <b>Effective May 1</b>。"
+     ],
+     "ex": [
+      [
+       "Please arrive 15 minutes prior to the interview.",
+       "请在面试前 15 分钟到达。"
+      ],
+      [
+       "As of Monday, the cafeteria will open at 7 a.m.",
+       "从周一起，食堂早上 7 点开门。"
+      ],
+      [
+       "The parking lot is closed until further notice.",
+       "停车场关闭，恢复时间另行通知。"
+      ]
+     ],
+     "err": [
+      [
+       "Please save your files prior to leave.",
+       "Please save your files prior to leaving.",
+       "prior to + doing"
+      ],
+      [
+       "I'm writing on behalf my manager.",
+       "I'm writing on behalf of my manager.",
+       "别漏 of"
+      ]
+     ],
+     "sum": "<b>prior to</b>（之前）+ doing；<b>as of</b>（自……起）；<b>until further notice</b>；<b>on behalf of</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ next month, all employees must wear ID badges.",
+       "o": [
+        "Prior to",
+        "As of",
+        "On behalf of"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Please turn off your computer prior to ___ the office.",
+       "o": [
+        "left",
+        "leave",
+        "leaving"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "停车场关闭，另行通知。",
+       "a": [
+        "The parking lot is closed until further notice.",
+        "The parking lot will be closed until further notice."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "I'm writing to notify you that the office will be closed on Friday.",
+     "zh": "特此通知周五办公室关闭。",
+     "focus": "notify 重音在第一音节 NO-ti-fy"
+    },
+    {
+     "t": "c",
+     "q": "Please keep this information ___. Do not share it with anyone outside the team.",
+     "o": [
+      "enclosed",
+      "updated",
+      "confidential"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "I'm writing to ___ about the job you advertised.",
+     "o": [
+      "notify",
+      "enclose",
+      "inquire"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The manager sent a ___ to all staff about the new parking rules.",
+     "o": [
+      "memo",
+      "attachment",
+      "inbox"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "I couldn't open the ___. Could you send the file again?",
+     "a": [
+      "attachment"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Please ___ me if your plans change.",
+     "a": [
+      "notify",
+      "inform",
+      "tell"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Please find attached the updated floor plan.",
+     "zh": "附件是更新后的楼层平面图。"
+    },
+    {
+     "t": "dict",
+     "a": "I'm writing to confirm your reservation."
+    },
+    {
+     "t": "tr",
+     "zh": "我代表全体员工写信给您。",
+     "a": [
+      "I'm writing on behalf of all the staff.",
+      "I am writing on behalf of all the staff.",
+      "I'm writing on behalf of the entire staff."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "邮件词：memo、attachment、inbox、enclose、notify、inquire、confidential、update。",
+      "<b>重点</b>：I'm writing to …（目的）/ Please find attached … / look forward to doing。",
+      "<b>重点</b>：prior to、as of、until further notice、on behalf of。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.1.4",
+   "title": "电话用语",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "打电话找人",
+     "lines": [
+      [
+       "A",
+       "Good morning, Westfield Design. How may I help you?",
+       "早上好，韦斯特菲尔德设计公司。有什么可以帮您？"
+      ],
+      [
+       "B",
+       "Hello, this is Mark Lee from Brightline. Could I speak to Ms. Tanaka, please?",
+       "你好，我是 Brightline 公司的马克·李。请找田中女士。"
+      ],
+      [
+       "A",
+       "I'm afraid she's in a meeting right now. Can I take a message?",
+       "恐怕她现在在开会。需要我帮您留言吗？"
+      ],
+      [
+       "B",
+       "Yes, please ask her to call me back. It's about the new contract.",
+       "好的，请她给我回个电话，是关于新合同的事。"
+      ],
+      [
+       "A",
+       "Certainly. I'll let her know as soon as she's available.",
+       "好的。她一有空我就转告她。"
+      ]
+     ],
+     "note": "Part 3 的电话对话开头几句就交代了：谁打来、找谁、为什么。"
+    },
+    {
+     "t": "word",
+     "w": "supervisor"
+    },
+    {
+     "t": "word",
+     "w": "coworker"
+    },
+    {
+     "t": "word",
+     "w": "intern"
+    },
+    {
+     "t": "word",
+     "w": "day off"
+    },
+    {
+     "t": "word",
+     "w": "sick leave"
+    },
+    {
+     "t": "word",
+     "w": "workload"
+    },
+    {
+     "t": "key",
+     "title": "电话里自报姓名：This is …，不说 I am …",
+     "what": [
+      "电话里介绍自己：<b>This is</b> Mark (speaking). / Mark <b>speaking</b>.",
+      "问对方是谁：<b>Who's calling, please?</b> / <b>May I ask who's calling?</b>",
+      "找人：<b>Could I speak to</b> …? / <b>Is</b> … <b>available</b>?"
+     ],
+     "why": [
+      "电话里看不见人，英语习惯用 this / that 指“这个声音”。I am Mark 在电话里听起来很生硬。"
+     ],
+     "zh": [
+      "中文“我是马克”直译 I am Mark 在当面介绍时可以，打电话要说 This is Mark。问“你是谁？”也不说 Who are you?（很不礼貌）。"
+     ],
+     "ex": [
+      [
+       "Hello, this is Sarah from Accounting.",
+       "你好，我是会计部的莎拉。"
+      ],
+      [
+       "May I ask who's calling?",
+       "请问您是哪位？"
+      ],
+      [
+       "Is Mr. Kim available?",
+       "金先生在吗？"
+      ]
+     ],
+     "err": [
+      [
+       "Hello, I am Mark from Brightline.",
+       "Hello, this is Mark from Brightline.",
+       "电话里用 This is"
+      ],
+      [
+       "Who are you?",
+       "May I ask who's calling?",
+       "问对方是谁要委婉"
+      ]
+     ],
+     "sum": "电话里：<b>This is … (speaking)</b>；问对方：<b>May I ask who's calling?</b>",
+     "drill": [
+      {
+       "t": "c",
+       "q": "（电话里）你好，我是销售部的安娜。",
+       "o": [
+        "Hello, I'm Anna from Sales speaking.",
+        "Hello, this is Anna from Sales.",
+        "Hello, here is Anna from Sales."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "问对方是谁，最礼貌的是？",
+       "o": [
+        "Who are you?",
+        "What's your name?",
+        "May I ask who's calling?"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "请问您是哪位？",
+       "a": [
+        "May I ask who's calling?",
+        "Who's calling, please?",
+        "May I ask who is calling?"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "Could I speak to …?",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "请找……（打电话）"
+      ]
+     ],
+     "x": [
+      "Could I speak to Mr. Brown, please?",
+      "请找布朗先生。"
+     ],
+     "tt": "常用表达"
+    },
+    {
+     "t": "word",
+     "w": "This is … speaking.",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "我就是……（电话里）"
+      ]
+     ],
+     "x": [
+      "Hello, this is Anna speaking.",
+      "你好，我是安娜。"
+     ],
+     "tt": "常用表达"
+    },
+    {
+     "t": "word",
+     "w": "Can I take a message?",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "需要我帮您留言吗？"
+      ]
+     ],
+     "x": [
+      "She's out right now. Can I take a message?",
+      "她现在不在，需要留言吗？"
+     ],
+     "tt": "常用表达"
+    },
+    {
+     "t": "word",
+     "w": "hold on",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "（电话里）稍等"
+      ]
+     ],
+     "x": [
+      "Hold on, please. I'll put you through.",
+      "请稍等，我给您转过去。"
+     ],
+     "tt": "常用表达"
+    },
+    {
+     "t": "word",
+     "w": "put … through",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "（电话）转接"
+      ]
+     ],
+     "x": [
+      "I'll put you through to the sales department.",
+      "我把您转到销售部。"
+     ],
+     "tt": "常用表达"
+    },
+    {
+     "t": "word",
+     "w": "call … back",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "回电话"
+      ]
+     ],
+     "x": [
+      "Could you ask him to call me back?",
+      "能让他给我回个电话吗？"
+     ],
+     "tt": "常用表达"
+    },
+    {
+     "t": "key",
+     "title": "礼貌请求：Could / Would / May",
+     "what": [
+      "请对方做事：<b>Could you</b> …? / <b>Would you</b> …? / <b>Would you mind</b> doing …?",
+      "请求允许：<b>May I</b> …? / <b>Could I</b> …?",
+      "回答：Sure. / Certainly. / Of course.；Would you mind …? 同意要说 <b>Not at all.</b>"
+     ],
+     "why": [
+      "商务英语里 Can you …? 有点随便，Could / Would 更客气。这和 Part 2 的“请求题”直接相关：正确回答多是接受、婉拒或附条件。"
+     ],
+     "zh": [
+      "中文“麻烦你……”“能不能……”语气靠“麻烦、请”；英语靠<b>情态动词的过去形</b>（could、would）。Would you mind …? 字面是“你介意吗”，所以“不介意”= 同意。"
+     ],
+     "ex": [
+      [
+       "Could you spell your last name, please?",
+       "请拼一下您的姓好吗？"
+      ],
+      [
+       "Would you mind calling back after lunch?",
+       "您介意午饭后再打来吗？"
+      ],
+      [
+       "May I leave a message?",
+       "我可以留个言吗？"
+      ]
+     ],
+     "err": [
+      [
+       "Would you mind to call back later?",
+       "Would you mind calling back later?",
+       "mind 后接 doing"
+      ],
+      [
+       "A: Would you mind waiting? B: Yes, of course.",
+       "Not at all.",
+       "同意要说“不介意”"
+      ]
+     ],
+     "sum": "请求用 <b>Could / Would you …?</b>；<b>Would you mind doing …?</b> → 同意说 <b>Not at all</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Would you mind ___ the door?",
+       "o": [
+        "closing",
+        "close",
+        "to close"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "A: Would you mind holding for a moment? B: ___",
+       "o": [
+        "Yes, I mind.",
+        "Not at all.",
+        "No, I can't."
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "能让他给我回个电话吗？",
+       "a": [
+        "Could you ask him to call me back?",
+        "Could you ask him to call me back, please?",
+        "Would you ask him to call me back?"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Hello, this is Mark Lee from Brightline. Could I speak to Ms. Tanaka, please?",
+     "zh": "你好，我是 Brightline 的马克·李，请找田中女士。",
+     "focus": "Could I 连读 /kʊdaɪ/，句尾 please 语调下降"
+    },
+    {
+     "t": "c",
+     "q": "I'm afraid Ms. Ito is out today. ___",
+     "o": [
+      "Who are you?",
+      "Can I take a message?",
+      "I'm Ms. Ito."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Please hold on. I'll put you ___ to the manager.",
+     "o": [
+      "up",
+      "through",
+      "back"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "I'm taking a ___ tomorrow, so please contact my coworker.",
+     "o": [
+      "workload",
+      "day off",
+      "deadline"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Our ___ is very heavy this month, so we need more staff.",
+     "a": [
+      "workload"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Ask your ___ to approve the request first.",
+     "a": [
+      "supervisor",
+      "manager",
+      "boss"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Could you ask her to call me back?",
+     "zh": "能让她给我回个电话吗？"
+    },
+    {
+     "t": "dict",
+     "a": "I'm afraid she's in a meeting right now."
+    },
+    {
+     "t": "tr",
+     "zh": "我就是。（电话里）",
+     "a": [
+      "This is she.",
+      "This is he.",
+      "Speaking.",
+      "This is me speaking."
+     ],
+     "e": "电话里“我就是”：Speaking. / This is he（she）."
+    },
+    {
+     "t": "sum",
+     "points": [
+      "人与休假：supervisor、coworker、intern、day off、sick leave、workload。",
+      "<b>重点</b>：电话里 This is … speaking；May I ask who's calling? / Could I speak to …? / Can I take a message?",
+      "<b>重点</b>：Could / Would you …?；Would you mind doing …? → Not at all。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.1.5",
+   "title": "单元复习：时态综合",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "一周的工作",
+     "lines": [
+      [
+       "A",
+       "How was your first week at headquarters?",
+       "在总部的第一周怎么样？"
+      ],
+      [
+       "B",
+       "Busy! I've already submitted three reports, and I worked overtime twice.",
+       "很忙！我已经交了三份报告，还加了两次班。"
+      ],
+      [
+       "A",
+       "Wow. Are they assigning you a new project?",
+       "哇。他们要给你派新项目吗？"
+      ],
+      [
+       "B",
+       "Yes. I'm meeting my supervisor tomorrow to talk about it.",
+       "是的。我明天和主管见面谈这件事。"
+      ],
+      [
+       "A",
+       "Don't forget to fill in your timesheet before Friday.",
+       "别忘了周五前填工时表。"
+      ]
+     ],
+     "note": "五个时态在一段对话里全出现了。这一课把它们放在一起，用时间词来选时态。"
+    },
+    {
+     "t": "word",
+     "w": "headquarters"
+    },
+    {
+     "t": "word",
+     "w": "administrative"
+    },
+    {
+     "t": "word",
+     "w": "overtime"
+    },
+    {
+     "t": "word",
+     "w": "timesheet"
+    },
+    {
+     "t": "word",
+     "w": "assign"
+    },
+    {
+     "t": "word",
+     "w": "submit"
+    },
+    {
+     "t": "key",
+     "title": "时态选择：先找时间词",
+     "what": [
+      "<b>every day / usually / always</b> → 一般现在时",
+      "<b>now / right now / at the moment / this week</b>（正在）→ 现在进行时",
+      "<b>yesterday / last week / ago / in 2020</b> → 一般过去时",
+      "<b>already / yet / so far / since / for</b> → 现在完成时",
+      "<b>tomorrow / next week / soon</b> → will / be going to / 进行时（安排）"
+     ],
+     "why": [
+      "TOEIC Part 5 每套都有 3–5 道时态题，绝大多数靠句中的时间词就能秒选，不需要读懂全句。",
+      "注意 by + 将来时间 → 将来完成时（will have done）：By Friday, we will have finished the report.（第三学期会细讲）"
+     ],
+     "zh": [
+      "中文动词没有时态，“我交了报告”可能是 I submitted（昨天交的）也可能是 I have submitted（已经交了，结果还在）。看有没有具体过去时间：有 → 过去时；没有、强调“已经” → 完成时。"
+     ],
+     "ex": [
+      [
+       "She usually takes the bus to work.",
+       "她通常坐公交上班。"
+      ],
+      [
+       "The team is working on the budget right now.",
+       "团队现在正在做预算。"
+      ],
+      [
+       "I submitted the report yesterday.",
+       "我昨天交了报告。"
+      ],
+      [
+       "I have already submitted the report.",
+       "我已经交了报告。"
+      ]
+     ],
+     "err": [
+      [
+       "I have submitted the report yesterday.",
+       "I submitted the report yesterday.",
+       "有过去时间 → 过去时"
+      ],
+      [
+       "She works here since 2020.",
+       "She has worked here since 2020.",
+       "since → 完成时"
+      ]
+     ],
+     "sum": "先圈时间词：<b>usually</b> 现在 / <b>now</b> 进行 / <b>ago</b> 过去 / <b>already, since</b> 完成 / <b>next</b> 将来。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mr. Davis ___ for this company since 2018.",
+       "o": [
+        "works",
+        "has worked",
+        "worked"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "The new manager ___ the staff two days ago.",
+       "o": [
+        "has met",
+        "met",
+        "meets"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Please be quiet. The director ___ a presentation right now.",
+       "o": [
+        "is giving",
+        "has given",
+        "gives"
+       ],
+       "a": 0
+      },
+      {
+       "t": "tr",
+       "zh": "我已经交了三份报告。",
+       "a": [
+        "I've already submitted three reports.",
+        "I have already submitted three reports.",
+        "I've already handed in three reports."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "personnel"
+    },
+    {
+     "t": "word",
+     "w": "payroll"
+    },
+    {
+     "t": "word",
+     "w": "orientation"
+    },
+    {
+     "t": "word",
+     "w": "trainee"
+    },
+    {
+     "t": "word",
+     "w": "evaluation"
+    },
+    {
+     "t": "word",
+     "w": "eligible"
+    },
+    {
+     "t": "key",
+     "title": "assign / submit 的搭配",
+     "what": [
+      "<b>assign</b> sb to sth / assign sth to sb：分配、指派 —— They assigned her to the sales team.",
+      "<b>submit</b> sth to sb：提交 —— Please submit the form to HR. = <b>hand in</b>",
+      "被动常见：be assigned to …（被分到……）"
+     ],
+     "why": [
+      "Part 5 常把 submit 和 summit、admit 放在一起考形近词；assign 常和 sign、design 放在一起。认准搭配 submit … to …、assign … to …。"
+     ],
+     "zh": [
+      "中文“交给人事部”的“给”英语用 <b>to</b>：submit it to HR，不是 submit HR it。"
+     ],
+     "ex": [
+      [
+       "Please submit your timesheet to the payroll office.",
+       "请把工时表交给工资部门。"
+      ],
+      [
+       "Ms. Lee was assigned to the new project.",
+       "李女士被分到了新项目。"
+      ]
+     ],
+     "err": [
+      [
+       "Please submit the form at HR.",
+       "Please submit the form to HR.",
+       "submit … to …"
+      ],
+      [
+       "He was assigned the Tokyo office.",
+       "He was assigned to the Tokyo office.",
+       "被分到某处：be assigned to"
+      ]
+     ],
+     "sum": "<b>submit sth to sb</b>；<b>assign sb to sth</b> / be assigned to。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "All reports must be ___ to the manager by Friday.",
+       "o": [
+        "admitted",
+        "submitted",
+        "summited"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Two new trainees were assigned ___ our department.",
+       "o": [
+        "to",
+        "at",
+        "for"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "I've already submitted three reports, and I worked overtime twice.",
+     "zh": "我已经交了三份报告，还加了两次班。",
+     "focus": "I've 不要读成 I；submitted 重音在第二音节"
+    },
+    {
+     "t": "c",
+     "q": "New employees must attend an ___ session on their first day.",
+     "o": [
+      "orientation",
+      "evaluation",
+      "overtime"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Only full-time staff are ___ for the bonus.",
+     "o": [
+      "eligible",
+      "administrative",
+      "confidential"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Questions about your salary should go to the ___ department.",
+     "o": [
+      "trainee",
+      "headquarters",
+      "payroll"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "The company's ___ is in New York, but it has offices in five countries.",
+     "a": [
+      "headquarters"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Your annual performance ___ will take place in December.",
+     "a": [
+      "evaluation",
+      "review"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "I'm meeting my supervisor tomorrow.",
+     "zh": "我明天和主管见面。"
+    },
+    {
+     "t": "dict",
+     "a": "I've already submitted three reports."
+    },
+    {
+     "t": "tr",
+     "zh": "她从 2020 年起就在这里工作。",
+     "a": [
+      "She has worked here since 2020.",
+      "She's worked here since 2020.",
+      "She has been working here since 2020."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "人事与行政：headquarters、administrative、personnel、payroll、orientation、trainee、evaluation、eligible、timesheet、overtime。",
+      "<b>重点</b>：时态先找时间词 —— usually / now / ago / already, since / next。",
+      "<b>重点</b>：submit sth to sb；assign sb to sth / be assigned to。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.1.6",
+   "title": "单元阅读：A Busy Monday",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "A Busy Monday",
+     "note": "TOEIC Part 7 式的阅读：先看题目再读文章，带着问题找答案。先关掉译文读。",
+     "lines": [
+      [
+       "To: All Marketing Staff",
+       "收件人：市场部全体员工"
+      ],
+      [
+       "From: Diane Cole, Office Manager",
+       "发件人：办公室经理黛安·科尔"
+      ],
+      [
+       "Subject: This week's schedule changes",
+       "主题：本周日程变更"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "I'm writing to let you know about some changes to this week's schedule.",
+       "特此告知本周日程的几项变更。"
+      ],
+      [
+       "First, Tuesday's team meeting has been postponed until Thursday at 10 a.m. because Mr. Hill is visiting a client in Boston.",
+       "第一，周二的团队会议推迟到周四上午十点，因为希尔先生要去波士顿拜访客户。"
+      ],
+      [
+       "The updated agenda is attached. Please read it prior to the meeting.",
+       "更新后的议程见附件，请在会前阅读。"
+      ],
+      [
+       "Second, the copier on the third floor is out of order.",
+       "第二，三楼的复印机坏了。"
+      ],
+      [
+       "A technician will repair it on Wednesday. Until then, please use the one next to the reception desk.",
+       "技术员周三来修。在那之前，请使用前台旁边的那台。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Finally, two interns will join our team as of next Monday.",
+       "最后，从下周一起，两名实习生将加入我们团队。"
+      ],
+      [
+       "They will sit in the empty cubicles near the window.",
+       "他们会坐在窗边的空隔间。"
+      ],
+      [
+       "If you can help them during their first week, please let me know.",
+       "如果你在他们第一周能帮忙带一带，请告诉我。"
+      ],
+      [
+       "Thank you for your cooperation.",
+       "感谢配合。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "What is the main purpose of the e-mail?",
+     "o": [
+      "To introduce a new manager",
+      "To ask staff to work overtime",
+      "To announce changes to the schedule"
+     ],
+     "a": 2,
+     "e": "I'm writing to let you know about some changes to this week's schedule. —— 目的句在开头。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Why was the team meeting postponed?",
+     "o": [
+      "The meeting room is being repaired.",
+      "A manager is visiting a client.",
+      "The agenda is not ready."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What are staff asked to do before the meeting?",
+     "o": [
+      "Read the agenda",
+      "Fix the copier",
+      "Call Mr. Hill"
+     ],
+     "a": 0,
+     "e": "Please read it prior to the meeting. —— prior to = before。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Where should staff make copies on Tuesday?",
+     "o": [
+      "On the third floor",
+      "Next to the reception desk",
+      "In Boston"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "The word “as of” in paragraph 2 is closest in meaning to",
+     "o": [
+      "instead of",
+      "because of",
+      "starting"
+     ],
+     "a": 2,
+     "e": "as of next Monday = 从下周一起。Part 7 常考这种同义替换。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "会议推迟到周四了。",
+     "a": [
+      "The meeting has been postponed until Thursday.",
+      "The meeting was postponed until Thursday.",
+      "The meeting has been put off until Thursday."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "Part 7 解题法：第一题问目的 → 看第一段 I'm writing to …。",
+      "同义替换：postponed = put off / delayed；prior to = before；as of = starting。",
+      "本单元词：agenda、copier、technician、intern、cubicle、cooperation。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "The meeting has been ___ until next Thursday.",
+    "o": [
+     "postponed",
+     "summarized",
+     "attended"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Please find ___ the revised schedule.",
+    "o": [
+     "attached",
+     "attach",
+     "attaching"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "I look forward to ___ you at the conference.",
+    "o": [
+     "seeing",
+     "saw",
+     "see"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "We need some new office ___.",
+    "o": [
+     "an equipment",
+     "equipments",
+     "equipment"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "___ May 1, the cafeteria will close at 3 p.m.",
+    "o": [
+     "Prior to",
+     "Until",
+     "As of"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Ms. Grant ___ in the marketing department since 2019.",
+    "o": [
+     "has worked",
+     "works",
+     "is working"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "A: Would you mind waiting a few minutes? B: ___",
+    "o": [
+     "Not at all.",
+     "Yes, please.",
+     "No, I wouldn't wait."
+    ],
+    "a": 0
+   },
+   {
+    "t": "tr",
+    "zh": "请找田中女士。（打电话）",
+    "a": [
+     "Could I speak to Ms. Tanaka, please?",
+     "May I speak to Ms. Tanaka, please?",
+     "Could I speak to Ms. Tanaka?"
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "所有报告必须在周五前交给经理。",
+    "a": [
+     "All reports must be submitted to the manager by Friday.",
+     "All reports must be handed in to the manager by Friday."
+    ]
+   }
+  ]
+ }
+}
