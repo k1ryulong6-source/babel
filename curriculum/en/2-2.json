@@ -1,0 +1,1838 @@
+{
+ "id": "en.2.2",
+ "title": "Part 1 照片描述",
+ "goal": "人物动作、物品状态、场景位置；现在进行时被动",
+ "lessons": [
+  {
+   "id": "en.2.2.1",
+   "title": "人物动作",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Part 1 是什么样的题",
+     "lines": [
+      [
+       "",
+       "A woman is pouring coffee into a cup.",
+       "一位女士正往杯子里倒咖啡。"
+      ],
+      [
+       "",
+       "A man is examining some documents.",
+       "一名男子正在仔细查看文件。"
+      ],
+      [
+       "",
+       "Some people are boarding a bus.",
+       "一些人正在上公交车。"
+      ],
+      [
+       "",
+       "A worker is sweeping the floor.",
+       "一名工人正在扫地。"
+      ]
+     ],
+     "note": "TOEIC Part 1 共 6 题：看一张照片，听 4 句描述，选最符合的一句。人物照的正确答案几乎都是“主语 + is / are + doing”。"
+    },
+    {
+     "t": "word",
+     "w": "examine"
+    },
+    {
+     "t": "word",
+     "w": "pour"
+    },
+    {
+     "t": "word",
+     "w": "sweep"
+    },
+    {
+     "t": "word",
+     "w": "adjust"
+    },
+    {
+     "t": "word",
+     "w": "lift"
+    },
+    {
+     "t": "word",
+     "w": "board"
+    },
+    {
+     "t": "key",
+     "title": "人物照：现在进行时 is / are doing",
+     "what": [
+      "人物照的描述几乎都是 <b>主语 + is / are + 动词 -ing</b>：A woman is pouring coffee.",
+      "先看清两件事：<b>谁</b>（a man / some people / one of the women）和 <b>在做什么</b>（手在干什么、身体什么姿势）。"
+     ],
+     "why": [
+      "Part 1 只描述<b>照片里看得见的东西</b>。“他正在准备开会”（看不出来）、“她刚买了这本书”（推测）一律是错的。",
+      "TOEIC 爱用具体动词：examine（仔细看）、adjust（调整）、reach for（伸手拿）、lean against（靠着），平时要把这些动作动词和画面绑在一起记。"
+     ],
+     "zh": [
+      "中文描述照片常说“一个男人在看文件”，英语要选准动词：look at（看）/ examine（仔细检查）/ read（读）在 Part 1 里都可能出现，听到哪个就对应哪个动作。"
+     ],
+     "ex": [
+      [
+       "A man is adjusting a microphone.",
+       "一名男子正在调整麦克风。"
+      ],
+      [
+       "Some passengers are boarding a train.",
+       "一些乘客正在上火车。"
+      ],
+      [
+       "One of the women is lifting a box.",
+       "其中一位女士正在搬起一个箱子。"
+      ]
+     ],
+     "err": [
+      [
+       "A man is going to the meeting.",
+       "A man is walking down a hallway.",
+       "去开会是推测，只描述看得见的动作"
+      ],
+      [
+       "She pours coffee.",
+       "She is pouring coffee.",
+       "照片里的动作用进行时"
+      ]
+     ],
+     "sum": "<b>主语 + is / are + doing</b>；只说看得见的，不说推测。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "【照片】一名男子手扶着墙站着　哪一句描述正确？",
+       "o": [
+        "A man is painting a wall.",
+        "A man is building a wall.",
+        "A man is leaning against a wall."
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "【照片】一位女士踮脚伸手去拿柜子顶层的箱子　哪一句描述正确？",
+       "o": [
+        "A woman is opening a box.",
+        "A woman is reaching for a box.",
+        "A woman is putting a box on the floor."
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "一名工人正在扫地。",
+       "a": [
+        "A worker is sweeping the floor.",
+        "A janitor is sweeping the floor."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "lean against",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "靠在……上"
+      ]
+     ],
+     "x": [
+      "A man is leaning against a wall.",
+      "一名男子靠在墙上。"
+     ],
+     "tt": "固定搭配"
+    },
+    {
+     "t": "word",
+     "w": "reach for",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "伸手去拿"
+      ]
+     ],
+     "x": [
+      "She's reaching for a book on the shelf.",
+      "她正伸手去拿架子上的书。"
+     ],
+     "tt": "固定搭配"
+    },
+    {
+     "t": "word",
+     "w": "wipe",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "擦"
+      ]
+     ],
+     "x": [
+      "A man is wiping the table.",
+      "一名男子正在擦桌子。"
+     ],
+     "tt": "动词"
+    },
+    {
+     "t": "word",
+     "w": "kneel down",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "跪下；蹲跪"
+      ]
+     ],
+     "x": [
+      "A worker is kneeling down to fix the pipe.",
+      "一名工人跪着修管子。"
+     ],
+     "tt": "固定搭配"
+    },
+    {
+     "t": "word",
+     "w": "janitor"
+    },
+    {
+     "t": "word",
+     "w": "technician"
+    },
+    {
+     "t": "key",
+     "title": "wearing（状态）≠ putting on（动作）",
+     "what": [
+      "<b>is wearing</b> a hat：戴着帽子（状态）",
+      "<b>is putting on</b> a hat：正在戴上帽子（动作）",
+      "<b>is taking off</b> a jacket：正在脱外套"
+     ],
+     "why": [
+      "这是 Part 1 出现频率最高的陷阱之一。照片里人已经戴着眼镜 → 选 wearing；只有手正拿着眼镜往脸上戴 → 才选 putting on。"
+     ],
+     "zh": [
+      "中文“戴”“穿”既可以是动作也可以是状态，英语分成两个说法。"
+     ],
+     "ex": [
+      [
+       "The woman is wearing glasses.",
+       "那位女士戴着眼镜。"
+      ],
+      [
+       "The man is putting on a safety helmet.",
+       "那名男子正在戴上安全帽。"
+      ]
+     ],
+     "err": [
+      [
+       "（照片：她戴着帽子坐着）She is putting on a hat.",
+       "She is wearing a hat.",
+       "已经戴着 → wearing"
+      ]
+     ],
+     "sum": "<b>wearing</b> = 穿着 / 戴着（状态）；<b>putting on</b> = 正在穿 / 戴（动作）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "【照片】一名男子坐在桌前，戴着耳机　哪一句描述正确？",
+       "o": [
+        "He's putting on headphones.",
+        "He's taking off headphones.",
+        "He's wearing headphones."
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "【照片】一位女士正把外套套到身上　哪一句描述正确？",
+       "o": [
+        "She's putting on a coat.",
+        "She's wearing a hat.",
+        "She's hanging up a coat."
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "A man is leaning against a wall.",
+     "zh": "一名男子靠在墙上。",
+     "focus": "leaning against 连读，is 弱读成 /z/"
+    },
+    {
+     "t": "c",
+     "q": "【照片】一名技术员正在电脑后面调整线缆　哪一句描述正确？",
+     "o": [
+      "A technician is buying some cables.",
+      "A technician is adjusting some cables.",
+      "A technician is talking on the phone."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "【照片】清洁工正在擦窗户　哪一句描述正确？",
+     "o": [
+      "A janitor is wiping a window.",
+      "A janitor is opening a window.",
+      "A janitor is looking out of a window."
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "【照片】几位乘客在排队上飞机　哪一句描述正确？",
+     "o": [
+      "Passengers are leaving the airport.",
+      "Passengers are boarding a plane.",
+      "A plane is taking off."
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "A man is ___ (examine) a document carefully.",
+     "a": [
+      "examining"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "A worker is ___ (kneel) down to repair a pipe.",
+     "a": [
+      "kneeling"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "A woman is pouring water into a glass.",
+     "zh": "一位女士正往杯子里倒水。"
+    },
+    {
+     "t": "dict",
+     "a": "Some people are boarding a bus."
+    },
+    {
+     "t": "tr",
+     "zh": "她正伸手去拿架子上的书。",
+     "a": [
+      "She is reaching for a book on the shelf.",
+      "She's reaching for a book on the shelf."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "动作动词：examine、pour、sweep、adjust、lift、board、lean against、reach for、wipe、kneel down。",
+      "<b>重点</b>：人物照 = 主语 + is / are doing；只说看得见的。",
+      "<b>重点</b>：wearing（戴着）≠ putting on（正在戴）。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.2.2",
+   "title": "物品状态",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "没有人的照片",
+     "lines": [
+      [
+       "",
+       "Some books have been arranged on a shelf.",
+       "一些书被摆放在架子上。"
+      ],
+      [
+       "",
+       "A lamp is hanging from the ceiling.",
+       "一盏灯从天花板上垂下来。"
+      ],
+      [
+       "",
+       "Some chairs are stacked in the corner.",
+       "角落里摞着几把椅子。"
+      ],
+      [
+       "",
+       "Products are on display in a store window.",
+       "商品陈列在商店橱窗里。"
+      ]
+     ],
+     "note": "没有人物的照片，描述的是物品的<b>状态</b>：被放在哪儿、摆成什么样。动词形式和人物照完全不同。"
+    },
+    {
+     "t": "word",
+     "w": "shelf"
+    },
+    {
+     "t": "word",
+     "w": "display"
+    },
+    {
+     "t": "word",
+     "w": "arrange"
+    },
+    {
+     "t": "word",
+     "w": "hang"
+    },
+    {
+     "t": "word",
+     "w": "row"
+    },
+    {
+     "t": "word",
+     "w": "lie"
+    },
+    {
+     "t": "key",
+     "title": "物品状态：has / have been done、is done、is doing（无动作的状态动词）",
+     "what": [
+      "<b>has / have been + 过去分词</b>：已经被放好了 —— Some chairs have been stacked.",
+      "<b>be + 过去分词</b>：处于……状态 —— The door is closed. Products are displayed.",
+      "少数“状态动词”用进行时也表示静止：A lamp <b>is hanging</b>. A rug <b>is lying</b> on the floor."
+     ],
+     "why": [
+      "没有人的照片里，不会有人在“做”什么。所以出现 <b>is being done</b>（正在被做）的选项，多半是陷阱（见下一个重点）。"
+     ],
+     "zh": [
+      "中文“椅子摞着”“灯挂着”是状态；英语用被动完成时或 be + 过去分词来表达，不用 someone is stacking。"
+     ],
+     "ex": [
+      [
+       "Some boxes have been loaded onto a truck.",
+       "一些箱子已被装上卡车。"
+      ],
+      [
+       "The tables are arranged in a row.",
+       "桌子排成一排。"
+      ],
+      [
+       "A rug is lying on the floor.",
+       "地上铺着一块地毯。"
+      ]
+     ],
+     "err": [
+      [
+       "（照片里没人）Someone is arranging the books.",
+       "The books have been arranged on a shelf.",
+       "没人就不会有动作"
+      ]
+     ],
+     "sum": "物品照：<b>has been done / is done / is hanging, lying</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "【照片】没有人；架子上整齐地放着几排瓶子　哪一句描述正确？",
+       "o": [
+        "Some bottles are being washed.",
+        "A man is arranging some bottles.",
+        "Some bottles have been arranged on shelves."
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "【照片】没有人；墙上挂着一幅画　哪一句描述正确？",
+       "o": [
+        "A woman is hanging a picture.",
+        "A picture is being painted.",
+        "A picture is hanging on the wall."
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "一些椅子被摞在角落里。",
+       "a": [
+        "Some chairs have been stacked in the corner.",
+        "Some chairs are stacked in the corner."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "ceiling"
+    },
+    {
+     "t": "word",
+     "w": "lamp"
+    },
+    {
+     "t": "word",
+     "w": "counter"
+    },
+    {
+     "t": "word",
+     "w": "appliance"
+    },
+    {
+     "t": "word",
+     "w": "furnishings"
+    },
+    {
+     "t": "word",
+     "w": "stack",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "摞；堆叠"
+      ]
+     ],
+     "x": [
+      "Some boxes have been stacked on the floor.",
+      "地上摞着几个箱子。"
+     ],
+     "tt": "动词"
+    },
+    {
+     "t": "key",
+     "title": "is being done = 正在被……（照片里必须有人在做）",
+     "what": [
+      "<b>is / are being + 过去分词</b>：<b>正在被</b>处理 —— A car is being repaired.（有人正在修车）",
+      "照片里<b>没有人</b> → is being done 一般是错的",
+      "照片里有人正在做这件事 → 才可能是对的"
+     ],
+     "why": [
+      "这是 Part 1 最经典的陷阱：The shelves are being stocked.（有人正在上货）vs The shelves have been stocked.（货已经上好了）。只差 being 一个词，要求照片里有没有人完全不同。"
+     ],
+     "zh": [
+      "中文“车在修”可能是“正在修（有人在修）”，也可能是“修着呢（放在那儿）”。英语用 being 区分：有 being 必须看得见人在动手。"
+     ],
+     "ex": [
+      [
+       "（有人正在擦窗）The windows are being cleaned.",
+       "窗户正在被擦。"
+      ],
+      [
+       "（窗户很干净，没人）The windows have been cleaned.",
+       "窗户已经擦干净了。"
+      ]
+     ],
+     "err": [
+      [
+       "（没有人的仓库照片）Boxes are being loaded onto a truck.",
+       "Boxes have been loaded onto a truck.",
+       "没人 → 不能用 being"
+      ]
+     ],
+     "sum": "<b>being</b> = 照片里有人正在动手；没人就排除。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "【照片】没有人；停车场里停着一排车　哪一句描述正确？",
+       "o": [
+        "Cars are being parked.",
+        "A man is parking a car.",
+        "Cars are parked in a row."
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "【照片】一名工人正在给桌子刷漆　哪一句描述正确？",
+       "o": [
+        "A table is being painted.",
+        "A table is lying on its side.",
+        "A table has been painted."
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Some chairs have been stacked in the corner.",
+     "zh": "角落里摞着几把椅子。",
+     "focus": "have been 弱读 /əv bɪn/"
+    },
+    {
+     "t": "c",
+     "q": "【照片】没有人；商店橱窗里陈列着几件衣服　哪一句描述正确？",
+     "o": [
+      "Some clothes are being folded.",
+      "Some clothes are on display in a window.",
+      "A woman is buying clothes."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "【照片】没有人；厨房台面上放着几台小家电　哪一句描述正确？",
+     "o": [
+      "A man is cooking dinner.",
+      "The counter is being cleaned.",
+      "Some appliances are on the counter."
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "【照片】没有人；天花板上吊着几盏灯　哪一句描述正确？",
+     "o": [
+      "Some lamps are being installed.",
+      "Some lamps are hanging from the ceiling.",
+      "A worker is fixing a lamp."
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Some boxes have been ___ (stack) near the door.",
+     "a": [
+      "stacked"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "The chairs are arranged in a ___.",
+     "a": [
+      "row"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Some books have been arranged on a shelf.",
+     "zh": "一些书被摆放在架子上。"
+    },
+    {
+     "t": "dict",
+     "a": "A lamp is hanging from the ceiling."
+    },
+    {
+     "t": "tr",
+     "zh": "商品陈列在橱窗里。",
+     "a": [
+      "Products are on display in the window.",
+      "Some products are on display in a store window.",
+      "Products are displayed in the window."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "物品：shelf、display、arrange、hang、row、lie、ceiling、lamp、counter、appliance、furnishings、stack。",
+      "<b>重点</b>：物品照用 has been done / is done / is hanging。",
+      "<b>重点</b>：is being done = 照片里有人正在做；没人就排除。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.2.3",
+   "title": "位置与方位",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "东西在哪儿",
+     "lines": [
+      [
+       "",
+       "Some plants have been placed along the corridor.",
+       "走廊边摆着一些盆栽。"
+      ],
+      [
+       "",
+       "Two people are sitting side by side in the lounge.",
+       "两个人并排坐在休息室里。"
+      ],
+      [
+       "",
+       "A sign is on top of the escalator.",
+       "扶梯顶上有一块指示牌。"
+      ],
+      [
+       "",
+       "Some vehicles are parked in the parking lot.",
+       "停车场里停着一些车。"
+      ]
+     ],
+     "note": "Part 1 的另一半分数在“位置”：东西在哪儿、人和东西是什么关系。介词听错，整句就错。"
+    },
+    {
+     "t": "word",
+     "w": "aisle"
+    },
+    {
+     "t": "word",
+     "w": "corridor"
+    },
+    {
+     "t": "word",
+     "w": "escalator"
+    },
+    {
+     "t": "word",
+     "w": "stair"
+    },
+    {
+     "t": "word",
+     "w": "lounge"
+    },
+    {
+     "t": "word",
+     "w": "cafeteria"
+    },
+    {
+     "t": "key",
+     "title": "Part 1 位置介词：along、on top of、between、in front of、behind、beside",
+     "what": [
+      "<b>along</b> 沿着（一条线）：along the street / corridor",
+      "<b>on top of</b> 在顶上；<b>under / beneath</b> 在下面",
+      "<b>between</b> 两者之间；<b>in front of</b> 前面；<b>behind</b> 后面；<b>beside / next to</b> 旁边",
+      "<b>across from</b> 对面；<b>in the middle of</b> 中间"
+     ],
+     "why": [
+      "干扰项常常动词、名词都对，只把介词换掉：The man is standing <b>behind</b> the counter. vs <b>in front of</b>。听的时候要特别注意介词。"
+     ],
+     "zh": [
+      "中文“在……前面”位置词在名词后（桌子前面），英语介词在名词前（in front of the desk），听到介词时要立刻在脑子里定位。"
+     ],
+     "ex": [
+      [
+       "Trees are planted along the road.",
+       "路边种着树。"
+      ],
+      [
+       "A woman is standing between two shelves.",
+       "一位女士站在两个货架之间。"
+      ],
+      [
+       "A man is waiting in front of the elevator.",
+       "一名男子在电梯前等候。"
+      ]
+     ],
+     "err": [
+      [
+       "Trees are planted on the road.",
+       "Trees are planted along the road.",
+       "沿着路两边用 along"
+      ],
+      [
+       "A box is on the top the shelf.",
+       "A box is on top of the shelf.",
+       "固定说法 on top of"
+      ]
+     ],
+     "sum": "<b>along / on top of / between / in front of / behind / across from</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "【照片】一个男人站在柜台后面，给顾客找零　哪一句描述正确？",
+       "o": [
+        "A man is standing in front of a counter.",
+        "A man is standing behind a counter.",
+        "A man is sitting on a counter."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "【照片】道路两旁停满了车　哪一句描述正确？",
+       "o": [
+        "Cars are parked along the street.",
+        "A car is being washed.",
+        "Cars are driving across a bridge."
+       ],
+       "a": 0
+      },
+      {
+       "t": "tr",
+       "zh": "两个人并排坐在长椅上。",
+       "a": [
+        "Two people are sitting side by side on a bench.",
+        "Two people are sitting next to each other on a bench."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "fixture"
+    },
+    {
+     "t": "word",
+     "w": "parking lot",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "停车场"
+      ]
+     ],
+     "x": [
+      "The parking lot is almost full.",
+      "停车场快满了。"
+     ],
+     "tt": "固定搭配"
+    },
+    {
+     "t": "word",
+     "w": "on top of",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "在……顶上"
+      ]
+     ],
+     "x": [
+      "A box is on top of the cabinet.",
+      "柜子顶上有个箱子。"
+     ],
+     "tt": "固定搭配"
+    },
+    {
+     "t": "word",
+     "w": "side by side",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "并排"
+      ]
+     ],
+     "x": [
+      "Two bicycles are parked side by side.",
+      "两辆自行车并排停着。"
+     ],
+     "tt": "固定搭配"
+    },
+    {
+     "t": "word",
+     "w": "in a row",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "排成一排"
+      ]
+     ],
+     "x": [
+      "The chairs are lined up in a row.",
+      "椅子排成一排。"
+     ],
+     "tt": "固定搭配"
+    },
+    {
+     "t": "word",
+     "w": "face each other",
+     "sp": true,
+     "s": [
+      [
+       "",
+       "面对面"
+      ]
+     ],
+     "x": [
+      "Two people are sitting facing each other.",
+      "两人面对面坐着。"
+     ],
+     "tt": "固定搭配"
+    },
+    {
+     "t": "key",
+     "title": "there be + 位置 + 状态：一句话描述场景",
+     "what": [
+      "<b>There is / are</b> + 物 + 位置：There are some chairs <b>in the lounge</b>.",
+      "加状态：There are some cars <b>parked</b> along the street.（过去分词作后置定语）",
+      "人也可以：There are some people <b>waiting</b> at the gate.（-ing 作后置定语）"
+     ],
+     "why": [
+      "Part 1 很多正确答案就是 there be 句。注意后置的 parked / waiting 不是谓语，只是补充状态。"
+     ],
+     "zh": [
+      "中文“街边停着一些车”主语是“车”，英语用 There are some cars parked along the street. 结构完整又地道。"
+     ],
+     "ex": [
+      [
+       "There are some people waiting in line.",
+       "有些人在排队等候。"
+      ],
+      [
+       "There is a ladder leaning against the wall.",
+       "墙边靠着一架梯子。"
+      ]
+     ],
+     "err": [
+      [
+       "There are some cars park along the street.",
+       "There are some cars parked along the street.",
+       "被停放 → parked"
+      ]
+     ],
+     "sum": "<b>There are + 物 + parked / waiting + 位置</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "There are some passengers ___ on the platform.",
+       "o": [
+        "waiting",
+        "waited",
+        "wait"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "There are several bicycles ___ near the entrance.",
+       "o": [
+        "park",
+        "parked",
+        "parking"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Two people are sitting side by side in the lounge.",
+     "zh": "两个人并排坐在休息室里。",
+     "focus": "side by side 三个词连读"
+    },
+    {
+     "t": "c",
+     "q": "【照片】购物中心里，几个人正乘扶梯往上走　哪一句描述正确？",
+     "o": [
+      "Some people are climbing a ladder.",
+      "An escalator is being repaired.",
+      "Some people are riding an escalator."
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "【照片】超市过道里空无一人，两边是货架　哪一句描述正确？",
+     "o": [
+      "An aisle is lined with shelves.",
+      "A woman is pushing a cart down an aisle.",
+      "Shelves are being stocked."
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "【照片】两个人隔着桌子面对面坐着谈话　哪一句描述正确？",
+     "o": [
+      "Two people are standing in a row.",
+      "Two people are sitting side by side.",
+      "Two people are sitting facing each other."
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Some plants have been placed ___ the corridor.",
+     "a": [
+      "along",
+      "in"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "A box is on ___ of the cabinet.",
+     "a": [
+      "top"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "There are some people waiting in the lounge.",
+     "zh": "休息室里有些人在等候。"
+    },
+    {
+     "t": "dict",
+     "a": "Some vehicles are parked in the parking lot."
+    },
+    {
+     "t": "tr",
+     "zh": "食堂里有很多空座位。",
+     "a": [
+      "There are many empty seats in the cafeteria.",
+      "There are a lot of empty seats in the cafeteria."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "场所：aisle、corridor、escalator、stair、lounge、cafeteria、parking lot、fixture。",
+      "<b>重点</b>：along、on top of、between、in front of、behind、across from —— 干扰项常只换介词。",
+      "<b>重点</b>：There are + 物 + parked / waiting + 位置。",
+      "side by side、in a row、face each other。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.2.4",
+   "title": "易混发音与一词多义",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "听错一个词",
+     "lines": [
+      [
+       "",
+       "A worker is climbing a ladder.",
+       "一名工人正在爬梯子。"
+      ],
+      [
+       "",
+       "Some crates are being loaded onto a truck.",
+       "一些板条箱正被装上卡车。"
+      ],
+      [
+       "",
+       "A forklift is lifting some pallets.",
+       "叉车正在叉起几个托盘。"
+      ],
+      [
+       "",
+       "An architect is looking at a blueprint.",
+       "一位建筑师正在看图纸。"
+      ]
+     ],
+     "note": "Part 1 的干扰项会故意用发音相近的词（ladder / letter）或一个词的另一个意思（board 木板 / 上车）。"
+    },
+    {
+     "t": "word",
+     "w": "ladder"
+    },
+    {
+     "t": "word",
+     "w": "scaffolding"
+    },
+    {
+     "t": "word",
+     "w": "toolbox"
+    },
+    {
+     "t": "word",
+     "w": "forklift"
+    },
+    {
+     "t": "word",
+     "w": "pallet"
+    },
+    {
+     "t": "word",
+     "w": "crate"
+    },
+    {
+     "t": "key",
+     "title": "近音词陷阱",
+     "what": [
+      "ladder（梯子）/ letter（信）· walk（走）/ work（工作）· copy（复印）/ coffee（咖啡）",
+      "lead（带领）/ read（读）· file（文件）/ pile（一堆）· sweep（扫）/ sleep（睡）",
+      "照片里有梯子，选项却说 writing a letter —— 典型近音陷阱。"
+     ],
+     "why": [
+      "出题人知道考生会抓“听到的词”，所以会放一个<b>和照片内容发音相似但意思不同</b>的词。对策：听整句的意思，而不是捕捉单词。"
+     ],
+     "zh": [
+      "中国学生 /l/ 和 /r/、/w/ 和 /v/ 不分，更容易被 lead / read、walk / work 骗。"
+     ],
+     "ex": [
+      [
+       "A man is climbing a ladder.",
+       "一名男子正在爬梯子。"
+      ],
+      [
+       "A woman is writing a letter.",
+       "一位女士正在写信。"
+      ]
+     ],
+     "err": [
+      [
+       "（照片：工人在梯子上）A worker is reading a letter.",
+       "A worker is climbing a ladder.",
+       "letter 是 ladder 的近音陷阱"
+      ]
+     ],
+     "sum": "听意思，不抓单词：<b>ladder / letter、copy / coffee、walk / work</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "【照片】一位女士站在复印机前复印文件　哪一句描述正确？",
+       "o": [
+        "A woman is making copies.",
+        "A woman is making coffee.",
+        "A woman is copying a recipe."
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "【照片】一名工人站在梯子上换灯泡　哪一句描述正确？",
+       "o": [
+        "A worker is standing on a ladder.",
+        "A worker is reading a letter.",
+        "A worker is walking to work."
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "load"
+    },
+    {
+     "t": "word",
+     "w": "unload"
+    },
+    {
+     "t": "word",
+     "w": "install"
+    },
+    {
+     "t": "word",
+     "w": "repair"
+    },
+    {
+     "t": "word",
+     "w": "blueprint"
+    },
+    {
+     "t": "word",
+     "w": "architect"
+    },
+    {
+     "t": "key",
+     "title": "一词多义陷阱：board、row、lie、load",
+     "what": [
+      "<b>board</b>：木板 / 公告板 / 董事会 / 登上（车、船、飞机）",
+      "<b>row</b>：一排 / 划船 · <b>lie</b>：躺 / 平放 · <b>load</b>：装货 / 负荷",
+      "<b>check</b>：检查 / 支票 · <b>park</b>：公园 / 停车"
+     ],
+     "why": [
+      "照片里有人在上公交车，选项说 A woman is looking at a board（看公告板）—— 同一个 board，意思完全不同。"
+     ],
+     "zh": [
+      "这些词的常见义大家都知道，Part 1 爱考的是<b>第二个意思</b>：board a bus、in a row、lie on the floor。"
+     ],
+     "ex": [
+      [
+       "Passengers are boarding a ferry.",
+       "乘客们正在登上渡轮。"
+      ],
+      [
+       "Some boats are tied up in a row.",
+       "几条船排成一排拴着。"
+      ],
+      [
+       "Some tools are lying on the ground.",
+       "地上放着一些工具。"
+      ]
+     ],
+     "err": [
+      [
+       "A man is rowing the chairs.",
+       "The chairs are arranged in a row.",
+       "一排是 in a row"
+      ]
+     ],
+     "sum": "注意第二个意思：<b>board</b> 上车、<b>row</b> 一排 / 划船、<b>lie</b> 平放。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "【照片】码头边，几个人正在划船　哪一句描述正确？",
+       "o": [
+        "People are boarding a plane.",
+        "Some people are rowing boats.",
+        "Some boats are in a row on the shore."
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Some tools are ___ on the workbench.",
+       "a": [
+        "lying"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "A forklift is lifting some pallets.",
+     "zh": "叉车正在叉起几个托盘。",
+     "focus": "forklift 重音在 fork"
+    },
+    {
+     "t": "c",
+     "q": "【照片】仓库里，一辆叉车正在搬运托盘　哪一句描述正确？",
+     "o": [
+      "A truck is being washed.",
+      "Some pallets have been painted.",
+      "A forklift is moving some pallets."
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "【照片】工人们正在楼外搭脚手架　哪一句描述正确？",
+     "o": [
+      "Some scaffolding is lying on the road.",
+      "Workers are putting up scaffolding.",
+      "Workers are taking a break."
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "【照片】一名工人在卸货，箱子从卡车上搬下来　哪一句描述正确？",
+     "o": [
+      "A worker is loading a truck.",
+      "Some boxes are stacked in a warehouse.",
+      "A worker is unloading some boxes."
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "A technician is ___ (install) a new air conditioner.",
+     "a": [
+      "installing"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "An ___ is looking at some blueprints.",
+     "a": [
+      "architect"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "A worker is climbing a ladder.",
+     "zh": "一名工人正在爬梯子。"
+    },
+    {
+     "t": "dict",
+     "a": "Some crates are being loaded onto a truck."
+    },
+    {
+     "t": "tr",
+     "zh": "一名男子正在修理一台机器。",
+     "a": [
+      "A man is repairing a machine.",
+      "A man is fixing a machine."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "工地仓库：ladder、scaffolding、toolbox、forklift、pallet、crate、load、unload、install、repair、blueprint、architect。",
+      "<b>重点</b>：近音陷阱 ladder / letter、copy / coffee、walk / work —— 听意思。",
+      "<b>重点</b>：一词多义 board（上车）、row（一排 / 划船）、lie（平放）。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.2.5",
+   "title": "Part 1 实战",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "解题步骤",
+     "lines": [
+      [
+       "",
+       "Look at the photo before the audio starts.",
+       "录音开始前先看照片。"
+      ],
+      [
+       "",
+       "Ask yourself: who or what is in the photo, and what is happening?",
+       "问自己：照片里有谁 / 有什么，正在发生什么？"
+      ],
+      [
+       "",
+       "As you listen, cross out each wrong answer.",
+       "边听边排除错误选项。"
+      ],
+      [
+       "",
+       "Never choose a sentence about something you cannot see.",
+       "永远不要选描述照片里看不见的内容的句子。"
+      ]
+     ],
+     "note": "这一课把前四课的方法串起来，做一套完整的 Part 1 模拟。"
+    },
+    {
+     "t": "word",
+     "w": "podium",
+     "p": "/ˈpəʊdiəm/",
+     "s": [
+      [
+       "n.",
+       "讲台；演讲台"
+      ]
+     ],
+     "x": [
+      "The speaker is standing at the podium.",
+      "演讲者站在讲台前。"
+     ]
+    },
+    {
+     "t": "word",
+     "w": "railing",
+     "p": "/ˈreɪlɪŋ/",
+     "s": [
+      [
+       "n.",
+       "栏杆；扶手"
+      ]
+     ],
+     "x": [
+      "A woman is leaning on the railing.",
+      "一位女士靠在栏杆上。"
+     ]
+    },
+    {
+     "t": "word",
+     "w": "browse",
+     "p": "/braʊz/",
+     "s": [
+      [
+       "v.",
+       "（随意）浏览；翻看"
+      ]
+     ],
+     "x": [
+      "Some customers are browsing in a bookstore.",
+      "几位顾客在书店里随意翻看。"
+     ]
+    },
+    {
+     "t": "word",
+     "w": "rack",
+     "p": "/ræk/",
+     "s": [
+      [
+       "n.",
+       "架子；挂架"
+      ]
+     ],
+     "x": [
+      "Coats are hanging on a rack.",
+      "外套挂在衣架上。"
+     ]
+    },
+    {
+     "t": "word",
+     "w": "pier",
+     "p": "/pɪə(r)/",
+     "s": [
+      [
+       "n.",
+       "码头；栈桥"
+      ]
+     ],
+     "x": [
+      "A boat is tied to the pier.",
+      "一艘船系在码头上。"
+     ]
+    },
+    {
+     "t": "word",
+     "w": "vessel",
+     "p": "/ˈvesl/",
+     "s": [
+      [
+       "n.",
+       "（大）船；容器"
+      ]
+     ],
+     "x": [
+      "A large vessel is sailing into the harbor.",
+      "一艘大船正驶入港口。"
+     ]
+    },
+    {
+     "t": "key",
+     "title": "Part 1 三步解题法",
+     "what": [
+      "<b>① 预读</b>：录音前用 5 秒看照片 —— 人还是物？几个人？主要动作？",
+      "<b>② 排除</b>：听一句排一句；动作错、主语错、介词错、照片里没有的东西 → 排除",
+      "<b>③ 保留</b>：剩下的最“保守”、最笼统的描述往往是答案"
+     ],
+     "why": [
+      "正确答案很多时候“平平无奇”：A man is using a computer.；花哨的、带推测的（He is about to leave for a trip）几乎都是错的。"
+     ],
+     "zh": [
+      "中国考生容易“想太多”，把照片读成故事。Part 1 只要“字面描述”。"
+     ],
+     "ex": [
+      [
+       "A man is speaking at a podium.",
+       "一名男子正在讲台上讲话。"
+      ],
+      [
+       "Some people are browsing in a bookstore.",
+       "几个人在书店里随意翻看。"
+      ]
+     ],
+     "err": [
+      [
+       "（照片：女士看菜单）She is going to order a steak.",
+       "She is looking at a menu.",
+       "推测的不选"
+      ]
+     ],
+     "sum": "<b>预读 → 排除 → 选最朴素的那句</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "【照片】一个人在码头边扶着栏杆看海　哪一句描述正确？",
+       "o": [
+        "A man is going to swim.",
+        "A man is buying a ticket for a boat.",
+        "A man is leaning on a railing."
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "【照片】服务员端着托盘走过餐厅　哪一句描述正确？",
+       "o": [
+        "A customer is paying the bill.",
+        "A server is cooking in the kitchen.",
+        "A server is carrying a tray."
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "tray",
+     "p": "/treɪ/",
+     "s": [
+      [
+       "n.",
+       "托盘"
+      ]
+     ],
+     "x": [
+      "A waiter is carrying a tray of drinks.",
+      "服务员端着一托盘饮料。"
+     ]
+    },
+    {
+     "t": "word",
+     "w": "microphone",
+     "p": "/ˈmaɪkrəfəʊn/",
+     "s": [
+      [
+       "n.",
+       "麦克风"
+      ]
+     ],
+     "x": [
+      "She is speaking into a microphone.",
+      "她正对着麦克风讲话。"
+     ]
+    },
+    {
+     "t": "word",
+     "w": "mow",
+     "p": "/məʊ/",
+     "s": [
+      [
+       "v.",
+       "割（草）"
+      ]
+     ],
+     "x": [
+      "A man is mowing the lawn.",
+      "一名男子正在割草。"
+     ]
+    },
+    {
+     "t": "word",
+     "w": "trim",
+     "p": "/trɪm/",
+     "s": [
+      [
+       "v.",
+       "修剪"
+      ]
+     ],
+     "x": [
+      "A gardener is trimming the bushes.",
+      "园丁正在修剪灌木。"
+     ]
+    },
+    {
+     "t": "word",
+     "w": "polish",
+     "p": "/ˈpɒlɪʃ/",
+     "s": [
+      [
+       "v.",
+       "擦亮；打磨"
+      ]
+     ],
+     "x": [
+      "He is polishing his shoes.",
+      "他正在擦皮鞋。"
+     ]
+    },
+    {
+     "t": "word",
+     "w": "plant"
+    },
+    {
+     "t": "key",
+     "title": "照片里“没有”的东西：全部排除",
+     "what": [
+      "选项里出现照片中<b>看不到</b>的名词（a car、a dog、customers）→ 直接排除",
+      "动词对、名词错也要排除：A woman is watering <b>some flowers</b>.（照片里她在浇树）"
+     ],
+     "why": [
+      "这一条能排掉一半干扰项。听到第一个“照片里没有”的名词，就可以放弃这一句，把注意力留给下一句。"
+     ],
+     "zh": [
+      "中文思维会“补全”画面（餐厅照片 → 应该有客人）；Part 1 不补全，只看实际出现的。"
+     ],
+     "ex": [
+      [
+       "A man is mowing the lawn.",
+       "一名男子正在修剪草坪。"
+      ],
+      [
+       "Some clothes are hanging on a rack.",
+       "衣架上挂着一些衣服。"
+      ]
+     ],
+     "err": [
+      [
+       "（照片只有衣架，没有人）A shopper is trying on a jacket.",
+       "Some clothes are hanging on a rack.",
+       "照片里没有购物者"
+      ]
+     ],
+     "sum": "照片里<b>看不到</b>的名词一出现，整句排除。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "【照片】没有人；一艘船停靠在码头边　哪一句描述正确？",
+       "o": [
+        "A vessel is docked at a pier.",
+        "A captain is steering a boat.",
+        "Passengers are getting off a ship."
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "【照片】一名男子在擦皮鞋　哪一句描述正确？",
+       "o": [
+        "A man is buying new shoes.",
+        "A man is putting on his socks.",
+        "A man is polishing his shoes."
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Look at the photo before the audio starts.",
+     "zh": "录音开始前先看照片。",
+     "focus": "photo 重音在第一音节"
+    },
+    {
+     "t": "c",
+     "q": "【照片】商店里，几个人在挂满衣服的衣架前挑选　哪一句描述正确？",
+     "o": [
+      "Some people are browsing through a clothing rack.",
+      "Some people are paying at the counter.",
+      "The clothes are being sewn."
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "【照片】一名园丁正在修剪树篱　哪一句描述正确？",
+     "o": [
+      "A gardener is trimming some bushes.",
+      "Some bushes are being moved.",
+      "A gardener is planting trees."
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "【照片】讲台上放着一支麦克风，没有人　哪一句描述正确？",
+     "o": [
+      "A microphone has been placed on a podium.",
+      "A microphone is being adjusted.",
+      "A speaker is giving a talk."
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "A man is ___ (mow) the lawn.",
+     "a": [
+      "mowing"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Some clothes are hanging on a ___.",
+     "a": [
+      "rack"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "A server is carrying a tray of drinks.",
+     "zh": "服务员端着一托盘饮料。"
+    },
+    {
+     "t": "dict",
+     "a": "A vessel is docked at a pier."
+    },
+    {
+     "t": "tr",
+     "zh": "一名男子正在讲台上讲话。",
+     "a": [
+      "A man is speaking at a podium.",
+      "A man is giving a speech at a podium.",
+      "A man is talking at a podium."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：podium、railing、browse、rack、pier、vessel、tray、microphone、mow、trim、polish、plant。",
+      "<b>重点</b>：预读 → 排除 → 选最朴素的描述。",
+      "<b>重点</b>：照片里看不到的名词一出现就排除。",
+      "Part 1 四大陷阱：推测、wearing / putting on、is being done、近音和多义词。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.2.6",
+   "title": "单元阅读：Morning at the Harbor",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Morning at the Harbor",
+     "note": "一段“文字照片”：读的时候在脑子里画出画面，再判断哪些描述能从“照片”里看出来。",
+     "lines": [
+      [
+       "It is early morning at a small harbor.",
+       "清晨，一个小港口。"
+      ],
+      [
+       "Several fishing boats are tied up in a row along the pier.",
+       "几艘渔船沿着码头排成一排系着。"
+      ],
+      [
+       "On the closest boat, a man is unloading crates of fish.",
+       "最近的那艘船上，一名男子正在卸一箱箱的鱼。"
+      ],
+      [
+       "Another man is standing on the pier and lifting the crates onto a cart.",
+       "另一名男子站在码头上，把箱子搬到推车上。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "A woman in a yellow jacket is leaning on the railing.",
+       "一位穿黄色外套的女士靠在栏杆上。"
+      ],
+      [
+       "She is looking at the boats and holding a cup of coffee.",
+       "她一边看着船，一边端着一杯咖啡。"
+      ],
+      [
+       "Behind her, some tables and chairs have been set up in front of a small café.",
+       "她身后，一家小咖啡馆门前摆好了一些桌椅。"
+      ],
+      [
+       "The café is not open yet, and no one is sitting outside.",
+       "咖啡馆还没开门，外面没有人坐着。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Far away, a large vessel is sailing out of the harbor.",
+       "远处，一艘大船正驶出港口。"
+      ],
+      [
+       "A few seagulls are flying above the water.",
+       "几只海鸥在水面上飞。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Which sentence matches the scene?",
+     "o": [
+      "Some boats are being painted.",
+      "The pier is crowded with tourists.",
+      "Some boats are tied up in a row."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is the woman doing?",
+     "o": [
+      "Serving coffee in a café",
+      "Leaning on a railing",
+      "Unloading crates"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Which sentence is NOT true?",
+     "o": [
+      "Some customers are sitting outside the café.",
+      "Tables and chairs have been set up.",
+      "A vessel is sailing out of the harbor."
+     ],
+     "a": 0,
+     "e": "The café is not open yet, and no one is sitting outside. —— 没有人坐着。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "\"Some tables and chairs have been set up\" describes",
+     "o": [
+      "物品已经摆好的状态",
+      "桌椅将要被摆放",
+      "有人正在摆桌椅"
+     ],
+     "a": 0,
+     "e": "has / have been done = 已被……（状态）。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "一名男子正在卸一箱箱的鱼。",
+     "a": [
+      "A man is unloading crates of fish.",
+      "A man is unloading some crates of fish."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "Part 1 语言：is unloading / is leaning on / have been set up / are tied up in a row。",
+      "人物照用 is doing；物品状态用 has been done。",
+      "词：pier、crate、railing、vessel、in a row。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "【照片】一名男子戴着安全帽在工地　哪一句描述正确？",
+    "o": [
+     "He's wearing a helmet.",
+     "He's buying a helmet.",
+     "He's putting on a helmet."
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "【照片】没有人；桌上的文件摞成一堆　哪一句描述正确？",
+    "o": [
+     "Papers are being printed.",
+     "Someone is stacking papers.",
+     "Some papers have been stacked on a desk."
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "【照片】几位乘客正在上火车　哪一句描述正确？",
+    "o": [
+     "A train is being cleaned.",
+     "Passengers are boarding a train.",
+     "Passengers are leaving a station."
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "【照片】一个女人站在两个书架之间　哪一句描述正确？",
+    "o": [
+     "A woman is standing between two bookshelves.",
+     "A woman is standing in front of a store.",
+     "A woman is sitting on a shelf."
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "【照片】工人在梯子上粉刷墙壁　哪一句描述正确？",
+    "o": [
+     "A worker is writing a letter.",
+     "A worker is painting a wall.",
+     "A wall is lying on the floor."
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "【照片】没有人；停车场里车排成一排　哪一句描述正确？",
+    "o": [
+     "Cars are being parked.",
+     "A driver is parking a car.",
+     "Cars are parked in a row."
+    ],
+    "a": 2
+   },
+   {
+    "t": "tr",
+    "zh": "一位女士正往杯子里倒咖啡。",
+    "a": [
+     "A woman is pouring coffee into a cup.",
+     "A woman is pouring some coffee into a cup."
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "墙边靠着一架梯子。",
+    "a": [
+     "A ladder is leaning against the wall.",
+     "There is a ladder leaning against the wall."
+    ]
+   }
+  ]
+ }
+}
