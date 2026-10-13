@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261013.0104-f2bd7f";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261013.0107-faf85b";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -2451,25 +2451,52 @@ function nextNewWords(book, n) {
   for (const w of bookWords(book)) { if (!prog(w)) { out.push(w); if (out.length >= n) break; } }
   return out;
 }
+/* ---- 间隔复习算法：FSRS（自由间隔重复调度，FSRS-5 默认参数）----
+   每个词记两个量：稳定性 S（天，记忆能保持多久）和难度 D（1–10）。每次复习按评分和距上次的天数更新，
+   下次复习安排在“回忆概率降到 90%”的那天。词的记录在原来 6 项后面追加 [6] S、[7] D；
+   旧记录第一次复习时按当时的间隔和对错次数估出 S、D，平滑过渡。阶段 rec[0] 按 S 换算，只用于“已掌握”统计。 */
+const FSRS_W = [0.40255, 1.18385, 3.173, 15.69105, 7.1949, 0.5345, 1.4604, 0.0046, 1.54575, 0.1192, 1.01925, 1.9395, 0.11, 0.29605, 2.2698, 0.2315, 2.9898, 0.51655, 0.6621];
+const FSRS_RETAIN = 0.9, F_DECAY = -0.5, F_FACTOR = 19 / 81, FSRS_MAX = 365;
+const clampN = (x, a, b) => Math.min(b, Math.max(a, x));
+const dayGap = (a, b) => Math.max(0, Math.round((Date.parse(b) - Date.parse(a)) / 864e5) || 0);
+const fsrsR = (t, s) => Math.pow(1 + F_FACTOR * t / s, F_DECAY);
+const fsrsIv = s => clampN(Math.round(s / F_FACTOR * (Math.pow(FSRS_RETAIN, 1 / F_DECAY) - 1)), 1, FSRS_MAX);
+const fsrsD0 = g => clampN(FSRS_W[4] - Math.exp(FSRS_W[5] * (g - 1)) + 1, 1, 10);
+// st = {s, d}（null 表示第一次）；g = 1 忘了 / 2 模糊 / 3 记得 / 4 太简单；t = 距上次复习的天数
+function fsrsStep(st, g, t) {
+  const w = FSRS_W;
+  if (!st) return { s: w[g - 1], d: fsrsD0(g) };
+  const d = clampN(w[7] * fsrsD0(4) + (1 - w[7]) * (st.d - w[6] * (g - 3) * (10 - st.d) / 9), 1, 10);
+  let s;
+  if (t < 1) s = st.s * Math.exp(w[17] * (g - 3 + w[18]));
+  else {
+    const r = fsrsR(t, st.s);
+    if (g === 1) s = Math.min(st.s, w[11] * Math.pow(d, -w[12]) * (Math.pow(st.s + 1, w[13]) - 1) * Math.exp(w[14] * (1 - r)));
+    else s = st.s * (1 + Math.exp(w[8]) * (11 - d) * Math.pow(st.s, -w[9]) * (Math.exp(w[10] * (1 - r)) - 1) * (g === 2 ? w[15] : 1) * (g === 4 ? w[16] : 1));
+  }
+  return { s: clampN(s, 0.1, 3650), d };
+}
+// 旧记录（只有阶段）→ 估一个 S、D：S 取当时排的间隔，D 按出错比例
+const fsrsFromOld = (stage, due, last, ok, bad) => ({ s: Math.max(1, dayGap(last, due) || INTERVALS[stage] || 1), d: clampN(3 + 10 * bad / Math.max(1, ok + bad), 1, 10) });
+const stageOfS = s => { let k = 1; for (let i = 1; i < INTERVALS.length; i++) if (s >= INTERVALS[i]) k = i; return k; };
+const r2 = x => Math.round(x * 100) / 100;
 // 评分：0 忘了 · 1 模糊 · 2 记得 · 3 太简单
 function applyRating(w, r, countStats = true) {
   const t = today(); const rec = prog(w) || [0, t, 0, 0, t, t];
-  let st = rec[0];
-  if (r === 0) { st = 1; rec[3]++; }
-  else if (r === 1) { st = Math.max(1, st); rec[2]++; }
-  else if (r === 2) { st = Math.min(st + 1, MASTER_STAGE); rec[2]++; }
-  else { st = Math.min(Math.max(st + 2, 3), MASTER_STAGE); rec[2]++; }
-  const iv = r === 1 ? Math.max(1, Math.round(INTERVALS[st] / 2)) : INTERVALS[st];
-  rec[0] = st; rec[1] = addDays(t, iv); rec[4] = t; if (!rec[5]) rec[5] = t;
+  const prev = rec[6] ? { s: rec[6], d: rec[7] } : rec[0] ? fsrsFromOld(rec[0], rec[1], rec[4], rec[2], rec[3]) : null;
+  const nx = fsrsStep(prev, r + 1, prev ? dayGap(rec[4], t) : 0);
+  if (r === 0) rec[3]++; else rec[2]++;
+  rec[0] = r === 0 ? 1 : Math.min(MASTER_STAGE, stageOfS(nx.s)); rec[1] = addDays(t, r === 0 ? 1 : fsrsIv(nx.s)); rec[4] = t; if (!rec[5]) rec[5] = t;
+  rec[6] = r2(nx.s); rec[7] = r2(nx.d);
   setProg(w, rec);
   if (countStats) { bump("rv"); if (r >= 1) bump("rvOk"); planOnReview(); }
 }
-// 新词毕业进入复习：first = 首次评分
+// 新词毕业进入复习：first = 首次评分（太简单 = 直接算已掌握）
 function graduate(w, first) {
   const t = today();
-  if (first === 3) { setProg(w, [MASTER_STAGE, addDays(t, INTERVALS[MASTER_STAGE]), 1, 0, t, t]); return; }
-  const st = first === 2 ? 2 : 1;
-  setProg(w, [st, addDays(t, INTERVALS[st]), 1, first === 0 ? 1 : 0, t, t]);
+  if (first === 3) { setProg(w, [MASTER_STAGE, addDays(t, INTERVALS[MASTER_STAGE]), 1, 0, t, t, INTERVALS[MASTER_STAGE], 2]); return; }
+  const nx = fsrsStep(null, first + 1, 0);
+  setProg(w, [stageOfS(nx.s), addDays(t, first === 0 ? 1 : fsrsIv(nx.s)), 1, first === 0 ? 1 : 0, t, t, r2(nx.s), r2(nx.d)]);
 }
 
 /* ---- 收藏 ---- */
@@ -2756,7 +2783,7 @@ function updateBadges() { } // 旧版导航上的角标已随导航一起取消
 /* ============ 单词学习 ============ */
 const WS = { mode: "overview", listBook: "b1", filter: "", tag: "", listN: 200, sess: null };
 const RATE_NEW = [["不认识", "本轮再练 3 次"], ["模糊", "本轮再练 2 次"], ["认识", "本轮再考 1 次"], ["太简单", "标为已掌握"]];
-const RATE_REV = [["忘了", "明天再来"], ["模糊", "间隔减半"], ["记得", "按计划拉长"], ["太简单", "间隔加倍"]];
+const RATE_REV = [["忘了", "明天再来"], ["模糊", "间隔略长"], ["记得", "按记忆拉长"], ["太简单", "间隔大幅拉长"]];
 const TYPE_NAME = { en2zh: "看词选释义", zh2en: "看释义选词", audio: "听发音选释义", cloze: "例句填空", spell: "听音拼写", yomi: "选读音", yomiIn: "写读音" };
 
 // 新词量自动调节：按复习积压和近 7 天正确率上下浮动
@@ -8353,11 +8380,17 @@ async function placeFinish() {
   if (fresh) { delete PL.days[k]; await planEnsureToday().catch(() => { }); }
   toast(passed.length ? `免修 ${passed.length} 个单元` : "从第一单元开始学", 3000); render();
 }
-/* ---- 重点笔记复习：每个到期的重点出一题；答对按 1、2、4、7、15… 天拉长间隔，答错明天再来 ---- */
+/* ---- 重点笔记复习：每个到期的重点出一题；间隔按 FSRS 算（答对拉长，答错明天再来） ---- */
 const keysOf = lang => Object.entries(PL.st?.keys || {}).filter(([id]) => id.startsWith(lang + "."));
 const keysDue = (lang, k = today()) => keysOf(lang).filter(([, r]) => r[1] <= k);
 // 重点上答错一次：记一次错，明天再考（课上练到对、课前回顾、重点复习都算）
-function keyMiss(id) { const k = today(), r = (PL.st.keys ||= {})[id] ||= [1, addDays(k, 1), 0, 0, k]; r[0] = 1; r[1] = addDays(k, 1); r[3]++; r[4] = k; savePlanState(); }
+function keyRate(r, ok) {
+  const k = today(), prev = r[5] ? { s: r[5], d: r[6] } : (r[2] + r[3]) ? fsrsFromOld(r[0], r[1], r[4], r[2], r[3]) : null;
+  const nx = fsrsStep(prev, ok ? 3 : 1, prev ? dayGap(r[4], k) : 0);
+  if (ok) r[2]++; else r[3]++;
+  r[0] = ok ? stageOfS(nx.s) : 1; r[1] = addDays(k, ok ? fsrsIv(nx.s) : 1); r[4] = k; r[5] = r2(nx.s); r[6] = r2(nx.d);
+}
+function keyMiss(id) { const k = today(), r = (PL.st.keys ||= {})[id] ||= [1, addDays(k, 1), 0, 0, k]; keyRate(r, false); savePlanState(); }
 // 薄弱程度：错得多、对得少的排前面
 const keyWeak = r => r[3] - r[2] * 0.5;
 const keyTitle = id => { const [lid, i] = id.split("#"); return v2Keys(curLesson(lid))[i - 1]?.title || id; };
@@ -8369,7 +8402,7 @@ async function startKeyReview(n = 10) {
   MQ.quiz = quizStart(items, { title: "重点复习", retry: false, cal: "key", onWrong: planAddMistake,
     onAnswer: (it, ok) => {
       const r = PL.st.keys[it.kid]; if (!r) return;
-      if (ok) { r[0] = Math.min(r[0] + 1, INTERVALS.length - 1); r[1] = addDays(k, INTERVALS[r[0]]); r[2]++; } else keyMiss(it.kid);
+      if (ok) keyRate(r, true); else keyMiss(it.kid);
       r[4] = k; savePlanState(); planQuizStat(ok);
       const day = PL.days[k]; if (day && !day.free) { (day.ky ||= {})[curLang()] = (day.ky[curLang()] || 0) + 1; savePlanDay(k); planCheck(); }
     },
