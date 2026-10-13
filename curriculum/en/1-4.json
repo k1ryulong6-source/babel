@@ -6,45 +6,252 @@
   {
    "id": "en.1.4.1",
    "title": "名词的单复数",
-   "words": [
-    "far",
-    "black",
-    "long",
-    "both",
-    "little",
-    "house",
-    "since",
-    "provide",
-    "service",
-    "around",
-    "friend",
-    "important"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "ref": "b_noun"
+     "t": "intro",
+     "title": "我的朋友们",
+     "lines": [
+      [
+       "",
+       "My friend Tom lives in a big house.",
+       "我朋友汤姆住在一栋大房子里。"
+      ],
+      [
+       "",
+       "He has two children and lots of books.",
+       "他有两个孩子和很多书。"
+      ],
+      [
+       "",
+       "He is one of my best friends.",
+       "他是我最好的朋友之一。"
+      ]
+     ],
+     "note": "two children、lots of books、one of my best friends —— 英语名词要标出“一个还是多个”，这在中文里是不用管的。"
     },
     {
-     "title": "复数的变法",
-     "points": [
-      "一般加 -s：book → books；以 s, x, sh, ch 结尾加 -es：bus → buses, box → boxes, watch → watches",
-      "辅音 + y → 变 y 为 i 加 -es：city → cities, family → families（元音 + y 直接加 s：day → days）",
-      "以 f/fe 结尾多变 -ves：knife → knives, life → lives, leaf → leaves",
-      "不规则：man → men, woman → women, child → children, foot → feet, tooth → teeth, person → people",
-      "单复同形：sheep, fish, Japanese, Chinese"
-     ],
-     "examples": [
-      [
-       "Three children and two women are in the room.",
-       "房间里有三个孩子和两个女人。"
-      ]
-     ]
-    }
-   ],
-   "special": [
+     "t": "word",
+     "w": "far"
+    },
     {
+     "t": "word",
+     "w": "black"
+    },
+    {
+     "t": "word",
+     "w": "long"
+    },
+    {
+     "t": "word",
+     "w": "both"
+    },
+    {
+     "t": "word",
+     "w": "little"
+    },
+    {
+     "t": "word",
+     "w": "house"
+    },
+    {
+     "t": "key",
+     "title": "名词变复数：规则和例外",
+     "what": [
+      "一般加 <b>-s</b>：book → books，friend → friends",
+      "以 <b>s, x, sh, ch</b> 结尾加 <b>-es</b>：bus → buses，box → boxes，watch → watches",
+      "<b>辅音 + y</b> 变 <b>ies</b>：city → cities，family → families（元音 + y 直接加 s：day → days, boy → boys）",
+      "<b>f / fe</b> 多变 <b>ves</b>：knife → knives，life → lives，leaf → leaves",
+      "<b>不规则</b>：man → men，woman → women，child → children，person → people，foot → feet，tooth → teeth，mouse → mice"
+     ],
+     "why": [
+      "大部分规则都是为了“好读”：box 直接加 s 读不出来，就加 -es；不规则复数是古英语留下的，数量不多，背下来就行。"
+     ],
+     "zh": [
+      "中文名词不变：“一本书、两本书”，靠数量词和量词表示。英语名词本身要变：a book、two book<b>s</b>。",
+      "中文的量词（本、个、只）英语一般不需要：两本书 → two books（不说 two pieces of book）。"
+     ],
+     "ex": [
+      [
+       "one book → two books",
+       ""
+      ],
+      [
+       "one child → three children",
+       "不规则"
+      ],
+      [
+       "Their families live in different cities.",
+       "他们的家人住在不同的城市。"
+      ],
+      [
+       "Some people are waiting for the bus.",
+       "有些人在等公交。"
+      ]
+     ],
+     "err": [
+      [
+       "two book",
+       "two books",
+       "数量大于一要用复数"
+      ],
+      [
+       "childs / childrens",
+       "children",
+       "不规则复数"
+      ],
+      [
+       "peoples（“人们”）",
+       "people",
+       "people 本身就是复数"
+      ]
+     ],
+     "sum": "数量 &gt; 1 一定变复数；child → children、person → people 这类不规则成组记。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "child 的复数是？",
+       "o": [
+        "childs",
+        "childes",
+        "children",
+        "childrens"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "city 的复数是？",
+       "o": [
+        "citys",
+        "cities",
+        "cityes",
+        "city"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "knife 的复数是？",
+       "o": [
+        "knifes",
+        "knives",
+        "knifs",
+        "knive"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "他有两个孩子。",
+       "a": [
+        "He has two children.",
+        "He has two kids."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "since"
+    },
+    {
+     "t": "word",
+     "w": "provide"
+    },
+    {
+     "t": "word",
+     "w": "service"
+    },
+    {
+     "t": "word",
+     "w": "around"
+    },
+    {
+     "t": "word",
+     "w": "friend"
+    },
+    {
+     "t": "word",
+     "w": "important"
+    },
+    {
+     "t": "key",
+     "title": "one of + 复数：“……之一”",
+     "what": [
+      "<b>one of the / my + 复数名词</b>：从一群里挑一个 —— one of my <b>friends</b>，one of the best <b>books</b>",
+      "谓语跟着 <b>one</b>，用单数：One of my friends <b>is</b> a doctor."
+     ],
+     "why": [
+      "“之一”的前提是“一群”，所以 of 后面必须是复数；但真正做主语的是 one，所以动词用单数。"
+     ],
+     "zh": [
+      "中文“我最好的朋友之一”里“朋友”不变形，于是很多人写成 one of my best friend（漏了 s）。"
+     ],
+     "ex": [
+      [
+       "He is one of my best friends.",
+       "他是我最好的朋友之一。"
+      ],
+      [
+       "One of the students is from Japan.",
+       "学生中有一个来自日本。"
+      ],
+      [
+       "This is one of the most important rules.",
+       "这是最重要的规则之一。"
+      ]
+     ],
+     "err": [
+      [
+       "one of my friend",
+       "one of my friends",
+       "of 后面复数"
+      ],
+      [
+       "One of the books are mine.",
+       "One of the books is mine.",
+       "主语是 one，用单数"
+      ]
+     ],
+     "sum": "<b>one of + 复数名词 + 单数动词</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "He is one of my best ___.",
+       "o": [
+        "friend",
+        "friends",
+        "friend's",
+        "a friend"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "One of the students ___ from Japan.",
+       "o": [
+        "is",
+        "are",
+        "be",
+        "am"
+       ],
+       "a": 0
+      },
+      {
+       "t": "tr",
+       "zh": "这是最重要的问题之一。",
+       "a": [
+        "This is one of the most important questions.",
+        "This is one of the most important problems.",
+        "It's one of the most important questions.",
+        "It is one of the most important questions."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "a pair of",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -52,15 +259,15 @@
       ]
      ],
      "x": [
-      [
-       "a pair of shoes",
-       "一双鞋"
-      ]
-     ]
+      "a pair of shoes",
+      "一双鞋"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "one of the …",
-     "t": "句型",
      "s": [
       [
        "",
@@ -68,15 +275,15 @@
       ]
      ],
      "x": [
-      [
-       "one of my friends",
-       "我的朋友之一"
-      ]
-     ]
+      "one of my friends",
+      "我的朋友之一"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "lots of",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -84,58 +291,17 @@
       ]
      ],
      "x": [
-      [
-       "lots of people",
-       "很多人"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "child 的复数是？",
-     "o": [
-      "childs",
-      "childes",
-      "children",
-      "childrens"
+      "lots of people",
+      "很多人"
      ],
-     "a": 2
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "city 的复数是？",
-     "o": [
-      "citys",
-      "cities",
-      "cityes",
-      "city"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "knife 的复数是？",
-     "o": [
-      "knifes",
-      "knives",
-      "knifs",
-      "knive"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "He is one of my best ___.",
-     "o": [
-      "friend",
-      "friends",
-      "friend's",
-      "a friend"
-     ],
-     "a": 1,
-     "e": "one of + 复数名词。"
+     "t": "speak",
+     "text": "He is one of my best friends.",
+     "zh": "他是我最好的朋友之一。",
+     "focus": "friends 结尾的 /z/ 要读出来"
     },
     {
      "t": "f",
@@ -148,52 +314,301 @@
      "t": "o",
      "a": "There are lots of people here.",
      "zh": "这里有很多人。"
+    },
+    {
+     "t": "dict",
+     "a": "There are lots of people here."
+    },
+    {
+     "t": "tr",
+     "zh": "我需要一双新鞋。",
+     "a": [
+      "I need a new pair of shoes.",
+      "I need new shoes.",
+      "I need a pair of new shoes."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：复数 -s / -es / -ies / -ves，不规则 men, children, people, feet, teeth。",
+      "<b>重点</b>：one of + 复数名词，动词用单数。",
+      "a pair of 一双；lots of 很多。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.4.2",
    "title": "可数与不可数",
-   "words": [
-    "father",
-    "sit",
-    "away",
-    "until",
-    "power",
-    "hour",
-    "game",
-    "often",
-    "yet",
-    "line",
-    "political",
-    "end"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "能不能数，决定用什么词",
-     "points": [
-      "可数名词：有单复数，可以直接加数字：a book, two books。",
-      "不可数名词：没有复数、不能直接加 a 或数字：water, money, information, advice, news, homework, furniture, music。",
-      "要数不可数名词，加单位：a glass of water, a piece of advice, two pieces of information。",
-      "many / few 修饰可数；much / little 修饰不可数；a lot of / some / any 两者都可以。",
-      "some 用于肯定句和提供东西的疑问句（Would you like some tea?）；any 用于否定句和一般疑问句。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "买东西",
+     "lines": [
       [
-       "How much money do you have?",
-       "你有多少钱？"
+       "A",
+       "How much is this bag?",
+       "这个包多少钱？"
       ],
       [
-       "How many books did you buy?",
-       "你买了几本书？"
+       "B",
+       "It's fifty dollars.",
+       "五十美元。"
+      ],
+      [
+       "A",
+       "And how many bags do you have in black?",
+       "黑色的你们有几个？"
+      ],
+      [
+       "B",
+       "Let me check. Can I give you some advice? This one is better.",
+       "我看一下。给你个建议？这个更好。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "how much 和 how many，some advice 不是 some advices —— 这一课讲“能不能数”。"
+    },
     {
+     "t": "word",
+     "w": "father"
+    },
+    {
+     "t": "word",
+     "w": "sit"
+    },
+    {
+     "t": "word",
+     "w": "away"
+    },
+    {
+     "t": "word",
+     "w": "until"
+    },
+    {
+     "t": "word",
+     "w": "power"
+    },
+    {
+     "t": "word",
+     "w": "hour"
+    },
+    {
+     "t": "key",
+     "title": "不可数名词：information、advice、news 不加 s、不加 a",
+     "what": [
+      "<b>不可数名词</b>没有复数，前面不能直接加 a 或数字：water, money, information, advice, news, homework, furniture, music, work, luggage",
+      "要数它，加“单位”：a glass of water，<b>a piece of advice</b>，two pieces of information"
+     ],
+     "why": [
+      "英语把“一团没有明确边界的东西”看作不可数：水、钱（总量）、信息、建议、家具（一类东西的总称）。可数的是能一个一个分开的东西。"
+     ],
+     "zh": [
+      "很多词中文能数、英语不能数：“一条信息”“一个建议”“很多作业”“一件家具”。这正是中国学生最常错的地方：<s>an advice</s>、<s>informations</s>、<s>homeworks</s>。",
+      "注意 news 虽然以 s 结尾，却是不可数单数：The news <b>is</b> good."
+     ],
+     "ex": [
+      [
+       "Can you give me some advice?",
+       "能给我一些建议吗？"
+      ],
+      [
+       "I have a lot of homework today.",
+       "我今天作业很多。"
+      ],
+      [
+       "Here's a piece of good news.",
+       "有一个好消息。"
+      ],
+      [
+       "We need more information.",
+       "我们需要更多信息。"
+      ]
+     ],
+     "err": [
+      [
+       "an advice",
+       "a piece of advice / some advice",
+       ""
+      ],
+      [
+       "informations",
+       "information",
+       ""
+      ],
+      [
+       "The news are good.",
+       "The news is good.",
+       "news 是单数"
+      ]
+     ],
+     "sum": "information / advice / news / homework / furniture / money：<b>不加 s，不加 a</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "哪个是不可数名词？",
+       "o": [
+        "book",
+        "chair",
+        "information",
+        "student"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Can you give me some ___?",
+       "o": [
+        "advice",
+        "advices",
+        "an advice",
+        "advise"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "The news ___ really good.",
+       "o": [
+        "is",
+        "are",
+        "were",
+        "be"
+       ],
+       "a": 0
+      },
+      {
+       "t": "tr",
+       "zh": "我今天有很多作业。",
+       "a": [
+        "I have a lot of homework today.",
+        "I have lots of homework today.",
+        "I've got a lot of homework today."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "game"
+    },
+    {
+     "t": "word",
+     "w": "often"
+    },
+    {
+     "t": "word",
+     "w": "yet"
+    },
+    {
+     "t": "word",
+     "w": "line"
+    },
+    {
+     "t": "word",
+     "w": "political"
+    },
+    {
+     "t": "word",
+     "w": "end"
+    },
+    {
+     "t": "key",
+     "title": "many / much 与 some / any",
+     "what": [
+      "<b>many</b> + 可数复数：many books；<b>much</b> + 不可数：much money",
+      "<b>a lot of / lots of</b> 两者都行，口语最常用",
+      "<b>some</b>：肯定句，以及<b>请对方要东西</b>的问句（Would you like some tea?）",
+      "<b>any</b>：否定句和一般疑问句（I don't have any money. Do you have any questions?）"
+     ],
+     "why": [
+      "much 在肯定句里显得生硬，口语肯定句多用 a lot of；much 主要用在否定和疑问：I don't have much time. How much is it?"
+     ],
+     "zh": [
+      "中文“很多”“一些”不分可数不可数；英语要先判断名词能不能数，再选词。"
+     ],
+     "ex": [
+      [
+       "How many students are there?",
+       "有多少学生？"
+      ],
+      [
+       "How much time do we have?",
+       "我们有多少时间？"
+      ],
+      [
+       "Would you like some coffee?",
+       "要来点咖啡吗？"
+      ],
+      [
+       "I don't have any questions.",
+       "我没有问题。"
+      ]
+     ],
+     "err": [
+      [
+       "much books",
+       "many books",
+       ""
+      ],
+      [
+       "How many money",
+       "How much money",
+       ""
+      ],
+      [
+       "Do you have some questions?（一般询问）",
+       "Do you have any questions?",
+       ""
+      ]
+     ],
+     "sum": "可数 many、不可数 much；肯定 some、否定疑问 any（请人吃喝用 some）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "I don't have ___ money.",
+       "o": [
+        "many",
+        "much",
+        "a",
+        "few"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "How ___ students are in your class?",
+       "o": [
+        "much",
+        "many",
+        "lot",
+        "any"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Do you have ___ questions?",
+       "o": [
+        "some",
+        "any",
+        "much",
+        "a"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Would you like ___ tea? (肯定的邀请)",
+       "a": [
+        "some"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "a piece of",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -201,15 +616,15 @@
       ]
      ],
      "x": [
-      [
-       "a piece of advice",
-       "一条建议"
-      ]
-     ]
+      "a piece of advice",
+      "一条建议"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "How much …?",
-     "t": "句型",
      "s": [
       [
        "",
@@ -217,15 +632,15 @@
       ]
      ],
      "x": [
-      [
-       "How much is it?",
-       "多少钱？"
-      ]
-     ]
+      "How much is it?",
+      "多少钱？"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "How many …?",
-     "t": "句型",
      "s": [
       [
        "",
@@ -233,126 +648,297 @@
       ]
      ],
      "x": [
-      [
-       "How many people are coming?",
-       "来几个人？"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "哪个是不可数名词？",
-     "o": [
-      "book",
-      "chair",
-      "information",
-      "student"
+      "How many people are coming?",
+      "来几个人？"
      ],
-     "a": 2
+     "tt": "句型",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "I don't have ___ money.",
-     "o": [
-      "many",
-      "much",
-      "a",
-      "few"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "How ___ students are in your class?",
-     "o": [
-      "much",
-      "many",
-      "lot",
-      "any"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "Can you give me some ___?",
-     "o": [
-      "advice",
-      "advices",
-      "an advice",
-      "advise"
-     ],
-     "a": 0,
-     "e": "advice 不可数。"
-    },
-    {
-     "t": "c",
-     "q": "Do you have ___ questions?",
-     "o": [
-      "some",
-      "any",
-      "much",
-      "a"
-     ],
-     "a": 1,
-     "e": "一般疑问句用 any。"
-    },
-    {
-     "t": "f",
-     "q": "Would you like ___ tea? (肯定的邀请)",
-     "a": [
-      "some"
-     ]
+     "t": "speak",
+     "text": "Can I give you some advice?",
+     "zh": "给你一点建议？",
+     "focus": "advice 重音在后：ad-VICE"
     },
     {
      "t": "o",
      "a": "How much is this bag?",
      "zh": "这个包多少钱？"
+    },
+    {
+     "t": "dict",
+     "a": "How much is this bag?"
+    },
+    {
+     "t": "tr",
+     "zh": "这里有多少人？",
+     "a": [
+      "How many people are there here?",
+      "How many people are here?",
+      "How many people are there?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：不可数名词（information, advice, news, homework, money）不加 s、不加 a；要数用 a piece of。",
+      "<b>重点</b>：many + 可数，much + 不可数；some 肯定 / 请人，any 否定 / 疑问。",
+      "How much 问价格和不可数量；How many 问可数数量。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.4.3",
    "title": "冠词 a / an / the",
-   "words": [
-    "among",
-    "ever",
-    "stand",
-    "bad",
-    "lose",
-    "however",
-    "member",
-    "pay",
-    "law",
-    "meet",
-    "car",
-    "city"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "ref": "b_article"
+     "t": "intro",
+     "title": "早饭和公交",
+     "lines": [
+      [
+       "",
+       "I have breakfast at seven.",
+       "我七点吃早饭。"
+      ],
+      [
+       "",
+       "Then I go to work by bus.",
+       "然后坐公交上班。"
+      ],
+      [
+       "",
+       "I waited for an hour at the station.",
+       "我在车站等了一个小时。"
+      ],
+      [
+       "",
+       "The bus was late again!",
+       "公交又晚点了！"
+      ]
+     ],
+     "note": "have breakfast 和 by bus 前面都没有冠词；an hour 用 an —— 这一课把冠词的几个难点讲透。"
     },
     {
-     "title": "一句话记住",
-     "points": [
-      "a / an：第一次提到、泛指“一个”；the：双方都知道是哪一个。",
-      "an 看<b>发音</b>不看字母：an hour, an honest man（h 不发音）；a university, a European（u 读 /juː/）。",
-      "独一无二的东西用 the：the sun, the world, the internet。",
-      "不用冠词：三餐（have breakfast）、球类（play tennis）、语言学科（study English）、by + 交通（by bus）、go to school/work/bed。"
-     ],
-     "examples": [
-      [
-       "I saw a dog. The dog was very big.",
-       "我看见一只狗。那只狗很大。"
-      ]
-     ]
-    }
-   ],
-   "special": [
+     "t": "word",
+     "w": "among"
+    },
     {
+     "t": "word",
+     "w": "ever"
+    },
+    {
+     "t": "word",
+     "w": "stand"
+    },
+    {
+     "t": "word",
+     "w": "bad"
+    },
+    {
+     "t": "word",
+     "w": "lose"
+    },
+    {
+     "t": "word",
+     "w": "however"
+    },
+    {
+     "t": "key",
+     "title": "a 还是 an：看发音，不看字母",
+     "what": [
+      "<b>an</b> 用在<b>元音音素</b>前：an apple, an hour（h 不发音）, an honest man, an MBA（字母 M 读 /em/）",
+      "<b>a</b> 用在<b>辅音音素</b>前：a book, <b>a university</b>（u 读 /juː/）, <b>a European</b>, a one-way ticket（/w/）"
+     ],
+     "why": [
+      "an 的 n 是为了避免两个元音挨着读不顺（a apple → an apple）。所以判断标准是<b>读出来</b>是不是元音开头。"
+     ],
+     "zh": [
+      "按字母判断就会错：hour 字母 h 开头却用 an，university 字母 u 开头却用 a。"
+     ],
+     "ex": [
+      [
+       "an hour, an honest person",
+       "h 不发音"
+      ],
+      [
+       "a university, a uniform, a European city",
+       "读 /j/ 开头"
+      ],
+      [
+       "He is an engineer at a university.",
+       "他是一所大学的工程师。"
+      ]
+     ],
+     "err": [
+      [
+       "a hour",
+       "an hour",
+       "h 不发音"
+      ],
+      [
+       "an university",
+       "a university",
+       "u 读 /juː/"
+      ]
+     ],
+     "sum": "<b>听开头的音</b>：元音音用 an，辅音音用 a。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "He waited for ___ hour.",
+       "o": [
+        "a",
+        "an",
+        "the",
+        "/"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "She studies at ___ university in Tokyo.",
+       "o": [
+        "a",
+        "an",
+        "the",
+        "/"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "It's ___ honest answer.",
+       "o": [
+        "a",
+        "an",
+        "the",
+        "/"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "member"
+    },
+    {
+     "t": "word",
+     "w": "pay"
+    },
+    {
+     "t": "word",
+     "w": "law"
+    },
+    {
+     "t": "word",
+     "w": "meet"
+    },
+    {
+     "t": "word",
+     "w": "car"
+    },
+    {
+     "t": "word",
+     "w": "city"
+    },
+    {
+     "t": "key",
+     "title": "不加冠词的场合：三餐、球类、by bus、go to school",
+     "what": [
+      "<b>三餐</b>：have breakfast / lunch / dinner",
+      "<b>球类和棋类</b>：play tennis / football / chess（乐器要加 the：play the piano）",
+      "<b>by + 交通工具</b>：by bus, by train, by car（但 in my car, on the bus 要冠词）",
+      "<b>go to school / work / bed</b>（去做那件事本身）；at home, at night",
+      "<b>语言、学科</b>：study English, like math"
+     ],
+     "why": [
+      "这些名词在这里表示的是“活动”本身（吃早饭这件事、上学这件事），不是某个具体的东西，所以不用冠词。一旦说具体的那顿饭、那辆车，就要加：The breakfast at this hotel is great."
+     ],
+     "zh": [
+      "中文本来不用冠词，按理说不容易错，但学了冠词后常常“矫枉过正”：<s>have a breakfast</s>、<s>play the tennis</s>、<s>by the bus</s>。"
+     ],
+     "ex": [
+      [
+       "I have breakfast at seven.",
+       "我七点吃早饭。"
+      ],
+      [
+       "I go to work by bus.",
+       "我坐公交上班。"
+      ],
+      [
+       "She plays tennis and plays the piano.",
+       "她打网球，也弹钢琴。"
+      ],
+      [
+       "The sun rises in the east.",
+       "太阳从东方升起。（独一无二的东西用 the）"
+      ]
+     ],
+     "err": [
+      [
+       "have a breakfast",
+       "have breakfast",
+       ""
+      ],
+      [
+       "play the football",
+       "play football",
+       "球类不加"
+      ],
+      [
+       "by the bus",
+       "by bus",
+       ""
+      ]
+     ],
+     "sum": "三餐、球类、by + 交通、go to school / bed：<b>不加冠词</b>；乐器、独一无二的东西：加 the。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "I play ___ tennis on weekends.",
+       "o": [
+        "a",
+        "an",
+        "the",
+        "/"
+       ],
+       "a": 3
+      },
+      {
+       "t": "c",
+       "q": "___ sun rises in the east.",
+       "o": [
+        "A",
+        "An",
+        "The",
+        "/"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "I go to work ___ bus.",
+       "a": [
+        "by"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "她每天坐火车上班。",
+       "a": [
+        "She goes to work by train every day.",
+        "She takes the train to work every day.",
+        "Every day she goes to work by train."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "by bus",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -360,15 +946,15 @@
       ]
      ],
      "x": [
-      [
-       "I go to work by bus.",
-       "我坐公交上班。"
-      ]
-     ]
+      "I go to work by bus.",
+      "我坐公交上班。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "have breakfast",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -376,15 +962,15 @@
       ]
      ],
      "x": [
-      [
-       "I have breakfast at seven.",
-       "我七点吃早饭。"
-      ]
-     ]
+      "I have breakfast at seven.",
+      "我七点吃早饭。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "go to bed",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -392,118 +978,297 @@
       ]
      ],
      "x": [
-      [
-       "I go to bed at eleven.",
-       "我十一点睡觉。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "He waited for ___ hour.",
-     "o": [
-      "a",
-      "an",
-      "the",
-      "/"
+      "I go to bed at eleven.",
+      "我十一点睡觉。"
      ],
-     "a": 1,
-     "e": "hour 的 h 不发音，元音开头用 an。"
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "She studies at ___ university in Tokyo.",
-     "o": [
-      "a",
-      "an",
-      "the",
-      "/"
-     ],
-     "a": 0,
-     "e": "university 以 /j/ 音开头，用 a。"
-    },
-    {
-     "t": "c",
-     "q": "___ sun rises in the east.",
-     "o": [
-      "A",
-      "An",
-      "The",
-      "/"
-     ],
-     "a": 2
-    },
-    {
-     "t": "c",
-     "q": "I play ___ tennis on weekends.",
-     "o": [
-      "a",
-      "an",
-      "the",
-      "/"
-     ],
-     "a": 3,
-     "e": "球类前不加冠词。"
-    },
-    {
-     "t": "f",
-     "q": "I go to work ___ bus.",
-     "a": [
-      "by"
-     ]
+     "t": "speak",
+     "text": "I have breakfast at seven and go to work by bus.",
+     "zh": "我七点吃早饭，坐公交上班。",
+     "focus": "breakfast 重音在前：BREAK-fast"
     },
     {
      "t": "o",
      "a": "I have breakfast at seven.",
      "zh": "我七点吃早饭。"
+    },
+    {
+     "t": "dict",
+     "a": "I waited for an hour at the station."
+    },
+    {
+     "t": "tr",
+     "zh": "我十一点睡觉。",
+     "a": [
+      "I go to bed at eleven.",
+      "I go to bed at 11.",
+      "I go to bed at eleven o'clock."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "a / an：第一次提到；the：双方都知道是哪个、独一无二的东西。",
+      "<b>重点</b>：a / an 看<b>发音</b>：an hour、a university。",
+      "<b>重点</b>：三餐、球类、by bus、go to school / work / bed 不加冠词；乐器加 the。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.4.4",
    "title": "人称代词与物主代词",
-   "words": [
-    "almost",
-    "include",
-    "continue",
-    "set",
-    "later",
-    "community",
-    "name",
-    "once",
-    "white",
-    "least",
-    "president",
-    "learn"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "ref": "b_pron"
+     "t": "intro",
+     "title": "自己来",
+     "lines": [
+      [
+       "A",
+       "Is this pen yours?",
+       "这支笔是你的吗？"
+      ],
+      [
+       "B",
+       "No, it's not mine. I think it's his.",
+       "不是我的。我想是他的。"
+      ],
+      [
+       "A",
+       "Help yourself to some cake!",
+       "随便吃点蛋糕！"
+      ],
+      [
+       "B",
+       "Thanks. Please give me a small piece.",
+       "谢谢。请给我一小块。"
+      ]
+     ],
+     "note": "yours、mine、his、yourself、me —— 一个“我”在英语里有五种形式。"
     },
     {
-     "title": "一张表",
-     "points": [
-      "主格（作主语）：I you he she it we they",
-      "宾格（作宾语、介词后）：me you him her it us them",
-      "形容词性物主代词（后面接名词）：my your his her its our their",
-      "名词性物主代词（单独用）：mine yours his hers its ours theirs",
-      "反身代词：myself yourself himself herself itself ourselves themselves",
-      "it's = it is；its = 它的。"
-     ],
-     "examples": [
-      [
-       "This is my bag. That one is yours.",
-       "这是我的包，那个是你的。"
-      ]
-     ]
-    }
-   ],
-   "special": [
+     "t": "word",
+     "w": "almost"
+    },
     {
+     "t": "word",
+     "w": "include"
+    },
+    {
+     "t": "word",
+     "w": "continue"
+    },
+    {
+     "t": "word",
+     "w": "set"
+    },
+    {
+     "t": "word",
+     "w": "later"
+    },
+    {
+     "t": "word",
+     "w": "community"
+    },
+    {
+     "t": "key",
+     "title": "主格还是宾格：动词和介词后面用宾格",
+     "what": [
+      "<b>主格</b>（做主语）：I, you, he, she, it, we, they",
+      "<b>宾格</b>（放在<b>动词或介词后面</b>）：me, you, him, her, it, us, them",
+      "<i>She</i> likes <i>him</i>. <i>He</i> likes <i>her</i>."
+     ],
+     "why": [
+      "英语靠形式区分“谁做、对谁做”。主格在动词前，宾格在动词或介词后 —— 位置一换，形式就换。"
+     ],
+     "zh": [
+      "中文“我”“他”不变形：“我喜欢他 / 他喜欢我”。所以中国学生会说 <s>give I the book</s>、<s>between you and I</s>。"
+     ],
+     "ex": [
+      [
+       "Please give me the book.",
+       "请把书给我。"
+      ],
+      [
+       "He called us last night.",
+       "他昨晚给我们打电话了。"
+      ],
+      [
+       "This is for her, not for him.",
+       "这是给她的，不是给他的。"
+      ],
+      [
+       "Between you and me, it's not good.",
+       "咱俩私下说，这不太好。"
+      ]
+     ],
+     "err": [
+      [
+       "Give I the book.",
+       "Give me the book.",
+       "动词后用宾格"
+      ],
+      [
+       "Me and Tom went home.",
+       "Tom and I went home.",
+       "主语用主格；礼貌上把 I 放后面"
+      ]
+     ],
+     "sum": "<b>动词后、介词后：me / him / her / us / them</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Please give ___ the book.",
+       "o": [
+        "I",
+        "me",
+        "my",
+        "mine"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "This gift is for ___.",
+       "o": [
+        "she",
+        "her",
+        "hers",
+        "herself"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "他昨晚给我们打了电话。",
+       "a": [
+        "He called us last night.",
+        "He phoned us last night.",
+        "He gave us a call last night."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "name"
+    },
+    {
+     "t": "word",
+     "w": "once"
+    },
+    {
+     "t": "word",
+     "w": "white"
+    },
+    {
+     "t": "word",
+     "w": "least"
+    },
+    {
+     "t": "word",
+     "w": "president"
+    },
+    {
+     "t": "word",
+     "w": "learn"
+    },
+    {
+     "t": "key",
+     "title": "my 还是 mine；its 还是 it's",
+     "what": [
+      "<b>my / your / his / her / its / our / their</b> + 名词：my pen",
+      "<b>mine / yours / his / hers / ours / theirs</b> 单独用，后面<b>不接</b>名词：The pen is mine.",
+      "<b>its</b> = 它的（没有撇号）；<b>it's</b> = it is / it has",
+      "<b>a friend of mine</b> = 我的一个朋友"
+     ],
+     "why": [
+      "mine 这一组本身就包含了名词（mine = my pen），所以后面不能再接名词。its / it's 是英美人自己也常写错的：撇号代表省略了字母，it's 省略的是 is。"
+     ],
+     "zh": [
+      "中文“我的”既能说“我的笔”，也能说“笔是我的”；英语分成两个词。"
+     ],
+     "ex": [
+      [
+       "Is this pen yours? — Yes, it's mine.",
+       "这笔是你的吗？——是我的。"
+      ],
+      [
+       "The dog hurt its leg.",
+       "狗伤了它的腿。"
+      ],
+      [
+       "It's a friend of mine.",
+       "那是我的一个朋友。"
+      ]
+     ],
+     "err": [
+      [
+       "This is mine pen.",
+       "This is my pen.",
+       ""
+      ],
+      [
+       "The pen is my.",
+       "The pen is mine.",
+       ""
+      ],
+      [
+       "The dog hurt it's leg.",
+       "The dog hurt its leg.",
+       "its 没有撇号"
+      ]
+     ],
+     "sum": "<b>my + 名词；mine 单独用</b>；its 它的，it's 它是。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Is this pen ___?",
+       "o": [
+        "your",
+        "yours",
+        "you",
+        "yourself"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "The dog hurt ___ leg.",
+       "o": [
+        "it's",
+        "its",
+        "it",
+        "itself"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "She is a friend of ___ (I).",
+       "a": [
+        "mine"
+       ]
+      },
+      {
+       "t": "c",
+       "q": "They did it by ___.",
+       "o": [
+        "them",
+        "their",
+        "themselves",
+        "theirs"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "by myself",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -511,15 +1276,15 @@
       ]
      ],
      "x": [
-      [
-       "I live by myself.",
-       "我一个人住。"
-      ]
-     ]
+      "I live by myself.",
+      "我一个人住。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "help yourself",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -527,15 +1292,15 @@
       ]
      ],
      "x": [
-      [
-       "Help yourself to some cake.",
-       "请随便吃蛋糕。"
-      ]
-     ]
+      "Help yourself to some cake.",
+      "请随便吃蛋糕。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "a friend of mine",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -543,110 +1308,246 @@
       ]
      ],
      "x": [
-      [
-       "He's a friend of mine.",
-       "他是我的一个朋友。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "Please give ___ the book.",
-     "o": [
-      "I",
-      "me",
-      "my",
-      "mine"
+      "He's a friend of mine.",
+      "他是我的一个朋友。"
      ],
-     "a": 1
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "Is this pen ___?",
-     "o": [
-      "your",
-      "yours",
-      "you",
-      "yourself"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "The dog hurt ___ leg.",
-     "o": [
-      "it's",
-      "its",
-      "it",
-      "itself"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "They did it by ___.",
-     "o": [
-      "them",
-      "their",
-      "themselves",
-      "theirs"
-     ],
-     "a": 2
-    },
-    {
-     "t": "f",
-     "q": "She is a friend of ___ (I).",
-     "a": [
-      "mine"
-     ]
+     "t": "speak",
+     "text": "Is this pen yours? No, it's not mine.",
+     "zh": "这笔是你的吗？不是我的。",
+     "focus": "yours 和 mine 重读"
     },
     {
      "t": "o",
      "a": "Help yourself to some cake.",
      "zh": "请随便吃蛋糕。"
+    },
+    {
+     "t": "dict",
+     "a": "Help yourself to some cake."
+    },
+    {
+     "t": "tr",
+     "zh": "这本书是她的，不是我的。",
+     "a": [
+      "This book is hers, not mine.",
+      "The book is hers, not mine.",
+      "This book is hers. It's not mine."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "主格 I he she we they；宾格 me him her us them；物主 my / mine；反身 myself。",
+      "<b>重点</b>：动词、介词后用宾格：give me, for her。",
+      "<b>重点</b>：my + 名词，mine 单独用；its = 它的，it's = it is。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.4.5",
    "title": "this / that 与所有格 's",
-   "words": [
-    "real",
-    "change",
-    "team",
-    "minute",
-    "several",
-    "idea",
-    "kid",
-    "body",
-    "information",
-    "nothing",
-    "ago",
-    "lead"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "指示代词与名词所有格",
-     "points": [
-      "this / these 指近处，that / those 指远处：this book, these books, that car, those cars。",
-      "打电话介绍自己用 this：Hello, this is Mike.",
-      "名词所有格：单数加 's（Tom's car），以 s 结尾的复数只加 '（my parents' house），不以 s 结尾的复数加 's（children's books）。",
-      "物的所有关系多用 of：the name of the street, the end of the movie。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "姐姐的鞋",
+     "lines": [
       [
-       "These are my sister's shoes.",
-       "这些是我姐姐的鞋。"
+       "A",
+       "Are these your shoes?",
+       "这些是你的鞋吗？"
+      ],
+      [
+       "B",
+       "No, these are my sister's shoes.",
+       "不是，这是我姐姐的鞋。"
+      ],
+      [
+       "A",
+       "And those?",
+       "那些呢？"
+      ],
+      [
+       "B",
+       "Those are my parents' shoes.",
+       "那些是我爸妈的鞋。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "sister's、parents'：所有格的撇号放哪里，听起来一样，写起来不一样。"
+    },
     {
+     "t": "teach",
+     "title": "this / these、that / those",
+     "body": [
+      "<b>this</b>（这个）/ <b>these</b>（这些）指近处；<b>that</b>（那个）/ <b>those</b>（那些）指远处。",
+      "单复数要和名词一致：this book, these books, that car, those cars。",
+      "打电话介绍自己用 this：<i>Hello, this is Mike.</i>（不说 I am Mike）"
+     ],
+     "ex": [
+      [
+       "These shoes are too small.",
+       "这双鞋太小了。"
+      ],
+      [
+       "Hello, this is Anna speaking.",
+       "你好，我是安娜。"
+      ]
+     ],
+     "check": {
+      "t": "c",
+      "q": "___ shoes are too small. (那些)",
+      "o": [
+       "That",
+       "Those",
+       "This",
+       "These"
+      ],
+      "a": 1
+     }
+    },
+    {
+     "t": "word",
+     "w": "real"
+    },
+    {
+     "t": "word",
+     "w": "change"
+    },
+    {
+     "t": "word",
+     "w": "team"
+    },
+    {
+     "t": "word",
+     "w": "minute"
+    },
+    {
+     "t": "word",
+     "w": "several"
+    },
+    {
+     "t": "word",
+     "w": "idea"
+    },
+    {
+     "t": "key",
+     "title": "所有格：'s、s'、of",
+     "what": [
+      "人和动物：单数加 <b>'s</b>：Tom's car，my sister's shoes",
+      "以 s 结尾的复数只加 <b>'</b>：my parents' house，the students' books",
+      "不以 s 结尾的复数加 <b>'s</b>：children's books，women's clothes",
+      "<b>物</b>多用 <b>of</b>：the name of the street，the end of the month"
+     ],
+     "why": [
+      "撇号位置告诉读者“几个人”：my sister's room（一个姐姐的房间）/ my sisters' room（几个姐姐共用的房间）。口语里两者读音一样，只有写的时候能区分。"
+     ],
+     "zh": [
+      "中文“的”什么都能接：“汤姆的车”“街的名字”。英语人用 's，物多用 of —— 说 <s>the street's name</s> 不算错，但 the name of the street 更自然。"
+     ],
+     "ex": [
+      [
+       "This is Tom's car.",
+       "这是汤姆的车。"
+      ],
+      [
+       "My parents' house is near here.",
+       "我父母的房子就在附近。"
+      ],
+      [
+       "The children's toys are everywhere.",
+       "孩子们的玩具到处都是。"
+      ],
+      [
+       "What's the name of this street?",
+       "这条街叫什么名字？"
+      ]
+     ],
+     "err": [
+      [
+       "my parents's house",
+       "my parents' house",
+       "以 s 结尾的复数只加撇号"
+      ],
+      [
+       "childrens' books",
+       "children's books",
+       "children 不以 s 结尾"
+      ]
+     ],
+     "sum": "单数 's；s 结尾的复数只加 '；其他复数 's；物多用 of。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "This is my ___ room.（父母的）",
+       "o": [
+        "parent's",
+        "parents'",
+        "parents's",
+        "parents"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Where are the ___ toys?",
+       "o": [
+        "childrens'",
+        "children's",
+        "childs'",
+        "children"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "We meet at the end ___ the month.",
+       "a": [
+        "of"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "这是我姐姐的车。",
+       "a": [
+        "This is my sister's car.",
+        "It's my sister's car.",
+        "That's my sister's car.",
+        "This is my older sister's car."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "kid"
+    },
+    {
+     "t": "word",
+     "w": "body"
+    },
+    {
+     "t": "word",
+     "w": "information"
+    },
+    {
+     "t": "word",
+     "w": "nothing"
+    },
+    {
+     "t": "word",
+     "w": "ago"
+    },
+    {
+     "t": "word",
+     "w": "lead"
+    },
+    {
+     "t": "word",
      "w": "this is …",
-     "t": "句型",
      "s": [
       [
        "",
@@ -654,15 +1555,15 @@
       ]
      ],
      "x": [
-      [
-       "Hello, this is Anna.",
-       "你好，我是安娜。"
-      ]
-     ]
+      "Hello, this is Anna.",
+      "你好，我是安娜。"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "the end of",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -670,15 +1571,15 @@
       ]
      ],
      "x": [
-      [
-       "at the end of the month",
-       "在月底"
-      ]
-     ]
+      "at the end of the month",
+      "在月底"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "in front of",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -686,47 +1587,17 @@
       ]
      ],
      "x": [
-      [
-       "in front of the house",
-       "在房子前面"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "___ shoes are too small. (那些)",
-     "o": [
-      "That",
-      "Those",
-      "This",
-      "These"
+      "in front of the house",
+      "在房子前面"
      ],
-     "a": 1
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "This is my ___ room.",
-     "o": [
-      "parent's",
-      "parents'",
-      "parents's",
-      "parents"
-     ],
-     "a": 1,
-     "e": "以 s 结尾的复数只加 '。"
-    },
-    {
-     "t": "c",
-     "q": "Where are the ___ toys?",
-     "o": [
-      "childrens'",
-      "children's",
-      "childs'",
-      "children"
-     ],
-     "a": 1
+     "t": "speak",
+     "text": "These are my sister's shoes.",
+     "zh": "这些是我姐姐的鞋。",
+     "focus": "sister's 结尾 /z/"
     },
     {
      "t": "c",
@@ -740,16 +1611,35 @@
      "a": 1
     },
     {
-     "t": "f",
-     "q": "We meet at the end ___ the month.",
-     "a": [
-      "of"
-     ]
-    },
-    {
      "t": "o",
      "a": "These are my sister's shoes.",
      "zh": "这些是我姐姐的鞋。"
+    },
+    {
+     "t": "dict",
+     "a": "These are my sister's shoes."
+    },
+    {
+     "t": "tr",
+     "zh": "咖啡馆在银行前面。",
+     "a": [
+      "The café is in front of the bank.",
+      "The cafe is in front of the bank."
+     ]
+    },
+    {
+     "t": "write",
+     "prompt": "用英语写 4–5 句话介绍你的家：家里有几个人、你们各有什么东西（用上 my / mine、's、复数）。",
+     "hint": "检查清单：复数加 s 了吗？所有格撇号位置对吗？my 和 mine 用对了吗？",
+     "focus": "plural nouns, possessives 's / s', my vs mine, countable vs uncountable",
+     "model": "There are four people in my family. My father has a car, and my mother has a lot of books. My brother's room is small, but mine is big. We have two cats. Their names are Mimi and Coco."
+    },
+    {
+     "t": "sum",
+     "points": [
+      "this / these 近，that / those 远；打电话说 This is …。",
+      "<b>重点</b>：所有格 —— Tom's，parents'，children's；物多用 of。"
+     ]
     }
    ]
   }

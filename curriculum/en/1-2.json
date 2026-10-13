@@ -6,45 +6,255 @@
   {
    "id": "en.1.2.1",
    "title": "清辅音与浊辅音",
-   "words": [
-    "woman",
-    "through",
-    "life",
-    "child",
-    "work",
-    "down",
-    "may",
-    "after",
-    "should",
-    "call",
-    "world",
-    "over"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "成对的清浊辅音",
-     "points": [
-      "英语辅音大多<b>成对</b>：口型一样，清辅音声带不振动，浊辅音声带振动（摸喉咙能感到震动）。",
-      "/p/–/b/ pen–ben　/t/–/d/ ten–den　/k/–/ɡ/ coat–goat　/f/–/v/ fan–van　/s/–/z/ sip–zip",
-      "词尾的浊辅音也要读出来：bag 不是 back，need 不是 neat；浊辅音前的元音还会稍微拉长。",
-      "复数和三单 -s 的读法：清辅音后读 /s/（books, likes）；浊辅音和元音后读 /z/（dogs, sees）；s, x, sh, ch 后读 /ɪz/（buses, watches）。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "别放弃",
+     "lines": [
       [
-       "The big dog needs food.",
-       "那只大狗需要食物。"
+       "A",
+       "I can't do it. I give up.",
+       "我做不到，我放弃了。"
       ],
       [
-       "He likes books and dogs.",
-       "他喜欢书和狗。"
+       "B",
+       "Of course you can. Don't give up!",
+       "你当然可以。别放弃！"
+      ],
+      [
+       "A",
+       "OK, I'll come back after work.",
+       "好，我下班后再回来。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "听 back 和 bag、coat 和 goat：口型一样，区别只在喉咙振不振动。"
+    },
     {
+     "t": "word",
+     "w": "woman"
+    },
+    {
+     "t": "word",
+     "w": "through"
+    },
+    {
+     "t": "word",
+     "w": "life"
+    },
+    {
+     "t": "word",
+     "w": "child"
+    },
+    {
+     "t": "word",
+     "w": "work"
+    },
+    {
+     "t": "word",
+     "w": "down"
+    },
+    {
+     "t": "key",
+     "title": "清辅音和浊辅音：bag 不是 back",
+     "what": [
+      "英语辅音大多<b>成对</b>：口型完全一样，区别在<b>声带振不振动</b>。",
+      "清（不振动）/p/ /t/ /k/ /f/ /s/ ↔ 浊（振动）/b/ /d/ /ɡ/ /v/ /z/",
+      "摸着喉咙读 /s/ 和 /z/：/z/ 能感到“嗡嗡”的振动。"
+     ],
+     "why": [
+      "很多单词只靠这一点区分：back / bag，coat / goat，fan / van，ice / eyes。",
+      "还有一个听得出来的线索：<b>浊辅音前的元音更长</b>。bag 的 /æ/ 比 back 拉得长 —— 母语者往往靠这个来分辨。"
+     ],
+     "zh": [
+      "普通话的 b/d/g 其实是<b>不送气的清音</b>，并不振动声带。所以中国学生读 bag 时，结尾的 g 常常没有振动，听起来就成了 back。"
+     ],
+     "ex": [
+      [
+       "back — bag",
+       "后面 — 包"
+      ],
+      [
+       "fan — van",
+       "风扇 — 面包车"
+      ],
+      [
+       "need — neat",
+       "需要 — 整洁"
+      ],
+      [
+       "Put the bag in the van.",
+       "把包放进面包车。"
+      ]
+     ],
+     "err": [
+      [
+       "bag 读成 back",
+       "bag：元音拉长，g 要振动",
+       "词尾浊辅音"
+      ],
+      [
+       "very 读成 fery",
+       "very：上齿咬下唇并振动",
+       "/v/ 是浊音"
+      ]
+     ],
+     "sum": "清浊口型一样，<b>浊音声带振动、前面元音更长</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "back",
+        "bag"
+       ],
+       "a": 1,
+       "say": "bag",
+       "e": "bag 的元音更长，g 振动。"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "fan",
+        "van"
+       ],
+       "a": 1,
+       "say": "van"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "need",
+        "neat"
+       ],
+       "a": 0,
+       "say": "need"
+      },
+      {
+       "t": "c",
+       "q": "下列哪一对是清浊辅音配对？",
+       "o": [
+        "/p/–/b/",
+        "/m/–/n/",
+        "/l/–/r/",
+        "/h/–/w/"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "may"
+    },
+    {
+     "t": "word",
+     "w": "after"
+    },
+    {
+     "t": "word",
+     "w": "should"
+    },
+    {
+     "t": "word",
+     "w": "call"
+    },
+    {
+     "t": "word",
+     "w": "world"
+    },
+    {
+     "t": "word",
+     "w": "over"
+    },
+    {
+     "t": "key",
+     "title": "复数和三单的 -s：/s/、/z/、/ɪz/ 三种读法",
+     "what": [
+      "前面是<b>清辅音</b>（p t k f）→ 读 /s/：books, cups, likes, stops",
+      "前面是<b>浊辅音或元音</b> → 读 /z/：dogs, bags, sees, plays",
+      "前面是 <b>s, z, sh, ch, x, ge</b> → 读 /ɪz/：buses, watches, boxes, pages"
+     ],
+     "why": [
+      "这是“省力原则”：/s/ 跟着清音，/z/ 跟着浊音，声带不用来回切换；s/sh/ch 后面直接加 s 读不出来，所以中间加一个 /ɪ/。"
+     ],
+     "zh": [
+      "中国学生常把所有 -s 都读成清楚的“丝”，或者干脆吞掉。复数、三单是语法信息，吞掉了对方会以为你说错了。"
+     ],
+     "ex": [
+      [
+       "books /s/ · dogs /z/ · buses /ɪz/",
+       "三种读法"
+      ],
+      [
+       "He likes dogs and watches cats.",
+       "他喜欢狗，还看猫。"
+      ]
+     ],
+     "err": [
+      [
+       "dogs 读成 /dɒɡs/",
+       "dogs /dɒɡz/",
+       "浊音后读 /z/"
+      ],
+      [
+       "watches 读成 /wɒtʃs/",
+       "watches /ˈwɒtʃɪz/",
+       "ch 后加 /ɪz/"
+      ]
+     ],
+     "sum": "清后 /s/，浊后 /z/，咝音后 /ɪz/。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "books 结尾的 s 读？",
+       "o": [
+        "/s/",
+        "/z/",
+        "/ɪz/",
+        "不读"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "dogs 结尾的 s 读？",
+       "o": [
+        "/s/",
+        "/z/",
+        "/ɪz/",
+        "不读"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "watches 结尾的 es 读？",
+       "o": [
+        "/s/",
+        "/z/",
+        "/ɪz/",
+        "/es/"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "哪个词的 -s 读 /ɪz/？",
+       "o": [
+        "cups",
+        "boxes",
+        "plays",
+        "hats"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "of course",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -52,15 +262,15 @@
       ]
      ],
      "x": [
-      [
-       "Of course you can come.",
-       "你当然可以来。"
-      ]
-     ]
+      "Of course you can come.",
+      "你当然可以来。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "come back",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -68,15 +278,15 @@
       ]
      ],
      "x": [
-      [
-       "Come back soon!",
-       "早点回来！"
-      ]
-     ]
+      "Come back soon!",
+      "早点回来！"
+     ],
+     "tt": "短语动词",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "give up",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -84,81 +294,17 @@
       ]
      ],
      "x": [
-      [
-       "Don't give up.",
-       "别放弃。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "下列哪一对是清浊辅音配对？",
-     "o": [
-      "/p/–/b/",
-      "/m/–/n/",
-      "/l/–/r/",
-      "/h/–/w/"
+      "Don't give up.",
+      "别放弃。"
      ],
-     "a": 0
+     "tt": "短语动词",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "books 结尾的 s 读？",
-     "o": [
-      "/s/",
-      "/z/",
-      "/ɪz/",
-      "不读"
-     ],
-     "a": 0,
-     "e": "k 是清辅音，后面读 /s/。"
-    },
-    {
-     "t": "c",
-     "q": "dogs 结尾的 s 读？",
-     "o": [
-      "/s/",
-      "/z/",
-      "/ɪz/",
-      "不读"
-     ],
-     "a": 1,
-     "e": "g 是浊辅音，后面读 /z/。"
-    },
-    {
-     "t": "c",
-     "q": "watches 结尾的 es 读？",
-     "o": [
-      "/s/",
-      "/z/",
-      "/ɪz/",
-      "/es/"
-     ],
-     "a": 2
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "fan",
-      "van"
-     ],
-     "a": 1,
-     "say": "van",
-     "e": "v 是浊音，上齿轻咬下唇并振动。"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "back",
-      "bag"
-     ],
-     "a": 1,
-     "say": "bag",
-     "e": "词尾 g 要读出来。"
+     "t": "speak",
+     "text": "He likes dogs and watches cats.",
+     "zh": "他喜欢狗，还看猫。",
+     "focus": "likes /s/、dogs /z/、watches /ɪz/、cats /s/"
     },
     {
      "t": "c",
@@ -182,52 +328,309 @@
      "t": "o",
      "a": "Of course you can come back.",
      "zh": "你当然可以回来。"
+    },
+    {
+     "t": "dict",
+     "a": "Put the bag in the van."
+    },
+    {
+     "t": "tr",
+     "zh": "你当然可以回来。",
+     "a": [
+      "Of course you can come back."
+     ]
+    },
+    {
+     "t": "tr",
+     "zh": "别放弃！",
+     "a": [
+      "Don't give up!",
+      "Do not give up!"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：清浊辅音口型一样，浊音声带振动、前面元音更长 —— bag ≠ back。",
+      "<b>重点</b>：-s 三种读法：清后 /s/（books）、浊后 /z/（dogs）、咝音后 /ɪz/（watches）。",
+      "of course 当然；come back 回来；give up 放弃。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.2.2",
    "title": "中国学生的难点辅音",
-   "words": [
-    "school",
-    "still",
-    "try",
-    "last",
-    "ask",
-    "need",
-    "too",
-    "feel",
-    "state",
-    "never",
-    "become",
-    "between"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "th、v/w、l/r、n/ŋ",
-     "points": [
-      "<b>th</b>：舌尖放在上下齿之间吹气。清音 /θ/ think, three；浊音 /ð/ this, mother。不要读成 /s/、/z/ 或 /f/。",
-      "<b>v 和 w</b>：v 是上齿咬下唇；w 双唇收圆、不碰牙齿。very ≠ wery，west ≠ vest。",
-      "<b>l 和 r</b>：l 舌尖顶上齿龈；r 舌尖卷起但不碰上颚，嘴唇略圆。light / right，long / wrong。",
-      "<b>n 和 ŋ</b>：sin /n/ 舌尖顶上齿龈；sing /ŋ/ 舌根抬起，ng 末尾不加 /ɡ/。",
-      "词尾的 l（ball, school）是“暗 l”，听起来像轻轻的“哦”。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "想一想这次旅行",
+     "lines": [
       [
-       "I think this is the right way.",
-       "我想这是对的路。"
+       "A",
+       "What are you thinking about?",
+       "你在想什么？"
       ],
       [
-       "Three very long lines.",
-       "三条很长的线。"
+       "B",
+       "I'm thinking about my trip to the west.",
+       "我在想去西部的旅行。"
+      ],
+      [
+       "A",
+       "All right. Thank you very much!",
+       "好的，非常感谢！"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "think、thank、three 的 th，very 的 v，west 的 w，right 的 r —— 这一课专门对付中国学生最难的几个辅音。"
+    },
     {
+     "t": "teach",
+     "title": "n 和 ŋ，词尾的“暗 l”",
+     "body": [
+      "<b>n</b>（sin）舌尖顶上齿龈；<b>ŋ</b>（sing）舌根抬起堵住，ng 结尾<b>不要</b>再加 /ɡ/。",
+      "词尾的 l（ball, school, feel）是“暗 l”：舌尖仍要抬起，听起来带一点“哦”。"
+     ],
+     "ex": [
+      [
+       "sin — sing",
+       "罪 — 唱"
+      ],
+      [
+       "I feel cool at school.",
+       "我在学校感觉很酷。"
+      ]
+     ],
+     "check": {
+      "t": "c",
+      "q": "听音，选出听到的词。",
+      "o": [
+       "sin",
+       "sing"
+      ],
+      "a": 1,
+      "say": "sing"
+     }
+    },
+    {
+     "t": "word",
+     "w": "school"
+    },
+    {
+     "t": "word",
+     "w": "still"
+    },
+    {
+     "t": "word",
+     "w": "try"
+    },
+    {
+     "t": "word",
+     "w": "last"
+    },
+    {
+     "t": "word",
+     "w": "ask"
+    },
+    {
+     "t": "word",
+     "w": "need"
+    },
+    {
+     "t": "key",
+     "title": "th 要伸舌头：think 不是 sink",
+     "what": [
+      "<b>/θ/</b>（清）think, three, thank：舌尖<b>轻轻放在上下齿之间</b>，往外吹气，不振动。",
+      "<b>/ð/</b>（浊）this, that, the, mother：同样的口型，声带振动。"
+     ],
+     "why": [
+      "th 是英语的高频音：the、this、that、they、think……几乎每句话都有。读错不至于听不懂，但口音会非常明显，有时还会变成别的词：think → sink，three → free / tree。"
+     ],
+     "zh": [
+      "中文没有齿间音，常见替代有三种：/s/（sink）、/f/（free）、/z/ 或 /d/（zis, dis）。要点只有一个：<b>舌尖一定要伸到牙齿之间</b>，照镜子能看到舌尖。"
+     ],
+     "ex": [
+      [
+       "think — sink",
+       "想 — 水槽"
+      ],
+      [
+       "three — free — tree",
+       "三 — 免费 — 树"
+      ],
+      [
+       "Thank you for this.",
+       "谢谢你做这个。"
+      ],
+      [
+       "My mother and father are there.",
+       "我爸妈在那儿。"
+      ]
+     ],
+     "err": [
+      [
+       "think 读成 sink",
+       "think /θɪŋk/",
+       "舌尖伸到齿间"
+      ],
+      [
+       "this 读成“贼斯”",
+       "this /ðɪs/",
+       "浊音 /ð/，舌尖同样在齿间"
+      ]
+     ],
+     "sum": "<b>th：舌尖放在上下齿之间</b>，清 /θ/ 吹气，浊 /ð/ 振动。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "three",
+        "free",
+        "tree"
+       ],
+       "a": 0,
+       "say": "three"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "think",
+        "sink"
+       ],
+       "a": 0,
+       "say": "think"
+      },
+      {
+       "t": "c",
+       "q": "this 中 th 读？",
+       "o": [
+        "/θ/",
+        "/ð/",
+        "/d/",
+        "/z/"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "非常感谢！",
+       "a": [
+        "Thank you very much!",
+        "Thanks a lot!",
+        "Thank you so much!"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "too"
+    },
+    {
+     "t": "word",
+     "w": "feel"
+    },
+    {
+     "t": "word",
+     "w": "state"
+    },
+    {
+     "t": "word",
+     "w": "never"
+    },
+    {
+     "t": "word",
+     "w": "become"
+    },
+    {
+     "t": "word",
+     "w": "between"
+    },
+    {
+     "t": "key",
+     "title": "v 和 w、l 和 r",
+     "what": [
+      "<b>v</b>：上齿<b>轻咬下唇</b>，振动 —— very, van, vest",
+      "<b>w</b>：双唇收圆向前，<b>不碰牙齿</b> —— west, way, we",
+      "<b>l</b>：舌尖<b>顶住上齿龈</b> —— light, long, play",
+      "<b>r</b>：舌尖往后卷，<b>不碰</b>任何地方，嘴唇略圆 —— right, wrong, red"
+     ],
+     "why": [
+      "这两对都是“一个碰、一个不碰”：v 牙碰唇，w 不碰；l 舌尖碰，r 不碰。抓住“碰不碰”，就不会混。"
+     ],
+     "zh": [
+      "中文 w 和 v 不区分（“我”可以读成 wo 或 vo），所以 very / wery、vest / west 容易混；南方方言 l / n 不分，加上中文没有卷舌的 r，light / right 也容易混。"
+     ],
+     "ex": [
+      [
+       "vest — west",
+       "背心 — 西边"
+      ],
+      [
+       "light — right",
+       "光 — 对的"
+      ],
+      [
+       "long — wrong",
+       "长 — 错的"
+      ],
+      [
+       "Turn right at the red light.",
+       "在红灯那里右转。"
+      ]
+     ],
+     "err": [
+      [
+       "very 读成 wery",
+       "very：上齿咬下唇",
+       ""
+      ],
+      [
+       "right 读成 light",
+       "right：舌尖卷起，不碰上颚",
+       ""
+      ]
+     ],
+     "sum": "v 牙碰唇，w 不碰；l 舌尖碰，r 不碰。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "light",
+        "right"
+       ],
+       "a": 1,
+       "say": "right"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "vest",
+        "west"
+       ],
+       "a": 0,
+       "say": "vest"
+      },
+      {
+       "t": "c",
+       "q": "读 v 时，正确的口型是？",
+       "o": [
+        "双唇收圆",
+        "上齿轻咬下唇",
+        "舌尖在齿间",
+        "舌尖卷起"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "think about",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -235,15 +638,15 @@
       ]
      ],
      "x": [
-      [
-       "I'm thinking about my future.",
-       "我在考虑我的未来。"
-      ]
-     ]
+      "I'm thinking about my future.",
+      "我在考虑我的未来。"
+     ],
+     "tt": "短语动词",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "all right",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -251,15 +654,15 @@
       ]
      ],
      "x": [
-      [
-       "All right, let's go.",
-       "好，我们走。"
-      ]
-     ]
+      "All right, let's go.",
+      "好，我们走。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "thank you very much",
-     "t": "句型",
      "s": [
       [
        "",
@@ -267,58 +670,17 @@
       ]
      ],
      "x": [
-      [
-       "Thank you very much!",
-       "非常感谢！"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "think 中 th 读？",
-     "o": [
-      "/s/",
-      "/θ/",
-      "/f/",
-      "/t/"
+      "Thank you very much!",
+      "非常感谢！"
      ],
-     "a": 1
+     "tt": "句型",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "this 中 th 读？",
-     "o": [
-      "/θ/",
-      "/ð/",
-      "/d/",
-      "/z/"
-     ],
-     "a": 1,
-     "e": "this, that, the, mother 的 th 是浊音 /ð/。"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "light",
-      "right"
-     ],
-     "a": 1,
-     "say": "right",
-     "e": "r 舌尖卷起不碰上颚。"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "vest",
-      "west"
-     ],
-     "a": 0,
-     "say": "vest",
-     "e": "v 上齿咬下唇。"
+     "t": "speak",
+     "text": "Thank you very much. Turn right at the red light.",
+     "zh": "非常感谢。在红灯那里右转。",
+     "focus": "th、v、r、l 一个一个对口型"
     },
     {
      "t": "c",
@@ -332,28 +694,6 @@
      "e": "ng 是舌根音 /ŋ/。"
     },
     {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "three",
-      "free",
-      "tree"
-     ],
-     "a": 0,
-     "say": "three"
-    },
-    {
-     "t": "c",
-     "q": "读 v 时，正确的口型是？",
-     "o": [
-      "双唇收圆",
-      "上齿轻咬下唇",
-      "舌尖在齿间",
-      "舌尖卷起"
-     ],
-     "a": 1
-    },
-    {
      "t": "f",
      "q": "I'm thinking ___ my trip.",
      "a": [
@@ -364,37 +704,66 @@
      "t": "o",
      "a": "All right, I think this is the way.",
      "zh": "好吧，我想就是这条路。"
+    },
+    {
+     "t": "dict",
+     "a": "Turn right at the red light."
+    },
+    {
+     "t": "tr",
+     "zh": "我在想我的旅行。",
+     "a": [
+      "I'm thinking about my trip.",
+      "I am thinking about my trip."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：th 舌尖放在上下齿之间（think ≠ sink，three ≠ free）。",
+      "<b>重点</b>：v 牙碰唇、w 不碰；l 舌尖碰、r 卷起不碰。",
+      "sing 的 ng 是舌根音，末尾不加 g；词尾 l 是“暗 l”。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.2.3",
    "title": "辅音组合与不发音字母",
-   "words": [
-    "high",
-    "something",
-    "really",
-    "most",
-    "another",
-    "much",
-    "family",
-    "own",
-    "leave",
-    "put",
-    "old",
-    "while"
-   ],
-   "grammar": [
+   "steps": [
     {
+     "t": "intro",
+     "title": "记下来",
+     "lines": [
+      [
+       "A",
+       "Please write down your phone number.",
+       "请写下你的电话号码。"
+      ],
+      [
+       "B",
+       "Sure. Do you know how to spell my name?",
+       "好的。你知道我名字怎么拼吗？"
+      ],
+      [
+       "A",
+       "Not really. Something like K-N-I-G-H-T?",
+       "不太清楚。像是 K-N-I-G-H-T？"
+      ]
+     ],
+     "note": "phone 的 ph、write 的 w、know 和 knight 的 k、night 的 gh —— 英语有一批“写了不读”或“两个字母读一个音”的拼写。"
+    },
+    {
+     "t": "teach",
      "title": "两个字母读一个音",
-     "points": [
+     "body": [
       "sh → /ʃ/ she, wish　ch / tch → /tʃ/ much, watch　ph → /f/ phone　ck → /k/ back　ng → /ŋ/ long",
       "wh → /w/ what, where（who 例外读 /h/）　qu → /kw/ question",
       "c 在 e, i, y 前读 /s/（city, center），其他读 /k/（car, come）；g 在 e, i, y 前常读 /dʒ/（page, large），其他读 /ɡ/。",
       "不发音的字母：kn 的 k（know, knife）、wr 的 w（write, wrong）、mb 的 b（climb）、igh 的 gh（high, night）、hour 的 h。",
       "辅音连缀不要加元音：street 不是“死去瑞特”，desk 末尾不加“克”。"
      ],
-     "examples": [
+     "ex": [
       [
        "Who wrote this question?",
        "谁写的这个问题？"
@@ -404,12 +773,223 @@
        "我知道城里有个好地方。"
       ]
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "high"
+    },
+    {
+     "t": "word",
+     "w": "something"
+    },
+    {
+     "t": "word",
+     "w": "really"
+    },
+    {
+     "t": "word",
+     "w": "most"
+    },
+    {
+     "t": "word",
+     "w": "another"
+    },
+    {
+     "t": "word",
+     "w": "much"
+    },
+    {
+     "t": "key",
+     "title": "不发音的字母：kn、wr、mb、igh",
+     "what": [
+      "<b>kn</b> 的 k 不读：know, knife, knee",
+      "<b>wr</b> 的 w 不读：write, wrong, wrist",
+      "<b>mb</b> 的 b 不读：climb, comb, lamb",
+      "<b>igh</b> 的 gh 不读：high, night, light",
+      "还有：listen 的 t、hour / honest 的 h、half 的 l"
+     ],
+     "why": [
+      "这些字母几百年前是读的，后来发音简化了，拼写没跟着改。记住这几组，看到 knight、wreck、thumb 这种新词也能读对。"
+     ],
+     "zh": [
+      "中国学生容易“见字母就读”：know 读成“克诺”、listen 读出 t。听力里也会因此认不出熟词。"
+     ],
+     "ex": [
+      [
+       "know, knife, knee",
+       "k 不读"
+      ],
+      [
+       "write, wrong",
+       "w 不读"
+      ],
+      [
+       "climb, comb",
+       "b 不读"
+      ],
+      [
+       "I listen to music every night.",
+       "我每晚听音乐。"
+      ]
+     ],
+     "err": [
+      [
+       "know 读成 /knəʊ/",
+       "know /nəʊ/",
+       "k 不读"
+      ],
+      [
+       "listen 读成 /ˈlɪstən/",
+       "listen /ˈlɪsn/",
+       "t 不读"
+      ]
+     ],
+     "sum": "kn-、wr-、-mb、-igh、listen、hour：<b>写了不读</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "know 中不发音的字母是？",
+       "o": [
+        "n",
+        "k",
+        "w",
+        "o"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "listen 中不发音的字母是？",
+       "o": [
+        "l",
+        "s",
+        "t",
+        "n"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "哪个词里有不发音的 b？",
+       "o": [
+        "bed",
+        "climb",
+        "table",
+        "about"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Please write ___ your email address.",
+       "a": [
+        "down"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "family"
+    },
+    {
+     "t": "word",
+     "w": "own"
+    },
+    {
+     "t": "word",
+     "w": "leave"
+    },
+    {
+     "t": "word",
+     "w": "put"
+    },
+    {
+     "t": "word",
+     "w": "old"
+    },
+    {
+     "t": "word",
+     "w": "while"
+    },
+    {
+     "t": "key",
+     "title": "辅音连缀和词尾辅音：不要加元音",
+     "what": [
+      "英语常有几个辅音连在一起：<b>str</b>eet, <b>spr</b>ing, de<b>sk</b>, te<b>xt</b>。中间<b>不要</b>插元音。",
+      "词尾的 p / t / k 是“收住”的：嘴形做到位就停，<b>不要</b>在后面加“呃”：ship 不是“希普”，desk 不是“戴斯克”。"
+     ],
+     "why": [
+      "英语一个音节可以有很多辅音（strengths 一个音节！）。插进元音，就多出音节，节奏全乱，还会变词：sport → support。"
+     ],
+     "zh": [
+      "中文每个字都是“辅音 + 元音”，所以中国学生习惯在辅音后补一个元音：street 读成“斯去瑞特”，ship 读成“希普”。练法：读 ship 时嘴唇闭上就停，不要再张开出声。"
+     ],
+     "ex": [
+      [
+       "street, spring, desk",
+       "连缀不加元音"
+      ],
+      [
+       "ship, stop, help, keep",
+       "词尾 p 闭唇即止"
+      ],
+      [
+       "Stop at the desk and help me.",
+       "在桌子那儿停一下，帮帮我。"
+      ]
+     ],
+     "err": [
+      [
+       "ship 读成 /ʃɪpə/",
+       "ship /ʃɪp/，双唇闭上就停",
+       "词尾 p 不加元音"
+      ],
+      [
+       "street 读成“斯去瑞特”",
+       "street /striːt/",
+       "str 连在一起"
+      ]
+     ],
+     "sum": "<b>辅音之间、辅音之后都不加元音</b>；词尾 p/t/k 做好口型就停。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "street 有几个音节？",
+       "o": [
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "a": 0,
+       "e": "str-ee-t 只有一个元音，一个音节。"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "ship",
+        "chip"
+       ],
+       "a": 1,
+       "say": "chip"
+      },
+      {
+       "t": "c",
+       "q": "desk 正确的读法接近？",
+       "o": [
+        "/desk/",
+        "/desɪkə/",
+        "/deskə/"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "each other",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -417,15 +997,15 @@
       ]
      ],
      "x": [
-      [
-       "They help each other.",
-       "他们互相帮助。"
-      ]
-     ]
+      "They help each other.",
+      "他们互相帮助。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "write down",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -433,15 +1013,15 @@
       ]
      ],
      "x": [
-      [
-       "Write down the phone number.",
-       "把电话号码写下来。"
-      ]
-     ]
+      "Write down the phone number.",
+      "把电话号码写下来。"
+     ],
+     "tt": "短语动词",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "such as",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -449,14 +1029,18 @@
       ]
      ],
      "x": [
-      [
-       "big cities such as Tokyo",
-       "像东京这样的大城市"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
+      "big cities such as Tokyo",
+      "像东京这样的大城市"
+     ],
+     "tt": "固定搭配",
+     "sp": true
+    },
+    {
+     "t": "speak",
+     "text": "Stop at the desk and help me.",
+     "zh": "在桌子那儿停一下，帮帮我。",
+     "focus": "stop、desk、help 的结尾都“收住”，不加元音"
+    },
     {
      "t": "c",
      "q": "phone 中 ph 读？",
@@ -465,17 +1049,6 @@
       "/f/",
       "/h/",
       "/v/"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "know 中不发音的字母是？",
-     "o": [
-      "n",
-      "k",
-      "w",
-      "o"
      ],
      "a": 1
     },
@@ -516,80 +1089,198 @@
      "e": "who, whose, whole 读 /h/。"
     },
     {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "ship",
-      "chip"
-     ],
-     "a": 1,
-     "say": "chip"
-    },
-    {
-     "t": "c",
-     "q": "listen 中不发音的字母是？",
-     "o": [
-      "l",
-      "s",
-      "t",
-      "n"
-     ],
-     "a": 2,
-     "e": "listen /ˈlɪsn/，t 不发音。"
-    },
-    {
-     "t": "f",
-     "q": "Please write ___ your email address.",
-     "a": [
-      "down"
-     ]
-    },
-    {
      "t": "o",
      "a": "They help each other.",
      "zh": "他们互相帮助。"
+    },
+    {
+     "t": "dict",
+     "a": "Please write down your phone number."
+    },
+    {
+     "t": "tr",
+     "zh": "他们互相帮助。",
+     "a": [
+      "They help each other."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "sh /ʃ/、ch /tʃ/、ph /f/、ck /k/、ng /ŋ/、wh /w/（who 读 /h/）、qu /kw/；c、g 在 e/i/y 前读 /s/、/dʒ/。",
+      "<b>重点</b>：kn-、wr-、-mb、-igh、listen 的 t —— 写了不读。",
+      "<b>重点</b>：辅音连缀、词尾辅音不加元音；ship 的 p 闭唇就停。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.2.4",
    "title": "音节与单词重音",
-   "words": [
-    "mean",
-    "keep",
-    "student",
-    "why",
-    "let",
-    "great",
-    "same",
-    "big",
-    "group",
-    "begin",
-    "seem",
-    "country"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "重音读错，单词就听不懂",
-     "points": [
-      "一个元音音（不是元音字母）是一个音节：make 1 个，ta·ble 2 个，com·pu·ter 3 个。",
-      "多音节词有一个<b>重读音节</b>：读得更响、更长、音调更高；非重读音节常弱读成 /ə/。",
-      "双音节名词、形容词多数重音在前：TA·ble, HAP·py, STU·dent；双音节动词多数重音在后：be·GIN, de·CIDE。",
-      "同一个词，名词和动词重音不同：a RE·cord（记录）/ to re·CORD（录制）；a PRE·sent（礼物）/ to pre·SENT（展示）。",
-      "以 -tion, -sion, -ic 结尾的词，重音在倒数第二个音节：in·for·MA·tion, e·co·NOM·ic。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "事实上，不难",
+     "lines": [
       [
-       "The student will begin the important test.",
-       "这个学生要开始那场重要的考试了。"
+       "A",
+       "Is the test hard?",
+       "考试难吗？"
+      ],
+      [
+       "B",
+       "In fact, it's not hard at all.",
+       "事实上一点也不难。"
+      ],
+      [
+       "A",
+       "Great! I'll pick you up after school.",
+       "太好了！放学后我来接你。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "把 hard、test、school 读对还不够：多音节词读错重音，母语者常常根本听不出是哪个词。"
+    },
     {
+     "t": "word",
+     "w": "mean"
+    },
+    {
+     "t": "word",
+     "w": "keep"
+    },
+    {
+     "t": "word",
+     "w": "student"
+    },
+    {
+     "t": "word",
+     "w": "why"
+    },
+    {
+     "t": "word",
+     "w": "let"
+    },
+    {
+     "t": "word",
+     "w": "great"
+    },
+    {
+     "t": "key",
+     "title": "单词重音：读错重音比读错元音更难懂",
+     "what": [
+      "多音节词有一个<b>重读音节</b>：更响、更长、音调更高。其余音节轻、短，元音常弱化成 /ə/。",
+      "规律（不是绝对）：双音节<b>名词、形容词多重前</b>：STU·dent, TA·ble, HAP·py；双音节<b>动词多重后</b>：be·GIN, de·CIDE。",
+      "<b>-tion / -sion / -ic</b> 结尾：重音在它<b>前一个</b>音节：in·for·MA·tion, e·co·NOM·ic。",
+      "同一个词名动不同：a <b>PRE</b>·sent 礼物 / to pre·<b>SENT</b> 展示；a <b>RE</b>·cord / to re·<b>CORD</b>。"
+     ],
+     "why": [
+      "英语母语者识别单词，先听重音的“形状”，再听具体的音。重音放错（com·PU·ter 读成 COM·pu·ter），对方常常反应不过来是哪个词。"
+     ],
+     "zh": [
+      "中文每个字都一样重（声调另算），中国学生容易把每个音节读得一样响：com-pu-ter 三拍平均。英语要 com·<b>PU</b>·ter：中间又响又长，两边轻轻带过。"
+     ],
+     "ex": [
+      [
+       "STU-dent, TA-ble, HAP-py",
+       "名词、形容词多重前"
+      ],
+      [
+       "be-GIN, de-CIDE, for-GET",
+       "动词多重后"
+      ],
+      [
+       "in-for-MA-tion, e-co-NOM-ic",
+       "-tion、-ic 前一个音节重"
+      ],
+      [
+       "Here's a PRE-sent for you. I'll pre-SENT it now.",
+       "这是给你的礼物。我现在展示一下。"
+      ]
+     ],
+     "err": [
+      [
+       "com-PU-ter 读成 COM-pu-ter",
+       "com·PU·ter",
+       ""
+      ],
+      [
+       "in-for-ma-TION",
+       "in·for·MA·tion",
+       "-tion 本身不重读"
+      ]
+     ],
+     "sum": "重读音节<b>又响又长</b>；其余音节轻读成 /ə/。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "student 的重音在？",
+       "o": [
+        "STU",
+        "dent",
+        "两个一样重"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "begin 的重音在？",
+       "o": [
+        "BE",
+        "GIN",
+        "两个一样重"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "information 的重音在？",
+       "o": [
+        "IN",
+        "for",
+        "MA",
+        "tion"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "“我要展示一下”里的 present 重音在？",
+       "o": [
+        "PRE",
+        "SENT"
+       ],
+       "a": 1,
+       "e": "动词重后。"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "same"
+    },
+    {
+     "t": "word",
+     "w": "big"
+    },
+    {
+     "t": "word",
+     "w": "group"
+    },
+    {
+     "t": "word",
+     "w": "begin"
+    },
+    {
+     "t": "word",
+     "w": "seem"
+    },
+    {
+     "t": "word",
+     "w": "country"
+    },
+    {
+     "t": "word",
      "w": "at least",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -597,15 +1288,15 @@
       ]
      ],
      "x": [
-      [
-       "Sleep at least seven hours.",
-       "至少睡七个小时。"
-      ]
-     ]
+      "Sleep at least seven hours.",
+      "至少睡七个小时。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "in fact",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -613,15 +1304,15 @@
       ]
      ],
      "x": [
-      [
-       "In fact, I agree.",
-       "事实上，我同意。"
-      ]
-     ]
+      "In fact, I agree.",
+      "事实上，我同意。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "pick up",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -629,14 +1320,18 @@
       ]
      ],
      "x": [
-      [
-       "I'll pick you up at six.",
-       "我六点去接你。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
+      "I'll pick you up at six.",
+      "我六点去接你。"
+     ],
+     "tt": "短语动词",
+     "sp": true
+    },
+    {
+     "t": "speak",
+     "text": "In fact, the test is not hard.",
+     "zh": "事实上，考试不难。",
+     "focus": "FACT、TEST、HARD 重读，in、the、is 轻读"
+    },
     {
      "t": "c",
      "q": "computer 有几个音节？",
@@ -648,51 +1343,6 @@
      ],
      "a": 1,
      "e": "com-pu-ter。"
-    },
-    {
-     "t": "c",
-     "q": "student 的重音在？",
-     "o": [
-      "STU",
-      "dent",
-      "两个一样重",
-      "没有重音"
-     ],
-     "a": 0
-    },
-    {
-     "t": "c",
-     "q": "begin 的重音在？",
-     "o": [
-      "BE",
-      "GIN",
-      "两个一样重",
-      "没有重音"
-     ],
-     "a": 1,
-     "e": "双音节动词重音常在后。"
-    },
-    {
-     "t": "c",
-     "q": "information 的重音在？",
-     "o": [
-      "IN",
-      "for",
-      "MA",
-      "tion"
-     ],
-     "a": 2,
-     "e": "-tion 前一个音节重读。"
-    },
-    {
-     "t": "c",
-     "q": "作“礼物”讲时 present 的重音在？",
-     "o": [
-      "PRE",
-      "SENT"
-     ],
-     "a": 0,
-     "e": "名词前重，动词后重。"
     },
     {
      "t": "c",
@@ -723,52 +1373,255 @@
      "t": "o",
      "a": "In fact, the test is not hard.",
      "zh": "事实上，考试不难。"
+    },
+    {
+     "t": "dict",
+     "a": "In fact, the test is not hard."
+    },
+    {
+     "t": "tr",
+     "zh": "放学后我来接你。",
+     "a": [
+      "I'll pick you up after school.",
+      "I will pick you up after school."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "一个元音音 = 一个音节：make 1、ta·ble 2、com·pu·ter 3。",
+      "<b>重点</b>：重读音节又响又长；双音节名词形容词多重前、动词多重后；-tion/-ic 前一音节重。",
+      "名词 / 动词重音不同：PRE·sent / pre·SENT。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.2.5",
    "title": "连读、弱读与节奏",
-   "words": [
-    "help",
-    "talk",
-    "where",
-    "turn",
-    "problem",
-    "every",
-    "start",
-    "hand",
-    "might",
-    "show",
-    "part",
-    "against"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "句子不是一个词一个词地念",
-     "points": [
-      "<b>连读</b>：前一个词以辅音结尾、后一个词以元音开头，连在一起读：pick it up → /pɪkɪtʌp/，an apple → /ənæpl/。",
-      "<b>弱读</b>：句子里的功能词（a, the, to, of, and, for, can, was）不重读时读成弱式：to → /tə/，and → /ən/，can → /kən/。",
-      "<b>节奏</b>：英语重读实词（名词、动词、形容词、副词），功能词轻轻带过，所以听起来“强—弱—强—弱”。",
-      "常见缩略：I'm, you're, he's, it's, don't, can't, I'll, I'd；听力里几乎全是缩略形式。",
-      "can 与 can't：I can GO（can 弱读 /kən/）；I CAN'T go（can't 重读 /kɑːnt/）。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "出去走走",
+     "lines": [
       [
-       "I want to go out for a walk.",
-       "我想出去散散步。"
+       "A",
+       "Do you want to go out for a walk?",
+       "想出去走走吗？"
       ],
       [
-       "What do you want?",
-       "你想要什么？"
+       "B",
+       "Sure. Give me a little time.",
+       "好啊。给我一点时间。"
+      ],
+      [
+       "A",
+       "Pick it up — your phone's on the floor.",
+       "捡起来——你手机在地上。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "注意 want to 读成 “wanna”、pick it up 连成一串。听不懂英语对话，很多时候是因为只认识“一个一个念”的词。"
+    },
     {
+     "t": "word",
+     "w": "help"
+    },
+    {
+     "t": "word",
+     "w": "talk"
+    },
+    {
+     "t": "word",
+     "w": "where"
+    },
+    {
+     "t": "word",
+     "w": "turn"
+    },
+    {
+     "t": "word",
+     "w": "problem"
+    },
+    {
+     "t": "word",
+     "w": "every"
+    },
+    {
+     "t": "key",
+     "title": "连读和弱读：英语是“一串一串”说的",
+     "what": [
+      "<b>连读</b>：辅音结尾 + 元音开头的词连在一起：pick it up → /pɪkɪtʌp/，an apple → /ənæpl/，turn off → /tɜːnɒf/。",
+      "<b>弱读</b>：不重读的功能词变轻、变短：to → /tə/，and → /ən/，can → /kən/，of → /əv/，for → /fə/。",
+      "口语常见合音：want to → wanna，going to → gonna，got to → gotta（听得懂即可，写作不用）。"
+     ],
+     "why": [
+      "英语是“重音计时”的语言：重读音节之间的时间差不多相等，中间的轻音节被压缩、连读、弱化。这就是英语的节奏。"
+     ],
+     "zh": [
+      "中文是一字一拍，所以中国学生说英语像在“念单词”，听英语时又因为弱读连读认不出熟词。听力练习时，先学会认出 /tə/、/ən/、/kən/ 这些“缩水”的形式。"
+     ],
+     "ex": [
+      [
+       "pick it up",
+       "/pɪkɪtʌp/"
+      ],
+      [
+       "a cup of tea",
+       "/əkʌpəvtiː/"
+      ],
+      [
+       "I want to go out.",
+       "常读成 I wanna go out."
+      ],
+      [
+       "bread and butter",
+       "/bredənbʌtə/"
+      ]
+     ],
+     "err": [
+      [
+       "I want to go 每个词一样重",
+       "I WANT to GO —— to 轻读 /tə/",
+       ""
+      ],
+      [
+       "pick / it / up 分开读",
+       "/pɪkɪtʌp/ 连成一串",
+       ""
+      ]
+     ],
+     "sum": "实词重读，功能词轻读；辅音 + 元音就连起来。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "pick it up 连读后最接近？",
+       "o": [
+        "pick / it / up 分开读",
+        "/pɪkɪtʌp/",
+        "/pɪk ɪ tʌp/"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "I can swim. 中的 can 通常读？",
+       "o": [
+        "/kæn/ 重读",
+        "/kən/ 弱读",
+        "/kɑːnt/",
+        "不读"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的句子。",
+       "o": [
+        "I want to go.",
+        "I want a go."
+       ],
+       "a": 0,
+       "say": "I want to go."
+      },
+      {
+       "t": "dict",
+       "a": "I want to go out for a walk."
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "start"
+    },
+    {
+     "t": "word",
+     "w": "hand"
+    },
+    {
+     "t": "word",
+     "w": "might"
+    },
+    {
+     "t": "word",
+     "w": "show"
+    },
+    {
+     "t": "word",
+     "w": "part"
+    },
+    {
+     "t": "word",
+     "w": "against"
+    },
+    {
+     "t": "key",
+     "title": "can 和 can't：靠重音分辨",
+     "what": [
+      "<b>can</b> 在句中通常<b>弱读</b> /kən/，重音落在后面的动词上：I can <b>GO</b>.",
+      "<b>can't</b> 永远<b>重读</b>，元音饱满（美式 /kænt/，英式 /kɑːnt/），结尾的 t 常听不清：I <b>CAN'T</b> go."
+     ],
+     "why": [
+      "因为 can't 的 t 经常吞掉，光听 t 分不出来。真正的线索是<b>重音和元音</b>：轻而含糊的是 can，响而饱满的是 can't。"
+     ],
+     "zh": [
+      "中国学生常常把 can 读得很重，结果听起来像 can't，意思正好反了。"
+     ],
+     "ex": [
+      [
+       "I can swim. /aɪ kən SWIM/",
+       "我会游泳。"
+      ],
+      [
+       "I can't swim. /aɪ KÆNT swɪm/",
+       "我不会游泳。"
+      ],
+      [
+       "You can come, but I can't.",
+       "你能来，但我不能。"
+      ]
+     ],
+     "err": [
+      [
+       "I CAN go（重读 can）",
+       "I can GO（can 轻读）",
+       "否则听起来像 can't"
+      ]
+     ],
+     "sum": "<b>can 轻、can't 重</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，判断说的是 can 还是 can't。",
+       "o": [
+        "I can go.",
+        "I can't go."
+       ],
+       "a": 1,
+       "say": "I can't go."
+      },
+      {
+       "t": "c",
+       "q": "听音，判断说的是 can 还是 can't。",
+       "o": [
+        "I can come.",
+        "I can't come."
+       ],
+       "a": 0,
+       "say": "I can come."
+      },
+      {
+       "t": "tr",
+       "zh": "我会说一点西班牙语。",
+       "a": [
+        "I can speak a little Spanish.",
+        "I speak a little Spanish."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "want to",
-     "t": "句型",
      "s": [
       [
        "",
@@ -776,15 +1629,15 @@
       ]
      ],
      "x": [
-      [
-       "I want to learn English.",
-       "我想学英语。"
-      ]
-     ]
+      "I want to learn English.",
+      "我想学英语。"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "go out",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -792,15 +1645,15 @@
       ]
      ],
      "x": [
-      [
-       "Let's go out tonight.",
-       "今晚出去玩吧。"
-      ]
-     ]
+      "Let's go out tonight.",
+      "今晚出去玩吧。"
+     ],
+     "tt": "短语动词",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "a little",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -808,35 +1661,17 @@
       ]
      ],
      "x": [
-      [
-       "I speak a little English.",
-       "我会说一点英语。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "pick it up 连读后最接近？",
-     "o": [
-      "pick / it / up 分开读",
-      "/pɪkɪtʌp/",
-      "/pɪk ɪ tʌp/",
-      "/pɪkɪt ʌp/ 中间停顿"
+      "I speak a little English.",
+      "我会说一点英语。"
      ],
-     "a": 1
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "I can swim. 中的 can 通常读？",
-     "o": [
-      "/kæn/ 重读",
-      "/kən/ 弱读",
-      "/kɑːnt/",
-      "不读"
-     ],
-     "a": 1
+     "t": "speak",
+     "text": "I want to go out for a walk.",
+     "zh": "我想出去散散步。",
+     "focus": "WANT、GO OUT、WALK 重读；go out 连读"
     },
     {
      "t": "c",
@@ -861,27 +1696,6 @@
      "a": 0
     },
     {
-     "t": "c",
-     "q": "听音，判断说的是 can 还是 can't。",
-     "o": [
-      "I can go.",
-      "I can't go."
-     ],
-     "a": 1,
-     "say": "I can't go.",
-     "e": "can't 重读、元音长。"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的句子。",
-     "o": [
-      "I want to go.",
-      "I want a go."
-     ],
-     "a": 0,
-     "say": "I want to go."
-    },
-    {
      "t": "f",
      "q": "Let's go ___ for dinner tonight.",
      "a": [
@@ -899,6 +1713,29 @@
      "t": "o",
      "a": "I want to go out for a walk.",
      "zh": "我想出去散散步。"
+    },
+    {
+     "t": "tr",
+     "zh": "我们今晚出去吃饭吧。",
+     "a": [
+      "Let's go out for dinner tonight.",
+      "Let's go out to eat tonight.",
+      "Let's go out for dinner this evening."
+     ]
+    },
+    {
+     "t": "write",
+     "prompt": "写 3–4 句话：周末你想做什么、不能做什么（用上 want to、can、can't）。写完大声读，注意连读和 can/can't 的重音。",
+     "focus": "want to, can / can't, linking, weak forms",
+     "model": "I want to go out for a walk this weekend. I can meet my friends in the park. I can't stay out late, because I have to work on Monday."
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：连读（辅音 + 元音连起来）、弱读（to /tə/、and /ən/、can /kən/）—— 实词重读、功能词轻读。",
+      "<b>重点</b>：can 轻读、can't 重读；分辨靠重音和元音，不靠 t。",
+      "常见缩略：I'm, it's, don't, I'll；口语合音 wanna、gonna 听得懂就行。"
+     ]
     }
    ]
   }

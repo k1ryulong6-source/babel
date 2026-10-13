@@ -6,39 +6,252 @@
   {
    "id": "es.1.8.1",
    "title": "现在完成时入门",
-   "words": [
-    "haber",
-    "ya",
-    "todavía",
-    "examen",
-    "pregunta",
-    "respuesta",
-    "palabra",
-    "idioma",
-    "problema"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "he hablado：今天/已经/从未",
-     "points": [
-      "haber 现在时 + 过去分词：he, has, ha, hemos, habéis, han + hablado / comido / vivido。",
-      "过去分词：-ar → -ado，-er/-ir → -ido。不规则：hacer → hecho, decir → dicho, ver → visto, escribir → escrito, poner → puesto, volver → vuelto, abrir → abierto。",
-      "用在和现在有关的时间里：hoy, esta semana, este año, ya（已经）, todavía no（还没）, nunca（从未）。",
-      "¿Has estado en España? — No, nunca he estado allí.",
-      "（西班牙常用这个时态；拉美更多用简单过去时，第二学期会学。）"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "你去过巴塞罗那吗？",
+     "lines": [
       [
-       "Hoy he tenido un examen y ya he terminado los deberes.",
-       "今天我考了试，作业也已经做完了。"
+       "A",
+       "¿Has estado en Barcelona?",
+       "你去过巴塞罗那吗？"
+      ],
+      [
+       "B",
+       "Sí, he estado dos veces. ¿Y tú?",
+       "去过两次。你呢？"
+      ],
+      [
+       "A",
+       "Todavía no. Hoy he terminado el examen de español.",
+       "还没去过。我今天考完了西语考试。"
+      ],
+      [
+       "B",
+       "¿Qué tal? — Muy bien, ya he aprendido mucho.",
+       "考得怎样？——很好，我已经学了不少了。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "he estado、has estado、he terminado：西语的现在完成时，和英语 have done 很像。"
+    },
     {
+     "t": "word",
+     "w": "haber"
+    },
+    {
+     "t": "word",
+     "w": "ya"
+    },
+    {
+     "t": "word",
+     "w": "todavía"
+    },
+    {
+     "t": "word",
+     "w": "examen"
+    },
+    {
+     "t": "word",
+     "w": "pregunta"
+    },
+    {
+     "t": "word",
+     "w": "respuesta"
+    },
+    {
+     "t": "key",
+     "title": "现在完成时：haber + 过去分词",
+     "what": [
+      "<b>he, has, ha, hemos, habéis, han</b> + 过去分词",
+      "过去分词：<b>-ar → -ado</b>（hablado）；<b>-er / -ir → -ido</b>（comido, vivido）",
+      "不规则（要背）：hacer → <b>hecho</b>，decir → <b>dicho</b>，ver → <b>visto</b>，escribir → <b>escrito</b>，poner → <b>puesto</b>，volver → <b>vuelto</b>，abrir → <b>abierto</b>"
+     ],
+     "why": [
+      "和英语 have + 过去分词一样，haber 是助动词，过去分词不变形。"
+     ],
+     "zh": [
+      "中文“我去过”“我已经做完了”有“过”“了”；西语用完成时。注意 haber 不能换成 tener：<s>Tengo comido</s> 是错的。"
+     ],
+     "ex": [
+      [
+       "He comido paella.",
+       "我吃过西班牙海鲜饭。"
+      ],
+      [
+       "¿Has visto la película?",
+       "你看过那部电影吗？"
+      ],
+      [
+       "Ya hemos terminado.",
+       "我们已经做完了。"
+      ],
+      [
+       "¿Qué ha pasado?",
+       "发生什么事了？"
+      ]
+     ],
+     "err": [
+      [
+       "Tengo comido.",
+       "He comido.",
+       "助动词是 haber"
+      ],
+      [
+       "He hacido.",
+       "He hecho.",
+       "不规则分词"
+      ],
+      [
+       "He escribido.",
+       "He escrito.",
+       ""
+      ]
+     ],
+     "sum": "<b>he / has / ha … + -ado / -ido</b>；hecho, dicho, visto, escrito, puesto, vuelto, abierto 单独记。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Yo ___ comido paella.",
+       "o": [
+        "he",
+        "ha",
+        "has",
+        "hemos"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "¿Tú ___ visto la película?",
+       "o": [
+        "he",
+        "has",
+        "ha",
+        "han"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "hacer 的过去分词是？",
+       "o": [
+        "hacido",
+        "hecho",
+        "hacho",
+        "hizo"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "escribir 的过去分词是？",
+       "o": [
+        "escribido",
+        "escrito",
+        "escribo",
+        "escribí"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "palabra"
+    },
+    {
+     "t": "word",
+     "w": "idioma"
+    },
+    {
+     "t": "word",
+     "w": "problema"
+    },
+    {
+     "t": "key",
+     "title": "什么时候用：今天 / 已经 / 从未；ya 和 todavía no",
+     "what": [
+      "说<b>还没结束的时间段</b>里发生的事：hoy, esta semana, este año —— Hoy he trabajado mucho.",
+      "说<b>经历</b>：¿Has estado en Barcelona? Nunca he visto la nieve.",
+      "<b>ya</b> 已经：Ya he comido.　<b>todavía no</b> 还没有：Todavía no he terminado."
+     ],
+     "why": [
+      "西班牙西语里，“今天、这周”发生的事常用现在完成时；“昨天、去年”用简单过去时（下学期学）。拉美更多用简单过去时。"
+     ],
+     "zh": [
+      "中文“今天我工作了很多”“我从没见过雪”都用“了 / 过”，西语这两种都是现在完成时。"
+     ],
+     "ex": [
+      [
+       "Hoy he trabajado mucho.",
+       "我今天工作了很多。"
+      ],
+      [
+       "Nunca he visto la nieve.",
+       "我从没见过雪。"
+      ],
+      [
+       "— ¿Has terminado? — Todavía no.",
+       "——做完了吗？——还没有。"
+      ],
+      [
+       "Hemos estado en México dos veces.",
+       "我们去过墨西哥两次。"
+      ]
+     ],
+     "err": [
+      [
+       "— ¿Has terminado? — No todavía.",
+       "Todavía no.",
+       "语序"
+      ],
+      [
+       "Nunca he no visto.",
+       "Nunca he visto.",
+       "nunca 在前不再加 no"
+      ]
+     ],
+     "sum": "<b>今天 / 这周 / 经历 → 现在完成时</b>；ya 已经，todavía no 还没。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "— ¿Has terminado? — ___.",
+       "o": [
+        "Todavía no.",
+        "Ya no.",
+        "Nunca no.",
+        "No todavía."
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "Nosotros ___ (estar) en México dos veces.",
+       "a": [
+        "hemos estado"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "你去过巴塞罗那吗？",
+       "a": [
+        "¿Has estado en Barcelona?"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我从没见过雪。",
+       "a": [
+        "Nunca he visto la nieve.",
+        "No he visto nunca la nieve.",
+        "Nunca he visto nieve."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "¿Has estado en …?",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -46,95 +259,41 @@
       ]
      ],
      "x": [
-      [
-       "¿Has estado en Barcelona?",
-       "你去过巴塞罗那吗？"
-      ]
-     ]
+      "¿Has estado en Barcelona?",
+      "你去过巴塞罗那吗？"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "todavía no",
-     "t": "常用表达",
      "s": [
       [
        "",
        "还没有"
       ]
-     ]
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "¿Qué ha pasado?",
-     "t": "常用表达",
      "s": [
       [
        "",
        "发生了什么？"
       ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "Yo ___ comido paella.",
-     "o": [
-      "he",
-      "ha",
-      "has",
-      "hemos"
      ],
-     "a": 0
+     "tt": "常用表达",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "¿Tú ___ visto la película?",
-     "o": [
-      "he",
-      "has",
-      "ha",
-      "han"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "hacer 的过去分词是？",
-     "o": [
-      "hacido",
-      "hecho",
-      "hacho",
-      "hizo"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "escribir 的过去分词是？",
-     "o": [
-      "escribido",
-      "escrito",
-      "escribo",
-      "escribí"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "— ¿Has terminado? — ___.",
-     "o": [
-      "Todavía no.",
-      "Ya no.",
-      "Nunca no.",
-      "No todavía."
-     ],
-     "a": 0
-    },
-    {
-     "t": "f",
-     "q": "Nosotros ___ (estar) en México dos veces.",
-     "a": [
-      "hemos estado"
-     ]
+     "t": "speak",
+     "text": "Todavía no he terminado.",
+     "zh": "我还没做完。",
+     "focus": "todavía 重音在 VÍ"
     },
     {
      "t": "o",
@@ -145,44 +304,256 @@
       "en Barcelona?"
      ],
      "zh": "你去过巴塞罗那吗？"
+    },
+    {
+     "t": "dict",
+     "a": "¿Has estado en Barcelona?"
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：he / has / ha / hemos / habéis / han + 过去分词（-ado / -ido；hecho, dicho, visto, escrito…）。",
+      "<b>重点</b>：今天 / 这周、经历用现在完成时；ya 已经，todavía no 还没。"
+     ]
     }
    ]
   },
   {
    "id": "es.1.8.2",
    "title": "比较：más / menos que",
-   "words": [
-    "más",
-    "mayor",
-    "bueno",
-    "malo",
-    "rápido",
-    "importante",
-    "interesante",
-    "simpático"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "比……更……",
-     "points": [
-      "más + 形容词 + que：Madrid es más grande que Toledo.",
-      "menos + 形容词 + que：El tren es menos caro que el avión.",
-      "tan + 形容词 + como：同样：Ana es tan alta como su madre.",
-      "不规则：bueno → mejor，malo → peor，grande（年龄）→ mayor，pequeño（年龄）→ menor：Mi hermano es mayor que yo.",
-      "最高级：el / la más + 形容词 + de：Es el restaurante más caro de la ciudad."
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "哪个更好？",
+     "lines": [
       [
-       "El metro es más rápido que el autobús, pero el autobús es más barato.",
-       "地铁比公交快，但公交更便宜。"
+       "A",
+       "Madrid es más grande que Toledo.",
+       "马德里比托莱多大。"
+      ],
+      [
+       "B",
+       "Sí, pero Toledo es más bonita.",
+       "是，但托莱多更漂亮。"
+      ],
+      [
+       "A",
+       "Para mí, lo más importante es la comida.",
+       "对我来说，最重要的是吃的。"
+      ],
+      [
+       "B",
+       "Entonces Toledo es mejor.",
+       "那托莱多更好。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "más … que、mejor、lo más importante：比较的说法。"
+    },
     {
+     "t": "word",
+     "w": "más"
+    },
+    {
+     "t": "word",
+     "w": "mayor"
+    },
+    {
+     "t": "word",
+     "w": "bueno"
+    },
+    {
+     "t": "word",
+     "w": "malo"
+    },
+    {
+     "t": "word",
+     "w": "rápido"
+    },
+    {
+     "t": "word",
+     "w": "importante"
+    },
+    {
+     "t": "key",
+     "title": "más / menos … que；tan … como",
+     "what": [
+      "<b>más</b> + 形容词 + <b>que</b>：比……更…… —— Madrid es más grande que Toledo.",
+      "<b>menos</b> + 形容词 + <b>que</b>：比……不…… —— El tren es menos caro que el avión.",
+      "<b>tan</b> + 形容词 + <b>como</b>：和……一样 —— Ana es tan alta como su madre.",
+      "最高级：<b>el / la / los / las + más</b> + 形容词 + <b>de</b>：Es la ciudad más bonita de España."
+     ],
+     "why": [
+      "西语比较级规则简单：几乎所有形容词都用 más / menos，不像英语要分 -er 和 more。形容词照样要性数一致：Toledo es más bonit<b>a</b>（ciudad 阴性）。"
+     ],
+     "zh": [
+      "最高级的范围用 <b>de</b>（de España），不用 en；“一样”用 tan…<b>como</b>，不是 tan…que。"
+     ],
+     "ex": [
+      [
+       "El avión es más rápido que el tren.",
+       "飞机比火车快。"
+      ],
+      [
+       "El bus es menos caro que el taxi.",
+       "公交没有出租车贵。"
+      ],
+      [
+       "Ana es tan alta como su madre.",
+       "安娜和她妈妈一样高。"
+      ],
+      [
+       "Es la ciudad más bonita de España.",
+       "这是西班牙最美的城市。"
+      ]
+     ],
+     "err": [
+      [
+       "tan alta que su madre",
+       "tan alta como su madre",
+       ""
+      ],
+      [
+       "la más bonita en España",
+       "la más bonita de España",
+       "范围用 de"
+      ]
+     ],
+     "sum": "<b>más / menos … que；tan … como；el más … de</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "El avión es ___ rápido que el tren.",
+       "o": [
+        "más",
+        "mayor",
+        "tan",
+        "muy"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Ana es tan alta ___ su madre.",
+       "o": [
+        "que",
+        "como",
+        "de",
+        "más"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Es la ciudad más bonita ___ España.",
+       "o": [
+        "que",
+        "de",
+        "en",
+        "como"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "El bus es ___ caro que el taxi. (更不贵)",
+       "a": [
+        "menos"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "interesante"
+    },
+    {
+     "t": "word",
+     "w": "simpático"
+    },
+    {
+     "t": "key",
+     "title": "不规则：mejor、peor、mayor、menor",
+     "what": [
+      "bueno → <b>mejor</b>（更好）；malo → <b>peor</b>（更坏）",
+      "年龄：<b>mayor</b>（年纪更大）/ <b>menor</b>（年纪更小）—— Mi hermana es mayor que yo.",
+      "不说 <s>más bueno</s>、<s>más malo</s>（指品质时）；“哥哥 / 姐姐”常说 hermano mayor / hermana mayor"
+     ],
+     "why": [
+      "和英语 good → better 一样，最常用的形容词比较级是不规则的。"
+     ],
+     "zh": [
+      "中文“我姐姐比我大”的“大”指年龄，西语用 mayor，不是 más grande（那是“个子大”）。"
+     ],
+     "ex": [
+      [
+       "Este café es mejor que el otro.",
+       "这杯咖啡比那杯好。"
+      ],
+      [
+       "Mi hermana es mayor que yo.",
+       "我姐姐比我大。"
+      ],
+      [
+       "Hoy el tiempo es peor que ayer.",
+       "今天天气比昨天差。"
+      ]
+     ],
+     "err": [
+      [
+       "más bueno",
+       "mejor",
+       ""
+      ],
+      [
+       "Mi hermana es más grande que yo.（年龄）",
+       "Mi hermana es mayor que yo.",
+       ""
+      ]
+     ],
+     "sum": "<b>mejor / peor / mayor / menor</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Este café es ___ que el otro. (更好)",
+       "o": [
+        "más bueno",
+        "mejor",
+        "mayor",
+        "bien"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Mi hermana es ___ que yo. (年纪大)",
+       "o": [
+        "más vieja",
+        "mayor",
+        "mejor",
+        "grande"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "我哥哥比我大三岁。",
+       "a": [
+        "Mi hermano es tres años mayor que yo.",
+        "Mi hermano tiene tres años más que yo."
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "最重要的是健康。",
+       "a": [
+        "Lo más importante es la salud."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "mucho mejor",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -190,15 +561,15 @@
       ]
      ],
      "x": [
-      [
-       "Hoy estoy mucho mejor.",
-       "今天我好多了。"
-      ]
-     ]
+      "Hoy estoy mucho mejor.",
+      "今天我好多了。"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "cada vez más",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -206,206 +577,271 @@
       ]
      ],
      "x": [
-      [
-       "Hace cada vez más calor.",
-       "天越来越热了。"
-      ]
-     ]
+      "Hace cada vez más calor.",
+      "天越来越热了。"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "lo más importante",
-     "t": "常用表达",
      "s": [
       [
        "",
        "最重要的是"
       ]
+     ],
+     "tt": "常用表达",
+     "sp": true
+    },
+    {
+     "t": "speak",
+     "text": "Madrid es más grande que Toledo.",
+     "zh": "马德里比托莱多大。",
+     "focus": "más 重读"
+    },
+    {
+     "t": "dict",
+     "a": "Lo más importante es la salud."
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：más / menos … que；tan … como；el / la más … de。",
+      "<b>重点</b>：mejor、peor、mayor（年纪大）、menor（年纪小）。",
+      "cada vez más 越来越；lo más importante 最重要的。"
      ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "El avión es ___ rápido que el tren.",
-     "o": [
-      "más",
-      "mayor",
-      "tan",
-      "muy"
-     ],
-     "a": 0
-    },
-    {
-     "t": "c",
-     "q": "Este café es ___ que el otro. (更好)",
-     "o": [
-      "más bueno",
-      "mejor",
-      "mayor",
-      "bien"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "Mi hermana es ___ que yo. (年纪大)",
-     "o": [
-      "más vieja",
-      "mayor",
-      "mejor",
-      "grande"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "Ana es tan alta ___ su madre.",
-     "o": [
-      "que",
-      "como",
-      "de",
-      "más"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "Es la ciudad más bonita ___ España.",
-     "o": [
-      "que",
-      "de",
-      "en",
-      "como"
-     ],
-     "a": 1
-    },
-    {
-     "t": "f",
-     "q": "El bus es ___ caro que el taxi. (更不贵)",
-     "a": [
-      "menos"
-     ]
-    },
-    {
-     "t": "o",
-     "a": "Lo más importante es la salud.",
-     "p": [
-      "Lo más importante",
-      "es",
-      "la salud."
-     ],
-     "zh": "最重要的是健康。"
     }
    ]
   },
   {
    "id": "es.1.8.3",
    "title": "身体与看病",
-   "words": [
-    "cabeza",
-    "estómago",
-    "mano",
-    "pie",
-    "boca",
-    "doler",
-    "dolor",
-    "medicina",
-    "salud",
-    "espalda"
-   ],
-   "grammar": [
+   "steps": [
     {
+     "t": "intro",
+     "title": "看医生",
+     "lines": [
+      [
+       "A",
+       "¿Qué te pasa?",
+       "你怎么了？"
+      ],
+      [
+       "B",
+       "Me duele la cabeza y tengo fiebre.",
+       "我头疼，还发烧。"
+      ],
+      [
+       "A",
+       "Tienes que ir al médico.",
+       "你得去看医生。"
+      ],
+      [
+       "B",
+       "Sí. Me duelen también los ojos.",
+       "是的。眼睛也疼。"
+      ]
+     ],
+     "note": "me duele la cabeza、me duelen los ojos：“疼”的说法和 gustar 一模一样。"
+    },
+    {
+     "t": "teach",
      "title": "me duele / me duelen",
-     "points": [
+     "body": [
       "doler（疼）像 gustar 一样用：Me duele la cabeza.（单数）Me duelen los pies.（复数）",
       "身体部位前用定冠词，不用物主形容词：Me duele la mano（不说 mi mano）。",
       "tener dolor de + 部位：Tengo dolor de estómago.",
       "看病常用：Estoy enfermo/a. Tengo fiebre（发烧）. Estoy resfriado/a（感冒）. Tengo que ir al médico."
      ],
-     "examples": [
+     "ex": [
       [
        "Me duele la cabeza y tengo un poco de fiebre.",
        "我头疼，还有点发烧。"
       ]
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "cabeza"
+    },
+    {
+     "t": "word",
+     "w": "estómago"
+    },
+    {
+     "t": "word",
+     "w": "mano"
+    },
+    {
+     "t": "word",
+     "w": "pie"
+    },
+    {
+     "t": "word",
+     "w": "boca"
+    },
+    {
+     "t": "word",
+     "w": "doler"
+    },
+    {
+     "t": "key",
+     "title": "doler 像 gustar：疼的部位是主语",
+     "what": [
+      "<b>me / te / le … + duele + 单数</b>：Me duele la cabeza.",
+      "<b>me / te / le … + duelen + 复数</b>：Me duelen los pies.",
+      "身体部位前用<b>定冠词</b>，不用物主形容词：Me duele <b>la</b> mano（不说 mi mano）",
+      "也可以说 <b>tener dolor de</b> + 部位：Tengo dolor de estómago."
+     ],
+     "why": [
+      "doler 和 gustar 一样：“头让我疼”。因为 me 已经说明了是“我的”头，部位前就不需要再加 mi。"
+     ],
+     "zh": [
+      "中文“我头疼”“我的手疼”直译会写成 <s>Yo duelo la cabeza</s>、<s>Me duele mi mano</s>。"
+     ],
+     "ex": [
+      [
+       "Me duele la cabeza.",
+       "我头疼。"
+      ],
+      [
+       "Me duelen los pies.",
+       "我脚疼。"
+      ],
+      [
+       "¿Qué te duele? — Me duele la espalda.",
+       "你哪儿疼？——背疼。"
+      ],
+      [
+       "Tengo dolor de estómago.",
+       "我胃疼。"
+      ]
+     ],
+     "err": [
+      [
+       "Me duele mi mano.",
+       "Me duele la mano.",
+       "部位用定冠词"
+      ],
+      [
+       "Me duele los ojos.",
+       "Me duelen los ojos.",
+       "复数用 duelen"
+      ]
+     ],
+     "sum": "<b>me duele + 单数 / me duelen + 复数</b>；部位前用 el / la。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Me ___ la cabeza.",
+       "o": [
+        "duele",
+        "duelen",
+        "dolor",
+        "dolo"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Me ___ los ojos.",
+       "o": [
+        "duele",
+        "duelen",
+        "doler",
+        "duela"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "“我手疼”：",
+       "o": [
+        "Me duele mi mano.",
+        "Me duele la mano.",
+        "Me duelen la mano."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Tengo dolor ___ estómago.",
+       "o": [
+        "en",
+        "de",
+        "a",
+        "del"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "我头疼，还发烧。",
+       "a": [
+        "Me duele la cabeza y tengo fiebre."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "dolor"
+    },
+    {
+     "t": "word",
+     "w": "medicina"
+    },
+    {
+     "t": "word",
+     "w": "salud"
+    },
+    {
+     "t": "word",
+     "w": "espalda"
+    },
+    {
+     "t": "word",
      "w": "¿Qué te duele?",
-     "t": "常用表达",
      "s": [
       [
        "",
        "你哪里疼？"
       ]
-     ]
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "¡Que te mejores!",
-     "t": "常用表达",
      "s": [
       [
        "",
        "祝你早日康复！"
       ]
-     ]
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "ir al médico",
-     "t": "常用表达",
      "s": [
       [
        "",
        "去看医生"
       ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "Me ___ la cabeza.",
-     "o": [
-      "duele",
-      "duelen",
-      "dolor",
-      "dolo"
      ],
-     "a": 0
+     "tt": "常用表达",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "Me ___ los ojos.",
-     "o": [
-      "duele",
-      "duelen",
-      "doler",
-      "duela"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "“我手疼”：",
-     "o": [
-      "Me duele mi mano.",
-      "Me duele la mano.",
-      "Me duelen la mano.",
-      "Duelo la mano."
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "Tengo dolor ___ estómago.",
-     "o": [
-      "en",
-      "de",
-      "a",
-      "del"
-     ],
-     "a": 1
+     "t": "speak",
+     "text": "Me duele la cabeza y tengo fiebre.",
+     "zh": "我头疼，还发烧。",
+     "focus": "duele 的 ue 读成一个音节"
     },
     {
      "t": "c",
@@ -434,93 +870,259 @@
       "al médico."
      ],
      "zh": "我得去看医生。"
+    },
+    {
+     "t": "dict",
+     "a": "Tengo que ir al médico."
+    },
+    {
+     "t": "tr",
+     "zh": "祝你早日康复！",
+     "a": [
+      "¡Que te mejores!"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：me duele + 单数 / me duelen + 复数；部位前用定冠词；tener dolor de …",
+      "Estoy enfermo/a · Tengo fiebre · Estoy resfriado/a · ¡Que te mejores!"
+     ]
     }
    ]
   },
   {
    "id": "es.1.8.4",
    "title": "手机、消息与电话",
-   "words": [
-    "móvil",
-    "mensaje",
-    "ordenador",
-    "foto",
-    "papel",
-    "televisión",
-    "radio",
-    "reloj"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "通讯常用句",
-     "points": [
-      "打电话：¿Diga? / ¿Dígame?（西班牙接电话）¿Aló?（拉美）Soy Ana. ¿Está Luis?",
-      "mandar / enviar un mensaje（发消息）、llamar por teléfono（打电话）、hacer una foto（拍照）。",
-      "宾格代词 lo / la / los / las 放在变位动词前：¿Tienes el móvil? — Sí, lo tengo.",
-      "和不定式连用时可以接在后面：Voy a llamarte. / Te voy a llamar."
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "回头打给你",
+     "lines": [
       [
-       "Te mando un mensaje y te llamo luego.",
-       "我给你发消息，晚点再打给你。"
+       "A",
+       "¿Diga?",
+       "喂？"
+      ],
+      [
+       "B",
+       "Hola, soy Ana. ¿Tienes mi libro?",
+       "你好，我是安娜。我的书在你那儿吗？"
+      ],
+      [
+       "A",
+       "Sí, lo tengo. Te lo llevo mañana.",
+       "在，我明天给你带过去。"
+      ],
+      [
+       "B",
+       "Vale. Te mando un mensaje luego.",
+       "好。我待会儿给你发消息。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "lo tengo、te mando：西语的宾语代词放在动词前面。"
+    },
     {
+     "t": "teach",
+     "title": "打电话",
+     "body": [
+      "接电话：<b>¿Diga? / ¿Dígame?</b>（西班牙）；¿Aló? / ¿Bueno?（拉美）",
+      "自我介绍：<b>Soy Ana.</b>（不说 Estoy Ana）　找人：<b>¿Está Luis?</b>",
+      "发消息 mandar / enviar un mensaje；拍照 hacer una foto；没信号 No hay cobertura。"
+     ],
+     "ex": [
+      [
+       "¿Diga? — Hola, soy Ana. ¿Está Luis?",
+       "喂？——你好，我是安娜。路易斯在吗？"
+      ]
+     ],
+     "check": {
+      "t": "c",
+      "q": "西班牙人接电话常说？",
+      "o": [
+       "¿Diga?",
+       "¿Qué?",
+       "¿Hola qué?",
+       "¿Bueno sí?"
+      ],
+      "a": 0
+     }
+    },
+    {
+     "t": "word",
+     "w": "móvil"
+    },
+    {
+     "t": "word",
+     "w": "mensaje"
+    },
+    {
+     "t": "word",
+     "w": "ordenador"
+    },
+    {
+     "t": "word",
+     "w": "foto"
+    },
+    {
+     "t": "word",
+     "w": "papel"
+    },
+    {
+     "t": "word",
+     "w": "televisión"
+    },
+    {
+     "t": "key",
+     "title": "宾格代词 lo / la / los / las 放在变位动词前",
+     "what": [
+      "代替上文提到的东西或人（直接宾语）：",
+      "阳性单数 <b>lo</b>，阴性单数 <b>la</b>，阳性复数 <b>los</b>，阴性复数 <b>las</b>",
+      "位置：放在<b>变位动词前</b>：¿Tienes el móvil? — Sí, <b>lo</b> tengo.",
+      "和原形、命令式连用时<b>接在后面、写成一个词</b>：Voy a llamar<b>te</b>. ¡Cóme<b>lo</b>!"
+     ],
+     "why": [
+      "代词要和它代替的名词性数一致：las fotos → las。位置规则是西语和英语、中文最不一样的地方之一：中文“我有它”，西语是“它我有”。"
+     ],
+     "zh": [
+      "中国学生常把代词放在后面：<s>Tengo lo</s>，或者忘记换成代词直接省略：<s>Sí, tengo.</s>（西语里这样说很不自然）。"
+     ],
+     "ex": [
+      [
+       "¿Tienes mi libro? — Sí, lo tengo.",
+       "我的书在你那儿吗？——在。"
+      ],
+      [
+       "¿Ves las fotos? — Sí, las veo.",
+       "你看到照片了吗？——看到了。"
+      ],
+      [
+       "Te llamo luego.",
+       "我待会儿打给你。"
+      ],
+      [
+       "Voy a llamarte.",
+       "我会给你打电话。"
+      ]
+     ],
+     "err": [
+      [
+       "Tengo lo.",
+       "Lo tengo.",
+       "放动词前"
+      ],
+      [
+       "¿Ves las fotos? — Sí, los veo.",
+       "Sí, las veo.",
+       "fotos 阴性"
+      ],
+      [
+       "Voy a te llamar.",
+       "Voy a llamarte. / Te voy a llamar.",
+       ""
+      ]
+     ],
+     "sum": "<b>lo / la / los / las + 变位动词</b>；原形后面可以连写：llamarte。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿Tienes mi libro? — Sí, ___ tengo.",
+       "o": [
+        "lo",
+        "la",
+        "le",
+        "los"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "¿Ves las fotos? — Sí, ___ veo.",
+       "o": [
+        "lo",
+        "la",
+        "los",
+        "las"
+       ],
+       "a": 3
+      },
+      {
+       "t": "c",
+       "q": "“我给你发条消息”：",
+       "o": [
+        "Te mando un mensaje.",
+        "Mando te un mensaje.",
+        "Te mensajeo."
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "Voy a ___. (给你打电话：llamar + te)",
+       "a": [
+        "llamarte"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我晚点打给你。",
+       "a": [
+        "Te llamo luego.",
+        "Te llamo más tarde.",
+        "Luego te llamo."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "radio"
+    },
+    {
+     "t": "word",
+     "w": "reloj"
+    },
+    {
+     "t": "word",
      "w": "Te llamo luego.",
-     "t": "常用表达",
      "s": [
       [
        "",
        "我晚点打给你。"
       ]
-     ]
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "¿Me das tu número?",
-     "t": "常用表达",
      "s": [
       [
        "",
        "能给我你的号码吗？"
       ]
-     ]
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "No hay cobertura.",
-     "t": "常用表达",
      "s": [
       [
        "",
        "没信号。"
       ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "¿Tienes mi libro? — Sí, ___ tengo.",
-     "o": [
-      "lo",
-      "la",
-      "le",
-      "los"
      ],
-     "a": 0
+     "tt": "常用表达",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "¿Ves las fotos? — Sí, ___ veo.",
-     "o": [
-      "lo",
-      "la",
-      "los",
-      "las"
-     ],
-     "a": 3
+     "t": "speak",
+     "text": "Sí, lo tengo. Te lo llevo mañana.",
+     "zh": "在，我明天给你带过去。",
+     "focus": "lo tengo 连读"
     },
     {
      "t": "c",
@@ -534,24 +1136,6 @@
      "a": 0
     },
     {
-     "t": "c",
-     "q": "“我给你发条消息”：",
-     "o": [
-      "Te mando un mensaje.",
-      "Mando te un mensaje.",
-      "Te mensaje mando.",
-      "Mando un mensaje te."
-     ],
-     "a": 0
-    },
-    {
-     "t": "f",
-     "q": "Voy a ___. (给你打电话：llamar + te)",
-     "a": [
-      "llamarte"
-     ]
-    },
-    {
      "t": "o",
      "a": "Te llamo luego.",
      "p": [
@@ -560,27 +1144,55 @@
       "luego."
      ],
      "zh": "我晚点打给你。"
+    },
+    {
+     "t": "dict",
+     "a": "Te mando un mensaje luego."
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：lo / la / los / las 放在变位动词前：Lo tengo；原形后可连写：llamarte。",
+      "¿Diga? · Soy Ana · ¿Está…? · Te llamo luego · ¿Me das tu número?"
+     ]
     }
    ]
   },
   {
    "id": "es.1.8.5",
    "title": "工作与职业 · A1 总复习",
-   "words": [
-    "trabajo",
-    "oficina",
-    "jefe",
-    "ingeniero",
-    "enfermero",
-    "abogado",
-    "cocinero",
-    "dependiente",
-    "policía"
-   ],
-   "grammar": [
+   "steps": [
     {
+     "t": "intro",
+     "title": "你做什么工作？",
+     "lines": [
+      [
+       "A",
+       "¿A qué te dedicas?",
+       "你是做什么的？"
+      ],
+      [
+       "B",
+       "Soy ingeniera. Trabajo en una empresa de software.",
+       "我是工程师，在一家软件公司上班。"
+      ],
+      [
+       "A",
+       "¿Te gusta tu trabajo?",
+       "你喜欢你的工作吗？"
+      ],
+      [
+       "B",
+       "Sí, me gusta mucho. Esta tarde voy a tener una reunión con mi jefe.",
+       "很喜欢。今天下午我要和老板开会。"
+      ]
+     ],
+     "note": "这一课把整个 A1 串起来：ser / estar / hay，三类变位，gustar，ir a。"
+    },
+    {
+     "t": "teach",
      "title": "A1 回顾",
-     "points": [
+     "body": [
       "职业：Soy ingeniero / ingeniera.（ser，不加冠词）Trabajo en una oficina / en un hospital.",
       "ser：身份、职业、国籍、性格、时间；estar：位置、状态；hay：某处有某物。",
       "现在时三类规则变位 + 靴子动词（e→ie, o→ue, e→i）+ yo 不规则（hago, salgo, tengo, sé, conozco）。",
@@ -588,28 +1200,173 @@
       "将来：ir a + 不定式；已经/今天做过：现在完成时 he + 过去分词。",
       "下一学期（A2）会学简单过去时和未完成过去时，开始讲述过去的事。"
      ],
-     "examples": [
+     "ex": [
       [
        "Soy enfermera, trabajo en un hospital y me gusta mucho mi trabajo.",
        "我是护士，在医院工作，很喜欢我的工作。"
       ]
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "trabajo"
+    },
+    {
+     "t": "word",
+     "w": "oficina"
+    },
+    {
+     "t": "word",
+     "w": "jefe"
+    },
+    {
+     "t": "word",
+     "w": "ingeniero"
+    },
+    {
+     "t": "word",
+     "w": "enfermero"
+    },
+    {
+     "t": "word",
+     "w": "abogado"
+    },
+    {
+     "t": "key",
+     "title": "A1 总复习：选动词的四个问题",
+     "what": [
+      "① 说<b>身份、职业、国籍、性格</b>？→ <b>ser</b>：Soy ingeniera. Es simpático.",
+      "② 说<b>在哪儿、此刻的状态</b>？→ <b>estar</b>：Está en la oficina. Estoy cansado.",
+      "③ 说<b>某处有什么</b>？→ <b>hay</b>：Hay un banco cerca.",
+      "④ 说<b>喜欢、疼</b>？→ <b>gustar / doler</b>，东西是主语：Me gusta mi trabajo. Me duelen los pies."
+     ],
+     "why": [
+      "A1 阶段 80% 的错误都出在“该用哪个动词”上。说之前先问这四个问题，再考虑变位。"
+     ],
+     "zh": [
+      "中文“是、在、有、喜欢”分得清楚，但到了西语里，“是”又要分 ser 和 estar，“喜欢”的主语又颠倒了。这四个问题就是专门针对中国学生的检查清单。"
+     ],
+     "ex": [
+      [
+       "Mi madre es abogada.",
+       "我妈妈是律师。"
+      ],
+      [
+       "Mi jefe está en la oficina ahora.",
+       "我老板现在在办公室。"
+      ],
+      [
+       "Hay muchos restaurantes en mi calle.",
+       "我那条街上有很多餐馆。"
+      ],
+      [
+       "Me gusta mucho mi trabajo.",
+       "我很喜欢我的工作。"
+      ]
+     ],
+     "err": [
+      [
+       "Mi madre está abogada.",
+       "Mi madre es abogada.",
+       "职业用 ser"
+      ],
+      [
+       "Mi jefe es en la oficina.",
+       "Mi jefe está en la oficina.",
+       "位置用 estar"
+      ],
+      [
+       "Me gustan mi trabajo.",
+       "Me gusta mi trabajo.",
+       "单数"
+      ]
+     ],
+     "sum": "<b>ser 身份 / estar 位置状态 / hay 有 / gustar 东西作主语</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mi madre ___ abogada.",
+       "o": [
+        "es",
+        "está",
+        "hay",
+        "tiene"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Mi jefe ___ en la oficina ahora.",
+       "o": [
+        "es",
+        "está",
+        "hay",
+        "son"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Me ___ mucho mi trabajo.",
+       "o": [
+        "gusta",
+        "gustan",
+        "gusto",
+        "gustas"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Esta tarde ___ a estudiar. (我打算)",
+       "o": [
+        "voy",
+        "voy a",
+        "vas",
+        "he"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Yo ___ en una tienda. (工作)",
+       "o": [
+        "trabaja",
+        "trabajo",
+        "trabajar",
+        "trabajas"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "cocinero"
+    },
+    {
+     "t": "word",
+     "w": "dependiente"
+    },
+    {
+     "t": "word",
+     "w": "policía"
+    },
+    {
+     "t": "word",
      "w": "¿Dónde trabajas?",
-     "t": "常用表达",
      "s": [
       [
        "",
        "你在哪里工作？"
       ]
-     ]
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "Trabajo como …",
-     "t": "常用表达",
      "s": [
       [
        "",
@@ -617,78 +1374,29 @@
       ]
      ],
      "x": [
-      [
-       "Trabajo como dependiente.",
-       "我是店员。"
-      ]
-     ]
+      "Trabajo como dependiente.",
+      "我是店员。"
+     ],
+     "tt": "常用表达",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "¡Mucho ánimo!",
-     "t": "常用表达",
      "s": [
       [
        "",
        "加油！"
       ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "Mi madre ___ abogada.",
-     "o": [
-      "es",
-      "está",
-      "hay",
-      "tiene"
      ],
-     "a": 0
+     "tt": "常用表达",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "Mi jefe ___ en la oficina ahora.",
-     "o": [
-      "es",
-      "está",
-      "hay",
-      "son"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "Me ___ mucho mi trabajo.",
-     "o": [
-      "gusta",
-      "gustan",
-      "gusto",
-      "gustas"
-     ],
-     "a": 0
-    },
-    {
-     "t": "c",
-     "q": "Esta tarde ___ a estudiar. (我打算)",
-     "o": [
-      "voy",
-      "voy a",
-      "vas",
-      "he"
-     ],
-     "a": 0
-    },
-    {
-     "t": "c",
-     "q": "Yo ___ en una tienda. (工作)",
-     "o": [
-      "trabaja",
-      "trabajo",
-      "trabajar",
-      "trabajas"
-     ],
-     "a": 1
+     "t": "speak",
+     "text": "Soy ingeniera. Trabajo en una empresa de software.",
+     "zh": "我是工程师，在一家软件公司上班。",
+     "focus": "ingeniera 的 g 是喉音"
     },
     {
      "t": "f",
@@ -706,6 +1414,34 @@
       "mi trabajo."
      ],
      "zh": "我很喜欢我的工作。"
+    },
+    {
+     "t": "dict",
+     "a": "Me gusta mucho mi trabajo."
+    },
+    {
+     "t": "tr",
+     "zh": "你是做什么工作的？",
+     "a": [
+      "¿A qué te dedicas?",
+      "¿En qué trabajas?",
+      "¿Cuál es tu trabajo?"
+     ]
+    },
+    {
+     "t": "write",
+     "prompt": "A1 结业写作：用西语写 6–8 句话介绍自己 —— 名字和国籍、职业和工作地点、家人、住的地方、日常、爱好、喜欢什么，以及下个月的计划。",
+     "hint": "逐句检查：ser / estar / hay / gustar 选对了吗？动词变位？形容词性数？",
+     "focus": "A1 review: ser/estar/hay, present tense, gustar, ir a, possessives, adjective agreement",
+     "model": "Me llamo Wang Lei y soy chino. Soy ingeniero y trabajo en una empresa de software en Hangzhou. Tengo una hermana mayor; es profesora. Vivo en un piso pequeño cerca del metro. Me levanto a las siete y vuelvo a casa a las seis. En mi tiempo libre juego al fútbol y toco la guitarra. Me gusta mucho la comida española. El mes que viene voy a viajar a Madrid."
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：选动词四问 —— ser 身份 / estar 位置状态 / hay 有 / gustar · doler 东西作主语。",
+      "现在时三类变位 + 靴子动词 + yo 不规则（hago, salgo, tengo, sé, conozco）。",
+      "ir a + 原形说计划；he + 过去分词说经历。"
+     ]
     }
    ]
   }

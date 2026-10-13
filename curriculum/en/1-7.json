@@ -6,34 +6,40 @@
   {
    "id": "en.1.7.1",
    "title": "形容词与副词",
-   "words": [
-    "effort",
-    "decide",
-    "rate",
-    "strong",
-    "possible",
-    "heart",
-    "drug",
-    "leader",
-    "light",
-    "voice",
-    "wife",
-    "whole"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "ref": "b_adj"
+     "t": "intro",
+     "title": "一个有趣的故事",
+     "lines": [
+      [
+       "A",
+       "The story was really interesting.",
+       "这个故事真有意思。"
+      ],
+      [
+       "B",
+       "Yes, I was very interested in the ending.",
+       "是啊，我对结局很感兴趣。"
+      ],
+      [
+       "A",
+       "The writer works hard. She writes well.",
+       "作者很努力，写得很好。"
+      ]
+     ],
+     "note": "interesting 和 interested、well 和 good、hard 和 hardly —— 形容词和副词里最容易错的几对。"
     },
     {
+     "t": "teach",
      "title": "形容词修饰名词，副词修饰动词",
-     "points": [
+     "body": [
       "形容词：放在名词前（a careful driver）或系动词后（He is careful）。",
       "副词：修饰动词（drive carefully）、形容词（very good）、整句（Luckily, ...）。",
       "多数副词 = 形容词 + ly：slow → slowly, easy → easily, happy → happily。",
       "特殊：good → well；hard → hard（hardly 是“几乎不”）；fast → fast；late → late（lately 是“最近”）。",
       "-ed 和 -ing 形容词：I'm interested（人感到）/ The book is interesting（事物令人）。bored / boring, tired / tiring。"
      ],
-     "examples": [
+     "ex": [
       [
        "She speaks English very well.",
        "她英语说得很好。"
@@ -43,12 +49,221 @@
        "电影很无聊，所以我觉得无聊。"
       ]
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "effort"
+    },
+    {
+     "t": "word",
+     "w": "decide"
+    },
+    {
+     "t": "word",
+     "w": "rate"
+    },
+    {
+     "t": "word",
+     "w": "strong"
+    },
+    {
+     "t": "word",
+     "w": "possible"
+    },
+    {
+     "t": "word",
+     "w": "heart"
+    },
+    {
+     "t": "key",
+     "title": "-ing 和 -ed 形容词：interesting 还是 interested",
+     "what": [
+      "<b>-ing</b>：<b>事物本身</b>给人的感觉 —— The story is interesting / boring / surprising.",
+      "<b>-ed</b>：<b>人</b>的感受 —— I'm interested / bored / surprised / tired / excited.",
+      "一对一对记：interesting / interested，boring / bored，exciting / excited，tiring / tired，confusing / confused"
+     ],
+     "why": [
+      "-ing 是“让人……的”（主动发出感觉），-ed 是“被……的”（被影响而产生感觉）。The movie is boring（电影让人无聊）/ I'm bored（我被弄得很无聊）。"
+     ],
+     "zh": [
+      "中文“我很无聊”和“这部电影很无聊”都是“无聊”。直译成 <s>I'm boring</s> 意思就变成“我是个无聊的人”。"
+     ],
+     "ex": [
+      [
+       "The movie was boring, so I was bored.",
+       "电影很无聊，所以我觉得无聊。"
+      ],
+      [
+       "I'm interested in history.",
+       "我对历史感兴趣。"
+      ],
+      [
+       "It was an exciting game. Everyone was excited.",
+       "比赛很精彩，大家都很兴奋。"
+      ]
+     ],
+     "err": [
+      [
+       "I'm boring.（想说“我很无聊”）",
+       "I'm bored.",
+       "人的感受用 -ed"
+      ],
+      [
+       "I'm interesting in music.",
+       "I'm interested in music.",
+       ""
+      ]
+     ],
+     "sum": "<b>事物 -ing，人的感受 -ed</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "I was ___ in the story.",
+       "o": [
+        "interesting",
+        "interested",
+        "interest"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "The lecture was so ___ that I fell asleep.",
+       "o": [
+        "bored",
+        "boring",
+        "bore"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "我对历史感兴趣。",
+       "a": [
+        "I'm interested in history.",
+        "I am interested in history."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "drug"
+    },
+    {
+     "t": "word",
+     "w": "leader"
+    },
+    {
+     "t": "word",
+     "w": "light"
+    },
+    {
+     "t": "word",
+     "w": "voice"
+    },
+    {
+     "t": "word",
+     "w": "wife"
+    },
+    {
+     "t": "word",
+     "w": "whole"
+    },
+    {
+     "t": "key",
+     "title": "good / well，hard / hardly，late / lately",
+     "what": [
+      "<b>good</b> 是形容词，<b>well</b> 是副词：She is a good singer. / She sings well.（well 作形容词时指“身体好”：I'm well.）",
+      "<b>hard</b> 既是形容词也是副词：He works hard.　<b>hardly</b> 是“几乎不”：I can hardly hear you.",
+      "<b>late</b> 晚（副词也是 late）：He arrived late.　<b>lately</b> 是“最近”。"
+     ],
+     "why": [
+      "大多数副词 = 形容词 + ly，但这几个例外最常用、也最常考。hardly / lately 加了 ly 意思全变了。"
+     ],
+     "zh": [
+      "中文“他工作很努力”“他几乎不工作”差别很大，英语只差两个字母：works hard / hardly works。"
+     ],
+     "ex": [
+      [
+       "She sings well. She's a good singer.",
+       "她唱得好。她是个好歌手。"
+      ],
+      [
+       "He works hard every day.",
+       "他每天都很努力。"
+      ],
+      [
+       "I can hardly hear you.",
+       "我几乎听不见你说话。"
+      ],
+      [
+       "I haven't seen him lately.",
+       "我最近没见到他。"
+      ]
+     ],
+     "err": [
+      [
+       "She sings good.",
+       "She sings well.",
+       "修饰动词用 well"
+      ],
+      [
+       "He works hardly.（想说努力）",
+       "He works hard.",
+       "hardly = 几乎不"
+      ]
+     ],
+     "sum": "<b>good 形 / well 副；hard 努力 / hardly 几乎不；late 晚 / lately 最近</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "She sings ___.",
+       "o": [
+        "good",
+        "well",
+        "goodly",
+        "nice"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "He works ___. He is never lazy.",
+       "o": [
+        "hard",
+        "hardly",
+        "harder than",
+        "hardness"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "I can ___ hear you. Please speak louder.",
+       "o": [
+        "hard",
+        "hardly",
+        "hardy"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "He drives very ___.",
+       "o": [
+        "careful",
+        "carefully",
+        "care",
+        "caring"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "be interested in",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -56,15 +271,15 @@
       ]
      ],
      "x": [
-      [
-       "I'm interested in history.",
-       "我对历史感兴趣。"
-      ]
-     ]
+      "I'm interested in history.",
+      "我对历史感兴趣。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "be good at",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -72,15 +287,15 @@
       ]
      ],
      "x": [
-      [
-       "He's good at cooking.",
-       "他擅长做饭。"
-      ]
-     ]
+      "He's good at cooking.",
+      "他擅长做饭。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "be afraid of",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -88,57 +303,17 @@
       ]
      ],
      "x": [
-      [
-       "She's afraid of dogs.",
-       "她怕狗。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "He drives very ___.",
-     "o": [
-      "careful",
-      "carefully",
-      "care",
-      "caring"
+      "She's afraid of dogs.",
+      "她怕狗。"
      ],
-     "a": 1
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "She sings ___.",
-     "o": [
-      "good",
-      "well",
-      "goodly",
-      "nice"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "I was ___ in the story.",
-     "o": [
-      "interesting",
-      "interested",
-      "interest",
-      "interestingly"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "He works ___. He is never lazy.",
-     "o": [
-      "hard",
-      "hardly",
-      "harder than",
-      "hardness"
-     ],
-     "a": 0
+     "t": "speak",
+     "text": "I was very interested in the ending.",
+     "zh": "我对结局很感兴趣。",
+     "focus": "INTERESTED 重音在第一个音节"
     },
     {
      "t": "f",
@@ -151,48 +326,294 @@
      "t": "o",
      "a": "I am interested in history.",
      "zh": "我对历史感兴趣。"
+    },
+    {
+     "t": "dict",
+     "a": "The story was really interesting."
+    },
+    {
+     "t": "tr",
+     "zh": "我很擅长数学。",
+     "a": [
+      "I'm good at math.",
+      "I am good at math.",
+      "I'm good at maths.",
+      "I am good at maths."
+     ]
+    },
+    {
+     "t": "tr",
+     "zh": "我怕狗。",
+     "a": [
+      "I'm afraid of dogs.",
+      "I am afraid of dogs."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "形容词修饰名词或放系动词后；副词修饰动词、形容词、整句。",
+      "<b>重点</b>：事物 -ing（interesting），人的感受 -ed（interested）。",
+      "<b>重点</b>：good / well、hard / hardly、late / lately。",
+      "be interested in、be good at、be afraid of。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.7.2",
    "title": "比较级与最高级",
-   "words": [
-    "police",
-    "mind",
-    "finally",
-    "pull",
-    "return",
-    "free",
-    "military",
-    "price",
-    "less",
-    "decision",
-    "explain",
-    "son"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "title": "比……更……；最……",
-     "points": [
-      "单音节词加 -er / -est：tall → taller → tallest；以 e 结尾加 -r/-st：large → larger；重读闭音节双写：big → bigger；辅音 + y 变 i：easy → easier。",
-      "多音节词用 more / most：expensive → more expensive → the most expensive。",
-      "不规则：good / well → better → best；bad → worse → worst；many / much → more → most；little → less → least；far → farther/further。",
-      "比较级 + than：Tokyo is bigger than Osaka.　最高级前加 the：the best restaurant in town。",
-      "as + 原级 + as：同样……：She is as tall as her mother. 否定 not as ... as。"
-     ],
-     "examples": [
+     "t": "intro",
+     "title": "买手机",
+     "lines": [
       [
-       "This is the most interesting book I have ever read.",
-       "这是我读过的最有趣的书。"
+       "A",
+       "This phone is cheaper than that one.",
+       "这台手机比那台便宜。"
+      ],
+      [
+       "B",
+       "But that one is better. It's the best phone in the shop.",
+       "但那台更好，是店里最好的。"
+      ],
+      [
+       "A",
+       "It's also the most expensive!",
+       "也是最贵的！"
+      ],
+      [
+       "B",
+       "Well, it's not as cheap as this one, of course.",
+       "当然，没有这台便宜。"
       ]
-     ]
-    }
-   ],
-   "special": [
+     ],
+     "note": "cheaper、better、the best、the most expensive、as cheap as：比较的三种说法。"
+    },
     {
+     "t": "word",
+     "w": "police"
+    },
+    {
+     "t": "word",
+     "w": "mind"
+    },
+    {
+     "t": "word",
+     "w": "finally"
+    },
+    {
+     "t": "word",
+     "w": "pull"
+    },
+    {
+     "t": "word",
+     "w": "return"
+    },
+    {
+     "t": "word",
+     "w": "free"
+    },
+    {
+     "t": "key",
+     "title": "比较级和最高级：怎么变",
+     "what": [
+      "<b>短词</b>（一个音节，及 -y 结尾的两音节词）加 -er / -est：tall → taller → the tallest；big → bigger → the biggest；easy → easier → the easiest",
+      "<b>长词</b>（两个音节以上）用 more / most：expensive → more expensive → the most expensive",
+      "<b>不规则</b>：good / well → better → best；bad → worse → worst；many / much → more → most；little → less → least；far → farther / further",
+      "最高级前一般加 <b>the</b>，后面常跟 in / of 表示范围：the best in the shop"
+     ],
+     "why": [
+      "短词加词尾、长词加 more —— 是为了好读：expensiver 太拗口。"
+     ],
+     "zh": [
+      "中文比较只加“更”“最”，形容词不变；英语形容词要变形，而且不能“双重比较”：<s>more cheaper</s>、<s>most best</s>。"
+     ],
+     "ex": [
+      [
+       "This bag is cheaper than that one.",
+       "这个包比那个便宜。"
+      ],
+      [
+       "It's the hottest day of the year.",
+       "这是一年中最热的一天。"
+      ],
+      [
+       "Her English is better than mine.",
+       "她的英语比我好。"
+      ],
+      [
+       "This is the most expensive phone in the shop.",
+       "这是店里最贵的手机。"
+      ]
+     ],
+     "err": [
+      [
+       "more cheaper",
+       "cheaper",
+       "不能双重比较"
+      ],
+      [
+       "expensiver",
+       "more expensive",
+       "长词用 more"
+      ],
+      [
+       "gooder",
+       "better",
+       "不规则"
+      ]
+     ],
+     "sum": "<b>短词 -er/-est，长词 more/most</b>；good → better → best，bad → worse → worst。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "This bag is ___ than that one.",
+       "o": [
+        "cheap",
+        "cheaper",
+        "cheapest",
+        "more cheap"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "It's the ___ day of the year.",
+       "o": [
+        "hot",
+        "hotter",
+        "hottest",
+        "most hot"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Her English is ___ than mine.",
+       "o": [
+        "good",
+        "better",
+        "best",
+        "more good"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "This phone is ___ than that one.",
+       "o": [
+        "expensiver",
+        "more expensive",
+        "most expensive"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "这是我们城市最高的楼。",
+       "a": [
+        "This is the tallest building in our city.",
+        "It's the tallest building in our city.",
+        "This is the highest building in our city."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "military"
+    },
+    {
+     "t": "word",
+     "w": "price"
+    },
+    {
+     "t": "word",
+     "w": "less"
+    },
+    {
+     "t": "word",
+     "w": "decision"
+    },
+    {
+     "t": "word",
+     "w": "explain"
+    },
+    {
+     "t": "word",
+     "w": "son"
+    },
+    {
+     "t": "key",
+     "title": "as … as：和……一样",
+     "what": [
+      "<b>as + 原级 + as</b>：和……一样 —— He is as tall as his brother.",
+      "否定：<b>not as … as</b> = 不如 —— This phone is not as cheap as that one.",
+      "<b>as soon as possible</b> 尽快；<b>the same as</b> 和……一样"
+     ],
+     "why": [
+      "as…as 中间放的是<b>原级</b>（不变形），因为它说的是“相等”，不是“更”。"
+     ],
+     "zh": [
+      "中文“他和他哥一样高”“这个不如那个便宜”，中国学生常在 as…as 中间放比较级：<s>as taller as</s>。"
+     ],
+     "ex": [
+      [
+       "He is as tall as his brother.",
+       "他和他哥哥一样高。"
+      ],
+      [
+       "This one is not as good as that one.",
+       "这个不如那个好。"
+      ],
+      [
+       "Please reply as soon as possible.",
+       "请尽快回复。"
+      ]
+     ],
+     "err": [
+      [
+       "as taller as",
+       "as tall as",
+       "中间用原级"
+      ]
+     ],
+     "sum": "<b>as + 原级 + as</b>；not as … as = 不如。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "He is as ___ as his brother.",
+       "o": [
+        "tall",
+        "taller",
+        "tallest",
+        "more tall"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "Please reply as soon as ___.",
+       "a": [
+        "possible"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "这台手机没有那台好。",
+       "a": [
+        "This phone is not as good as that one.",
+        "This phone isn't as good as that one.",
+        "This phone is worse than that one."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "more and more",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -200,15 +621,15 @@
       ]
      ],
      "x": [
-      [
-       "More and more people work from home.",
-       "越来越多的人在家工作。"
-      ]
-     ]
+      "More and more people work from home.",
+      "越来越多的人在家工作。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "as … as possible",
-     "t": "句型",
      "s": [
       [
        "",
@@ -216,15 +637,15 @@
       ]
      ],
      "x": [
-      [
-       "Come as soon as possible.",
-       "尽快来。"
-      ]
-     ]
+      "Come as soon as possible.",
+      "尽快来。"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "the same as",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -232,124 +653,328 @@
       ]
      ],
      "x": [
-      [
-       "My bag is the same as yours.",
-       "我的包和你的一样。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "This bag is ___ than that one.",
-     "o": [
-      "cheap",
-      "cheaper",
-      "cheapest",
-      "more cheap"
+      "My bag is the same as yours.",
+      "我的包和你的一样。"
      ],
-     "a": 1
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "It's the ___ day of the year.",
-     "o": [
-      "hot",
-      "hotter",
-      "hottest",
-      "most hot"
-     ],
-     "a": 2
-    },
-    {
-     "t": "c",
-     "q": "Her English is ___ than mine.",
-     "o": [
-      "good",
-      "better",
-      "best",
-      "more good"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "This phone is ___ than that one.",
-     "o": [
-      "expensiver",
-      "more expensive",
-      "most expensive",
-      "expensive"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "He is as ___ as his brother.",
-     "o": [
-      "tall",
-      "taller",
-      "tallest",
-      "more tall"
-     ],
-     "a": 0
-    },
-    {
-     "t": "f",
-     "q": "Please reply as soon as ___.",
-     "a": [
-      "possible"
-     ]
+     "t": "speak",
+     "text": "It's the best phone in the shop.",
+     "zh": "这是店里最好的手机。",
+     "focus": "BEST 和 SHOP 重读"
     },
     {
      "t": "o",
      "a": "More and more people work from home.",
      "zh": "越来越多的人在家工作。"
+    },
+    {
+     "t": "dict",
+     "a": "It's the best phone in the shop."
+    },
+    {
+     "t": "tr",
+     "zh": "越来越多的人在家工作。",
+     "a": [
+      "More and more people work from home.",
+      "More and more people are working from home."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：短词 -er / -est，长词 more / most；不规则 better / best、worse / worst；不能 more cheaper。",
+      "<b>重点</b>：as + 原级 + as；not as … as 不如。",
+      "more and more 越来越多；the same as 和……一样。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.7.3",
    "title": "介词：时间与地点",
-   "words": [
-    "hope",
-    "develop",
-    "view",
-    "relationship",
-    "carry",
-    "town",
-    "road",
-    "drive",
-    "arm",
-    "true",
-    "federal",
-    "break"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "ref": "b_prep"
+     "t": "intro",
+     "title": "在路上",
+     "lines": [
+      [
+       "A",
+       "Where are you?",
+       "你在哪儿？"
+      ],
+      [
+       "B",
+       "I'm on the bus. I'll be at the station at seven.",
+       "我在公交上，七点到车站。"
+      ],
+      [
+       "A",
+       "OK. I'm in the café, on the second floor.",
+       "好，我在咖啡馆，二楼。"
+      ],
+      [
+       "B",
+       "See you in ten minutes.",
+       "十分钟后见。"
+      ]
+     ],
+     "note": "on the bus、at the station、at seven、in the café、on the second floor：介词选错，是中国学生英语里最多的小错误。"
     },
     {
-     "title": "in / on / at",
-     "points": [
-      "时间：at + 钟点、时刻（at 7, at noon, at night）；on + 某一天（on Monday, on May 5th）；in + 月、年、季节、上下午（in July, in 2025, in the morning）。",
-      "地点：at + 点（at the station, at home）；on + 面（on the table, on the wall）；in + 空间内（in the box, in Tokyo）。",
-      "交通：in a car / taxi；on a bus / train / plane。",
-      "其他常用：under, behind, between A and B, across from, around, during, until, by（不迟于）。"
-     ],
-     "examples": [
-      [
-       "The meeting is at 3 p.m. on Friday in Room 5.",
-       "会议周五下午三点在五号房间。"
-      ]
-     ]
-    }
-   ],
-   "special": [
+     "t": "word",
+     "w": "hope"
+    },
     {
+     "t": "word",
+     "w": "develop"
+    },
+    {
+     "t": "word",
+     "w": "view"
+    },
+    {
+     "t": "word",
+     "w": "relationship"
+    },
+    {
+     "t": "word",
+     "w": "carry"
+    },
+    {
+     "t": "word",
+     "w": "town"
+    },
+    {
+     "t": "key",
+     "title": "时间：at 点，on 天，in 段",
+     "what": [
+      "<b>at</b> + 时刻、点：at 7, at noon, at night, at the weekend（英式）",
+      "<b>on</b> + 某一天：on Monday, on May 5th, on my birthday, on Monday morning",
+      "<b>in</b> + 一段：in July, in 2025, in summer, in the morning, in the 1990s",
+      "<b>不加介词</b>：today, tomorrow, yesterday, this / next / last week"
+     ],
+     "why": [
+      "从小到大：点（at）→ 天（on）→ 更长的一段（in）。具体到某一天的上午，就跟着“天”走：on Monday morning。"
+     ],
+     "zh": [
+      "中文“在”一个字通用：“在七点”“在周一”“在七月”。英语要按时间长短选介词；还常常多加介词：<s>on next Monday</s>、<s>in this week</s>。"
+     ],
+     "ex": [
+      [
+       "The store opens at 9 a.m.",
+       "商店上午九点开门。"
+      ],
+      [
+       "See you on Monday.",
+       "周一见。"
+      ],
+      [
+       "I was born in 1998.",
+       "我生于 1998 年。"
+      ],
+      [
+       "Let's meet next Friday.",
+       "下周五见吧。（不加 on）"
+      ]
+     ],
+     "err": [
+      [
+       "in Monday",
+       "on Monday",
+       ""
+      ],
+      [
+       "on next week",
+       "next week",
+       "next / last / this 前不加介词"
+      ],
+      [
+       "in the night",
+       "at night",
+       "固定说法"
+      ]
+     ],
+     "sum": "<b>at 点、on 天、in 段</b>；next / last / this 前不加介词。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "I was born ___ 1998.",
+       "o": [
+        "at",
+        "on",
+        "in",
+        "by"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "See you ___ Monday.",
+       "o": [
+        "at",
+        "on",
+        "in",
+        "by"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "The store opens ___ 9 a.m.",
+       "o": [
+        "at",
+        "on",
+        "in",
+        "for"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Let's meet ___ next Friday.",
+       "o": [
+        "on",
+        "in",
+        "at",
+        "（不加）"
+       ],
+       "a": 3
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "road"
+    },
+    {
+     "t": "word",
+     "w": "drive"
+    },
+    {
+     "t": "word",
+     "w": "arm"
+    },
+    {
+     "t": "word",
+     "w": "true"
+    },
+    {
+     "t": "word",
+     "w": "federal"
+    },
+    {
+     "t": "word",
+     "w": "break"
+    },
+    {
+     "t": "key",
+     "title": "地点和交通：at 点、on 面、in 里",
+     "what": [
+      "<b>at</b> + 一个点（看作位置）：at the station, at home, at the door",
+      "<b>on</b> + 表面、楼层、街道：on the table, on the wall, on the second floor, on Main Street",
+      "<b>in</b> + 空间内、城市国家：in the box, in the café, in Tokyo",
+      "交通：<b>on</b> a bus / train / plane（能站着走动的）；<b>in</b> a car / taxi（只能坐着）；<b>by</b> bus（方式）"
+     ],
+     "why": [
+      "on 和 in 的交通区别很形象：大巴、火车、飞机上能站起来走 → on；小汽车、出租车只能坐在里面 → in。"
+     ],
+     "zh": [
+      "中文“在车上”只有一种说法；英语 on the bus / in the car 不同，是口语里最常听出“中式”的地方之一。"
+     ],
+     "ex": [
+      [
+       "I'm on the bus.",
+       "我在公交上。"
+      ],
+      [
+       "She's in a taxi.",
+       "她在出租车上。"
+      ],
+      [
+       "Your keys are on the table.",
+       "你的钥匙在桌上。"
+      ],
+      [
+       "We live on the fifth floor.",
+       "我们住五楼。"
+      ]
+     ],
+     "err": [
+      [
+       "I'm in the bus.",
+       "I'm on the bus.",
+       ""
+      ],
+      [
+       "on the taxi",
+       "in the taxi",
+       ""
+      ],
+      [
+       "in the second floor",
+       "on the second floor",
+       "楼层用 on"
+      ]
+     ],
+     "sum": "<b>点 at、面 on、里 in</b>；bus / train on，car / taxi in。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Your keys are ___ the table.",
+       "o": [
+        "at",
+        "on",
+        "in",
+        "to"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "I'm ___ the train now.",
+       "o": [
+        "in",
+        "on",
+        "at",
+        "by"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "She's ___ a taxi.",
+       "o": [
+        "on",
+        "in",
+        "at"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Please finish it ___ Friday. (不迟于)",
+       "a": [
+        "by"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我在路上了。",
+       "a": [
+        "I'm on the way.",
+        "I'm on my way.",
+        "I am on my way.",
+        "I am on the way."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "in the end",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -357,15 +982,15 @@
       ]
      ],
      "x": [
-      [
-       "In the end, we won.",
-       "最后我们赢了。"
-      ]
-     ]
+      "In the end, we won.",
+      "最后我们赢了。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "on the way",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -373,15 +998,15 @@
       ]
      ],
      "x": [
-      [
-       "I'm on the way.",
-       "我在路上了。"
-      ]
-     ]
+      "I'm on the way.",
+      "我在路上了。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "at the same time",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -389,125 +1014,286 @@
       ]
      ],
      "x": [
-      [
-       "They spoke at the same time.",
-       "他们同时说话。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "I was born ___ 1998.",
-     "o": [
-      "at",
-      "on",
-      "in",
-      "by"
+      "They spoke at the same time.",
+      "他们同时说话。"
      ],
-     "a": 2
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "See you ___ Monday.",
-     "o": [
-      "at",
-      "on",
-      "in",
-      "by"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "The store opens ___ 9 a.m.",
-     "o": [
-      "at",
-      "on",
-      "in",
-      "for"
-     ],
-     "a": 0
-    },
-    {
-     "t": "c",
-     "q": "Your keys are ___ the table.",
-     "o": [
-      "at",
-      "on",
-      "in",
-      "to"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "I'm ___ the train now.",
-     "o": [
-      "in",
-      "on",
-      "at",
-      "by"
-     ],
-     "a": 1
-    },
-    {
-     "t": "f",
-     "q": "Please finish it ___ Friday. (不迟于)",
-     "a": [
-      "by"
-     ]
+     "t": "speak",
+     "text": "I'm on the bus. I'll be at the station at seven.",
+     "zh": "我在公交上，七点到车站。",
+     "focus": "介词都轻读，BUS、STATION、SEVEN 重读"
     },
     {
      "t": "o",
      "a": "I am on the way.",
      "zh": "我在路上了。"
+    },
+    {
+     "t": "dict",
+     "a": "I'll be at the station at seven."
+    },
+    {
+     "t": "tr",
+     "zh": "我们住在二楼。",
+     "a": [
+      "We live on the second floor.",
+      "We live on the 2nd floor."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：时间 at 点、on 天、in 段；next / last / this 前不加介词。",
+      "<b>重点</b>：地点 at 点、on 面、in 里；on the bus，in a taxi，on the second floor。",
+      "by Friday 不迟于周五；in the end 最后；on the way 在路上。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.7.4",
    "title": "连词：and / but / so / because",
-   "words": [
-    "difference",
-    "receive",
-    "value",
-    "international",
-    "building",
-    "action",
-    "full",
-    "model",
-    "join",
-    "season",
-    "society",
-    "tax"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "ref": "b_conj"
+     "t": "intro",
+     "title": "下雪天",
+     "lines": [
+      [
+       "A",
+       "Why didn't you come yesterday?",
+       "你昨天怎么没来？"
+      ],
+      [
+       "B",
+       "Because of the snow. It was snowing, so I stayed home.",
+       "因为下雪。在下雪，所以我待在家里。"
+      ],
+      [
+       "A",
+       "I wanted to call you, but I was too busy.",
+       "我想给你打电话，可太忙了。"
+      ]
+     ],
+     "note": "because、because of、so、but：连接句子的小词，中国学生最常犯的错是“两个连词一起用”。"
     },
     {
-     "title": "把句子连起来",
-     "points": [
-      "and 并列，but 转折，or 选择，so 结果，because 原因。",
-      "because 和 so 不能同时用：Because it rained, so we stayed home. ✗",
-      "although 和 but 不能同时用：Although it was late, but... ✗",
-      "when 当……时，if 如果，before / after 在……之前/之后，until 直到。",
-      "both A and B 两者都；either A or B 要么……要么；neither A nor B 两者都不；not only A but also B 不但……而且。"
-     ],
-     "examples": [
-      [
-       "I was tired, so I went to bed early.",
-       "我很累，所以早早睡了。"
-      ]
-     ]
-    }
-   ],
-   "special": [
+     "t": "word",
+     "w": "difference"
+    },
     {
+     "t": "word",
+     "w": "receive"
+    },
+    {
+     "t": "word",
+     "w": "value"
+    },
+    {
+     "t": "word",
+     "w": "international"
+    },
+    {
+     "t": "word",
+     "w": "building"
+    },
+    {
+     "t": "word",
+     "w": "action"
+    },
+    {
+     "t": "key",
+     "title": "because 和 so 不能一起用；although 和 but 也不能",
+     "what": [
+      "英语一个句子里只用一个连词连接两个分句：",
+      "<i>Because it rained, we stayed home.</i> ✓ 或 <i>It rained, so we stayed home.</i> ✓ —— 但不能 <s>Because it rained, so we stayed home.</s>",
+      "<i>Although it was late, he kept working.</i> ✓ 或 <i>It was late, but he kept working.</i> ✓ —— 但不能 <s>Although…, but…</s>"
+     ],
+     "why": [
+      "连词的作用就是把两个分句连起来，一个就够了；用两个，等于中间多了一个“接头”，句子结构就坏了。"
+     ],
+     "zh": [
+      "中文“因为……所以……”“虽然……但是……”成对出现，所以中国学生几乎都会写成 <s>Because…, so…</s>。这是托业和写作里扣分最多的错误之一。"
+     ],
+     "ex": [
+      [
+       "Because I was sick, I stayed home.",
+       "因为生病，我待在家里。"
+      ],
+      [
+       "I was sick, so I stayed home.",
+       "我病了，所以待在家里。"
+      ],
+      [
+       "Although it was expensive, I bought it.",
+       "虽然很贵，我还是买了。"
+      ],
+      [
+       "It was expensive, but I bought it.",
+       "很贵，但我买了。"
+      ]
+     ],
+     "err": [
+      [
+       "Because I was sick, so I stayed home.",
+       "Because I was sick, I stayed home.",
+       "去掉 so"
+      ],
+      [
+       "Although it was late, but he worked.",
+       "Although it was late, he worked.",
+       "去掉 but"
+      ]
+     ],
+     "sum": "<b>因为……所以……、虽然……但是……：英语只留一个</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "哪个句子正确？",
+       "o": [
+        "Because I was sick, so I stayed home.",
+        "Because I was sick, I stayed home."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "哪个句子正确？",
+       "o": [
+        "Although it rained, but we went out.",
+        "Although it rained, we went out."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "It was raining, ___ I took a taxi.",
+       "o": [
+        "but",
+        "because",
+        "so",
+        "although"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "虽然很贵，我还是买了。",
+       "a": [
+        "Although it was expensive, I bought it.",
+        "It was expensive, but I bought it.",
+        "Although it was expensive, I still bought it.",
+        "It was expensive, but I still bought it.",
+        "Even though it was expensive, I bought it."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "full"
+    },
+    {
+     "t": "word",
+     "w": "model"
+    },
+    {
+     "t": "word",
+     "w": "join"
+    },
+    {
+     "t": "word",
+     "w": "season"
+    },
+    {
+     "t": "word",
+     "w": "society"
+    },
+    {
+     "t": "word",
+     "w": "tax"
+    },
+    {
+     "t": "key",
+     "title": "because + 句子，because of + 名词",
+     "what": [
+      "<b>because</b> 后面接<b>完整的句子</b>（有主语和谓语）：because it snowed",
+      "<b>because of</b> 后面接<b>名词</b>：because of the snow",
+      "同理：although + 句子 / despite + 名词"
+     ],
+     "why": [
+      "because 是连词，连接句子；because of 是介词短语，介词后面接名词。"
+     ],
+     "zh": [
+      "中文“因为”后面接什么都行：“因为下雪”“因为雪”。英语要看后面是句子还是名词。"
+     ],
+     "ex": [
+      [
+       "We stayed home because it snowed.",
+       "因为下雪，我们待在家里。"
+      ],
+      [
+       "We stayed home because of the snow.",
+       "（同义）"
+      ],
+      [
+       "The flight was late because of the weather.",
+       "航班因天气晚点。"
+      ]
+     ],
+     "err": [
+      [
+       "because of it snowed",
+       "because it snowed",
+       ""
+      ],
+      [
+       "because the snow",
+       "because of the snow",
+       ""
+      ]
+     ],
+     "sum": "<b>because + 句子；because of + 名词</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "We stayed home ___ the snow.",
+       "o": [
+        "because",
+        "because of",
+        "so",
+        "although"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "I was late ___ the bus didn't come.",
+       "o": [
+        "because",
+        "because of",
+        "so"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "You can have tea ___ coffee. (二选一)",
+       "o": [
+        "and",
+        "or",
+        "but",
+        "so"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "because of",
-     "t": "介词短语",
      "s": [
       [
        "",
@@ -515,15 +1301,15 @@
       ]
      ],
      "x": [
-      [
-       "The game stopped because of the rain.",
-       "比赛因雨暂停。"
-      ]
-     ]
+      "The game stopped because of the rain.",
+      "比赛因雨暂停。"
+     ],
+     "tt": "介词短语",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "not only … but also",
-     "t": "句型",
      "s": [
       [
        "",
@@ -531,15 +1317,15 @@
       ]
      ],
      "x": [
-      [
-       "She is not only smart but also kind.",
-       "她不但聪明而且善良。"
-      ]
-     ]
+      "She is not only smart but also kind.",
+      "她不但聪明而且善良。"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "as well",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -547,114 +1333,293 @@
       ]
      ],
      "x": [
-      [
-       "I like tea as well.",
-       "我也喜欢茶。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "I wanted to go, ___ I was too busy.",
-     "o": [
-      "and",
-      "but",
-      "so",
-      "or"
+      "I like tea as well.",
+      "我也喜欢茶。"
      ],
-     "a": 1
+     "tt": "固定搭配",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "It was raining, ___ I took a taxi.",
-     "o": [
-      "but",
-      "because",
-      "so",
-      "although"
-     ],
-     "a": 2
-    },
-    {
-     "t": "c",
-     "q": "We stayed home ___ the snow.",
-     "o": [
-      "because",
-      "because of",
-      "so",
-      "although"
-     ],
-     "a": 1,
-     "e": "because of 后接名词。"
-    },
-    {
-     "t": "c",
-     "q": "哪个句子正确？",
-     "o": [
-      "Because I was sick, so I stayed home.",
-      "Because I was sick, I stayed home.",
-      "Although I was sick, but I went.",
-      "I was sick, because I stayed home."
-     ],
-     "a": 1
-    },
-    {
-     "t": "f",
-     "q": "You can have tea ___ coffee. (二选一)",
-     "a": [
-      "or"
-     ]
+     "t": "speak",
+     "text": "It was snowing, so I stayed home.",
+     "zh": "在下雪，所以我待在家里。",
+     "focus": "SNOWING 和 HOME 重读"
     },
     {
      "t": "o",
      "a": "She is not only smart but also kind.",
      "zh": "她不但聪明而且善良。"
+    },
+    {
+     "t": "dict",
+     "a": "It was snowing, so I stayed home."
+    },
+    {
+     "t": "tr",
+     "zh": "她不但聪明而且善良。",
+     "a": [
+      "She is not only smart but also kind.",
+      "She's not only smart but also kind.",
+      "She is not only clever but also kind."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "and 并列、but 转折、or 选择、so 结果、because 原因。",
+      "<b>重点</b>：because / so、although / but 只能用一个。",
+      "<b>重点</b>：because + 句子；because of + 名词。",
+      "not only … but also … 不但……而且……"
+     ]
     }
    ]
   },
   {
    "id": "en.1.7.5",
    "title": "情态动词",
-   "words": [
-    "director",
-    "position",
-    "player",
-    "agree",
-    "especially",
-    "record",
-    "pick",
-    "wear",
-    "paper",
-    "special",
-    "space",
-    "ground"
-   ],
-   "grammar": [
+   "steps": [
     {
-     "ref": "b_modal"
+     "t": "intro",
+     "title": "能帮我一下吗？",
+     "lines": [
+      [
+       "A",
+       "Could you help me with this box?",
+       "能帮我搬一下这个箱子吗？"
+      ],
+      [
+       "B",
+       "Sure. But you mustn't lift it alone — it's too heavy.",
+       "当然。但你别一个人搬，太重了。"
+      ],
+      [
+       "A",
+       "Do I have to sign anything?",
+       "我要签什么吗？"
+      ],
+      [
+       "B",
+       "No, you don't have to. You'd better hurry, though.",
+       "不用。不过你最好快点。"
+      ]
+     ],
+     "note": "could、mustn't、have to、don't have to、had better：同样是“要不要”，语气差别很大。"
     },
     {
-     "title": "能力、许可、义务、建议、推测",
-     "points": [
-      "情态动词后接动词原形，没有三单变化：She can swim.（不是 cans / can swims）",
-      "can / could：能力、请求（Could you help me?）；may / might：许可、可能；must：必须（主观）、肯定推测；have to：不得不（客观）；should：应该。",
-      "否定：mustn't 禁止；don't have to 不必。",
-      "礼貌请求：Could you …? / Would you mind …ing? / May I …?"
-     ],
-     "examples": [
-      [
-       "You don't have to come, but you should call.",
-       "你不必来，但你应该打个电话。"
-      ]
-     ]
-    }
-   ],
-   "special": [
+     "t": "word",
+     "w": "director"
+    },
     {
+     "t": "word",
+     "w": "position"
+    },
+    {
+     "t": "word",
+     "w": "player"
+    },
+    {
+     "t": "word",
+     "w": "agree"
+    },
+    {
+     "t": "word",
+     "w": "especially"
+    },
+    {
+     "t": "word",
+     "w": "record"
+    },
+    {
+     "t": "key",
+     "title": "情态动词 + 动词原形",
+     "what": [
+      "情态动词（can, could, may, might, must, should, will, would）后面一律接<b>动词原形</b>，而且<b>没有三单变化</b>：She can swim.（不是 cans / can swims）",
+      "否定直接加 not：can't, shouldn't, mustn't；疑问把情态动词提前：Can you…? Should I…?"
+     ],
+     "why": [
+      "情态动词表达的是说话人的态度（能、可能、应该、必须），它本身已经承担了“谓语”的语法功能，后面的动词只需要提供意思，所以用原形。"
+     ],
+     "zh": [
+      "中国学生常在 can 后面加 to 或 -s：<s>She can to swim</s>、<s>He can swims</s>；或者问句忘了倒装：<s>You can help me?</s>"
+     ],
+     "ex": [
+      [
+       "She can speak three languages.",
+       "她会说三种语言。"
+      ],
+      [
+       "You should see a doctor.",
+       "你应该去看医生。"
+      ],
+      [
+       "It might rain later.",
+       "晚点可能下雨。"
+      ],
+      [
+       "Could you help me?",
+       "能帮帮我吗？"
+      ]
+     ],
+     "err": [
+      [
+       "She can speaks English.",
+       "She can speak English.",
+       ""
+      ],
+      [
+       "You should to go.",
+       "You should go.",
+       ""
+      ]
+     ],
+     "sum": "<b>情态动词 + 原形，不加 to、不加 s</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "She can ___ three languages.",
+       "o": [
+        "speak",
+        "speaks",
+        "speaking",
+        "to speak"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "___ you help me with this box?",
+       "o": [
+        "Must",
+        "Could",
+        "Should",
+        "Have"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "你应该去看医生。",
+       "a": [
+        "You should see a doctor.",
+        "You should go to see a doctor.",
+        "You should go see a doctor."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "pick"
+    },
+    {
+     "t": "word",
+     "w": "wear"
+    },
+    {
+     "t": "word",
+     "w": "paper"
+    },
+    {
+     "t": "word",
+     "w": "special"
+    },
+    {
+     "t": "word",
+     "w": "space"
+    },
+    {
+     "t": "word",
+     "w": "ground"
+    },
+    {
+     "t": "key",
+     "title": "mustn't（禁止）和 don't have to（不必）",
+     "what": [
+      "<b>must</b>：必须（说话人认为）　<b>have to</b>：不得不（客观规定）",
+      "<b>mustn't</b> = <b>禁止</b>：You mustn't smoke here.",
+      "<b>don't have to</b> = <b>不必</b>（可以做，但没必要）：You don't have to come early.",
+      "<b>had better</b> + 原形 = 最好（否则有不好的后果）：You'd better hurry."
+     ],
+     "why": [
+      "肯定时 must 和 have to 差不多，否定时意思完全不同：mustn't 是“不许”，don't have to 是“不用”。"
+     ],
+     "zh": [
+      "中文“不必”和“不许”分得很清楚，但学英语时很多人把 mustn't 理解成“不必”。托业听力里这个区别会直接决定答案。"
+     ],
+     "ex": [
+      [
+       "You mustn't park here.",
+       "这里禁止停车。"
+      ],
+      [
+       "You don't have to pay. It's free.",
+       "你不用付钱，是免费的。"
+      ],
+      [
+       "I have to work on Saturday.",
+       "我周六得上班。"
+      ],
+      [
+       "You'd better take an umbrella.",
+       "你最好带把伞。"
+      ]
+     ],
+     "err": [
+      [
+       "You mustn't come tomorrow.（想说“不用来”）",
+       "You don't have to come tomorrow.",
+       "mustn't = 禁止"
+      ],
+      [
+       "You had better to go.",
+       "You had better go.",
+       ""
+      ]
+     ],
+     "sum": "<b>mustn't 不许，don't have to 不用</b>；had better + 原形。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "You ___ smoke here. It's not allowed.",
+       "o": [
+        "mustn't",
+        "don't have to",
+        "needn't"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Tomorrow is Sunday. You ___ get up early.",
+       "o": [
+        "mustn't",
+        "don't have to",
+        "can't"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "You'd ___ take an umbrella. (最好)",
+       "a": [
+        "better"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "你不用来得这么早。",
+       "a": [
+        "You don't have to come so early.",
+        "You don't need to come so early.",
+        "You don't have to come this early.",
+        "You needn't come so early."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "Could you …?",
-     "t": "句型",
      "s": [
       [
        "",
@@ -662,15 +1627,15 @@
       ]
      ],
      "x": [
-      [
-       "Could you open the window?",
-       "能请你开下窗吗？"
-      ]
-     ]
+      "Could you open the window?",
+      "能请你开下窗吗？"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "have to",
-     "t": "句型",
      "s": [
       [
        "",
@@ -678,15 +1643,15 @@
       ]
      ],
      "x": [
-      [
-       "I have to work on Saturday.",
-       "我周六得上班。"
-      ]
-     ]
+      "I have to work on Saturday.",
+      "我周六得上班。"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "had better",
-     "t": "句型",
      "s": [
       [
        "",
@@ -694,69 +1659,41 @@
       ]
      ],
      "x": [
-      [
-       "You'd better hurry.",
-       "你最好快点。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "You ___ smoke here. It's not allowed.",
-     "o": [
-      "mustn't",
-      "don't have to",
-      "needn't",
-      "can"
+      "You'd better hurry.",
+      "你最好快点。"
      ],
-     "a": 0
+     "tt": "句型",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "Tomorrow is Sunday. You ___ get up early.",
-     "o": [
-      "mustn't",
-      "don't have to",
-      "can't",
-      "shouldn't"
-     ],
-     "a": 1
-    },
-    {
-     "t": "c",
-     "q": "She can ___ three languages.",
-     "o": [
-      "speak",
-      "speaks",
-      "speaking",
-      "to speak"
-     ],
-     "a": 0
-    },
-    {
-     "t": "c",
-     "q": "___ you help me with this box?",
-     "o": [
-      "Must",
-      "Could",
-      "Should",
-      "Have"
-     ],
-     "a": 1
-    },
-    {
-     "t": "f",
-     "q": "You'd ___ take an umbrella. (最好)",
-     "a": [
-      "better"
-     ]
+     "t": "speak",
+     "text": "Could you help me with this box?",
+     "zh": "能帮我搬一下这个箱子吗？",
+     "focus": "Could you 读成 /kʊdʒu/"
     },
     {
      "t": "o",
      "a": "Could you open the window?",
      "zh": "能请你开下窗吗？"
+    },
+    {
+     "t": "dict",
+     "a": "Could you open the window?"
+    },
+    {
+     "t": "write",
+     "prompt": "给同事写一条 3–4 句的英文留言：请他帮个忙（Could you…?），说明原因（because），提醒一件必须 / 不必做的事。",
+     "hint": "检查：情态动词后用原形？because 和 so 只用了一个？介词 on / at / in 对吗？",
+     "focus": "modals, mustn't vs don't have to, because / so, prepositions of time",
+     "model": "Hi Tom, could you send me the report before Friday? I need it because the meeting starts on Monday morning. You don't have to print it — just email it to me. Thanks!"
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：情态动词 + 原形，没有三单、不加 to。",
+      "<b>重点</b>：mustn't 禁止，don't have to 不必；had better 最好。",
+      "礼貌请求：Could you …? / Would you mind …ing? / May I …?"
+     ]
     }
    ]
   }

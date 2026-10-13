@@ -6,31 +6,45 @@
   {
    "id": "en.1.1.1",
    "title": "26 个字母",
-   "words": [
-    "say",
-    "what",
-    "go",
-    "can",
-    "who",
-    "get",
-    "if",
-    "would",
-    "all",
-    "make",
-    "about",
-    "know"
-   ],
-   "grammar": [
+   "steps": [
     {
+     "t": "intro",
+     "title": "拼一下你的名字",
+     "lines": [
+      [
+       "A",
+       "What's your name?",
+       "你叫什么名字？"
+      ],
+      [
+       "B",
+       "My name is Jane.",
+       "我叫简。"
+      ],
+      [
+       "A",
+       "How do you spell it?",
+       "怎么拼？"
+      ],
+      [
+       "B",
+       "J-A-N-E.",
+       "J-A-N-E。"
+      ]
+     ],
+     "note": "英语里经常要把名字、地址、邮箱一个字母一个字母地拼出来。这一课把 26 个字母的“名字”念准。"
+    },
+    {
+     "t": "teach",
      "title": "字母表与字母名",
-     "points": [
+     "body": [
       "英语有 26 个字母，每个字母有大写和小写：A a, B b, C c … Z z。句子开头、人名地名、星期月份、代词 I 要大写。",
       "<b>字母名</b>（字母自己的读法）和<b>字母在单词里的发音</b>常常不一样：字母 a 读 /eɪ/，但在 cat 里读 /æ/。",
       "5 个<b>元音字母</b>：a e i o u（y 有时也当元音，如 my, happy）；其余 21 个是<b>辅音字母</b>。",
       "容易读错的字母名：G /dʒiː/ 和 J /dʒeɪ/；E /iː/ 和 I /aɪ/；R /ɑː(r)/；W /ˈdʌbəljuː/；Z 美式 /ziː/、英式 /zed/。",
       "拼写单词时按字母名一个个念：<i>How do you spell it? — B-O-O-K.</i>"
      ],
-     "examples": [
+     "ex": [
       [
        "How do you spell your name?",
        "你的名字怎么拼？"
@@ -40,12 +54,152 @@
        "拼作 J-A-N-E。"
       ]
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "say"
+    },
+    {
+     "t": "word",
+     "w": "what"
+    },
+    {
+     "t": "word",
+     "w": "go"
+    },
+    {
+     "t": "word",
+     "w": "can"
+    },
+    {
+     "t": "word",
+     "w": "who"
+    },
+    {
+     "t": "word",
+     "w": "get"
+    },
+    {
+     "t": "key",
+     "title": "字母的“名字”和它在单词里的“发音”不是一回事",
+     "what": [
+      "每个字母都有一个<b>名字</b>（拼写时念的）：A /eɪ/、B /biː/、C /siː/……",
+      "但字母在单词里常常读<b>另一个音</b>：字母 A 的名字是 /eɪ/，在 cat 里却读 /æ/；字母 C 在 cat 里读 /k/。",
+      "最容易念错的几组名字：<b>G /dʒiː/ 和 J /dʒeɪ/</b>；<b>E /iː/ 和 I /aɪ/</b>；<b>A /eɪ/ 和 R /ɑːr/</b>；<b>W /ˈdʌbəljuː/</b>；<b>Z</b> 美式 /ziː/、英式 /zed/。"
+     ],
+     "why": [
+      "英语拼写是几百年前定下来的，读音后来变了，所以“字母名”和“实际发音”分了家。拼写时念名字，读单词时念发音 —— 两套都要会。"
+     ],
+     "zh": [
+      "中文拼音里 a 就读“啊”，字母和读音一一对应；英语不是。",
+      "汉语拼音的 e、i 读法和英语字母名正好“错位”：拼音 i ≈ 英语字母 <b>E</b> /iː/，英语字母 <b>I</b> 读 /aɪ/（像“爱”）。很多人把 E、I 念反，拼邮箱时最容易出错。"
+     ],
+     "ex": [
+      [
+       "How do you spell your name? — J-A-N-E.",
+       "你名字怎么拼？——J-A-N-E。"
+      ],
+      [
+       "My email is a-n-n-a at gmail dot com.",
+       "我的邮箱是 anna@gmail.com。"
+      ],
+      [
+       "Is that G or J?",
+       "那是 G 还是 J？"
+      ]
+     ],
+     "err": [
+      [
+       "E 读成 /aɪ/",
+       "E /iː/（像“衣”）",
+       "和字母 I 念反了"
+      ],
+      [
+       "G 读成 /dʒeɪ/",
+       "G /dʒiː/",
+       "/dʒeɪ/ 是 J"
+      ],
+      [
+       "R 读成“啊”",
+       "R /ɑːr/，美式要卷舌",
+       ""
+      ]
+     ],
+     "sum": "拼写念<b>名字</b>，读词念<b>发音</b>；E /iː/、I /aɪ/、G /dʒiː/、J /dʒeɪ/ 别念反。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，选出听到的字母。",
+       "o": [
+        "G",
+        "J",
+        "Z",
+        "C"
+       ],
+       "a": 0,
+       "say": "G",
+       "e": "G /dʒiː/。"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的字母。",
+       "o": [
+        "E",
+        "I",
+        "A",
+        "Y"
+       ],
+       "a": 1,
+       "say": "I",
+       "e": "I /aɪ/。"
+      },
+      {
+       "t": "c",
+       "q": "字母 J 的名字读？",
+       "o": [
+        "/dʒiː/",
+        "/dʒeɪ/",
+        "/ʒeɪ/",
+        "/jeɪ/"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "你的名字怎么拼？",
+       "a": [
+        "How do you spell your name?"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "if"
+    },
+    {
+     "t": "word",
+     "w": "would"
+    },
+    {
+     "t": "word",
+     "w": "all"
+    },
+    {
+     "t": "word",
+     "w": "make"
+    },
+    {
+     "t": "word",
+     "w": "about"
+    },
+    {
+     "t": "word",
+     "w": "know"
+    },
+    {
+     "t": "word",
      "w": "How do you spell …?",
-     "t": "句型",
      "s": [
       [
        "",
@@ -53,15 +207,15 @@
       ]
      ],
      "x": [
-      [
-       "How do you spell \"school\"?",
-       "school 怎么拼？"
-      ]
-     ]
+      "How do you spell \"school\"?",
+      "school 怎么拼？"
+     ],
+     "tt": "句型",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "capital letter",
-     "t": "名词短语",
      "s": [
       [
        "",
@@ -69,15 +223,15 @@
       ]
      ],
      "x": [
-      [
-       "Start a sentence with a capital letter.",
-       "句子以大写字母开头。"
-      ]
-     ]
+      "Start a sentence with a capital letter.",
+      "句子以大写字母开头。"
+     ],
+     "tt": "名词短语",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "What does … mean?",
-     "t": "句型",
      "s": [
       [
        "",
@@ -85,14 +239,18 @@
       ]
      ],
      "x": [
-      [
-       "What does \"world\" mean?",
-       "world 是什么意思？"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
+      "What does \"world\" mean?",
+      "world 是什么意思？"
+     ],
+     "tt": "句型",
+     "sp": true
+    },
+    {
+     "t": "speak",
+     "text": "How do you spell it? J-A-N-E.",
+     "zh": "怎么拼？J-A-N-E。",
+     "focus": "字母一个一个念清楚，最后一个字母语调下降"
+    },
     {
      "t": "c",
      "q": "下面哪个是元音字母？",
@@ -189,30 +347,58 @@
       "u, v, w"
      ],
      "a": 1
+    },
+    {
+     "t": "dict",
+     "a": "How do you spell your name?"
+    },
+    {
+     "t": "tr",
+     "zh": "这个词是什么意思？",
+     "a": [
+      "What does this word mean?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "26 个字母，5 个元音字母 a e i o u。",
+      "<b>重点</b>：字母名 ≠ 单词里的发音；E /iː/ 和 I /aɪ/、G /dʒiː/ 和 J /dʒeɪ/ 别念反。",
+      "问拼写：How do you spell …?；问意思：What does … mean?"
+     ]
     }
    ]
   },
   {
    "id": "en.1.1.2",
    "title": "短元音：cat, bed, sit, hot, cup",
-   "words": [
-    "will",
-    "up",
-    "time",
-    "there",
-    "year",
-    "so",
-    "think",
-    "when",
-    "which",
-    "some",
-    "people",
-    "take"
-   ],
-   "grammar": [
+   "steps": [
     {
+     "t": "intro",
+     "title": "猫和垫子",
+     "lines": [
+      [
+       "",
+       "The cat sat on the mat.",
+       "猫坐在垫子上。"
+      ],
+      [
+       "",
+       "A big dog is in the hot sun.",
+       "一只大狗在烈日下。"
+      ],
+      [
+       "",
+       "Look at the red bus!",
+       "看那辆红色的巴士！"
+      ]
+     ],
+     "note": "这三句里几乎全是“短元音”。中国学生英语听起来不地道，最大的原因就在这几个短元音上。"
+    },
+    {
+     "t": "teach",
      "title": "五个短元音与闭音节",
-     "points": [
+     "body": [
       "<b>闭音节</b>：元音字母后面跟辅音字母结尾（辅音-元音-辅音，CVC），元音读<b>短音</b>。",
       "a → /æ/：cat, map, bag（嘴张大，比中文“哎”更扁更开）",
       "e → /e/：bed, red, pen",
@@ -221,7 +407,7 @@
       "u → /ʌ/：cup, bus, fun（短促的“啊”）",
       "中国学生最常见的问题：把 /æ/ 读成 /e/（bad 读成 bed），把 /ɪ/ 读成 /iː/（ship 读成 sheep）。"
      ],
-     "examples": [
+     "ex": [
       [
        "The cat sat on the mat.",
        "猫坐在垫子上。"
@@ -231,12 +417,228 @@
        "一只大狗在烈日下。"
       ]
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "will"
+    },
+    {
+     "t": "word",
+     "w": "up"
+    },
+    {
+     "t": "word",
+     "w": "time"
+    },
+    {
+     "t": "word",
+     "w": "there"
+    },
+    {
+     "t": "word",
+     "w": "year"
+    },
+    {
+     "t": "word",
+     "w": "so"
+    },
+    {
+     "t": "key",
+     "title": "/æ/ 和 /e/：bad 不是 bed",
+     "what": [
+      "<b>/æ/</b>：cat, bad, map, bag —— 嘴张得很大，嘴角往两边拉，舌头压低，像“哎”和“啊”之间、又扁又开。",
+      "<b>/e/</b>：bed, red, pen —— 嘴只半开，像中文“哎”。"
+     ],
+     "why": [
+      "英语靠这两个音区分大量单词：bad / bed、man / men、sat / set、pan / pen。读不开，对方就听成另一个词。"
+     ],
+     "zh": [
+      "中文没有 /æ/。最常见的错误是读成“哎”（bad 变 bed），或者读成“啊”（bad 变 bud）。练法：先说“啊”，保持嘴张大，舌尖抵下齿，再把嘴角往两边拉 —— 那就是 /æ/。"
+     ],
+     "ex": [
+      [
+       "bad — bed",
+       "坏的 — 床"
+      ],
+      [
+       "man — men",
+       "男人 — 男人们"
+      ],
+      [
+       "I sat on the bed.",
+       "我坐在床上。"
+      ],
+      [
+       "That man has a bad map.",
+       "那个人的地图很差。"
+      ]
+     ],
+     "err": [
+      [
+       "bad 读成 /bed/",
+       "bad /bæd/",
+       "嘴要张大"
+      ],
+      [
+       "man 和 men 读成一样",
+       "man /mæn/，men /men/",
+       "单复数全靠这个元音区分"
+      ]
+     ],
+     "sum": "<b>/æ/ 嘴张大往两边拉</b>，/e/ 只半开。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "bad",
+        "bed"
+       ],
+       "a": 0,
+       "say": "bad",
+       "e": "/æ/ 嘴张得更大。"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "man",
+        "men"
+       ],
+       "a": 1,
+       "say": "men",
+       "e": "men /men/。"
+      },
+      {
+       "t": "c",
+       "q": "哪个单词的元音和 cat 一样？",
+       "o": [
+        "bed",
+        "map",
+        "cup",
+        "kite"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "think"
+    },
+    {
+     "t": "word",
+     "w": "when"
+    },
+    {
+     "t": "word",
+     "w": "which"
+    },
+    {
+     "t": "word",
+     "w": "some"
+    },
+    {
+     "t": "word",
+     "w": "people"
+    },
+    {
+     "t": "word",
+     "w": "take"
+    },
+    {
+     "t": "key",
+     "title": "/ɪ/ 和 /iː/：ship 不是 sheep",
+     "what": [
+      "<b>/ɪ/</b>：sit, ship, fish, it —— <b>短、松</b>，嘴唇放松，舌头不用力，比“衣”更靠近“诶”一点。",
+      "<b>/iː/</b>：seat, sheep, eat, see —— <b>长、紧</b>，嘴角往两边拉（像微笑），舌头用力，声音拉长。"
+     ],
+     "why": [
+      "这对音决定的不只是长短，还有口型的松紧。只把 /ɪ/ 读短一点是不够的 —— 要放松。"
+     ],
+     "zh": [
+      "中文只有一个“衣”，所以 ship 和 sheep 常常读成一样。听力里也一样：分不清 /ɪ/ 和 /iː/，就听不出 live / leave、it / eat、sit / seat。"
+     ],
+     "ex": [
+      [
+       "ship — sheep",
+       "船 — 羊"
+      ],
+      [
+       "live — leave",
+       "住 — 离开"
+      ],
+      [
+       "Sit in this seat.",
+       "坐在这个座位上。"
+      ],
+      [
+       "I live here. I leave at six.",
+       "我住在这儿。我六点离开。"
+      ]
+     ],
+     "err": [
+      [
+       "ship 读成 /ʃiːp/",
+       "ship /ʃɪp/，短而放松",
+       "读成 sheep 了"
+      ],
+      [
+       "it 读成“衣特”",
+       "it /ɪt/，短促",
+       ""
+      ]
+     ],
+     "sum": "<b>/ɪ/ 短而松，/iː/ 长而紧（嘴角拉开）</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "ship",
+        "sheep"
+       ],
+       "a": 0,
+       "say": "ship",
+       "e": "ship /ʃɪp/ 短。"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "live",
+        "leave"
+       ],
+       "a": 1,
+       "say": "leave",
+       "e": "leave /liːv/ 长。"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "sit",
+        "seat"
+       ],
+       "a": 0,
+       "say": "sit"
+      },
+      {
+       "t": "c",
+       "q": "哪个单词含 /ɪ/？",
+       "o": [
+        "sit",
+        "seat",
+        "see",
+        "eat"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
      "w": "a lot of",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -244,15 +646,15 @@
       ]
      ],
      "x": [
-      [
-       "I have a lot of homework.",
-       "我有很多作业。"
-      ]
-     ]
+      "I have a lot of homework.",
+      "我有很多作业。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "look at",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -260,15 +662,15 @@
       ]
      ],
      "x": [
-      [
-       "Look at the map.",
-       "看地图。"
-      ]
-     ]
+      "Look at the map.",
+      "看地图。"
+     ],
+     "tt": "短语动词",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "sit down",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -276,14 +678,18 @@
       ]
      ],
      "x": [
-      [
-       "Please sit down.",
-       "请坐。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
+      "Please sit down.",
+      "请坐。"
+     ],
+     "tt": "短语动词",
+     "sp": true
+    },
+    {
+     "t": "speak",
+     "text": "The cat sat on the mat.",
+     "zh": "猫坐在垫子上。",
+     "focus": "cat、sat、mat 三个 /æ/ 都要把嘴张开"
+    },
     {
      "t": "c",
      "q": "cat 中的 a 读？",
@@ -324,28 +730,6 @@
      "t": "c",
      "q": "听音，选出听到的词。",
      "o": [
-      "bad",
-      "bed"
-     ],
-     "a": 0,
-     "say": "bad",
-     "e": "/æ/ 嘴要张大。"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "ship",
-      "sheep"
-     ],
-     "a": 0,
-     "say": "ship",
-     "e": "ship /ʃɪp/ 短；sheep /ʃiːp/ 长。"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
       "cup",
       "cap"
      ],
@@ -377,37 +761,66 @@
      "t": "o",
      "a": "The cat sat on the mat.",
      "zh": "猫坐在垫子上。"
+    },
+    {
+     "t": "dict",
+     "a": "The cat sat on the mat."
+    },
+    {
+     "t": "tr",
+     "zh": "看那辆红色的巴士！",
+     "a": [
+      "Look at the red bus!",
+      "Look at that red bus!"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "闭音节（辅音-元音-辅音）里元音读短音：cat /æ/, bed /e/, sit /ɪ/, hot /ɒ/, cup /ʌ/。",
+      "<b>重点</b>：/æ/ 嘴张大往两边拉，别读成 /e/（bad ≠ bed）。",
+      "<b>重点</b>：/ɪ/ 短而松，/iː/ 长而紧（ship ≠ sheep）。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.1.3",
    "title": "长元音与不发音的 e",
-   "words": [
-    "out",
-    "into",
-    "just",
-    "see",
-    "come",
-    "could",
-    "now",
-    "than",
-    "like",
-    "other",
-    "how",
-    "then"
-   ],
-   "grammar": [
+   "steps": [
     {
+     "t": "intro",
+     "title": "在家慢慢来",
+     "lines": [
+      [
+       "",
+       "I like to take my time at home.",
+       "我喜欢在家慢慢来。"
+      ],
+      [
+       "",
+       "These kites are cute.",
+       "这些风筝很可爱。"
+      ],
+      [
+       "",
+       "Please be on time.",
+       "请准时。"
+      ]
+     ],
+     "note": "注意 like、take、time、home、cute：结尾都有一个不发音的 e。这个 e 不出声，却改变了前面元音的读法。"
+    },
+    {
+     "t": "teach",
      "title": "长元音：字母读自己的名字",
-     "points": [
+     "body": [
       "<b>开音节</b>：以元音结尾（he, go, hi）或「元音 + 辅音 + 不发音的 e」（make, time）。元音字母读<b>字母名</b>，也就是长音。",
       "a_e → /eɪ/：make, name, take　　i_e → /aɪ/：time, like, five",
       "o_e → /əʊ/：home, note, those　　u_e → /juː/：use, cute　　e_e → /iː/：these",
       "对比：cap /kæp/ → cape /keɪp/；kit /kɪt/ → kite /kaɪt/；hop → hope；cut → cute。末尾的 e 不发音，却把前面的元音变长。",
       "另外三个常见长元音：/iː/ see, /uː/ food, /ɑː/ car（arm, start）。读长音时嘴形要保持住，时间拉长。"
      ],
-     "examples": [
+     "ex": [
       [
        "I like to take a long time at home.",
        "我喜欢在家慢慢来。"
@@ -417,12 +830,146 @@
        "这些风筝很可爱。"
       ]
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "out"
+    },
+    {
+     "t": "word",
+     "w": "into"
+    },
+    {
+     "t": "word",
+     "w": "just"
+    },
+    {
+     "t": "word",
+     "w": "see"
+    },
+    {
+     "t": "word",
+     "w": "come"
+    },
+    {
+     "t": "word",
+     "w": "could"
+    },
+    {
+     "t": "key",
+     "title": "词尾不发音的 e：让前面的元音“念自己的名字”",
+     "what": [
+      "「元音 + 辅音 + e」结尾时，末尾的 e <b>不发音</b>，前面的元音读<b>字母名</b>（长音）：",
+      "cap /kæp/ → cap<b>e</b> /keɪp/　kit /kɪt/ → kit<b>e</b> /kaɪt/",
+      "hop /hɒp/ → hop<b>e</b> /həʊp/　cut /kʌt/ → cut<b>e</b> /kjuːt/"
+     ],
+     "why": [
+      "这个 e 是“标记”：告诉你前面的元音要读长音。会了这条，看到没学过的词也能大概读出来：same, ride, rope, tune。"
+     ],
+     "zh": [
+      "中文拼音写什么读什么，没有“不出声的字母”。中国学生常把 make 读成“妹克”（把 e 读出来），或者忘了把 a 读成 /eɪ/。"
+     ],
+     "ex": [
+      [
+       "cap → cape, kit → kite",
+       "帽子 → 斗篷，工具包 → 风筝"
+      ],
+      [
+       "hop → hope, cut → cute",
+       "跳 → 希望，切 → 可爱"
+      ],
+      [
+       "I hope you like the cake.",
+       "希望你喜欢这个蛋糕。"
+      ]
+     ],
+     "err": [
+      [
+       "make 读成 /meɪkə/",
+       "make /meɪk/",
+       "词尾 e 不发音"
+      ],
+      [
+       "hope 读成 /hɒp/",
+       "hope /həʊp/",
+       "o_e 读字母名 /əʊ/"
+      ]
+     ],
+     "sum": "<b>元音 + 辅音 + e</b>：e 不读，前面元音读字母名。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "hop",
+        "hope"
+       ],
+       "a": 1,
+       "say": "hope",
+       "e": "hope 的 o 读 /əʊ/。"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "kit",
+        "kite"
+       ],
+       "a": 1,
+       "say": "kite"
+      },
+      {
+       "t": "c",
+       "q": "time 结尾的 e 读不读？",
+       "o": [
+        "读 /e/",
+        "读 /iː/",
+        "不读",
+        "读 /ə/"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "按规律，ride 中的 i 读？",
+       "o": [
+        "/ɪ/",
+        "/aɪ/",
+        "/iː/",
+        "/eɪ/"
+       ],
+       "a": 1,
+       "e": "i_e → /aɪ/。"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "now"
+    },
+    {
+     "t": "word",
+     "w": "than"
+    },
+    {
+     "t": "word",
+     "w": "like"
+    },
+    {
+     "t": "word",
+     "w": "other"
+    },
+    {
+     "t": "word",
+     "w": "how"
+    },
+    {
+     "t": "word",
+     "w": "then"
+    },
+    {
+     "t": "word",
      "w": "take a photo",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -430,15 +977,15 @@
       ]
      ],
      "x": [
-      [
-       "Can you take a photo of us?",
-       "能帮我们拍张照吗？"
-      ]
-     ]
+      "Can you take a photo of us?",
+      "能帮我们拍张照吗？"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "on time",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -446,15 +993,15 @@
       ]
      ],
      "x": [
-      [
-       "The bus came on time.",
-       "公交车准时到了。"
-      ]
-     ]
+      "The bus came on time.",
+      "公交车准时到了。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "go home",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -462,14 +1009,18 @@
       ]
      ],
      "x": [
-      [
-       "Let's go home.",
-       "我们回家吧。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
+      "Let's go home.",
+      "我们回家吧。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
+    },
+    {
+     "t": "speak",
+     "text": "I hope you like the cake.",
+     "zh": "希望你喜欢这个蛋糕。",
+     "focus": "hope、like、cake 的元音都要读满"
+    },
     {
      "t": "c",
      "q": "make 中的 a 读？",
@@ -484,18 +1035,6 @@
     },
     {
      "t": "c",
-     "q": "kite 和 kit 的区别在于？",
-     "o": [
-      "k 的读音",
-      "i 的读音",
-      "t 的读音",
-      "没有区别"
-     ],
-     "a": 1,
-     "e": "kite 的 i 读 /aɪ/，kit 的 i 读 /ɪ/。"
-    },
-    {
-     "t": "c",
      "q": "哪个单词的 o 读 /əʊ/？",
      "o": [
       "hot",
@@ -504,40 +1043,6 @@
       "top"
      ],
      "a": 2
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "hop",
-      "hope"
-     ],
-     "a": 1,
-     "say": "hope",
-     "e": "hope 的 o 读 /əʊ/。"
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "cut",
-      "cute"
-     ],
-     "a": 1,
-     "say": "cute",
-     "e": "cute /kjuːt/。"
-    },
-    {
-     "t": "c",
-     "q": "time 结尾的 e 读不读？",
-     "o": [
-      "读 /e/",
-      "读 /iː/",
-      "不读",
-      "读 /ə/"
-     ],
-     "a": 2,
-     "e": "词尾的 e 一般不发音，只让 i 读 /aɪ/。"
     },
     {
      "t": "f",
@@ -563,30 +1068,61 @@
      "t": "o",
      "a": "Can you take a photo of us?",
      "zh": "能帮我们拍张照吗？"
+    },
+    {
+     "t": "dict",
+     "a": "I like to take my time at home."
+    },
+    {
+     "t": "tr",
+     "zh": "能帮我们拍张照吗？",
+     "a": [
+      "Can you take a photo of us?",
+      "Could you take a photo of us?",
+      "Can you take a picture of us?",
+      "Could you take a picture of us?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "开音节读长音：he, go, hi；/iː/ see, /uː/ food, /ɑː/ car 都要拉长。",
+      "<b>重点</b>：元音 + 辅音 + 不发音的 e → 元音读字母名（cap → cape, kit → kite）。",
+      "on time 准时；go home 不加 to。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.1.4",
    "title": "双元音",
-   "words": [
-    "more",
-    "want",
-    "way",
-    "look",
-    "first",
-    "also",
-    "new",
-    "because",
-    "day",
-    "use",
-    "man",
-    "find"
-   ],
-   "grammar": [
+   "steps": [
     {
+     "t": "intro",
+     "title": "问路",
+     "lines": [
+      [
+       "A",
+       "Where is your house now?",
+       "你家现在在哪儿？"
+      ],
+      [
+       "B",
+       "It's near the station. I know the way.",
+       "在车站附近。我认路。"
+      ],
+      [
+       "A",
+       "OK, I'll go there right now.",
+       "好，我现在就过去。"
+      ]
+     ],
+     "note": "where、house、now、near、know、way、go —— 每个词的元音都要“滑”。"
+    },
+    {
+     "t": "teach",
      "title": "双元音：从一个音滑到另一个音",
-     "points": [
+     "body": [
       "双元音是由一个元音<b>滑向</b>另一个元音，口型要有变化，不能读成单个音。",
       "/eɪ/ day, say, make（ai, ay, a_e）　/aɪ/ my, time, high（i, y, igh）",
       "/ɔɪ/ boy, oil（oi, oy）　/aʊ/ now, house, out（ou, ow）",
@@ -594,7 +1130,7 @@
       "注意 ow 两种读法：now /aʊ/、know /əʊ/。",
       "中国学生常见问题：/eɪ/ 读成“诶”，没有滑到 /ɪ/；/əʊ/ 读成“欧”。"
      ],
-     "examples": [
+     "ex": [
       [
        "Where is your house now?",
        "你家现在在哪里？"
@@ -604,12 +1140,151 @@
        "男孩说他认路。"
       ]
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "more"
+    },
+    {
+     "t": "word",
+     "w": "want"
+    },
+    {
+     "t": "word",
+     "w": "way"
+    },
+    {
+     "t": "word",
+     "w": "look"
+    },
+    {
+     "t": "word",
+     "w": "first"
+    },
+    {
+     "t": "word",
+     "w": "also"
+    },
+    {
+     "t": "key",
+     "title": "双元音要“滑”：/eɪ/ 和 /əʊ/ 不是“诶”和“欧”",
+     "what": [
+      "双元音由一个元音<b>滑到</b>另一个元音，口型必须变：",
+      "<b>/eɪ/</b> day, say, make：从 /e/ 滑到 /ɪ/，嘴角慢慢拉开",
+      "<b>/əʊ/</b>（美式 /oʊ/）go, know, home：从 /ə/ 滑到 /ʊ/，嘴唇慢慢收圆",
+      "<b>/aɪ/</b> my, time；<b>/aʊ/</b> now, house；<b>/ɔɪ/</b> boy, oil"
+     ],
+     "why": [
+      "双元音的“滑动”是英语节奏感的来源。不滑，听起来就是单调的“中式口音”，而且 /eɪ/ 读成 /e/ 会把 late 变成 let。"
+     ],
+     "zh": [
+      "中文“诶”“欧”是单元音、口型不动。读 day 时说成“得”、go 说成“够”，就是没滑。练法：放慢，读成“得——一”“高——乌”，再加快。"
+     ],
+     "ex": [
+      [
+       "late — let",
+       "晚的 — 让"
+      ],
+      [
+       "know — now",
+       "知道 — 现在（ow 两种读法）"
+      ],
+      [
+       "The boy says he knows the way.",
+       "男孩说他认路。"
+      ],
+      [
+       "I'll go home at nine.",
+       "我九点回家。"
+      ]
+     ],
+     "err": [
+      [
+       "late 读成 /let/",
+       "late /leɪt/",
+       "没滑到 /ɪ/"
+      ],
+      [
+       "know 读成 /naʊ/",
+       "know /nəʊ/",
+       "ow 在 know 里读 /əʊ/"
+      ],
+      [
+       "go 读成“够”",
+       "go /ɡəʊ/",
+       "嘴唇要收圆"
+      ]
+     ],
+     "sum": "<b>双元音口型一定要变</b>；ow 有两读：now /aʊ/、know /əʊ/。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "late",
+        "let"
+       ],
+       "a": 0,
+       "say": "late"
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "know",
+        "now"
+       ],
+       "a": 0,
+       "say": "know",
+       "e": "know /nəʊ/。"
+      },
+      {
+       "t": "c",
+       "q": "哪个单词含 /aʊ/？",
+       "o": [
+        "know",
+        "now",
+        "no",
+        "new"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "我认路。",
+       "a": [
+        "I know the way."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "new"
+    },
+    {
+     "t": "word",
+     "w": "because"
+    },
+    {
+     "t": "word",
+     "w": "day"
+    },
+    {
+     "t": "word",
+     "w": "use"
+    },
+    {
+     "t": "word",
+     "w": "man"
+    },
+    {
+     "t": "word",
+     "w": "find"
+    },
+    {
+     "t": "word",
      "w": "right now",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -617,15 +1292,15 @@
       ]
      ],
      "x": [
-      [
-       "I'm busy right now.",
-       "我现在很忙。"
-      ]
-     ]
+      "I'm busy right now.",
+      "我现在很忙。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "find out",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -633,15 +1308,15 @@
       ]
      ],
      "x": [
-      [
-       "I'll find out the time.",
-       "我去查一下时间。"
-      ]
-     ]
+      "I'll find out the time.",
+      "我去查一下时间。"
+     ],
+     "tt": "短语动词",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "by the way",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -649,14 +1324,18 @@
       ]
      ],
      "x": [
-      [
-       "By the way, where do you live?",
-       "顺便问一下，你住哪？"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
+      "By the way, where do you live?",
+      "顺便问一下，你住哪？"
+     ],
+     "tt": "固定搭配",
+     "sp": true
+    },
+    {
+     "t": "speak",
+     "text": "The boy says he knows the way.",
+     "zh": "男孩说他认路。",
+     "focus": "boy、way、knows 三个双元音都要滑"
+    },
     {
      "t": "c",
      "q": "day 中 ay 读？",
@@ -667,18 +1346,6 @@
       "/e/"
      ],
      "a": 1
-    },
-    {
-     "t": "c",
-     "q": "哪个单词含 /aʊ/？",
-     "o": [
-      "know",
-      "now",
-      "no",
-      "new"
-     ],
-     "a": 1,
-     "e": "now /naʊ/；know /nəʊ/。"
     },
     {
      "t": "c",
@@ -702,17 +1369,6 @@
       "bow"
      ],
      "a": 0
-    },
-    {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "know",
-      "now"
-     ],
-     "a": 0,
-     "say": "know",
-     "e": "know /nəʊ/。"
     },
     {
      "t": "c",
@@ -749,37 +1405,66 @@
      "t": "o",
      "a": "By the way, where is your house?",
      "zh": "顺便问一下，你家在哪？"
+    },
+    {
+     "t": "dict",
+     "a": "Where is your house now?"
+    },
+    {
+     "t": "tr",
+     "zh": "顺便问一下，你家在哪？",
+     "a": [
+      "By the way, where is your house?",
+      "By the way, where's your house?",
+      "By the way, where do you live?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "双元音：/eɪ/ day、/aɪ/ my、/ɔɪ/ boy、/aʊ/ now、/əʊ/ go、/ɪə/ here、/eə/ where。",
+      "<b>重点</b>：双元音口型要“滑”，不滑就成了“诶”“欧”，late 会听成 let。",
+      "ow 两读：now /aʊ/、know /əʊ/。"
+     ]
     }
    ]
   },
   {
    "id": "en.1.1.5",
    "title": "元音组合与单元复习",
-   "words": [
-    "here",
-    "thing",
-    "give",
-    "many",
-    "well",
-    "only",
-    "tell",
-    "very",
-    "even",
-    "back",
-    "any",
-    "good"
-   ],
-   "grammar": [
+   "steps": [
     {
+     "t": "intro",
+     "title": "上学用的书",
+     "lines": [
+      [
+       "",
+       "I need a good book for school.",
+       "我需要一本上学用的好书。"
+      ],
+      [
+       "",
+       "Her first car was red.",
+       "她的第一辆车是红色的。"
+      ],
+      [
+       "",
+       "Thank you for your help.",
+       "谢谢你的帮助。"
+      ]
+     ]
+    },
+    {
+     "t": "teach",
      "title": "常见元音字母组合",
-     "points": [
+     "body": [
       "ee / ea → /iː/：see, need, eat, read（ea 也有读 /e/ 的：head, bread）",
       "oo → /uː/ food, school；有时读 /ʊ/ book, look, good",
       "ar → /ɑː/ car, start；or → /ɔː/ for, short；er / ir / ur → /ɜː/ her, first, turn（美式带卷舌）",
       "单词末尾的 er、or 弱读成 /ə/：teacher, doctor",
       "规律不是百分之百：遇到新词先按规律试读，再听录音核对，并把例外记下来。"
      ],
-     "examples": [
+     "ex": [
       [
        "I need a good book for school.",
        "我需要一本上学用的好书。"
@@ -789,12 +1474,151 @@
        "她的第一辆车是红色的。"
       ]
      ]
-    }
-   ],
-   "special": [
+    },
     {
+     "t": "word",
+     "w": "here"
+    },
+    {
+     "t": "word",
+     "w": "thing"
+    },
+    {
+     "t": "word",
+     "w": "give"
+    },
+    {
+     "t": "word",
+     "w": "many"
+    },
+    {
+     "t": "word",
+     "w": "well"
+    },
+    {
+     "t": "word",
+     "w": "only"
+    },
+    {
+     "t": "key",
+     "title": "同样的字母，不同的读音：oo、ea、词尾 er",
+     "what": [
+      "<b>oo</b>：多读长音 /uː/ —— food, school, moon；但 <b>book, look, good, foot</b> 读短音 /ʊ/。",
+      "<b>ea</b>：多读 /iː/ —— eat, read, team；但 <b>head, bread, ready</b> 读 /e/。",
+      "<b>词尾不重读的 er / or</b>：弱读成轻轻的 /ə/ —— teacher, doctor, computer。"
+     ],
+     "why": [
+      "英语拼写规律大约八成可靠。先按规律试读，再听录音核对；把例外记成一组（book / look / good / foot），比一个个记省力。"
+     ],
+     "zh": [
+      "中国学生常把 teacher 读成“踢车”，把 er 读得很重。英语里不重读的音节要轻、短、含糊，这正是英语“轻重有别”的节奏。"
+     ],
+     "ex": [
+      [
+       "food — good",
+       "/uː/ — /ʊ/"
+      ],
+      [
+       "eat — head",
+       "/iː/ — /e/"
+      ],
+      [
+       "My teacher is a doctor.",
+       "我的老师是医生。（两个 er/or 都弱读）"
+      ]
+     ],
+     "err": [
+      [
+       "good 读成 /ɡuːd/",
+       "good /ɡʊd/",
+       "short oo"
+      ],
+      [
+       "head 读成 /hiːd/",
+       "head /hed/",
+       "ea 的例外"
+      ],
+      [
+       "teacher 读成“踢车尔”",
+       "teacher /ˈtiːtʃə(r)/",
+       "词尾 er 弱读"
+      ]
+     ],
+     "sum": "oo：food 长、book 短；ea：eat /iː/、head /e/；<b>词尾 er 轻读 /ə/</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "book 中 oo 读？",
+       "o": [
+        "/ʊ/",
+        "/uː/",
+        "/əʊ/",
+        "/ɒ/"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "听音，选出听到的词。",
+       "o": [
+        "full",
+        "fool"
+       ],
+       "a": 1,
+       "say": "fool",
+       "e": "fool /fuːl/ 长。"
+      },
+      {
+       "t": "c",
+       "q": "bread 中 ea 读？",
+       "o": [
+        "/iː/",
+        "/e/",
+        "/eɪ/",
+        "/ɪə/"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "teacher 结尾的 er 读？",
+       "o": [
+        "/ɜː/",
+        "/ə/",
+        "/er/",
+        "/eə/"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "tell"
+    },
+    {
+     "t": "word",
+     "w": "very"
+    },
+    {
+     "t": "word",
+     "w": "even"
+    },
+    {
+     "t": "word",
+     "w": "back"
+    },
+    {
+     "t": "word",
+     "w": "any"
+    },
+    {
+     "t": "word",
+     "w": "good"
+    },
+    {
+     "t": "word",
      "w": "look for",
-     "t": "短语动词",
      "s": [
       [
        "",
@@ -802,15 +1626,15 @@
       ]
      ],
      "x": [
-      [
-       "I'm looking for my keys.",
-       "我在找钥匙。"
-      ]
-     ]
+      "I'm looking for my keys.",
+      "我在找钥匙。"
+     ],
+     "tt": "短语动词",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "at first",
-     "t": "固定搭配",
      "s": [
       [
        "",
@@ -818,15 +1642,15 @@
       ]
      ],
      "x": [
-      [
-       "At first, it was hard.",
-       "起初很难。"
-      ]
-     ]
+      "At first, it was hard.",
+      "起初很难。"
+     ],
+     "tt": "固定搭配",
+     "sp": true
     },
     {
+     "t": "word",
      "w": "thank you for …",
-     "t": "句型",
      "s": [
       [
        "",
@@ -834,36 +1658,17 @@
       ]
      ],
      "x": [
-      [
-       "Thank you for your help.",
-       "谢谢你的帮助。"
-      ]
-     ]
-    }
-   ],
-   "exercises": [
-    {
-     "t": "c",
-     "q": "food 中 oo 读？",
-     "o": [
-      "/ʊ/",
-      "/uː/",
-      "/əʊ/",
-      "/ɒ/"
+      "Thank you for your help.",
+      "谢谢你的帮助。"
      ],
-     "a": 1
+     "tt": "句型",
+     "sp": true
     },
     {
-     "t": "c",
-     "q": "book 中 oo 读？",
-     "o": [
-      "/ʊ/",
-      "/uː/",
-      "/əʊ/",
-      "/ɒ/"
-     ],
-     "a": 0,
-     "e": "book, look, good 的 oo 读短的 /ʊ/。"
+     "t": "speak",
+     "text": "My teacher is a doctor.",
+     "zh": "我的老师是医生。",
+     "focus": "teach- 和 doc- 读重，-er、-or 轻轻带过"
     },
     {
      "t": "c",
@@ -888,29 +1693,6 @@
      "e": "eat /iːt/ 长。"
     },
     {
-     "t": "c",
-     "q": "听音，选出听到的词。",
-     "o": [
-      "full",
-      "fool"
-     ],
-     "a": 1,
-     "say": "fool",
-     "e": "fool /fuːl/ 长。"
-    },
-    {
-     "t": "c",
-     "q": "teacher 结尾的 er 读？",
-     "o": [
-      "/ɜː/",
-      "/ə/",
-      "/er/",
-      "/eə/"
-     ],
-     "a": 1,
-     "e": "词尾非重读的 er 弱读 /ə/。"
-    },
-    {
      "t": "f",
      "q": "I'm looking ___ my phone.",
      "a": [
@@ -929,6 +1711,33 @@
      "t": "o",
      "a": "I need a good book for school.",
      "zh": "我需要一本上学用的好书。"
+    },
+    {
+     "t": "dict",
+     "a": "I need a good book for school."
+    },
+    {
+     "t": "tr",
+     "zh": "谢谢你的帮助。",
+     "a": [
+      "Thank you for your help.",
+      "Thanks for your help."
+     ]
+    },
+    {
+     "t": "write",
+     "prompt": "用英语写 3–4 句话介绍自己：名字（并拼出来）、住在哪里、每天几点回家。",
+     "hint": "写完后把每个单词大声读一遍，注意今天学的长短元音和双元音。",
+     "focus": "letter names, spelling, basic sentences",
+     "model": "My name is Li Wei. It's spelled L-I, W-E-I. I live near the station. I go home at six every day."
+    },
+    {
+     "t": "sum",
+     "points": [
+      "ee/ea → /iː/；oo → /uː/（book 等读 /ʊ/）；ar /ɑː/、or /ɔː/、er/ir/ur /ɜː/。",
+      "<b>重点</b>：同样的字母组合有例外 —— 按规律试读，再听录音核对，例外成组记。",
+      "<b>重点</b>：词尾不重读的 er / or 弱读 /ə/：teacher, doctor。"
+     ]
     }
    ]
   }

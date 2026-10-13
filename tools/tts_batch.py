@@ -18,11 +18,12 @@ import argparse, base64, concurrent.futures as cf, html, json, os, re, subproces
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "tools", ".tts_cache")
-VOICE_ID = {"en": "gf_en", "es": "gf_es"}
+VOICE_ID = {"en": "gf_en", "es": "gf_es", "ja": "gf_ja"}
 # 单词用 Studio（单词发音最好），句子用 Chirp3-HD（句子自然、比 Studio 便宜很多）。Neural2 的 /ɪ/ 偏开，不再使用。
 VOICE_SETS = {
-    "f": {"en": ("en-US-Studio-O", "en-US-Chirp3-HD-Kore"), "es": ("es-ES-Studio-C", "es-ES-Chirp3-HD-Kore")},
-    "m": {"en": ("en-US-Studio-Q", "en-US-Chirp3-HD-Charon"), "es": ("es-ES-Studio-F", "es-ES-Chirp3-HD-Charon")},
+    # 日语没有 Studio 声音，单词和句子都用 Chirp3-HD（读音指定对日语无效，多音词改送假名，见 ja_input）
+    "f": {"en": ("en-US-Studio-O", "en-US-Chirp3-HD-Kore"), "es": ("es-ES-Studio-C", "es-ES-Chirp3-HD-Kore"), "ja": ("ja-JP-Chirp3-HD-Kore", "ja-JP-Chirp3-HD-Kore")},
+    "m": {"en": ("en-US-Studio-Q", "en-US-Chirp3-HD-Charon"), "es": ("es-ES-Studio-F", "es-ES-Chirp3-HD-Charon"), "ja": ("ja-JP-Chirp3-HD-Charon", "ja-JP-Chirp3-HD-Charon")},
 }
 GOOGLE_VOICE = VOICE_SETS["f"]
 # 单独出现时 TTS 会读错或读得不确定的词：固定成课程想要的读音
@@ -39,6 +40,7 @@ WORD_IPA = {"en": {
 # 句子里的同形异音词：按上下文规则指定读音
 SENT_IPA = {"en": [(re.compile(r"\b(?:have|has|had|'ve|'d|already|just|never|ever)\s+read\b|\bread\b[^.?!]*\b(?:yesterday|last|ago)\b", re.I), "read", "ɹɛd")]}
 PER_BUNDLE = 100
+REBUILD = False
 _cut = "silenceremove=start_periods=1:start_threshold=-50dB:start_silence={}:detection=peak"
 TRIM = ",".join([_cut.format(0.1), "areverse", _cut.format(0.2), "areverse"])
 J = lambda p: json.load(open(os.path.join(ROOT, p), encoding="utf-8"))
@@ -60,31 +62,62 @@ def strip_tags(t):
     return html.unescape(re.sub(r"<[^>]+>", "", str(t)))
 
 
-def speakable(t):
+HAN_ONLY_ZH = re.compile(r"[们这么还说给对吗呢让过从为时习]")  # 简体中文常用字：用来排除混进日语里的中文译文
+
+
+def speakable(t, lang="en"):
     """App 里显示（也是录音的键）的文本；不该录的返回 None。"""
     t = norm(strip_tags(t))
-    if not t or CJK.search(t) or "___" in t or "…" in t or "/" in t or len(t) > 400:
+    if not t or "___" in t or "…" in t or len(t) > 400:
+        return None
+    if lang == "ja":
+        if t.startswith("〜") or HAN_ONLY_ZH.search(t) or not CJK.search(t):
+            return None
+        return t
+    if CJK.search(t) or "/" in t:
         return None
     return t
 
 
-def tts_input(t):
+# 日语单词：只有一种读法的送汉字（音调更自然）；有几种读法的（市場、端……）送假名，保证读对
+_JA = {}
+def ja_input(t):
+    if not _JA:
+        _JA["e"] = J("ja/words.json")["e"]
+        n = {}
+        for ln in open(os.path.join(ROOT, "ja/accent.txt"), encoding="utf-8"):
+            w = ln.split("\t", 1)[0]
+            n[w] = n.get(w, 0) + 1
+        _JA["n"] = n
+    e = _JA["e"].get(t)
+    if e and e[0] and _JA["n"].get(t, 1) > 1:
+        return e[0]
+    return t
+
+
+def tts_input(t, lang="en"):
     """送给语音合成的文本：去掉对话破折号、音标、括注。"""
+    if lang == "ja":
+        return ja_input(t) if is_word(t, lang) else t
     t = re.sub(r"(^|\s)[—–-]\s*", r"\1", t)
     t = re.sub(r"/[^/\s][^/]*/", "", t)
     return norm(t)
 
 
-def is_word(t):
-    """单词和短词组（不超过 3 个词、不以句末标点结尾）用单词声音，其余用句子声音。"""
+def is_word(t, lang=None):
+    """单词和短词组（不超过 3 个词、不以句末标点结尾）用单词声音，其余用句子声音。日语：没有句读、不超过 8 个字算单词。"""
+    if lang == "ja" or CJK.search(t):
+        return len(t) <= 8 and not re.search(r"[。、！？!?]", t)
     return len(t.split()) <= 3 and not re.search(r"[.?!¿¡]", t)
 
 
 def voice_for(lang, t):
-    return GOOGLE_VOICE[lang][0 if is_word(t) else 1]
+    return GOOGLE_VOICE[lang][0 if is_word(t, lang) else 1]
 
 
 def prons_for(lang, t):
+    if lang == "ja":
+        return []
     if is_word(t):
         ipa = WORD_IPA.get(lang, {}).get(t.lower())
         return [(t, ipa)] if ipa else []
@@ -93,7 +126,7 @@ def prons_for(lang, t):
 
 # ---------- 收集文本 ----------
 def lexicon(lang):
-    return J({"en": "data/words.json", "es": "es/words.json"}[lang])["e"]
+    return J({"en": "data/words.json", "es": "es/words.json", "ja": "ja/words.json"}[lang])["e"]
 
 
 def collect_curriculum(lang):
@@ -126,14 +159,25 @@ def collect_curriculum(lang):
                             out.append(x[0])
                     elif t == "speak":
                         out.append(s.get("text", ""))
-                for x in l.get("exercises", []) + [s for s in l.get("steps", []) if s.get("t") in ("c", "f", "o")] + [s["check"] for s in l.get("steps", []) if s.get("check")]:
+                    elif t == "key":
+                        # 重点：例句、常错里的正确句
+                        out += [x[0] for x in s.get("ex", [])] + [x[1] for x in s.get("err", []) if len(x) > 1]
+                qs = l.get("exercises", []) + [s for s in l.get("steps", []) if s.get("t") in ("c", "f", "o", "tr", "dict")] + [s["check"] for s in l.get("steps", []) if s.get("check")]
+                qs += [d for s in l.get("steps", []) if s.get("t") == "key" for d in s.get("drill", [])]
+                for x in qs:
                     if x.get("say"):
                         out.append(x["say"])
-                    if x.get("t") == "o" and not x.get("p"):
+                    if x.get("t") == "o":
                         out.append(x.get("a", ""))
+                    if x.get("t") in ("tr", "dict"):
+                        a = x.get("a")
+                        out.append(a[0] if isinstance(a, list) else a)
             for x in d.get("test", {}).get("extra", []):
                 if x.get("say"):
                     out.append(x["say"])
+                if x.get("t") in ("tr", "dict"):
+                    a = x.get("a")
+                    out.append(a[0] if isinstance(a, list) else a)
     return out
 
 
@@ -142,14 +186,14 @@ def collect(lang, sets):
     if "cur" in sets:
         texts += collect_curriculum(lang)
     if "words" in sets:
-        texts += list(lexicon(lang))
+        texts += [w for w, e in lexicon(lang).items() if not (lang == "ja" and e[3] == "文型")]
     if "examples" in sets:
         texts += [x[0] for e in lexicon(lang).values() for x in e[2]]
         if lang == "es":
             texts += [x[0] for xs in J("packs/es-examples.json").values() for x in xs]
     seen, out = set(), []
     for t in texts:
-        t = speakable(t)
+        t = speakable(t, lang)
         if t and t not in seen:
             seen.add(t)
             out.append(t)
@@ -168,7 +212,7 @@ def synth_one(lang, t, kbps):
     if os.path.exists(p):
         return p
     from tts_google import synth
-    raw = synth(tts_input(t), lang, voice_for(lang, t), prons=prons_for(lang, t))
+    raw = synth(tts_input(t, lang), lang, voice_for(lang, t), prons=prons_for(lang, t))
     os.makedirs(os.path.dirname(p), exist_ok=True)
     with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as f:
         f.write(raw)
@@ -181,7 +225,28 @@ def synth_one(lang, t, kbps):
     return p
 
 
+def seed_cache(lang, texts):
+    """从仓库里现有的录音包恢复缓存（换了机器 / 会话后不必重录已有的录音）。"""
+    pre = "g" + VOICE_ID[lang].split("_")[1]
+    want = {key(lang, t): t for t in texts if not os.path.exists(cache_path(lang, t))}
+    n = 0
+    for f in os.listdir(os.path.join(ROOT, "audio")):
+        if not re.match(rf"{pre}_\d+\.json$", f) or not want:
+            continue
+        for k, b64 in json.load(open(os.path.join(ROOT, "audio", f))).items():
+            t = want.pop(k, None)
+            if t is None:
+                continue
+            p = cache_path(lang, t)
+            os.makedirs(os.path.dirname(p), exist_ok=True)
+            open(p, "wb").write(base64.b64decode(b64))
+            n += 1
+    if n:
+        print(f"[{lang}] 从现有录音包恢复缓存 {n} 条")
+
+
 def run(lang, texts, kbps, workers):
+    seed_cache(lang, texts)
     todo = [t for t in texts if not os.path.exists(cache_path(lang, t))]
     print(f"[{lang}] {len(texts)} 条，需新合成 {len(todo)} 条（{sum(len(t) for t in todo)} 字）")
     fails = []
@@ -200,31 +265,42 @@ def run(lang, texts, kbps, workers):
 
 
 def write_bundles(lang, texts):
-    """把缓存里的录音按 100 条一包写进 audio/，并更新 audio/index.json（只替换本声音的旧条目）。"""
+    """增量写录音包：已有的包原样保留（不让仓库和 App 的离线下载整包重来），新录音放进新编号的包；
+    不再用到的录音只从 audio/index.json 里去掉。--rebuild 时才整包重写。"""
     vid = VOICE_ID[lang]
-    pre = "g" + vid.split("_")[1]  # gen / ges
-    for f in os.listdir(os.path.join(ROOT, "audio")):
-        if re.match(rf"{pre}_\d+\.json$", f):
-            os.remove(os.path.join(ROOT, "audio", f))
-    index_p = os.path.join(ROOT, "audio", "index.json")
+    pre = "g" + vid.split("_")[1]  # gen / ges / gja
+    adir = os.path.join(ROOT, "audio")
+    index_p = os.path.join(adir, "index.json")
     index = json.load(open(index_p, encoding="utf-8"))
-    index = {k: v for k, v in index.items() if not v.startswith(pre + "_")}
-    texts = sorted(set(texts), key=lambda t: key(lang, t))
-    for b in range(0, len(texts), PER_BUNDLE):
-        name, bundle = f"{pre}_{b // PER_BUNDLE}", {}
-        for t in texts[b:b + PER_BUNDLE]:
-            k = key(lang, t)
-            bundle[k] = base64.b64encode(open(cache_path(lang, t), "rb").read()).decode()
+    want = {key(lang, t): t for t in texts}
+    if REBUILD:
+        for f in os.listdir(adir):
+            if re.match(rf"{pre}_\d+\.json$", f):
+                os.remove(os.path.join(adir, f))
+        index = {k: v for k, v in index.items() if not v.startswith(pre + "_")}
+    have = {k for k, v in index.items() if v.startswith(pre + "_")}
+    dropped = have - set(want)
+    for k in dropped:
+        del index[k]
+    new = sorted(set(want) - have)
+    nums = [int(m.group(1)) for f in os.listdir(adir) for m in [re.match(rf"{pre}_(\d+)\.json$", f)] if m]
+    nxt = max(nums) + 1 if nums else 0
+    for b in range(0, len(new), PER_BUNDLE):
+        name, bundle = f"{pre}_{nxt}", {}
+        for k in new[b:b + PER_BUNDLE]:
+            bundle[k] = base64.b64encode(open(cache_path(lang, want[k]), "rb").read()).decode()
             index[k] = name
-        json.dump(bundle, open(os.path.join(ROOT, "audio", name + ".json"), "w"), separators=(",", ":"))
+        json.dump(bundle, open(os.path.join(adir, name + ".json"), "w"), separators=(",", ":"))
+        nxt += 1
     json.dump(index, open(index_p, "w"), separators=(",", ":"))
-    size = sum(os.path.getsize(os.path.join(ROOT, "audio", f)) for f in os.listdir(os.path.join(ROOT, "audio")) if f.startswith(pre + "_"))
-    print(f"[{lang}] 写入 {len(texts)} 条录音，{(len(texts) + PER_BUNDLE - 1) // PER_BUNDLE} 包，{size / 1e6:.1f} MB")
+    size = sum(os.path.getsize(os.path.join(adir, f)) for f in os.listdir(adir) if f.startswith(pre + "_"))
+    print(f"[{lang}] 共 {len(want)} 条：新增 {len(new)} 条（{(len(new) + PER_BUNDLE - 1) // PER_BUNDLE} 个新包），停用 {len(dropped)} 条；录音包合计 {size / 1e6:.1f} MB")
 
 
 SAMPLE = {
     "en": ["ship", "sheep", "sip", "seat", "sit", "cap", "cup", "stop", "keep", "help", "map", "live", "read", "take off", "Our company has a new system.", "I read the report yesterday.", "I read the news every morning.", "Where do you live?", "Each team will try it this week.", "Please stop and help me keep the map."],
     "es": ["pero", "perro", "caro", "carro", "cinco", "ciudad", "calle", "Me llamo Ana. ¿Cómo te llamas?", "El perro corre por la calle.", "Tengo diez años."],
+    "ja": ["検挙", "市場", "一段落", "箸", "橋", "示談", "逝去", "警察は昨日、会社の資金を着服した疑いで元社長を検挙した。", "本日をもって、当店は三十年の歴史に幕を下ろしました。", "一概に若者が悪いとは言えない。"],
 }
 
 
@@ -233,7 +309,7 @@ def sample(kbps):
     for lang, ts in SAMPLE.items():
         for t in ts:
             p = synth_one(lang, t, kbps)
-            rows.append(f'<tr><td>{lang}</td><td>{html.escape(t)}</td><td><audio controls preload="none" src="../{voice_for(lang, t)}/{os.path.basename(p)}"></audio></td></tr>')
+            rows.append(f'<tr><td>{lang}</td><td>{html.escape(t)}{"（送：" + html.escape(tts_input(t, lang)) + "）" if tts_input(t, lang) != t else ""}</td><td><audio controls preload="none" src="../{voice_for(lang, t)}/{os.path.basename(p)}"></audio></td></tr>')
     out = os.path.join(CACHE, "sample", "index.html")
     os.makedirs(os.path.dirname(out), exist_ok=True)
     open(out, "w", encoding="utf-8").write(f'<!doctype html><meta charset="utf-8"><title>样音</title><table>{"".join(rows)}</table>')
@@ -249,7 +325,9 @@ if __name__ == "__main__":
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--sample", action="store_true")
     ap.add_argument("--voice", choices=sorted(VOICE_SETS), default="f", help="f 女声 / m 男声")
+    ap.add_argument("--rebuild", action="store_true", help="整包重写录音包（一般不需要，会让仓库和离线下载变大）")
     a = ap.parse_args()
+    REBUILD = a.rebuild
     GOOGLE_VOICE = VOICE_SETS[a.voice]
     if a.sample:
         sample(a.kbps)
