@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261013.0055-1c2b2f";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261013.0101-eb7f91";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -8145,7 +8145,7 @@ function planAddMistake(it, my) {
   const q = mistakeQ(it);
   const ex = S.mistakes.items.find(m => m.src === "plan" && m.q === q && m.ref === it.ref);
   if (ex) { ex.n = (ex.n || 1) + 1; ex.due = addDays(today(), 1); ex.st = 0; }
-  else S.mistakes.items.unshift({ id: uid(), lang: curLang(), src: "plan", topic: it.ref, ref: it.ref, kind: it.t, q, o: it.t === "c" ? it.o : isTyped(it) ? ansList(it) : [it.a], a: it.t === "c" ? it.a : 0, e: it.e || (it.t === "tr" ? "" : it.zh) || "", my: it.t === "c" ? my : -1, typed: isTyped(it) ? String(my) : "", p: it.p, n: 1, t: Date.now(), due: addDays(today(), 1), st: 0 });
+  else S.mistakes.items.unshift({ id: uid(), lang: curLang(), src: "plan", topic: it.ref, ref: it.ref, kid: it.kid, kt: it.kd || it.warm, kind: it.t, q, o: it.t === "c" ? it.o : isTyped(it) ? ansList(it) : [it.a], a: it.t === "c" ? it.a : 0, e: it.e || (it.t === "tr" ? "" : it.zh) || "", my: it.t === "c" ? my : -1, typed: isTyped(it) ? String(my) : "", p: it.p, n: 1, t: Date.now(), due: addDays(today(), 1), st: 0 });
   saveMistakes();
 }
 function planQuizStat(ok) { const day = PL.days[today()]; if (!day || day.free) return; const q = (day.qz ||= {})[curLang()] ||= { n: 0, ok: 0 }; q.n++; if (ok) q.ok++; savePlanDay(today()); }
@@ -8280,6 +8280,7 @@ function remedialView(el, P, ur) {
 /* ---- 错题复习：到期的错题按 1、3、7 天间隔再考，连对两次移出错题本 ---- */
 function mistakeItem(m) {
   const kind = m.kind === "fill" ? "f" : m.kind === "choice" || !m.kind ? "c" : m.kind;
+  if (m.kt) m = { ...m, e: [m.e, "重点：" + m.kt].filter(Boolean).join("　") };
   if (kind === "c") return { t: "c", q: m.q, o: m.o, a: m.a, e: m.e, mk: m.id };
   if (kind === "f") return { t: "f", q: m.q, a: m.o, e: m.e, mk: m.id };
   if (kind === "tr") return { t: "tr", zh: m.q, a: m.o, e: m.e, mk: m.id };
@@ -8343,15 +8344,20 @@ async function placeFinish() {
 /* ---- 重点笔记复习：每个到期的重点出一题；答对按 1、2、4、7、15… 天拉长间隔，答错明天再来 ---- */
 const keysOf = lang => Object.entries(PL.st?.keys || {}).filter(([id]) => id.startsWith(lang + "."));
 const keysDue = (lang, k = today()) => keysOf(lang).filter(([, r]) => r[1] <= k);
+// 重点上答错一次：记一次错，明天再考（课上练到对、课前回顾、重点复习都算）
+function keyMiss(id) { const k = today(), r = (PL.st.keys ||= {})[id] ||= [1, addDays(k, 1), 0, 0, k]; r[0] = 1; r[1] = addDays(k, 1); r[3]++; r[4] = k; savePlanState(); }
+// 薄弱程度：错得多、对得少的排前面
+const keyWeak = r => r[3] - r[2] * 0.5;
+const keyTitle = id => { const [lid, i] = id.split("#"); return v2Keys(curLesson(lid))[i - 1]?.title || id; };
 async function keyById(id) { const lid = id.split("#")[0]; await curUnit(unitIdOf(lid)).catch(() => { }); return v2Keys(curLesson(lid)).find(k => k.id === id) || null; }
 async function startKeyReview(n = 10) {
-  const due = keysDue(curLang()).sort((a, b) => a[1][1] < b[1][1] ? -1 : 1).slice(0, n), k = today(), items = [];
+  const due = keysDue(curLang()).sort((a, b) => keyWeak(b[1]) - keyWeak(a[1]) || (a[1][1] < b[1][1] ? -1 : 1)).slice(0, n), k = today(), items = [];
   for (const [id] of due) { const key = await keyById(id); const ds = key?.drill || []; if (!ds.length) continue; const d = ds[(PL.st.keys[id][2] + PL.st.keys[id][3]) % ds.length]; items.push({ ...d, ref: id.split("#")[0], kid: id, e: [d.e, key.sum && "重点：" + String(key.sum).replace(/<[^>]+>/g, "")].filter(Boolean).join("　") }); }
   if (!items.length) { const day = PL.days[k]; if (day) { (day.kyClear ||= {})[curLang()] = true; savePlanDay(k); planCheck(); } toast("没有到期的重点"); render(); return; }
   MQ.quiz = quizStart(items, { title: "重点复习", retry: false, onWrong: planAddMistake,
     onAnswer: (it, ok) => {
       const r = PL.st.keys[it.kid]; if (!r) return;
-      if (ok) { r[0] = Math.min(r[0] + 1, INTERVALS.length - 1); r[1] = addDays(k, INTERVALS[r[0]]); r[2]++; } else { r[0] = 1; r[1] = addDays(k, 1); r[3]++; }
+      if (ok) { r[0] = Math.min(r[0] + 1, INTERVALS.length - 1); r[1] = addDays(k, INTERVALS[r[0]]); r[2]++; } else keyMiss(it.kid);
       r[4] = k; savePlanState(); planQuizStat(ok);
       const day = PL.days[k]; if (day && !day.free) { (day.ky ||= {})[curLang()] = (day.ky[curLang()] || 0) + 1; savePlanDay(k); planCheck(); }
     },
@@ -8360,11 +8366,12 @@ async function startKeyReview(n = 10) {
 }
 // 重点笔记：列出学过的重点，点开看完整讲解
 async function keyNotesModal() {
-  const lang = curLang(), list = keysOf(lang).sort((a, b) => a[0] < b[0] ? -1 : 1), keys = [];
+  const lang = curLang(), list = keysOf(lang).sort((a, b) => keyWeak(b[1]) - keyWeak(a[1]) || (a[0] < b[0] ? -1 : 1)), keys = [];
   for (const [id, r] of list) { const k = await keyById(id); if (k) keys.push([k, r]); }
   const c = cls3();
-  modal(`<div><div class="eyebrow">NOTAE<span class="zh">重点笔记</span></div><h2>学过的重点 ${keys.length} 个</h2></div>
-    ${keys.length ? `<div class="stack" style="gap:8px;max-height:60vh;overflow:auto">${keys.map(([k, r]) => `<details class="slip3 pad3"><summary><b>${esc(k.title)}</b> <small class="mut3">${r[1] <= today() ? "今天该复习" : "下次 " + esc(r[1].slice(5))}</small></summary>
+  const weak = keys.filter(([, r]) => r[3] >= 2 && r[3] > r[2]).length;
+  modal(`<div><div class="eyebrow">NOTAE<span class="zh">重点笔记</span></div><h2>学过的重点 ${keys.length} 个</h2>${weak ? `<p class="mut3" style="margin:4px 0 0">薄弱重点 ${weak} 个，排在最前面，复习时优先出题。</p>` : ""}</div>
+    ${keys.length ? `<div class="stack" style="gap:8px;max-height:60vh;overflow:auto">${keys.map(([k, r]) => `<details class="slip3 pad3"><summary><b>${esc(k.title)}</b> ${r[3] ? `<span class="kbadge" style="background:${r[3] >= 2 && r[3] > r[2] ? "var(--bad,#b3261e)" : "var(--muted)"}">错 ${r[3]} 次</span> ` : ""}<small class="mut3">${r[1] <= today() ? "今天该复习" : "下次 " + esc(r[1].slice(5))}</small></summary>
       ${(k.what || []).map(p => `<p class="lead3">${p}</p>`).join("")}${(k.why || []).map(p => `<p class="lead3">${p}</p>`).join("")}
       ${(k.ex || []).slice(0, 3).map(([t, zh]) => `<div class="${c}">${t}</div><small class="mut3">${esc(zh)}</small>`).join("")}
       ${k.sum ? `<div class="tip3"><b>一句话记住</b>${k.sum}</div>` : ""}</details>`).join("")}</div>` : `<p class="muted">上完带「重点」的新版课时后，重点会收在这里，并按间隔安排复习。</p>`}
@@ -8428,7 +8435,8 @@ async function weeklyReportText(offset = 0) {
       `- 本周学完课时：${lesDone.length ? lesDone.join("；") : "无"}`, `- 单元测验：${tests.length ? tests.join("；") : "无"}`,
       `- 单词：新学 ${sum("nw")} 个，复习 ${sum("rv")} 次，复习正确率 ${pctS(sum("rvOk"), sum("rv"))}；目前到期未复习 ${due[l]?.due ?? "—"} 个`,
       `- 课时练习/测验一次答对率：${pctS(q[1], q[0])}（${q[0]} 题）`,
-      `- 错题本：共 ${mk.length} 道，本周新增 ${mkWk.length} 道，到期待复习 ${due[l]?.mist ?? "—"} 道${weak.length ? `；错得最多：${weak.join("、")}` : ""}`, "");
+      `- 错题本：共 ${mk.length} 道，本周新增 ${mkWk.length} 道，到期待复习 ${due[l]?.mist ?? "—"} 道${weak.length ? `；错得最多：${weak.join("、")}` : ""}`,
+      `- 重点笔记：${keysOf(l).length} 个${(() => { const w = keysOf(l).filter(([, r]) => r[3]).sort((a, b) => keyWeak(b[1]) - keyWeak(a[1])).slice(0, 5); return w.length ? `；错得最多的重点：${w.map(([id, r]) => `${keyTitle(id)}（错 ${r[3]} 对 ${r[2]}）`).join("、")}` : ""; })()}`, "");
   }
   const bad = PL.st.badAudio || [];
   if (bad.length) L.push("## 读音不对的录音（请重录）", ...bad.slice(-60).map(x => `- [${x.l}] ${x.t}（${x.at.slice(5)}）`), "");
@@ -8691,7 +8699,7 @@ function keyFlow(k) {
   const out = [{ t: "k1", k }];
   if ((k.zh || []).length || (k.ex || []).length) out.push({ t: "k2", k });
   if ((k.err || []).length) out.push({ t: "k3", k });
-  for (const d of k.drill || []) out.push({ ...d, kd: k.title });
+  for (const d of k.drill || []) out.push({ ...d, kd: k.title, kid: k.id });
   return out;
 }
 // 上一课（同单元前一课，或上一单元最后一课）
@@ -8705,14 +8713,14 @@ function prevLessonId(id) {
 function warmItems(l) {
   const pid = prevLessonId(l.id), pl = pid && curLesson(pid);
   if (!pl || !isV2(pl) || !lesRec(pid).done) return [];
-  return v2Keys(pl).filter(k => (k.drill || []).length).slice(0, 3).map(k => ({ ...k.drill[k.drill.length - 1], warm: k.title }));
+  return v2Keys(pl).filter(k => (k.drill || []).length).slice(0, 3).map(k => ({ ...k.drill[k.drill.length - 1], warm: k.title, kid: k.id }));
 }
 // 把连续的词卡后面接一轮回忆小测；练习错题在最后重做
 function v2Flow(l) {
-  const out = [...warmItems(l)]; let run = [];
+  const out = [...warmItems(l)], keys = v2Keys(l); let run = [], ki = 0;
   const flush = () => { if (run.length) { out.push({ t: "recall", ws: run.slice() }); run = []; } };
   // 讲解后的小题单独一屏，免得往下翻
-  for (const s of l.steps) { if (s.t === "word") { out.push(s); run.push(s.w); } else { flush(); if (s.t === "teach" && s.check) { const { check, ...t } = s; out.push(t, { ...check, chk: s.title }); } else if (s.t === "key") out.push(...keyFlow(s)); else out.push(s); } }
+  for (const s of l.steps) { if (s.t === "word") { out.push(s); run.push(s.w); } else { flush(); if (s.t === "teach" && s.check) { const { check, ...t } = s; out.push(t, { ...check, chk: s.title }); } else if (s.t === "key") out.push(...keyFlow(keys[ki++])); else out.push(s); } }
   flush();
   return out;
 }
@@ -8838,7 +8846,7 @@ function v2Render(el, l) {
   const answer = input => {
     const r = quizCheck(ex, input); V.ans = { ...r, input };
     if (!V.redoing) { V.nEx = (V.nEx || 0) + 1; if (r.ok) V.okEx = (V.okEx || 0) + 1; planQuizStat(r.ok); }
-    if (!r.ok) { planAddMistake({ ...ex, ref: l.id }, input); if (V2_EX.has(s.t) && (!V.redoing || s.kd)) V.redo.push(s); }
+    if (!r.ok) { planAddMistake({ ...ex, ref: l.id }, input); if (s.kid) keyMiss(s.kid); if (V2_EX.has(s.t) && (!V.redoing || s.kd)) V.redo.push(s); }
     v2Render(el, l);
   };
   if (ex && !V.ans) {
