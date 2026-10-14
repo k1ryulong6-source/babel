@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261012.1823-4c3611";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261014.1055-6d18cc";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -372,6 +372,8 @@ td.w{font-family:var(--disp);font-size:18px;white-space:nowrap}
 @media (max-width:980px){.reader>.stack,.reader>.side{grid-column:1/-1}}
 .passage{font-family:var(--en);font-size:20px;line-height:1.8;max-width:64ch;border-top:3px solid var(--ink);padding-top:18px}
 .passage p{margin:0 0 1em}
+#apassage[data-intermission] { overflow-wrap:anywhere; }
+#apassage[data-intermission] .wd.j.u { white-space:normal; overflow-wrap:anywhere; }
 .passage .wd.hl{background:linear-gradient(transparent 60%,var(--marker-soft) 60%)}
 .passage .blank{display:inline-block;min-width:4.5em;border-bottom:2px solid var(--sig);text-align:center;color:var(--sig);font-family:var(--disp);font-size:16px;margin:0 2px;line-height:1.3}
 .side{position:sticky;top:130px;display:flex;flex-direction:column;gap:14px}
@@ -1602,6 +1604,7 @@ html.paper body .brickrow i{border:1px solid color-mix(in srgb,var(--sig) 70%,#0
 /* 首帧快照：上次的图纸 + 砖块，脚本还没跑就先贴出来（翻页后的重新加载不再闪） */
 var h=location.hash.slice(1),A=JSON.parse(localStorage.getItem("bt_art1_"+L)||"null"),V=JSON.parse(localStorage.getItem("bt_live_"+L)||"null");
 if((!h||h==="home")&&A&&A.d&&V&&V.svg&&Math.abs(V.w-sh.clientWidth)<4&&Math.abs(V.h-sh.clientHeight)<80){sh.innerHTML='<div class="art"><img alt="" src="'+A.d+'"></div>'+V.svg;sh.dataset.lang=L;sh.className="sheet drawn nofade s-"+L;}}}}catch(e){}</script>
+<script src="integrations/intermission.js"></script>
 <script>
 /* ============ 内置内容 ============ */
 // 单词: [单词, 音标, 释义, 例句, 例句译文]
@@ -2235,10 +2238,10 @@ const Store = {
     if (this.idb) { const v = await IDB.run(this.idb, "readonly", st => st.get(p)); return v === undefined ? null : v; }
     try { const v = localStorage.getItem(this.k(p)); return v ? JSON.parse(v) : null; } catch { return null; }
   },
-  async set(p, data) {
+  async set(p, data, { strict = false } = {}) {
     if (this.db) return this.db.doc(p).set(data);
-    if (this.idb) { try { await IDB.run(this.idb, "readwrite", st => st.put(clone(data), p)); } catch (e) { toast("本机存储空间不足，部分数据未保存"); } return; }
-    try { localStorage.setItem(this.k(p), JSON.stringify(data)); } catch (e) { toast("本机存储空间不足，部分数据未保存"); }
+    if (this.idb) { try { await IDB.run(this.idb, "readwrite", st => st.put(clone(data), p)); } catch (e) { toast("本机存储空间不足，部分数据未保存"); if (strict) throw e; } return; }
+    try { localStorage.setItem(this.k(p), JSON.stringify(data)); } catch (e) { toast("本机存储空间不足，部分数据未保存"); if (strict) throw e; }
   },
   async del(p) {
     if (this.db) return this.db.doc(p).delete();
@@ -3236,6 +3239,8 @@ document.addEventListener("click", e => {
   const s = e.target.closest(".wd[data-w]"); if (!s) return;
   if (s.closest("[data-nolink]")) return;
   const selTxt = String(window.getSelection?.() || "").trim(); if (selTxt && (/\s/.test(selTxt) || (isJa() && selTxt.length >= 2))) return; // 正在选句子，不当作点词
+  const articleLang = s.closest("[data-lang]")?.dataset.lang;
+  if (articleLang && !LANGS[articleLang]) { e.preventDefault(); lookupForeign(s.dataset.w, articleLang, s); return; }
   if (isJa()) {
     e.preventDefault(); $$(".wd.sel").forEach(x => x.classList.remove("sel")); s.classList.add("sel");
     const sentence = (s.closest("p, .ex, .kokugo")?.textContent || "").slice(0, 200);
@@ -3683,7 +3688,10 @@ function renderMock(el) {
 const READER_LANGS = {
   en: { name: "英语", code: "EN", ready: true, tts: "en-US", word: /([A-Za-z]+(?:['’-][A-Za-z]+)*)/, local: true },
   es: { name: "西班牙语", code: "ES", ready: true, tts: "es-ES", word: /([A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+(?:['’-][A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+)*)/, local: false },
-  ja: { name: "日语", code: "JA", ready: true, tts: "ja-JP", seg: "ja", local: true }
+  ja: { name: "日语", code: "JA", ready: true, tts: "ja-JP", seg: "ja", local: true },
+  fr: { name: "法语", code: "FR", ready: false, tts: "fr-FR", word: /([\p{L}]+(?:['’-][\p{L}]+)*)/u, local: false },
+  pt: { name: "葡萄牙语", code: "PT", ready: false, tts: "pt-PT", word: /([\p{L}]+(?:['’-][\p{L}]+)*)/u, local: false },
+  zh: { name: "中文", code: "ZH", ready: false, tts: "zh-CN", seg: "zh", local: false }
 };
 const MARK_TYPES_EN = { col: { name: "固定搭配", def: "习惯连用，换个词就不地道" }, phr: { name: "短语", def: "整体表意，不能按字面拆开理解" } };
 const MARK_TYPES_JA = { col: { name: "固定搭配", def: "名词＋助词＋动词等习惯组合，换一个词就不自然" }, phr: { name: "惯用句", def: "整体表意的惯用表达，不能按字面理解" } };
@@ -3691,7 +3699,7 @@ const MT = (lang, t) => (lang === "ja" ? MARK_TYPES_JA : MARK_TYPES_EN)[t === "c
 const MARK_TYPES = MARK_TYPES_EN;
 const AS = { open: null };
 const escRe = s => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-const articles = () => Object.entries(S.content).filter(([, c]) => c.type === "article" && (c.lang || "en") === curLang()).map(([id, c]) => ({ id, ...c })).sort((a, b) => b.t - a.t);
+const articles = () => Object.entries(S.content).filter(([, c]) => c.type === "article" && ((c.lang || "en") === curLang() || c.intermission && !LANGS[c.lang])).map(([id, c]) => ({ id, ...c })).sort((a, b) => b.t - a.t);
 
 /* ---- 分词 ---- */
 function segWords(text, lang) {
@@ -3799,7 +3807,7 @@ function articleListHTML() {
   const bookRows = bs.length ? `<table class="tbl" style="margin-bottom:10px">${bs.map(b => { const rd = Object.keys(b.read || {}).length; return `<tr data-book-id="${b.id}" style="cursor:pointer"><td class="nm">📖 ${esc(b.title)}<small>已读 ${rd} / ${b.chapters.length} 章</small></td><td class="act"><span class="btn sm">目录</span></td></tr>`; }).join("")}</table>` : "";
   return `<section class="blk" style="padding-top:0">
     <div class="h"><div class="eyebrow">Tabulae propriae</div><h2>我的文章</h2><div class="row" style="gap:6px;margin-top:6px"><button class="btn sm pri" id="a-imp">导入文章 / 链接</button><button class="btn sm" id="a-book">导入书籍</button></div></div>
-    <div class="b">${bookRows}${as.length ? `<table class="tbl">${as.map(a => { const ja = a.lang === "ja"; const n = ja ? a.text.replace(/\s/g, "").length : segWords(a.text, a.lang).filter(x => x.w).length; return `<tr data-a="${a.id}" style="cursor:pointer"><td class="nm ${ja ? "jp" : "en"}" style="font-family:var(--en);font-size:17px;font-weight:500">${esc(a.title)}<small>${READER_LANGS[a.lang]?.code || "EN"} · ${n} ${ja ? "字" : "词"}${a.vert ? " · 縦書き" : ""}${a.genre ? " · " + esc(a.genre) : ""} · ${(a.marks || []).length} 处搭配/${ja ? "惯用句" : "短语"} · ${new Date(a.t).toISOString().slice(0, 10).replace(/-/g, ".")}</small></td><td class="act"><span class="btn sm">打开</span></td></tr>`; }).join("")}</table>` : `<p class="muted" style="padding-top:8px">暂无</p>`}</div></section>`;
+    <div class="b">${bookRows}${as.length ? `<table class="tbl">${as.map(a => { const ja = a.lang === "ja"; const n = ja ? a.text.replace(/\s/g, "").length : segWords(a.text, a.lang).filter(x => x.w).length; return `<tr data-a="${a.id}" style="cursor:pointer"><td class="nm ${ja ? "jp" : "en"}" style="font-family:var(--en);font-size:17px;font-weight:500">${esc(a.title)}<small>${READER_LANGS[a.lang]?.code || "EN"} · ${n} ${ja ? "字" : "词"}${a.vert ? " · 縦書き" : ""}${a.intermission ? " · 幕间休息" : ""}${a.intermission && !LANGS[a.lang] ? " · 原文阅读／暂无本地词典" : ""}${a.genre ? " · " + esc(a.genre) : ""} · ${(a.marks || []).length} 处搭配/${ja ? "惯用句" : "短语"} · ${new Date(a.t).toISOString().slice(0, 10).replace(/-/g, ".")}</small></td><td class="act"><span class="btn sm">打开</span></td></tr>`; }).join("")}</table>` : `<p class="muted" style="padding-top:8px">暂无</p>`}</div></section>`;
 }
 function bindArticleList(el) {
   $("#a-imp", el) && ($("#a-imp", el).onclick = importArticleModal);
@@ -3854,15 +3862,18 @@ function renderArticle(el) {
   const fresh = [];
   if (ja) { const seen = new Set(); for (let i = 0; i < a.text.length;) { const m = WORDCH.test(a.text[i]) ? jaScan(a.text, i) : null; if (m) { if (LEX.low.has(m.base) && LEX.bookOf.get(m.base) !== "bk" && !prog(m.base) && !seen.has(m.base)) { seen.add(m.base); fresh.push(m.base); } i += m.L; } else i++; } }
   else if (L.local) { const seen = new Set(); for (const t of segWords(a.text, a.lang)) { if (!t.w) continue; const k = t.t.toLowerCase(); const hw = [k, ...lemmaGuess(k).slice(1)].map(c => LEX.low.get(c)).find(Boolean); if (hw && !seen.has(hw) && !prog(hw)) { seen.add(hw); fresh.push(hw); } } }
+  const sourceNote = a.intermission ? `<div class="faint" data-ui="intermission-source" style="margin-bottom:12px">来自幕间休息 · ${esc(a.source?.name || "")}${a.source?.author ? " · " + esc(a.source.author) : ""}${a.access === "public-partial" ? " · 仅取得来源公开部分" : ""} <a href="${esc(a.news_url)}" target="_blank" rel="noopener">返回资讯 ↗</a>${!LANGS[a.lang] ? `<p>${esc(L.name)}原文阅读；暂无本地词典与复习系统，AI查词需巴别塔已有配置。</p>` : ""}</div>` : "";
+  const reference = a.intermission && a.translation_zh ? `<details data-ui="intermission-reference" style="margin-bottom:14px"><summary>中文参考 · ${({"machine":"自动机翻", "ai-direct":"AI翻译", "ai-reviewed":"此前AI校译"})[a.translation_zh.kind]}</summary><div lang="zh-CN" style="margin-top:10px"><h2>${esc(a.translation_zh.title)}</h2>${BabelIntermission.documentHTML(a.translation_zh.blocks, esc, esc)}</div></details>` : "";
+  const importedBody = a.intermission && a.source_blocks?.length ? BabelIntermission.documentHTML(a.source_blocks, value => paraHTML(value, a.lang, marks), esc) : null;
   const cols = marks.filter(m => m.type === "col"), phrs = marks.filter(m => m.type !== "col");
   const item = m => { const mi = marks.indexOf(m); const inRev = inReview(m.base || m.text); return `<tr><td style="cursor:pointer" data-open-mk="${mi}"><span class="${ja ? "jp" : "en"}" style="font-size:16px">${esc(m.base || m.text)}</span><div class="muted" style="font-size:12px">${esc(m.zh || "")}</div></td><td class="act">${inRev ? `<span class="pill good">复习中</span>` : `<button class="btn sm" data-add-mk="${mi}">加入复习</button>`}</td></tr>`; };
   el.innerHTML = `<div class="stack">
     <div class="row between"><button class="btn ghost sm" id="a-back">← ${a.type === "chapter" ? "目录" : "阅读"}</button>${a.type === "chapter" ? `<div class="row" style="gap:6px">${a.i > 0 ? `<button class="btn sm" id="ch-prev">上一章</button>` : ""}${a.i + 1 < (S.content[a.book]?.chapters.length || 0) ? `<button class="btn sm pri" id="ch-next">下一章</button>` : ""}</div>` : a.url ? `<a class="btn sm ghost" href="${esc(a.url)}" target="_blank" rel="noopener">原文链接 ↗</a>` : ""}</div>
     <div class="sec-head"><div><div class="eyebrow">${L.code}<span class="zh">我的文章</span></div><h1 class="${ja ? "jp" : "en"}" style="font-family:var(--disp);font-weight:400;letter-spacing:.01em">${esc(a.title)}</h1></div>
       <div class="row">${ja ? `<div class="seg" id="a-furi">${[["all", "全部注音"], ["hard", "难词注音"], ["none", "不注音"]].map(([k, v]) => `<button data-f="${k}" class="${(S.profile.furi || "hard") === k ? "on" : ""}">${v}</button>`).join("")}</div><button class="btn sm ${a.vert ? "pri" : ""}" id="a-vert">縦書き</button>` : ""}${TTS.ok && !ja ? `<button class="btn sm" id="a-read">朗读全文</button>` : ""}${aiOK() ? `<button class="btn sm ai" id="a-mk">${(a.marks || []).length ? "重新分析搭配" : "分析搭配"}</button>` : ""}<button class="btn sm ghost" id="a-del" style="color:var(--sig)">删除</button></div></div>
-    <div id="a-st"></div>
+    <div id="a-st"></div>${sourceNote}${reference}
     <div class="reader">
-      <div class="stack"><div class="passage${ja ? " jp fg-" + (S.profile.furi || "hard") : ""}${ja && a.vert ? " vert" : ""}" id="apassage" data-lang="${esc(a.lang)}">${paras.map(p => `<p>${paraHTML(p, a.lang, marks)}</p>`).join("")}</div></div>
+      <div class="stack"><div class="passage${ja ? " jp fg-" + (S.profile.furi || "hard") : ""}${ja && a.vert ? " vert" : ""}" id="apassage" ${a.intermission ? "data-intermission" : ""} data-lang="${esc(a.lang)}">${importedBody || paras.map(p => `<p>${paraHTML(p, a.lang, marks)}</p>`).join("")}</div></div>
       <aside class="side">
         <div class="card stack" style="gap:8px"><div class="mk-key"><span><span class="mk col">${MT(a.lang, "col").name}</span>${cols.length}</span><span><span class="mk phr">${MT(a.lang, "phr").name}</span>${phrs.length}</span></div><div class="faint" style="font-size:12px">点词查词，选中句子可翻译解析</div></div>
         ${fresh.length ? `<div class="card row between"><span>本文生词 <b class="num" style="font-family:var(--disp);font-size:20px">${fresh.length}</b></span><button class="btn sm pri" id="a-learn">先学这些词</button></div>` : ""}
@@ -3892,6 +3903,7 @@ function renderArticle(el) {
 const inReview = w => { const i = wordInfo(w); return !!(i && prog(i.w)); };
 function sentenceWith(a, text) { const t = text.toLowerCase(); return sentencesOf(a.text).find(s => s.toLowerCase().includes(t)) || ""; }
 function addMarkToReview(a, m) {
+  if (!LANGS[a.lang]?.ready || a.lang !== curLang()) return toast("这门语言暂未接入复习系统");
   const base = m.base || m.text;
   if (inReview(base)) { toast("已在复习中"); return; }
   const sent = sentenceWith(a, m.text || base);
@@ -3928,7 +3940,8 @@ function markCard(a, m) {
   if (!sent && m.re) { m.re.lastIndex = 0; const x = m.re.exec(a.text); if (x) { m = { ...m, text: x[0] }; sent = sentenceWith(a, x[0]); } }
   let hi = sent && m.text ? esc(sent).replace(new RegExp(escRe(esc(m.text)), "i"), x => `<mark>${x}</mark>`) : esc(sent);
   if (ja && sent) { const k = m.text ? sent.indexOf(m.text) : -1; hi = k >= 0 ? jaHTML(sent.slice(0, k)) + `<mark>${jaHTML(m.text)}</mark>` + jaHTML(sent.slice(k + m.text.length)) : jaHTML(sent); }
-  const inRev = inReview(base);
+  const canReview = !!LANGS[a.lang]?.ready && a.lang === curLang();
+  const inRev = canReview && inReview(base);
   Sheet.open(`<div class="stack" style="gap:14px">
     <div><div class="eyebrow">${m.type === "col" ? "Collocatio" : "Locutio"}<span class="zh">${t.name}${m.sub ? "：" + esc(m.sub) : ""}</span></div>
       <div class="row between" style="align-items:flex-start;flex-wrap:nowrap"><h2 class="${ja ? "jp" : "en"}" style="font-family:var(--disp);font-weight:400;font-size:34px;line-height:1.1">${esc(base)}</h2><div class="row" style="gap:6px;flex-wrap:nowrap">${spkBtn(base)}${starBtn("w", base)}</div></div>
@@ -3936,7 +3949,7 @@ function markCard(a, m) {
     ${m.zh ? `<div style="font-family:var(--zhd);font-weight:700;font-size:19px">${esc(m.zh)}</div>` : ""}
     ${m.note ? `<div class="explain">${esc(m.note)}</div>` : ""}
     ${sent ? `<div class="ex ${ja ? "jp" : ""}" data-lang="${esc(a.lang)}">${hi}</div>` : ""}
-    <div class="row">${inRev ? `<span class="pill good">复习中</span>` : `<button class="btn pri" id="mk-add">加入复习</button>`}</div>
+    <div class="row">${!canReview ? '<span class="faint">该语种暂无复习系统</span>' : inRev ? `<span class="pill good">复习中</span>` : `<button class="btn pri" id="mk-add">加入复习</button>`}</div>
     <div><div class="eyebrow" style="margin-bottom:6px">Verba<span class="zh">逐词查</span></div><div class="row ${ja ? "jp chips" : ""}" style="gap:6px" data-lang="${esc(a.lang)}">${ja ? jaHTML(m.text || base) : segWords(m.text || base, a.lang).filter(x => x.w).map(x => `<span class="wd chip" data-w="${esc(x.t)}">${esc(x.t)}</span>`).join("")}</div></div>
   </div>`, b => {
     $("#mk-add", b) && ($("#mk-add", b).onclick = () => { addMarkToReview(a, m); Sheet.close(); if (current === "reading") render(); });
@@ -3992,6 +4005,8 @@ const SelTool = {
       });
       document.body.appendChild(d); this.el = d;
     }
+    const sourceArticle = S.content[AS.open];
+    const add = $("[data-a=add]", this.el); if (add) add.hidden = !LANGS[sourceArticle?.lang]?.ready;
     const mobile = innerWidth < 981;
     this.el.classList.toggle("bottom", mobile);
     if (!mobile) { this.el.style.left = Math.max(12, Math.min(innerWidth - 300, rect.left + rect.width / 2 - 140)) + "px"; this.el.style.top = Math.max(8, rect.top - 48) + "px"; }
@@ -4025,7 +4040,7 @@ async function analyzeSelection(a, text) {
       ${(r.parts || []).length ? `<div><div class="eyebrow" style="margin-bottom:4px">Membra<span class="zh">修饰与从句</span></div><table class="tbl">${r.parts.map(([t, x]) => `<tr><td class="${lc}" style="font-size:15px;width:45%">${esc(t)}</td><td style="font-size:14px">${esc(x)}</td></tr>`).join("")}</table></div>` : ""}
       ${(r.points || []).length ? `<div><div class="eyebrow" style="margin-bottom:4px">Grammatica<span class="zh">语法要点</span></div><ol class="pts">${r.points.map(p => `<li>${esc(p)}</li>`).join("")}</ol></div>` : ""}
       ${r.easy ? `<div><div class="eyebrow" style="margin-bottom:4px">Iikae<span class="zh">换个简单说法</span></div><div class="ex jp" data-lang="ja">${jaHTML(r.easy)}</div></div>` : ""}
-      ${(r.items || []).length ? `<div><div class="eyebrow" style="margin-bottom:4px">Collocationes<span class="zh">搭配与短语</span></div><table class="tbl">${r.items.map((it, i) => `<tr><td><span class="mk ${it.type === "col" ? "col" : "phr"} ${lc}" style="font-size:16px">${esc(it.base || it.text)}</span><div class="muted" style="font-size:12px">${MT(a.lang, it.type).name}${it.sub ? "：" + esc(it.sub) : ""}，${esc(it.zh || "")}</div>${it.note ? `<div style="font-size:13px">${esc(it.note)}</div>` : ""}</td><td class="act">${inReview(it.base || it.text) ? `<span class="pill good">复习中</span>` : `<button class="btn sm" data-add-it="${i}">加入复习</button>`}</td></tr>`).join("")}</table></div>` : ""}` : `<span class="thinking">正在解析</span>`}
+      ${(r.items || []).length ? `<div><div class="eyebrow" style="margin-bottom:4px">Collocationes<span class="zh">搭配与短语</span></div><table class="tbl">${r.items.map((it, i) => `<tr><td><span class="mk ${it.type === "col" ? "col" : "phr"} ${lc}" style="font-size:16px">${esc(it.base || it.text)}</span><div class="muted" style="font-size:12px">${MT(a.lang, it.type).name}${it.sub ? "：" + esc(it.sub) : ""}，${esc(it.zh || "")}</div>${it.note ? `<div style="font-size:13px">${esc(it.note)}</div>` : ""}</td><td class="act">${!LANGS[a.lang]?.ready ? '<span class="faint">暂无复习系统</span>' : inReview(it.base || it.text) ? `<span class="pill good">复习中</span>` : `<button class="btn sm" data-add-it="${i}">加入复习</button>`}</td></tr>`).join("")}</table></div>` : ""}` : `<span class="thinking">正在解析</span>`}
     </div>`, b => {
       $$("[data-add-it]", b).forEach(x => x.onclick = () => { const it = r.items[+x.dataset.addIt]; addMarkToReview(a, { ...it, type: it.type === "col" ? "col" : "phr" }); x.replaceWith(Object.assign(document.createElement("span"), { className: "pill good", textContent: "复习中" })); if (current === "reading") render(); });
     });
@@ -4054,6 +4069,7 @@ Reply with only JSON:
   } catch (e) { const b = Sheet.body(); if (b) b.insertAdjacentHTML("beforeend", `<p class="muted">${esc(aiErr(e))}</p>`); }
 }
 async function addSelection(a, text) {
+  if (!LANGS[a.lang]?.ready || a.lang !== curLang()) return toast("这门语言暂未接入复习系统");
   const words = text.split(/\s+/);
   if (a.lang === "ja") {
     if (text.length > 30) { toast("选短一点：一个搭配或惯用句"); return; }
@@ -4088,7 +4104,7 @@ Reply with only JSON: {"base":"dictionary form","type":"col or phr","sub":"结�
 async function lookupForeign(word, lang, el) {
   const L = READER_LANGS[lang] || READER_LANGS.en;
   Speech.say(word, { lang: L.tts });
-  if (!aiOK()) { toast("这门语言暂时没有本地词典"); return; }
+  if (!aiOK()) { toast(`${L.name}暂时没有本地词典；原文可阅读，AI查词需巴别塔已有AI配置`); return; }
   Sheet.open(`<div class="stack"><h2 style="font-family:var(--disp);font-weight:400;font-size:34px">${esc(word)}</h2><span class="thinking">查询中</span></div>`);
   const sent = (el?.closest("p")?.textContent || "").slice(0, 400);
   try {
@@ -9022,14 +9038,53 @@ async function migrateV3() {
   return { moved, toMy };
 }
 
+async function prepareIntermissionImport() {
+  try {
+    if (new URL(location.href).searchParams.has('intermission') && !window.BabelIntermission) throw new Error('integration_not_loaded');
+    const request = window.BabelIntermission?.request(location.href);
+    if (!request) return null;
+    if (request.savedId) {
+      const saved = await Store.get("content/" + request.savedId);
+      if (saved?.type === "article" && saved.intermission && saved.source_id === request.id) return { request, savedId: request.savedId, language: saved.lang };
+    }
+    const payload = await BabelIntermission.fetchArticle(request.id);
+    return { request, payload, language: payload.language };
+  } catch (error) { return { error }; }
+}
+async function openIntermissionImport(incoming) {
+  try {
+    if (incoming.error) throw incoming.error;
+    let id = incoming.savedId, existing = !!id;
+    if (!id) {
+      const plan = BabelIntermission.plan(incoming.payload, S.content);
+      id = plan.id; existing = plan.existing;
+      if (!existing) {
+        await Store.set("content/" + id, plan.article, { strict: true });
+        S.content[id] = plan.article;
+      }
+    }
+    if (!S.content[id]) throw new Error("saved_article_missing");
+    AS.open = id; RS.open = null; _phraseIdx = null;
+    history.replaceState(history.state, "", BabelIntermission.readerURL(location.href, incoming.request.id, id));
+    go("reading"); window.scrollTo({ top: 0 });
+    toast(existing ? "已打开之前导入的文章，生词与标注保持" : "已导入幕间休息原文，可点词阅读");
+  } catch (error) {
+    go("reading");
+    modal(`<h2>文章未能导入</h2><p>${esc(window.BabelIntermission?.errorMessage(error) || "导入接口未加载，请刷新重试。")}</p><div class="row"><button class="btn pri" id="intermission-retry">重试</button><a class="btn" href="https://k1ryulong6-source.github.io/ART-NEWS/">返回幕间休息</a><button class="btn" data-close>关闭</button></div>`, m => { $("#intermission-retry", m).onclick = () => location.reload(); });
+  }
+}
+
 (async function boot() {
   fxDefs();
   await Promise.all([Store.init(), initAI(), AudioBank.init()]);
   setSync();
+  const incoming = await prepareIntermissionImport();
+  const incomingLang = incoming && BabelIntermission.studyLanguages.includes(incoming.language) ? incoming.language : null;
   let profile, log, stats, mistakes, favs, content = [], wp = [], my = [];
   try {
     profile = await Store.get("app/profile");
-    S.profile = profile; // 先读出学习语言，决定加载哪套词库和存档
+    if (incomingLang && profile) profile = { ...profile, lang: incomingLang };
+    S.profile = profile || (incomingLang ? { lang: incomingLang } : null); // 导入先按原文语种载入词库与存档
     if (isJa()) jaSetup();
     if (isEs()) esSetup();
     document.documentElement.classList.add("paper", "p-" + curLang()); paperAssets(curLang());
@@ -9062,10 +9117,11 @@ async function migrateV3() {
   S.my.chunks.forEach(c => c.words.forEach(w => S.my.map.set(w.w.toLowerCase(), w)));
   if (!profile) {
     S.firstRun = true;
-    S.profile = { createdAt: Date.now(), level: "beginner", target: "toeic", minutes: 45, days: 6, accent: "en-US", speed: 1, book: "b1", v3: true, v3seen: true };
+    S.profile = { lang: incomingLang || "en", createdAt: Date.now(), level: "beginner", target: "toeic", minutes: 45, days: 6, accent: "en-US", speed: 1, book: "b1", v3: true, v3seen: true };
     S.profile.plan = generatePlan({ level: "beginner", target: "toeic", score: 730, minutes: 45, days: 6, examDate: "", deck: "all" });
     saveProfile();
-  } else S.profile = profile;
+  } else { S.profile = profile; if (incomingLang) saveProfile(); }
+  if (incomingLang) { try { localStorage.setItem("bt_lang", incomingLang); } catch { } }
   if (/^j[123]$/.test(S.profile.bookJa || "")) { S.profile.bookJa = "n1"; saveProfile(); }
   await Promise.race([S.otherLogsReady, sleep(1500)]);
   planInit();
@@ -9081,7 +9137,8 @@ async function migrateV3() {
   await Promise.race([curPrepareLang(curLang()), sleep(2500)]).catch(() => { });
   let pend = null; try { pend = sessionStorage.getItem("bt_plan_task"); sessionStorage.removeItem("bt_plan_task"); } catch { }
   const h = location.hash.slice(1);
-  go(viewOf(h) ? h : "home");
+  if (incoming) await openIntermissionImport(incoming);
+  else go(viewOf(h) ? h : "home");
   planEnsureToday().then(day => {
     planTag();
     if (current === "today") render();
