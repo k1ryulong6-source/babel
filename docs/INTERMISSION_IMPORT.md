@@ -30,3 +30,9 @@ index.html保留原阅读、点词、选句、词典、Saver、复习逻辑。in
 tools/update_manifest.py已纳入integrations，修改后重算files.json/sw.js/BUILD，避免已装PWA缓存旧导入器。各AI更新最新main，勿覆盖字库/词典/音频/课程/用户存档。正文协议扩展保持v1向后兼容；新不兼容版另发版本。
 
 检查：node --test tests/intermission.test.js；提取index.html的内联脚本运行node --check；python tools/check_curriculum.py；真实浏览器英/日/西点击词典/保存生词、6语种导入、重复/刷新、长稿、404和存储失败、手机/桌面无溢出。
+
+## T049 · 幕间休息域名迁移
+
+2026-10-15 JST用户已购买mujianrest.work。巴别塔仍在原GitHub地址，IndexedDB/个人词典/生词/复习不迁移；导入器优先https://mujianrest.work/integrations/babel/，DNS/HTTPS/HTTP/JSON失败时尝试原https://k1ryulong6-source.github.io/ART-NEWS/integrations/babel/。仅允许这两个固定端点，不接受参数替换。新域上线前通过旧接口保持可读，生产者JSON的news_url在正式切换后更新。相同原文hash继续复用已有文章，不覆盖笔记或新增重复；保存的旧news_url由GitHub Pages重定向。修改脚本后需更新PWA manifest。
+
+8项接收端JS与原课纲检查通过；1440/390本地新接口/模拟DNS失败旧接口回退、完整原文/配图、重复笔记保持通过，无脚本错误或溢出；公开发布结果待补记。

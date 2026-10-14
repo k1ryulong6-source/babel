@@ -7,7 +7,7 @@ const fixture = () => ({protocol: B.protocol, schema_version: 1, id, source_hash
   blocks: [{type:'paragraph',text:'Original text 2026.'},{type:'quote',text:'Saved paragraph.'},
     {type:'image',url:'https://example.org/photo.jpg',caption:'Photo',credit:'Creator'}],
   source: {name:'Publisher',url:'https://example.org/news',author:'Author'},
-  news_url:'https://k1ryulong6-source.github.io/ART-NEWS/#reader/'+id,access:'public-partial',
+  news_url:'https://mujianrest.work/#reader/'+id,access:'public-partial',
   translation_zh: {kind:'ai-direct',title:'中文参考',blocks:[{type:'paragraph',text:'中文正文'}],model:'actual-model'}});
 
 test('validated import keeps original, language, pictures, public-partial identity and separate Chinese',()=>{
@@ -35,10 +35,27 @@ test('a 40k article passes intact instead of the old 30k manual-import cutoff',(
 test('only fixed known article endpoint is fetched; malformed IDs and mismatched response fail',async()=>{
   let endpoint=''; const fetcher=async u=>{endpoint=u;return new Response(JSON.stringify(fixture()),{status:200});};
   await B.fetchArticle(id,fetcher);
-  assert.equal(endpoint,'https://k1ryulong6-source.github.io/ART-NEWS/integrations/babel/'+id+'.json');
+  assert.equal(endpoint,'https://mujianrest.work/integrations/babel/'+id+'.json');
   await assert.rejects(B.fetchArticle('../private',fetcher),/invalid_article_link/);
   await assert.rejects(B.fetchArticle('live-'+'c'.repeat(24),fetcher),/invalid_article_identity/);
   assert.throws(()=>B.request('https://example.org/?intermission=../private'),/invalid_article_link/);
+});
+test('domain DNS, HTTPS, server and malformed-response failures fall back to the fixed legacy API',async()=>{
+  for(const failure of ['dns',404,503,'invalid']) {
+    const calls=[];
+    const result=await B.fetchArticle(id,async(u,options)=>{
+      calls.push(u);assert.equal(options.credentials,'omit');
+      if(calls.length===1) {
+        if(failure==='dns')throw new TypeError('Failed to fetch');
+        if(failure==='invalid')return new Response(JSON.stringify({...fixture(),id:'live-'+'f'.repeat(24)}));
+        return new Response('',{status:failure});
+      }
+      return new Response(JSON.stringify(fixture()));
+    });
+    assert.deepEqual(calls,['https://mujianrest.work/integrations/babel/'+id+'.json',
+      'https://k1ryulong6-source.github.io/ART-NEWS/integrations/babel/'+id+'.json']);
+    assert.equal(result.text,fixture().text);
+  }
 });
 test('missing article, invalid version and unsafe links never import fake content',async()=>{
   await assert.rejects(B.fetchArticle(id,async()=>new Response('',{status:404})),/article_not_available/);

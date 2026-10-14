@@ -6,7 +6,9 @@
   const articlePattern = /^intermission_live-[a-f0-9]{24}_[a-f0-9]{16}$/;
   const languages = ['en', 'ja', 'es', 'fr', 'pt', 'zh'];
   const studyLanguages = ['en', 'ja', 'es'];
-  const baseURL = 'https://k1ryulong6-source.github.io/ART-NEWS/integrations/babel/';
+  // Fixed trusted endpoints only. The legacy address covers DNS/certificate migration.
+  const baseURLs = ['https://mujianrest.work/integrations/babel/',
+                   'https://k1ryulong6-source.github.io/ART-NEWS/integrations/babel/'];
   const maxBytes = 2_000_000;
   function url(value) {
     try { const u = new URL(value); return ['https:', 'http:'].includes(u.protocol) && !u.username && !u.password ? u.href : ''; }
@@ -50,9 +52,17 @@
   }
   async function fetchArticle(id, fetcher = root.fetch.bind(root)) {
     if (!idPattern.test(id)) throw new Error('invalid_article_link');
+    let lastError;
+    for (const endpoint of baseURLs) {
+      try { return await fetchFromEndpoint(endpoint, id, fetcher); }
+      catch (error) { lastError = error; }
+    }
+    throw lastError;
+  }
+  async function fetchFromEndpoint(endpoint, id, fetcher) {
     const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 15000);
     try {
-      const response = await fetcher(baseURL + id + '.json', {signal: controller.signal, cache: 'no-cache', credentials: 'omit'});
+      const response = await fetcher(endpoint + id + '.json', {signal: controller.signal, cache: 'no-cache', credentials: 'omit'});
       if (!response.ok) throw new Error(response.status === 404 ? 'article_not_available' : 'article_fetch_failed');
       if (+response.headers.get('content-length') > maxBytes) throw new Error('article_too_large');
       const bytes = await response.arrayBuffer();
