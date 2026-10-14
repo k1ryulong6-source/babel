@@ -9,7 +9,7 @@
 
 `https://k1ryulong6-source.github.io/babel/?intermission=live-ID#reading`
 
-ID严格为live-加24位十六进制。接收端只从固定公开地址`https://k1ryulong6-source.github.io/ART-NEWS/integrations/babel/ID.json`取正文，不接受任意远端URL参数，不抓来源网页，不执行来源HTML。源端每次Pages构建按最新全部正文自动生成独立JSON：protocol=intermission-article-v1，schema_version=1，原文title/language/text/blocks/source_hash，出处source，news_url，access，collected_at，translation_zh。
+ID严格为live-加24位十六进制。接收端优先从固定公开地址`https://mujianrest.work/integrations/babel/ID.json`取正文，失败时尝试固定旧地址`https://k1ryulong6-source.github.io/ART-NEWS/integrations/babel/ID.json`，不接受任意远端URL参数，不抓来源网页，不执行来源HTML。源端每次Pages构建按最新全部正文自动生成独立JSON：protocol=intermission-article-v1，schema_version=1，原文title/language/text/blocks/source_hash，出处source，news_url，access，collected_at，translation_zh。
 
 access=public-partial为仅取得来源公开部分；不能补造付费全文。reference kind分别machine/ai-direct/ai-reviewed，与原文分开。blocks支持paragraph/heading/quote/list_item/image，图片有url/caption/alt/credit。文案按纯文本处理，URL仅http/https，无iframe或来源脚本。
 
@@ -36,3 +36,5 @@ tools/update_manifest.py已纳入integrations，修改后重算files.json/sw.js/
 2026-10-15 JST用户已购买mujianrest.work。巴别塔仍在原GitHub地址，IndexedDB/个人词典/生词/复习不迁移；导入器优先https://mujianrest.work/integrations/babel/，DNS/HTTPS/HTTP/JSON失败时尝试原https://k1ryulong6-source.github.io/ART-NEWS/integrations/babel/。仅允许这两个固定端点，不接受参数替换。新域上线前通过旧接口保持可读，生产者JSON的news_url在正式切换后更新。相同原文hash继续复用已有文章，不覆盖笔记或新增重复；保存的旧news_url由GitHub Pages重定向。修改脚本后需更新PWA manifest。
 
 8项接收端JS与原课纲检查通过；1440/390本地新接口/模拟DNS失败旧接口回退、完整原文/配图、重复笔记保持通过，无脚本错误或溢出；公开发布结果待补记。
+
+公开迁移已完成：主站https://mujianrest.work/ 强制HTTPS，PR#12/10c6782、CI38610234915及Pages38610235002 success。巴别塔7976620已发布（Pages38609603860 success）且自身地址保持。真实生产1440/390英日完整原文/原词典/笔记marks刷新/旧文章hash跳转通过，无接口模拟、脚本错误或溢出。主站689篇原文API保持自动构建。
