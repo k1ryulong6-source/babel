@@ -8,7 +8,7 @@
 import hashlib, json, os, re, sys, time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TRACK = ["index.html", "manifest.webmanifest", "ja", "es", "audio", "icons", "data", "packs", "vendor", "dict", "curriculum"]
+TRACK = ["index.html", "manifest.webmanifest", "ja", "es", "audio", "icons", "data", "packs", "vendor", "dict", "curriculum", "integrations"]
 SKIP = {"ja/yomi.txt.gz"}
 
 

@@ -25,3 +25,12 @@ BABEL Language learing app
 ## 日语音调数据
 
 `ja/accent.txt` 来自 [kanjium](https://github.com/mifunetoshiro/kanjium)（Uros O. 整理，基于 EDRDG 的 EDICT 等数据），许可证 **CC BY-SA 4.0**。格式：`词\t读音（与词相同时留空）\t降调位置`（0 平板型；1 头高型；n 表示第 n 拍后降调，多个用逗号分隔）。本文件按同一许可证（CC BY-SA 4.0）提供。
+
+
+## 幕间休息新闻阅读联动
+
+从[幕间休息](https://mujianrest.work/)文章页点击「巴别塔阅读」，自动导入保存的原文、语种、出处、配图与公开部分身份。有效中文稿另作可折叠参考；不把中文翻译当作外语原文，不自动调用模型。相同原文版本打开已有副本，保留生词/笔记；原文变化保存新版本。刷新优先本机副本，不需要重新抓新闻。
+
+英/日/西语沿用原有词典和复习系统。法/葡/中文仅原文阅读，暂无本地词典/复习；可用已配置的巴别塔AI主动查词。存档仍保存在原有IndexedDB/可选云端，导出存档包含导入文章。
+
+跨项目接口与开发约定见[联动协议](docs/INTERMISSION_IMPORT.md)。验证：`node --test tests/intermission.test.js`，改脚本后继续运行`python tools/update_manifest.py`更新PWA缓存。
