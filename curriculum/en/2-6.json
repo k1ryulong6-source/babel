@@ -1,0 +1,1882 @@
+{
+ "id": "en.2.6",
+ "title": "Part 6 段落填空",
+ "goal": "上下文衔接、连接副词、句子插入",
+ "lessons": [
+  {
+   "id": "en.2.6.1",
+   "title": "连接副词",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Part 6 是什么样的题",
+     "lines": [
+      [
+       "",
+       "Dear Mr. Ford, our records show that invoice #2280 is now thirty days overdue.",
+       "福特先生：我们的记录显示，第 2280 号发票已逾期三十天。"
+      ],
+      [
+       "",
+       "___, we have not received any reply to our last two reminders. (A) Therefore (B) In addition (C) Instead (D) For example",
+       "___，我们前两次催款也没有收到任何回复。"
+      ],
+      [
+       "",
+       "Answer: (B) In addition — the sentence adds a second problem.",
+       "答案 B：这句是在“再加一个问题”。"
+      ],
+      [
+       "",
+       "Please contact our accountant to arrange payment in installments if necessary.",
+       "如有需要，请联系我们的会计安排分期付款。"
+      ]
+     ],
+     "note": "Part 6 有 4 篇短文（邮件、通知、广告、文章），每篇 4 个空、共 16 题。和 Part 5 的区别：<b>答案要看前后句</b>，只看一句常常两个选项都对。"
+    },
+    {
+     "t": "word",
+     "w": "invoice"
+    },
+    {
+     "t": "word",
+     "w": "reimburse"
+    },
+    {
+     "t": "word",
+     "w": "reimbursement"
+    },
+    {
+     "t": "word",
+     "w": "accountant"
+    },
+    {
+     "t": "word",
+     "w": "audit"
+    },
+    {
+     "t": "word",
+     "w": "overdue"
+    },
+    {
+     "t": "key",
+     "title": "连接副词：看前后两句是什么关系",
+     "what": [
+      "<b>递进</b>（再加一点）：In addition / Furthermore / Moreover / Also",
+      "<b>转折</b>（但是）：However / Nevertheless / Even so / On the other hand",
+      "<b>因果</b>（所以）：Therefore / As a result / Consequently / Accordingly",
+      "<b>时间</b>：Meanwhile（同时）/ Subsequently（随后）/ Afterward / In the meantime",
+      "<b>其他</b>：For example（举例）/ Instead（反而）/ Otherwise（否则）/ In fact（事实上）"
+     ],
+     "why": [
+      "Part 6 每篇几乎都有一题连接副词。四个选项分属不同类型，只要判断出<b>前后两句的关系</b>就能选。",
+      "判断方法：把两句话用中文“而且 / 但是 / 所以 / 否则”连一下，哪个通顺就是哪一类。"
+     ],
+     "zh": [
+      "中文的“然而”“因此”在书面语里也有，但中文常常不写连接词，靠意思连；英语书面语几乎每段都靠它们衔接，读的时候要把它们当“路标”。"
+     ],
+     "ex": [
+      [
+       "The audit took two weeks. As a result, the report was delayed.",
+       "审计用了两周，因此报告推迟了。"
+      ],
+      [
+       "The new system is cost-effective. In addition, it is easy to use.",
+       "新系统很划算，而且易于使用。"
+      ],
+      [
+       "Please submit your receipts by Friday. Otherwise, we cannot reimburse you.",
+       "请在周五前提交收据，否则我们无法给您报销。"
+      ]
+     ],
+     "err": [
+      [
+       "Our funding was cut. Therefore, the project continued.",
+       "Our funding was cut. However, the project continued.",
+       "前后是转折，不是因果"
+      ],
+      [
+       "Payment is overdue. For example, please pay today.",
+       "Payment is overdue. Therefore, please pay today.",
+       "前因后果用 Therefore"
+      ]
+     ],
+     "sum": "把前后两句用中文连起来：<b>而且</b> → In addition；<b>但是</b> → However；<b>所以</b> → Therefore；<b>否则</b> → Otherwise。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "The fiscal year ends in March. ___, all expense reports must be submitted by March 15.",
+       "o": [
+        "Therefore",
+        "For example",
+        "Otherwise",
+        "However"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "We usually pay by check. ___, this transaction will be made by wire transfer.",
+       "o": [
+        "In addition",
+        "As a result",
+        "Therefore",
+        "However"
+       ],
+       "a": 3
+      },
+      {
+       "t": "c",
+       "q": "Please keep all your receipts. ___, you will not be reimbursed.",
+       "o": [
+        "Otherwise",
+        "Meanwhile",
+        "Moreover",
+        "Accordingly"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "The renovation will take three weeks. ___, staff will work from the second floor.",
+       "o": [
+        "For example",
+        "Instead of",
+        "In the meantime",
+        "Nevertheless"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "installment"
+    },
+    {
+     "t": "word",
+     "w": "fiscal"
+    },
+    {
+     "t": "word",
+     "w": "funding"
+    },
+    {
+     "t": "word",
+     "w": "cost-effective"
+    },
+    {
+     "t": "word",
+     "w": "transaction"
+    },
+    {
+     "t": "word",
+     "w": "remittance"
+    },
+    {
+     "t": "key",
+     "title": "连接副词不是连词：注意标点",
+     "what": [
+      "连接副词（However, Therefore…）<b>不能把两个句子连成一句</b>。正确写法：<b>句号 + However,</b> 或 <b>分号 ; however,</b>",
+      "真正的连词（but, so, although, because）才能直接连两个句子：…, but… / …, so…",
+      "Part 6 有时四个选项里同时有 However 和 Although：空格后面是逗号 + 句子、且前面是句号 → 选副词；空格把两个分句连在一句里 → 选连词。"
+     ],
+     "why": [
+      "这是写作和 Part 6 共同的考点。“The invoice is overdue, however we…” 在正式英语里是错的（逗号接句）。"
+     ],
+     "zh": [
+      "中文逗号可以一直连下去（“发票逾期了，然而我们……”），英语不行，然而 = However 前面要句号或分号。"
+     ],
+     "ex": [
+      [
+       "The payment was late; however, no fee was charged.",
+       "付款晚了，但没有收滞纳金。"
+      ],
+      [
+       "The payment was late, but no fee was charged.",
+       "付款晚了，但没有收滞纳金。"
+      ],
+      [
+       "Although the payment was late, no fee was charged.",
+       "虽然付款晚了，但没有收滞纳金。"
+      ]
+     ],
+     "err": [
+      [
+       "The invoice is overdue, however we will wait one more week.",
+       "The invoice is overdue. However, we will wait one more week.",
+       "However 前用句号或分号"
+      ],
+      [
+       "However the budget was small, we finished the project.",
+       "Although the budget was small, we finished the project.",
+       "连接两个分句用连词 Although"
+      ]
+     ],
+     "sum": "<b>句号 + However,</b>；<b>; however,</b>；连两个分句用 <b>but / although</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ the audit found no problems, the company decided to change its accounting software.",
+       "o": [
+        "In addition",
+        "However",
+        "Although",
+        "Therefore"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "The remittance arrived late. ___, the order was shipped on time.",
+       "o": [
+        "Although",
+        "Because",
+        "Nevertheless",
+        "Unless"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "付款晚了；但是，没有收滞纳金。",
+       "a": [
+        "The payment was late; however, no fee was charged.",
+        "The payment was late. However, no late fee was charged.",
+        "The payment was late; however, no late fee was charged."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "The audit took two weeks. As a result, the report was delayed.",
+     "zh": "审计用了两周，因此报告推迟了。",
+     "focus": "As a result 后稍停；audit 重音在 AU"
+    },
+    {
+     "t": "c",
+     "q": "Our ___ will review the documents before the meeting.",
+     "o": [
+      "remittance",
+      "audit",
+      "invoice",
+      "accountant"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "Payment can be made in three monthly ___.",
+     "o": [
+      "fundings",
+      "installments",
+      "transactions",
+      "audits"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "The company will ___ travel expenses within two weeks.",
+     "o": [
+      "reimburse",
+      "reimbursed",
+      "reimbursable",
+      "reimbursement"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Using e-mail instead of mail is a ___ way to contact customers.",
+     "o": [
+      "fiscal",
+      "funded",
+      "overdue",
+      "cost-effective"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "The project received ___ from the city government.",
+     "o": [
+      "installment",
+      "funding",
+      "invoice",
+      "audit"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Your account is two months ___. Please pay immediately. (逾期)",
+     "a": [
+      "overdue"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Please keep all your receipts for reimbursement.",
+     "zh": "请保留所有收据以便报销。"
+    },
+    {
+     "t": "dict",
+     "a": "Our records show that the invoice is now thirty days overdue."
+    },
+    {
+     "t": "tr",
+     "zh": "审计用了两周，因此报告推迟了。",
+     "a": [
+      "The audit took two weeks. As a result, the report was delayed.",
+      "The audit took two weeks. Therefore, the report was delayed.",
+      "The audit took two weeks, so the report was delayed."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "财务词：invoice、reimburse、reimbursement、accountant、audit、overdue、installment、fiscal、funding、cost-effective、transaction、remittance。",
+      "<b>重点</b>：看前后两句关系 —— 递进 In addition / 转折 However / 因果 Therefore / 否则 Otherwise / 同时 Meanwhile。",
+      "<b>重点</b>：连接副词不能用逗号连句：句号 + However, 或 ; however,；连分句用 but / although。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.6.2",
+   "title": "代词指代",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "“it” 指什么？",
+     "lines": [
+      [
+       "",
+       "Thank you for your interest in our new line of merchandise.",
+       "感谢您关注我们的新系列商品。"
+      ],
+      [
+       "",
+       "___ will be available in all retail stores from June 1. (A) It (B) They (C) Them (D) Its",
+       "___将从 6 月 1 日起在所有零售店有售。"
+      ],
+      [
+       "",
+       "Answer: (B) They — the subject refers to the products in the new line, which are plural.",
+       "答案 B：指的是新系列里的各种商品，复数主语用 They。"
+      ],
+      [
+       "",
+       "A promotional brochure is enclosed. ___ includes a coupon for 10% off. (A) It (B) They (C) This (D) These",
+       "随信附上宣传册，___里有一张九折优惠券。"
+      ]
+     ],
+     "note": "Part 6 的代词题，答案不在空格所在的句子，而在<b>前一两句的名词</b>。先往回找，再看单复数、人还是物、作主语还是宾语。"
+    },
+    {
+     "t": "word",
+     "w": "promotional"
+    },
+    {
+     "t": "word",
+     "w": "coupon"
+    },
+    {
+     "t": "word",
+     "w": "retail"
+    },
+    {
+     "t": "word",
+     "w": "wholesale"
+    },
+    {
+     "t": "word",
+     "w": "merchandise"
+    },
+    {
+     "t": "word",
+     "w": "brochure"
+    },
+    {
+     "t": "key",
+     "title": "代词：往前找名词，再定单复数和格",
+     "what": [
+      "① 往前找它<b>指的名词</b>：一样东西 → it / its；几样东西或几个人 → they / their / them",
+      "② 人还是物：customer → he / she / they；company → it（美式英语里公司是单数 it）",
+      "③ 位置决定“格”：主语 they / 宾语 them / 名词前 their / 单独作名词 theirs"
+     ],
+     "why": [
+      "Part 6 的代词选项通常是 it / they / them / its 或 he / his / their：四个都可能语法正确，只有和<b>前文名词</b>对上的那个才对。"
+     ],
+     "zh": [
+      "中文“它”“它们”经常省略，中国学生写英语也常忘了代词要和前文一致，例如把 company 说成 they 又说成 it。"
+     ],
+     "ex": [
+      [
+       "Our retail partners have been very supportive. We thank them for their help.",
+       "我们的零售合作伙伴一直很支持，感谢他们的帮助。"
+      ],
+      [
+       "The company changed its logo last year.",
+       "公司去年更换了标志。"
+      ],
+      [
+       "The flyers are ready. Please distribute them at the entrance.",
+       "传单准备好了，请在入口处发放。"
+      ]
+     ],
+     "err": [
+      [
+       "The company announced their new slogan.",
+       "The company announced its new slogan.",
+       "company 是单数 → its"
+      ],
+      [
+       "We printed 500 flyers and gave it to customers.",
+       "We printed 500 flyers and gave them to customers.",
+       "flyers 复数 → them"
+      ]
+     ],
+     "sum": "<b>往前找名词</b> → 单数 it / its，复数 they / them / their；公司用 it。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Ms. Diaz sent the brochures this morning. Please check ___ for errors before Friday.",
+       "o": [
+        "them",
+        "they",
+        "it",
+        "its"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Brightline Inc. has redesigned ___ website.",
+       "o": [
+        "his",
+        "their",
+        "its",
+        "it's"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Our customers are important to us. That is why we always read ___ testimonials carefully.",
+       "o": [
+        "they",
+        "them",
+        "its",
+        "their"
+       ],
+       "a": 3
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "flyer"
+    },
+    {
+     "t": "word",
+     "w": "slogan"
+    },
+    {
+     "t": "word",
+     "w": "logo"
+    },
+    {
+     "t": "word",
+     "w": "billboard"
+    },
+    {
+     "t": "word",
+     "w": "testimonial"
+    },
+    {
+     "t": "word",
+     "w": "demographic"
+    },
+    {
+     "t": "key",
+     "title": "this / these + 名词：总结前文",
+     "what": [
+      "<b>This / These + 名词</b> 用来概括前一句的整件事：We will lower prices. <b>This change</b> will…",
+      "名词常是“总结词”：this <b>change</b> / this <b>offer</b> / this <b>decision</b> / these <b>measures</b> / this <b>approach</b>",
+      "选项里有 this offer / this change / these products 时，看前一句说的是“一个优惠”“一个变化”还是“几样产品”。"
+     ],
+     "why": [
+      "这种“总结名词”是 Part 6 的高频题：四个选项是四个不同名词，只有一个能概括前文。"
+     ],
+     "zh": [
+      "中文“这一举措”“此次变动”也是一样的概括方式，英语要注意 this + 单数 / these + 复数。"
+     ],
+     "ex": [
+      [
+       "Prices will rise by 5% in July. This increase is due to higher shipping costs.",
+       "七月起价格上涨 5%，这次涨价是因为运费上涨。"
+      ],
+      [
+       "Members get free delivery and early access to sales. These benefits are not available to other customers.",
+       "会员享受免运费和提前参加促销。这些福利其他顾客没有。"
+      ]
+     ],
+     "err": [
+      [
+       "We will move to a new office. These changes will begin in May.",
+       "We will move to a new office. This change will begin in May.",
+       "前文只有一件事 → this change"
+      ],
+      [
+       "This coupons can be used online.",
+       "These coupons can be used online.",
+       "复数名词用 these"
+      ]
+     ],
+     "sum": "<b>This / These + 总结名词</b> 概括前一句：先看前文是一件事还是几件事、是什么性质。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "We will offer free gift wrapping during December. ___ is available at all locations.",
+       "o": [
+        "This price",
+        "These products",
+        "This service",
+        "Those workers"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Our wholesale customers can now order online and pay later. ___ will make ordering much easier.",
+       "o": [
+        "This logo",
+        "That billboard",
+        "These options",
+        "These complaints"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "A promotional brochure is enclosed. It includes a coupon for ten percent off.",
+     "zh": "随信附上宣传册，里面有一张九折优惠券。",
+     "focus": "brochure 美式重音在 chure：/broʊˈʃʊr/"
+    },
+    {
+     "t": "c",
+     "q": "Our new ___ “Fresh Every Day” appears on all our packaging.",
+     "o": [
+      "coupon",
+      "billboard",
+      "demographic",
+      "slogan"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "This ___ is valid for 20% off any item in the store.",
+     "o": [
+      "coupon",
+      "testimonial",
+      "wholesale",
+      "logo"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "We sell to stores at ___ prices, and they sell to customers at retail prices.",
+     "o": [
+      "demographic",
+      "wholesale",
+      "promotional",
+      "merchandise"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "The ___ we are targeting is people aged 25 to 40.",
+     "o": [
+      "brochure",
+      "slogan",
+      "demographic",
+      "flyer"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "A large ___ beside the highway advertises the new mall.",
+     "o": [
+      "flyer",
+      "logo",
+      "coupon",
+      "billboard"
+     ],
+     "a": 3
+    },
+    {
+     "t": "f",
+     "q": "Customer ___ on our website say the service is excellent. (推荐语，复数)",
+     "a": [
+      "testimonials"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "The company changed its logo last year.",
+     "zh": "公司去年更换了标志。"
+    },
+    {
+     "t": "dict",
+     "a": "A promotional brochure is enclosed with this letter."
+    },
+    {
+     "t": "tr",
+     "zh": "这些商品将从 6 月 1 日起在所有零售店有售。",
+     "a": [
+      "These products will be available in all retail stores from June 1.",
+      "This merchandise will be available in all retail stores from June 1.",
+      "The merchandise will be available in all retail stores starting June 1."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "营销词：promotional、coupon、retail、wholesale、merchandise、brochure、flyer、slogan、logo、billboard、testimonial、demographic。",
+      "<b>重点</b>：代词往前找名词 —— 单数 it / its，复数 they / them / their，公司用 it。",
+      "<b>重点</b>：<b>This / These + 总结名词</b>（this change / these benefits）概括前文。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.6.3",
+   "title": "时态一致",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "同一句，两种时态",
+     "lines": [
+      [
+       "",
+       "Last month, Hanson Corporation completed its acquisition of a small software company.",
+       "上个月，汉森公司完成了对一家小软件公司的收购。"
+      ],
+      [
+       "",
+       "The new subsidiary ___ its first product next spring. (A) launched (B) has launched (C) will launch (D) was launched",
+       "这家新子公司___明年春天推出首款产品。"
+      ],
+      [
+       "",
+       "Answer: (C) will launch — \"next spring\" is in the future.",
+       "答案 C：next spring 是将来。"
+      ],
+      [
+       "",
+       "Shareholders ___ the merger at a meeting on May 4. (A) approve (B) approved (C) will approve (D) are approving",
+       "股东们___在 5 月 4 日的会议上批准了合并。"
+      ],
+      [
+       "",
+       "Answer: It depends on when the article was written. Part 6 often gives this information in an earlier sentence.",
+       "答案要看文章写于什么时候——Part 6 往往在前文给出这个信息。"
+      ]
+     ],
+     "note": "Part 5 的时态题看同一句里的时间词；Part 6 的时态题，时间线索常在<b>别的句子</b>里：邮件日期、前文的 last week / next month、整篇在讲已发生还是将发生。"
+    },
+    {
+     "t": "word",
+     "w": "merger"
+    },
+    {
+     "t": "word",
+     "w": "acquisition"
+    },
+    {
+     "t": "word",
+     "w": "shareholder"
+    },
+    {
+     "t": "word",
+     "w": "board of directors"
+    },
+    {
+     "t": "word",
+     "w": "corporation"
+    },
+    {
+     "t": "word",
+     "w": "subsidiary"
+    },
+    {
+     "t": "key",
+     "title": "Part 6 时态：先定整篇的时间线",
+     "what": [
+      "① 看<b>文章类型和日期</b>：邀请函、预告 → 事情还没发生（will / be going to）；报道、感谢信 → 已经发生（过去时）",
+      "② 看<b>前一句和后一句</b>的动词：前文 was announced / held，空格多半也是过去",
+      "③ 新闻导语常用<b>现在完成时</b>宣布刚发生的事：Hanson Corporation <b>has acquired</b> …，后面的细节用过去时"
+     ],
+     "why": [
+      "Part 6 的空格所在句子常常<b>没有任何时间词</b>，四个时态都语法正确，只有和全文时间线一致的那个才对。"
+     ],
+     "zh": [
+      "中文不靠动词变形表时间，看文章时间线的习惯不强。读英文邮件时要先看日期和第一句，建立“现在是什么时候”的意识。"
+     ],
+     "ex": [
+      [
+       "Thank you for attending our press conference last Friday. The event was a great success.",
+       "感谢您上周五出席我们的新闻发布会，活动非常成功。"
+      ],
+      [
+       "We are pleased to invite you to our annual shareholders' meeting. It will be held on June 2.",
+       "诚邀您参加年度股东大会，大会将于 6 月 2 日举行。"
+      ],
+      [
+       "Ridge Foods has acquired a 30% stake in a local bakery. The deal was signed on Monday.",
+       "里奇食品已收购一家本地面包店 30% 的股份，协议于周一签署。"
+      ]
+     ],
+     "err": [
+      [
+       "Thank you for attending our seminar yesterday. It will be a great success.",
+       "Thank you for attending our seminar yesterday. It was a great success.",
+       "事情已经发生"
+      ],
+      [
+       "We invite you to our dinner next week. It was held at the Grand Hotel.",
+       "We invite you to our dinner next week. It will be held at the Grand Hotel.",
+       "邀请函 → 将来"
+      ]
+     ],
+     "sum": "先看<b>日期、文章类型、前后句动词</b>，定好整篇时间线，再选时态。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "We are writing to invite you to our 50th anniversary dinner. The event ___ at the Plaza Hotel.",
+       "o": [
+        "will take place",
+        "was taking place",
+        "took place",
+        "has taken place"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Thank you to everyone who came to last week's press conference. More than 200 reporters ___.",
+       "o": [
+        "will attend",
+        "attend",
+        "attended",
+        "are attending"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Ono Electronics ___ its subsidiary in Brazil. The sale was completed on Tuesday.",
+       "o": [
+        "sells",
+        "is selling",
+        "will sell",
+        "has sold"
+       ],
+       "a": 3
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "enterprise"
+    },
+    {
+     "t": "word",
+     "w": "spokesperson"
+    },
+    {
+     "t": "word",
+     "w": "press release"
+    },
+    {
+     "t": "word",
+     "w": "press conference"
+    },
+    {
+     "t": "word",
+     "w": "dividend"
+    },
+    {
+     "t": "word",
+     "w": "stake"
+    },
+    {
+     "t": "key",
+     "title": "被动语态的时态：is being / has been / will be done",
+     "what": [
+      "一般：is / was done　进行：<b>is being</b> done　完成：<b>has been</b> done　将来：<b>will be</b> done",
+      "公告和新闻里大量用被动：The merger <b>has been approved</b> by the board of directors.",
+      "Part 6 常把时态和语态放在一起考：先判断主动被动，再按时间线选时态。"
+     ],
+     "why": [
+      "被动的时态变化都在 be 身上：be 变成 is being / has been / will be，后面的过去分词不变。"
+     ],
+     "zh": [
+      "中文“已经被批准”“正在被修理”“将被举行”，正好对应 has been approved / is being repaired / will be held。"
+     ],
+     "ex": [
+      [
+       "The new policy is being reviewed by the board.",
+       "新政策正在由董事会审议。"
+      ],
+      [
+       "A dividend of $1.20 per share has been announced.",
+       "已宣布每股派息 1.20 美元。"
+      ],
+      [
+       "The results will be announced in a press release.",
+       "结果将以新闻稿形式公布。"
+      ]
+     ],
+     "err": [
+      [
+       "The offices are renovating now.",
+       "The offices are being renovated now.",
+       "办公室是被翻修的"
+      ],
+      [
+       "The merger has approved by the board.",
+       "The merger has been approved by the board.",
+       "完成时的被动 has been done"
+      ]
+     ],
+     "sum": "被动的时态都在 <b>be</b> 上：is being / has been / will be + done。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "The proposal ___ by the board of directors at this moment.",
+       "o": [
+        "is being discussed",
+        "will discuss",
+        "has discussed",
+        "is discussing"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "The details of the merger ___ in next week's press release.",
+       "o": [
+        "are explaining",
+        "will be explained",
+        "have explained",
+        "explained"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "A new spokesperson has ___ appointed. (be)",
+       "a": [
+        "been"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Ridge Foods has acquired a thirty percent stake in a local bakery.",
+     "zh": "里奇食品已收购一家本地面包店 30% 的股份。",
+     "focus": "acquired 重音在 quired；thirty percent 两处重读"
+    },
+    {
+     "t": "c",
+     "q": "The two banks agreed to a ___ and will become one company.",
+     "o": [
+      "spokesperson",
+      "merger",
+      "stake",
+      "dividend"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "The company announced the ___ of a smaller rival for $3 million.",
+     "o": [
+      "press conference",
+      "acquisition",
+      "enterprise",
+      "shareholder"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "All ___ will receive a copy of the annual report.",
+     "o": [
+      "dividends",
+      "acquisitions",
+      "subsidiaries",
+      "shareholders"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "The firm owns a 25% ___ in the airline.",
+     "o": [
+      "board",
+      "merger",
+      "stake",
+      "release"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "A company ___ said the store would reopen next week.",
+     "o": [
+      "subsidiary",
+      "corporation",
+      "spokesperson",
+      "dividend"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "The ___ of directors meets four times a year.",
+     "a": [
+      "board"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "The merger has been approved by the board of directors.",
+     "zh": "合并已获董事会批准。"
+    },
+    {
+     "t": "dict",
+     "a": "The results will be announced in a press release."
+    },
+    {
+     "t": "tr",
+     "zh": "公司宣布每股派息一美元。",
+     "a": [
+      "The company announced a dividend of one dollar per share.",
+      "The company has announced a dividend of one dollar per share.",
+      "The corporation announced a dividend of $1 per share."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "公司新闻词：merger、acquisition、shareholder、board of directors、corporation、subsidiary、enterprise、spokesperson、press release、press conference、dividend、stake。",
+      "<b>重点</b>：Part 6 时态先定整篇时间线 —— 日期、文章类型、前后句动词。",
+      "<b>重点</b>：被动的时态都在 be 上：is being / has been / will be + done。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.6.4",
+   "title": "句子插入",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "每篇必有一道的句子题",
+     "lines": [
+      [
+       "",
+       "We have upgraded our customer database. ___ As a result, you may need to reset your password.",
+       "我们升级了客户数据库。___ 因此，您可能需要重设密码。"
+      ],
+      [
+       "",
+       "(A) The new system is more secure than the old one.",
+       "（A）新系统比旧系统更安全。"
+      ],
+      [
+       "",
+       "(B) Our office will be closed on Monday.",
+       "（B）我们办公室周一休息。"
+      ],
+      [
+       "",
+       "(C) Thank you for your order.",
+       "（C）感谢您的订购。"
+      ],
+      [
+       "",
+       "Answer: (A) — it continues the topic of the upgrade and explains why passwords must be reset.",
+       "答案 A：它接着讲升级，又解释了为什么要重设密码。"
+      ]
+     ],
+     "note": "Part 6 每篇有一道“选一个句子填进空格”的题，共 4 题。四个句子单独看都通顺，要找的是<b>和前后两句都接得上</b>的那个。"
+    },
+    {
+     "t": "word",
+     "w": "database"
+    },
+    {
+     "t": "word",
+     "w": "compatible"
+    },
+    {
+     "t": "word",
+     "w": "user-friendly"
+    },
+    {
+     "t": "word",
+     "w": "specification"
+    },
+    {
+     "t": "word",
+     "w": "cutting-edge"
+    },
+    {
+     "t": "word",
+     "w": "configure"
+    },
+    {
+     "t": "key",
+     "title": "句子插入的三种线索",
+     "what": [
+      "① <b>指代词</b>：选项开头是 This / These / They / Such / It，前文必须有它能指的东西。（These devices are… → 前文要提到设备）",
+      "② <b>连接词</b>：选项以 However / In addition / As a result 开头，要和前一句的关系对得上；空格后一句以 This / As a result 开头，空格句要给出它的原因或内容。",
+      "③ <b>关键词重复或换说法</b>：空格句和前后句讲同一件事（upgrade → the new system）。"
+     ],
+     "why": [
+      "四个选项通常一个完全无关（话题不同）、一个时态或指代不对、一个和前文矛盾，只有一个前后都能接上。"
+     ],
+     "zh": [
+      "中文作文讲“承上启下”，就是这个意思：英语的承上启下靠指代词和连接词，有明确的形式线索。"
+     ],
+     "ex": [
+      [
+       "We will install wireless routers on every floor. ___ These devices will double our bandwidth.",
+       "我们会在每层安装无线路由器。（这些设备将使带宽翻倍。）"
+      ],
+      [
+       "The software is easy to use. In addition, a free tutorial is available online.",
+       "这款软件很好用。此外，网上有免费教程。"
+      ]
+     ],
+     "err": [
+      [
+       "We will upgrade our laptops. This printer is broken.",
+       "We will upgrade our laptops. The new models are faster and lighter.",
+       "插入句要接着讲同一件事"
+      ]
+     ],
+     "sum": "插入句要<b>承上</b>（指代词、关键词）也要<b>启下</b>（后一句的 This / As a result 有着落）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Our new app is now available. ___ Simply follow the steps in the video to get started. —— Which sentence fits?",
+       "o": [
+        "Our store hours have changed.",
+        "Please return your old phone.",
+        "The app was not popular last year.",
+        "A short tutorial is included with the app."
+       ],
+       "a": 3
+      },
+      {
+       "t": "c",
+       "q": "The prototype passed all safety tests. ___ We expect to begin production in March. —— Which sentence fits?",
+       "o": [
+        "Our factory closed in 2010.",
+        "It also met every design specification.",
+        "However, it failed the safety tests.",
+        "These customers were not happy."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Please make sure your computer is compatible with the new software. ___ —— Which sentence fits?",
+       "o": [
+        "The software was free last year.",
+        "Older models may not run it properly.",
+        "Our cafeteria serves lunch until two.",
+        "Thank you for attending the seminar."
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "automate"
+    },
+    {
+     "t": "word",
+     "w": "upgrade"
+    },
+    {
+     "t": "word",
+     "w": "bandwidth"
+    },
+    {
+     "t": "word",
+     "w": "wireless"
+    },
+    {
+     "t": "word",
+     "w": "tutorial"
+    },
+    {
+     "t": "word",
+     "w": "prototype"
+    },
+    {
+     "t": "key",
+     "title": "排除法：三种错误选项",
+     "what": [
+      "<b>话题无关</b>：讲 IT 升级的邮件里突然出现“食堂菜单”。",
+      "<b>指代对不上</b>：选项说 These employees…，可前文没有提到任何员工；选项说 It…，前文却是复数名词。",
+      "<b>时间线或逻辑矛盾</b>：前文说升级下周进行，选项说 The upgrade was completed yesterday；前文说很成功，选项用 However 说很成功。"
+     ],
+     "why": [
+      "先用排除法删掉两个明显错的，再在剩下两个里看谁和<b>后一句</b>接得上。"
+     ],
+     "zh": [
+      "中国考生常选“意思最好、最像范文”的句子，其实要选“和这里的上下文接得上”的那个。"
+     ],
+     "ex": [
+      [
+       "The office will be closed for maintenance on Saturday. ___ (✓ All systems will be back online by Monday morning.)",
+       "办公室周六维护关闭。（所有系统将于周一上午恢复。）"
+      ]
+     ],
+     "err": [
+      [
+       "The upgrade will start next week. The upgrade was finished yesterday.",
+       "The upgrade will start next week. It should take about three days.",
+       "时间线不能矛盾"
+      ]
+     ],
+     "sum": "删掉<b>话题无关、指代不对、时间矛盾</b>的，再看谁和后一句接得上。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "We are going to automate our ordering system next month. ___ Staff will therefore have more time to help customers. —— Which sentence fits?",
+       "o": [
+        "This will reduce the time spent on paperwork.",
+        "The system was automated last year.",
+        "Our new logo is blue.",
+        "These customers live overseas."
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Technicians will configure the new laptops on Thursday. ___ —— Which sentence does NOT fit?",
+       "o": [
+        "The process should take about an hour.",
+        "They were configured last month.",
+        "Please leave your old laptop on your desk.",
+        "You will receive your laptop on Friday."
+       ],
+       "a": 1,
+       "e": "前文说周四才配置，They were configured last month 时间矛盾。"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "We will install wireless routers on every floor. These devices will double our bandwidth.",
+     "zh": "我们会在每层安装无线路由器，这些设备将使带宽翻倍。",
+     "focus": "These devices 重读，表示“承上”"
+    },
+    {
+     "t": "c",
+     "q": "Our ___ contains information on more than 10,000 customers.",
+     "o": [
+      "bandwidth",
+      "database",
+      "tutorial",
+      "prototype"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "This printer is not ___ with older computers.",
+     "o": [
+      "wireless",
+      "compatible",
+      "cutting-edge",
+      "configured"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "The engineers built a ___ to test the new design.",
+     "o": [
+      "bandwidth",
+      "prototype",
+      "tutorial",
+      "specification"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "The website is very ___, so even beginners can use it easily.",
+     "o": [
+      "upgraded",
+      "user-friendly",
+      "compatible",
+      "automated"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "The lab uses ___ technology that most companies do not have yet.",
+     "o": [
+      "cutting-edge",
+      "compatible",
+      "user-friendly",
+      "outdated"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "We need more ___ to stream video during the webinar. (带宽)",
+     "a": [
+      "bandwidth"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "A free tutorial is available online.",
+     "zh": "网上有免费教程。"
+    },
+    {
+     "t": "dict",
+     "a": "We have upgraded our customer database."
+    },
+    {
+     "t": "tr",
+     "zh": "技术人员周四会配置新电脑。",
+     "a": [
+      "Technicians will configure the new computers on Thursday.",
+      "The technicians will configure the new laptops on Thursday.",
+      "Technicians will set up the new computers on Thursday."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "IT 词：database、compatible、user-friendly、specification、cutting-edge、configure、automate、upgrade、bandwidth、wireless、tutorial、prototype。",
+      "<b>重点</b>：句子插入三线索 —— 指代词（This / These）、连接词、关键词重复或换说法。",
+      "<b>重点</b>：排除法 —— 删话题无关、指代不对、时间矛盾的选项，再看谁和后一句接得上。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.6.5",
+   "title": "Part 6 实战",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "一篇完整的 Part 6",
+     "lines": [
+      [
+       "",
+       "Dear Ms. Grant, thank you for renting an office at Lakeview Tower for the past two years.",
+       "格兰特女士：感谢您过去两年在湖景大厦租用办公室。"
+      ],
+      [
+       "",
+       "Your current lease ___ on August 31. (A) expired (B) will expire (C) has expired (D) expiring",
+       "您目前的租约将于 8 月 31 日___。"
+      ],
+      [
+       "",
+       "If you wish to renew it, please sign the enclosed form. ___, we will assume you plan to move out. (A) Otherwise (B) Therefore (C) In addition (D) For example",
+       "如果您想续租，请签署随附表格。___，我们将视为您计划搬走。"
+      ],
+      [
+       "",
+       "Answers: (B) will expire, because the letter is sent before August; (A) Otherwise, which means \"if you don't sign\".",
+       "答案：B（信寄出时还没到 8 月）；A（否则 = 如果不签）。"
+      ]
+     ],
+     "note": "Part 6 一篇 4 题：通常 1 题连接词、1 题时态或代词、1 题词汇、1 题句子插入。这一课把它们放进一篇合同类的信里练。"
+    },
+    {
+     "t": "word",
+     "w": "lease"
+    },
+    {
+     "t": "word",
+     "w": "terms"
+    },
+    {
+     "t": "word",
+     "w": "renew"
+    },
+    {
+     "t": "word",
+     "w": "clause"
+    },
+    {
+     "t": "word",
+     "w": "liability"
+    },
+    {
+     "t": "word",
+     "w": "obligation"
+    },
+    {
+     "t": "key",
+     "title": "Part 6 的做题顺序",
+     "what": [
+      "① 从头往下读，<b>读到空格就做</b>：语法题（时态、代词、词性）大多看前后一两句就能做。",
+      "② 遇到<b>句子插入题</b>，先跳过，把全文读完再回来 —— 它最需要上下文。",
+      "③ <b>词汇题</b>（四个意思不同的词）：先看搭配，再看上下文；两个都通顺时，看文章的整体意思（续租的信里选 renew，不选 terminate）。",
+      "时间：一篇控制在 <b>2 分钟</b>左右，四篇约 8 分钟，把时间留给 Part 7。"
+     ],
+     "why": [
+      "Part 6 是 Part 5（语法词汇）和 Part 7（阅读）的结合，所以既要 Part 5 的速度，也要 Part 7 的“看上下文”。"
+     ],
+     "zh": [
+      "中国考生容易在 Part 6 逐句翻译，速度太慢。要把它当“带上下文的 Part 5”来做。"
+     ],
+     "ex": [
+      [
+       "Your lease will expire on August 31. If you wish to renew it, please sign the enclosed form.",
+       "您的租约将于 8 月 31 日到期。如果您想续租，请签署随附表格。"
+      ],
+      [
+       "In accordance with the terms of the lease, rent must be paid by the fifth of each month.",
+       "根据租约条款，房租须在每月 5 日前支付。"
+      ]
+     ],
+     "err": [
+      [
+       "先把四篇的句子插入题都做完，再回头做语法题。",
+       "Answer the grammar questions as you read, and do the sentence insertion question last.",
+       "语法题读到就做，句子插入题最后做"
+      ]
+     ],
+     "sum": "<b>读到空格就做</b>语法题 → <b>句子插入留到最后</b> → 词汇题看<b>全文意思</b>；一篇约 2 分钟。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Part 6 一篇的四道题里，最应该放到最后做的是：",
+       "o": [
+        "时态题",
+        "词性题",
+        "代词题",
+        "句子插入题"
+       ],
+       "a": 3
+      },
+      {
+       "t": "c",
+       "q": "This letter is to confirm that your lease has been ___ for another year. Your new contract starts on September 1.",
+       "o": [
+        "rejected",
+        "terminated",
+        "renewed",
+        "expired"
+       ],
+       "a": 2,
+       "e": "后一句说新合同开始 → 续租 renewed。"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "authorize"
+    },
+    {
+     "t": "word",
+     "w": "be eligible for"
+    },
+    {
+     "t": "word",
+     "w": "be entitled to"
+    },
+    {
+     "t": "word",
+     "w": "in accordance with"
+    },
+    {
+     "t": "word",
+     "w": "regardless of"
+    },
+    {
+     "t": "word",
+     "w": "with regard to"
+    },
+    {
+     "t": "key",
+     "title": "合同和规定里的固定说法",
+     "what": [
+      "<b>be eligible for</b> + 名词 / <b>be eligible to</b> do：有资格（申请、享受）",
+      "<b>be entitled to</b> + 名词：有权享有（a refund, two weeks of vacation）",
+      "<b>in accordance with</b>（按照、依据）· <b>regardless of</b>（不管、不论）· <b>with regard to</b>（关于）",
+      "<b>be responsible for / be liable for</b>：负责、负有（法律）责任"
+     ],
+     "why": [
+      "这些短语在 Part 5、6、7 都高频，而且常考介词：eligible <b>for</b>、entitled <b>to</b>、in accordance <b>with</b>、regardless <b>of</b>。"
+     ],
+     "zh": [
+      "中文“有资格”“有权”“按照”“不论”后面直接接名词；英语每个都带固定介词，一个都不能错。"
+     ],
+     "ex": [
+      [
+       "Full-time employees are eligible for health insurance.",
+       "全职员工有资格享受医疗保险。"
+      ],
+      [
+       "Customers are entitled to a full refund within 30 days.",
+       "顾客 30 天内有权获得全额退款。"
+      ],
+      [
+       "All visitors must sign in, regardless of the purpose of their visit.",
+       "无论来访目的为何，所有访客都必须登记。"
+      ]
+     ],
+     "err": [
+      [
+       "Part-time staff are eligible to the bonus.",
+       "Part-time staff are eligible for the bonus.",
+       "eligible for + 名词"
+      ],
+      [
+       "In accordance to the contract, we will pay within 30 days.",
+       "In accordance with the contract, we will pay within 30 days.",
+       "in accordance with"
+      ]
+     ],
+     "sum": "<b>eligible for · entitled to · in accordance with · regardless of · with regard to</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Employees who have worked here for a year are ___ for a promotion.",
+       "o": [
+        "eligible",
+        "responsible",
+        "entitled",
+        "regardless"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Tenants are ___ to one parking space each.",
+       "o": [
+        "liable",
+        "entitled",
+        "eligible",
+        "authorized"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "The building will be inspected in accordance ___ city regulations.",
+       "a": [
+        "with"
+       ]
+      },
+      {
+       "t": "c",
+       "q": "I am writing ___ regard to your recent inquiry.",
+       "o": [
+        "with",
+        "for",
+        "on",
+        "at"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "In accordance with the terms of the lease, rent must be paid by the fifth of each month.",
+     "zh": "根据租约条款，房租须在每月 5 日前支付。",
+     "focus": "accordance 重音在 cor；lease /liːs/ 是清音 s"
+    },
+    {
+     "t": "c",
+     "q": "Please read the ___ and conditions carefully before signing.",
+     "o": [
+      "clauses",
+      "terms",
+      "liabilities",
+      "leases"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "A ___ in the contract says that the rent may increase each year.",
+     "o": [
+      "renewal",
+      "clause",
+      "liability",
+      "lease"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Only the manager can ___ payments over $5,000.",
+     "o": [
+      "authorize",
+      "obligate",
+      "lease",
+      "renew"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The company accepts no ___ for items left in the lockers.",
+     "o": [
+      "liability",
+      "clause",
+      "obligation",
+      "term"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "You are under no ___ to buy anything at the event.",
+     "o": [
+      "clause",
+      "liability",
+      "obligation",
+      "lease"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The fee is the same ___ of the size of the room.",
+     "o": [
+      "with regard",
+      "in accordance",
+      "regardless",
+      "eligible"
+     ],
+     "a": 2
+    },
+    {
+     "t": "o",
+     "a": "Your current lease will expire on August 31.",
+     "zh": "您目前的租约将于 8 月 31 日到期。"
+    },
+    {
+     "t": "dict",
+     "a": "Customers are entitled to a full refund within thirty days."
+    },
+    {
+     "t": "tr",
+     "zh": "如果您想续租，请签署随附的表格。",
+     "a": [
+      "If you wish to renew your lease, please sign the enclosed form.",
+      "If you want to renew the lease, please sign the enclosed form.",
+      "If you would like to renew your lease, please sign the attached form."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "合同词：lease、terms、renew、clause、liability、obligation、authorize、be eligible for、be entitled to、in accordance with、regardless of、with regard to。",
+      "<b>重点</b>：Part 6 做题顺序 —— 读到空格就做语法题，句子插入留到最后，词汇题看全文意思。",
+      "<b>重点</b>：eligible for / entitled to / in accordance with / regardless of / with regard to。",
+      "单元总结：连接副词看关系 → 代词往前找 → 时态看全文时间线 → 句子插入看承上启下。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.6.6",
+   "title": "单元阅读：Memo: New Expense System",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Memo: New Expense System",
+     "note": "Part 6 式的公司备忘录：读的时候圈出连接副词（However / In addition / As a result）和代词（it / they / this），想一想它们各连着哪一句。",
+     "lines": [
+      [
+       "To: All Staff",
+       "收件人：全体员工"
+      ],
+      [
+       "From: Paul Meyer, Finance Department",
+       "发件人：财务部保罗·迈耶"
+      ],
+      [
+       "Subject: New expense system",
+       "主题：新的报销系统"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Following the merger with Delta Logistics last spring, our two companies have been using different accounting software.",
+       "自去年春天与达美物流合并以来，我们两家公司一直在使用不同的会计软件。"
+      ],
+      [
+       "This has made it difficult to track transactions across departments.",
+       "这使得跨部门追踪交易变得困难。"
+      ],
+      [
+       "As a result, the board of directors has approved a new online expense system.",
+       "因此，董事会批准了一个新的在线报销系统。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "The system will be launched on October 1. It is user-friendly and compatible with all company laptops.",
+       "该系统将于 10 月 1 日上线。它易于使用，并与公司所有笔记本电脑兼容。"
+      ],
+      [
+       "In addition, receipts can be uploaded with a phone camera, so paper copies will no longer be required.",
+       "此外，收据可以用手机拍照上传，因此不再需要纸质副本。"
+      ],
+      [
+       "Staff who submit their reports through the system will be reimbursed within five days.",
+       "通过系统提交报告的员工将在五天内获得报销。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "A short video tutorial is available on the company website. Please watch it before October 1.",
+       "公司网站上有一段简短的视频教程，请在 10 月 1 日前观看。"
+      ],
+      [
+       "However, reports for September should still be submitted on the old forms.",
+       "不过，九月份的报告仍应使用旧表格提交。"
+      ],
+      [
+       "Questions with regard to the new system can be sent to the finance team.",
+       "关于新系统的问题可以发给财务团队。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Why is the company introducing a new system?",
+     "o": [
+      "Employees asked for faster payment.",
+      "The two merged companies use different software.",
+      "The old system was too expensive."
+     ],
+     "a": 1,
+     "e": "This has made it difficult… As a result… —— This 指前一句“用不同软件”。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "In paragraph 1, the word \"This\" refers to",
+     "o": [
+      "the use of different accounting software",
+      "the board of directors",
+      "the merger agreement"
+     ],
+     "a": 0,
+     "e": "代词题：往前找它概括的那件事。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is NOT mentioned as a feature of the new system?",
+     "o": [
+      "It lets staff pay invoices automatically.",
+      "Receipts can be uploaded with a phone.",
+      "It works on all company laptops."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What are staff asked to do before October 1?",
+     "o": [
+      "Watch a video",
+      "Submit their September reports online",
+      "Buy a new phone"
+     ],
+     "a": 0,
+     "e": "Please watch it before October 1. —— it = the video tutorial。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Which sentence could best be added after \"Staff who submit their reports through the system will be reimbursed within five days\"?",
+     "o": [
+      "This is ten days faster than the current process.",
+      "Our cafeteria will open at noon.",
+      "The merger took place in Chicago."
+     ],
+     "a": 0,
+     "e": "句子插入：接着讲“报销快”，This 承上。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "此外，不再需要纸质副本。",
+     "a": [
+      "In addition, paper copies will no longer be required.",
+      "In addition, paper copies are no longer required.",
+      "Moreover, paper copies will no longer be needed."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "本单元重点都在文中：As a result / In addition / However（连接副词）、This / It（指代）、will be launched / has been approved（时态与被动）。",
+      "句子插入：选项开头的 This 要能指前一句的事。",
+      "词：merger、transaction、board of directors、user-friendly、compatible、reimburse、tutorial、with regard to。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "The invoice was due on May 1. ___, we have not yet received payment.",
+    "o": [
+     "Therefore",
+     "For example",
+     "In addition",
+     "However"
+    ],
+    "a": 3
+   },
+   {
+    "t": "c",
+    "q": "Our prices are lower than our competitors'. ___, we offer free delivery.",
+    "o": [
+     "Otherwise",
+     "However",
+     "In addition",
+     "Instead"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Please send your receipts by Friday. ___, your reimbursement may be delayed.",
+    "o": [
+     "Meanwhile",
+     "Otherwise",
+     "As a result",
+     "Moreover"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Greenfield Corporation has announced ___ plans to open five new stores.",
+    "o": [
+     "it",
+     "their",
+     "them",
+     "its"
+    ],
+    "a": 3
+   },
+   {
+    "t": "c",
+    "q": "Members get free parking and a 10% discount. ___ are available at all locations.",
+    "o": [
+     "These benefits",
+     "Its offer",
+     "That store",
+     "This benefit"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Thank you for attending last week's workshop. Your feedback ___ very helpful.",
+    "o": [
+     "was",
+     "is being",
+     "will be",
+     "will have been"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "The new security system ___ at the moment, so the side door is locked.",
+    "o": [
+     "is installing",
+     "has installed",
+     "is being installed",
+     "installs"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Full-time staff are ___ to fifteen days of paid vacation.",
+    "o": [
+     "entitled",
+     "liable",
+     "eligible",
+     "responsible"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "We are moving our customer records to a new database next week. ___ —— Which sentence fits?",
+    "o": [
+     "The cafeteria will be closed.",
+     "Our database was moved last year.",
+     "This will make it easier to find your order history.",
+     "These employees will retire soon."
+    ],
+    "a": 2
+   },
+   {
+    "t": "tr",
+    "zh": "根据合同，我们将在 30 天内付款。",
+    "a": [
+     "In accordance with the contract, we will pay within 30 days.",
+     "In accordance with the contract, we will make payment within 30 days."
+    ]
+   }
+  ]
+ }
+}

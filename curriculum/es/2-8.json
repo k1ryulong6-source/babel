@@ -1,0 +1,2005 @@
+{
+ "id": "es.2.8",
+ "title": "A2 综合",
+ "goal": "完成时与过去时、llevar + 副动词、表达观点、写邮件（正式 / 非正式）、por 与 para、计划与条件句、五个时态总复习",
+ "lessons": [
+  {
+   "id": "es.2.8.1",
+   "title": "找工作：经历与时长",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "La entrevista",
+     "lines": [
+      [
+       "Entrevistadora",
+       "Buenos días. Cuénteme un poco sobre su experiencia.",
+       "早上好。请简单说说您的经历。"
+      ],
+      [
+       "Wei",
+       "Estudié Turismo en Shanghái y en 2022 hice prácticas en un hotel de Valencia.",
+       "我在上海读的旅游专业，2022 年在瓦伦西亚的一家酒店实习。"
+      ],
+      [
+       "Entrevistadora",
+       "¿Y ha trabajado alguna vez de recepcionista?",
+       "您做过前台吗？"
+      ],
+      [
+       "Wei",
+       "Sí, he trabajado en dos hoteles. Actualmente llevo un año trabajando en un hostal del centro.",
+       "做过，在两家酒店做过。目前我在市中心一家旅馆工作一年了。"
+      ],
+      [
+       "Entrevistadora",
+       "¿Por qué ha solicitado este puesto?",
+       "您为什么申请这个职位？"
+      ],
+      [
+       "Wei",
+       "Porque me interesa trabajar en una empresa grande y quiero un contrato de jornada completa.",
+       "因为我想在大公司工作，也想要一份全职合同。"
+      ]
+     ],
+     "note": "estudié / hice prácticas en 2022（有具体时间）vs he trabajado（经历）vs llevo un año trabajando（持续到现在）—— 面试时三种说法都要用。"
+    },
+    {
+     "t": "word",
+     "w": "currículum"
+    },
+    {
+     "t": "word",
+     "w": "entrevista"
+    },
+    {
+     "t": "word",
+     "w": "experiencia"
+    },
+    {
+     "t": "word",
+     "w": "puesto"
+    },
+    {
+     "t": "word",
+     "w": "empresa"
+    },
+    {
+     "t": "word",
+     "w": "sueldo"
+    },
+    {
+     "t": "key",
+     "title": "现在完成时还是简单过去时：看有没有“结束的时间”",
+     "what": [
+      "<b>简单过去时</b>：有<b>具体的过去时间</b>（en 2022, el año pasado, ayer, hace dos años）—— Hice prácticas en 2022.",
+      "<b>现在完成时</b>：<b>经历</b>、没说什么时候；或时间段<b>还没结束</b>（hoy, este año, esta semana, alguna vez, nunca）—— He trabajado en dos hoteles. / Este año he solicitado tres puestos.",
+      "在西班牙，这条规则很严格；在拉美，很多人日常也用简单过去时代替完成时。"
+     ],
+     "why": [
+      "简历和面试里两者交替出现：先用完成时概括（He trabajado en…），再用过去时讲细节（En 2022 trabajé en…）。"
+     ],
+     "zh": [
+      "中文“我做过”“我做了”都可能对应两者。判断标准只看时间：说了具体过去时间 → 过去时；没说或时间没结束 → 完成时。"
+     ],
+     "ex": [
+      [
+       "He vivido en tres países.",
+       "我在三个国家生活过。"
+      ],
+      [
+       "Viví en Japón de 2018 a 2020.",
+       "2018 到 2020 年我住在日本。"
+      ],
+      [
+       "Esta semana he tenido dos entrevistas.",
+       "这周我面试了两次。"
+      ]
+     ],
+     "err": [
+      [
+       "He hecho prácticas en 2022.",
+       "Hice prácticas en 2022.",
+       "具体过去时间 → 简单过去时"
+      ],
+      [
+       "Este año solicité tres puestos.（在西班牙）",
+       "Este año he solicitado tres puestos.",
+       "este año 还没结束 → 完成时"
+      ]
+     ],
+     "sum": "<b>en 2022 / ayer / hace…</b> → 简单过去时；<b>经历、alguna vez、este año、hoy</b> → 现在完成时。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "En 2021 ___ en una empresa de software.",
+       "o": [
+        "he trabajado",
+        "trabajé",
+        "trabajaba siempre"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "¿___ alguna vez en un restaurante?",
+       "o": [
+        "Has trabajado",
+        "Trabajaste ayer",
+        "Trabajarás"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Esta mañana ___ mi currículum a tres empresas.",
+       "o": [
+        "envié el año pasado",
+        "enviaba",
+        "he enviado"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "我在三个国家生活过。",
+       "a": [
+        "He vivido en tres países.",
+        "He vivido en tres países diferentes."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "contrato"
+    },
+    {
+     "t": "word",
+     "w": "jornada"
+    },
+    {
+     "t": "word",
+     "w": "prácticas"
+    },
+    {
+     "t": "word",
+     "w": "solicitar"
+    },
+    {
+     "t": "word",
+     "w": "contratar"
+    },
+    {
+     "t": "word",
+     "w": "despedir"
+    },
+    {
+     "t": "key",
+     "title": "llevar + 时间 + 副动词：做某事已经多久了",
+     "what": [
+      "<b>llevar</b>（现在时）+ <b>时间</b> + <b>副动词</b>：Llevo un año trabajando aquí.（我在这儿工作一年了）",
+      "否定：<b>llevar + 时间 + sin + 原形</b>：Llevo dos semanas sin fumar.",
+      "问：<b>¿Cuánto tiempo llevas…?</b>：¿Cuánto tiempo llevas estudiando español?",
+      "和上一单元的 <b>desde hace / hace … que</b> 意思一样：Trabajo aquí desde hace un año."
+     ],
+     "why": [
+      "llevar 句非常口语、非常地道，面试、自我介绍里常用。它强调“到现在已经持续了这么久”。"
+     ],
+     "zh": [
+      "中文“我学西语两年了”，西语最自然的说法是 Llevo dos años estudiando español。"
+     ],
+     "ex": [
+      [
+       "Llevo dos años estudiando español.",
+       "我学西语两年了。"
+      ],
+      [
+       "¿Cuánto tiempo llevas buscando trabajo?",
+       "你找工作多久了？"
+      ],
+      [
+       "Llevamos un mes sin vernos.",
+       "我们一个月没见了。"
+      ]
+     ],
+     "err": [
+      [
+       "Llevo dos años estudio español.",
+       "Llevo dos años estudiando español.",
+       "llevar 后面用副动词"
+      ],
+      [
+       "Llevé un año trabajando aquí.（现在还在）",
+       "Llevo un año trabajando aquí.",
+       "持续到现在用现在时 llevo"
+      ]
+     ],
+     "sum": "<b>llevo + 时间 + -ando / -iendo</b>（做……多久了）；<b>llevo + 时间 + sin + 原形</b>（多久没……）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ tres meses buscando trabajo.",
+       "o": [
+        "Desde",
+        "Hace",
+        "Llevo"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Lleva una semana ___ con su novia.",
+       "o": [
+        "no hablar",
+        "sin hablando",
+        "sin hablar"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "¿Cuánto tiempo llevas ___ (vivir) en Madrid?",
+       "a": [
+        "viviendo"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我学西语两年了。",
+       "a": [
+        "Llevo dos años estudiando español.",
+        "Estudio español desde hace dos años.",
+        "Hace dos años que estudio español."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Actualmente llevo un año trabajando en un hostal del centro.",
+     "zh": "我目前在市中心一家旅馆工作一年了。",
+     "focus": "llevo un año 连读"
+    },
+    {
+     "t": "c",
+     "q": "Envíe su ___ y una carta de presentación.",
+     "o": [
+      "currículum",
+      "contrato",
+      "sueldo"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "El ___ es de 1.500 euros al mes.",
+     "o": [
+      "currículum",
+      "puesto",
+      "sueldo"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Busco un trabajo de media ___ para poder estudiar.",
+     "o": [
+      "empresa",
+      "entrevista",
+      "jornada"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "La empresa va a ___ a cinco personas nuevas.",
+     "o": [
+      "contratar",
+      "despedir",
+      "solicitar"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "Hice ___ en un hotel durante el verano. (实习)",
+     "a": [
+      "prácticas"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "He ___ (solicitar) el puesto de recepcionista.",
+     "a": [
+      "solicitado"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Tengo una ___ de trabajo mañana a las diez.",
+     "o": [
+      "empresa",
+      "entrevista",
+      "jornada"
+     ],
+     "a": 1
+    },
+    {
+     "t": "o",
+     "a": "Llevo un año trabajando en un hostal",
+     "p": [
+      "Llevo",
+      "un año",
+      "trabajando",
+      "en un hostal"
+     ],
+     "zh": "我在一家旅馆工作一年了。"
+    },
+    {
+     "t": "dict",
+     "a": "Estudié Turismo y en 2022 hice prácticas en un hotel."
+    },
+    {
+     "t": "tr",
+     "zh": "您有销售经验吗？",
+     "a": [
+      "¿Tiene experiencia en ventas?",
+      "¿Usted tiene experiencia en ventas?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "求职词：currículum、entrevista、experiencia、puesto、empresa、sueldo、contrato、jornada、prácticas、solicitar、contratar、despedir。",
+      "<b>重点</b>：具体过去时间 → 简单过去时；经历、时间没结束 → 现在完成时。",
+      "<b>重点</b>：llevo + 时间 + 副动词（做……多久了）/ + sin + 原形（多久没……）。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.8.2",
+   "title": "表达观点",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "¿Ciudad o campo?",
+     "lines": [
+      [
+       "Marta",
+       "¿Tú qué piensas? ¿Es mejor vivir en la ciudad o en el campo?",
+       "你怎么想？住城市好还是住乡下好？"
+      ],
+      [
+       "Pedro",
+       "Depende. Por un lado, en la ciudad hay más trabajo y más cosas que hacer.",
+       "看情况。一方面，城市里工作多，能做的事也多。"
+      ],
+      [
+       "Pedro",
+       "Por otro lado, la vida es más cara y hay mucho ruido.",
+       "另一方面，生活更贵，也很吵。"
+      ],
+      [
+       "Marta",
+       "Tienes razón. Sin embargo, me parece que en el campo te aburres pronto.",
+       "你说得对。不过我觉得在乡下很快就会无聊。"
+      ],
+      [
+       "Pedro",
+       "No estoy de acuerdo. La verdad es que yo me aburro más en la ciudad.",
+       "我不同意。说实话，我在城市里更无聊。"
+      ],
+      [
+       "Marta",
+       "Bueno, en mi opinión, lo ideal es vivir cerca de una ciudad pequeña.",
+       "嗯，在我看来，最理想的是住在小城市附近。"
+      ]
+     ],
+     "note": "pienso que、me parece que、en mi opinión（给看法）+ estoy de acuerdo、tienes razón（回应）+ por un lado… por otro lado、sin embargo（组织论点）—— DELE A2 口语和写作的核心。"
+    },
+    {
+     "t": "word",
+     "w": "opinión"
+    },
+    {
+     "t": "word",
+     "w": "en mi opinión"
+    },
+    {
+     "t": "word",
+     "w": "estar de acuerdo"
+    },
+    {
+     "t": "word",
+     "w": "tener razón"
+    },
+    {
+     "t": "word",
+     "w": "ventaja"
+    },
+    {
+     "t": "word",
+     "w": "desventaja"
+    },
+    {
+     "t": "key",
+     "title": "给看法和回应",
+     "what": [
+      "给看法：<b>Creo que / Pienso que / Me parece que</b> + 句子 · <b>En mi opinión,</b> + 句子 · <b>Para mí,</b> + 句子",
+      "问看法：<b>¿Tú qué piensas? / ¿Qué opinas de…? / ¿Qué te parece…?</b>",
+      "同意：<b>Estoy de acuerdo (contigo). / Tienes razón. / Claro. / Yo también lo creo.</b>",
+      "不同意：<b>No estoy de acuerdo. / No tienes razón. / Yo no lo veo así.</b>；没把握：<b>Depende. / No sé, la verdad.</b>"
+     ],
+     "why": [
+      "否定看法最简单的说法是 <b>Creo que no</b>（我觉得不是）。No creo que… 后面要用虚拟式，以后学。",
+      "estar de acuerdo 是 estar，不是 ser：<b>Estoy</b> de acuerdo."
+     ],
+     "zh": [
+      "中文“我同意”“你说得对”在西语里是 estoy de acuerdo（用 estar）和 tienes razón（用 tener），中国学生常说 *Soy de acuerdo、*Eres razón。"
+     ],
+     "ex": [
+      [
+       "¿Qué te parece la idea? —Me parece muy buena.",
+       "你觉得这个主意怎么样？——我觉得很好。"
+      ],
+      [
+       "Estoy de acuerdo contigo en eso.",
+       "在这一点上我同意你。"
+      ],
+      [
+       "Yo no lo veo así. Creo que es demasiado caro.",
+       "我不这么看，我觉得太贵了。"
+      ]
+     ],
+     "err": [
+      [
+       "Soy de acuerdo.",
+       "Estoy de acuerdo.",
+       "estar de acuerdo"
+      ],
+      [
+       "Eres razón.",
+       "Tienes razón.",
+       "tener razón"
+      ]
+     ],
+     "sum": "看法：<b>creo que / me parece que / en mi opinión</b>；同意：<b>estoy de acuerdo / tienes razón</b>；不同意：<b>no estoy de acuerdo / yo no lo veo así</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Tienes ___ : el piso es demasiado pequeño.",
+       "o": [
+        "opinión",
+        "acuerdo",
+        "razón"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "No ___ de acuerdo contigo.",
+       "o": [
+        "tengo",
+        "soy",
+        "estoy"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "¿Qué te ___ la nueva profesora? —Muy simpática.",
+       "o": [
+        "parece",
+        "crees",
+        "piensas"
+       ],
+       "a": 0
+      },
+      {
+       "t": "tr",
+       "zh": "在我看来，这是个好主意。",
+       "a": [
+        "En mi opinión, es una buena idea.",
+        "Creo que es una buena idea.",
+        "Me parece que es una buena idea."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "por un lado"
+    },
+    {
+     "t": "word",
+     "w": "por otro lado"
+    },
+    {
+     "t": "word",
+     "w": "sin embargo"
+    },
+    {
+     "t": "word",
+     "w": "depende"
+    },
+    {
+     "t": "word",
+     "w": "la verdad es que"
+    },
+    {
+     "t": "word",
+     "w": "me parece que"
+    },
+    {
+     "t": "key",
+     "title": "组织论点：por un lado… por otro lado, sin embargo, además, por eso",
+     "what": [
+      "两面：<b>Por un lado</b>…, <b>por otro (lado)</b>…",
+      "转折：<b>sin embargo</b>（然而）· <b>pero</b> · <b>aunque</b>（虽然）",
+      "补充：<b>además</b>（而且）· <b>también</b>",
+      "结果：<b>por eso</b>（所以）· <b>así que</b>（于是）"
+     ],
+     "why": [
+      "写优缺点、比较两个选择时，用 por un lado / por otro lado 搭框架，再用 sin embargo / además 连接，文章立刻有结构。"
+     ],
+     "zh": [
+      "中文“一方面……另一方面……”“然而”“而且”“所以”和西语一一对应，写作时直接套用。"
+     ],
+     "ex": [
+      [
+       "Por un lado, el campo es tranquilo; por otro, hay pocos trabajos.",
+       "一方面乡下安静，另一方面工作少。"
+      ],
+      [
+       "Es caro; sin embargo, la calidad es muy buena.",
+       "贵，然而质量很好。"
+      ],
+      [
+       "Vivo lejos; por eso me levanto a las seis.",
+       "我住得远，所以六点起床。"
+      ]
+     ],
+     "err": [
+      [
+       "Por un lado es barato, por la otra mano es lejos.",
+       "Por un lado es barato; por otro, está lejos.",
+       "por otro (lado)；位置用 estar"
+      ]
+     ],
+     "sum": "<b>por un lado / por otro lado</b>（两面）· <b>sin embargo</b>（然而）· <b>además</b>（而且）· <b>por eso</b>（所以）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "El hotel es bonito. ___, está muy lejos del centro.",
+       "o": [
+        "Sin embargo",
+        "Por eso",
+        "Además"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "El piso es barato y, ___, tiene terraza.",
+       "o": [
+        "sin embargo",
+        "por otro lado",
+        "además"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Llovía mucho; ___ nos quedamos en casa.",
+       "o": [
+        "por un lado",
+        "sin embargo",
+        "por eso"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Por un lado, en la ciudad hay más trabajo. Por otro lado, la vida es más cara.",
+     "zh": "一方面城市工作多，另一方面生活更贵。",
+     "focus": "por un lado / por otro lado 后稍停"
+    },
+    {
+     "t": "c",
+     "q": "La principal ___ de vivir en el centro es el ruido.",
+     "o": [
+      "desventaja",
+      "ventaja",
+      "opinión"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "¿Prefieres playa o montaña? —___ del tiempo.",
+     "o": [
+      "Depende",
+      "Me parece",
+      "Tengo razón"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "___ es que no me gusta mucho esta ciudad.",
+     "o": [
+      "Por un lado",
+      "La verdad",
+      "Sin embargo"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Trabajar desde casa tiene muchas ___ : no pierdes tiempo en el metro.",
+     "o": [
+      "opiniones",
+      "desventajas",
+      "ventajas"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Estoy de ___ contigo.",
+     "a": [
+      "acuerdo"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "En mi ___, deberíamos ir en tren.",
+     "a": [
+      "opinión"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Me ___ que va a llover; coge el paraguas.",
+     "o": [
+      "parece",
+      "pienso",
+      "creo"
+     ],
+     "a": 0
+    },
+    {
+     "t": "o",
+     "a": "Por un lado, en la ciudad hay más trabajo",
+     "p": [
+      "Por un lado,",
+      "en la ciudad",
+      "hay",
+      "más trabajo"
+     ],
+     "zh": "一方面，城市里工作更多。"
+    },
+    {
+     "t": "dict",
+     "a": "Tienes razón. Sin embargo, me parece que en el campo te aburres pronto."
+    },
+    {
+     "t": "tr",
+     "zh": "我不同意。说实话，我更喜欢乡下。",
+     "a": [
+      "No estoy de acuerdo. La verdad es que prefiero el campo.",
+      "No estoy de acuerdo. La verdad es que me gusta más el campo."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "观点词：opinión、en mi opinión、estar de acuerdo、tener razón、ventaja、desventaja、por un lado、por otro lado、sin embargo、depende、la verdad es que、me parece que。",
+      "<b>重点</b>：给看法 creo que / me parece que；同意 estoy de acuerdo / tienes razón（estar、tener）。",
+      "<b>重点</b>：组织论点 por un lado… por otro lado、sin embargo、además、por eso。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.8.3",
+   "title": "写邮件",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Dos correos",
+     "lines": [
+      [
+       "",
+       "Asunto: Solicitud de información sobre el curso de verano",
+       "主题：咨询暑期课程信息"
+      ],
+      [
+       "",
+       "Estimada señora Gómez: Le escribo para solicitar información sobre el curso de español de julio.",
+       "尊敬的戈麦斯女士：特此写信咨询七月西班牙语课程的信息。"
+      ],
+      [
+       "",
+       "¿Podría decirme cuál es el plazo para enviar el formulario? Le adjunto mi currículum. Atentamente, Li Na",
+       "能否告诉我提交表格的截止日期？随信附上我的简历。此致，李娜"
+      ],
+      [
+       "",
+       "Asunto: ¡Ya estoy en Salamanca!",
+       "主题：我已经到萨拉曼卡了！"
+      ],
+      [
+       "",
+       "Querida Lucía: ¿Qué tal? Te escribo para contarte que ya estoy aquí. La ciudad es preciosa. Un abrazo, Li Na",
+       "亲爱的露西娅：你好吗？写信告诉你我已经到这儿了。城市美极了。拥抱你，李娜"
+      ]
+     ],
+     "note": "正式邮件和非正式邮件的开头、结尾、语气完全不同。DELE A2 写作第一题通常就是写一封邮件。"
+    },
+    {
+     "t": "word",
+     "w": "correo electrónico"
+    },
+    {
+     "t": "word",
+     "w": "asunto"
+    },
+    {
+     "t": "word",
+     "w": "archivo adjunto"
+    },
+    {
+     "t": "word",
+     "w": "estimado"
+    },
+    {
+     "t": "word",
+     "w": "atentamente"
+    },
+    {
+     "t": "word",
+     "w": "un saludo"
+    },
+    {
+     "t": "key",
+     "title": "正式邮件 vs 非正式邮件",
+     "what": [
+      "<b>正式</b>（对机构、陌生人，用 usted）：开头 <b>Estimado/a señor/a + 姓:</b>（注意是冒号）→ <b>Le escribo para…</b> → 请求 <b>¿Podría…? / Le agradecería…</b> → 结尾 <b>Atentamente,</b> / <b>Un cordial saludo,</b>",
+      "<b>非正式</b>（对朋友，用 tú）：开头 <b>Querido/a + 名字:</b> / <b>Hola, …:</b> → <b>¿Qué tal? Te escribo para…</b> → 结尾 <b>Un abrazo, / Un beso, / Un saludo,</b>",
+      "称呼后面用<b>冒号</b>，不用逗号：Estimada señora Gómez:"
+     ],
+     "why": [
+      "正式邮件里全程用 usted（le, su, podría），不能中途换成 tú。写完检查一遍代词和动词。"
+     ],
+     "zh": [
+      "中文邮件“您好”通用；西语正式用 Estimado/a，朋友用 Querido/a，用错会显得很奇怪（给公司写 Querido señor）。"
+     ],
+     "ex": [
+      [
+       "Estimados señores: Les escribo para reclamar por un pedido.",
+       "敬启者：特此写信就一份订单进行投诉。"
+      ],
+      [
+       "Le agradecería una respuesta lo antes posible.",
+       "如能尽快回复，将不胜感激。"
+      ],
+      [
+       "Querido Marcos: ¡Cuánto tiempo! Te escribo para invitarte a mi boda.",
+       "亲爱的马科斯：好久不见！写信是想邀请你参加我的婚礼。"
+      ]
+     ],
+     "err": [
+      [
+       "Querido señor director:",
+       "Estimado señor director:",
+       "正式信用 Estimado"
+      ],
+      [
+       "Estimada señora Gómez, te escribo para…",
+       "Estimada señora Gómez: Le escribo para pedir información.",
+       "冒号；正式用 le / usted"
+      ]
+     ],
+     "sum": "正式：<b>Estimado/a…: Le escribo para… Atentamente</b>；非正式：<b>Querido/a…: Te escribo para… Un abrazo</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Escribes a una academia de idiomas. Empiezas con:",
+       "o": [
+        "Querida academia:",
+        "¡Hola, chicos!",
+        "Estimados señores:"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Terminas un correo formal con:",
+       "o": [
+        "¡Hasta luego, guapa!",
+        "Un beso,",
+        "Atentamente,"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "En un correo formal: «___ escribo para pedir información.»",
+       "o": [
+        "Lo",
+        "Te",
+        "Le"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "Le ___ mi currículum en un archivo adjunto. (发送, yo)",
+       "a": [
+        "envío",
+        "mando"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "un abrazo"
+    },
+    {
+     "t": "word",
+     "w": "solicitud"
+    },
+    {
+     "t": "word",
+     "w": "información"
+    },
+    {
+     "t": "word",
+     "w": "rellenar"
+    },
+    {
+     "t": "word",
+     "w": "formulario"
+    },
+    {
+     "t": "word",
+     "w": "plazo"
+    },
+    {
+     "t": "key",
+     "title": "por 还是 para",
+     "what": [
+      "<b>para</b>：目的（para + 原形：Le escribo <b>para</b> pedir…）· 对象（Es <b>para</b> ti）· 期限（<b>para</b> el lunes）· 去向（Salgo <b>para</b> Madrid）",
+      "<b>por</b>：原因（Gracias <b>por</b> tu correo）· 方式（<b>por</b> correo / <b>por</b> teléfono / <b>por</b> internet）· 经过（paseo <b>por</b> el parque）· 时段（<b>por</b> la mañana）· 价格交换（<b>por</b> 20 euros）",
+      "固定：<b>gracias por · por favor · por eso · por ejemplo · por fin · para mí（我认为）</b>"
+     ],
+     "why": [
+      "最常用的判断：<b>“为了……”→ para</b>；<b>“因为……”“通过……”→ por</b>。邮件里两个都必用：Gracias <b>por</b> su respuesta. / Le escribo <b>para</b> confirmar…"
+     ],
+     "zh": [
+      "中文“为了”和“因为”分得清，但“为……”有时两者都可能；记住 gracias por（因为……而感谢）。"
+     ],
+     "ex": [
+      [
+       "Gracias por tu correo.",
+       "谢谢你的来信。"
+      ],
+      [
+       "Le envío el formulario por correo electrónico.",
+       "我通过电子邮件把表格发给您。"
+      ],
+      [
+       "Necesito la solicitud para el viernes.",
+       "我周五前需要这份申请。"
+      ]
+     ],
+     "err": [
+      [
+       "Gracias para tu ayuda.",
+       "Gracias por tu ayuda.",
+       "感谢的原因用 por"
+      ],
+      [
+       "Estudio español por trabajar en España.",
+       "Estudio español para trabajar en España.",
+       "目的用 para"
+      ]
+     ],
+     "sum": "<b>para</b> = 为了、给、期限、去向；<b>por</b> = 因为、通过、经过、时段、价格。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Gracias ___ su rápida respuesta.",
+       "o": [
+        "para",
+        "por",
+        "de"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Le escribo ___ confirmar la reserva.",
+       "o": [
+        "por",
+        "para",
+        "a"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Le envío la información ___ correo electrónico.",
+       "o": [
+        "por",
+        "para",
+        "con"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Necesito el informe ___ el lunes.",
+       "o": [
+        "por",
+        "en",
+        "para"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Estimada señora Gómez: le escribo para solicitar información sobre el curso.",
+     "zh": "尊敬的戈麦斯女士：特此写信咨询课程信息。",
+     "focus": "Estimada 后停顿（冒号），语气正式平稳"
+    },
+    {
+     "t": "c",
+     "q": "Puse «Reserva de habitación» en el ___ del correo.",
+     "o": [
+      "plazo",
+      "formulario",
+      "asunto"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Le envío el currículum en un archivo ___.",
+     "o": [
+      "adjunto",
+      "estimado",
+      "asunto"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "El ___ para enviar la solicitud termina el viernes.",
+     "o": [
+      "formulario",
+      "plazo",
+      "asunto"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Por favor, ___ el formulario con letras mayúsculas.",
+     "o": [
+      "rellenar de",
+      "rellena siempre",
+      "rellene"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Me gustaría recibir más ___ sobre el curso.",
+     "a": [
+      "información"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Un ___ muy fuerte, y hasta pronto. (拥抱，信尾)",
+     "a": [
+      "abrazo"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Le escribo para solicitar información",
+     "p": [
+      "Le escribo",
+      "para",
+      "solicitar",
+      "información"
+     ],
+     "zh": "特此写信咨询信息。"
+    },
+    {
+     "t": "dict",
+     "a": "Estimada señora Gómez: le escribo para solicitar información."
+    },
+    {
+     "t": "tr",
+     "zh": "谢谢您的来信。",
+     "a": [
+      "Gracias por su correo.",
+      "Muchas gracias por su correo.",
+      "Gracias por tu correo."
+     ]
+    },
+    {
+     "t": "write",
+     "prompt": "给一所语言学校写一封正式邮件（50–70 词）：说明你想报名八月的课程，询问价格和截止日期，并说明附上了表格。",
+     "hint": "开头 Estimados señores: / 用 usted（les）/ Les escribo para… / ¿Podrían…? / Atentamente",
+     "focus": "正式邮件格式；usted 一致；por / para；Le escribo para + 原形",
+     "model": "Estimados señores: Les escribo para solicitar información sobre el curso de español de agosto. Me gustaría saber cuánto cuesta y cuál es el plazo de inscripción. Les envío el formulario en un archivo adjunto. Les agradecería una respuesta lo antes posible. Atentamente, Wang Lei"
+    },
+    {
+     "t": "sum",
+     "points": [
+      "邮件词：correo electrónico、asunto、archivo adjunto、estimado、atentamente、un saludo、un abrazo、solicitud、información、rellenar、formulario、plazo。",
+      "<b>重点</b>：正式 Estimado/a…: Le escribo para… Atentamente；非正式 Querido/a…: Te escribo para… Un abrazo。",
+      "<b>重点</b>：para = 为了、给、期限；por = 因为、通过、时段（gracias por）。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.8.4",
+   "title": "计划与梦想",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "¿Qué harás dentro de cinco años?",
+     "lines": [
+      [
+       "Profesora",
+       "¿Qué planes tenéis para el futuro?",
+       "你们对未来有什么计划？"
+      ],
+      [
+       "Wei",
+       "Pienso hacer el DELE B1 el año que viene. Si apruebo, solicitaré un máster en Madrid.",
+       "我打算明年考 DELE B1。如果通过了，就申请马德里的硕士。"
+      ],
+      [
+       "Ana",
+       "Yo estoy ahorrando para independizarme. Mi sueño es montar un negocio de café.",
+       "我在存钱准备搬出去自己住。我的梦想是开一家咖啡店。"
+      ],
+      [
+       "Profesora",
+       "¡Qué bien! ¿Y a largo plazo?",
+       "真好！那长远一点呢？"
+      ],
+      [
+       "Wei",
+       "Dentro de cinco años me gustaría trabajar en una empresa española.",
+       "五年后我想在一家西班牙公司工作。"
+      ],
+      [
+       "Ana",
+       "Si tengo la oportunidad, viviré un año en el extranjero. ¡Con esfuerzo, lo lograré!",
+       "如果有机会，我会在国外住一年。努力的话，我会做到的！"
+      ]
+     ],
+     "note": "pienso hacer、estoy ahorrando para、me gustaría、si apruebo, solicitaré —— 说计划、愿望和条件，是 A2 口语考试的常见话题。"
+    },
+    {
+     "t": "word",
+     "w": "sueño"
+    },
+    {
+     "t": "word",
+     "w": "meta"
+    },
+    {
+     "t": "word",
+     "w": "ahorrar"
+    },
+    {
+     "t": "word",
+     "w": "montar un negocio"
+    },
+    {
+     "t": "word",
+     "w": "independizarse"
+    },
+    {
+     "t": "word",
+     "w": "cambiar de trabajo"
+    },
+    {
+     "t": "key",
+     "title": "说计划和愿望的五种方式",
+     "what": [
+      "<b>ir a + 原形</b>：已决定、很快（Voy a cambiar de trabajo.）",
+      "<b>pensar + 原形</b>：打算（Pienso estudiar un máster.）",
+      "<b>querer + 原形</b>：想要（Quiero independizarme.）",
+      "<b>me gustaría + 原形</b>：希望、梦想，比较委婉（Me gustaría vivir en Barcelona.）",
+      "<b>将来时</b>：预测、承诺、较远的将来（Dentro de cinco años hablaré muy bien.）"
+     ],
+     "why": [
+      "A2 口语考试“谈谈你的未来计划”时，换着用这五种，会显得表达丰富。",
+      "<b>dentro de</b> + 时间 = 从现在起……之后（dentro de dos años = 两年后）；<b>hace</b> + 时间 = ……以前。"
+     ],
+     "zh": [
+      "中文“我打算”“我想”“我希望”分别对应 pienso / quiero / me gustaría；pensar 后面直接接原形，不加 de。"
+     ],
+     "ex": [
+      [
+       "Pienso ahorrar para comprar un coche.",
+       "我打算存钱买车。"
+      ],
+      [
+       "Me gustaría montar un negocio algún día.",
+       "我希望有一天能创业。"
+      ],
+      [
+       "Dentro de dos años terminaré la carrera.",
+       "两年后我就毕业了。"
+      ]
+     ],
+     "err": [
+      [
+       "Pienso de estudiar un máster.",
+       "Pienso estudiar un máster.",
+       "pensar + 原形，不加 de"
+      ],
+      [
+       "Hace dos años terminaré la carrera.",
+       "Dentro de dos años terminaré la carrera.",
+       "将来用 dentro de"
+      ]
+     ],
+     "sum": "<b>ir a · pensar · querer · me gustaría + 原形</b>；<b>将来时</b>；<b>dentro de</b> + 时间（……之后）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ cambiar de trabajo el año que viene.",
+       "o": [
+        "Pienso de",
+        "Pensar",
+        "Pienso"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "___ tres años, me gustaría vivir en España.",
+       "o": [
+        "Dentro de",
+        "Hace",
+        "Desde hace"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Mi ___ es tener mi propia empresa.",
+       "o": [
+        "sueño",
+        "plazo",
+        "esfuerzo"
+       ],
+       "a": 0
+      },
+      {
+       "t": "tr",
+       "zh": "我希望有一天能开一家咖啡店。",
+       "a": [
+        "Me gustaría montar un negocio de café algún día.",
+        "Algún día me gustaría montar un café.",
+        "Me gustaría abrir una cafetería algún día."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "oportunidad"
+    },
+    {
+     "t": "word",
+     "w": "esfuerzo"
+    },
+    {
+     "t": "word",
+     "w": "lograr"
+    },
+    {
+     "t": "word",
+     "w": "dentro de"
+    },
+    {
+     "t": "word",
+     "w": "a largo plazo"
+    },
+    {
+     "t": "word",
+     "w": "proyecto"
+    },
+    {
+     "t": "key",
+     "title": "si + 现在时，将来时 / 命令式",
+     "what": [
+      "真实可能的条件：<b>Si + 现在时</b>, <b>将来时 / 现在时 / 命令式</b>",
+      "Si apruebo, <b>solicitaré</b> un máster.（如果通过，我会申请硕士）",
+      "Si tienes tiempo, <b>llámame</b>.（如果有空，给我打电话）",
+      "<b>si</b> 后面<b>不能用将来时</b>：*Si aprobaré → Si apruebo"
+     ],
+     "why": [
+      "这是第一条件句。中文“如果……就……”的“如果”部分在西语里用现在时，哪怕说的是将来。"
+     ],
+     "zh": [
+      "中国学生受“将来”的影响，常写 *Si tendré tiempo。记住：si 后面用现在时。"
+     ],
+     "ex": [
+      [
+       "Si ahorro un poco cada mes, podré viajar en verano.",
+       "如果每月存一点，夏天我就能去旅行。"
+      ],
+      [
+       "Si no entiendes, pregúntame.",
+       "如果不懂，就问我。"
+      ],
+      [
+       "Si llueve mañana, no iremos a la playa.",
+       "如果明天下雨，我们就不去海边。"
+      ]
+     ],
+     "err": [
+      [
+       "Si tendré dinero, viajaré.",
+       "Si tengo dinero, viajaré.",
+       "si + 现在时"
+      ],
+      [
+       "Si apruebo, solicito un máster mañana mismo.（可以，但想说将来更常用）",
+       "Si apruebo, solicitaré un máster.",
+       "结果部分常用将来时"
+      ]
+     ],
+     "sum": "<b>Si + 现在时, 将来时 / 命令式</b>；si 后面<b>不用将来时</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Si ___ tiempo, iré a verte.",
+       "o": [
+        "tengo",
+        "tuve",
+        "tendré"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Si llueve, ___ en casa.",
+       "o": [
+        "nos quedamos ayer",
+        "quedarnos",
+        "nos quedaremos"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "Si me ___ (dar, ellos) el trabajo, me mudaré a Madrid.",
+       "a": [
+        "dan"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "如果有机会，我会在国外住一年。",
+       "a": [
+        "Si tengo la oportunidad, viviré un año en el extranjero.",
+        "Si tengo la oportunidad, viviré un año fuera."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Si tengo la oportunidad, viviré un año en el extranjero.",
+     "zh": "如果有机会，我会在国外住一年。",
+     "focus": "si 句尾语调上扬，后半句下降"
+    },
+    {
+     "t": "c",
+     "q": "Estoy ___ para comprarme un coche.",
+     "o": [
+      "logrando",
+      "ahorrando",
+      "independizando"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Me independicé ___ los veinticinco años.",
+     "o": [
+      "en",
+      "con",
+      "a"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Es una ___ única; no la pierdas.",
+     "o": [
+      "oportunidad",
+      "esfuerzo",
+      "meta"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Con ___ y paciencia, aprenderás español.",
+     "o": [
+      "plazo",
+      "esfuerzo",
+      "sueño"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Mi ___ este año es aprobar el examen. (目标)",
+     "a": [
+      "meta"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "A largo ___, quiero vivir en el extranjero.",
+     "a": [
+      "plazo"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Por fin ___ aprobar el examen de conducir.",
+     "o": [
+      "logro mañana",
+      "lograré ayer",
+      "logré"
+     ],
+     "a": 2
+    },
+    {
+     "t": "o",
+     "a": "Si apruebo, solicitaré un máster en Madrid",
+     "p": [
+      "Si apruebo,",
+      "solicitaré",
+      "un máster",
+      "en Madrid"
+     ],
+     "zh": "如果通过了，我就申请马德里的硕士。"
+    },
+    {
+     "t": "dict",
+     "a": "Pienso hacer el DELE el año que viene."
+    },
+    {
+     "t": "tr",
+     "zh": "五年后我想在一家西班牙公司工作。",
+     "a": [
+      "Dentro de cinco años me gustaría trabajar en una empresa española.",
+      "Dentro de cinco años quiero trabajar en una empresa española."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "计划词：sueño、meta、ahorrar、montar un negocio、independizarse、cambiar de trabajo、oportunidad、esfuerzo、lograr、dentro de、a largo plazo、proyecto。",
+      "<b>重点</b>：ir a / pensar / querer / me gustaría + 原形；将来时；dentro de + 时间。",
+      "<b>重点</b>：Si + 现在时, 将来时 / 命令式；si 后不用将来时。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.8.5",
+   "title": "A2 总复习：我的西语故事",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Mi historia con el español",
+     "lines": [
+      [
+       "",
+       "Empecé a estudiar español hace dos años, cuando vivía en Shanghái.",
+       "我两年前开始学西语，那时我住在上海。"
+      ],
+      [
+       "",
+       "Al principio era muy difícil, pero poco a poco empecé a entender las canciones.",
+       "一开始很难，但慢慢地我开始听懂歌了。"
+      ],
+      [
+       "",
+       "Al cabo de un año, fui a Salamanca para hacer un curso, y desde entonces no he dejado de estudiar.",
+       "一年后，我去萨拉曼卡上了一个课程，从那时起就没停过。"
+      ],
+      [
+       "",
+       "Actualmente llevo seis meses viviendo en Madrid y trabajo en un hotel.",
+       "目前我在马德里住了六个月，在一家酒店工作。"
+      ],
+      [
+       "",
+       "Si todo va bien, el año que viene haré el examen DELE B1.",
+       "如果一切顺利，明年我会考 DELE B1。"
+      ]
+     ],
+     "note": "一段话用了五个时态：empecé / fui（事件）、vivía / era（背景）、no he dejado（经历到现在）、llevo / trabajo（现在）、haré（将来）。这就是 A2 的全部时态工具。"
+    },
+    {
+     "t": "word",
+     "w": "a partir de"
+    },
+    {
+     "t": "word",
+     "w": "desde entonces"
+    },
+    {
+     "t": "word",
+     "w": "poco a poco"
+    },
+    {
+     "t": "word",
+     "w": "al cabo de"
+    },
+    {
+     "t": "word",
+     "w": "de vez en cuando"
+    },
+    {
+     "t": "word",
+     "w": "aunque"
+    },
+    {
+     "t": "key",
+     "title": "五个时态，一张图",
+     "what": [
+      "<b>现在时</b>：现在、习惯 —— Trabajo en un hotel.",
+      "<b>现在完成时</b>：经历、今天 / 今年、和现在有关 —— He estado en España tres veces.",
+      "<b>简单过去时</b>：过去某个时间完成的事件 —— Fui a Salamanca en 2023.",
+      "<b>未完成过去时</b>：过去的背景、习惯、描述 —— Cuando vivía en Shanghái, estudiaba por la noche.",
+      "<b>将来时</b>（或 ir a）：计划、预测 —— El año que viene haré el DELE."
+     ],
+     "why": [
+      "选时态先问两个问题：① 说的是过去、现在还是将来？② 如果是过去：是事件（发生了什么）还是背景（当时怎样）？有没有说具体时间？"
+     ],
+     "zh": [
+      "中文靠“了、过、在、会”和时间词；西语靠动词形式。把这张图当成“翻译开关”：了 → 简单过去 / 完成；过 → 完成；在 → 现在 / 未完成；会 → 将来。"
+     ],
+     "ex": [
+      [
+       "Cuando era niña, vivía en un pueblo. En 2015 me mudé a Pekín.",
+       "我小时候住在一个小镇。2015 年我搬到了北京。"
+      ],
+      [
+       "Nunca he estado en México, pero iré el año que viene.",
+       "我从没去过墨西哥，但明年会去。"
+      ]
+     ],
+     "err": [
+      [
+       "Cuando fui niño, vivía en el campo.",
+       "Cuando era niño, vivía en el campo.",
+       "童年是背景 → 未完成过去时"
+      ],
+      [
+       "Ayer he ido al médico.（在西班牙）",
+       "Ayer fui al médico.",
+       "ayer → 简单过去时"
+      ]
+     ],
+     "sum": "现在 / 完成（经历）/ 简单过去（事件 + 时间）/ 未完成（背景）/ 将来（计划）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "El verano pasado ___ a Perú.",
+       "o": [
+        "he ido",
+        "fui",
+        "iba siempre"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Cuando ___ pequeño, jugaba en la calle.",
+       "o": [
+        "fui",
+        "he sido",
+        "era"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Nunca ___ paella.",
+       "o": [
+        "comí ayer",
+        "he comido",
+        "comía"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "El año que viene ___ en Barcelona.",
+       "o": [
+        "vivía",
+        "viviré",
+        "viví"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "ya que"
+    },
+    {
+     "t": "word",
+     "w": "en cuanto a"
+    },
+    {
+     "t": "word",
+     "w": "por último"
+    },
+    {
+     "t": "word",
+     "w": "en resumen"
+    },
+    {
+     "t": "word",
+     "w": "actualmente"
+    },
+    {
+     "t": "word",
+     "w": "hoy en día"
+    },
+    {
+     "t": "key",
+     "title": "讲自己的故事：时间连接词",
+     "what": [
+      "开始：<b>al principio</b>（一开始）· <b>hace dos años</b>（两年前）",
+      "过程：<b>poco a poco</b>（慢慢地）· <b>al cabo de</b> un mes（一个月后）· <b>desde entonces</b>（从那时起）· <b>de vez en cuando</b>（偶尔）",
+      "现在：<b>actualmente / hoy en día</b>（目前 / 如今）",
+      "收尾：<b>por último</b>（最后）· <b>en resumen</b>（总之）"
+     ],
+     "why": [
+      "DELE A2 写作第二题常是“讲讲你的一次经历 / 你学西语的过程”。用这些连接词搭骨架，再填入五个时态，就是一篇合格的作文。",
+      "注意 <b>actualmente</b> = 目前（不是英语的 actually“其实”）。"
+     ],
+     "zh": [
+      "中文“后来”“从那以后”“现在”对应 al cabo de / desde entonces / actualmente；不要把“其实”翻成 actualmente（应该是 en realidad）。"
+     ],
+     "ex": [
+      [
+       "Al principio no entendía nada; poco a poco empecé a hablar.",
+       "一开始我什么都听不懂，慢慢地开始能说了。"
+      ],
+      [
+       "Al cabo de un mes ya tenía amigos españoles.",
+       "一个月后我已经有西班牙朋友了。"
+      ],
+      [
+       "Desde entonces voy a Madrid de vez en cuando.",
+       "从那时起我偶尔去马德里。"
+      ]
+     ],
+     "err": [
+      [
+       "Actualmente, no me gusta el café.（想说“其实”）",
+       "En realidad, no me gusta el café.",
+       "actualmente = 目前；“其实”是 en realidad"
+      ]
+     ],
+     "sum": "<b>al principio → poco a poco → al cabo de → desde entonces → actualmente → en resumen</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ no entendía nada, pero ahora hablo bastante bien.",
+       "o": [
+        "Al principio",
+        "Por último",
+        "En resumen"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Llegué en mayo y, ___ dos semanas, encontré trabajo.",
+       "o": [
+        "de vez en cuando",
+        "al cabo de",
+        "desde entonces"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "___ trabajo en un hotel del centro.",
+       "o": [
+        "Por último",
+        "Al cabo de",
+        "Actualmente"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Al cabo de un año, fui a Salamanca, y desde entonces no he dejado de estudiar.",
+     "zh": "一年后我去了萨拉曼卡，从那时起就没停过。",
+     "focus": "desde entonces 重读 TON"
+    },
+    {
+     "t": "c",
+     "q": "___ estaba cansado, salí con mis amigos.",
+     "o": [
+      "En cuanto a",
+      "Ya que",
+      "Aunque"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "___ estás aquí, ayúdame con la cena.",
+     "o": [
+      "Ya que",
+      "Aunque",
+      "Por último"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "___ todo el mundo tiene móvil.",
+     "o": [
+      "Desde entonces",
+      "Al cabo de",
+      "Hoy en día"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "___ al precio, me parece razonable.",
+     "o": [
+      "Por último",
+      "A partir",
+      "En cuanto"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "A partir ___ mañana, estudiaré una hora al día.",
+     "a": [
+      "de"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "En ___, fue una experiencia muy positiva. (总之)",
+     "a": [
+      "resumen"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Poco a poco empecé a entender las canciones",
+     "p": [
+      "Poco a poco",
+      "empecé",
+      "a entender",
+      "las canciones"
+     ],
+     "zh": "慢慢地我开始听懂歌了。"
+    },
+    {
+     "t": "dict",
+     "a": "Empecé a estudiar español hace dos años, cuando vivía en Shanghái."
+    },
+    {
+     "t": "tr",
+     "zh": "从那时起，我就没停止学习西语。",
+     "a": [
+      "Desde entonces no he dejado de estudiar español.",
+      "Desde entonces no he parado de estudiar español."
+     ]
+    },
+    {
+     "t": "write",
+     "prompt": "用 80–100 词写“我学外语的故事”：什么时候、怎么开始的（过去时）、一开始怎么样（未完成过去时）、现在怎么样（现在时 / llevar）、以后的计划（将来时 / si）。",
+     "hint": "用上 al principio / poco a poco / al cabo de / desde entonces / actualmente；五个时态都出现",
+     "focus": "五个时态的选择；时间连接词；llevar + 副动词；si + 现在时",
+     "model": "Empecé a estudiar español hace dos años. Al principio era muy difícil y no entendía nada, pero me gustaban mucho las canciones latinas. Poco a poco empecé a hablar un poco. Al cabo de un año, fui a Salamanca para hacer un curso de verano y desde entonces no he dejado de estudiar. Actualmente llevo seis meses viviendo en Madrid. Si todo va bien, el año que viene haré el DELE B1."
+    },
+    {
+     "t": "sum",
+     "points": [
+      "连接词：a partir de、desde entonces、poco a poco、al cabo de、de vez en cuando、aunque、ya que、en cuanto a、por último、en resumen、actualmente、hoy en día。",
+      "<b>重点</b>：五个时态一张图 —— 现在 / 完成（经历）/ 简单过去（事件）/ 未完成（背景）/ 将来（计划）。",
+      "<b>重点</b>：讲故事的连接词 al principio → poco a poco → al cabo de → desde entonces → actualmente。",
+      "第二学期完成：A2 的语法工具都学过了。下一步：虚拟式与 B1。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.8.6",
+   "title": "单元阅读：Un año en Madrid",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Un año en Madrid",
+     "note": "A2 总复习：一封求职邮件。先找出五个时态，再看正式邮件的格式（Estimado… / Le escribo para… / Atentamente）。",
+     "lines": [
+      [
+       "Asunto: Solicitud del puesto de recepcionista",
+       "主题：申请前台职位"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Estimada señora Ortega:",
+       "尊敬的奥尔特加女士："
+      ],
+      [
+       "Le escribo para solicitar el puesto de recepcionista que he visto en su página web.",
+       "我写信是想申请在贵公司网站上看到的前台职位。"
+      ],
+      [
+       "Me llamo Li Wei y soy de Hangzhou. Estudié Turismo en la universidad y, al terminar, hice prácticas en un hotel de mi ciudad.",
+       "我叫李伟，来自杭州。我大学读的是旅游专业，毕业后在家乡的一家酒店实习。"
+      ],
+      [
+       "Al principio el trabajo era difícil para mí, pero poco a poco aprendí mucho.",
+       "一开始这份工作对我来说很难，但我慢慢学到了很多。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Actualmente llevo un año viviendo en Madrid y trabajo media jornada en un hostal del centro.",
+       "目前我在马德里住了一年，在市中心一家旅馆做兼职。"
+      ],
+      [
+       "He atendido a clientes de muchos países, ya que hablo chino, inglés y español.",
+       "我接待过很多国家的客人，因为我会说中文、英语和西班牙语。"
+      ],
+      [
+       "Sin embargo, me gustaría trabajar a jornada completa en un hotel grande como el suyo.",
+       "不过，我希望能在像贵酒店这样的大酒店全职工作。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Le envío mi currículum en un archivo adjunto. Si lo desea, puedo hacer la entrevista cualquier día por la mañana.",
+       "随信附上我的简历。如您需要，我任何一天上午都可以参加面试。"
+      ],
+      [
+       "Muchas gracias por su atención.",
+       "非常感谢您的关注。"
+      ],
+      [
+       "Atentamente, Li Wei",
+       "此致，李伟"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Para qué escribe Li Wei este correo?",
+     "o": [
+      "Para hacer una reclamación.",
+      "Para solicitar un trabajo.",
+      "Para reservar una habitación."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué hizo después de terminar la universidad?",
+     "o": [
+      "Estudió un máster.",
+      "Hizo prácticas en un hotel.",
+      "Se mudó a Madrid."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Cuánto tiempo lleva en Madrid?",
+     "o": [
+      "Dos años.",
+      "Un año.",
+      "Seis meses."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Por qué quiere cambiar de trabajo?",
+     "o": [
+      "El sueldo es muy bajo.",
+      "No le gusta el hostal.",
+      "Quiere trabajar a jornada completa en un hotel grande."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "“Estudié Turismo” 用简单过去时，“He atendido a clientes” 用现在完成时，因为：",
+     "o": [
+      "两个可以随便换",
+      "前者是背景，后者是事件",
+      "前者是过去完成的阶段，后者是到现在为止的经历"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "随信附上我的简历。",
+     "a": [
+      "Le envío mi currículum en un archivo adjunto.",
+      "Le adjunto mi currículum."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "正式邮件：Estimada…: → Le escribo para… → Atentamente。",
+      "五个时态：estudié / hice（事件）、era（背景）、he atendido（经历）、llevo / trabajo（现在）、me gustaría（愿望）。",
+      "连接词：al principio、poco a poco、actualmente、ya que、sin embargo。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "En 2020 ___ en un restaurante de Valencia.",
+    "o": [
+     "trabajé",
+     "he trabajado",
+     "trabajo"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "___ dos años estudiando español.",
+    "o": [
+     "Desde",
+     "Llevo",
+     "Hace que"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "No estoy ___ acuerdo contigo.",
+    "o": [
+     "en",
+     "con",
+     "de"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Gracias ___ tu ayuda.",
+    "o": [
+     "para",
+     "por",
+     "a"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Si ___ dinero, viajaré a México.",
+    "o": [
+     "ahorraré",
+     "ahorro",
+     "ahorré"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Cuando ___ niño, vivía en el campo.",
+    "o": [
+     "fui",
+     "he sido",
+     "era"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Escribes a una empresa. Terminas con:",
+    "o": [
+     "¡Chao!",
+     "Un beso,",
+     "Atentamente,"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "El hotel es caro; ___, la ubicación es perfecta.",
+    "o": [
+     "además",
+     "por eso",
+     "sin embargo"
+    ],
+    "a": 2
+   },
+   {
+    "t": "tr",
+    "zh": "在我看来，住在城里更好。",
+    "a": [
+     "En mi opinión, es mejor vivir en la ciudad.",
+     "Creo que es mejor vivir en la ciudad.",
+     "Para mí, es mejor vivir en la ciudad."
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "五年后我会说一口很好的西班牙语。",
+    "a": [
+     "Dentro de cinco años hablaré español muy bien.",
+     "Dentro de cinco años hablaré muy bien español."
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,1945 @@
+{
+ "id": "es.2.5",
+ "title": "宾格与与格代词",
+ "goal": "lo / la / los / las、le / les、se lo 与代词位置；购物、送礼、搬家、做饭、网购",
+ "lessons": [
+  {
+   "id": "es.2.5.1",
+   "title": "lo / la / los / las",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "En la tienda de ropa",
+     "lines": [
+      [
+       "Dependienta",
+       "Hola, ¿la puedo ayudar?",
+       "您好，需要帮忙吗？"
+      ],
+      [
+       "Clara",
+       "Sí, busco una falda para una boda. ¿Esta la tiene en la talla M?",
+       "是的，我在找一条参加婚礼的裙子。这条有 M 码吗？"
+      ],
+      [
+       "Dependienta",
+       "Sí, aquí la tiene. ¿Quiere probársela?",
+       "有，给您。要试一下吗？"
+      ],
+      [
+       "Clara",
+       "Sí, gracias. ¿Y los pantalones del escaparate? ¿Los tienen en azul?",
+       "好的，谢谢。那橱窗里的裤子呢？有蓝色的吗？"
+      ],
+      [
+       "Dependienta",
+       "Lo siento, no los tenemos en azul. Pero las chaquetas están de rebajas.",
+       "抱歉，没有蓝色的。不过外套在打折。"
+      ],
+      [
+       "Clara",
+       "¡Perfecto! Me pruebo la falda y luego las miro.",
+       "太好了！我先试裙子，然后看看外套。"
+      ]
+     ],
+     "note": "la tiene（那条裙子）、los tienen（那条裤子）、las miro（那些外套）—— 第一学期见过 lo / la，这一课把它用熟：说过一次的东西，第二次就换成代词。"
+    },
+    {
+     "t": "word",
+     "w": "camiseta"
+    },
+    {
+     "t": "word",
+     "w": "pantalones"
+    },
+    {
+     "t": "word",
+     "w": "falda"
+    },
+    {
+     "t": "word",
+     "w": "vestido"
+    },
+    {
+     "t": "word",
+     "w": "chaqueta"
+    },
+    {
+     "t": "word",
+     "w": "abrigo"
+    },
+    {
+     "t": "key",
+     "title": "lo / la / los / las：代替“动作的对象”，性数跟着那个名词",
+     "what": [
+      "直接宾语 = 动词直接作用的东西：compro <b>la falda</b>（买什么？裙子）",
+      "第二次说到时换成代词：阳单 <b>lo</b> · 阴单 <b>la</b> · 阳复 <b>los</b> · 阴复 <b>las</b>",
+      "位置：放在<b>变位动词前面</b>；否定时 no 在最前：No <b>la</b> compro."
+     ],
+     "why": [
+      "代词的性数看的是<b>被代替的名词</b>，不是说话人：la falda → la，los pantalones → los（哪怕说话的是女生）。",
+      "西语不喜欢重复名词，¿Compras la falda? —Sí, compro la falda. 听起来像机器人；要说 Sí, la compro."
+     ],
+     "zh": [
+      "中文常直接省略宾语（“你买那条裙子吗？——买。”），西语不能省，必须用代词：—Sí, la compro。"
+     ],
+     "ex": [
+      [
+       "¿Tienes el abrigo? —Sí, lo tengo.",
+       "你带大衣了吗？——带了。"
+      ],
+      [
+       "Estas camisetas, ¿las vende usted?",
+       "这些 T 恤您卖吗？"
+      ],
+      [
+       "Los pantalones me quedan grandes. Los voy a devolver.",
+       "裤子我穿大了，我要去退。"
+      ]
+     ],
+     "err": [
+      [
+       "¿Compras la chaqueta? —Sí, compro.",
+       "¿Compras la chaqueta? —Sí, la compro.",
+       "宾语不能省，要用代词"
+      ],
+      [
+       "Los zapatos, la quiero devolver.",
+       "Los zapatos, los quiero devolver.",
+       "zapatos 阳复 → los"
+      ]
+     ],
+     "sum": "说过的东西换代词：<b>lo / la / los / las</b>，性数看名词，放在<b>变位动词前</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿Dónde compraste el vestido? —___ compré en el centro.",
+       "o": [
+        "La",
+        "Le",
+        "Lo"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Me encantan estas faldas. ¿___ tiene en negro?",
+       "o": [
+        "Los",
+        "Las",
+        "La"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "¿Y los pantalones? —No ___ encuentro.",
+       "a": [
+        "los"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "这件外套很好看，我买了。",
+       "a": [
+        "La chaqueta es muy bonita. La compro.",
+        "Esta chaqueta es muy bonita; la compro.",
+        "La chaqueta es muy bonita, la compro."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "talla"
+    },
+    {
+     "t": "word",
+     "w": "probarse"
+    },
+    {
+     "t": "word",
+     "w": "probador"
+    },
+    {
+     "t": "word",
+     "w": "rebajas"
+    },
+    {
+     "t": "word",
+     "w": "devolver"
+    },
+    {
+     "t": "word",
+     "w": "quedar bien"
+    },
+    {
+     "t": "key",
+     "title": "人也用 lo / la；中性 lo 代替“整件事”",
+     "what": [
+      "人作直接宾语：动词前加 <b>a</b>（Conozco <b>a</b> Pedro），换代词时 a 就不要了：<b>Lo</b> conozco.",
+      "<b>lo</b> 还可以代替一整句话、一件事：¿Sabes que Ana se casa? —Sí, <b>lo</b> sé. / No <b>lo</b> entiendo.",
+      "常用：<b>Lo sé. · No lo sé. · Lo siento. · No lo creo. · Ya lo veo.</b>"
+     ],
+     "why": [
+      "中性 lo 没有对应的“名词”，它指前面说的那整件事，所以永远是 lo，不变性数。"
+     ],
+     "zh": [
+      "中文“我知道”“我不信”后面不用说“这件事”；西语要说 Lo sé / No lo creo，少了 lo 听起来不完整。"
+     ],
+     "ex": [
+      [
+       "¿Conoces a la nueva profesora? —Sí, la conozco.",
+       "你认识新老师吗？——认识。"
+      ],
+      [
+       "¿Ves a los niños? —No, no los veo.",
+       "你看见孩子们了吗？——没看见。"
+      ],
+      [
+       "Mañana hay rebajas. —Ya lo sé.",
+       "明天打折。——我已经知道了。"
+      ]
+     ],
+     "err": [
+      [
+       "¿Conoces a Marta? —Sí, conozco.",
+       "¿Conoces a Marta? —Sí, la conozco.",
+       "人作宾语也要代词"
+      ],
+      [
+       "¿Sabes dónde está? —No la sé.",
+       "¿Sabes dónde está? —No lo sé.",
+       "代替整件事用中性 lo"
+      ]
+     ],
+     "sum": "人：<b>a + 人 → lo / la</b>；整件事：<b>中性 lo</b>（Lo sé. No lo creo.）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿Esperas a tus amigas? —Sí, ___ espero aquí.",
+       "o": [
+        "les",
+        "los",
+        "las"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "¿Sabes que cierran la tienda? —No, no ___ sabía.",
+       "o": [
+        "lo",
+        "le",
+        "la"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "¿Llamaste a Javier? —Sí, ___ llamé ayer.",
+       "o": [
+        "los",
+        "lo",
+        "la"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Sí, aquí la tiene. ¿Quiere probársela?",
+     "zh": "有，给您。要试一下吗？",
+     "focus": "probársela 重音在 PRÓ"
+    },
+    {
+     "t": "c",
+     "q": "Esta falda me queda pequeña. ¿Tiene una ___ más grande?",
+     "o": [
+      "talla",
+      "rebaja",
+      "probador"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Los ___ están al fondo, a la derecha.",
+     "o": [
+      "abrigos",
+      "vestidos",
+      "probadores"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Hace frío. Ponte el ___.",
+     "o": [
+      "abrigo",
+      "falda",
+      "camiseta"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Esa chaqueta te ___ muy bien.",
+     "o": [
+      "quedas",
+      "queda",
+      "gusta"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Quiero ___ estos zapatos; me quedan pequeños. (退)",
+     "a": [
+      "devolver"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "En enero empiezan las ___ y todo es más barato.",
+     "a": [
+      "rebajas"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "¿Puedo probarme estos pantalones?",
+     "p": [
+      "¿Puedo",
+      "probarme",
+      "estos",
+      "pantalones?"
+     ],
+     "zh": "我可以试一下这条裤子吗？"
+    },
+    {
+     "t": "dict",
+     "a": "Lo siento, no los tenemos en azul."
+    },
+    {
+     "t": "tr",
+     "zh": "你认识新老师吗？——认识。",
+     "a": [
+      "¿Conoces a la nueva profesora? —Sí, la conozco.",
+      "¿Conoces al nuevo profesor? —Sí, lo conozco."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "衣服词：camiseta、pantalones、falda、vestido、chaqueta、abrigo、talla、probarse、probador、rebajas、devolver、quedar bien。",
+      "<b>重点</b>：lo / la / los / las 代替直接宾语，性数看名词，放在变位动词前。",
+      "<b>重点</b>：人作宾语也用 lo / la；中性 lo 代替整件事（Lo sé. No lo creo.）。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.5.2",
+   "title": "le / les",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "¿Qué le regalamos?",
+     "lines": [
+      [
+       "Pablo",
+       "El sábado es el aniversario de mis padres. ¿Qué les regalamos?",
+       "周六是我爸妈的结婚纪念日。我们送他们什么？"
+      ],
+      [
+       "Irene",
+       "A tu madre le encantan las flores. Le podemos llevar un ramo.",
+       "你妈妈很喜欢花，我们可以给她带一束。"
+      ],
+      [
+       "Pablo",
+       "Buena idea. ¿Y a mi padre?",
+       "好主意。那我爸爸呢？"
+      ],
+      [
+       "Irene",
+       "Le regalamos una corbata. Y les escribimos una tarjeta a los dos.",
+       "送他一条领带。再给他们俩写张卡片。"
+      ],
+      [
+       "Pablo",
+       "Perfecto. Les voy a enviar también las fotos de la boda, que las encontré ayer.",
+       "太好了。我还要把婚礼照片发给他们，我昨天找到了。"
+      ]
+     ],
+     "note": "les regalamos（送给他们）、le podemos llevar（给她带）、les escribimos（给他们写）—— 这些“给某人”的代词是间接宾语 le / les。"
+    },
+    {
+     "t": "word",
+     "w": "regalar"
+    },
+    {
+     "t": "word",
+     "w": "prestar"
+    },
+    {
+     "t": "word",
+     "w": "enviar"
+    },
+    {
+     "t": "word",
+     "w": "mostrar"
+    },
+    {
+     "t": "word",
+     "w": "contar"
+    },
+    {
+     "t": "word",
+     "w": "felicitar"
+    },
+    {
+     "t": "key",
+     "title": "le / les = 给他 / 她 / 您 / 他们",
+     "what": [
+      "间接宾语 = 动作的<b>接受者</b>：给谁、对谁。",
+      "me / te / nos / os 和直接宾语一样；第三人称变成 <b>le</b>（单）/ <b>les</b>（复），不分阴阳。",
+      "典型动词：<b>dar · regalar · decir · contar · prestar · enviar · mostrar · escribir · preguntar · agradecer</b>（都有“给 / 对某人”）"
+     ],
+     "why": [
+      "一句话里常常两个宾语都有：Le regalé <b>una corbata</b>（直接：送什么）<b>a mi padre</b>（间接：送给谁）。",
+      "le 不分男女：给爸爸、给妈妈、给您，都是 le。"
+     ],
+     "zh": [
+      "中文“送他”“告诉她”里的“他 / 她”看起来像宾语，西语要用间接宾语 le，不能用 lo / la。"
+     ],
+     "ex": [
+      [
+       "Le regalé un perfume.",
+       "我送了她一瓶香水。"
+      ],
+      [
+       "¿Les contaste la noticia?",
+       "你把消息告诉他们了吗？"
+      ],
+      [
+       "Le agradezco mucho, señora.",
+       "非常感谢您，女士。"
+      ]
+     ],
+     "err": [
+      [
+       "Lo dije la verdad a mi padre.",
+       "Le dije la verdad a mi padre.",
+       "“对某人说”用 le"
+      ],
+      [
+       "La regalé flores a mi madre.",
+       "Le regalé flores a mi madre.",
+       "“送给她”用 le，不分阴阳"
+      ]
+     ],
+     "sum": "<b>给谁 / 对谁</b> → le / les（不分阴阳）；me / te / nos / os 不变。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿Qué ___ regalaste a tu hermana?",
+       "o": [
+        "le",
+        "la",
+        "lo"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Mañana ___ envío el paquete a mis primos.",
+       "o": [
+        "los",
+        "les",
+        "le"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Mi abuelo ___ contaba cuentos a mis hermanos y a mí. (给我们)",
+       "a": [
+        "nos"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我送了我爸爸一条领带。",
+       "a": [
+        "Le regalé una corbata a mi padre.",
+        "A mi padre le regalé una corbata."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "agradecer"
+    },
+    {
+     "t": "word",
+     "w": "ramo de flores"
+    },
+    {
+     "t": "word",
+     "w": "corbata"
+    },
+    {
+     "t": "word",
+     "w": "perfume"
+    },
+    {
+     "t": "word",
+     "w": "envolver"
+    },
+    {
+     "t": "word",
+     "w": "aniversario"
+    },
+    {
+     "t": "key",
+     "title": "le 还是 lo / la：看动词要不要“给 / 对”",
+     "what": [
+      "<b>直接宾语动词</b>（作用在人身上）：ver, conocer, llamar, esperar, invitar, ayudar, visitar → <b>lo / la</b>：<b>La</b> invité a la fiesta.",
+      "<b>间接宾语动词</b>（给某人某物 / 对某人说）：decir, dar, regalar, escribir, preguntar, gustar → <b>le</b>：<b>Le</b> dije que sí.",
+      "名词和代词常一起出现（重复）：<b>Le</b> regalé un libro <b>a Juan</b>. —— a Juan 说明 le 是谁，le 不能省。"
+     ],
+     "why": [
+      "判断方法：把“某物”加进句子 —— “给她<b>什么</b>”“对她说<b>什么</b>”能加，就是 le；“看见她”“邀请她”不需要别的东西，就是 la。"
+     ],
+     "zh": [
+      "中文都说“她”，西语要分“直接作用于她”（la）和“给她 / 对她”（le）。"
+     ],
+     "ex": [
+      [
+       "Vi a Marta y le di las llaves.",
+       "我见到了玛尔塔，把钥匙给了她。"
+      ],
+      [
+       "Invitamos a los vecinos y les mostramos la casa.",
+       "我们请了邻居，带他们看了房子。"
+      ]
+     ],
+     "err": [
+      [
+       "Le invité a la cena.（指一位女士）",
+       "La invité a la cena.",
+       "invitar 是直接宾语动词"
+      ],
+      [
+       "Regalé un libro a Juan.（口语里显得不完整）",
+       "Le regalé un libro a Juan.",
+       "有 a + 人时，通常也加 le"
+      ]
+     ],
+     "sum": "能加“什么”（给她什么 / 对她说什么）→ <b>le</b>；直接作用于人（看见、邀请、帮）→ <b>lo / la</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Ayer vi a Lucía y ___ di tu mensaje.",
+       "o": [
+        "le",
+        "lo",
+        "la"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "¿Conoces a mis padres? —Sí, ___ conocí en tu boda.",
+       "o": [
+        "le",
+        "les",
+        "los"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Esperé a Ana una hora, pero no ___ vi.",
+       "o": [
+        "la",
+        "le",
+        "lo"
+       ],
+       "a": 0,
+       "e": "ver a alguien 是直接宾语动词，Ana 是女性 → la。"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "A tu madre le encantan las flores. Le podemos llevar un ramo.",
+     "zh": "你妈妈很喜欢花，我们可以给她带一束。",
+     "focus": "le 轻读，和后面的动词连起来"
+    },
+    {
+     "t": "c",
+     "q": "¿Me ___ tu paraguas? Está lloviendo.",
+     "o": [
+      "regalas",
+      "prestas",
+      "agradeces"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "¿Me lo puede ___ para regalo?",
+     "o": [
+      "felicitar",
+      "envolver",
+      "mostrar"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Hoy es nuestro ___ de boda: diez años juntos.",
+     "o": [
+      "perfume",
+      "ramo",
+      "aniversario"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "El agente ___ mostró el piso a los clientes.",
+     "o": [
+      "les",
+      "los",
+      "le"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "Te ___ (felicitar, yo) por tu nuevo trabajo.",
+     "a": [
+      "felicito"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Le ___ (agradecer, yo) mucho su ayuda.",
+     "a": [
+      "agradezco"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Le llevé un ramo de flores a mi abuela",
+     "p": [
+      "Le llevé",
+      "un ramo de flores",
+      "a mi abuela"
+     ],
+     "zh": "我给奶奶带了一束花。"
+    },
+    {
+     "t": "dict",
+     "a": "¿Qué le regalaste a tu madre?"
+    },
+    {
+     "t": "tr",
+     "zh": "你把消息告诉他们了吗？",
+     "a": [
+      "¿Les contaste la noticia?",
+      "¿Les has contado la noticia?",
+      "¿Les dijiste la noticia?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "送礼词：regalar、prestar、enviar、mostrar、contar、felicitar、agradecer、ramo de flores、corbata、perfume、envolver、aniversario。",
+      "<b>重点</b>：给谁 / 对谁 → le / les（不分阴阳）；me / te / nos / os 不变。",
+      "<b>重点</b>：le 还是 lo / la —— 能加“什么”是 le；直接作用于人是 lo / la；le … a + 人。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.5.3",
+   "title": "se lo",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "El día de la mudanza",
+     "lines": [
+      [
+       "Andrés",
+       "¿Dónde pongo la lámpara?",
+       "台灯放哪儿？"
+      ],
+      [
+       "Sofía",
+       "Dámela, que la pongo yo en el dormitorio.",
+       "给我吧，我放到卧室去。"
+      ],
+      [
+       "Andrés",
+       "Oye, ¿y el espejo de tu madre? ¿Se lo devolvemos hoy?",
+       "对了，你妈妈的镜子呢？我们今天还给她吗？"
+      ],
+      [
+       "Sofía",
+       "No, se lo llevamos el domingo. Hoy no cabe en el coche.",
+       "不，周日再给她送去。今天车里放不下。"
+      ],
+      [
+       "Andrés",
+       "Vale. ¿Me prestas el destornillador? Voy a montar la estantería.",
+       "好的。你把螺丝刀借我一下？我要装书架。"
+      ],
+      [
+       "Sofía",
+       "Te lo doy ahora. Está en el cajón de la cocina.",
+       "我马上给你，在厨房抽屉里。"
+      ]
+     ],
+     "note": "dámela（把它给我）、se lo devolvemos（把它还给她）、te lo doy（把它给你）—— 一句话里两个代词：先“给谁”，再“什么”。"
+    },
+    {
+     "t": "word",
+     "w": "mudanza"
+    },
+    {
+     "t": "word",
+     "w": "cargar"
+    },
+    {
+     "t": "word",
+     "w": "bajar"
+    },
+    {
+     "t": "word",
+     "w": "colgar"
+    },
+    {
+     "t": "word",
+     "w": "montar"
+    },
+    {
+     "t": "word",
+     "w": "mueble"
+    },
+    {
+     "t": "key",
+     "title": "两个代词：先“给谁”，后“什么”",
+     "what": [
+      "顺序永远是：<b>间接（给谁）+ 直接（什么）+ 动词</b>",
+      "<b>me lo</b>（把它给我）· <b>te la</b>（把它给你）· <b>nos los</b>（把它们给我们）· <b>os las</b>",
+      "¿Me prestas el coche? —Sí, <b>te lo</b> presto. / ¿Nos envías las fotos? —<b>Os las</b> envío mañana."
+     ],
+     "why": [
+      "记口诀：<b>人在前，物在后</b>。“给谁”比“什么”更靠近说话的人，所以排在前面。"
+     ],
+     "zh": [
+      "中文“我借给你”宾语在后；西语两个代词都挤到动词前，而且顺序固定，要多说几遍形成习惯。"
+     ],
+     "ex": [
+      [
+       "¿Me das la llave? —Sí, te la doy.",
+       "你把钥匙给我吗？——好，给你。"
+      ],
+      [
+       "Mis amigos me prestaron los muebles. Me los prestaron gratis.",
+       "朋友们借给我家具，免费借给我的。"
+      ],
+      [
+       "¿Nos enseñas la casa? —Claro, os la enseño.",
+       "你带我们看看房子？——当然，带你们看。"
+      ]
+     ],
+     "err": [
+      [
+       "¿El libro? Lo te presto.",
+       "¿El libro? Te lo presto.",
+       "间接（te）在前"
+      ],
+      [
+       "¿Las fotos? Las me envió ayer.",
+       "¿Las fotos? Me las envió ayer.",
+       "me 在前"
+      ]
+     ],
+     "sum": "<b>人在前、物在后</b>：me lo · te la · nos los · os las。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿Me prestas tu bicicleta? —Sí, ___ presto.",
+       "o": [
+        "la te",
+        "te la",
+        "te lo"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "¿Quién os regaló esos platos? —Mi tía ___ regaló.",
+       "o": [
+        "los nos",
+        "nos las",
+        "nos los"
+       ],
+       "a": 2
+      },
+      {
+       "t": "o",
+       "a": "Te lo doy ahora",
+       "p": [
+        "Te",
+        "lo",
+        "doy",
+        "ahora"
+       ],
+       "zh": "我马上给你。"
+      },
+      {
+       "t": "tr",
+       "zh": "你把钥匙给我吗？——好，给你。",
+       "a": [
+        "¿Me das la llave? —Sí, te la doy.",
+        "¿Me das las llaves? —Sí, te las doy."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "estantería"
+    },
+    {
+     "t": "word",
+     "w": "armario"
+    },
+    {
+     "t": "word",
+     "w": "lámpara"
+    },
+    {
+     "t": "word",
+     "w": "cajón"
+    },
+    {
+     "t": "word",
+     "w": "alfombra"
+    },
+    {
+     "t": "word",
+     "w": "espejo"
+    },
+    {
+     "t": "key",
+     "title": "le / les + lo / la → se lo / se la",
+     "what": [
+      "<b>le</b> 或 <b>les</b> 后面紧跟 lo / la / los / las 时，le / les 变成 <b>se</b>：",
+      "Le doy el libro → <b>Se lo</b> doy.　Les envío las fotos → <b>Se las</b> envío.",
+      "se 可能指他、她、您、他们，不清楚时在后面加 <b>a él / a ella / a usted / a Juan</b>：Se lo di <b>a ella</b>."
+     ],
+     "why": [
+      "“le lo”在西语里读起来拗口，历史上就变成了 se lo。这是唯一的“变形”，记住就不会错。",
+      "这个 se 和自反动词的 se 长得一样，但意思不同：这里的 se = 给他 / 她 / 他们。"
+     ],
+     "zh": [
+      "中文“把它给他”很顺；西语不能说 le lo，一定是 se lo。这是中国学生最常错的一个点。"
+     ],
+     "ex": [
+      [
+       "¿El espejo? Se lo devolvemos a tu madre el domingo.",
+       "镜子？周日还给你妈妈。"
+      ],
+      [
+       "¿Les mostraste los muebles? —Sí, se los mostré.",
+       "你给他们看家具了吗？——看了。"
+      ],
+      [
+       "¿La lámpara es para usted? —Sí, se la regalo.",
+       "台灯是给您的吗？——是，送给您。"
+      ]
+     ],
+     "err": [
+      [
+       "Le lo di ayer.",
+       "Se lo di ayer.",
+       "le + lo → se lo"
+      ],
+      [
+       "Les las envié.",
+       "Se las envié.",
+       "les + las → se las"
+      ]
+     ],
+     "sum": "<b>le / les + lo / la → se lo / se la</b>；不清楚指谁就加 a él / a ella / a usted。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿Le diste el cajón a Marta? —Sí, ___ di.",
+       "o": [
+        "lo le",
+        "le lo",
+        "se lo"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "¿Les devolviste las llaves a los vecinos? —Sí, ___ devolví.",
+       "o": [
+        "se los",
+        "les las",
+        "se las"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "¿El regalo para tu padre? ___ lo doy mañana.",
+       "a": [
+        "Se"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我把它还给她了。",
+       "a": [
+        "Se lo devolví.",
+        "Se lo devolví a ella.",
+        "Se la devolví."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "¿Se lo devolvemos hoy? —No, se lo llevamos el domingo.",
+     "zh": "我们今天还给她吗？——不，周日给她送去。",
+     "focus": "se lo 连成一个音节群 /selo/"
+    },
+    {
+     "t": "c",
+     "q": "Después de la ___ estábamos muy cansados.",
+     "o": [
+      "lámpara",
+      "alfombra",
+      "mudanza"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "¿Me ayudas a ___ el sofá al primer piso?",
+     "o": [
+      "colgar",
+      "bajar",
+      "montar"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Tardé dos horas en ___ la estantería.",
+     "o": [
+      "montar",
+      "colgar",
+      "cargar"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Las llaves están en el ___ de la mesa.",
+     "o": [
+      "armario",
+      "espejo",
+      "cajón"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "___ (colgar, yo) el cuadro en el salón ayer.",
+     "a": [
+      "Colgué"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Pon la ropa en el ___.（衣柜）",
+     "a": [
+      "armario"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Se lo llevamos el domingo",
+     "p": [
+      "Se",
+      "lo",
+      "llevamos",
+      "el domingo"
+     ],
+     "zh": "我们周日给她送去。"
+    },
+    {
+     "t": "dict",
+     "a": "Dámela, que la pongo yo en el dormitorio."
+    },
+    {
+     "t": "tr",
+     "zh": "我们把箱子装上了卡车。",
+     "a": [
+      "Cargamos las cajas en el camión.",
+      "Cargamos las cajas al camión."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "搬家词：mudanza、cargar、bajar、colgar、montar、mueble、estantería、armario、lámpara、cajón、alfombra、espejo。",
+      "<b>重点</b>：两个代词 —— 人在前、物在后：me lo / te la / nos los。",
+      "<b>重点</b>：le / les + lo / la → <b>se lo / se la</b>；不清楚指谁就加 a él / a ella。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.5.4",
+   "title": "代词位置",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Tortilla de patatas",
+     "lines": [
+      [
+       "Abuela",
+       "Primero, pela las patatas y córtalas en trozos finos.",
+       "首先，把土豆削皮，切成薄片。"
+      ],
+      [
+       "Nieto",
+       "¿Y la cebolla? ¿La corto también?",
+       "那洋葱呢？也切吗？"
+      ],
+      [
+       "Abuela",
+       "Sí, córtala y fríela con las patatas en la sartén.",
+       "对，切好和土豆一起在平底锅里煎。"
+      ],
+      [
+       "Nieto",
+       "¿Cuánto aceite le pongo?",
+       "放多少油？"
+      ],
+      [
+       "Abuela",
+       "Bastante. Mientras se fríen, bate los huevos y añádeles un poco de sal.",
+       "多放点。煎的时候，把鸡蛋打散，加一点盐。"
+      ],
+      [
+       "Nieto",
+       "¡Ya estoy batiéndolos! ¿Y ahora tengo que mezclarlo todo?",
+       "我已经在打了！现在要把所有东西混在一起吗？"
+      ]
+     ],
+     "note": "córtalas、fríela、añádeles、batiéndolos、mezclarlo —— 代词有时在动词前，有时贴在动词后。规则只有三条。"
+    },
+    {
+     "t": "word",
+     "w": "cortar"
+    },
+    {
+     "t": "word",
+     "w": "freír"
+    },
+    {
+     "t": "word",
+     "w": "hervir"
+    },
+    {
+     "t": "word",
+     "w": "mezclar"
+    },
+    {
+     "t": "word",
+     "w": "añadir"
+    },
+    {
+     "t": "word",
+     "w": "pelar"
+    },
+    {
+     "t": "key",
+     "title": "原形和副动词：代词可前可后",
+     "what": [
+      "变位动词：代词<b>必须在前</b>：<b>La</b> corto.",
+      "<b>原形</b>（-ar / -er / -ir）和<b>副动词</b>（-ando / -iendo）：代词可以<b>放在前面的变位动词前</b>，也可以<b>贴在后面</b>：",
+      "<b>Lo</b> voy a cortar = Voy a cortar<b>lo</b>　·　<b>Las</b> estoy pelando = Estoy pelándo<b>las</b>",
+      "贴在副动词后要<b>加重音符号</b>保持原来的重音：pelando → pelándolas，batiendo → batiéndolos"
+     ],
+     "why": [
+      "两种位置意思完全一样。口语里放前面更常见，贴后面在书面语和菜谱里常见。",
+      "两个代词也一样：Te lo voy a dar = Voy a dártelo（原形加两个代词也要加重音）。"
+     ],
+     "zh": [
+      "中文没有“代词贴在动词上”的写法，中国学生常把代词放在原形前面却又贴一遍（Lo voy a cortarlo），要么前要么后，不能两边都放。"
+     ],
+     "ex": [
+      [
+       "Tengo que pelarlas. = Las tengo que pelar.",
+       "我得给它们削皮。"
+      ],
+      [
+       "¿Estás haciendo la cena? —Sí, estoy haciéndola.",
+       "你在做晚饭吗？——是的，在做。"
+      ],
+      [
+       "Te lo voy a explicar. = Voy a explicártelo.",
+       "我来给你解释。"
+      ]
+     ],
+     "err": [
+      [
+       "Lo voy a cortarlo.",
+       "Voy a cortarlo.",
+       "前或后，只放一次"
+      ],
+      [
+       "Estoy pelandolas.",
+       "Estoy pelándolas.",
+       "贴代词后加重音"
+      ]
+     ],
+     "sum": "变位动词 → 代词在<b>前</b>；原形、副动词 → <b>前后都行</b>，贴后面时注意重音。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿La cebolla? Voy a ___ ahora.",
+       "o": [
+        "cortarlo",
+        "la cortar",
+        "cortarla"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "¿Los huevos? ___ estoy batiendo.",
+       "o": [
+        "Las",
+        "Les",
+        "Los"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "¿Las patatas? Estoy ___ (pelar + las).",
+       "a": [
+        "pelándolas"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我得给它们削皮。",
+       "a": [
+        "Tengo que pelarlas.",
+        "Las tengo que pelar.",
+        "Tengo que pelarlos."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "horno"
+    },
+    {
+     "t": "word",
+     "w": "sartén"
+    },
+    {
+     "t": "word",
+     "w": "cebolla"
+    },
+    {
+     "t": "word",
+     "w": "ajo"
+    },
+    {
+     "t": "word",
+     "w": "aceite"
+    },
+    {
+     "t": "word",
+     "w": "cucharada"
+    },
+    {
+     "t": "key",
+     "title": "肯定命令式：代词必须贴在后面",
+     "what": [
+      "对 tú 的肯定命令式 = 现在时第三人称单数：<b>corta, pela, añade, mezcla, fríe</b>",
+      "代词<b>必须贴在后面</b>：córta<b>la</b> · pél<b>alas</b> · añáde<b>les</b> · dá<b>melo</b>",
+      "贴上以后多了音节，要<b>加重音符号</b>：corta → córtala，mezcla → mézclalo"
+     ],
+     "why": [
+      "菜谱、说明书、指路都在用命令式，代词贴后是固定写法。（否定命令式用另一种形式，下一单元学。）"
+     ],
+     "zh": [
+      "中文“把它切了”宾语在动词后，这一点和西语命令式正好一样，反而好记。"
+     ],
+     "ex": [
+      [
+       "Pela las patatas y córtalas.",
+       "把土豆削皮，然后切开。"
+      ],
+      [
+       "Calienta el aceite y añade la cebolla.",
+       "把油烧热，加入洋葱。"
+      ],
+      [
+       "¿El ajo? Pélalo y mézclalo con el aceite.",
+       "蒜？剥皮后和油拌在一起。"
+      ]
+     ],
+     "err": [
+      [
+       "La corta en trozos.（命令）",
+       "Córtala en trozos.",
+       "肯定命令代词贴后"
+      ],
+      [
+       "Dame lo.",
+       "Dámelo.",
+       "连写 + 重音"
+      ]
+     ],
+     "sum": "肯定命令：<b>动词 + 代词连写</b>，再加重音（córtala、dámelo）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿La sartén? ___ con agua caliente.",
+       "o": [
+        "Lávala",
+        "Lávalo",
+        "La lava"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "¿Te doy el aceite? —Sí, ___, por favor.",
+       "o": [
+        "dame lo",
+        "dámelo",
+        "me lo da"
+       ],
+       "a": 1
+      },
+      {
+       "t": "o",
+       "a": "Pela las patatas y córtalas",
+       "p": [
+        "Pela",
+        "las patatas",
+        "y",
+        "córtalas"
+       ],
+       "zh": "把土豆削皮，然后切开。"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Pela las patatas y córtalas en trozos finos.",
+     "zh": "把土豆削皮，切成薄片。",
+     "focus": "córtalas 重音在 CÓR"
+    },
+    {
+     "t": "c",
+     "q": "___ el agua y añade la pasta.",
+     "o": [
+      "Hierve",
+      "Pela",
+      "Corta"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Mete la tarta en el ___ durante cuarenta minutos.",
+     "o": [
+      "ajo",
+      "sartén",
+      "horno"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Añade dos ___ de azúcar.",
+     "o": [
+      "sartenes",
+      "cucharadas",
+      "cebollas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Calienta el ___ en la sartén.",
+     "o": [
+      "horno",
+      "aceite",
+      "ajo"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "___ los huevos con el azúcar. (mezclar，命令)",
+     "a": [
+      "Mezcla"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Corta dos dientes de ___.（蒜）",
+     "a": [
+      "ajo"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿El pescado? Voy a ___ en la sartén.",
+     "o": [
+      "freírla",
+      "lo freír",
+      "freírlo"
+     ],
+     "a": 2
+    },
+    {
+     "t": "o",
+     "a": "Mientras se fríen, bate los huevos",
+     "p": [
+      "Mientras",
+      "se fríen,",
+      "bate",
+      "los huevos"
+     ],
+     "zh": "煎的时候，把鸡蛋打散。"
+    },
+    {
+     "t": "dict",
+     "a": "Primero, pela las patatas y córtalas en trozos finos."
+    },
+    {
+     "t": "tr",
+     "zh": "把洋葱切了，和土豆一起煎。",
+     "a": [
+      "Corta la cebolla y fríela con las patatas.",
+      "Córtala y fríela con las patatas."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "厨房词：cortar、freír、hervir、mezclar、añadir、pelar、horno、sartén、cebolla、ajo、aceite、cucharada。",
+      "<b>重点</b>：变位动词前放代词；原形、副动词前后都行（贴后加重音）；不能两边都放。",
+      "<b>重点</b>：肯定命令式代词必须贴后：córtala、dámelo。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.5.5",
+   "title": "单元复习：网购",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Un pedido que no llega",
+     "lines": [
+      [
+       "Cliente",
+       "Hola, hice un pedido hace una semana y todavía no me lo han entregado.",
+       "你好，我一周前下了单，到现在还没给我送到。"
+      ],
+      [
+       "Agente",
+       "Lo siento mucho. ¿Me puede dar el número del pedido?",
+       "非常抱歉。能告诉我订单号吗？"
+      ],
+      [
+       "Cliente",
+       "Sí, se lo doy ahora mismo: es el 4581.",
+       "可以，现在就告诉您：4581。"
+      ],
+      [
+       "Agente",
+       "Vale, ya lo veo. El repartidor se lo intentó entregar ayer, pero no había nadie.",
+       "好的，我看到了。快递员昨天试过给您送，但家里没人。"
+      ],
+      [
+       "Cliente",
+       "¡Pero yo estaba en casa! Quiero hacer una reclamación.",
+       "可我在家啊！我要投诉。"
+      ],
+      [
+       "Agente",
+       "Lo entiendo. Se lo enviamos otra vez mañana, y no le cobramos los gastos de envío.",
+       "我理解。我们明天再给您寄一次，不收您运费。"
+      ]
+     ],
+     "note": "me lo han entregado、se lo doy、lo veo、se lo intentó entregar、se lo enviamos —— 本单元的代词全都在一段客服对话里。"
+    },
+    {
+     "t": "word",
+     "w": "pedido"
+    },
+    {
+     "t": "word",
+     "w": "envío"
+    },
+    {
+     "t": "word",
+     "w": "gastos de envío"
+    },
+    {
+     "t": "word",
+     "w": "reembolso"
+    },
+    {
+     "t": "word",
+     "w": "factura"
+    },
+    {
+     "t": "word",
+     "w": "entregar"
+    },
+    {
+     "t": "key",
+     "title": "代词替换三步法",
+     "what": [
+      "① 找<b>直接宾语</b>（什么）→ lo / la / los / las",
+      "② 找<b>间接宾语</b>（给谁）→ me / te / le / nos / os / les",
+      "③ 两个都有：<b>人在前、物在后</b>；le / les 遇到 lo / la 变 <b>se</b>；再按动词形式定位置（变位前 / 原形副动词前后 / 肯定命令贴后）"
+     ],
+     "why": [
+      "这三步覆盖了本单元所有规则。熟练以后，说话时会自动完成，不用想。"
+     ],
+     "zh": [
+      "中文没有宾语代词的形态变化，一定要按步骤练到“脱口而出”。"
+     ],
+     "ex": [
+      [
+       "Envío la factura al cliente. → Le envío la factura. → Se la envío.",
+       "我把发票寄给客户。→ 把它寄给他。"
+      ],
+      [
+       "Voy a devolver los zapatos a la tienda. → Voy a devolvérselos. / Se los voy a devolver.",
+       "我要把鞋退给商店。"
+      ]
+     ],
+     "err": [
+      [
+       "¿La factura? Le la envío hoy.",
+       "¿La factura? Se la envío hoy.",
+       "le + la → se la"
+      ],
+      [
+       "Voy a devolverlosle.",
+       "Voy a devolvérselos.",
+       "人在前：se + los，再加重音"
+      ]
+     ],
+     "sum": "<b>什么 → lo / la；给谁 → le；人前物后；le + lo → se lo；看动词定位置</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mando el pedido a mis padres. → ___ mando.",
+       "o": [
+        "Lo les",
+        "Se lo",
+        "Les lo"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Quiero regalar este perfume a mi novia. → Quiero ___.",
+       "o": [
+        "regalarlesla",
+        "regalárselo",
+        "regalarlo le"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "¿El carrito? ___ he dejado lleno.（我把它装满了）",
+       "a": [
+        "Lo"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我把发票寄给他。",
+       "a": [
+        "Se la envío.",
+        "Le envío la factura.",
+        "Se la mando."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "repartidor"
+    },
+    {
+     "t": "word",
+     "w": "contraseña"
+    },
+    {
+     "t": "word",
+     "w": "descuento"
+    },
+    {
+     "t": "word",
+     "w": "oferta"
+    },
+    {
+     "t": "word",
+     "w": "carrito"
+    },
+    {
+     "t": "word",
+     "w": "reclamación"
+    },
+    {
+     "t": "key",
+     "title": "代词和过去时、现在完成时",
+     "what": [
+      "代词放在<b>整个动词前面</b>，包括 haber：<b>Me lo han</b> entregado.（不是 Han me lo…）",
+      "过去时：<b>Se lo</b> devolví ayer. / <b>Me la</b> enviaron el lunes.",
+      "现在完成时：<b>Te lo</b> he dicho mil veces. / ¿<b>Se lo</b> has contado?"
+     ],
+     "why": [
+      "haber + 过去分词是一个整体，代词不能插在中间，也不能贴在过去分词后。"
+     ],
+     "zh": [
+      "中文“已经给我送到了”“已经”在动词前；西语代词也在 he / has / han 之前。"
+     ],
+     "ex": [
+      [
+       "¿Has recibido el paquete? —Sí, me lo entregaron esta mañana.",
+       "你收到包裹了吗？——收到了，今天早上送到的。"
+      ],
+      [
+       "¿Le has devuelto el dinero? —Sí, ya se lo he devuelto.",
+       "你把钱还给他了吗？——已经还了。"
+      ]
+     ],
+     "err": [
+      [
+       "He lo enviado.",
+       "Lo he enviado.",
+       "代词在 haber 前"
+      ],
+      [
+       "Me han lo entregado.",
+       "Me lo han entregado.",
+       "两个代词都在 han 前"
+      ]
+     ],
+     "sum": "完成时：<b>代词 + haber + 过去分词</b>（Me lo han entregado）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿La contraseña? Ya ___ he cambiado.",
+       "o": [
+        "le",
+        "la",
+        "lo"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "¿Te han hecho el reembolso? —Sí, ___ hicieron ayer.",
+       "o": [
+        "me la",
+        "lo me",
+        "me lo"
+       ],
+       "a": 2
+      },
+      {
+       "t": "o",
+       "a": "Todavía no me lo han entregado",
+       "p": [
+        "Todavía no",
+        "me lo",
+        "han",
+        "entregado"
+       ],
+       "zh": "到现在还没给我送到。"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Lo entiendo. Se lo enviamos otra vez mañana.",
+     "zh": "我理解。我们明天再给您寄一次。",
+     "focus": "se lo enviamos 连读"
+    },
+    {
+     "t": "c",
+     "q": "Los ___ de envío son gratis para pedidos de más de 30 euros.",
+     "o": [
+      "gastos",
+      "descuentos",
+      "carritos"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "He olvidado mi ___ y no puedo entrar en la web.",
+     "o": [
+      "oferta",
+      "contraseña",
+      "factura"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Estos zapatos están de ___: cuestan la mitad.",
+     "o": [
+      "envío",
+      "reclamación",
+      "oferta"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "El ___ dejó el paquete en la portería.",
+     "o": [
+      "repartidor",
+      "reembolso",
+      "pedido"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "Quiero hacer una ___ porque el producto llegó roto. (投诉)",
+     "a": [
+      "reclamación"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Le haremos el ___ en cinco días. (退款)",
+     "a": [
+      "reembolso"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Me puede enviar la factura? —Sí, ___ envío hoy.",
+     "o": [
+      "le la",
+      "se la",
+      "se lo"
+     ],
+     "a": 1
+    },
+    {
+     "t": "o",
+     "a": "He añadido dos libros al carrito",
+     "p": [
+      "He añadido",
+      "dos libros",
+      "al carrito"
+     ],
+     "zh": "我往购物车里加了两本书。"
+    },
+    {
+     "t": "dict",
+     "a": "Se lo enviamos otra vez mañana."
+    },
+    {
+     "t": "tr",
+     "zh": "我一周前下的单，还没给我送到。",
+     "a": [
+      "Hice un pedido hace una semana y todavía no me lo han entregado.",
+      "Hice el pedido hace una semana y todavía no me lo han entregado."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "网购词：pedido、envío、gastos de envío、reembolso、factura、entregar、repartidor、contraseña、descuento、oferta、carrito、reclamación。",
+      "<b>重点</b>：代词三步法 —— 什么 → lo / la；给谁 → le；人前物后；le + lo → se lo；看动词定位置。",
+      "<b>重点</b>：完成时代词放在 haber 前：Me lo han entregado。",
+      "本单元：宾格 lo / la、与格 le / les、se lo、代词位置。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.5.6",
+   "title": "单元阅读：El regalo de cumpleaños",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "El regalo de cumpleaños",
+     "note": "先关掉译文读一遍，把所有代词（lo / la / le / se lo……）圈出来，想想它们各代替什么。",
+     "lines": [
+      [
+       "El mes pasado fue el cumpleaños de mi hermana Lucía.",
+       "上个月是我妹妹露西娅的生日。"
+      ],
+      [
+       "Yo no sabía qué regalarle, así que se lo pregunté a mi madre.",
+       "我不知道送她什么，就去问了我妈妈。"
+      ],
+      [
+       "Ella me dijo: «Le encanta la ropa. Cómprale un vestido».",
+       "她对我说：“她很喜欢衣服。给她买条连衣裙吧。”"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Fui a una tienda del centro porque había rebajas.",
+       "因为在打折，我去了市中心的一家店。"
+      ],
+      [
+       "Vi un vestido azul precioso y lo compré sin pensarlo.",
+       "我看到一条漂亮的蓝色连衣裙，想都没想就买了。"
+      ],
+      [
+       "La dependienta me lo envolvió para regalo.",
+       "店员帮我把它包成了礼物。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "El día de su cumpleaños se lo di a Lucía.",
+       "她生日那天我把它送给了露西娅。"
+      ],
+      [
+       "Se lo probó enseguida, pero le quedaba grande.",
+       "她马上试穿了，可是穿着大了。"
+      ],
+      [
+       "«No pasa nada», le dije. «Lo podemos cambiar».",
+       "“没关系，”我对她说，“我们可以去换。”"
+      ],
+      [
+       "Al día siguiente fuimos juntas a la tienda y lo cambiamos por una talla más pequeña.",
+       "第二天我们一起去了店里，换了一个小一号的。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Ahora Lucía lo lleva casi todos los fines de semana. ¡Le queda muy bien!",
+       "现在露西娅几乎每个周末都穿它。她穿着很好看！"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿A quién le preguntó la narradora qué regalar?",
+     "o": [
+      "A la dependienta.",
+      "A Lucía.",
+      "A su madre."
+     ],
+     "a": 2,
+     "e": "se lo pregunté a mi madre —— se = le（a mi madre）。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Por qué fue a esa tienda?",
+     "o": [
+      "Porque había rebajas.",
+      "Porque estaba cerca de casa.",
+      "Porque Lucía trabajaba allí."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "En «La dependienta me lo envolvió», ¿qué significa «lo»?",
+     "o": [
+      "el cumpleaños",
+      "el regalo de la madre",
+      "el vestido"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué problema tuvo el vestido?",
+     "o": [
+      "Estaba roto.",
+      "Tenía un color feo.",
+      "Le quedaba grande a Lucía."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "“Se lo di a Lucía” 里 se 是什么？",
+     "o": [
+      "无人称的 se",
+      "自反动词的 se",
+      "le（给她），遇到 lo 变成了 se"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "店员帮我把它包成了礼物。",
+     "a": [
+      "La dependienta me lo envolvió para regalo.",
+      "La dependienta me lo envolvió."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "本单元代词全在文中：regalarle、se lo pregunté、lo compré、me lo envolvió、se lo di、lo podemos cambiar。",
+      "le + lo → se lo；人在前、物在后。",
+      "quedar grande / quedar bien（衣服合不合身）。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "¿Dónde están mis gafas? —No ___ veo.",
+    "o": [
+     "les",
+     "los",
+     "las"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "¿Qué ___ dijiste a tus padres?",
+    "o": [
+     "les",
+     "las",
+     "los"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "¿Me prestas el coche? —Sí, ___ presto.",
+    "o": [
+     "te le",
+     "lo te",
+     "te lo"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "¿Le diste el regalo a Ana? —Sí, ___ di ayer.",
+    "o": [
+     "le lo",
+     "la le",
+     "se lo"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "¿La sopa? Voy a ___ ahora.",
+    "o": [
+     "la calentar",
+     "calentarla",
+     "calentarle"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "¿El ajo? ___ y córtalo.",
+    "o": [
+     "Pélalo",
+     "Pélale",
+     "Lo pela"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "¿Has enviado las fotos? —Sí, ya ___ he enviado.",
+    "o": [
+     "las",
+     "les",
+     "los"
+    ],
+    "a": 0
+   },
+   {
+    "t": "tr",
+    "zh": "我把镜子还给她了。",
+    "a": [
+     "Se lo devolví.",
+     "Le devolví el espejo.",
+     "Le he devuelto el espejo."
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "这件外套你穿着很好看。",
+    "a": [
+     "Esa chaqueta te queda muy bien.",
+     "Esta chaqueta te queda muy bien."
+    ]
+   }
+  ]
+ }
+}

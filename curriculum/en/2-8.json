@@ -1,0 +1,1921 @@
+{
+ "id": "en.2.8",
+ "title": "600 分冲刺",
+ "goal": "半套模考与错题复盘",
+ "lessons": [
+  {
+   "id": "en.2.8.1",
+   "title": "听力半套",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "工厂参观",
+     "lines": [
+      [
+       "",
+       "Good morning, and welcome to Norland Manufacturing.",
+       "早上好，欢迎来到诺兰制造公司。"
+      ],
+      [
+       "",
+       "Before we walk onto the factory floor, please put on the protective gear and goggles in the box by the door.",
+       "进入车间之前，请戴上门边箱子里的防护装备和护目镜。"
+      ],
+      [
+       "",
+       "Our first stop is the assembly line, where the raw materials are turned into finished parts.",
+       "第一站是装配线，原材料在那里变成成品零件。"
+      ],
+      [
+       "",
+       "Thanks to automation, our productivity has doubled in the past two years.",
+       "得益于自动化，我们的生产率在过去两年里翻了一番。"
+      ]
+     ],
+     "note": "这一课是半套听力（Part 2、3、4 混合）。目标不是满分，而是练<b>节奏</b>：每题答完立刻看下一题，跟不上就放弃这一题。"
+    },
+    {
+     "t": "word",
+     "w": "assemble"
+    },
+    {
+     "t": "word",
+     "w": "assembly line"
+    },
+    {
+     "t": "word",
+     "w": "conveyor belt"
+    },
+    {
+     "t": "word",
+     "w": "raw materials"
+    },
+    {
+     "t": "word",
+     "w": "supply chain"
+    },
+    {
+     "t": "word",
+     "w": "protective gear"
+    },
+    {
+     "t": "key",
+     "title": "听力的节奏：跟不上就放下",
+     "what": [
+      "Part 3/4 每段三题，录音结束后每题只有约 <b>8 秒</b>。三题的时间加起来，正好用来<b>预读下一段</b>的题干。",
+      "如果有一题没听到：<b>马上猜一个</b>（选你最有印象的），立刻去预读下一段。<b>绝不回头想</b>。",
+      "一旦回头想，下一段就来不及预读，会连着丢三题、六题 —— 这是 500 分卡住的最常见原因。"
+     ],
+     "why": [
+      "托业听力是“流水线”：录音不等人。丢一题的代价是 5 分，为了这一题丢掉后面三题的代价是 15 分。"
+     ],
+     "zh": [
+      "中国考生习惯“每题都要做对”，在托业听力里要换成“每段都要跟上”。"
+     ],
+     "ex": [
+      [
+       "Q: What does the man ask the woman to do? —— 没听到 → 选一个，立刻看下一段的三个题干。",
+       "没听到就猜，马上预读下一段。"
+      ],
+      [
+       "Directions: In this part of the test, you will hear some conversations… —— 这段说明时间 = 预读第一段的时间",
+       "说明时间用来预读。"
+      ]
+     ],
+     "err": [
+      [
+       "有一题没听清，录音结束后一直在想。",
+       "If you miss an answer, guess and move on to the next set of questions.",
+       "猜一个，立刻往前走"
+      ]
+     ],
+     "sum": "<b>没听到 → 马上猜 → 立刻预读下一段</b>；说明时间也用来预读。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Part 3 一段对话放完了，第二题你完全没听到。最好的做法是：",
+       "o": [
+        "回想录音，直到想起来为止",
+        "随便选一个，立刻预读下一段的题干",
+        "空着，最后再填"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Part 3 开始前播放的 Directions（说明），你应该：",
+       "o": [
+        "认真听说明的内容",
+        "用来预读第一段的题干",
+        "检查 Part 2 的答案"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "goggles"
+    },
+    {
+     "t": "word",
+     "w": "hazard"
+    },
+    {
+     "t": "word",
+     "w": "hazardous"
+    },
+    {
+     "t": "word",
+     "w": "productivity"
+    },
+    {
+     "t": "word",
+     "w": "automation"
+    },
+    {
+     "t": "word",
+     "w": "efficiency"
+    },
+    {
+     "t": "key",
+     "title": "Part 2 高频陷阱复习",
+     "what": [
+      "<b>近音词</b>：问 copy，选项里出现 coffee；问 contract，选项里有 contact —— 听起来像的，多半是陷阱。",
+      "<b>同词重复</b>：问句里的词在选项里原样出现（Where's the assembly line? — The line was long.），常是错的。",
+      "<b>间接回答</b>常是正确答案：Who's in charge of the order? — <b>Let me check the schedule.</b> / <b>I just started here.</b>"
+     ],
+     "why": [
+      "Part 2 有 25 题，是听力最容易提分的地方。三种规律掌握了，正确率能到 80% 以上。"
+     ],
+     "zh": [
+      "中国考生喜欢选“听到了原词”的选项，这正是托业设计的陷阱。"
+     ],
+     "ex": [
+      [
+       "When will the shipment arrive? — I'll call the supplier.",
+       "货什么时候到？——我给供应商打个电话（问一下）。"
+      ],
+      [
+       "Should we hire more staff or buy new machines? — Automation would be cheaper.",
+       "该多招人还是买新机器？——自动化更便宜。"
+      ]
+     ],
+     "err": [
+      [
+       "Where are the goggles? — Yes, they're good.",
+       "Where are the goggles? — In the cabinet by the door.",
+       "WH 问句不答 Yes / No；good 是近音陷阱"
+      ]
+     ],
+     "sum": "<b>近音词、同词重复多半是陷阱</b>；<b>间接回答</b>（让我查查 / 问问某人）常是正确答案。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "The furniture company will send someone.",
+        "At the front desk.",
+        "Yes, it was a great assembly."
+       ],
+       "a": 0,
+       "say": "Who's going to assemble the new desks?",
+       "e": "问句：Who's going to assemble the new desks?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "The technician is still checking it.",
+        "It's a leather belt.",
+        "He works on the third floor."
+       ],
+       "a": 0,
+       "say": "Is the conveyor belt working again?",
+       "e": "问句：Is the conveyor belt working again?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "There's a safety inspection.",
+        "Close to the station.",
+        "Yes, it's a big factory."
+       ],
+       "a": 0,
+       "say": "Why is the factory closed today?",
+       "e": "问句：Why is the factory closed today?"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Before we walk onto the factory floor, please put on the protective gear.",
+     "zh": "进入车间之前，请戴上防护装备。",
+     "focus": "put on 连读 /pʊˈdɑn/；gear /ɡɪr/"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "I'll put on my goggles.",
+      "Some new material.",
+      "In the storage room on the left."
+     ],
+     "a": 2,
+     "say": "Where should I put these raw materials?",
+     "e": "问句：Where should I put these raw materials?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "I ordered extra last week.",
+      "Yes, we protected them.",
+      "A few visitors came yesterday."
+     ],
+     "a": 0,
+     "say": "Do we have enough protective gear for the visitors?",
+     "e": "问句：Do we have enough protective gear for the visitors?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 What problem does the speaker mention?",
+     "o": [
+      "A machine stopped working.",
+      "A customer canceled an order.",
+      "Some materials were damaged."
+     ],
+     "a": 0,
+     "say": "Hi, Ana. It's Ben from the plant. One of the machines on the assembly line stopped this morning, so we're behind schedule. Could you call our customers and tell them their orders will arrive one day late?",
+     "e": "原文：Hi, Ana. It's Ben from the plant. One of the machines on the assembly line stopped this morning, so we're behind schedule. Could you call our customers and tell them their orders will arrive one day late?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 What does the speaker ask Ana to do?",
+     "o": [
+      "Visit the plant",
+      "Repair a machine",
+      "Contact some customers"
+     ],
+     "a": 2,
+     "say": "Hi, Ana. It's Ben from the plant. One of the machines on the assembly line stopped this morning, so we're behind schedule. Could you call our customers and tell them their orders will arrive one day late?",
+     "e": "原文：Hi, Ana. It's Ben from the plant. One of the machines on the assembly line stopped this morning, so we're behind schedule. Could you call our customers and tell them their orders will arrive one day late?"
+    },
+    {
+     "t": "c",
+     "q": "W: Our supply chain was slow last month. / M: That's why we're switching to a local supplier. —— What does the man say the company will do?",
+     "o": [
+      "Use a different supplier",
+      "Hire more staff",
+      "Close a factory"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Workers must wear ___ when they handle chemicals.",
+     "o": [
+      "conveyor belts",
+      "goggles",
+      "assembly lines",
+      "supply chains"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "These chemicals are ___ and must be stored carefully.",
+     "o": [
+      "hazardous",
+      "hazard",
+      "productive",
+      "efficiency"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "The new machines have greatly improved our ___. (效率)",
+     "a": [
+      "efficiency",
+      "productivity"
+     ]
+    },
+    {
+     "t": "dict",
+     "a": "Please put on the protective gear before entering the factory floor."
+    },
+    {
+     "t": "tr",
+     "zh": "得益于自动化，我们的生产率翻了一番。",
+     "a": [
+      "Thanks to automation, our productivity has doubled.",
+      "Because of automation, our productivity has doubled."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "工厂词：assemble、assembly line、conveyor belt、raw materials、supply chain、protective gear、goggles、hazard、hazardous、productivity、automation、efficiency。",
+      "<b>重点</b>：听力节奏 —— 没听到就猜，立刻预读下一段；说明时间用来预读。",
+      "<b>重点</b>：Part 2 陷阱 —— 近音词、同词重复；间接回答常是正解。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.8.2",
+   "title": "阅读半套",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "75 分钟怎么分",
+     "lines": [
+      [
+       "",
+       "Part 5: 30 questions — about 10 minutes",
+       "Part 5：30 题 —— 约 10 分钟"
+      ],
+      [
+       "",
+       "Part 6: 16 questions — about 8 minutes",
+       "Part 6：16 题 —— 约 8 分钟"
+      ],
+      [
+       "",
+       "Part 7: 54 questions — the remaining 55 minutes",
+       "Part 7：54 题 —— 剩下的 55 分钟"
+      ],
+      [
+       "",
+       "Whatever happens, do not leave any answers blank.",
+       "无论如何，不要留空。"
+      ]
+     ],
+     "note": "阅读部分最大的问题是<b>做不完</b>。600 分的目标：Part 5、6 快而准，Part 7 至少做完单篇，多篇能做多少做多少，剩下的全部猜一个。"
+    },
+    {
+     "t": "word",
+     "w": "startup"
+    },
+    {
+     "t": "word",
+     "w": "entrepreneur"
+    },
+    {
+     "t": "word",
+     "w": "proprietor"
+    },
+    {
+     "t": "word",
+     "w": "franchise"
+    },
+    {
+     "t": "word",
+     "w": "asset"
+    },
+    {
+     "t": "word",
+     "w": "equity"
+    },
+    {
+     "t": "key",
+     "title": "阅读的时间分配",
+     "what": [
+      "<b>Part 5</b>：每题 20 秒，30 题约 10 分钟。词性、动词题 5–10 秒；词汇题读整句。",
+      "<b>Part 6</b>：每篇 2 分钟，4 篇约 8 分钟。句子插入题放在每篇最后做。",
+      "<b>Part 7</b>：剩下约 55 分钟。<b>单篇先做</b>（短、题少、好拿分），双篇三篇后做。",
+      "考前 5 分钟还有没做的题：全部选同一个字母（例如都选 B），<b>不留空</b>。"
+     ],
+     "why": [
+      "托业不扣分，空着就是白送。时间到了还有 20 题没做，全部猜，期望值也有 5 题。"
+     ],
+     "zh": [
+      "中国考生在 Part 5 常“想太久”，一题想一分钟，最后 Part 7 剩十几分钟。Part 5 要像背乘法表一样快。"
+     ],
+     "ex": [
+      [
+       "Part 5 一道词汇题想不出来 → 选最像的，做标记，往下走。",
+       "想不出来就先选一个。"
+      ],
+      [
+       "Part 7 单篇（一篇 2–3 题）→ 双篇（5 题）→ 三篇（5 题）",
+       "由短到长。"
+      ]
+     ],
+     "err": [
+      [
+       "Part 5 用了 25 分钟，Part 7 只剩 30 分钟。",
+       "Spend about ten minutes on Part 5 so that you have enough time for Part 7.",
+       "Part 5 控制在 10 分钟左右"
+      ]
+     ],
+     "sum": "<b>Part 5 ≈ 10 分钟 · Part 6 ≈ 8 分钟 · Part 7 ≈ 55 分钟</b>；单篇先做；<b>绝不留空</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "阅读还剩 3 分钟，你还有 15 题没做。最好的做法是：",
+       "o": [
+        "每题都选一个答案",
+        "认真做其中两三题，其余空着",
+        "回头检查 Part 5"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Part 7 里最适合先做的是：",
+       "o": [
+        "单篇阅读",
+        "最长的那篇",
+        "三篇阅读"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Part 5 一题平均应该用多少时间？",
+       "o": [
+        "约 1 分钟",
+        "约 2 分钟",
+        "约 20 秒"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "creditor"
+    },
+    {
+     "t": "word",
+     "w": "bankrupt"
+    },
+    {
+     "t": "word",
+     "w": "bankruptcy"
+    },
+    {
+     "t": "word",
+     "w": "inflation"
+    },
+    {
+     "t": "word",
+     "w": "recession"
+    },
+    {
+     "t": "word",
+     "w": "downturn"
+    },
+    {
+     "t": "key",
+     "title": "Part 5 词汇题：看搭配",
+     "what": [
+      "四个选项意思不同时，先找空格旁边的<b>搭配词</b>，常常不用读懂整句：",
+      "<b>meet</b> a deadline / a requirement · <b>place</b> an order · <b>conduct</b> a survey · <b>submit</b> a proposal",
+      "<b>raise</b> funds / prices · <b>make</b> a reservation / a decision · <b>file</b> for bankruptcy · <b>take</b> effect",
+      "形容词 + 名词：<b>heavy</b> traffic · <b>strong</b> demand · <b>sharp</b> increase · <b>economic</b> downturn"
+     ],
+     "why": [
+      "搭配是“英语习惯”，靠逻辑推不出来：为什么是 meet a deadline 而不是 catch a deadline？只能记。但记住 30 个高频搭配，就能解决大部分词汇题。"
+     ],
+     "zh": [
+      "中文“满足要求”“下订单”“进行调查”“申请破产”，每个动词英语都不一样，不能按中文直译（do a survey 在托业里不如 conduct a survey 常见）。"
+     ],
+     "ex": [
+      [
+       "The startup raised two million dollars from investors.",
+       "这家初创公司从投资者那里筹集了两百万美元。"
+      ],
+      [
+       "The company filed for bankruptcy after the recession.",
+       "经济衰退后，公司申请了破产。"
+      ],
+      [
+       "The new rules will take effect on July 1.",
+       "新规定将于 7 月 1 日生效。"
+      ]
+     ],
+     "err": [
+      [
+       "We must catch the deadline.",
+       "We must meet the deadline.",
+       "meet a deadline"
+      ],
+      [
+       "Please put an order online.",
+       "Please place an order online.",
+       "place an order"
+      ]
+     ],
+     "sum": "<b>meet</b> a deadline · <b>place</b> an order · <b>conduct</b> a survey · <b>raise</b> funds · <b>file for</b> bankruptcy · <b>take</b> effect。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "We will ___ a survey to find out what customers think.",
+       "o": [
+        "conduct",
+        "do over",
+        "make",
+        "hold up"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "The team worked late to ___ the deadline.",
+       "o": [
+        "reach out",
+        "make up",
+        "meet",
+        "catch"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "The policy will ___ effect next month.",
+       "o": [
+        "have",
+        "make",
+        "take",
+        "give"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "The firm ___ for bankruptcy in March.",
+       "o": [
+        "placed",
+        "raised",
+        "filed",
+        "conducted"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "The company filed for bankruptcy after the recession.",
+     "zh": "经济衰退后，公司申请了破产。",
+     "focus": "bankruptcy 重音在 BANK；recession 重音在 ce"
+    },
+    {
+     "t": "c",
+     "q": "A young ___ started the company in her garage.",
+     "o": [
+      "franchise",
+      "creditor",
+      "entrepreneur",
+      "asset"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The bakery's ___ has run the shop for thirty years.",
+     "o": [
+      "proprietor",
+      "creditor",
+      "startup",
+      "recession"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The company owns ___ worth over ten million dollars.",
+     "o": [
+      "creditors",
+      "recessions",
+      "assets",
+      "entrepreneurs"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "He bought a ___ of a popular coffee chain.",
+     "o": [
+      "bankruptcy",
+      "proprietor",
+      "inflation",
+      "franchise"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "Many small firms went ___ during the economic ___.",
+     "o": [
+      "bankrupt / downturn",
+      "creditor / downturn",
+      "bankrupt / asset",
+      "bankruptcy / inflation"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "Prices keep rising because of ___. (通货膨胀)",
+     "a": [
+      "inflation"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "___ the recession, the startup doubled its sales.",
+     "o": [
+      "Because",
+      "Unless",
+      "Despite",
+      "Although"
+     ],
+     "a": 2
+    },
+    {
+     "t": "o",
+     "a": "The new rules will take effect on July 1.",
+     "zh": "新规定将于 7 月 1 日生效。"
+    },
+    {
+     "t": "dict",
+     "a": "The startup raised two million dollars from investors."
+    },
+    {
+     "t": "tr",
+     "zh": "经济衰退后，那家公司申请了破产。",
+     "a": [
+      "The company filed for bankruptcy after the recession.",
+      "After the recession, the company filed for bankruptcy.",
+      "That company went bankrupt after the recession."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "商业词：startup、entrepreneur、proprietor、franchise、asset、equity、creditor、bankrupt、bankruptcy、inflation、recession、downturn。",
+      "<b>重点</b>：时间 —— Part 5 约 10 分钟、Part 6 约 8 分钟、Part 7 约 55 分钟；单篇先做；绝不留空。",
+      "<b>重点</b>：词汇题看搭配 —— meet a deadline、place an order、conduct a survey、file for bankruptcy、take effect。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.8.3",
+   "title": "错题复盘一：语法",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "错题不是“粗心”",
+     "lines": [
+      [
+       "",
+       "Mistake: The company will (A) raise (B) rise its prices next month. — I chose (B).",
+       "错题：公司下个月将___价格。我选了 B。"
+      ],
+      [
+       "",
+       "Reason: \"raise\" needs an object (its prices); \"rise\" never takes an object.",
+       "原因：raise 后面要接宾语（its prices），rise 不能带宾语。"
+      ],
+      [
+       "",
+       "Rule to remember: you raise something, but something rises.",
+       "要记住的规则：raise + 宾语 / 某物 rises。"
+      ],
+      [
+       "",
+       "Next step: make two new sentences with each word.",
+       "下一步：每个词再造两个句子。"
+      ]
+     ],
+     "note": "“粗心”不是错因。每道错题要写清楚：是<b>词不认识</b>、<b>规则没掌握</b>、<b>看错题</b>，还是<b>时间不够</b>。只有知道错因，才知道下次怎么不错。"
+    },
+    {
+     "t": "word",
+     "w": "paycheck"
+    },
+    {
+     "t": "word",
+     "w": "bonus"
+    },
+    {
+     "t": "word",
+     "w": "allowance"
+    },
+    {
+     "t": "word",
+     "w": "stipend"
+    },
+    {
+     "t": "word",
+     "w": "hourly"
+    },
+    {
+     "t": "word",
+     "w": "salaried"
+    },
+    {
+     "t": "key",
+     "title": "错题本：按错因分类",
+     "what": [
+      "① <b>词汇</b>：不认识这个词或搭配 → 把词放进背单词，造句",
+      "② <b>规则</b>：知道词，但规则没掌握（主谓一致、词性位置、时态）→ 回到对应的重点笔记重学",
+      "③ <b>审题</b>：没看到 NOT、没看脚注、看错了 the man / the woman → 写一句提醒，下次做题前看一眼",
+      "④ <b>时间</b>：会做但没时间 → 练节奏，不是练知识"
+     ],
+     "why": [
+      "同一个错因会反复出现。复盘十道错题后，你会发现自己 70% 的错集中在一两类上 —— 那就是接下来要练的。",
+      "这个应用的错题本会自动收集你答错的题，复盘时给每道题想一想属于哪一类。"
+     ],
+     "zh": [
+      "中国学生习惯“把正确答案抄一遍”，这只记住了答案，没解决错因。"
+     ],
+     "ex": [
+      [
+       "错题：Each of the employees (have / has) a locker. → 错因：规则（each of + 单数）",
+       "每个员工都有一个储物柜。"
+      ],
+      [
+       "错题：What is NOT mentioned? 选了文中提到的 → 错因：审题（没看到 NOT）",
+       "没看清 NOT。"
+      ]
+     ],
+     "err": [
+      [
+       "错题原因：粗心。",
+       "Reason: I did not notice that the subject was singular.",
+       "写出具体的错因"
+      ]
+     ],
+     "sum": "每道错题标<b>错因</b>：词汇 / 规则 / 审题 / 时间；找出自己最多的那一类重点练。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "你选错了一道 Part 5 题，因为不知道 severance 是什么意思。错因属于：",
+       "o": [
+        "规则",
+        "词汇",
+        "审题",
+        "时间"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "你知道 the number of 用单数，但做题时被后面的复数名词骗了。错因属于：",
+       "o": [
+        "规则（还没熟练）",
+        "时间",
+        "词汇",
+        "审题"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "你在 Part 7 选了一个“文中提到”的选项，但题目问的是 NOT。错因属于：",
+       "o": [
+        "词汇",
+        "规则",
+        "时间",
+        "审题"
+       ],
+       "a": 3
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "deduction"
+    },
+    {
+     "t": "word",
+     "w": "severance"
+    },
+    {
+     "t": "word",
+     "w": "layoff"
+    },
+    {
+     "t": "word",
+     "w": "downsize"
+    },
+    {
+     "t": "word",
+     "w": "restructure"
+    },
+    {
+     "t": "word",
+     "w": "grievance"
+    },
+    {
+     "t": "key",
+     "title": "托业易混词：一字之差，意思不同",
+     "what": [
+      "<b>raise</b>（及物：提高某物）vs <b>rise</b>（不及物：自己上升）：raise salaries / salaries rise",
+      "<b>economic</b>（经济的）vs <b>economical</b>（节约的、划算的）：an economic downturn / an economical car",
+      "<b>considerable</b>（相当大的）vs <b>considerate</b>（体贴的）：a considerable bonus / a considerate manager",
+      "<b>successful</b>（成功的）vs <b>successive</b>（连续的）：a successful launch / three successive years"
+     ],
+     "why": [
+      "这些词在 Part 5 里常一起出现在选项中，拼写只差几个字母，意思完全不同。"
+     ],
+     "zh": [
+      "中文一个词就能区分，英语靠词尾，所以要成对记、成对造句。"
+     ],
+     "ex": [
+      [
+       "The company will raise hourly wages by 5%.",
+       "公司将把时薪提高 5%。"
+      ],
+      [
+       "Profits have risen for three successive years.",
+       "利润已连续三年上升。"
+      ],
+      [
+       "Buying in bulk is more economical.",
+       "批量购买更划算。"
+      ]
+     ],
+     "err": [
+      [
+       "The company will rise salaries next year.",
+       "The company will raise salaries next year.",
+       "raise + 宾语"
+      ],
+      [
+       "We received a considerate bonus.",
+       "We received a considerable bonus.",
+       "considerable = 相当大的"
+      ]
+     ],
+     "sum": "<b>raise sth / sth rises</b> · <b>economic</b> 经济的 / <b>economical</b> 划算的 · <b>considerable</b> 大量的 / <b>considerate</b> 体贴的 · <b>successive</b> 连续的。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Sales have ___ by 10% this quarter.",
+       "o": [
+        "arisen",
+        "raising",
+        "raised",
+        "risen"
+       ],
+       "a": 3
+      },
+      {
+       "t": "c",
+       "q": "The country is facing serious ___ problems.",
+       "o": [
+        "economize",
+        "economic",
+        "economical",
+        "economy"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Ms. Park received a ___ bonus for her excellent work.",
+       "o": [
+        "consideration",
+        "considerate",
+        "considerable",
+        "considering"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "The team won the award for the third ___ year.",
+       "o": [
+        "successful",
+        "successive",
+        "success",
+        "succeeding in"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Profits have risen for three successive years.",
+     "zh": "利润已连续三年上升。",
+     "focus": "successive 重音在 cess"
+    },
+    {
+     "t": "c",
+     "q": "Hourly workers are paid for each hour they work, while ___ employees receive a fixed amount every month.",
+     "o": [
+      "salaried",
+      "hourly",
+      "stipend",
+      "severance"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Employees who lost their jobs received ___ pay.",
+     "o": [
+      "bonus",
+      "grievance",
+      "allowance",
+      "severance"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "Taxes and insurance are listed as ___ on your pay slip.",
+     "o": [
+      "layoffs",
+      "grievances",
+      "bonuses",
+      "deductions"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "The company plans to ___ its workforce by 10%.",
+     "o": [
+      "restructure into",
+      "allowance",
+      "downsize",
+      "raise"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Interns receive a small monthly ___ for living costs.",
+     "o": [
+      "layoff",
+      "severance",
+      "stipend",
+      "grievance"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Employees can file a ___ if they are treated unfairly. (申诉)",
+     "a": [
+      "grievance"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "The company will ___ salaries in April.",
+     "o": [
+      "rose",
+      "arise",
+      "rise",
+      "raise"
+     ],
+     "a": 3
+    },
+    {
+     "t": "o",
+     "a": "Profits have risen for three successive years.",
+     "zh": "利润已连续三年上升。"
+    },
+    {
+     "t": "dict",
+     "a": "The company will raise hourly wages by five percent."
+    },
+    {
+     "t": "tr",
+     "zh": "所有员工年底都会拿到奖金。",
+     "a": [
+      "All employees will receive a bonus at the end of the year.",
+      "All staff will get a bonus at the end of the year.",
+      "Every employee will receive a bonus at the end of the year."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "薪酬词：paycheck、bonus、allowance、stipend、hourly、salaried、deduction、severance、layoff、downsize、restructure、grievance。",
+      "<b>重点</b>：错题按错因分类 —— 词汇 / 规则 / 审题 / 时间，找到自己最多的那一类。",
+      "<b>重点</b>：易混词 —— raise / rise、economic / economical、considerable / considerate、successful / successive。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.8.4",
+   "title": "错题复盘二：听力与阅读",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "把听不出的句子写下来",
+     "lines": [
+      [
+       "",
+       "Recording: \"We should've gotten the questionnaires back by now.\"",
+       "录音：问卷现在本该收回来了。"
+      ],
+      [
+       "",
+       "What I heard: \"We should of got the question there back by now.\"",
+       "我听成了：……"
+      ],
+      [
+       "",
+       "Problem: weak forms — should've sounds like \"shoulda\", and questionnaires was new.",
+       "问题：弱读 —— should've 听起来像 shoulda；questionnaires 是生词。"
+      ],
+      [
+       "",
+       "Fix: dictation practice with this sentence until I can write it correctly.",
+       "办法：用这句话做听写，直到写对为止。"
+      ]
+     ],
+     "note": "听力错题，光看原文“哦，原来是这样”没有用。要找到<b>为什么没听出来</b>：生词？连读弱读？语速？最有效的方法是<b>听写</b>。阅读错题则要找出自己掉进了哪种陷阱。"
+    },
+    {
+     "t": "word",
+     "w": "questionnaire"
+    },
+    {
+     "t": "word",
+     "w": "focus group"
+    },
+    {
+     "t": "word",
+     "w": "loyalty program"
+    },
+    {
+     "t": "word",
+     "w": "clientele"
+    },
+    {
+     "t": "word",
+     "w": "reviewer"
+    },
+    {
+     "t": "word",
+     "w": "bestseller"
+    },
+    {
+     "t": "key",
+     "title": "听力复盘：用听写找盲点",
+     "what": [
+      "做法：把错题的录音句<b>逐句听写</b>，写不出来的地方就是盲点。",
+      "常见盲点 ①：<b>弱读</b> —— should have → /ˈʃʊdəv/（shoulda）、going to → gonna、want to → wanna、did you → /ˈdɪdʒə/",
+      "常见盲点 ②：<b>连读</b> —— put it off → /pʊdɪˈdɔf/、check it out、pick it up",
+      "常见盲点 ③：<b>生词或专有名词</b> —— 把它加进背单词"
+     ],
+     "why": [
+      "你能“看懂”的句子不一定“听懂”。托业录音是正常语速，有大量弱读和连读。听写能强迫你注意到每一个音。",
+      "这个应用的听写题（✍️）就是为这个设计的：每天两三句，坚持一个月，Part 3/4 的正确率会明显上升。"
+     ],
+     "zh": [
+      "中文每个字都是完整的音节，没有弱读；中国学生习惯“一个词一个词”地听，碰到 shoulda、gonna 就断了。"
+     ],
+     "ex": [
+      [
+       "We should've gotten the questionnaires back by now.",
+       "问卷现在本该收回来了。"
+      ],
+      [
+       "I'm going to put it off until next week.",
+       "我打算推到下周。"
+      ],
+      [
+       "Did you sign up for the loyalty program?",
+       "你加入会员计划了吗？"
+      ]
+     ],
+     "err": [
+      [
+       "听不出来的句子，看一遍原文就跳过。",
+       "Write down the sentence you missed, then listen and write it again until it is correct.",
+       "用听写复盘，直到写对"
+      ]
+     ],
+     "sum": "听力错题 → <b>听写</b>：写不出的地方就是盲点（弱读、连读、生词）。",
+     "drill": [
+      {
+       "t": "dict",
+       "a": "We should have gotten the questionnaires back by now."
+      },
+      {
+       "t": "dict",
+       "a": "Did you sign up for the loyalty program?"
+      },
+      {
+       "t": "c",
+       "q": "“should've” 在快速口语里听起来像：",
+       "o": [
+        "should of /ʃʊd ɑv/",
+        "shoulda /ˈʃʊdə/",
+        "shoulder /ˈʃoʊldɚ/"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "endorsement"
+    },
+    {
+     "t": "word",
+     "w": "leaflet"
+    },
+    {
+     "t": "word",
+     "w": "pamphlet"
+    },
+    {
+     "t": "word",
+     "w": "sponsorship"
+    },
+    {
+     "t": "word",
+     "w": "quota"
+    },
+    {
+     "t": "word",
+     "w": "negotiation"
+    },
+    {
+     "t": "key",
+     "title": "阅读复盘：给选错的选项贴“陷阱标签”",
+     "what": [
+      "<b>同词陷阱</b>：选项照搬原文的词，但意思不对",
+      "<b>推过头</b>：常识合理，但原文没依据",
+      "<b>限定词</b>：all / some、must / may、at least / up to 被偷换",
+      "<b>说反了</b>：原文 not / no longer / unless，选项是肯定的",
+      "<b>看错位置</b>：答案在另一段、另一篇、脚注里"
+     ],
+     "why": [
+      "每道阅读错题，问自己：“我选的那个选项，是哪种陷阱？”贴上标签。连续几次都是同一种陷阱，就是你的阅读习惯问题。"
+     ],
+     "zh": [
+      "中国考生最常见的两种：同词陷阱（看到原词就选）和推过头（用常识补充）。"
+     ],
+     "ex": [
+      [
+       "原文：The reviewer praised the book's design but not its content. 选项：The reviewer liked the book's content. —— 标签：说反了",
+       "评论家称赞了书的设计，但没称赞内容。"
+      ],
+      [
+       "原文：The pamphlet is available at most branches. 选项：Every branch has the pamphlet. —— 标签：限定词",
+       "大多数分店有这本小册子。"
+      ]
+     ],
+     "err": [
+      [
+       "这题错了，因为我不小心。",
+       "I chose an option with the same words as the text, but the meaning was different.",
+       "写出陷阱类型，而不是“不小心”"
+      ]
+     ],
+     "sum": "阅读错题贴标签：<b>同词 · 推过头 · 限定词 · 说反了 · 看错位置</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "原文：“The bestseller list does not include e-books.” 你选了 “E-books are on the bestseller list.” 这是哪种陷阱？",
+       "o": [
+        "说反了",
+        "限定词",
+        "推过头"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "原文：“The company is in negotiation with two sponsors.” 你选了 “The company has signed a sponsorship deal.” 这是哪种陷阱？",
+       "o": [
+        "推过头",
+        "看错位置",
+        "同词陷阱"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "原文：“Most of our clientele are local business owners.” 你选了 “All customers are business owners.” 这是哪种陷阱？",
+       "o": [
+        "说反了",
+        "限定词",
+        "看错位置"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "We should've gotten the questionnaires back by now.",
+     "zh": "问卷现在本该收回来了。",
+     "focus": "should've 弱读成 /ˈʃʊdəv/，questionnaires 重音在 naire"
+    },
+    {
+     "t": "c",
+     "q": "Please fill out this short ___ about our service.",
+     "o": [
+      "sponsorship",
+      "bestseller",
+      "questionnaire",
+      "quota"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The company tested the new product with a ___ of twenty customers.",
+     "o": [
+      "focus group",
+      "leaflet",
+      "clientele",
+      "loyalty program"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Members of our ___ earn points every time they shop.",
+     "o": [
+      "pamphlet",
+      "negotiation",
+      "focus group",
+      "loyalty program"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "The restaurant's ___ is mainly young professionals.",
+     "o": [
+      "clientele",
+      "reviewer",
+      "quota",
+      "endorsement"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Each salesperson has a monthly ___ of fifty sales.",
+     "o": [
+      "leaflet",
+      "clientele",
+      "quota",
+      "reviewer"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "The novel became a ___ within a week. (畅销书)",
+     "a": [
+      "bestseller"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "The celebrity's ___ helped the product sell well.",
+     "o": [
+      "endorsement",
+      "negotiation",
+      "questionnaire",
+      "quota"
+     ],
+     "a": 0
+    },
+    {
+     "t": "o",
+     "a": "The pamphlet is available at most branches.",
+     "zh": "大多数分店都有这本小册子。"
+    },
+    {
+     "t": "dict",
+     "a": "I'm going to put it off until next week."
+    },
+    {
+     "t": "tr",
+     "zh": "经过长时间的谈判，双方签署了赞助协议。",
+     "a": [
+      "After long negotiations, the two sides signed a sponsorship agreement.",
+      "After a long negotiation, both sides signed a sponsorship deal.",
+      "After lengthy negotiations, the two parties signed a sponsorship agreement."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "市场调研词：questionnaire、focus group、loyalty program、clientele、reviewer、bestseller、endorsement、leaflet、pamphlet、sponsorship、quota、negotiation。",
+      "<b>重点</b>：听力错题用听写复盘 —— 找出弱读（shoulda / gonna）、连读和生词。",
+      "<b>重点</b>：阅读错题贴陷阱标签 —— 同词、推过头、限定词、说反了、看错位置。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.8.5",
+   "title": "600 模考",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "模考前的最后检查",
+     "lines": [
+      [
+       "",
+       "Listening: preview the questions, keep up, and never look back.",
+       "听力：预读题目，跟上节奏，绝不回头。"
+      ],
+      [
+       "",
+       "Part 5: look at the options first, then the blank.",
+       "Part 5：先看选项，再看空格。"
+      ],
+      [
+       "",
+       "Part 6: answer grammar questions as you read; do sentence insertion last.",
+       "Part 6：语法题读到就做，句子插入最后做。"
+      ],
+      [
+       "",
+       "Part 7: read the questions first, find the evidence, and look for paraphrases.",
+       "Part 7：先读题，找依据，找同义替换。"
+      ],
+      [
+       "",
+       "Finally, fill in every answer, even if you have to guess.",
+       "最后，每题都要填，哪怕是猜的。"
+      ]
+     ],
+     "note": "这一课是整个第二学期的综合模考：每道题都对应前面学过的一个方法。做完看解析，把错题按上一课的方法复盘。"
+    },
+    {
+     "t": "word",
+     "w": "proofread"
+    },
+    {
+     "t": "word",
+     "w": "delegate"
+    },
+    {
+     "t": "word",
+     "w": "prioritize"
+    },
+    {
+     "t": "word",
+     "w": "finalize"
+    },
+    {
+     "t": "word",
+     "w": "facilitate"
+    },
+    {
+     "t": "word",
+     "w": "supervise"
+    },
+    {
+     "t": "key",
+     "title": "600 分需要答对多少",
+     "what": [
+      "托业满分 990：听力 495 + 阅读 495。600 分大约是<b>听力 330 + 阅读 270</b>。",
+      "折算成正确率，大约<b>听力答对 65–70 题（共 100）</b>、<b>阅读答对 55–60 题（共 100）</b>。",
+      "这意味着：600 分不需要每题都会。<b>稳拿 Part 1、2、5</b>，Part 3/4、6、7 拿到一半多就够了。"
+     ],
+     "why": [
+      "很多人以为 600 分要“全面提高”，其实是“把会的拿稳 + 不会的不丢冤枉分（留空、时间崩盘）”。"
+     ],
+     "zh": [
+      "中国考生容易把目标定成“每题都会”，压力大、速度慢。先把会做的题做对、做快。"
+     ],
+     "ex": [
+      [
+       "Part 1 (6) + Part 2 (25) = 31 题：目标答对 25 题以上",
+       "Part 1、2 是听力的稳分区。"
+      ],
+      [
+       "Part 5 (30)：目标答对 22 题以上",
+       "Part 5 是阅读的稳分区。"
+      ]
+     ],
+     "err": [
+      [
+       "我要每道题都做对才能到 600。",
+       "To reach 600, I need about two-thirds of the listening and over half of the reading correct.",
+       "600 分 ≈ 听力约 2/3 + 阅读过半"
+      ]
+     ],
+     "sum": "600 ≈ <b>听力约 2/3 + 阅读过半</b>；稳拿 Part 1、2、5，其余拿一半以上，<b>不留空</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "托业 600 分大约需要：",
+       "o": [
+        "听力答对约 2/3，阅读答对一半多",
+        "听力和阅读都答对 90%",
+        "只要听力满分就行"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "对 600 分目标来说，最应该“稳拿”的是：",
+       "o": [
+        "Part 1、2、5",
+        "Part 7 三篇阅读",
+        "Part 4 图表题"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "evaluate"
+    },
+    {
+     "t": "word",
+     "w": "compile"
+    },
+    {
+     "t": "word",
+     "w": "collaborate"
+    },
+    {
+     "t": "word",
+     "w": "outsource"
+    },
+    {
+     "t": "word",
+     "w": "interim"
+    },
+    {
+     "t": "word",
+     "w": "pending"
+    },
+    {
+     "t": "key",
+     "title": "工作动词：Part 5 和 Part 7 的高频词",
+     "what": [
+      "分配与管理：<b>delegate</b>（委派）· <b>supervise</b>（监督）· <b>prioritize</b>（排优先级）· <b>outsource</b>（外包）",
+      "推进与完成：<b>facilitate</b>（促进、主持）· <b>finalize</b>（敲定）· <b>compile</b>（汇编、整理）· <b>evaluate</b>（评估）",
+      "合作与检查：<b>collaborate with</b>（与……合作）· <b>proofread</b>（校对）",
+      "状态：<b>pending</b>（待定的、未决的）· <b>interim</b>（临时的、过渡的）"
+     ],
+     "why": [
+      "这些词在职位描述、会议纪要、项目邮件里反复出现。Part 5 常考它们的词性（evaluate / evaluation）和搭配（collaborate with、delegate A to B）。"
+     ],
+     "zh": [
+      "中文“把工作分给他”英语是 delegate the task to him；“和他们合作”是 collaborate with them，介词都是固定的。"
+     ],
+     "ex": [
+      [
+       "The manager delegated the report to her assistant.",
+       "经理把报告交给了助理。"
+      ],
+      [
+       "Please proofread the brochure before we finalize it.",
+       "定稿前请校对一下宣传册。"
+      ],
+      [
+       "Mr. Ito will serve as interim director until a replacement is found.",
+       "在找到接替者之前，伊藤先生将担任临时总监。"
+      ]
+     ],
+     "err": [
+      [
+       "We collaborated to them on the project.",
+       "We collaborated with them on the project.",
+       "collaborate with"
+      ],
+      [
+       "The approval is pend.",
+       "The approval is pending.",
+       "pending 是形容词：待定的"
+      ]
+     ],
+     "sum": "<b>delegate A to B · collaborate with · finalize · proofread · pending（待定）· interim（临时）</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "The contract is still ___ approval from the legal team.",
+       "o": [
+        "delegated",
+        "interim",
+        "pending",
+        "finalized"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Our team will ___ with designers from Milan.",
+       "o": [
+        "delegate",
+        "supervise",
+        "outsource",
+        "collaborate"
+       ],
+       "a": 3
+      },
+      {
+       "t": "c",
+       "q": "Ms. Grant will ___ the workshop and lead the discussion.",
+       "o": [
+        "outsource",
+        "compile",
+        "facilitate",
+        "proofread"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Mr. Ito will serve as interim director until a replacement is found.",
+     "zh": "在找到接替者之前，伊藤先生将担任临时总监。",
+     "focus": "interim 重音在 IN；replacement 重音在 place"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "Yes, it was a fine budget.",
+      "The final round is tomorrow.",
+      "It's still pending approval."
+     ],
+     "a": 2,
+     "say": "Has the budget been finalized?",
+     "e": "问句：Has the budget been finalized?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 What will Ms. Patel do?",
+     "o": [
+      "Leave the company",
+      "Hire a new director",
+      "Temporarily lead the department"
+     ],
+     "a": 2,
+     "say": "Hi, everyone. As you know, Mr. Grant is leaving next week. Until we hire a new director, Ms. Patel will serve as interim director. Please send her any reports that need approval. She will meet with each team on Thursday.",
+     "e": "原文：Hi, everyone. As you know, Mr. Grant is leaving next week. Until we hire a new director, Ms. Patel will serve as interim director. Please send her any reports that need approval. She will meet with each team on Thursday.　interim director = 临时总监。"
+    },
+    {
+     "t": "c",
+     "q": "🎧 What are listeners asked to do?",
+     "o": [
+      "Apply for the director position",
+      "Send reports to Ms. Patel",
+      "Attend a farewell party"
+     ],
+     "a": 1,
+     "say": "Hi, everyone. As you know, Mr. Grant is leaving next week. Until we hire a new director, Ms. Patel will serve as interim director. Please send her any reports that need approval. She will meet with each team on Thursday.",
+     "e": "原文：Hi, everyone. As you know, Mr. Grant is leaving next week. Until we hire a new director, Ms. Patel will serve as interim director. Please send her any reports that need approval. She will meet with each team on Thursday."
+    },
+    {
+     "t": "c",
+     "q": "The company decided to ___ its customer service to an agency overseas.",
+     "o": [
+      "collaborate",
+      "outsource",
+      "facilitate",
+      "proofread"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Our team will ___ the results of the survey and present them next week.",
+     "o": [
+      "evaluative",
+      "evaluation",
+      "evaluate",
+      "evaluator"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Ms. Kim ___ the assembly line workers since 2019.",
+     "o": [
+      "has supervised",
+      "is supervised",
+      "will supervise",
+      "supervises"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "___ the deadline was tight, the team finished on time.",
+     "o": [
+      "Although",
+      "However",
+      "Because of",
+      "Despite"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Thank you for submitting your proposal. ___, we are unable to accept it at this time.",
+     "o": [
+      "Unfortunately",
+      "Therefore",
+      "In addition",
+      "For example"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Text: “Please compile a list of all pending orders by noon.” What is the reader asked to do?",
+     "o": [
+      "Deliver some orders by noon",
+      "Prepare a list of orders that are not yet complete",
+      "Cancel all orders"
+     ],
+     "a": 1,
+     "e": "compile = 整理；pending = 未完成的。"
+    },
+    {
+     "t": "f",
+     "q": "A good manager knows how to ___ tasks to the team. (委派)",
+     "a": [
+      "delegate"
+     ]
+    },
+    {
+     "t": "tr",
+     "zh": "定稿前请校对一下这份报告。",
+     "a": [
+      "Please proofread the report before we finalize it.",
+      "Please proofread this report before it is finalized.",
+      "Please proofread the report before finalizing it."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "工作动词：proofread、delegate、prioritize、finalize、facilitate、supervise、evaluate、compile、collaborate、outsource、interim、pending。",
+      "<b>重点</b>：600 分 ≈ 听力约 2/3 + 阅读过半；稳拿 Part 1、2、5；绝不留空。",
+      "<b>重点</b>：delegate A to B · collaborate with · pending（待定）· interim（临时）。",
+      "第二学期完成：7 个 Part 的方法都学过了。下一学期目标 800：提速和多篇阅读。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.8.6",
+   "title": "单元阅读：Local Startup Grows Despite Downturn",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Local Startup Grows Despite Downturn",
+     "note": "Part 7 式的新闻报道：模考节奏 —— 先看六道题，再用 3 分钟读完、作答。",
+     "lines": [
+      [
+       "PORTLAND — When Mia Torres started Greenbox, a meal delivery startup, three years ago, many people told her to put off her plans.",
+       "波特兰讯 —— 三年前米娅·托雷斯创办送餐初创公司 Greenbox 时，很多人劝她推迟计划。"
+      ],
+      [
+       "The economy was in a downturn, and several restaurants in the city had gone bankrupt.",
+       "当时经济低迷，市里好几家餐馆已经破产。"
+      ],
+      [
+       "However, Ms. Torres believed there was strong demand for healthy, economical meals.",
+       "然而，托雷斯女士相信，人们对健康又实惠的餐食有强烈需求。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Today, Greenbox delivers more than 2,000 meals a day and employs sixty people.",
+       "如今，Greenbox 每天配送两千多份餐食，雇有六十名员工。"
+      ],
+      [
+       "Its clientele includes office workers, students and busy parents.",
+       "其客户包括上班族、学生和忙碌的父母。"
+      ],
+      [
+       "Last month, the company raised four million dollars from investors, and it plans to open franchises in two other cities next year.",
+       "上个月，公司从投资者那里筹集了四百万美元，并计划明年在另外两座城市开设加盟店。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Ms. Torres says the secret is listening to customers.",
+       "托雷斯女士说，秘诀是倾听顾客。"
+      ],
+      [
+       "Every month, Greenbox sends a short questionnaire to its loyalty program members and holds a focus group to test new dishes.",
+       "Greenbox 每月给会员发放一份简短问卷，并组织焦点小组试吃新菜。"
+      ],
+      [
+       "\"We don't guess what people want,\" she said. \"We ask them.\"",
+       "“我们不猜人们想要什么，”她说，“我们直接问。”"
+      ],
+      [
+       "She also delegates most daily decisions to her managers so that she can focus on long-term plans.",
+       "她还把大部分日常决策交给经理们，以便自己专注于长期规划。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "What is the article mainly about?",
+     "o": [
+      "The closing of local restaurants",
+      "The growth of a small business",
+      "A new government policy"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is suggested about the economy three years ago?",
+     "o": [
+      "It was growing quickly.",
+      "It helped restaurants.",
+      "It was weak."
+     ],
+     "a": 2,
+     "e": "in a downturn, restaurants had gone bankrupt → 推断：经济不好。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is NOT mentioned as a group of Greenbox customers?",
+     "o": [
+      "Students",
+      "Office workers",
+      "Retired people"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What does the company plan to do next year?",
+     "o": [
+      "Expand to other cities",
+      "Hire a new CEO",
+      "Lower its prices"
+     ],
+     "a": 0,
+     "e": "open franchises in two other cities → expand。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "The word \"economical\" in paragraph 1 is closest in meaning to",
+     "o": [
+      "inexpensive",
+      "financial",
+      "healthy"
+     ],
+     "a": 0,
+     "e": "economical = 划算的；economic 才是“经济的”。易混词题。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "她把大部分日常决策交给经理们。",
+     "a": [
+      "She delegates most daily decisions to her managers.",
+      "She delegates most of the daily decisions to her managers."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "模考复盘：主旨看第一段、推断要有依据、NOT 逐个核对、同义替换 open franchises → expand。",
+      "易混词：economical（划算的）vs economic（经济的）。",
+      "第二学期词：startup、downturn、bankrupt、clientele、franchise、questionnaire、focus group、delegate。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "🎧 听问句，选最合适的回答",
+    "o": [
+     "It's a very nice brochure.",
+     "Yes, I read it.",
+     "Ms. Lee offered to do it."
+    ],
+    "a": 2,
+    "say": "Who's going to proofread the brochure?",
+    "e": "问句：Who's going to proofread the brochure?"
+   },
+   {
+    "t": "c",
+    "q": "🎧 听问句，选最合适的回答",
+    "o": [
+     "On the factory floor.",
+     "He's a fast runner.",
+     "Not until the inspection is complete."
+    ],
+    "a": 2,
+    "say": "When will the new assembly line start running?",
+    "e": "问句：When will the new assembly line start running?"
+   },
+   {
+    "t": "c",
+    "q": "🎧 What is being offered to loyalty program members?",
+    "o": [
+     "A gift card",
+     "An additional discount",
+     "Free delivery"
+    ],
+    "a": 1,
+    "say": "Attention, shoppers. Members of our loyalty program can get an extra ten percent off all items today. If you're not a member yet, you can sign up at any checkout counter. It only takes a minute.",
+    "e": "原文：Attention, shoppers. Members of our loyalty program can get an extra ten percent off all items today. If you're not a member yet, you can sign up at any checkout counter. It only takes a minute."
+   },
+   {
+    "t": "c",
+    "q": "The startup plans to ___ funds from new investors.",
+    "o": [
+     "rise",
+     "rising",
+     "raise",
+     "arise"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Profits increased for five ___ years.",
+    "o": [
+     "success",
+     "successive",
+     "successful",
+     "successfully"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Despite the economic ___, our sales remained strong.",
+    "o": [
+     "downsize",
+     "pending",
+     "interim",
+     "downturn"
+    ],
+    "a": 3
+   },
+   {
+    "t": "c",
+    "q": "The board will ___ the merger next week.",
+    "o": [
+     "finalize",
+     "finalization",
+     "final",
+     "finally"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Text: “Most of the books on the bestseller list are novels.” Which is true?",
+    "o": [
+     "Some books on the list are not novels.",
+     "No novels are on the list.",
+     "All books on the list are novels."
+    ],
+    "a": 0
+   },
+   {
+    "t": "tr",
+    "zh": "我们得在截止日期前完成。",
+    "a": [
+     "We have to meet the deadline.",
+     "We need to meet the deadline.",
+     "We must finish before the deadline."
+    ]
+   }
+  ]
+ }
+}
