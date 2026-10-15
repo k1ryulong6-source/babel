@@ -1473,6 +1473,142 @@
      ]
     }
    ]
+  },
+  {
+   "id": "es.1.3.6",
+   "title": "单元阅读：Mi familia",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Mi familia",
+     "note": "先关掉译文读一遍。短文只用学过的词和本单元的重点；读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "Me llamo Sofía. Tengo treinta años y vivo en Sevilla.",
+       "我叫索菲亚，三十岁，住在塞维利亚。"
+      ],
+      [
+       "Mis padres tienen sesenta años. Mi abuela también vive con ellos.",
+       "我父母六十岁了。我奶奶也和他们住在一起。"
+      ],
+      [
+       "Tengo un hermano. Se llama Pablo y es alto y guapo.",
+       "我有一个哥哥，叫巴勃罗，又高又帅。"
+      ],
+      [
+       "Su esposa, Lucía, es profesora.",
+       "他的妻子露西亚是老师。"
+      ],
+      [
+       "Ellos tienen dos hijos pequeños y un gato negro.",
+       "他们有两个小孩子和一只黑猫。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "La casa de mis padres es vieja, pero muy bonita.",
+       "我父母的房子很旧，但很漂亮。"
+      ],
+      [
+       "Hay cuatro dormitorios, una cocina grande y un jardín.",
+       "有四间卧室、一个大厨房和一个花园。"
+      ],
+      [
+       "En el jardín hay un árbol muy alto.",
+       "花园里有一棵很高的树。"
+      ],
+      [
+       "Los domingos, toda la familia come allí.",
+       "每个周日，全家都在那儿吃饭。"
+      ],
+      [
+       "¡Somos ocho personas en la mesa, y el gato debajo!",
+       "餐桌边坐八个人，桌子底下还有一只猫！"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "索菲亚多大？",
+     "o": [
+      "十三岁",
+      "三十岁",
+      "六十岁"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "巴勃罗是什么样的人？",
+     "o": [
+      "年轻的学生",
+      "又高又帅",
+      "又矮又胖"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "父母的房子怎么样？",
+     "o": [
+      "又小又旧",
+      "新，而且很大",
+      "旧，但很漂亮"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "周日餐桌边有几个人？",
+     "o": [
+      "七个",
+      "八个",
+      "十一个"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "“我们的房子”怎么说？",
+     "o": [
+      "nuestro casa",
+      "nuestra casa",
+      "nosotros casa"
+     ],
+     "a": 1,
+     "e": "物主形容词跟后面的名词变：casa 是阴性 → nuestra。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "我有一个哥哥。",
+     "a": [
+      "Tengo un hermano.",
+      "Tengo un hermano mayor."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：tener —— Tengo treinta años / Tengo un hermano / Tienen dos hijos。",
+      "<b>重点</b>：物主形容词跟后面的名词变 —— mis padres、su esposa。",
+      "形容词放名词后、性数一致：un gato negro、una cocina grande；hay：Hay cuatro dormitorios。",
+      "数字：treinta、sesenta、ocho。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

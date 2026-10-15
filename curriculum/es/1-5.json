@@ -1364,6 +1364,146 @@
      ]
     }
    ]
+  },
+  {
+   "id": "es.1.5.6",
+   "title": "单元阅读：Un día en Madrid",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Un día en Madrid",
+     "note": "先关掉译文读一遍。短文只用学过的词和本单元的重点；读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "Es mi primer día en Madrid.",
+       "这是我在马德里的第一天。"
+      ],
+      [
+       "Mi hotel está en el centro, cerca de la Plaza Mayor.",
+       "我的酒店在市中心，离马约尔广场很近。"
+      ],
+      [
+       "Necesito ir al Museo del Prado, pero no encuentro la calle.",
+       "我要去普拉多博物馆，可是找不到路。"
+      ],
+      [
+       "Pregunto a una señora: «Perdone, ¿cómo llego al museo?»",
+       "我问一位女士：“打扰一下，博物馆怎么走？”"
+      ],
+      [
+       "«Está un poco lejos», dice ella. «Siga todo recto y gire a la derecha en el semáforo.»",
+       "“有点远，”她说，“一直往前走，到红绿灯右转。”"
+      ],
+      [
+       "«También puede coger el autobús, pero a pie son veinte minutos.»",
+       "“也可以坐公交车，不过走路也就二十分钟。”"
+      ],
+      [
+       "Voy a pie porque quiero ver la ciudad.",
+       "我走着去，因为我想看看这座城市。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "El museo es muy grande y muy interesante.",
+       "博物馆很大，也很有意思。"
+      ],
+      [
+       "Después de tres horas, estoy cansada pero contenta.",
+       "三个小时之后，我累了，但很开心。"
+      ],
+      [
+       "Voy al hotel en metro: la estación está al lado del museo.",
+       "我坐地铁回酒店：地铁站就在博物馆旁边。"
+      ],
+      [
+       "Madrid es una ciudad grande, pero la gente es muy amable.",
+       "马德里是座大城市，但人们都很友善。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Dónde está el hotel?",
+     "o": [
+      "Al lado del museo.",
+      "En el centro, cerca de la Plaza Mayor.",
+      "Lejos del centro."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué dice la señora?",
+     "o": [
+      "Gire a la izquierda en la plaza.",
+      "Siga todo recto y gire a la derecha.",
+      "Coja un taxi."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Cómo va al museo?",
+     "o": [
+      "A pie.",
+      "En autobús.",
+      "En taxi."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Cómo está ella después de tres horas?",
+     "o": [
+      "Cansada pero contenta.",
+      "Triste y enferma.",
+      "Aburrida."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "«La estación ___ al lado del museo.»",
+     "o": [
+      "está",
+      "es",
+      "hay"
+     ],
+     "a": 0,
+     "e": "位置一律用 estar。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "博物馆有点远。",
+     "a": [
+      "El museo está un poco lejos.",
+      "El museo está un poco lejos de aquí."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：位置用 estar —— Mi hotel está en el centro / La estación está al lado del museo。",
+      "<b>重点</b>：ser vs estar —— Madrid es una ciudad grande（本质）/ estoy cansada pero contenta（此刻的状态）。",
+      "ir：voy al hotel、voy a pie、voy en metro。",
+      "指路：Siga todo recto / Gire a la derecha；No encuentro la calle（o → ue）。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

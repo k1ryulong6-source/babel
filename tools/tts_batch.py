@@ -18,12 +18,19 @@ import argparse, base64, concurrent.futures as cf, html, json, os, re, subproces
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, "tools", ".tts_cache")
-VOICE_ID = {"en": "gf_en", "es": "gf_es", "ja": "gf_ja"}
+VOICE_ID = {"en": "gf_en", "es": "gf_es", "ja": "gf_ja"}  # --voice m / fb / mb 时换成 gm_* / gfb_* / gmb_*
+# 录音包前缀：女声 gen / ges / gja（沿用），其他声音 gmen、gfben、gmben、gmes……
+bpre = lambda lang: "g" + VOICE_ID[lang].split("_")[0][1:].replace("f", "", VOICE_ID[lang].startswith("gf_")) + lang
+# 听力材料里早期 Kokoro 声音 → 对应的 Google 声音（App 里 AudioBank.gv 是同一张表）
+KOKORO = {"af": "gf_en", "am": "gm_en", "bf": "gfb_en", "bm": "gmb_en", "ef": "gf_es", "em": "gm_es"}
 # 单词用 Studio（单词发音最好），句子用 Chirp3-HD（句子自然、比 Studio 便宜很多）。Neural2 的 /ɪ/ 偏开，不再使用。
 VOICE_SETS = {
     # 日语没有 Studio 声音，单词和句子都用 Chirp3-HD（读音指定对日语无效，多音词改送假名，见 ja_input）
     "f": {"en": ("en-US-Studio-O", "en-US-Chirp3-HD-Kore"), "es": ("es-ES-Studio-C", "es-ES-Chirp3-HD-Kore"), "ja": ("ja-JP-Chirp3-HD-Kore", "ja-JP-Chirp3-HD-Kore")},
     "m": {"en": ("en-US-Studio-Q", "en-US-Chirp3-HD-Charon"), "es": ("es-ES-Studio-F", "es-ES-Chirp3-HD-Charon"), "ja": ("ja-JP-Chirp3-HD-Charon", "ja-JP-Chirp3-HD-Charon")},
+    # 英音（托业听力有美、英等口音）：只用于听力台词
+    "fb": {"en": ("en-GB-Studio-C", "en-GB-Chirp3-HD-Aoede")},
+    "mb": {"en": ("en-GB-Studio-B", "en-GB-Chirp3-HD-Orus")},
 }
 GOOGLE_VOICE = VOICE_SETS["f"]
 # 单独出现时 TTS 会读错或读得不确定的词：固定成课程想要的读音
@@ -157,6 +164,8 @@ def collect_curriculum(lang):
                         x = s.get("x") or ((lex.get(s.get("w")) or [None, None, []])[2] or [None])[0]
                         if x:
                             out.append(x[0])
+                    elif t == "read":
+                        out += [x[0] for x in s.get("lines", []) if x and x[0]]
                     elif t == "speak":
                         out.append(s.get("text", ""))
                     elif t == "key":
@@ -181,6 +190,33 @@ def collect_curriculum(lang):
     return out
 
 
+def en_listen_data():
+    """英语听力和 Part 2 材料写在 index.html 里（LISTENINGS / PART2），用 node 取出来。"""
+    s = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
+    a = s.index("const LISTENINGS = [")
+    js = [s[a:s.index("\nconst LEVELS", a)]]
+    js += re.findall(r"^(?:LISTENINGS\.unshift|const PART2 = |PART2\.push).*$", s, re.M)
+    js.append("process.stdout.write(JSON.stringify({L: LISTENINGS, P: PART2}))")
+    return json.loads(subprocess.run(["node", "-e", "\n".join(js)], capture_output=True, text=True, check=True).stdout)
+
+
+def listen_lines(lang):
+    """听力台词：每句按材料里分配的声音，只取当前 --voice 对应的那些。"""
+    pairs = []
+    if lang == "es":
+        for it in J("packs/es-listening.json"):
+            pairs += [(it["voices"].get(l["sp"], "ef_"), l["es"]) for l in it["lines"]]
+    if lang == "en":
+        d = en_listen_data()
+        for m in d["L"]:
+            pairs += [((m.get("voices") or {}).get(sp, "af_bella"), t) for sp, t, *_ in m["lines"]]
+        for st in d["P"]:
+            for it in st["items"]:
+                pairs.append((it["qv"], it["q"]))
+                pairs += [(it["ov"], f"{'ABC'[j]}. {o}") for j, o in enumerate(it["o"])]
+    return [t for v, t in pairs if KOKORO.get(v[:2]) == VOICE_ID[lang]]
+
+
 def collect(lang, sets):
     texts = []
     if "cur" in sets:
@@ -191,6 +227,8 @@ def collect(lang, sets):
         texts += [x[0] for e in lexicon(lang).values() for x in e[2]]
         if lang == "es":
             texts += [x[0] for xs in J("packs/es-examples.json").values() for x in xs]
+    if "listen" in sets:
+        texts += listen_lines(lang)
     seen, out = set(), []
     for t in texts:
         t = speakable(t, lang)
@@ -227,7 +265,7 @@ def synth_one(lang, t, kbps):
 
 def seed_cache(lang, texts):
     """从仓库里现有的录音包恢复缓存（换了机器 / 会话后不必重录已有的录音）。"""
-    pre = "g" + VOICE_ID[lang].split("_")[1]
+    pre = bpre(lang)
     want = {key(lang, t): t for t in texts if not os.path.exists(cache_path(lang, t))}
     n = 0
     for f in os.listdir(os.path.join(ROOT, "audio")):
@@ -268,7 +306,7 @@ def write_bundles(lang, texts):
     """增量写录音包：已有的包原样保留（不让仓库和 App 的离线下载整包重来），新录音放进新编号的包；
     不再用到的录音只从 audio/index.json 里去掉。--rebuild 时才整包重写。"""
     vid = VOICE_ID[lang]
-    pre = "g" + vid.split("_")[1]  # gen / ges / gja
+    pre = bpre(lang)  # gen / ges / gja（男声 gmen / gmes / gmja）
     adir = os.path.join(ROOT, "audio")
     index_p = os.path.join(adir, "index.json")
     index = json.load(open(index_p, encoding="utf-8"))
@@ -280,6 +318,8 @@ def write_bundles(lang, texts):
         index = {k: v for k, v in index.items() if not v.startswith(pre + "_")}
     have = {k for k, v in index.items() if v.startswith(pre + "_")}
     dropped = have - set(want)
+    if len(dropped) > max(100, len(have) // 5) and not REBUILD:
+        sys.exit(f"[{lang}] 这次会停用 {len(dropped)} 条已有录音，多半是 --sets 少写了（女声要带上 cur,words,examples,listen）。确认无误请加 --rebuild。")
     for k in dropped:
         del index[k]
     new = sorted(set(want) - have)
@@ -318,7 +358,7 @@ def sample(kbps):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--sets", default="cur,words", help="cur（课纲句子）, words（单词）, examples（词典例句）")
+    ap.add_argument("--sets", default="cur,words", help="cur（课纲句子）, words（单词）, examples（词典例句）, listen（听力台词，按 --voice 取女声或男声的台词）")
     ap.add_argument("--langs", default="en,es")
     ap.add_argument("--kbps", type=int, default=32)
     ap.add_argument("--workers", type=int, default=6)
@@ -329,6 +369,7 @@ if __name__ == "__main__":
     a = ap.parse_args()
     REBUILD = a.rebuild
     GOOGLE_VOICE = VOICE_SETS[a.voice]
+    VOICE_ID = {k: f"g{a.voice}_{k}" for k in VOICE_ID}
     if a.sample:
         sample(a.kbps)
         sys.exit()

@@ -1,0 +1,1763 @@
+{
+ "id": "es.2.2",
+ "title": "简单过去时 · 不规则",
+ "goal": "",
+ "lessons": [
+  {
+   "id": "es.2.2.1",
+   "title": "ser 与 ir：fui, fuiste, fue",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "¿Qué tal el vuelo?",
+     "lines": [
+      [
+       "Clara",
+       "¡Hola! ¿Qué tal el viaje a Roma?",
+       "嗨！罗马之行怎么样？"
+      ],
+      [
+       "Andrés",
+       "El viaje fue genial, pero el vuelo fue un desastre.",
+       "旅行很棒，可航班简直是灾难。"
+      ],
+      [
+       "Clara",
+       "¿Por qué? ¿Qué pasó?",
+       "为什么？怎么了？"
+      ],
+      [
+       "Andrés",
+       "Salió con tres horas de retraso y no llegó mi equipaje.",
+       "晚点了三个小时起飞，我的行李也没到。"
+      ],
+      [
+       "Clara",
+       "¡Qué rollo! ¿Y adónde fuiste primero?",
+       "真糟糕！那你先去了哪儿？"
+      ],
+      [
+       "Andrés",
+       "Fui directamente al hotel a dormir.",
+       "我直接去酒店睡觉了。"
+      ]
+     ],
+     "note": "fue 出现了两次：el viaje fue genial（是）、¿adónde fuiste?（去）。ser 和 ir 的过去时完全一样。"
+    },
+    {
+     "t": "word",
+     "w": "vuelo"
+    },
+    {
+     "t": "word",
+     "w": "retraso"
+    },
+    {
+     "t": "word",
+     "w": "escala"
+    },
+    {
+     "t": "word",
+     "w": "aterrizar"
+    },
+    {
+     "t": "word",
+     "w": "despegar"
+    },
+    {
+     "t": "word",
+     "w": "embarcar"
+    },
+    {
+     "t": "key",
+     "title": "ser 和 ir 的过去时一模一样",
+     "what": [
+      "<b>fui, fuiste, fue, fuimos, fuisteis, fueron</b>",
+      "= ser（是）的过去时 = ir（去）的过去时",
+      "看后面：<b>fue + a / adónde</b> → 去；<b>fue + 形容词 / 名词</b> → 是"
+     ],
+     "why": [
+      "两个最常用的动词共用一套不规则变位，听起来吓人，其实靠上下文从不会混：Fui a Roma（我去了罗马）/ Fue increíble（那是太棒了）。"
+     ],
+     "zh": [
+      "注意 fue、fui 都<b>不带重音符号</b>（单音节词），和规则动词的 -ó、-é 不一样。"
+     ],
+     "ex": [
+      [
+       "Fuimos a la playa el domingo.",
+       "我们周日去了海滩。"
+      ],
+      [
+       "La fiesta fue muy divertida.",
+       "派对很好玩。"
+      ],
+      [
+       "¿Quién fue el primero en llegar?",
+       "谁是第一个到的？"
+      ]
+     ],
+     "err": [
+      [
+       "El viaje fué increíble.",
+       "El viaje fue increíble.",
+       "fue 不带重音"
+      ],
+      [
+       "Ayer voy al médico.",
+       "Ayer fui al médico.",
+       "ayer → 过去时"
+      ]
+     ],
+     "sum": "<b>fui / fue</b>：后面接 a → 去；接形容词 → 是。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Ayer (yo) ___ al aeropuerto en taxi.",
+       "o": [
+        "fui",
+        "iba",
+        "fue"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "“El concierto fue increíble.” 这里的 fue 是：",
+       "o": [
+        "ir（去）",
+        "estar（在）",
+        "ser（是）"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "那次旅行很棒。",
+       "a": [
+        "El viaje fue genial.",
+        "El viaje fue increíble.",
+        "El viaje fue muy bueno."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "tarjeta de embarque"
+    },
+    {
+     "t": "word",
+     "w": "facturar"
+    },
+    {
+     "t": "word",
+     "w": "equipaje"
+    },
+    {
+     "t": "word",
+     "w": "aduana"
+    },
+    {
+     "t": "word",
+     "w": "llegada"
+    },
+    {
+     "t": "word",
+     "w": "salida"
+    },
+    {
+     "t": "key",
+     "title": "机场三件事：facturar, embarcar, aterrizar",
+     "what": [
+      "出发：hacer el check-in / <b>facturar</b> la maleta → pasar el control → <b>embarcar</b> → el avión <b>despega</b>",
+      "到达：el avión <b>aterriza</b> → recoger el equipaje → pasar la <b>aduana</b> → la <b>llegada</b>"
+     ],
+     "why": [
+      "按顺序记，讲旅行时就能一口气说下来。-car / -gar / -zar 的 yo 形拼写变化在这里集中出现：embarqué、despegué、aterricé。"
+     ],
+     "zh": [
+      "中文“托运行李”不是 enviar，西语专门用 facturar。"
+     ],
+     "ex": [
+      [
+       "Facturé la maleta y luego embarqué.",
+       "我托运了行李箱，然后登了机。"
+      ],
+      [
+       "El avión aterrizó con retraso.",
+       "飞机晚点降落。"
+      ]
+     ],
+     "err": [
+      [
+       "Yo aterrizé en Madrid.",
+       "Yo aterricé en Madrid.",
+       "-zar → -cé"
+      ],
+      [
+       "Envié la maleta en el aeropuerto.",
+       "Facturé la maleta en el aeropuerto.",
+       "托运用 facturar"
+      ]
+     ],
+     "sum": "<b>facturar → embarcar → despegar → aterrizar</b>；yo：embarqué、aterricé。",
+     "drill": [
+      {
+       "t": "f",
+       "q": "(Yo) ___ (facturar) dos maletas.",
+       "a": [
+        "facturé"
+       ]
+      },
+      {
+       "t": "c",
+       "q": "El avión ___ a las diez y llegó a las doce.",
+       "o": [
+        "despegó",
+        "embarcó",
+        "aterrizó"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "El viaje fue genial, pero el vuelo fue un desastre.",
+     "zh": "旅行很棒，可航班简直是灾难。",
+     "focus": "fue 一个音节，不加重音"
+    },
+    {
+     "t": "c",
+     "q": "El vuelo tiene una ___ en París.",
+     "o": [
+      "escala",
+      "salida",
+      "aduana"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "No encuentro mi ___ de embarque.",
+     "o": [
+      "tarjeta",
+      "equipaje",
+      "llegada"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Mi ___ no llegó y tuve que comprar ropa.",
+     "o": [
+      "equipaje",
+      "vuelo",
+      "escala"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "¿Adónde ___ (ir, tú) de vacaciones el año pasado?",
+     "a": [
+      "fuiste"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Las vacaciones ___ (ser) fantásticas.",
+     "a": [
+      "fueron"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "El vuelo salió con tres horas de retraso",
+     "p": [
+      "El vuelo",
+      "salió",
+      "con tres horas",
+      "de retraso"
+     ],
+     "zh": "航班晚点三小时起飞。"
+    },
+    {
+     "t": "dict",
+     "a": "Fui directamente al hotel a dormir."
+    },
+    {
+     "t": "tr",
+     "zh": "我们周日去了海滩。",
+     "a": [
+      "El domingo fuimos a la playa.",
+      "Fuimos a la playa el domingo."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "机场：vuelo、retraso、escala、aterrizar、despegar、embarcar、tarjeta de embarque、facturar、equipaje、aduana、llegada、salida。",
+      "<b>重点</b>：ser / ir 过去时同形：fui, fuiste, fue, fuimos, fuisteis, fueron。",
+      "<b>重点</b>：facturar → embarcar → despegar → aterrizar（yo：embarqué、aterricé）。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.2.2",
+   "title": "tener、estar、hacer：强变化过去时",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Una avería",
+     "lines": [
+      [
+       "Rosa",
+       "¿Por qué no viniste a la reunión?",
+       "你为什么没来开会？"
+      ],
+      [
+       "Iván",
+       "Tuve un problema con el coche. Tuvo una avería en la autopista.",
+       "我的车出了问题，在高速上抛锚了。"
+      ],
+      [
+       "Rosa",
+       "¡Qué susto! ¿Y qué hiciste?",
+       "吓死人了！那你怎么办的？"
+      ],
+      [
+       "Iván",
+       "Estuve dos horas esperando a la grúa.",
+       "我等拖车等了两个小时。"
+      ],
+      [
+       "Rosa",
+       "Bueno, por lo menos no tuviste un accidente.",
+       "好在没出车祸。"
+      ],
+      [
+       "Iván",
+       "Sí, tuve suerte.",
+       "是啊，运气不错。"
+      ]
+     ],
+     "note": "tuve、tuvo、estuve、hiciste —— 这组动词过去时词干全变，词尾也没有重音。"
+    },
+    {
+     "t": "word",
+     "w": "accidente"
+    },
+    {
+     "t": "word",
+     "w": "avería"
+    },
+    {
+     "t": "word",
+     "w": "susto"
+    },
+    {
+     "t": "word",
+     "w": "tener suerte"
+    },
+    {
+     "t": "word",
+     "w": "tener prisa"
+    },
+    {
+     "t": "word",
+     "w": "hacer cola"
+    },
+    {
+     "t": "key",
+     "title": "强变化过去时：词干变 + 词尾 -e, -iste, -o（没有重音）",
+     "what": [
+      "<b>tener → tuv-</b>：tuve, tuviste, tuvo, tuvimos, tuvisteis, tuvieron",
+      "<b>estar → estuv-</b>：estuve, estuviste, estuvo…",
+      "<b>hacer → hic-</b>：hice, hiciste, <b>hizo</b>, hicimos, hicisteis, hicieron",
+      "同组：poder → pud-、poner → pus-、saber → sup-、querer → quis-、venir → vin-"
+     ],
+     "why": [
+      "这一组词尾统一是 <b>-e, -iste, -o, -imos, -isteis, -ieron</b>，yo 和 él <b>都不带重音</b>（tuve / tuvo），重音落在词干上：TU-ve。",
+      "hizo 写 z 不写 c：c 在 o 前读 /k/，要保持 /θ/ 音就写 z。"
+     ],
+     "zh": [
+      "这些都是最常用的动词，只能整组背。建议按“tuv- estuv- pud- pus- sup- quis- vin- hic-”一串念熟。"
+     ],
+     "ex": [
+      [
+       "Ayer tuve mucho trabajo.",
+       "我昨天工作很多。"
+      ],
+      [
+       "¿Dónde estuviste el sábado?",
+       "你周六在哪儿？"
+      ],
+      [
+       "¿Qué hizo usted el fin de semana?",
+       "您周末做了什么？"
+      ],
+      [
+       "No pude venir.",
+       "我没能来。"
+      ]
+     ],
+     "err": [
+      [
+       "Ayer tení una reunión.",
+       "Ayer tuve una reunión.",
+       "tener 过去时是 tuve"
+      ],
+      [
+       "Él hició la cena.",
+       "Él hizo la cena.",
+       "第三人称 hizo"
+      ],
+      [
+       "Estuvé en casa.",
+       "Estuve en casa.",
+       "强变化没有重音"
+      ]
+     ],
+     "sum": "<b>tuv- / estuv- / hic- / pud- / pus- / sup- / quis- / vin-</b> + -e, -iste, -o…（无重音）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "El sábado (yo) ___ en casa todo el día.",
+       "o": [
+        "estaba",
+        "estuve",
+        "estuvé"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "¿Qué ___ tú anoche?",
+       "o": [
+        "hiciste",
+        "haciste",
+        "hizo"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "Mi hermano ___ (tener) un accidente.",
+       "a": [
+        "tuvo"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我们运气很好。",
+       "a": [
+        "Tuvimos mucha suerte.",
+        "Tuvimos suerte."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "hacer las maletas"
+    },
+    {
+     "t": "word",
+     "w": "hacer una reserva"
+    },
+    {
+     "t": "word",
+     "w": "estar de vacaciones"
+    },
+    {
+     "t": "word",
+     "w": "estar de viaje"
+    },
+    {
+     "t": "word",
+     "w": "taller"
+    },
+    {
+     "t": "word",
+     "w": "grúa"
+    },
+    {
+     "t": "key",
+     "title": "tener / hacer / estar 的常用短语",
+     "what": [
+      "<b>tener</b>：tener suerte（运气好）、tener prisa（赶时间）、tener un accidente（出事故）",
+      "<b>hacer</b>：hacer cola（排队）、hacer las maletas（收拾行李）、hacer una reserva（预订）",
+      "<b>estar</b>：estar de vacaciones / de viaje（在度假 / 出差）"
+     ],
+     "why": [
+      "这些短语都是整体用的，中文里对应的动词各不相同（“运气好”“排队”“出差”），要按西语的动词归类记。"
+     ],
+     "zh": [
+      "中文“排队”别直译 poner en línea，西语说 hacer cola。"
+     ],
+     "ex": [
+      [
+       "Hicimos cola para entrar al museo.",
+       "我们排队进博物馆。"
+      ],
+      [
+       "El mes pasado estuve de viaje en México.",
+       "上个月我在墨西哥出差。"
+      ]
+     ],
+     "err": [
+      [
+       "Tuve mucho prisa.",
+       "Tuve mucha prisa.",
+       "prisa 是阴性名词：mucha prisa"
+      ],
+      [
+       "Estuve en vacaciones.",
+       "Estuve de vacaciones.",
+       "固定说 de vacaciones"
+      ]
+     ],
+     "sum": "<b>tener suerte / prisa</b>、<b>hacer cola / las maletas / una reserva</b>、<b>estar de vacaciones / viaje</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Para entrar al concierto (nosotros) ___ cola dos horas.",
+       "o": [
+        "hicimos",
+        "estuvimos",
+        "tuvimos"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "La semana pasada mi jefe ___ de viaje.",
+       "o": [
+        "fue",
+        "estuvo",
+        "hizo"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Tuve un problema con el coche. Tuvo una avería en la autopista.",
+     "zh": "我的车出了问题，在高速上抛锚了。",
+     "focus": "tuve / tuvo 重音都在第一音节 TU"
+    },
+    {
+     "t": "c",
+     "q": "El coche tuvo una ___ y lo llevamos al taller.",
+     "o": [
+      "cola",
+      "avería",
+      "reserva"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Tuvimos que llamar a una ___ para mover el coche.",
+     "o": [
+      "aduana",
+      "grúa",
+      "escala"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "¡Qué ___! Pensé que era un ladrón.",
+     "o": [
+      "suerte",
+      "taller",
+      "susto"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Anoche (yo) ___ (hacer) las maletas.",
+     "a": [
+      "hice"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "No ___ (poder, nosotros) entrar porque estaba cerrado.",
+     "a": [
+      "pudimos"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Estuve dos horas esperando a la grúa",
+     "p": [
+      "Estuve",
+      "dos horas",
+      "esperando",
+      "a la grúa"
+     ],
+     "zh": "我等拖车等了两个小时。"
+    },
+    {
+     "t": "dict",
+     "a": "Tuvo una avería en la autopista."
+    },
+    {
+     "t": "tr",
+     "zh": "你为什么没来开会？",
+     "a": [
+      "¿Por qué no viniste a la reunión?",
+      "¿Por qué no fuiste a la reunión?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：accidente、avería、susto、taller、grúa；tener suerte / prisa、hacer cola / las maletas / una reserva、estar de vacaciones / de viaje。",
+      "<b>重点</b>：强变化 tuv- estuv- hic- pud- pus- sup- quis- vin- + -e, -iste, -o（无重音）；hizo。",
+      "<b>重点</b>：tener / hacer / estar 的固定短语。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.2.3",
+   "title": "decir、traer 与特殊意思",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Una sorpresa",
+     "lines": [
+      [
+       "Laura",
+       "¿Te enteraste? Marta se casa en junio.",
+       "你听说了吗？玛尔塔六月结婚。"
+      ],
+      [
+       "Óscar",
+       "¿En serio? ¡No me dijo nada!",
+       "真的吗？她什么都没跟我说！"
+      ],
+      [
+       "Laura",
+       "Nos lo dijo ayer en la cena. Trajo una tarta para celebrarlo.",
+       "她昨天晚饭时告诉我们的，还带了个蛋糕来庆祝。"
+      ],
+      [
+       "Óscar",
+       "¿Y por qué no me avisasteis?",
+       "那你们为什么不告诉我？"
+      ],
+      [
+       "Laura",
+       "Quise llamarte, pero no pude. Lo siento.",
+       "我想给你打电话来着，但没打成。抱歉。"
+      ]
+     ],
+     "note": "dijo、trajo、quise、pude —— 还有一个秘密：有些动词在过去时里意思会变。"
+    },
+    {
+     "t": "word",
+     "w": "traer"
+    },
+    {
+     "t": "word",
+     "w": "traducir"
+    },
+    {
+     "t": "word",
+     "w": "avisar"
+    },
+    {
+     "t": "word",
+     "w": "prometer"
+    },
+    {
+     "t": "word",
+     "w": "verdad"
+    },
+    {
+     "t": "word",
+     "w": "mentira"
+    },
+    {
+     "t": "key",
+     "title": "-j- 组：decir, traer, conducir, traducir → -eron",
+     "what": [
+      "<b>decir → dij-</b>：dije, dijiste, dijo, dijimos, dijisteis, <b>dijeron</b>",
+      "<b>traer → traj-</b>：traje, trajiste, trajo… <b>trajeron</b>",
+      "<b>conducir → conduj-</b>、<b>traducir → traduj-</b>",
+      "词干以 j 结尾时，ellos 是 <b>-eron</b>（不是 -ieron）"
+     ],
+     "why": [
+      "j 后面的 i 被“吞掉”了：dijeron 不说 dijieron。这是中国学生最常见的拼写错误。"
+     ],
+     "zh": [
+      "这组的特点就是一个 j，记成“说、带、开车、翻译都带 j”。"
+     ],
+     "ex": [
+      [
+       "Me dijeron que el museo estaba cerrado.",
+       "他们告诉我博物馆关了。"
+      ],
+      [
+       "¿Trajiste las fotos?",
+       "你把照片带来了吗？"
+      ],
+      [
+       "Traduje el documento al chino.",
+       "我把文件翻译成了中文。"
+      ]
+     ],
+     "err": [
+      [
+       "Ellos dijieron la verdad.",
+       "Ellos dijeron la verdad.",
+       "j 后是 -eron"
+      ],
+      [
+       "Yo decí que sí.",
+       "Yo dije que sí.",
+       "decir 过去时是 dije"
+      ]
+     ],
+     "sum": "<b>dij- / traj- / conduj- / traduj-</b>，ellos 形 <b>-eron</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mis padres me ___ un regalo de Japón.",
+       "o": [
+        "trajieron",
+        "trajeron",
+        "traieron"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "¿Qué te ___ (decir) el médico?",
+       "a": [
+        "dijo"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "他对我说了实话。",
+       "a": [
+        "Me dijo la verdad.",
+        "Él me dijo la verdad."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "sorpresa"
+    },
+    {
+     "t": "word",
+     "w": "enterarse"
+    },
+    {
+     "t": "word",
+     "w": "darse cuenta"
+    },
+    {
+     "t": "word",
+     "w": "ponerse"
+    },
+    {
+     "t": "word",
+     "w": "querer decir"
+    },
+    {
+     "t": "word",
+     "w": "por casualidad"
+    },
+    {
+     "t": "key",
+     "title": "过去时里意思会变：supe, conocí, quise, no quise, pude",
+     "what": [
+      "<b>saber</b>：sé（知道）→ <b>supe</b>（得知了）",
+      "<b>conocer</b>：conozco（认识）→ <b>conocí</b>（结识了、第一次见）",
+      "<b>querer</b>：<b>quise</b>（想做并试了）/ <b>no quise</b>（拒绝了）",
+      "<b>poder</b>：<b>pude</b>（成功做到了）/ <b>no pude</b>（没能做到）"
+     ],
+     "why": [
+      "简单过去时强调“完成的一个动作”，所以状态动词变成了“发生的那一刻”：知道 → 得知，认识 → 结识。"
+     ],
+     "zh": [
+      "中文其实也有类似变化：“知道了”= 得知。所以 supe la noticia 就是“我得知了消息”。"
+     ],
+     "ex": [
+      [
+       "Supe la noticia por la radio.",
+       "我是从广播里得知这个消息的。"
+      ],
+      [
+       "Conocí a mi mujer en la universidad.",
+       "我在大学认识了我妻子。"
+      ],
+      [
+       "No quiso venir.",
+       "他（不愿意）没肯来。"
+      ]
+     ],
+     "err": [
+      [
+       "Ayer sé la noticia.",
+       "Ayer supe la noticia.",
+       "“得知”用 supe"
+      ],
+      [
+       "Conocí a Juan desde hace años.",
+       "Conozco a Juan desde hace años.",
+       "一直认识是状态，用现在时"
+      ]
+     ],
+     "sum": "<b>supe</b> 得知 · <b>conocí</b> 结识 · <b>no quise</b> 拒绝 · <b>pude</b> 做到了。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "“我是在一次聚会上认识他的。”",
+       "o": [
+        "Lo sabía en una fiesta.",
+        "Lo conocí en una fiesta.",
+        "Lo supe en una fiesta."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Lo invité, pero no ___ venir.（他不肯来）",
+       "o": [
+        "pudo",
+        "quiso",
+        "supo"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Quise llamarte, pero no pude. Lo siento.",
+     "zh": "我想给你打电话来着，但没打成。抱歉。",
+     "focus": "quise / pude 重音在第一音节"
+    },
+    {
+     "t": "c",
+     "q": "¿Qué ___ “sobremesa”?",
+     "o": [
+      "dice",
+      "quiere decir",
+      "se entera"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "No me ___ cuenta de que era tan tarde.",
+     "o": [
+      "di",
+      "hice",
+      "puse"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Cuando vio la nota, se ___ muy contento.",
+     "o": [
+      "puso",
+      "pudo",
+      "pidió"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "Me ___ (enterar) de la boda por Facebook.",
+     "a": [
+      "enteré"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Lo encontré por ___ en el supermercado.",
+     "a": [
+      "casualidad"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "No me dijo nada",
+     "p": [
+      "No",
+      "me",
+      "dijo",
+      "nada"
+     ],
+     "zh": "他什么都没跟我说。"
+    },
+    {
+     "t": "dict",
+     "a": "Trajo una tarta para celebrarlo."
+    },
+    {
+     "t": "tr",
+     "zh": "你为什么不通知我？",
+     "a": [
+      "¿Por qué no me avisaste?",
+      "¿Por qué no me avisasteis?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：traer、traducir、avisar、prometer、verdad、mentira、sorpresa、enterarse、darse cuenta、ponerse、querer decir、por casualidad。",
+      "<b>重点</b>：dij- / traj- / traduj-，ellos 是 -eron。",
+      "<b>重点</b>：过去时变义 —— supe 得知、conocí 结识、no quise 拒绝、pude 做到。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.2.4",
+   "title": "讲一次旅行",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Mis vacaciones en Asturias",
+     "lines": [
+      [
+       "Pedro",
+       "¿Qué tal las vacaciones? ¿Adónde fuiste?",
+       "假期怎么样？你去哪儿了？"
+      ],
+      [
+       "Nuria",
+       "Estuve diez días en Asturias, en el norte.",
+       "我在北部的阿斯图里亚斯待了十天。"
+      ],
+      [
+       "Pedro",
+       "¿Y qué tal? ¿Hizo buen tiempo?",
+       "怎么样？天气好吗？"
+      ],
+      [
+       "Nuria",
+       "Llovió un poco, pero el paisaje fue increíble.",
+       "下了点雨，但风景美极了。"
+      ],
+      [
+       "Pedro",
+       "¿Dónde dormiste?",
+       "你住哪儿？"
+      ],
+      [
+       "Nuria",
+       "En un hostal pequeño en un puerto. ¡Fue un viaje inolvidable!",
+       "港口边一家小旅馆。真是一次难忘的旅行！"
+      ]
+     ],
+     "note": "讲旅行的骨架：去了哪儿（fui）、待了多久（estuve）、天气（hizo / llovió）、做了什么、感受（fue increíble）。"
+    },
+    {
+     "t": "word",
+     "w": "hostal"
+    },
+    {
+     "t": "word",
+     "w": "guía"
+    },
+    {
+     "t": "word",
+     "w": "recuerdo"
+    },
+    {
+     "t": "word",
+     "w": "vista"
+    },
+    {
+     "t": "word",
+     "w": "paisaje"
+    },
+    {
+     "t": "word",
+     "w": "catedral"
+    },
+    {
+     "t": "key",
+     "title": "estuve en vs fui a：待过 vs 去了",
+     "what": [
+      "<b>fui a</b> + 地点：去了（强调“去”这个动作）—— Fui a Asturias en tren.",
+      "<b>estuve en</b> + 地点：在那里待过（强调“在”，常带时长）—— Estuve diez días en Asturias.",
+      "问“你去过……吗”：¿Has estado en …?（完成时，第一学期学过）"
+     ],
+     "why": [
+      "讲旅行时两者常连用：Fui a Asturias y estuve allí diez días。"
+     ],
+     "zh": [
+      "中文“我在那儿待了十天”别用 fui；“我去了”别用 estuve。"
+     ],
+     "ex": [
+      [
+       "El verano pasado fui a Japón.",
+       "去年夏天我去了日本。"
+      ],
+      [
+       "Estuve una semana en Kioto.",
+       "我在京都待了一周。"
+      ]
+     ],
+     "err": [
+      [
+       "Fui diez días en Asturias.",
+       "Estuve diez días en Asturias.",
+       "待了多久用 estuve en"
+      ],
+      [
+       "Estuve a Madrid ayer.",
+       "Fui a Madrid ayer.",
+       "去用 ir a"
+      ]
+     ],
+     "sum": "<b>fui a</b> 去了 / <b>estuve en</b> 待过（+ 时长）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "El año pasado ___ tres semanas en Perú.",
+       "o": [
+        "hice",
+        "fui",
+        "estuve"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "¿Cómo ___ a Sevilla? —En AVE.",
+       "o": [
+        "hiciste",
+        "estuviste",
+        "fuiste"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "我在巴塞罗那待了五天。",
+       "a": [
+        "Estuve cinco días en Barcelona.",
+        "Estuve en Barcelona cinco días."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "castillo"
+    },
+    {
+     "t": "word",
+     "w": "isla"
+    },
+    {
+     "t": "word",
+     "w": "puerto"
+    },
+    {
+     "t": "word",
+     "w": "costa"
+    },
+    {
+     "t": "word",
+     "w": "increíble"
+    },
+    {
+     "t": "word",
+     "w": "inolvidable"
+    },
+    {
+     "t": "key",
+     "title": "讲旅行的连接：antes de / después de + 动词原形",
+     "what": [
+      "<b>antes de</b> + 原形：在……之前 —— Antes de salir, hice las maletas.",
+      "<b>después de</b> + 原形：在……之后 —— Después de cenar, dimos un paseo.",
+      "主语相同时用原形，不用变位动词。"
+     ],
+     "why": [
+      "这是让句子“连起来”的最简单方法，比一直说 y luego… y luego… 地道得多。"
+     ],
+     "zh": [
+      "中文“吃完饭以后”—— 西语直接 después de comer，不要说 después de comí。"
+     ],
+     "ex": [
+      [
+       "Después de visitar la catedral, comimos en el puerto.",
+       "参观完大教堂后，我们在港口吃了饭。"
+      ],
+      [
+       "Antes de volver, compré unos recuerdos.",
+       "回去之前，我买了些纪念品。"
+      ]
+     ],
+     "err": [
+      [
+       "Después de cené, salí.",
+       "Después de cenar, salí.",
+       "介词后用原形"
+      ]
+     ],
+     "sum": "<b>antes de / después de + 原形</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Después de ___ el castillo, bajamos a la playa.",
+       "o": [
+        "visité",
+        "visitar",
+        "visitamos"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Antes de ___ (salir) del hotel, dejé la llave en recepción.",
+       "a": [
+        "salir"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Estuve diez días en Asturias, en el norte.",
+     "zh": "我在北部的阿斯图里亚斯待了十天。",
+     "focus": "estuve 重音在 tu"
+    },
+    {
+     "t": "c",
+     "q": "Desde la habitación había una ___ preciosa del mar.",
+     "o": [
+      "vista",
+      "guía",
+      "costa"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Compré unos ___ para mis compañeros.",
+     "o": [
+      "puertos",
+      "recuerdos",
+      "paisajes"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "El ___ nos contó la historia de la ciudad.",
+     "o": [
+      "castillo",
+      "hostal",
+      "guía"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Fue una experiencia ___. Nunca la olvidaré.",
+     "a": [
+      "inolvidable"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Pasamos tres días en una ___ del Mediterráneo.",
+     "a": [
+      "isla"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Estuve diez días en Asturias",
+     "p": [
+      "Estuve",
+      "diez días",
+      "en Asturias"
+     ],
+     "zh": "我在阿斯图里亚斯待了十天。"
+    },
+    {
+     "t": "dict",
+     "a": "Llovió un poco, pero el paisaje fue increíble."
+    },
+    {
+     "t": "tr",
+     "zh": "那是一次难忘的旅行。",
+     "a": [
+      "Fue un viaje inolvidable.",
+      "Fue un viaje increíble."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "旅行词：hostal、guía、recuerdo、vista、paisaje、catedral、castillo、isla、puerto、costa、increíble、inolvidable。",
+      "<b>重点</b>：fui a（去了）/ estuve en（待过，加时长）。",
+      "<b>重点</b>：antes de / después de + 原形。",
+      "讲旅行骨架：fui → estuve → hizo / llovió → visité → fue increíble。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.2.5",
+   "title": "单元复习：-ir 动词的词干变化",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "La boda",
+     "lines": [
+      [
+       "Ana",
+       "¿Qué tal la boda de tu prima?",
+       "你表姐的婚礼怎么样？"
+      ],
+      [
+       "Luis",
+       "Muy bonita. Los novios eligieron un castillo cerca de Segovia.",
+       "很美。新人选在塞哥维亚附近的一座城堡。"
+      ],
+      [
+       "Ana",
+       "¡Qué bien! ¿Os divertisteis?",
+       "真好！你们玩得开心吗？"
+      ],
+      [
+       "Luis",
+       "Mucho. Pero mi abuelo se cayó bailando y se sintió mal un rato.",
+       "很开心。不过我爷爷跳舞时摔了一跤，难受了一会儿。"
+      ],
+      [
+       "Ana",
+       "¡Vaya! ¿Y luego?",
+       "哎呀！后来呢？"
+      ],
+      [
+       "Luis",
+       "Durmió un poco en el coche y luego pidió otro baile.",
+       "他在车里睡了一会儿，然后又要求再跳一支舞。"
+      ]
+     ],
+     "note": "eligieron、divertisteis、se sintió、durmió、pidió、se cayó —— 第三人称的拼写在变。"
+    },
+    {
+     "t": "word",
+     "w": "oír"
+    },
+    {
+     "t": "word",
+     "w": "caerse"
+    },
+    {
+     "t": "word",
+     "w": "construir"
+    },
+    {
+     "t": "word",
+     "w": "sentirse"
+    },
+    {
+     "t": "word",
+     "w": "despedirse"
+    },
+    {
+     "t": "word",
+     "w": "divertirse"
+    },
+    {
+     "t": "key",
+     "title": "-ir 词干变化动词：只在第三人称变（e → i，o → u）",
+     "what": [
+      "<b>e → i</b>：pedir → pidió, pidieron；sentir → sintió；elegir → eligió；divertirse → se divirtió",
+      "<b>o → u</b>：dormir → durmió, durmieron；morir → murió",
+      "yo、tú、nosotros、vosotros <b>不变</b>：pedí, pediste, pedimos"
+     ],
+     "why": [
+      "只有 -ir 的“靴子动词”才有这个变化；-ar、-er 的靴子动词过去时完全规则（pensé, volví）。"
+     ],
+     "zh": [
+      "记忆方法：过去时里只有“他、他们”两格变，像一双穿在右边的靴子。"
+     ],
+     "ex": [
+      [
+       "El cliente pidió la cuenta.",
+       "那位客人要了账单。"
+      ],
+      [
+       "Los niños durmieron toda la noche.",
+       "孩子们睡了一整夜。"
+      ],
+      [
+       "¿Qué eligió usted?",
+       "您选了什么？"
+      ]
+     ],
+     "err": [
+      [
+       "Él pedió un café.",
+       "Él pidió un café.",
+       "第三人称 e → i"
+      ],
+      [
+       "Yo pidí la carta.",
+       "Yo pedí la carta.",
+       "yo 不变"
+      ],
+      [
+       "Ellos dormieron bien.",
+       "Ellos durmieron bien.",
+       "o → u"
+      ]
+     ],
+     "sum": "-ir 靴子动词：<b>él / ellos</b> 变（pidió、durmió），其他不变。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Anoche mi hijo ___ diez horas.",
+       "o": [
+        "dormió",
+        "dormí",
+        "durmió"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Mis amigos ___ paella para todos.",
+       "o": [
+        "pidieron",
+        "pedieron",
+        "pidimos"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "La profesora nos ___ (sugerir) leer este libro.",
+       "a": [
+        "sugirió"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "conseguir"
+    },
+    {
+     "t": "word",
+     "w": "elegir"
+    },
+    {
+     "t": "word",
+     "w": "sugerir"
+    },
+    {
+     "t": "word",
+     "w": "mentir"
+    },
+    {
+     "t": "word",
+     "w": "morir"
+    },
+    {
+     "t": "word",
+     "w": "boda"
+    },
+    {
+     "t": "key",
+     "title": "y 结尾组：leer, oír, caer, construir → leyó, oyó, cayó",
+     "what": [
+      "元音 + -er / -ir 的动词，第三人称 i 变 <b>y</b>：leer → <b>leyó, leyeron</b>；oír → <b>oyó, oyeron</b>；caer → <b>cayó</b>；construir → <b>construyó</b>",
+      "其他人称带重音：leí, leíste, leímos；oí, oíste"
+     ],
+     "why": [
+      "三个元音挨在一起（le-i-ó）发音不顺，就把 i 变成辅音 y：le-yó。"
+     ],
+     "zh": [
+      "这一组数量不多，记住 leyó、oyó、cayó、construyó 四个就够用。"
+     ],
+     "ex": [
+      [
+       "¿Leíste el periódico? —Sí, lo leí esta mañana.",
+       "你看报纸了吗？——看了，今早看的。"
+      ],
+      [
+       "Nadie oyó nada.",
+       "谁都没听见。"
+      ],
+      [
+       "La niña se cayó de la bici.",
+       "小女孩从自行车上摔了下来。"
+      ]
+     ],
+     "err": [
+      [
+       "Él leió el libro.",
+       "Él leyó el libro.",
+       "i → y"
+      ],
+      [
+       "Construieron la casa.",
+       "Construyeron la casa.",
+       "i → y"
+      ]
+     ],
+     "sum": "<b>leyó / oyó / cayó / construyó</b>（第三人称 i → y）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mi abuela se ___ en la calle.",
+       "o": [
+        "cayó",
+        "caió",
+        "caí"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "¿Quién ___ este puente?",
+       "o": [
+        "construí",
+        "construyó",
+        "construió"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Durmió un poco en el coche y luego pidió otro baile.",
+     "zh": "他在车里睡了一会儿，然后又要求再跳一支舞。",
+     "focus": "durmió、pidió 重音在最后"
+    },
+    {
+     "t": "c",
+     "q": "Nos ___ en la estación con un abrazo.",
+     "o": [
+      "despidimos",
+      "despidieron",
+      "despedimos"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Por fin ___ trabajo en una empresa grande.",
+     "o": [
+      "consiguió yo",
+      "consiguí",
+      "conseguí"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Mi abuelo ___ hace diez años.",
+     "o": [
+      "morió",
+      "muerió",
+      "murió"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "¿___ (oír, tú) la noticia?",
+     "a": [
+      "Oíste"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Ayer no me ___ (sentir) bien y me quedé en casa.",
+     "a": [
+      "sentí"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Los novios eligieron un castillo",
+     "p": [
+      "Los novios",
+      "eligieron",
+      "un castillo"
+     ],
+     "zh": "新人选了一座城堡。"
+    },
+    {
+     "t": "dict",
+     "a": "Durmió un poco en el coche."
+    },
+    {
+     "t": "tr",
+     "zh": "孩子们玩得很开心。",
+     "a": [
+      "Los niños se divirtieron mucho.",
+      "Los niños lo pasaron muy bien."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：oír、caerse、construir、sentirse、despedirse、divertirse、conseguir、elegir、sugerir、mentir、morir、boda。",
+      "<b>重点</b>：-ir 靴子动词第三人称 e → i、o → u（pidió、durmió）。",
+      "<b>重点</b>：leyó、oyó、cayó、construyó（i → y）。",
+      "本单元：fui / fue、tuv- estuv- hic-、dij- traj-、变义动词。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.2.6",
+   "title": "单元阅读：Un viaje con sorpresas",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Un viaje con sorpresas",
+     "note": "先关掉译文读一遍，把所有过去时动词圈出来，想想原形是什么。",
+     "lines": [
+      [
+       "El verano pasado mi novio y yo fuimos a Lanzarote, una isla de Canarias.",
+       "去年夏天，我和男朋友去了加那利群岛的兰萨罗特岛。"
+      ],
+      [
+       "El viaje empezó mal: el vuelo salió con dos horas de retraso y en el aeropuerto no apareció mi maleta.",
+       "旅行一开始就不顺：航班晚点两小时，到了机场我的行李箱也没出来。"
+      ],
+      [
+       "Hicimos cola en la oficina de equipajes durante una hora.",
+       "我们在行李处排了一个小时的队。"
+      ],
+      [
+       "La empleada nos dijo: «Su maleta está en Madrid. Llegará mañana.»",
+       "工作人员对我们说：“您的行李在马德里，明天到。”"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Esa noche tuve que dormir con la camiseta de mi novio.",
+       "那天晚上我只好穿着男朋友的T恤睡觉。"
+      ],
+      [
+       "Pero al día siguiente trajeron la maleta al hotel y todo cambió.",
+       "可第二天他们把行李箱送到了酒店，一切都好起来了。"
+      ],
+      [
+       "Alquilamos un coche y fuimos por la costa.",
+       "我们租了辆车，沿着海岸兜风。"
+      ],
+      [
+       "El paisaje fue increíble: volcanes negros y un mar muy azul.",
+       "风景美极了：黑色的火山，湛蓝的大海。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "El último día pasó algo curioso.",
+       "最后一天发生了一件奇妙的事。"
+      ],
+      [
+       "En un restaurante del puerto conocí por casualidad a una chica de mi pueblo.",
+       "在港口的一家餐厅，我偶然认识了一个和我同乡的女孩。"
+      ],
+      [
+       "Ella nos sugirió un plato típico y nos divertimos mucho hablando con ella.",
+       "她给我们推荐了一道当地菜，和她聊天我们特别开心。"
+      ],
+      [
+       "Fue un viaje inolvidable, ¡a pesar de la maleta!",
+       "尽管有行李箱的插曲，那还是一次难忘的旅行！"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Qué problema tuvieron al llegar?",
+     "o": [
+      "No llegó la maleta.",
+      "Perdieron el vuelo.",
+      "El hotel estaba cerrado."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Dónde estaba la maleta?",
+     "o": [
+      "En Madrid.",
+      "En el hotel.",
+      "En otra isla."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué hicieron cuando llegó la maleta?",
+     "o": [
+      "Se quedaron en el hotel.",
+      "Alquilaron un coche y fueron por la costa.",
+      "Volvieron a Madrid."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "“Conocí por casualidad a una chica” 的意思是：",
+     "o": [
+      "我偶然结识了一个女孩",
+      "我早就认识一个女孩",
+      "我找到了一个女孩"
+     ],
+     "a": 0,
+     "e": "conocer 的过去时 conocí = 结识（第一次见）。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué les sugirió la chica?",
+     "o": [
+      "Una excursión en barco.",
+      "Un hotel barato.",
+      "Un plato típico."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "那是一次难忘的旅行。",
+     "a": [
+      "Fue un viaje inolvidable.",
+      "Fue un viaje increíble."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "不规则过去时：fuimos、fue、hicimos、dijo、tuve、trajeron、conocí、sugirió、nos divertimos。",
+      "conocí = 结识（过去时变义）。",
+      "讲旅行：fuimos a → hicimos cola → alquilamos → fue increíble。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "El año pasado ___ a México de vacaciones.",
+    "o": [
+     "fuimos",
+     "estuvimos",
+     "fueron a"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Ayer ___ mucho trabajo.",
+    "o": [
+     "tuve",
+     "tení",
+     "tuví"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "¿Qué ___ el fin de semana?",
+    "o": [
+     "haciste",
+     "hizo tú",
+     "hiciste"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Mis padres me ___ un regalo.",
+    "o": [
+     "traieron",
+     "trajeron",
+     "trajieron"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "La camarera nos ___ el postre de la casa.",
+    "o": [
+     "sugirió",
+     "sugerió",
+     "sugiró"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Conocí a mi novia ___ una fiesta.",
+    "o": [
+     "en",
+     "de",
+     "a"
+    ],
+    "a": 0
+   },
+   {
+    "t": "tr",
+    "zh": "我们在罗马待了一周。",
+    "a": [
+     "Estuvimos una semana en Roma.",
+     "Estuvimos en Roma una semana."
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "我是从广播里得知这个消息的。",
+    "a": [
+     "Supe la noticia por la radio.",
+     "Me enteré de la noticia por la radio."
+    ]
+   }
+  ]
+ }
+}

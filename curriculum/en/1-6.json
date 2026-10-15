@@ -1620,6 +1620,151 @@
      ]
     }
    ]
+  },
+  {
+   "id": "en.1.6.6",
+   "title": "单元阅读：My First Trip Abroad",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "My First Trip Abroad",
+     "note": "先关掉译文读一遍，只用学过的词和本单元的重点。读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "Last summer, I went to Japan for the first time.",
+       "去年夏天，我第一次去了日本。"
+      ],
+      [
+       "Before the trip, I was very nervous because I didn't speak any Japanese.",
+       "出发前我很紧张，因为我一点日语也不会说。"
+      ],
+      [
+       "On the first day, I made a big mistake: I got on the wrong train.",
+       "第一天我就犯了个大错：坐错了火车。"
+      ],
+      [
+       "A kind woman saw my map and helped me find the right one.",
+       "一位好心的女士看到我的地图，帮我找到了对的那班车。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "I stayed in Kyoto for five days.",
+       "我在京都待了五天。"
+      ],
+      [
+       "I visited old temples, ate a lot of good food, and had a great time.",
+       "我参观了古老的寺庙，吃了很多好吃的，玩得很开心。"
+      ],
+      [
+       "One night, I stayed up late and talked with other travelers at the hotel.",
+       "有一天晚上，我熬夜和旅馆里的其他游客聊天。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "I used to think that traveling alone was scary. Now I don't.",
+       "我以前觉得一个人旅行很可怕。现在不这么想了。"
+      ],
+      [
+       "So far, I have been to three countries, and I have made friends in all of them.",
+       "到目前为止，我去过三个国家，在每个国家都交到了朋友。"
+      ],
+      [
+       "Next year, I am going to visit Spain.",
+       "明年我打算去西班牙。"
+      ],
+      [
+       "I will start learning Spanish as soon as I finish this book.",
+       "我一读完这本书就开始学西班牙语。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "What mistake did the writer make on the first day?",
+     "o": [
+      "got on the wrong train",
+      "missed the plane",
+      "lost the map"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "How long did the writer stay in Kyoto?",
+     "o": [
+      "a week",
+      "five days",
+      "three days"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "How many countries has the writer been to?",
+     "o": [
+      "three",
+      "five",
+      "two"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What does the writer think about traveling alone now?",
+     "o": [
+      "It is boring.",
+      "It is very scary.",
+      "It is not scary."
+     ],
+     "a": 2,
+     "e": "I used to think … was scary. Now I don't. —— used to = 以前（现在不了）。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "\"I will start learning Spanish as soon as I ___ this book.\"",
+     "o": [
+      "finished",
+      "will finish",
+      "finish"
+     ],
+     "a": 2,
+     "e": "as soon as 从句用现在时表示将来。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "到目前为止，我去过三个国家。",
+     "a": [
+      "So far, I have been to three countries.",
+      "I have been to three countries so far.",
+      "So far I've been to three countries."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "一般过去时：went、was、made、got、saw、ate —— 不规则动词成组记。",
+      "<b>重点</b>：现在完成时 —— So far, I have been to three countries.（have been to = 去过，已回来）",
+      "<b>重点</b>：将来 —— I am going to visit Spain（计划）/ I will start … as soon as I finish …（从句用现在时）。",
+      "used to think：以前认为（现在不了）。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

@@ -1422,6 +1422,150 @@
      ]
     }
    ]
+  },
+  {
+   "id": "es.1.7.6",
+   "title": "单元阅读：Planes para el verano",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Planes para el verano",
+     "note": "先关掉译文读一遍。短文只用学过的词和本单元的重点；读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "Es junio y hace mucho calor en Valencia.",
+       "六月了，瓦伦西亚很热。"
+      ],
+      [
+       "Este verano voy a viajar con mi amiga Elena.",
+       "这个夏天我要和朋友埃莱娜去旅行。"
+      ],
+      [
+       "Ella prefiere la playa, pero yo prefiero la montaña.",
+       "她更喜欢海边，我更喜欢山里。"
+      ],
+      [
+       "Al final vamos a hacer las dos cosas: primero cuatro días en la playa y luego tres días en los Pirineos.",
+       "最后我们决定两样都去：先在海边待四天，再去比利牛斯山待三天。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "En la playa voy a nadar todas las mañanas y voy a dormir mucho.",
+       "在海边，我每天早上都要游泳，还要好好睡觉。"
+      ],
+      [
+       "Por la noche Elena quiere salir a bailar.",
+       "晚上埃莱娜想出去跳舞。"
+      ],
+      [
+       "Yo no bailo nada bien, pero voy a ir con ella.",
+       "我一点也不会跳，不过我会陪她去。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "En la montaña hace más frío, sobre todo por la noche.",
+       "山里更冷，尤其是晚上。"
+      ],
+      [
+       "Por eso pongo ropa de invierno en la maleta.",
+       "所以我在箱子里放了冬天的衣服。"
+      ],
+      [
+       "Todavía no conozco los Pirineos, pero sé que son muy bonitos.",
+       "我还没去过比利牛斯山，但我知道那里很美。"
+      ],
+      [
+       "¿Y si llueve? No pasa nada: pienso leer muchos libros.",
+       "要是下雨呢？没关系：我打算读很多书。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Qué prefiere Elena?",
+     "o": [
+      "La playa.",
+      "La montaña.",
+      "La ciudad."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Cuántos días van a estar en la montaña?",
+     "o": [
+      "Siete.",
+      "Tres.",
+      "Cuatro."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Por qué pone ropa de invierno en la maleta?",
+     "o": [
+      "Porque es invierno.",
+      "Porque en la montaña hace frío por la noche.",
+      "Porque va a llover."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "«Yo ___ ropa de invierno en la maleta.»",
+     "o": [
+      "pono",
+      "pongo",
+      "pone"
+     ],
+     "a": 1,
+     "e": "poner 只有 yo 不规则：pongo。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "«Todavía no ___ los Pirineos.»（没去过）",
+     "o": [
+      "conozco",
+      "conoce",
+      "sé"
+     ],
+     "a": 0,
+     "e": "认识、去过某地用 conocer；知道一件事用 saber。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "这个夏天我要去旅行。",
+     "a": [
+      "Este verano voy a viajar.",
+      "Voy a viajar este verano."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：ir a + 原形 —— voy a viajar / vamos a hacer / voy a nadar。",
+      "<b>重点</b>：词干变化 —— prefiere、prefiero（e → ie）、quiere；只有 yo 不规则：pongo、sé、conozco。",
+      "天气：hace mucho calor / hace más frío / ¿Y si llueve?",
+      "saber vs conocer：sé que son bonitos / no conozco los Pirineos；no … nada：no bailo nada bien。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

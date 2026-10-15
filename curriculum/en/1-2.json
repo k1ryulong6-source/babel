@@ -1738,6 +1738,130 @@
      ]
     }
    ]
+  },
+  {
+   "id": "en.1.2.6",
+   "title": "单元阅读：Thursdays with Grandma",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Thursdays with Grandma",
+     "note": "先关掉译文读一遍，只用学过的词和本单元的重点。读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "Lily is a student. She lives with her family in a small town.",
+       "莉莉是个学生，她和家人住在一个小镇上。"
+      ],
+      [
+       "Her mother is a doctor, and her father works at a school.",
+       "她妈妈是医生，爸爸在一所学校工作。"
+      ],
+      [
+       "Every Thursday, Lily helps her grandmother after class.",
+       "每周四，莉莉放学后去帮奶奶。"
+      ],
+      [
+       "Her grandmother is an old woman with three cats.",
+       "她奶奶是一位养着三只猫的老太太。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "This week, Lily has a problem with her homework.",
+       "这周，莉莉的作业遇到了一个难题。"
+      ],
+      [
+       "She thinks and thinks, but she can't find the answer.",
+       "她想了又想，还是找不到答案。"
+      ],
+      [
+       "\"Let's talk about it,\" says her grandmother.",
+       "“我们来聊聊吧，”奶奶说。"
+      ],
+      [
+       "They start with the first question and work through it together.",
+       "她们从第一题开始，一起一步一步做完。"
+      ],
+      [
+       "In the end, Lily says, \"Thank you very much! You're a great teacher.\"",
+       "最后，莉莉说：“太谢谢您了！您是个很棒的老师。”"
+      ],
+      [
+       "Her grandmother smiles. \"I was a teacher for thirty years,\" she says.",
+       "奶奶笑了：“我当了三十年老师呢。”"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "莉莉每周四做什么？",
+     "o": [
+      "去学校上课",
+      "放学后去帮奶奶",
+      "陪妈妈上班"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "奶奶养了几只猫？",
+     "o": [
+      "三只",
+      "两只",
+      "四只"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "莉莉遇到了什么问题？",
+     "o": [
+      "作业不会做",
+      "找不到学校",
+      "猫丢了"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "为什么奶奶能帮莉莉？",
+     "o": [
+      "她是医生",
+      "她当了三十年老师",
+      "她和莉莉在同一所学校"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "我们来聊聊吧。",
+     "a": [
+      "Let's talk about it.",
+      "Let's talk about it!",
+      "Let us talk about it."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "th 要伸舌头：Thursday、three、think、thank、thirty。",
+      "<b>重点</b>：-s 的三种读法 —— helps /s/、lives /z/、cats /s/、classes /ɪz/。",
+      "can't 要读重：she can't find —— 和 can 靠重音分辨。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

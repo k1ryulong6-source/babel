@@ -1,0 +1,1852 @@
+{
+ "id": "en.2.3",
+ "title": "Part 2 应答问题",
+ "goal": "疑问词问句、一般疑问句、间接回答",
+ "lessons": [
+  {
+   "id": "en.2.3.1",
+   "title": "WH 疑问词问句",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "仓库里的问答",
+     "lines": [
+      [
+       "A",
+       "Where should we store the new inventory?",
+       "新库存放哪儿？"
+      ],
+      [
+       "B",
+       "In the warehouse on Fifth Street.",
+       "放第五街的仓库。"
+      ],
+      [
+       "A",
+       "When will the shipment arrive?",
+       "这批货什么时候到？"
+      ],
+      [
+       "B",
+       "The courier said Thursday morning.",
+       "快递员说周四上午。"
+      ],
+      [
+       "A",
+       "Who's our main supplier for packaging?",
+       "我们的包装材料主要供应商是谁？"
+      ],
+      [
+       "B",
+       "You'd better check with Ms. Lee in purchasing.",
+       "你最好问问采购部的李女士。"
+      ]
+     ],
+     "note": "Part 2 一共 25 题，每题一句问话 + 三个回答，没有任何文字。WH 问句约占三分之一，听清第一个词就答对了一半。"
+    },
+    {
+     "t": "word",
+     "w": "supplier"
+    },
+    {
+     "t": "word",
+     "w": "vendor"
+    },
+    {
+     "t": "word",
+     "w": "inventory"
+    },
+    {
+     "t": "word",
+     "w": "warehouse"
+    },
+    {
+     "t": "word",
+     "w": "shipment"
+    },
+    {
+     "t": "word",
+     "w": "courier"
+    },
+    {
+     "t": "key",
+     "title": "疑问词决定答案类型",
+     "what": [
+      "<b>Who</b> → 人名、职位、部门（Ms. Lee / the manager / Accounting）",
+      "<b>When</b> → 时间（next week / by Friday / not until…）；<b>Where</b> → 地点（in the warehouse / on the desk）",
+      "<b>Why</b> → 原因（Because… / To…/ 或直接给理由）；<b>How</b> → 方式、程度（by courier / very well）",
+      "<b>How long / How often / How many / How much</b> → 时长、频率、数量、价格"
+     ],
+     "why": [
+      "只要听清第一个词，就能排除“信息类型对不上”的选项：问 When 答地点的、问 Where 答时间的，直接排除。",
+      "带 Yes / No 的回答对 WH 问句一定是错的。"
+     ],
+     "zh": [
+      "中文疑问词在句中（货什么时候到？），英语在句首（When will…），所以要训练“开头那一个词”的反应。"
+     ],
+     "ex": [
+      [
+       "When will the shipment arrive? — Not until next week.",
+       "货什么时候到？——要到下周。"
+      ],
+      [
+       "Where's the tracking number? — It's on the receipt.",
+       "追踪号在哪儿？——在收据上。"
+      ]
+     ],
+     "err": [
+      [
+       "Where is the warehouse? — Yes, it's big.",
+       "Where is the warehouse? — On Fifth Street.",
+       "WH 问句不用 Yes 回答"
+      ],
+      [
+       "When does it open? — In the lobby.",
+       "When does it open? — At nine.",
+       "When 要答时间"
+      ]
+     ],
+     "sum": "抓开头疑问词 → 只找对应的信息类型；<b>带 Yes / No 的直接排除</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Mr. Kim manages it.",
+        "It's on Fifth Street.",
+        "Yes, it is."
+       ],
+       "a": 0,
+       "say": "Who is in charge of the warehouse?",
+       "e": "问句：Who is in charge of the warehouse?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Sometime next week.",
+        "At the loading dock.",
+        "By courier."
+       ],
+       "a": 0,
+       "say": "When does the next shipment arrive?",
+       "e": "问句：When does the next shipment arrive?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Once a month.",
+        "About fifty boxes.",
+        "In the warehouse."
+       ],
+       "a": 0,
+       "say": "How often do you check the inventory?",
+       "e": "问句：How often do you check the inventory?"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "fragile"
+    },
+    {
+     "t": "word",
+     "w": "tracking number"
+    },
+    {
+     "t": "word",
+     "w": "out of stock"
+    },
+    {
+     "t": "word",
+     "w": "bulk"
+    },
+    {
+     "t": "word",
+     "w": "distributor"
+    },
+    {
+     "t": "word",
+     "w": "logistics"
+    },
+    {
+     "t": "key",
+     "title": "间接回答：“问问某某”“我查一下”也是正确答案",
+     "what": [
+      "<b>I'll check.</b> / <b>Let me look it up.</b>（我查一下）",
+      "<b>You'd better ask</b> Ms. Lee. / <b>Check with</b> the supplier.（问问某人）",
+      "<b>It hasn't been decided yet.</b> / <b>I'm not sure.</b>（还没定 / 不清楚）"
+     ],
+     "why": [
+      "新 TOEIC 越来越多用这种“不直接回答”的正确选项。它们<b>能回答任何问句</b>，所以当另外两个选项明显错时，大胆选它。"
+     ],
+     "zh": [
+      "中文日常也这么说：“你问一下王经理吧”。英语考试里这就是标准答案。"
+     ],
+     "ex": [
+      [
+       "Where is the order form? — Let me look for it.",
+       "订货单在哪儿？——我找找看。"
+      ],
+      [
+       "When will the price change? — It hasn't been announced yet.",
+       "价格什么时候变？——还没公布。"
+      ]
+     ],
+     "err": [
+      [
+       "Who is our new distributor? — The distributor is new.",
+       "Who is our new distributor? — Ask Mr. Patel in sales.",
+       "重复词的选项多半是陷阱"
+      ]
+     ],
+     "sum": "<b>I'll check / Ask Ms. … / It hasn't been decided</b> —— 万能的间接回答。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "The price is high.",
+        "Yes, the vendor did.",
+        "I'll have to check the files."
+       ],
+       "a": 2,
+       "say": "Which vendor gave us the lowest price?",
+       "e": "问句：Which vendor gave us the lowest price?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Yes, it's out.",
+        "In stock room B.",
+        "The supplier had a delay."
+       ],
+       "a": 2,
+       "say": "Why is this item out of stock?",
+       "e": "问句：Why is this item out of stock?"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Where should we store the new inventory?",
+     "zh": "新库存放哪儿？",
+     "focus": "WH 问句句尾语调下降"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "Last Tuesday.",
+      "About ten dollars.",
+      "It's on your receipt."
+     ],
+     "a": 2,
+     "say": "Where can I find the tracking number?",
+     "e": "问句：Where can I find the tracking number?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "Mark them as fragile and use a courier.",
+      "They're very expensive.",
+      "Yes, I shipped them."
+     ],
+     "a": 0,
+     "say": "How should we ship these glasses?",
+     "e": "问句：How should we ship these glasses?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "Next Monday.",
+      "It's cheaper that way.",
+      "From our usual supplier."
+     ],
+     "a": 1,
+     "say": "Why did you order in bulk?",
+     "e": "问句：Why did you order in bulk?"
+    },
+    {
+     "t": "c",
+     "q": "The item you ordered is currently ___. It will be back next week.",
+     "o": [
+      "in bulk",
+      "fragile",
+      "out of stock"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Our company works with a ___ in Asia to sell our products.",
+     "o": [
+      "distributor",
+      "courier",
+      "warehouse"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "Please handle this box carefully. It's ___.",
+     "a": [
+      "fragile"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "When will the shipment arrive?",
+     "zh": "这批货什么时候到？"
+    },
+    {
+     "t": "dict",
+     "a": "You'd better check with Ms. Lee in purchasing."
+    },
+    {
+     "t": "tr",
+     "zh": "新库存放哪儿？",
+     "a": [
+      "Where should we store the new inventory?",
+      "Where should we put the new inventory?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "物流词：supplier、vendor、inventory、warehouse、shipment、courier、fragile、tracking number、out of stock、bulk、distributor、logistics。",
+      "<b>重点</b>：开头疑问词决定答案类型；带 Yes / No 的选项排除。",
+      "<b>重点</b>：I'll check / Ask Ms. … / It hasn't been decided 是万能间接回答。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.3.2",
+   "title": "一般疑问句与否定疑问句",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "订货问题",
+     "lines": [
+      [
+       "A",
+       "Did the replacement parts arrive?",
+       "替换零件到了吗？"
+      ],
+      [
+       "B",
+       "They've been dispatched, but they're on backorder.",
+       "已经发货了，不过是延期交货。"
+      ],
+      [
+       "A",
+       "Haven't we placed the purchase order yet?",
+       "我们还没下采购单吗？"
+      ],
+      [
+       "B",
+       "We did, last Monday.",
+       "下了，上周一。"
+      ],
+      [
+       "A",
+       "The catalog prices are the same as last year, aren't they?",
+       "目录价格和去年一样，对吧？"
+      ],
+      [
+       "B",
+       "Actually, a few items went up.",
+       "其实有几样涨价了。"
+      ]
+     ],
+     "note": "一般疑问句可以用 Yes / No 回答，但 Part 2 的正确答案经常“绕开”Yes / No，直接给信息。"
+    },
+    {
+     "t": "word",
+     "w": "freight"
+    },
+    {
+     "t": "word",
+     "w": "dispatch"
+    },
+    {
+     "t": "word",
+     "w": "defective"
+    },
+    {
+     "t": "word",
+     "w": "replacement"
+    },
+    {
+     "t": "word",
+     "w": "catalog"
+    },
+    {
+     "t": "word",
+     "w": "order form"
+    },
+    {
+     "t": "key",
+     "title": "一般疑问句：正确答案常常不说 Yes / No",
+     "what": [
+      "问：Did… / Is… / Have you… / Can…?",
+      "直接答：Yes, … / No, …",
+      "<b>绕开答</b>（更常考）：Did the parcel arrive? → <b>It's on your desk.</b>（= 到了）"
+     ],
+     "why": [
+      "出题人喜欢把 Yes 放在错误选项里（Yes + 后面答非所问），把正确答案做成“不说 Yes 但意思是 Yes”的句子。所以不能听到 Yes 就选。"
+     ],
+     "zh": [
+      "中文也常这么答：“货到了吗？”“在你桌上。”—— 把这种自然对话的感觉带进英语。"
+     ],
+     "ex": [
+      [
+       "Is the catalog ready? — The printer is working on it now.",
+       "目录好了吗？——印刷厂正在印。"
+      ],
+      [
+       "Can you restock the shelves? — I'll do it after lunch.",
+       "你能补一下货架吗？——午饭后我来弄。"
+      ]
+     ],
+     "err": [
+      [
+       "Did you send the parcel? — Yes, the post office is closed.",
+       "Did you send the parcel? — I sent it this morning.",
+       "Yes 后面要切题"
+      ]
+     ],
+     "sum": "听完整句：<b>Yes / No 后面切不切题</b>；不说 Yes 的“绕开答”常是正确答案。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Not yet, but I'll call them again.",
+        "It's a large company.",
+        "Yes, the freight is heavy."
+       ],
+       "a": 0,
+       "say": "Did the freight company call back?",
+       "e": "问句：Did the freight company call back?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "The screen doesn't turn on.",
+        "A replacement order.",
+        "Yes, I effected it."
+       ],
+       "a": 0,
+       "say": "Is this item defective?",
+       "e": "问句：Is this item defective?"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "purchase order"
+    },
+    {
+     "t": "word",
+     "w": "backorder"
+    },
+    {
+     "t": "word",
+     "w": "restock"
+    },
+    {
+     "t": "word",
+     "w": "procurement"
+    },
+    {
+     "t": "word",
+     "w": "parcel"
+    },
+    {
+     "t": "word",
+     "w": "postage"
+    },
+    {
+     "t": "key",
+     "title": "否定疑问句、反义疑问句：当普通问句听",
+     "what": [
+      "<b>Haven't</b> we placed the order? = Have we placed the order?",
+      "The prices went up, <b>didn't they</b>? = Did the prices go up?",
+      "事实是肯定 → Yes（或直接给肯定信息）；事实是否定 → No"
+     ],
+     "why": [
+      "中文“我们还没下单吗？”回答“下了”要说 Yes, we did，不能按中文习惯说“No（不，下了）”。最简单的办法：忽略否定词，当普通问句。"
+     ],
+     "zh": [
+      "这是中国学生最容易反着答的地方：Isn't it ready? — 准备好了 → <b>Yes, it is.</b>"
+     ],
+     "ex": [
+      [
+       "Isn't the postage included? — No, it's extra.",
+       "邮费不包含吗？——不包含，另算。"
+      ],
+      [
+       "You've checked the order form, haven't you? — Yes, everything's correct.",
+       "你核对过订货单了吧？——核对了，都对。"
+      ]
+     ],
+     "err": [
+      [
+       "Didn't you get my e-mail? — No, I read it.（意思是收到了）",
+       "Yes, I read it.",
+       "收到了就答 Yes"
+      ]
+     ],
+     "sum": "去掉否定词再理解；事实肯定答 <b>Yes</b>，否定答 <b>No</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Yes, the parts are cheap.",
+        "They left the warehouse this morning.",
+        "A part-time job."
+       ],
+       "a": 1,
+       "say": "Haven't the parts been dispatched yet?",
+       "e": "问句：Haven't the parts been dispatched yet?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "The freight train.",
+        "No, it's charged separately.",
+        "It's included in the box."
+       ],
+       "a": 1,
+       "say": "The freight charge is included, isn't it?",
+       "e": "问句：The freight charge is included, isn't it?"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Haven't we placed the purchase order yet?",
+     "zh": "我们还没下采购单吗？",
+     "focus": "一般疑问句句尾上扬"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "Yes, for anything over $500.",
+      "At the post office.",
+      "The order arrived."
+     ],
+     "a": 0,
+     "say": "Do we need to fill out a purchase order?",
+     "e": "问句：Do we need to fill out a purchase order?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "Sure, I'll start now.",
+      "Yes, the shop opened.",
+      "They're in stock."
+     ],
+     "a": 0,
+     "say": "Can you restock the shelves before we open?",
+     "e": "问句：Can you restock the shelves before we open?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "Yes, send it to me.",
+      "It's a big parcel.",
+      "I'm going to the post office now."
+     ],
+     "a": 2,
+     "say": "Weren't you going to send the parcel today?",
+     "e": "问句：Weren't you going to send the parcel today?"
+    },
+    {
+     "t": "c",
+     "q": "The item you ordered is on ___ and will ship in two weeks.",
+     "o": [
+      "postage",
+      "backorder",
+      "freight"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "We'll send a ___ for the defective printer free of charge.",
+     "o": [
+      "procurement",
+      "replacement",
+      "catalog"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "How much is the ___ for this parcel?",
+     "a": [
+      "postage"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Did the replacement parts arrive?",
+     "zh": "替换零件到了吗？"
+    },
+    {
+     "t": "dict",
+     "a": "They've been dispatched, but they're on backorder."
+    },
+    {
+     "t": "tr",
+     "zh": "邮费不包含在内吗？",
+     "a": [
+      "Isn't the postage included?",
+      "Isn't postage included?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "订货词：freight、dispatch、defective、replacement、catalog、order form、purchase order、backorder、restock、procurement、parcel、postage。",
+      "<b>重点</b>：一般疑问句 —— Yes 后面要切题；不说 Yes 的绕开答常是正解。",
+      "<b>重点</b>：否定 / 反义疑问句当普通问句；事实肯定就 Yes。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.3.3",
+   "title": "选择疑问句",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "客服电话",
+     "lines": [
+      [
+       "A",
+       "Would you like a refund or a replacement?",
+       "您是想退款还是换货？"
+      ],
+      [
+       "B",
+       "A replacement, please. The warranty hasn't expired yet.",
+       "换货吧。保修还没过期。"
+      ],
+      [
+       "A",
+       "Should we send it by mail, or will you pick it up?",
+       "我们是邮寄，还是您来取？"
+      ],
+      [
+       "B",
+       "Either is fine with me.",
+       "哪种都行。"
+      ],
+      [
+       "A",
+       "We're sorry for the inconvenience. Here's a voucher for your next order.",
+       "给您带来不便很抱歉。这是下次订单可用的优惠券。"
+      ]
+     ],
+     "note": "选择疑问句 A or B? 有固定的几种正确答案，掌握了几乎不会错。"
+    },
+    {
+     "t": "word",
+     "w": "feedback"
+    },
+    {
+     "t": "word",
+     "w": "inconvenience"
+    },
+    {
+     "t": "word",
+     "w": "warranty"
+    },
+    {
+     "t": "word",
+     "w": "expire"
+    },
+    {
+     "t": "word",
+     "w": "subscription"
+    },
+    {
+     "t": "word",
+     "w": "courteous"
+    },
+    {
+     "t": "key",
+     "title": "选择疑问句：不能用 Yes / No",
+     "what": [
+      "A or B? 的正确答案常见四种：",
+      "① 选一个：<b>The second one, please.</b>",
+      "② 都行：<b>Either is fine.</b> / <b>I don't mind.</b>",
+      "③ 都不要 / 第三种：<b>Neither, thanks.</b> / <b>Actually, I'd prefer C.</b>",
+      "④ 间接：Would you like tea or coffee? — <b>I just had some.</b>"
+     ],
+     "why": [
+      "一听到 or，就把所有 Yes / No 开头的选项划掉，剩下的里再找。"
+     ],
+     "zh": [
+      "中文“都可以”最常用，英语对应 Either is fine / Either one works；“都不要”是 Neither。"
+     ],
+     "ex": [
+      [
+       "Do you want to pay now or later? — Now is fine.",
+       "您现在付还是以后付？——现在吧。"
+      ],
+      [
+       "Monday or Tuesday? — Neither works for me. How about Wednesday?",
+       "周一还是周二？——都不行，周三怎么样？"
+      ]
+     ],
+     "err": [
+      [
+       "Refund or replacement? — Yes, please.",
+       "A refund, please.",
+       "选择疑问句不能答 Yes"
+      ]
+     ],
+     "sum": "听到 <b>or</b> → 排除 Yes / No；<b>Either / Neither / 选一个 / 第三种</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Yes, I would.",
+        "A refund, please.",
+        "The store is open."
+       ],
+       "a": 1,
+       "say": "Would you prefer a refund or store credit?",
+       "e": "问句：Would you prefer a refund or store credit?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Calling is faster.",
+        "The hotline is busy every day.",
+        "Yes, you should."
+       ],
+       "a": 0,
+       "say": "Should I call the hotline or send an e-mail?",
+       "e": "问句：Should I call the hotline or send an e-mail?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "It expired last year.",
+        "Which one is cheaper?",
+        "Yes, I subscribed."
+       ],
+       "a": 1,
+       "say": "Do you want the monthly or the yearly subscription?",
+       "e": "问句：Do you want the monthly or the yearly subscription?"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "hotline"
+    },
+    {
+     "t": "word",
+     "w": "compensate"
+    },
+    {
+     "t": "word",
+     "w": "voucher"
+    },
+    {
+     "t": "word",
+     "w": "complimentary"
+    },
+    {
+     "t": "word",
+     "w": "refundable"
+    },
+    {
+     "t": "word",
+     "w": "nonrefundable"
+    },
+    {
+     "t": "key",
+     "title": "客服英语：道歉、补偿、保修",
+     "what": [
+      "道歉：<b>We apologize for the inconvenience.</b> / Sorry for any inconvenience.",
+      "补偿：<b>compensate</b> sb <b>for</b> sth；a <b>voucher</b>（代金券）、<b>complimentary</b>（免费赠送的）",
+      "保修：The <b>warranty expires</b> in May. / It's still <b>under warranty</b>."
+     ],
+     "why": [
+      "Part 3 / 4 / 7 的客服场景里，问题常是“What does the company offer?”—— 答案就是 voucher / discount / complimentary 之类的补偿。"
+     ],
+     "zh": [
+      "complimentary 是“免费赠送的”，和 compliment（称赞）只差一个字母，Part 5 常考。"
+     ],
+     "ex": [
+      [
+       "Breakfast is complimentary for all guests.",
+       "所有住客免费享用早餐。"
+      ],
+      [
+       "We'll compensate you for the delay.",
+       "我们会为延误给您补偿。"
+      ],
+      [
+       "Is the camera still under warranty?",
+       "这台相机还在保修期内吗？"
+      ]
+     ],
+     "err": [
+      [
+       "We will compensate the delay to you.",
+       "We will compensate you for the delay.",
+       "compensate sb for sth"
+      ],
+      [
+       "The drinks are complementary.",
+       "The drinks are complimentary.",
+       "免费的是 complimentary"
+      ]
+     ],
+     "sum": "<b>apologize for the inconvenience</b>；<b>compensate sb for sth</b>；<b>complimentary</b> = 免费；<b>under warranty</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "All guests receive a ___ breakfast.",
+       "o": [
+        "complementary",
+        "complimentary",
+        "refundable"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "The airline compensated passengers ___ the delay.",
+       "o": [
+        "to",
+        "with",
+        "for"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Would you like a refund or a replacement?",
+     "zh": "您是想退款还是换货？",
+     "focus": "选择疑问句：refund 上扬，replacement 下降"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "Yes, a bag, please.",
+      "I'll take it, thanks.",
+      "The receipt is long."
+     ],
+     "a": 1,
+     "say": "Would you like the receipt in the bag or with you?",
+     "e": "问句：Would you like the receipt in the bag or with you?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "I'm afraid it's nonrefundable.",
+      "Refund the money.",
+      "Yes, a ticket."
+     ],
+     "a": 0,
+     "say": "Is the ticket refundable or not?",
+     "e": "问句：Is the ticket refundable or not?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "Yes, we shall.",
+      "The supplier called.",
+      "Let's compare their prices first."
+     ],
+     "a": 2,
+     "say": "Shall we use the new supplier or stay with our current one?",
+     "e": "问句：Shall we use the new supplier or stay with our current one?"
+    },
+    {
+     "t": "c",
+     "q": "Thank you for your ___. We use customer comments to improve our service.",
+     "o": [
+      "voucher",
+      "warranty",
+      "feedback"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Our staff are always polite and ___.",
+     "o": [
+      "nonrefundable",
+      "courteous",
+      "expired"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Your membership will ___ at the end of this month.",
+     "a": [
+      "expire"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "We apologize for the inconvenience.",
+     "zh": "给您带来不便，我们深表歉意。"
+    },
+    {
+     "t": "dict",
+     "a": "Here's a voucher for your next order."
+    },
+    {
+     "t": "tr",
+     "zh": "这台打印机还在保修期内吗？",
+     "a": [
+      "Is this printer still under warranty?",
+      "Is the printer still under warranty?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "客服词：feedback、inconvenience、warranty、expire、subscription、courteous、hotline、compensate、voucher、complimentary、refundable、nonrefundable。",
+      "<b>重点</b>：选择疑问句不能答 Yes / No；Either / Neither / 选一个 / 第三种。",
+      "<b>重点</b>：compensate sb for sth；complimentary（免费）≠ complementary（互补）；under warranty。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.3.4",
+   "title": "陈述句与请求建议",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "IT 支持",
+     "lines": [
+      [
+       "A",
+       "My computer keeps freezing.",
+       "我的电脑老是死机。"
+      ],
+      [
+       "B",
+       "Have you tried rebooting it?",
+       "你试过重启吗？"
+      ],
+      [
+       "A",
+       "Yes, twice. I think there's a glitch in the new software.",
+       "试了两次。我觉得新软件有个故障。"
+      ],
+      [
+       "B",
+       "Why don't you call the help desk?",
+       "你为什么不打电话给技术支持？"
+      ],
+      [
+       "A",
+       "Good idea. Could you give me the number?",
+       "好主意。你能给我号码吗？"
+      ],
+      [
+       "B",
+       "Sure, it's in the user manual.",
+       "当然，在用户手册里。"
+      ]
+     ],
+     "note": "陈述句（My computer keeps freezing.）没有疑问词，是 Part 2 最难的题型；Why don't you… 则看起来像问原因，其实是建议。"
+    },
+    {
+     "t": "word",
+     "w": "outage"
+    },
+    {
+     "t": "word",
+     "w": "glitch"
+    },
+    {
+     "t": "word",
+     "w": "reboot"
+    },
+    {
+     "t": "word",
+     "w": "backup"
+    },
+    {
+     "t": "word",
+     "w": "server"
+    },
+    {
+     "t": "word",
+     "w": "password"
+    },
+    {
+     "t": "key",
+     "title": "陈述句：找最自然的反应",
+     "what": [
+      "陈述一个<b>问题</b> → 回答给<b>解决办法</b>：The copier is jammed. — I'll call the technician.",
+      "陈述一个<b>消息</b> → 回答<b>反应或追问</b>：We got the contract! — That's great news. / When do we start?",
+      "陈述<b>计划</b> → 回答<b>相关安排</b>：I'm leaving early today. — Don't forget to lock the door."
+     ],
+     "why": [
+      "陈述句没有“标准答案类型”，只能靠“像不像真实对话”。先用排除法：重复词、近音词、答非所问的先划掉。"
+     ],
+     "zh": [
+      "中文对话里我们本能就会这样接话，英语考试考的正是这种“接话能力”。"
+     ],
+     "ex": [
+      [
+       "The server is down again. — I'll let IT know.",
+       "服务器又宕机了。——我去告诉 IT 部门。"
+      ],
+      [
+       "I forgot my password. — You can reset it online.",
+       "我忘了密码。——你可以在网上重置。"
+      ]
+     ],
+     "err": [
+      [
+       "The printer is out of paper. — I printed it yesterday.",
+       "The printer is out of paper. — There's some in the supply closet.",
+       "要给解决办法，不是重复词"
+      ]
+     ],
+     "sum": "陈述问题 → 办法；消息 → 反应 / 追问；计划 → 相关安排。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "The building is very tall.",
+        "Let's save our work on the laptops then.",
+        "Yes, I powered it."
+       ],
+       "a": 1,
+       "say": "There's been a power outage in the building.",
+       "e": "问句：There's been a power outage in the building."
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "The system is new.",
+        "Did you check your password?",
+        "I logged it yesterday."
+       ],
+       "a": 1,
+       "say": "I can't log in to the system.",
+       "e": "问句：I can't log in to the system."
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "I'll report it to tech support.",
+        "It's very soft.",
+        "Yes, a new one."
+       ],
+       "a": 0,
+       "say": "The new software has a glitch.",
+       "e": "问句：The new software has a glitch."
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "log in"
+    },
+    {
+     "t": "word",
+     "w": "tech support"
+    },
+    {
+     "t": "word",
+     "w": "help desk"
+    },
+    {
+     "t": "word",
+     "w": "user manual"
+    },
+    {
+     "t": "word",
+     "w": "malfunction"
+    },
+    {
+     "t": "word",
+     "w": "troubleshoot"
+    },
+    {
+     "t": "key",
+     "title": "请求、建议、提议：看意图，不看字面",
+     "what": [
+      "<b>Why don't you / we…?</b> = 建议（不是问原因！）→ Good idea. / I'd love to, but…",
+      "<b>Could you…? / Would you mind…?</b> = 请求 → Sure. / Not at all.",
+      "<b>Would you like me to…? / Shall I…?</b> = 主动帮忙 → That'd be great. / Thanks, but I can manage."
+     ],
+     "why": [
+      "Why don't we… 后面选 Because… 的，100% 是陷阱。这是 Part 2 每套必考的题。"
+     ],
+     "zh": [
+      "中文“你干嘛不……”也是建议的意思，英语同理 —— 只是考试里故意用 Because 来骗你。"
+     ],
+     "ex": [
+      [
+       "Why don't we back up the files tonight? — Sure, I'll stay late.",
+       "我们今晚备份文件吧？——好，我留下来。"
+      ],
+      [
+       "Shall I call the technician? — Yes, please.",
+       "要我叫技术员吗？——好，麻烦了。"
+      ]
+     ],
+     "err": [
+      [
+       "Why don't you reboot the computer? — Because it's broken.",
+       "Why don't you reboot the computer? — I already tried that.",
+       "Why don't you = 建议"
+      ]
+     ],
+     "sum": "<b>Why don't you / we</b> = 建议，排除 Because；<b>Shall I / Would you like me to</b> = 主动帮忙。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Because it's old.",
+        "That's a good idea.",
+        "The manual is on the desk."
+       ],
+       "a": 1,
+       "say": "Why don't we update the user manual?",
+       "e": "问句：Why don't we update the user manual?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "That would be great, thanks.",
+        "Yes, it's a printer.",
+        "I printed it twice."
+       ],
+       "a": 0,
+       "say": "Would you like me to troubleshoot the printer?",
+       "e": "问句：Would you like me to troubleshoot the printer?"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Why don't you call the help desk?",
+     "zh": "你为什么不打电话给技术支持？",
+     "focus": "建议句：句尾下降，don't 弱读"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "The server is new.",
+      "Yes, it's down there.",
+      "Then I'll finish my report this afternoon."
+     ],
+     "a": 2,
+     "say": "The server will be down for maintenance tonight.",
+     "e": "问句：The server will be down for maintenance tonight."
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "Sure, what's your username?",
+      "Yes, I reset.",
+      "It's a long word."
+     ],
+     "a": 0,
+     "say": "Could you help me reset my password?",
+     "e": "问句：Could you help me reset my password?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "It's on the second floor.",
+      "Because the desk is small.",
+      "I've been trying all morning."
+     ],
+     "a": 2,
+     "say": "Why don't you call the help desk?",
+     "e": "问句：Why don't you call the help desk?"
+    },
+    {
+     "t": "c",
+     "q": "Always keep a ___ of important files.",
+     "o": [
+      "backup",
+      "glitch",
+      "outage"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The machine stopped because of a ___.",
+     "o": [
+      "malfunction",
+      "password",
+      "manual"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "Try to ___ the computer if it freezes.",
+     "a": [
+      "reboot",
+      "restart"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Have you tried rebooting it?",
+     "zh": "你试过重启吗？"
+    },
+    {
+     "t": "dict",
+     "a": "The server is down again."
+    },
+    {
+     "t": "tr",
+     "zh": "我登录不了系统。",
+     "a": [
+      "I can't log in to the system.",
+      "I can't log into the system.",
+      "I cannot log in to the system."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "IT 词：outage、glitch、reboot、backup、server、password、log in、tech support、help desk、user manual、malfunction、troubleshoot。",
+      "<b>重点</b>：陈述句 → 办法 / 反应 / 相关安排；先排除重复词和近音词。",
+      "<b>重点</b>：Why don't you / we = 建议（排除 Because）；Shall I = 主动帮忙。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.3.5",
+   "title": "Part 2 实战",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "出差前的问答",
+     "lines": [
+      [
+       "A",
+       "Have you received your itinerary yet?",
+       "你收到行程表了吗？"
+      ],
+      [
+       "B",
+       "Yes, I'm flying out on Monday with a layover in Dubai.",
+       "收到了，我周一出发，在迪拜转机。"
+      ],
+      [
+       "A",
+       "Is it a round-trip ticket?",
+       "是往返票吗？"
+      ],
+      [
+       "B",
+       "It is. And there's a shuttle from the airport to the hotel.",
+       "是的。机场到酒店还有接驳车。"
+      ],
+      [
+       "A",
+       "Will you need a rental car?",
+       "你需要租车吗？"
+      ],
+      [
+       "B",
+       "I'm not sure yet. The travel agency is still checking.",
+       "还不确定，旅行社还在查。"
+      ]
+     ],
+     "note": "最后一课：把四大陷阱和两种万能答案放在一起，做一组完整的 Part 2 练习。"
+    },
+    {
+     "t": "word",
+     "w": "itinerary"
+    },
+    {
+     "t": "word",
+     "w": "check in"
+    },
+    {
+     "t": "word",
+     "w": "boarding pass"
+    },
+    {
+     "t": "word",
+     "w": "layover"
+    },
+    {
+     "t": "word",
+     "w": "round-trip"
+    },
+    {
+     "t": "word",
+     "w": "fare"
+    },
+    {
+     "t": "key",
+     "title": "Part 2 四大陷阱",
+     "what": [
+      "① <b>重复词</b>：问 flight，选项里也有 flight —— 多半是错的",
+      "② <b>近音词</b>：fare / fair、boarding / bored、check in / chicken",
+      "③ <b>联想词</b>：问机场，选项说 pilot、ticket —— 话题相关但答非所问",
+      "④ <b>时态错位</b>：问将来（Will you…），选项答过去（I went…）"
+     ],
+     "why": [
+      "四种陷阱都是“听起来像对的”。对策是：听问句时抓<b>意图</b>（问时间？问地点？请求？），再用意图检验每个选项。"
+     ],
+     "zh": [
+      "中国考生最常栽在①和③：听到熟悉的词就觉得对。记住 Part 2 有一条反规律：<b>和问句用词越像的选项越可疑</b>。"
+     ],
+     "ex": [
+      [
+       "What's the fare to the airport? — About thirty dollars.",
+       "去机场的车费是多少？——大概三十美元。"
+      ],
+      [
+       "Where's the baggage claim? — Downstairs, near exit B.",
+       "行李提取处在哪儿？——楼下，B 出口附近。"
+      ]
+     ],
+     "err": [
+      [
+       "What's the fare to the airport? — The fair is next week.",
+       "About thirty dollars.",
+       "fare / fair 近音陷阱"
+      ],
+      [
+       "When will you check in? — I checked in yesterday.",
+       "Around three o'clock.",
+       "时态错位"
+      ]
+     ],
+     "sum": "<b>重复词、近音词、联想词、时态错位</b> —— 越像问句的越可疑。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Two bags, please.",
+        "I claimed it yesterday.",
+        "Down the escalator on the left."
+       ],
+       "a": 2,
+       "say": "Where's the baggage claim area?",
+       "e": "问句：Where's the baggage claim area?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "About twenty dollars.",
+        "The fair was fun.",
+        "It's in the center."
+       ],
+       "a": 0,
+       "say": "What's the fare to the city center?",
+       "e": "问句：What's the fare to the city center?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "I took it last week.",
+        "The hotel is nice.",
+        "No, a colleague is picking me up."
+       ],
+       "a": 2,
+       "say": "Will you be taking the shuttle to the hotel?",
+       "e": "问句：Will you be taking the shuttle to the hotel?"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "destination"
+    },
+    {
+     "t": "word",
+     "w": "carry-on"
+    },
+    {
+     "t": "word",
+     "w": "baggage claim"
+    },
+    {
+     "t": "word",
+     "w": "shuttle"
+    },
+    {
+     "t": "word",
+     "w": "rental car"
+    },
+    {
+     "t": "word",
+     "w": "travel agency"
+    },
+    {
+     "t": "key",
+     "title": "“我也不确定”型回答",
+     "what": [
+      "<b>I'm not sure yet.</b> / <b>It hasn't been decided.</b>",
+      "<b>Let me check.</b> / <b>I'll find out.</b>",
+      "<b>It depends on</b> the weather. / <b>That's up to</b> the manager."
+     ],
+     "why": [
+      "这类回答看上去“没回答”，却是 Part 2 最常见的正确答案之一，任何类型的问句都可以接。另外两个选项都有明显问题时，就选它。"
+     ],
+     "zh": [
+      "中文也常说“还没定”“看情况”“得问经理”。"
+     ],
+     "ex": [
+      [
+       "When is the conference? — The dates haven't been announced.",
+       "会议什么时候开？——日期还没公布。"
+      ],
+      [
+       "Which hotel are we staying at? — That's up to the travel agency.",
+       "我们住哪家酒店？——那得看旅行社。"
+      ]
+     ],
+     "err": [
+      [
+       "Is the flight on time? — The flight is long.",
+       "Is the flight on time? — Let me check the board.",
+       "重复词陷阱 vs 不确定型正解"
+      ]
+     ],
+     "sum": "<b>I'm not sure / Let me check / It depends / That's up to …</b>",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "Yes, they chose.",
+        "They haven't decided yet.",
+        "It's my destination."
+       ],
+       "a": 1,
+       "say": "Which destination did the committee choose?",
+       "e": "问句：Which destination did the committee choose?"
+      },
+      {
+       "t": "c",
+       "q": "🎧 听问句，选最合适的回答",
+       "o": [
+        "The car is red.",
+        "I rented it.",
+        "It depends on the size."
+       ],
+       "a": 2,
+       "say": "How much will the rental car cost?",
+       "e": "问句：How much will the rental car cost?"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "I'm not sure yet. The travel agency is still checking.",
+     "zh": "还不确定，旅行社还在查。",
+     "focus": "agency 重音在第一音节"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "It's on my phone.",
+      "I passed the test.",
+      "Yes, the board is ready."
+     ],
+     "a": 0,
+     "say": "Did you print your boarding pass?",
+     "e": "问句：Did you print your boarding pass?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "The bag is blue.",
+      "It should be fine.",
+      "Yes, carry it on the bus."
+     ],
+     "a": 1,
+     "say": "Is this bag small enough to be a carry-on?",
+     "e": "问句：Is this bag small enough to be a carry-on?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "A round-trip ticket.",
+      "Next Thursday.",
+      "A travel agency downtown."
+     ],
+     "a": 2,
+     "say": "Who booked our trip?",
+     "e": "问句：Who booked our trip?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "The window is closed.",
+      "An aisle seat, please.",
+      "Yes, I would."
+     ],
+     "a": 1,
+     "say": "Would you like a window seat or an aisle seat?",
+     "e": "问句：Would you like a window seat or an aisle seat?"
+    },
+    {
+     "t": "c",
+     "q": "🎧 听问句，选最合适的回答",
+     "o": [
+      "It was a long flight.",
+      "Let's get something to eat, then.",
+      "Yes, I delayed it."
+     ],
+     "a": 1,
+     "say": "Our flight has been delayed by two hours.",
+     "e": "问句：Our flight has been delayed by two hours."
+    },
+    {
+     "t": "c",
+     "q": "Please check the ___ for the flight times and hotel details.",
+     "o": [
+      "carry-on",
+      "fare",
+      "itinerary"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "We have a three-hour ___ in Singapore.",
+     "a": [
+      "layover"
+     ]
+    },
+    {
+     "t": "dict",
+     "a": "I'm flying out on Monday with a layover in Dubai."
+    },
+    {
+     "t": "tr",
+     "zh": "你需要租车吗？",
+     "a": [
+      "Will you need a rental car?",
+      "Do you need a rental car?",
+      "Will you need to rent a car?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "出行词：itinerary、check in、boarding pass、layover、round-trip、fare、destination、carry-on、baggage claim、shuttle、rental car、travel agency。",
+      "<b>重点</b>：四大陷阱 —— 重复词、近音词、联想词、时态错位。",
+      "<b>重点</b>：I'm not sure / Let me check / It depends —— 万能的不确定型正解。",
+      "做完再去「听力 → TOEIC Part 2」做专项组，巩固题型。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.3.6",
+   "title": "单元阅读：A Defective Order",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "A Defective Order",
+     "note": "TOEIC Part 7 式的阅读：先看题目再读文章，带着问题找答案。先关掉译文读。",
+     "lines": [
+      [
+       "To: Customer Service, Brightway Office Supplies",
+       "收件人：Brightway 办公用品公司客服部"
+      ],
+      [
+       "Subject: Order #4471",
+       "主题：订单 #4471"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "I'm writing about the order I placed on May 3.",
+       "我写信是关于我 5 月 3 日下的订单。"
+      ],
+      [
+       "The shipment arrived yesterday, but two of the ten desk lamps are defective. They do not turn on.",
+       "货昨天到了，但十盏台灯中有两盏是坏的，打不开。"
+      ],
+      [
+       "Also, one box was marked \"fragile,\" but it was damaged when it arrived.",
+       "另外，有一个箱子标着“易碎”，到货时却已经破损。"
+      ],
+      [
+       "Could you send two replacements as soon as possible? We need them for a new office that opens on May 20.",
+       "能否尽快寄两盏替换的？5 月 20 日开业的新办公室要用。"
+      ],
+      [
+       "Kevin Ross, Office Manager",
+       "凯文·罗斯，办公室经理"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Dear Mr. Ross,",
+       "罗斯先生："
+      ],
+      [
+       "We apologize for the inconvenience.",
+       "给您带来不便，我们深表歉意。"
+      ],
+      [
+       "Two replacement lamps were dispatched this morning by express courier, and your tracking number is BW-2281.",
+       "两盏替换台灯已于今早通过快递寄出，追踪号为 BW-2281。"
+      ],
+      [
+       "You do not need to return the defective items.",
+       "您无需退回有问题的商品。"
+      ],
+      [
+       "To compensate you for the trouble, we have also attached a voucher for 15% off your next order.",
+       "为补偿给您带来的麻烦，我们还附上了一张下次订单八五折的优惠券。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Why did Mr. Ross write the first e-mail?",
+     "o": [
+      "He needed a new catalog.",
+      "Some items he received were defective.",
+      "He wanted to cancel an order."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "When does the new office open?",
+     "o": [
+      "Tomorrow",
+      "On May 20",
+      "On May 3"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What does the company ask Mr. Ross to do with the defective lamps?",
+     "o": [
+      "Send them back by courier.",
+      "Nothing; he can keep them.",
+      "Take them to a store."
+     ],
+     "a": 1,
+     "e": "You do not need to return the defective items.",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What does the company offer Mr. Ross?",
+     "o": [
+      "A discount on his next order",
+      "A free desk",
+      "A full refund"
+     ],
+     "a": 0,
+     "e": "a voucher for 15% off your next order —— 同义替换成 discount。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "The word \"dispatched\" is closest in meaning to",
+     "o": [
+      "repaired",
+      "sent",
+      "ordered"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "给您带来不便，我们深表歉意。",
+     "a": [
+      "We apologize for the inconvenience.",
+      "We are sorry for the inconvenience."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "Part 7 双邮件：先读第一封抓问题，再在第二封里找解决办法。",
+      "同义替换：dispatched = sent；voucher for 15% off = discount。",
+      "词：shipment、defective、fragile、replacement、courier、tracking number、compensate、voucher。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "🎧 听问句，选最合适的回答",
+    "o": [
+     "On Main Street.",
+     "Yes, it does.",
+     "At ten o'clock."
+    ],
+    "a": 2,
+    "say": "When does the store open on Sundays?",
+    "e": "问句：When does the store open on Sundays?"
+   },
+   {
+    "t": "c",
+    "q": "🎧 听问句，选最合适的回答",
+    "o": [
+     "In the storage room, please.",
+     "About ten boxes.",
+     "Yes, put them."
+    ],
+    "a": 0,
+    "say": "Where should I put these boxes?",
+    "e": "问句：Where should I put these boxes?"
+   },
+   {
+    "t": "c",
+    "q": "🎧 听问句，选最合适的回答",
+    "o": [
+     "I'm almost done.",
+     "It's a nice port.",
+     "Yes, the report is long."
+    ],
+    "a": 0,
+    "say": "Haven't you finished the report yet?",
+    "e": "问句：Haven't you finished the report yet?"
+   },
+   {
+    "t": "c",
+    "q": "🎧 听问句，选最合适的回答",
+    "o": [
+     "Yes, I want to.",
+     "We met yesterday.",
+     "Tomorrow works better for me."
+    ],
+    "a": 2,
+    "say": "Do you want to meet today or tomorrow?",
+    "e": "问句：Do you want to meet today or tomorrow?"
+   },
+   {
+    "t": "c",
+    "q": "🎧 听问句，选最合适的回答",
+    "o": [
+     "Because I'm tired.",
+     "Good idea.",
+     "It broke last week."
+    ],
+    "a": 1,
+    "say": "Why don't we take a short break?",
+    "e": "问句：Why don't we take a short break?"
+   },
+   {
+    "t": "c",
+    "q": "🎧 听问句，选最合适的回答",
+    "o": [
+     "I'll call the technician.",
+     "I copied it.",
+     "Yes, it's working."
+    ],
+    "a": 0,
+    "say": "The copier isn't working again.",
+    "e": "问句：The copier isn't working again."
+   },
+   {
+    "t": "c",
+    "q": "🎧 听问句，选最合适的回答",
+    "o": [
+     "In room 3.",
+     "Next Tuesday.",
+     "It hasn't been decided yet."
+    ],
+    "a": 2,
+    "say": "Who's going to lead the training session?",
+    "e": "问句：Who's going to lead the training session?"
+   },
+   {
+    "t": "c",
+    "q": "We apologize for the ___.",
+    "o": [
+     "inconvenience",
+     "convenience",
+     "inconvenient"
+    ],
+    "a": 0
+   },
+   {
+    "t": "tr",
+    "zh": "我们周一出发，在迪拜转机。",
+    "a": [
+     "We're leaving on Monday with a layover in Dubai.",
+     "We fly out on Monday with a layover in Dubai."
+    ]
+   }
+  ]
+ }
+}

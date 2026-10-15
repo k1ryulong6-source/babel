@@ -1642,6 +1642,153 @@
      ]
     }
    ]
+  },
+  {
+   "id": "en.1.4.6",
+   "title": "单元阅读：A House with a Garden",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "A House with a Garden",
+     "note": "先关掉译文读一遍，只用学过的词和本单元的重点。读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "Anna and her husband have two kids, a boy and a girl.",
+       "安娜和丈夫有两个孩子，一男一女。"
+      ],
+      [
+       "The family has a new house near the city.",
+       "这家人在城市附近有了一栋新房子。"
+      ],
+      [
+       "The house is old, but it has a big garden.",
+       "房子很旧，但有一个大花园。"
+      ],
+      [
+       "The garden is the kids' favorite place.",
+       "花园是孩子们最喜欢的地方。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Anna needs some information about schools, so she asks a neighbor for advice.",
+       "安娜需要一些关于学校的信息，于是向一位邻居请教。"
+      ],
+      [
+       "The neighbor, Mrs. Green, is very kind.",
+       "邻居格林太太人很好。"
+      ],
+      [
+       "She gives Anna a piece of paper with the names of three schools.",
+       "她给了安娜一张纸，上面写着三所学校的名字。"
+      ],
+      [
+       "\"The school on this street is the best one,\" she says. \"My son goes there by bus.\"",
+       "“这条街上的学校最好，”她说，“我儿子坐公交车去那儿上学。”"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "In the evening, the family has dinner in the garden.",
+       "晚上，一家人在花园里吃晚饭。"
+      ],
+      [
+       "The boy loses one of his shoes, and the girl finds it under a tree.",
+       "男孩丢了一只鞋，女孩在一棵树下找到了。"
+      ],
+      [
+       "\"Is this yours?\" she asks. \"Yes, it's mine!\" he says.",
+       "“这是你的吗？”她问。“是，是我的！”他说。"
+      ],
+      [
+       "It's the end of a long day, and everyone goes to bed early.",
+       "漫长的一天结束了，大家都早早上床睡觉。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "What does the new house have?",
+     "o": [
+      "a swimming pool",
+      "a big garden",
+      "a new kitchen"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Why does Anna talk to Mrs. Green?",
+     "o": [
+      "She needs a piece of cake.",
+      "She needs information about schools.",
+      "She wants to buy her house."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "How does Mrs. Green's son go to school?",
+     "o": [
+      "by bus",
+      "by car",
+      "on foot"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Where does the girl find the shoe?",
+     "o": [
+      "at school",
+      "under a tree",
+      "in the house"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Choose the correct sentence.",
+     "o": [
+      "She needs some information.",
+      "She needs some informations.",
+      "She needs an information."
+     ],
+     "a": 0,
+     "e": "information 不可数：不加 a，不加 s。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "她给了安娜一张纸。",
+     "a": [
+      "She gives Anna a piece of paper.",
+      "She gives a piece of paper to Anna."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：不可数名词 information、advice、paper（纸）—— 用 some / a piece of。",
+      "冠词：a big garden（第一次提到）→ The garden（再提到）；by bus、go to bed 不加冠词。",
+      "代词：yours / mine 后面不加名词；the kids' favorite place（复数所有格 s'）。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

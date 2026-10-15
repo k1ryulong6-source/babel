@@ -1390,6 +1390,147 @@
      ]
     }
    ]
+  },
+  {
+   "id": "es.1.4.6",
+   "title": "单元阅读：Un día de Marta",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Un día de Marta",
+     "note": "先关掉译文读一遍。短文只用学过的词和本单元的重点；读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "Marta trabaja en una oficina en Madrid.",
+       "玛尔塔在马德里的一家办公室工作。"
+      ],
+      [
+       "De lunes a viernes, se levanta a las siete.",
+       "周一到周五，她七点起床。"
+      ],
+      [
+       "Primero se ducha y luego desayuna un café con leche y pan con tomate.",
+       "她先洗澡，然后早餐吃牛奶咖啡和番茄面包。"
+      ],
+      [
+       "Trabaja de nueve a cinco y come con sus compañeros a las dos.",
+       "她从九点工作到五点，两点和同事一起吃午饭。"
+      ],
+      [
+       "Por la tarde, estudia inglés en una academia.",
+       "下午她在一所培训学校学英语。"
+      ],
+      [
+       "Lee mucho y escribe un poco en inglés todos los días.",
+       "她每天读很多，也用英语写一点。"
+      ],
+      [
+       "Normalmente cena a las nueve y se acuesta a las once.",
+       "她通常九点吃晚饭，十一点睡觉。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Los sábados no trabaja.",
+       "周六她不上班。"
+      ],
+      [
+       "Se levanta tarde, compra fruta en el mercado y llama a su madre.",
+       "她起得晚，去市场买水果，再给妈妈打个电话。"
+      ],
+      [
+       "Los domingos, a veces cocina para sus amigos.",
+       "周日她有时给朋友们做饭。"
+      ],
+      [
+       "«El fin de semana es mi momento favorito», dice Marta.",
+       "“周末是我最喜欢的时候。”玛尔塔说。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿A qué hora se levanta Marta de lunes a viernes?",
+     "o": [
+      "A las nueve.",
+      "A las once.",
+      "A las siete."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué hace Marta por la tarde?",
+     "o": [
+      "Cocina para sus amigos.",
+      "Trabaja en un hospital.",
+      "Estudia inglés."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué hace los sábados?",
+     "o": [
+      "Estudia inglés.",
+      "Compra fruta y llama a su madre.",
+      "Trabaja en la oficina."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "«Marta ___ a las siete.»（起床）",
+     "o": [
+      "levanta",
+      "se levantan",
+      "se levanta"
+     ],
+     "a": 2,
+     "e": "自反动词带 se，主语 Marta 是第三人称单数。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "«Los domingos» 的意思是：",
+     "o": [
+      "上个周日",
+      "这个周日",
+      "每个周日"
+     ],
+     "a": 2,
+     "e": "los + 星期 = 每个……，不加 en。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "我每天七点起床。",
+     "a": [
+      "Me levanto a las siete todos los días.",
+      "Todos los días me levanto a las siete.",
+      "Me levanto todos los días a las siete."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：-ar / -er / -ir 现在时 —— trabaja、come、lee、escribe。",
+      "<b>重点</b>：自反动词 —— se levanta、se ducha、se acuesta（o → ue）。",
+      "时间：a las siete、de nueve a cinco；los sábados = 每个周六（不加 en）。",
+      "顺序与频率：primero … luego …；todos los días、a veces、normalmente。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

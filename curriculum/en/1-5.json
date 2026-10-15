@@ -1665,6 +1665,154 @@
      ]
     }
    ]
+  },
+  {
+   "id": "en.1.5.6",
+   "title": "单元阅读：Waiting for Kate",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Waiting for Kate",
+     "note": "先关掉译文读一遍，只用学过的词和本单元的重点。读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "It's Saturday morning. Maria doesn't go to the office on weekends.",
+       "星期六早上。玛丽亚周末不去办公室。"
+      ],
+      [
+       "Right now, she is sitting in a café near her home.",
+       "此刻，她正坐在家附近的一家咖啡馆里。"
+      ],
+      [
+       "There are a lot of people here, but there is a free table next to the window.",
+       "这里人很多，但窗边有一张空桌子。"
+      ],
+      [
+       "She is waiting for her friend Kate.",
+       "她在等她的朋友凯特。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Maria and Kate usually go shopping together on Saturdays.",
+       "玛丽亚和凯特周六通常一起去购物。"
+      ],
+      [
+       "But today Kate is late. \"Where are you?\" Maria asks in a message.",
+       "可今天凯特迟到了。“你在哪儿？”玛丽亚发消息问。"
+      ],
+      [
+       "\"I'm on the bus. There's a lot of traffic,\" Kate writes back.",
+       "“我在公交车上，路上很堵，”凯特回复。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "While she waits, Maria reads a book and watches the people outside.",
+       "等的时候，玛丽亚一边看书，一边看窗外的行人。"
+      ],
+      [
+       "A man is walking his dog, and two children are playing in the park across the street.",
+       "一个男人在遛狗，两个孩子在街对面的公园里玩。"
+      ],
+      [
+       "How often does Maria come here? Almost every week. She loves this place.",
+       "玛丽亚多久来一次？几乎每周。她很喜欢这里。"
+      ],
+      [
+       "Twenty minutes later, Kate runs in. \"Sorry! What time is it?\"",
+       "二十分钟后，凯特跑了进来。“对不起！几点了？”"
+      ],
+      [
+       "\"It's ten thirty. Let's go!\"",
+       "“十点半了。走吧！”"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Where is Maria right now?",
+     "o": [
+      "on the bus",
+      "at the office",
+      "in a café near her home"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Why is Kate late?",
+     "o": [
+      "There's a lot of traffic.",
+      "She is still in bed.",
+      "She is shopping."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What are the two children doing?",
+     "o": [
+      "playing in the park",
+      "reading books",
+      "walking a dog"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "How often does Maria come to the café?",
+     "o": [
+      "almost every week",
+      "every day",
+      "once a year"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Which sentence is correct?",
+     "o": [
+      "There has a free table next to the window.",
+      "There is a free table next to the window.",
+      "Have a free table next to the window."
+     ],
+     "a": 1,
+     "e": "“某处有某物”用 There be，不用 have。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "她正在等她的朋友。",
+     "a": [
+      "She is waiting for her friend.",
+      "She's waiting for her friend."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "一般现在时说习惯：Maria doesn't go to the office on weekends. / They usually go shopping.",
+      "<b>重点</b>：现在进行时说此刻 —— She is sitting… / A man is walking his dog.",
+      "<b>重点</b>：There be —— There are a lot of people. / There is a free table（就近原则）。",
+      "How often …? / What time is it?"
+     ]
+    }
+   ]
   }
  ],
  "test": {

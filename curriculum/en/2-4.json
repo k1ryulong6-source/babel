@@ -1,0 +1,1846 @@
+{
+ "id": "en.2.4",
+ "title": "Part 5 词性与动词",
+ "goal": "词性判断、动词形式、主谓一致",
+ "lessons": [
+  {
+   "id": "en.2.4.1",
+   "title": "名词位与形容词位",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Part 5 是什么样的题",
+     "lines": [
+      [
+       "",
+       "The new printer is more ___ than the old one. (A) rely (B) reliable (C) reliably (D) reliance",
+       "新打印机比旧的更___。"
+      ],
+      [
+       "",
+       "Answer: (B) reliable — after \"more\" and before \"than\", we need an adjective.",
+       "答案 B：more … than 中间要形容词。"
+      ],
+      [
+       "",
+       "Our company offers a ___ benefits package. (A) comprehend (B) comprehensive (C) comprehensively (D) comprehension",
+       "我们公司提供___的福利套餐。"
+      ],
+      [
+       "",
+       "Answer: (B) comprehensive — between \"a\" and the noun \"benefits package\", we need an adjective.",
+       "答案 B：冠词和名词之间要形容词。"
+      ]
+     ],
+     "note": "Part 5 有 30 题：一句话一个空，四个选项。其中三分之一是“词性题”——四个选项是同一个词根的不同形式，不用懂句意，看位置就能选。"
+    },
+    {
+     "t": "word",
+     "w": "comprehensive"
+    },
+    {
+     "t": "word",
+     "w": "durable"
+    },
+    {
+     "t": "word",
+     "w": "favorable"
+    },
+    {
+     "t": "word",
+     "w": "reliable"
+    },
+    {
+     "t": "word",
+     "w": "affordable"
+    },
+    {
+     "t": "word",
+     "w": "versatile"
+    },
+    {
+     "t": "key",
+     "title": "看词尾认词性",
+     "what": [
+      "名词：<b>-tion / -sion / -ment / -ness / -ity / -ance / -ence / -er / -or</b>（decision, payment, reliability, assistance）",
+      "形容词：<b>-ive / -able / -ible / -al / -ous / -ful / -ic / -ent / -ant</b>（effective, reliable, financial, various）",
+      "副词：<b>形容词 + -ly</b>（effectively, reliably）",
+      "动词：<b>-ize / -ify / -en / -ate</b>（organize, verify, widen, calculate）"
+     ],
+     "why": [
+      "Part 5 词性题的四个选项通常正好是名、动、形、副各一个。认出词尾，就知道每个选项是什么词性。"
+     ],
+     "zh": [
+      "中文词性不靠形态（“可靠”既能当形容词也能当名词），英语靠词尾，要把词尾当“标签”记。"
+     ],
+     "ex": [
+      [
+       "decide → decision → decisive → decisively",
+       "决定（动）→ 决定（名）→ 果断的 → 果断地"
+      ],
+      [
+       "rely → reliance → reliable → reliably",
+       "依靠 → 依赖 → 可靠的 → 可靠地"
+      ]
+     ],
+     "err": [
+      [
+       "We need a decisive.",
+       "We need a decision.",
+       "冠词后缺名词，decisive 是形容词"
+      ],
+      [
+       "The machine works reliable.",
+       "The machine works reliably.",
+       "修饰动词要副词"
+      ]
+     ],
+     "sum": "<b>-tion/-ment/-ity</b> 名 · <b>-ive/-able/-al/-ous</b> 形 · <b>-ly</b> 副 · <b>-ize/-ify</b> 动。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Which word is a noun?",
+       "o": [
+        "assistant",
+        "assist",
+        "assisting",
+        "assistance"
+       ],
+       "a": 3,
+       "e": "assistance（帮助）是名词；assistant 也可作名词（助手），但这里看 -ance 词尾。"
+      },
+      {
+       "t": "c",
+       "q": "Which word is an adjective?",
+       "o": [
+        "feasibly",
+        "feasibility",
+        "feasible",
+        "feasibleness"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "invaluable"
+    },
+    {
+     "t": "word",
+     "w": "ample"
+    },
+    {
+     "t": "word",
+     "w": "exclusive"
+    },
+    {
+     "t": "word",
+     "w": "feasible"
+    },
+    {
+     "t": "word",
+     "w": "lucrative"
+    },
+    {
+     "t": "word",
+     "w": "prestigious"
+    },
+    {
+     "t": "key",
+     "title": "位置决定词性：名词位和形容词位",
+     "what": [
+      "<b>名词位</b>：冠词 / 所有格 / 形容词后面（a ___, our ___, a new ___）；介词后面（for ___）；动词的宾语",
+      "<b>形容词位</b>：冠词和名词之间（a ___ plan）；be / become / remain / seem 后面（is ___）；more / most / very / so 后面",
+      "看空格<b>左右两边各一个词</b>，就能判断要什么词性。"
+     ],
+     "why": [
+      "这是 Part 5 最快的题型：10 秒以内。不需要翻译整句，只看空格前后。"
+     ],
+     "zh": [
+      "中文“一个全面的计划”中“全面的”在名词前，英语也是：a comprehensive plan。形容词放名词前这一点和中文一样，难的是要选对词尾。"
+     ],
+     "ex": [
+      [
+       "The hotel offers affordable rooms.",
+       "这家酒店提供实惠的房间。"
+      ],
+      [
+       "The results were very favorable.",
+       "结果非常好。"
+      ],
+      [
+       "We are pleased to announce the expansion of our office.",
+       "我们很高兴宣布办公室扩建。"
+      ]
+     ],
+     "err": [
+      [
+       "The plan is not feasibility.",
+       "The plan is not feasible.",
+       "be 后面用形容词"
+      ],
+      [
+       "We need more information about the affordable.",
+       "We need more information about the price.",
+       "介词后要名词"
+      ]
+     ],
+     "sum": "冠词 / 介词后 → <b>名词</b>；冠词与名词之间、be 后 → <b>形容词</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "The company has an ___ contract with the supplier.",
+       "o": [
+        "exclusive",
+        "exclude",
+        "exclusion",
+        "exclusively"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Please contact us for more ___.",
+       "o": [
+        "informative",
+        "informed",
+        "information",
+        "inform"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "The new design is more ___ than the old one.",
+       "o": [
+        "durable",
+        "durability",
+        "durably",
+        "duration"
+       ],
+       "a": 0
+      },
+      {
+       "t": "tr",
+       "zh": "这个计划不太可行。",
+       "a": [
+        "The plan is not very feasible.",
+        "This plan is not very feasible.",
+        "The plan isn't very feasible."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Our company offers a comprehensive benefits package.",
+     "zh": "我们公司提供全面的福利套餐。",
+     "focus": "comprehensive 重音在 hen"
+    },
+    {
+     "t": "c",
+     "q": "The conference was held at a ___ hotel in the city center.",
+     "o": [
+      "prestige",
+      "prestigious",
+      "prestigiousness",
+      "prestigiously"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "There is ___ parking space behind the building.",
+     "o": [
+      "amply",
+      "ample",
+      "ampleness",
+      "amplify"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Her advice was ___ to the success of the project.",
+     "o": [
+      "invaluable",
+      "invaluably",
+      "value",
+      "valuation"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "This tool is very ___ and can be used for many tasks.",
+     "o": [
+      "versatile",
+      "verse",
+      "versatilely",
+      "versatility"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Selling online has become a ___ business.",
+     "o": [
+      "lucratively",
+      "lucrativeness",
+      "lucrative",
+      "lucre"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "The results of the survey were very ___. (favor)",
+     "a": [
+      "favorable",
+      "favourable"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Our company offers a comprehensive benefits package.",
+     "zh": "我们公司提供全面的福利套餐。"
+    },
+    {
+     "t": "dict",
+     "a": "The new printer is more reliable than the old one."
+    },
+    {
+     "t": "tr",
+     "zh": "这家酒店提供实惠的房间。",
+     "a": [
+      "The hotel offers affordable rooms.",
+      "This hotel offers affordable rooms."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "形容词：comprehensive、durable、favorable、reliable、affordable、versatile、invaluable、ample、exclusive、feasible、lucrative、prestigious。",
+      "<b>重点</b>：词尾认词性 —— -tion/-ment/-ity 名，-ive/-able/-al/-ous 形，-ly 副，-ize/-ify 动。",
+      "<b>重点</b>：看空格前后：冠词 / 介词后要名词；冠词与名词之间、be 后要形容词。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.4.2",
+   "title": "副词位",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "副词题怎么判断",
+     "lines": [
+      [
+       "",
+       "The staff worked ___ to finish the project. (A) diligent (B) diligently (C) diligence (D) more diligent",
+       "员工们___工作以完成项目。"
+      ],
+      [
+       "",
+       "Answer: (B) — \"worked\" is a complete verb, so we need an adverb to describe how.",
+       "答案 B：worked 已经是完整的动词，修饰它要用副词。"
+      ],
+      [
+       "",
+       "The report was ___ prepared. (A) meticulous (B) meticulously (C) meticulousness (D) meticulosity",
+       "报告准备得___。"
+      ],
+      [
+       "",
+       "Answer: (B) — between \"was\" and the past participle \"prepared\", we need an adverb.",
+       "答案 B：be 和过去分词之间放副词。"
+      ]
+     ],
+     "note": "句子“已经完整”时，空格里只能放可以删掉的东西 —— 副词。这一个判断能解决大部分副词题。"
+    },
+    {
+     "t": "word",
+     "w": "consistently"
+    },
+    {
+     "t": "word",
+     "w": "exclusively"
+    },
+    {
+     "t": "word",
+     "w": "subsequently"
+    },
+    {
+     "t": "word",
+     "w": "periodically"
+    },
+    {
+     "t": "word",
+     "w": "accordingly"
+    },
+    {
+     "t": "word",
+     "w": "diligent"
+    },
+    {
+     "t": "key",
+     "title": "副词的四个位置",
+     "what": [
+      "① <b>be 和过去分词 / -ing 之间</b>：was <b>carefully</b> prepared / is <b>rapidly</b> growing",
+      "② <b>助动词和动词之间</b>：has <b>recently</b> opened / will <b>soon</b> arrive",
+      "③ <b>动词 + 宾语之后</b>（句尾）：finished the work <b>quickly</b>",
+      "④ <b>形容词、副词前面</b>：<b>extremely</b> busy / <b>very</b> carefully"
+     ],
+     "why": [
+      "判断方法：把空格去掉，句子仍然完整、语法正确 → 空格是副词。"
+     ],
+     "zh": [
+      "中文副词“认真地”“很快地”位置比较固定（动词前）；英语副词位置多，但 Part 5 常考的就是 be + ___ + done 这一种。"
+     ],
+     "ex": [
+      [
+       "The office is periodically inspected.",
+       "办公室会定期接受检查。"
+      ],
+      [
+       "Sales have consistently increased.",
+       "销售额持续增长。"
+      ],
+      [
+       "The products are sold exclusively online.",
+       "产品只在网上销售。"
+      ]
+     ],
+     "err": [
+      [
+       "The report was careful checked.",
+       "The report was carefully checked.",
+       "be 和过去分词之间用副词"
+      ],
+      [
+       "She completed the task quick.",
+       "She completed the task quickly.",
+       "修饰动词用副词"
+      ]
+     ],
+     "sum": "去掉空格句子仍完整 → <b>副词</b>（-ly）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "The machines are ___ checked for safety.",
+       "o": [
+        "period",
+        "periodical",
+        "periodic",
+        "periodically"
+       ],
+       "a": 3
+      },
+      {
+       "t": "c",
+       "q": "Our sales have ___ grown over the past five years.",
+       "o": [
+        "consistency",
+        "consistent",
+        "consistently",
+        "consist"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "The new policy will be ___ explained at the meeting.",
+       "o": [
+        "full",
+        "fullness",
+        "fully",
+        "fuller"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "meticulous"
+    },
+    {
+     "t": "word",
+     "w": "punctual"
+    },
+    {
+     "t": "word",
+     "w": "reluctant"
+    },
+    {
+     "t": "word",
+     "w": "tentative"
+    },
+    {
+     "t": "word",
+     "w": "provisional"
+    },
+    {
+     "t": "word",
+     "w": "preliminary"
+    },
+    {
+     "t": "key",
+     "title": "形容词还是副词：看它修饰谁",
+     "what": [
+      "修饰<b>名词</b>、在 be 后 → 形容词：a <b>punctual</b> employee / He is <b>punctual</b>.",
+      "修饰<b>动词、形容词、整句</b> → 副词：He always arrives <b>punctually</b>.",
+      "注意例外：<b>friendly, costly, timely</b> 是形容词（-ly 结尾）；<b>hard, late, fast</b> 形副同形，hardly / lately 意思不同。"
+     ],
+     "why": [
+      "Part 5 的陷阱常是 -ly 结尾的形容词：a timely response（及时的回复），选 timely 而不是 timelily。"
+     ],
+     "zh": [
+      "中文“准时的员工”“准时地到达”靠“的 / 地”区分；英语靠 -ly，但 friendly、timely 这类例外要单独记。"
+     ],
+     "ex": [
+      [
+       "She is a diligent worker.",
+       "她是个勤奋的员工。"
+      ],
+      [
+       "She works diligently.",
+       "她工作勤奋。"
+      ],
+      [
+       "Thank you for your timely reply.",
+       "感谢您及时的回复。"
+      ]
+     ],
+     "err": [
+      [
+       "He gave a meticulously presentation.",
+       "He gave a meticulous presentation.",
+       "修饰名词用形容词"
+      ],
+      [
+       "The staff are very friendlily.",
+       "The staff are very friendly.",
+       "friendly 本身是形容词"
+      ]
+     ],
+     "sum": "修饰名词 / be 后 → <b>形容词</b>；修饰动词形容词 → <b>副词</b>；friendly / timely 是形容词。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mr. Ito is known for being ___.",
+       "o": [
+        "punctually",
+        "punctuality",
+        "punctual",
+        "punctuate"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "We appreciate your ___ response.",
+       "o": [
+        "timelessly",
+        "timely",
+        "time",
+        "timing"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "The report was meticulously prepared.",
+     "zh": "报告准备得一丝不苟。",
+     "focus": "meticulously 重音在 ti"
+    },
+    {
+     "t": "c",
+     "q": "The schedule is ___ and may change.",
+     "o": [
+      "tent",
+      "tentativeness",
+      "tentatively",
+      "tentative"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "The design was approved, and ___ the team began production.",
+     "o": [
+      "subsequently",
+      "subsequentness",
+      "subsequence",
+      "subsequent"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The budget has changed, so please adjust your plans ___.",
+     "o": [
+      "accord",
+      "accordance",
+      "accordingly",
+      "according"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The manager was ___ to approve the extra cost.",
+     "o": [
+      "reluctant",
+      "reluctantly",
+      "reluctancy",
+      "reluctance"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "These are only ___ results; the final report will come next month.",
+     "o": [
+      "preliminaries",
+      "prelim",
+      "preliminarily",
+      "preliminary"
+     ],
+     "a": 3
+    },
+    {
+     "t": "f",
+     "q": "She checked every number ___. (meticulous)",
+     "a": [
+      "meticulously"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "The machines are periodically inspected.",
+     "zh": "机器会定期检查。"
+    },
+    {
+     "t": "dict",
+     "a": "Sales have consistently increased."
+    },
+    {
+     "t": "tr",
+     "zh": "这些产品只在网上销售。",
+     "a": [
+      "These products are sold exclusively online.",
+      "The products are sold exclusively online."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "副词与形容词：consistently、exclusively、subsequently、periodically、accordingly、diligent、meticulous、punctual、reluctant、tentative、provisional、preliminary。",
+      "<b>重点</b>：副词位 —— be 和过去分词之间、助动词和动词之间、句尾、形容词前；去掉仍完整就是副词。",
+      "<b>重点</b>：friendly、timely 是形容词；hard / hardly、late / lately 意思不同。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.4.3",
+   "title": "动词：时态与语态",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "动词题看什么",
+     "lines": [
+      [
+       "",
+       "By the end of next month, we ___ the new system. (A) implement (B) implemented (C) will have implemented (D) have implemented",
+       "到下个月底，我们将___新系统。"
+      ],
+      [
+       "",
+       "Answer: (C) — \"by\" + a future time needs the future perfect.",
+       "答案 C：by + 将来时间 → 将来完成时。"
+      ],
+      [
+       "",
+       "The new policy ___ last week. (A) implemented (B) was implemented (C) implements (D) is implementing",
+       "新政策上周___。"
+      ],
+      [
+       "",
+       "Answer: (B) — there is no object, and a policy cannot implement itself, so we need the passive.",
+       "答案 B：后面没有宾语，政策不能自己实施，用被动。"
+      ]
+     ],
+     "note": "动词题两步：① 时间词决定时态 ② 后面有没有宾语决定主动还是被动。"
+    },
+    {
+     "t": "word",
+     "w": "commence"
+    },
+    {
+     "t": "word",
+     "w": "consolidate"
+    },
+    {
+     "t": "word",
+     "w": "discontinue"
+    },
+    {
+     "t": "word",
+     "w": "endorse"
+    },
+    {
+     "t": "word",
+     "w": "exceed"
+    },
+    {
+     "t": "word",
+     "w": "expedite"
+    },
+    {
+     "t": "key",
+     "title": "时间词 → 时态（Part 5 版）",
+     "what": [
+      "<b>since / for + 时间段 / so far / recently</b> → 现在完成时（has done）",
+      "<b>by + 将来时间 / by the time + 现在时</b> → 将来完成时（will have done）",
+      "<b>yesterday / last / ago / in 2020</b> → 过去时；<b>next / soon / tomorrow</b> → 将来",
+      "<b>when / if / as soon as / before / after</b> 从句里说将来 → 用现在时"
+     ],
+     "why": [
+      "第一学期学过五个时态，这里加上 Part 5 爱考的<b>将来完成时</b>（will have done）：“到某时为止将已经完成”。"
+     ],
+     "zh": [
+      "中文“到月底我们就完成了”很自然；英语要用 will have finished，因为是“将来某时之前完成”。"
+     ],
+     "ex": [
+      [
+       "Sales have exceeded expectations since the launch.",
+       "上市以来销量超出预期。"
+      ],
+      [
+       "By Friday, the team will have completed the report.",
+       "到周五，团队将已完成报告。"
+      ],
+      [
+       "We will start as soon as the manager arrives.",
+       "经理一到我们就开始。"
+      ]
+     ],
+     "err": [
+      [
+       "We will start when the manager will arrive.",
+       "We will start when the manager arrives.",
+       "时间从句用现在时表将来"
+      ],
+      [
+       "By next year, we finish the project.",
+       "By next year, we will have finished the project.",
+       "by + 将来 → 将来完成"
+      ]
+     ],
+     "sum": "<b>since</b> → has done；<b>by + 将来</b> → will have done；时间从句用<b>现在时</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Revenue ___ steadily since the new manager arrived.",
+       "o": [
+        "has increased",
+        "increased",
+        "increases",
+        "will increase"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "By the time you arrive, the meeting ___.",
+       "o": [
+        "started",
+        "has started",
+        "starts",
+        "will have started"
+       ],
+       "a": 3
+      },
+      {
+       "t": "c",
+       "q": "Please call me as soon as the shipment ___.",
+       "o": [
+        "arrives",
+        "arrived",
+        "will arrive",
+        "arriving"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "implement"
+    },
+    {
+     "t": "word",
+     "w": "oversee"
+    },
+    {
+     "t": "word",
+     "w": "surpass"
+    },
+    {
+     "t": "word",
+     "w": "undergo"
+    },
+    {
+     "t": "word",
+     "w": "verify"
+    },
+    {
+     "t": "word",
+     "w": "streamline"
+    },
+    {
+     "t": "key",
+     "title": "主动还是被动：看后面有没有宾语",
+     "what": [
+      "及物动词后面<b>有宾语</b> → 主动：The manager <b>implemented</b> the plan.",
+      "后面<b>没有宾语</b>（直接是介词、句号）→ 多半是被动：The plan <b>was implemented</b> last week.",
+      "再用常识检查：主语能不能自己做这个动作？（政策不能“实施”别的东西）"
+     ],
+     "why": [
+      "这是 Part 5 每套都有的题。四个选项常是 implemented / was implemented / is implementing / has implemented。先看宾语，再看时间词，两步就能定。"
+     ],
+     "zh": [
+      "中文常省略被动标记（“政策上周实施了”），英语必须写 was implemented。"
+     ],
+     "ex": [
+      [
+       "All visitors must be verified at the entrance.",
+       "所有访客都必须在入口处核验身份。"
+      ],
+      [
+       "The building is undergoing renovation.",
+       "大楼正在翻修。"
+      ],
+      [
+       "Ms. Park oversees the marketing team.",
+       "朴女士负责管理市场团队。"
+      ]
+     ],
+     "err": [
+      [
+       "The new system implemented last month.",
+       "The new system was implemented last month.",
+       "系统是被实施的"
+      ],
+      [
+       "The manager was approved the budget.",
+       "The manager approved the budget.",
+       "有宾语 budget → 主动"
+      ]
+     ],
+     "sum": "动词后<b>有宾语 → 主动</b>；<b>没宾语 → 被动</b>（be + done），再用常识检查。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "The construction ___ by a local company.",
+       "o": [
+        "was overseen",
+        "oversees",
+        "is overseeing",
+        "oversaw"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Ms. Kim ___ the merger of the two departments last year.",
+       "o": [
+        "was overseen",
+        "oversees",
+        "oversaw",
+        "has been overseen"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "所有订单都会被加急处理。",
+       "a": [
+        "All orders will be expedited.",
+        "All the orders will be expedited."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "The new policy was implemented last week.",
+     "zh": "新政策上周实施了。",
+     "focus": "implemented 重音在第一音节 IM"
+    },
+    {
+     "t": "c",
+     "q": "The ceremony will ___ at 10 a.m. sharp.",
+     "o": [
+      "commenced",
+      "commencement",
+      "commence",
+      "commencing"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The company decided to ___ the old model next year.",
+     "o": [
+      "discontinuous",
+      "discontinuation",
+      "discontinue",
+      "discontinued"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Our sales this year have ___ last year's record.",
+     "o": [
+      "surpass",
+      "surpassable",
+      "surpassed",
+      "surpassing"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The two offices will be ___ into one.",
+     "o": [
+      "consolidated",
+      "consolidate",
+      "consolidation",
+      "consolidating"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The new software will help ___ the ordering process.",
+     "o": [
+      "streamlined",
+      "streamlining",
+      "streamlines",
+      "streamline"
+     ],
+     "a": 3
+    },
+    {
+     "t": "f",
+     "q": "The cost must not ___ the budget. (exceed)",
+     "a": [
+      "exceed"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "The building is undergoing renovation.",
+     "zh": "大楼正在翻修。"
+    },
+    {
+     "t": "dict",
+     "a": "By Friday, the team will have completed the report."
+    },
+    {
+     "t": "tr",
+     "zh": "请在提交前核实所有数据。",
+     "a": [
+      "Please verify all the data before submitting it.",
+      "Please verify all data before you submit it."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "动词：commence、consolidate、discontinue、endorse、exceed、expedite、implement、oversee、surpass、undergo、verify、streamline。",
+      "<b>重点</b>：since → has done；by + 将来 → will have done；时间从句用现在时表将来。",
+      "<b>重点</b>：有宾语 → 主动；没宾语 → 被动；再用常识检查。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.4.4",
+   "title": "主谓一致",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "看清真正的主语",
+     "lines": [
+      [
+       "",
+       "The list of new applicants ___ on the manager's desk. (A) is (B) are (C) were (D) have been",
+       "新申请人名单___在经理桌上。"
+      ],
+      [
+       "",
+       "Answer: (A) — the subject is \"the list\", not \"applicants\".",
+       "答案 A：主语是 the list，不是 applicants。"
+      ],
+      [
+       "",
+       "Each of the rooms ___ a view of the ocean. (A) have (B) has (C) are having (D) were",
+       "每个房间都___海景。"
+      ],
+      [
+       "",
+       "Answer: (B) — \"each of\" takes a singular verb.",
+       "答案 B：each of 后面动词用单数。"
+      ]
+     ],
+     "note": "长主语里夹着介词短语时，动词要和“核心名词”一致，不要被离动词最近的名词骗了。"
+    },
+    {
+     "t": "word",
+     "w": "amenity"
+    },
+    {
+     "t": "word",
+     "w": "incentive"
+    },
+    {
+     "t": "word",
+     "w": "patron"
+    },
+    {
+     "t": "word",
+     "w": "recipient"
+    },
+    {
+     "t": "word",
+     "w": "mandatory"
+    },
+    {
+     "t": "word",
+     "w": "adjacent"
+    },
+    {
+     "t": "key",
+     "title": "长主语：找核心名词",
+     "what": [
+      "<b>The list of applicants is</b> … —— 核心是 list（单数）",
+      "<b>The amenities in the hotel are</b> … —— 核心是 amenities（复数）",
+      "方法：把 of / in / for / with 引导的介词短语<b>括起来</b>，剩下的才是主语。"
+     ],
+     "why": [
+      "TOEIC 的句子主语经常很长：The number of patrons who visited the museum last month ___。括号法：The number ___ → is。",
+      "<b>the number of</b> + 复数 → 单数动词；<b>a number of</b> + 复数 → 复数动词（= many）。"
+     ],
+     "zh": [
+      "中文没有主谓一致，中国学生最容易被“最近的名词”带偏。"
+     ],
+     "ex": [
+      [
+       "The quality of the products is excellent.",
+       "产品质量非常好。"
+      ],
+      [
+       "A number of patrons have complained.",
+       "有不少顾客投诉。"
+      ],
+      [
+       "The number of recipients has doubled.",
+       "收件人数量翻了一倍。"
+      ]
+     ],
+     "err": [
+      [
+       "The list of names are on the desk.",
+       "The list of names is on the desk.",
+       "核心是 list"
+      ],
+      [
+       "The number of visitors have increased.",
+       "The number of visitors has increased.",
+       "the number of → 单数"
+      ]
+     ],
+     "sum": "把介词短语括起来找核心名词；<b>the number of</b> 单数，<b>a number of</b> 复数。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "The price of these items ___ gone up.",
+       "o": [
+        "were",
+        "have",
+        "has",
+        "are"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "A number of employees ___ asked for flexible hours.",
+       "o": [
+        "has",
+        "was",
+        "have",
+        "is"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "The amenities at the new hotel ___ impressive.",
+       "o": [
+        "is",
+        "was",
+        "are",
+        "has"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "consecutive"
+    },
+    {
+     "t": "word",
+     "w": "contingent"
+    },
+    {
+     "t": "word",
+     "w": "indispensable"
+    },
+    {
+     "t": "word",
+     "w": "prospective"
+    },
+    {
+     "t": "word",
+     "w": "proficient"
+    },
+    {
+     "t": "word",
+     "w": "unprecedented"
+    },
+    {
+     "t": "key",
+     "title": "each / every / one of + 单数动词",
+     "what": [
+      "<b>Each</b> employee <b>has</b> / <b>Every</b> room <b>is</b> / <b>Each of</b> the rooms <b>has</b>",
+      "<b>One of</b> the reasons <b>is</b> …（“其中之一”是单数）",
+      "<b>Both</b> A and B → 复数；<b>Either</b> A or B / <b>Neither</b> A nor B → 动词跟<b>靠近的</b> B"
+     ],
+     "why": [
+      "one of + 复数名词 + 单数动词，是 Part 5 和写作里最常考的一致题。"
+     ],
+     "zh": [
+      "中文“每个房间都有”的“都”让人想用复数，英语 each / every 一律单数。"
+     ],
+     "ex": [
+      [
+       "Each applicant must submit two references.",
+       "每位申请人都必须提交两份推荐信。"
+      ],
+      [
+       "One of our goals is to reduce costs.",
+       "我们的目标之一是降低成本。"
+      ],
+      [
+       "Neither the manager nor the staff members were informed.",
+       "经理和员工都没被通知。"
+      ]
+     ],
+     "err": [
+      [
+       "Every employees have a parking space.",
+       "Every employee has a parking space.",
+       "every + 单数名词 + 单数动词"
+      ],
+      [
+       "One of the reasons are the price.",
+       "One of the reasons is the price.",
+       "one of … is"
+      ]
+     ],
+     "sum": "<b>each / every / one of</b> → 单数；<b>both</b> → 复数；<b>either / neither</b> → 跟近的。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Each of the candidates ___ interviewed by two managers.",
+       "o": [
+        "are",
+        "were",
+        "was",
+        "have been"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "One of the most popular amenities ___ the rooftop pool.",
+       "o": [
+        "were",
+        "is",
+        "are",
+        "have"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "One of our goals is to reduce costs.",
+     "zh": "我们的目标之一是降低成本。",
+     "focus": "One of 连读 /wʌnəv/"
+    },
+    {
+     "t": "c",
+     "q": "Attendance at the safety training is ___ for all staff.",
+     "o": [
+      "mandate",
+      "optional",
+      "mandatory",
+      "mandatorily"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The parking lot is ___ to the main building.",
+     "o": [
+      "adjacently",
+      "adjacent",
+      "adjoin",
+      "adjacency"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Sales have risen for three ___ quarters.",
+     "o": [
+      "consecutively",
+      "consecute",
+      "consecution",
+      "consecutive"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "The offer is ___ on the results of a background check.",
+     "o": [
+      "contingent",
+      "contingently",
+      "contingence",
+      "contingency"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Employees who are ___ in Spanish are preferred.",
+     "o": [
+      "proficiency",
+      "proficiently",
+      "profit",
+      "proficient"
+     ],
+     "a": 3
+    },
+    {
+     "t": "f",
+     "q": "The company offers a bonus as an ___ for good performance.",
+     "a": [
+      "incentive"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Each of the rooms has a view of the ocean.",
+     "zh": "每个房间都有海景。"
+    },
+    {
+     "t": "dict",
+     "a": "The list of new applicants is on the manager's desk."
+    },
+    {
+     "t": "tr",
+     "zh": "这次需求是前所未有的。",
+     "a": [
+      "The demand was unprecedented.",
+      "This level of demand is unprecedented.",
+      "The demand this time was unprecedented."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：amenity、incentive、patron、recipient、mandatory、adjacent、consecutive、contingent、indispensable、prospective、proficient、unprecedented。",
+      "<b>重点</b>：括起介词短语找核心名词；the number of 单数 / a number of 复数。",
+      "<b>重点</b>：each / every / one of → 单数；both → 复数；either / neither → 跟近的。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.4.5",
+   "title": "Part 5 实战",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "30 题、10 分钟",
+     "lines": [
+      [
+       "",
+       "Part 5 has 30 questions. Try to finish them in about ten minutes.",
+       "Part 5 共 30 题，争取十分钟左右做完。"
+      ],
+      [
+       "",
+       "First, look at the four options and decide what type of question it is.",
+       "先看四个选项，判断题型。"
+      ],
+      [
+       "",
+       "Word form and verb questions can be answered by looking at the words around the blank.",
+       "词性题和动词题，看空格前后就能答。"
+      ],
+      [
+       "",
+       "Only vocabulary questions need you to understand the whole sentence.",
+       "只有词汇题需要读懂整句。"
+      ]
+     ],
+     "note": "这一课把前四课串起来：先分类，再用对应的方法，把时间省给阅读 Part 7。"
+    },
+    {
+     "t": "word",
+     "w": "accommodate"
+    },
+    {
+     "t": "word",
+     "w": "allocate"
+    },
+    {
+     "t": "word",
+     "w": "itemize"
+    },
+    {
+     "t": "word",
+     "w": "nominate"
+    },
+    {
+     "t": "word",
+     "w": "remit"
+    },
+    {
+     "t": "word",
+     "w": "solicit"
+    },
+    {
+     "t": "key",
+     "title": "Part 5 解题顺序：先看选项，再看空格",
+     "what": [
+      "① 选项是同一词根的不同形式 → <b>词性题</b>：看空格前后（5 秒）",
+      "② 选项是同一动词的不同形式 → <b>动词题</b>：主谓一致 → 时间词 → 主动被动（10 秒）",
+      "③ 选项是 although / despite / because / due to → <b>连接词题</b>：看后面是句子还是名词",
+      "④ 选项意思各不相同 → <b>词汇题</b>：读整句，看搭配（20 秒）"
+     ],
+     "why": [
+      "顺序很重要：先花 2 秒看选项分类，就不会在词性题上浪费时间去翻译整句。"
+     ],
+     "zh": [
+      "中国考生习惯先读题干再看选项，Part 5 反过来做更快。"
+     ],
+     "ex": [
+      [
+       "The fee will be ___ for early registrants. (waived / waive / waiver / waiving)",
+       "提前注册者免收费用。—— 词性题：will be + 过去分词。"
+      ]
+     ],
+     "err": [
+      [
+       "The fee will be waive for members.",
+       "The fee will be waived for members.",
+       "will be + 过去分词：看位置就能选"
+      ]
+     ],
+     "sum": "<b>先看选项分类</b> → 词性看位置 / 动词看一致时态语态 / 连接词看后面 / 词汇看搭配。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "The fee will be ___ for members.",
+       "o": [
+        "waived",
+        "waiving",
+        "waive",
+        "waiver"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "The hotel can ___ up to 300 guests.",
+       "o": [
+        "accommodation",
+        "accommodate",
+        "accommodated",
+        "accommodating"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "stipulate"
+    },
+    {
+     "t": "word",
+     "w": "waive"
+    },
+    {
+     "t": "word",
+     "w": "yield"
+    },
+    {
+     "t": "word",
+     "w": "vacant"
+    },
+    {
+     "t": "word",
+     "w": "subsequent"
+    },
+    {
+     "t": "word",
+     "w": "compliance"
+    },
+    {
+     "t": "key",
+     "title": "介词还是连词：后面是名词还是句子",
+     "what": [
+      "后面是<b>名词 / doing</b> → 介词：<b>despite / in spite of / because of / due to / during</b>",
+      "后面是<b>句子</b>（主语 + 谓语）→ 连词：<b>although / even though / because / while</b>",
+      "despite the rain ↔ although it rained · because of the delay ↔ because the train was late · during the meeting ↔ while we were meeting"
+     ],
+     "why": [
+      "这一组每套必考 1–2 题，只要看空格后面有没有谓语动词就能选。"
+     ],
+     "zh": [
+      "中文“虽然下雨”“尽管下雨”后面都能接任何东西；英语 although 接句子，despite 接名词，不能混。"
+     ],
+     "ex": [
+      [
+       "Despite the heavy rain, the event was a success.",
+       "尽管下大雨，活动还是很成功。"
+      ],
+      [
+       "Although it rained heavily, the event was a success.",
+       "虽然雨下得很大，活动还是很成功。"
+      ],
+      [
+       "The flight was delayed due to bad weather.",
+       "航班因天气恶劣而延误。"
+      ]
+     ],
+     "err": [
+      [
+       "Although the delay, we finished on time.",
+       "Despite the delay, we finished on time.",
+       "名词前用 despite"
+      ],
+      [
+       "Despite he was tired, he kept working.",
+       "Although he was tired, he kept working.",
+       "句子前用 although"
+      ]
+     ],
+     "sum": "后面是<b>名词</b> → despite / because of / during；是<b>句子</b> → although / because / while。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ the budget cuts, the project was completed.",
+       "o": [
+        "Because",
+        "Although",
+        "While",
+        "Despite"
+       ],
+       "a": 3
+      },
+      {
+       "t": "c",
+       "q": "The store closed early ___ the manager was sick.",
+       "o": [
+        "due to",
+        "because",
+        "despite",
+        "because of"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Please turn off your phone ___ the presentation.",
+       "o": [
+        "while",
+        "when",
+        "during",
+        "although"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Despite the heavy rain, the event was a success.",
+     "zh": "尽管下大雨，活动还是很成功。",
+     "focus": "despite 重音在第二音节"
+    },
+    {
+     "t": "c",
+     "q": "The company will ___ more funds to research next year.",
+     "o": [
+      "allocating",
+      "allocate",
+      "allocation",
+      "allocated"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Please ___ all expenses on the reimbursement form.",
+     "o": [
+      "itemize",
+      "item",
+      "itemization",
+      "itemized"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The contract ___ that payment must be made within 30 days.",
+     "o": [
+      "stipulates",
+      "stipulating",
+      "stipulate",
+      "stipulation"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The apartment has been ___ since March.",
+     "o": [
+      "vacantly",
+      "vacant",
+      "vacancy",
+      "vacate"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Ms. Ross was ___ for the Employee of the Year award.",
+     "o": [
+      "nominee",
+      "nominated",
+      "nominate",
+      "nomination"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "___ the high cost, many customers still bought the product.",
+     "o": [
+      "Although",
+      "Despite",
+      "Unless",
+      "Because"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "The new process ___ better results than expected. (yield)",
+     "a": [
+      "yielded"
+     ]
+    },
+    {
+     "t": "dict",
+     "a": "Please remit payment within thirty days."
+    },
+    {
+     "t": "tr",
+     "zh": "所有员工都必须遵守安全规定。",
+     "a": [
+      "All employees must comply with the safety rules.",
+      "All staff must comply with the safety regulations."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "动词与形容词：accommodate、allocate、itemize、nominate、remit、solicit、stipulate、waive、yield、vacant、subsequent、compliance。",
+      "<b>重点</b>：Part 5 先看选项分类，再用对应方法。",
+      "<b>重点</b>：名词前 despite / because of / during；句子前 although / because / while。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.4.6",
+   "title": "单元阅读：Notice: Changes to the Expense Policy",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Notice: Changes to the Expense Policy",
+     "note": "TOEIC Part 7 式的阅读：先看题目再读文章，带着问题找答案。先关掉译文读。",
+     "lines": [
+      [
+       "To all employees:",
+       "全体员工："
+      ],
+      [
+       "As of July 1, a new expense policy will be implemented across the company.",
+       "自 7 月 1 日起，全公司将实施新的报销制度。"
+      ],
+      [
+       "The goal is to streamline the reimbursement process and reduce paperwork.",
+       "目的是简化报销流程，减少文书工作。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Under the new policy, all expenses must be itemized and submitted online within ten days.",
+       "按照新制度，所有费用必须逐项列明，并在十天内在线提交。"
+      ],
+      [
+       "Receipts are mandatory for any single item that exceeds fifty dollars.",
+       "单项超过五十美元必须附收据。"
+      ],
+      [
+       "Each request will be verified by the accounting department before payment is made.",
+       "每份申请在付款前都会由会计部核实。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Although most employees have used the old paper forms for years, the new system is user-friendly.",
+       "虽然大多数员工多年来一直用纸质表格，但新系统使用起来很方便。"
+      ],
+      [
+       "A short training session will be held in the main conference room on June 25.",
+       "6 月 25 日将在大会议室举办一次简短培训。"
+      ],
+      [
+       "Attendance is not required, but it is highly recommended.",
+       "不强制参加，但强烈推荐。"
+      ],
+      [
+       "Questions about the policy should be directed to Ms. Rivera in Accounting.",
+       "关于该制度的问题请咨询会计部的里维拉女士。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "What is the purpose of the notice?",
+     "o": [
+      "To announce a new expense policy",
+      "To introduce a new accountant",
+      "To cancel a training session"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What must employees do for items over fifty dollars?",
+     "o": [
+      "Pay in cash",
+      "Get a manager's signature",
+      "Submit a receipt"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Who will verify the requests?",
+     "o": [
+      "Each employee's manager",
+      "Ms. Rivera's assistant",
+      "The accounting department"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is true about the training session?",
+     "o": [
+      "It is optional.",
+      "It is mandatory for all staff.",
+      "It will be held online."
+     ],
+     "a": 0,
+     "e": "Attendance is not required —— 选项把它换成了 optional。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "The word \"streamline\" in line 3 is closest in meaning to",
+     "o": [
+      "describe",
+      "simplify",
+      "delay"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "所有费用必须逐项列明。",
+     "a": [
+      "All expenses must be itemized.",
+      "All the expenses must be itemized."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "Part 5 的词性、语态在真实通知里：will be implemented / must be itemized / will be verified。",
+      "同义替换：not required = optional；streamline = simplify。",
+      "词：as of、implement、streamline、itemize、mandatory、exceed、verify、user-friendly。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "The new printer is more ___ than the old one.",
+    "o": [
+     "reliable",
+     "reliance",
+     "rely",
+     "reliably"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "The documents were ___ reviewed by the legal team.",
+    "o": [
+     "care",
+     "careful",
+     "carefully",
+     "caring"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Sales ___ by 20 percent since January.",
+    "o": [
+     "have increased",
+     "will increase",
+     "increase",
+     "increased"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "The new procedures ___ next Monday.",
+    "o": [
+     "implemented",
+     "implementing",
+     "will implement",
+     "will be implemented"
+    ],
+    "a": 3
+   },
+   {
+    "t": "c",
+    "q": "The list of participants ___ been updated.",
+    "o": [
+     "have",
+     "were",
+     "has",
+     "are"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "___ the delay, the shipment arrived in good condition.",
+    "o": [
+     "Even though",
+     "Because",
+     "Despite",
+     "Although"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "Each of the managers ___ a company car.",
+    "o": [
+     "were",
+     "are having",
+     "has",
+     "have"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "We need a ___ answer by Friday.",
+    "o": [
+     "define",
+     "definition",
+     "definite",
+     "definitely"
+    ],
+    "a": 2
+   },
+   {
+    "t": "tr",
+    "zh": "到下个月底，我们将完成这个项目。",
+    "a": [
+     "By the end of next month, we will have completed the project.",
+     "By the end of next month, we will have finished the project."
+    ]
+   }
+  ]
+ }
+}

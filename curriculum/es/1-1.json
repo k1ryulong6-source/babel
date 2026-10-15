@@ -1539,6 +1539,121 @@
      ]
     }
    ]
+  },
+  {
+   "id": "es.1.1.6",
+   "title": "单元阅读：En el café",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "En el café",
+     "note": "先关掉译文读一遍。短文只用学过的词和本单元的重点；读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "¡Buenos días! Soy Ana y estoy en un café.",
+       "早上好！我是安娜，我在一家咖啡馆。"
+      ],
+      [
+       "Tomo un café con leche y un poco de pan con jamón.",
+       "我喝一杯牛奶咖啡，吃一点火腿面包。"
+      ],
+      [
+       "El camarero dice: «¿Qué tal? ¿Todo bien?»",
+       "服务员说：“怎么样？一切都好吗？”"
+      ],
+      [
+       "«¡Qué rico! Muchas gracias», digo yo.",
+       "“真好吃！非常感谢。”我说。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Un perro pasa por la calle con un señor.",
+       "一只狗跟着一位先生从街上走过。"
+      ],
+      [
+       "El perro es pequeño, pero corre muy rápido.",
+       "狗很小，但跑得很快。"
+      ],
+      [
+       "¿Qué hora es? Son las nueve. ¡Uy, el tren!",
+       "几点了？九点了。哎呀，火车！"
+      ],
+      [
+       "Pago, digo «¡Hasta luego!» y corro a la estación.",
+       "我付了钱，说了声“回头见！”，就跑向车站。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "安娜在哪里？",
+     "o": [
+      "家里",
+      "火车站",
+      "咖啡馆"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "安娜吃了什么？",
+     "o": [
+      "火腿面包和牛奶咖啡",
+      "奶酪和果汁",
+      "米饭和汤"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "那只小狗怎么样？",
+     "o": [
+      "很大，很懒",
+      "是安娜的狗",
+      "很小，但跑得很快"
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "安娜最后为什么跑起来？",
+     "o": [
+      "小狗跑了",
+      "要赶火车",
+      "下雨了"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "真好吃！",
+     "a": [
+      "¡Qué rico!",
+      "¡Qué rico está!"
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：r 和 rr —— pero（但是）/ perro（狗）、corre；词首的 r（rico、rápido）也要颤。",
+      "重音：café、está 有重音符号；jamón、estación 以 -ón 结尾，带重音符号。",
+      "h 不读：hasta；ll：calle；j：jamón；倒写的问号、叹号：¿Qué hora es? ¡Uy!"
+     ]
+    }
+   ]
   }
  ],
  "test": {

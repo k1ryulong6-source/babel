@@ -1,0 +1,1706 @@
+{
+ "id": "es.2.4",
+ "title": "两种过去时",
+ "goal": "",
+ "lessons": [
+  {
+   "id": "es.2.4.1",
+   "title": "完成的事件 vs 背景",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Me robaron la cartera",
+     "lines": [
+      [
+       "Elena",
+       "¿Qué te pasó ayer? Tenías mala cara.",
+       "你昨天怎么了？脸色很差。"
+      ],
+      [
+       "Tomás",
+       "Me robaron la cartera en el metro.",
+       "我在地铁里钱包被偷了。"
+      ],
+      [
+       "Elena",
+       "¡No! ¿Cómo fue?",
+       "不会吧！怎么回事？"
+      ],
+      [
+       "Tomás",
+       "Había mucha gente y yo estaba mirando el móvil. En ese momento un chico me empujó.",
+       "人很多，我正在看手机。就在那时一个男孩推了我一下。"
+      ],
+      [
+       "Elena",
+       "¿Y denunciaste el robo?",
+       "那你报案了吗？"
+      ],
+      [
+       "Tomás",
+       "Sí, fui a la comisaría. Por suerte, no llevaba mucho dinero.",
+       "报了，我去了警察局。幸好我没带多少钱。"
+      ]
+     ],
+     "note": "había mucha gente / estaba mirando（背景）+ me empujó / fui（事件）—— 讲故事时两种过去时总是一起出现。"
+    },
+    {
+     "t": "word",
+     "w": "un día"
+    },
+    {
+     "t": "word",
+     "w": "aquel día"
+    },
+    {
+     "t": "word",
+     "w": "en ese momento"
+    },
+    {
+     "t": "word",
+     "w": "de pronto"
+    },
+    {
+     "t": "word",
+     "w": "mientras tanto"
+    },
+    {
+     "t": "word",
+     "w": "por suerte"
+    },
+    {
+     "t": "key",
+     "title": "两种过去时：事件（indefinido）vs 背景（imperfecto）",
+     "what": [
+      "<b>简单过去时</b>（indefinido）= 快照：发生了、完成了的<b>事件</b>，推动故事前进 —— me robaron, fui, me empujó",
+      "<b>未完成过去时</b>（imperfecto）= 慢镜头：<b>背景</b>、描述、当时的状态 —— había gente, estaba cansado, llovía",
+      "问自己：这句话是“发生了什么”，还是“当时是什么样子”？"
+     ],
+     "why": [
+      "同一个动词两种形式意思不同：Estaba en casa（当时在家，背景）/ Estuve en casa todo el día（在家待了一整天，完整的一段事）。",
+      "讲故事像拍电影：imperfecto 搭布景，indefinido 演剧情。"
+     ],
+     "zh": [
+      "中文没有这个区分，中国学生的典型错误是把所有过去都用 indefinido，故事就没有“画面感”；或者全用 imperfecto，故事就“不往前走”。"
+     ],
+     "ex": [
+      [
+       "Hacía sol y paseábamos por el parque. De repente, empezó a llover.",
+       "阳光很好，我们在公园散步。突然下起雨来。"
+      ],
+      [
+       "Era tarde, así que cogí un taxi.",
+       "天晚了，所以我打了个车。"
+      ]
+     ],
+     "err": [
+      [
+       "Ayer llovía y me quedaba en casa.",
+       "Ayer llovió y me quedé en casa.",
+       "讲一整件已完成的事用 indefinido"
+      ],
+      [
+       "Cuando llegué, hubo mucha gente.",
+       "Cuando llegué, había mucha gente.",
+       "当时的状况是背景"
+      ]
+     ],
+     "sum": "<b>发生了什么</b> → indefinido；<b>当时什么样</b> → imperfecto。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Cuando salí de casa, ___ mucho frío.",
+       "o": [
+        "hace",
+        "hacía",
+        "hizo"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Ayer ___ a la comisaría para denunciar el robo.",
+       "o": [
+        "iba",
+        "voy",
+        "fui"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Un ladrón me ___ la cartera mientras yo dormía.",
+       "o": [
+        "robaba",
+        "roba",
+        "robó"
+       ],
+       "a": 2
+      },
+      {
+       "t": "tr",
+       "zh": "那天下着雨，我打了个车。",
+       "a": [
+        "Aquel día llovía y cogí un taxi.",
+        "Ese día llovía, así que cogí un taxi.",
+        "Aquel día llovía y tomé un taxi."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "por desgracia"
+    },
+    {
+     "t": "word",
+     "w": "ladrón"
+    },
+    {
+     "t": "word",
+     "w": "robar"
+    },
+    {
+     "t": "word",
+     "w": "denunciar"
+    },
+    {
+     "t": "word",
+     "w": "cartera"
+    },
+    {
+     "t": "word",
+     "w": "comisaría"
+    },
+    {
+     "t": "key",
+     "title": "时间词的提示",
+     "what": [
+      "倾向 <b>indefinido</b>：un día, aquel día, de pronto, de repente, en ese momento, una vez, ayer, el lunes pasado",
+      "倾向 <b>imperfecto</b>：siempre, todos los días, a menudo, mientras, normalmente, de pequeño, antes"
+     ],
+     "why": [
+      "时间词是“提示”，不是绝对规则：Aquel día llovía（那天下着雨，背景）完全正确。但 de pronto / en ese momento 后面几乎总是 indefinido（突然发生）。"
+     ],
+     "zh": [
+      "中文“突然”“就在那时”= 事件开始；“总是”“以前”= 习惯背景。"
+     ],
+     "ex": [
+      [
+       "En ese momento llegó la policía.",
+       "就在那时警察到了。"
+      ],
+      [
+       "Siempre íbamos a ese bar.",
+       "我们以前总去那家酒吧。"
+      ]
+     ],
+     "err": [
+      [
+       "De pronto se apagaba la luz.",
+       "De pronto se apagó la luz.",
+       "突然发生 → indefinido"
+      ]
+     ],
+     "sum": "<b>de pronto / en ese momento / un día</b> → indefinido；<b>siempre / mientras / antes</b> → imperfecto。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "De pronto ___ un ruido muy fuerte.",
+       "o": [
+        "oímos",
+        "oímos siempre",
+        "oíamos"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Antes ___ en el centro, pero ahora vivo en las afueras.",
+       "o": [
+        "viví",
+        "vivía",
+        "vivo"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Había mucha gente y yo estaba mirando el móvil. En ese momento un chico me empujó.",
+     "zh": "人很多，我正在看手机。就在那时一个男孩推了我一下。",
+     "focus": "背景慢读，事件加快"
+    },
+    {
+     "t": "c",
+     "q": "Por ___, perdí el último tren y tuve que dormir en la estación.",
+     "o": [
+      "desgracia",
+      "suerte",
+      "pronto"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Fui a la ___ para denunciar el robo.",
+     "o": [
+      "comisaría",
+      "cartera",
+      "ladrón"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "___ no llevaba mucho dinero, así que no perdí casi nada.",
+     "o": [
+      "Mientras tanto",
+      "Por suerte",
+      "Por desgracia"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Un ___ entró en la tienda y se llevó el dinero.",
+     "a": [
+      "ladrón"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Me ___ (robar, ellos) el móvil en el autobús.",
+     "a": [
+      "robaron"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Había mucha gente en el metro",
+     "p": [
+      "Había",
+      "mucha gente",
+      "en el metro"
+     ],
+     "zh": "地铁里人很多。"
+    },
+    {
+     "t": "dict",
+     "a": "En ese momento un chico me empujó."
+    },
+    {
+     "t": "tr",
+     "zh": "我去警察局报了案。",
+     "a": [
+      "Fui a la comisaría a denunciar el robo.",
+      "Fui a la comisaría y denuncié el robo."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：un día、aquel día、en ese momento、de pronto、mientras tanto、por suerte、por desgracia、ladrón、robar、denunciar、cartera、comisaría。",
+      "<b>重点</b>：事件 → indefinido；背景 → imperfecto。",
+      "<b>重点</b>：de pronto / en ese momento → indefinido；siempre / mientras → imperfecto。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.4.2",
+   "title": "被打断的动作",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Una noche movida",
+     "lines": [
+      [
+       "Rosa",
+       "¿Dormiste bien?",
+       "你睡得好吗？"
+      ],
+      [
+       "Luis",
+       "¡Qué va! Estaba durmiendo tranquilamente cuando sonó la alarma de incendios.",
+       "哪里！我正睡得好好的，火警响了。"
+      ],
+      [
+       "Rosa",
+       "¡Qué susto! ¿Y qué hiciste?",
+       "吓死了！那你怎么办？"
+      ],
+      [
+       "Luis",
+       "Me levanté corriendo y tropecé con una silla.",
+       "我一骨碌爬起来，被椅子绊了一下。"
+      ],
+      [
+       "Rosa",
+       "¿Era un incendio de verdad?",
+       "真着火了吗？"
+      ],
+      [
+       "Luis",
+       "No, alguien estaba cocinando y se le quemó la cena.",
+       "没有，是有人在做饭，把晚饭烧糊了。"
+      ]
+     ],
+     "note": "estaba durmiendo… cuando sonó —— 一个正在进行的动作被另一个动作打断。这是两种过去时最经典的组合。"
+    },
+    {
+     "t": "word",
+     "w": "apagarse"
+    },
+    {
+     "t": "word",
+     "w": "tropezar"
+    },
+    {
+     "t": "word",
+     "w": "chocar"
+    },
+    {
+     "t": "word",
+     "w": "resbalar"
+    },
+    {
+     "t": "word",
+     "w": "gritar"
+    },
+    {
+     "t": "word",
+     "w": "empujar"
+    },
+    {
+     "t": "key",
+     "title": "estaba + 副动词 … cuando + indefinido：正在……时，突然……",
+     "what": [
+      "进行中的背景动作：<b>estaba</b> + 副动词（gerundio）—— estaba durmiendo",
+      "打断它的事件：<b>cuando</b> + indefinido —— cuando sonó la alarma",
+      "顺序可以换：Cuando sonó el teléfono, yo estaba cenando."
+     ],
+     "why": [
+      "estaba + gerundio 比单纯的 imperfecto（dormía）更强调“就在那一刻正在做”。"
+     ],
+     "zh": [
+      "中文“我正在……的时候，……”完全对应这个结构。注意“打断”的那个动作一定用 indefinido。"
+     ],
+     "ex": [
+      [
+       "Estaba duchándome cuando llamaron a la puerta.",
+       "我正在洗澡，有人敲门。"
+      ],
+      [
+       "Cuando llegó mi madre, estábamos viendo una película.",
+       "妈妈到的时候，我们正在看电影。"
+      ]
+     ],
+     "err": [
+      [
+       "Estaba cenando cuando sonaba el teléfono.",
+       "Estaba cenando cuando sonó el teléfono.",
+       "打断的动作用 indefinido"
+      ],
+      [
+       "Estuve durmiendo cuando sonó la alarma.",
+       "Estaba durmiendo cuando sonó la alarma.",
+       "进行中的背景用 estaba"
+      ]
+     ],
+     "sum": "<b>estaba + -ando / -iendo</b>（进行）+ <b>cuando + indefinido</b>（打断）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Estaba leyendo cuando de repente ___ la luz.",
+       "o": [
+        "se apagó",
+        "se apagaba",
+        "se apaga"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Cuando entró el profesor, los alumnos ___.",
+       "o": [
+        "gritaron ayer",
+        "estuvieron gritando",
+        "estaban gritando"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "Estaba ___ (cocinar) cuando me quemé.",
+       "a": [
+        "cocinando"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我正在洗澡，有人敲门。",
+       "a": [
+        "Estaba duchándome cuando llamaron a la puerta.",
+        "Me estaba duchando cuando llamaron a la puerta."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "quemarse"
+    },
+    {
+     "t": "word",
+     "w": "llamar a la puerta"
+    },
+    {
+     "t": "word",
+     "w": "ponerse a"
+    },
+    {
+     "t": "word",
+     "w": "interrumpir"
+    },
+    {
+     "t": "word",
+     "w": "despertarse"
+    },
+    {
+     "t": "word",
+     "w": "asustarse"
+    },
+    {
+     "t": "key",
+     "title": "副动词（gerundio）：-ando / -iendo",
+     "what": [
+      "-ar → <b>-ando</b>：hablar → hablando",
+      "-er / -ir → <b>-iendo</b>：comer → comiendo，vivir → viviendo",
+      "不规则：leer → <b>leyendo</b>、oír → <b>oyendo</b>、dormir → <b>durmiendo</b>、pedir → <b>pidiendo</b>、decir → <b>diciendo</b>"
+     ],
+     "why": [
+      "副动词的不规则和简单过去时第三人称的变化一模一样：durmió / durmiendo，pidió / pidiendo，leyó / leyendo。一起记。",
+      "代词可以放 estar 前或贴在副动词后：me estaba duchando = estaba duchándome（后者要加重音）。"
+     ],
+     "zh": [
+      "中文“正在……”= estar + 副动词。"
+     ],
+     "ex": [
+      [
+       "Los niños estaban durmiendo.",
+       "孩子们正在睡觉。"
+      ],
+      [
+       "¿Qué estabas diciendo?",
+       "你刚才在说什么？"
+      ]
+     ],
+     "err": [
+      [
+       "Estaba dormiendo.",
+       "Estaba durmiendo.",
+       "o → u"
+      ],
+      [
+       "Estaba leiendo.",
+       "Estaba leyendo.",
+       "i → y"
+      ]
+     ],
+     "sum": "<b>-ando / -iendo</b>；不规则：durmiendo、pidiendo、diciendo、leyendo、oyendo。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mi abuelo estaba ___ el periódico.",
+       "o": [
+        "leiendo",
+        "leyendo",
+        "leído"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Los niños estaban ___ (dormir).",
+       "a": [
+        "durmiendo"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Estaba durmiendo tranquilamente cuando sonó la alarma de incendios.",
+     "zh": "我正睡得好好的，火警响了。",
+     "focus": "cuando 后面语速加快"
+    },
+    {
+     "t": "c",
+     "q": "___ con una piedra y me caí.",
+     "o": [
+      "Tropiezo",
+      "Tropecé",
+      "Tropezaba"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "El suelo estaba mojado y ___.",
+     "o": [
+      "resbalé",
+      "resbalo",
+      "resbalaba siempre"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Estábamos hablando cuando alguien nos ___.",
+     "o": [
+      "interrumpe",
+      "interrumpía",
+      "interrumpió"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "De repente se ___ a llover.（突然下起雨来）",
+     "a": [
+      "puso"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Me ___ (despertar) a las tres por un ruido.",
+     "a": [
+      "desperté"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Estaba cenando cuando llamaron a la puerta",
+     "p": [
+      "Estaba cenando",
+      "cuando",
+      "llamaron",
+      "a la puerta"
+     ],
+     "zh": "我正在吃晚饭，有人敲门。"
+    },
+    {
+     "t": "dict",
+     "a": "Me levanté corriendo y tropecé con una silla."
+    },
+    {
+     "t": "tr",
+     "zh": "一辆车撞上了树。",
+     "a": [
+      "Un coche chocó contra un árbol.",
+      "Un coche chocó con un árbol."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：apagarse、tropezar、chocar、resbalar、gritar、empujar、quemarse、llamar a la puerta、ponerse a、interrumpir、despertarse、asustarse。",
+      "<b>重点</b>：estaba + 副动词 … cuando + indefinido（正在……时，突然……）。",
+      "<b>重点</b>：副动词 -ando / -iendo；durmiendo、pidiendo、leyendo。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.4.3",
+   "title": "讲故事一：童话",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Un cuento",
+     "lines": [
+      [
+       "",
+       "Érase una vez una princesa que vivía en un castillo junto a un bosque.",
+       "从前，有一位公主住在森林边的城堡里。"
+      ],
+      [
+       "",
+       "Era muy curiosa y le gustaba pasear sola.",
+       "她很好奇，喜欢一个人散步。"
+      ],
+      [
+       "",
+       "Un día, se perdió en el bosque y encontró a un lobo herido.",
+       "有一天，她在森林里迷了路，遇见一只受伤的狼。"
+      ],
+      [
+       "",
+       "La princesa lo ayudó, y en ese momento el lobo se convirtió en un príncipe.",
+       "公主帮了它，就在那时，狼变成了一位王子。"
+      ]
+     ],
+     "note": "童话是练两种过去时最好的材料：开头用 imperfecto 描写人物，“Un día”之后用 indefinido 推动情节。"
+    },
+    {
+     "t": "word",
+     "w": "érase una vez"
+    },
+    {
+     "t": "word",
+     "w": "cuento"
+    },
+    {
+     "t": "word",
+     "w": "rey"
+    },
+    {
+     "t": "word",
+     "w": "reina"
+    },
+    {
+     "t": "word",
+     "w": "princesa"
+    },
+    {
+     "t": "word",
+     "w": "bosque"
+    },
+    {
+     "t": "key",
+     "title": "故事的结构：开头描写 → Un día → 结局",
+     "what": [
+      "① 开头（imperfecto）：<b>Érase una vez</b> / <b>Había una vez</b> una princesa que <b>vivía</b>… <b>Era</b> muy…",
+      "② 转折（indefinido）：<b>Un día</b>… se perdió / encontró / se convirtió",
+      "③ 结局：<b>Y vivieron felices para siempre.</b>"
+     ],
+     "why": [
+      "这个结构适用于一切故事：童话、轶事、新闻。先搭好舞台（人物、地点、习惯），再用 Un día / De repente 让事件发生。"
+     ],
+     "zh": [
+      "中文“从前有……有一天……”正好对应 Había una vez… Un día…。"
+     ],
+     "ex": [
+      [
+       "Había una vez un rey que tenía tres hijas.",
+       "从前有一位国王，他有三个女儿。"
+      ],
+      [
+       "Un día, la hija menor desapareció.",
+       "有一天，小女儿失踪了。"
+      ]
+     ],
+     "err": [
+      [
+       "Érase una vez una princesa que vivió en un castillo.",
+       "Érase una vez una princesa que vivía en un castillo.",
+       "开头的描写用 imperfecto"
+      ]
+     ],
+     "sum": "开头 <b>imperfecto</b> → <b>Un día</b> + indefinido → <b>para siempre</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Había una vez un lobo que ___ en el bosque.",
+       "o": [
+        "vivía",
+        "vive",
+        "vivió"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Un día, el lobo ___ a una niña.",
+       "o": [
+        "vio",
+        "ve",
+        "veía"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "Y vivieron felices para ___.",
+       "a": [
+        "siempre"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "lobo"
+    },
+    {
+     "t": "word",
+     "w": "bruja"
+    },
+    {
+     "t": "word",
+     "w": "mágico"
+    },
+    {
+     "t": "word",
+     "w": "convertirse en"
+    },
+    {
+     "t": "word",
+     "w": "desaparecer"
+    },
+    {
+     "t": "word",
+     "w": "para siempre"
+    },
+    {
+     "t": "key",
+     "title": "“变成”：convertirse en、ponerse、hacerse",
+     "what": [
+      "<b>convertirse en</b> + 名词：彻底变成另一种东西 —— La rana se convirtió en príncipe.",
+      "<b>ponerse</b> + 形容词：一时的情绪、状态变化 —— Se puso triste / rojo.",
+      "<b>hacerse</b> + 名词 / 形容词：通过努力成为 —— Se hizo médico / rico."
+     ],
+     "why": [
+      "中文都说“变成”，西语按变化的性质选动词。"
+     ],
+     "zh": [
+      "“他变得很紧张”用 ponerse；“他成了医生”用 hacerse；“青蛙变成王子”用 convertirse en。"
+     ],
+     "ex": [
+      [
+       "El agua se convirtió en hielo.",
+       "水变成了冰。"
+      ],
+      [
+       "Cuando la vio, se puso muy nervioso.",
+       "一看见她，他就紧张起来。"
+      ],
+      [
+       "Con los años se hizo famoso.",
+       "多年后他出了名。"
+      ]
+     ],
+     "err": [
+      [
+       "Se convirtió nervioso.",
+       "Se puso nervioso.",
+       "情绪变化用 ponerse"
+      ],
+      [
+       "Se puso en médico.",
+       "Se hizo médico.",
+       "成为某职业用 hacerse"
+      ]
+     ],
+     "sum": "<b>convertirse en</b>（变成另一物）/ <b>ponerse</b>（情绪）/ <b>hacerse</b>（努力成为）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "La bruja se ___ en un gato negro.",
+       "o": [
+        "hizo",
+        "puso",
+        "convirtió"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Al oír la noticia, la reina se ___ muy triste.",
+       "o": [
+        "convirtió",
+        "hizo",
+        "puso"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Érase una vez una princesa que vivía en un castillo junto a un bosque.",
+     "zh": "从前有一位公主住在森林边的城堡里。",
+     "focus": "讲故事的语调：慢、起伏大"
+    },
+    {
+     "t": "c",
+     "q": "La ___ malvada vivía en la montaña.",
+     "o": [
+      "reina",
+      "bruja",
+      "princesa"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Encontró un espejo ___ que hablaba.",
+     "o": [
+      "rey",
+      "mágico",
+      "bosque"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "De repente, el castillo ___ y solo quedó el bosque.",
+     "o": [
+      "desaparece",
+      "desaparecía",
+      "desapareció"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Mi abuela me contaba ___ antes de dormir.",
+     "a": [
+      "cuentos"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "El ___ tenía mucha hambre y buscaba comida.（狼）",
+     "a": [
+      "lobo"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Érase una vez una princesa",
+     "p": [
+      "Érase",
+      "una vez",
+      "una princesa"
+     ],
+     "zh": "从前有一位公主。"
+    },
+    {
+     "t": "dict",
+     "a": "El lobo se convirtió en un príncipe."
+    },
+    {
+     "t": "tr",
+     "zh": "从前有一位国王，他有三个女儿。",
+     "a": [
+      "Había una vez un rey que tenía tres hijas.",
+      "Érase una vez un rey que tenía tres hijas."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "童话词：érase una vez、cuento、rey、reina、princesa、bosque、lobo、bruja、mágico、convertirse en、desaparecer、para siempre。",
+      "<b>重点</b>：故事结构 —— imperfecto 描写 → Un día + indefinido → 结局。",
+      "<b>重点</b>：convertirse en / ponerse / hacerse。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.4.4",
+   "title": "讲故事二：我的糗事",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "¡Qué vergüenza!",
+     "lines": [
+      [
+       "Ana",
+       "Te voy a contar una anécdota muy graciosa.",
+       "我给你讲一件特别好笑的事。"
+      ],
+      [
+       "Ana",
+       "El primer día de trabajo, estaba muy nerviosa.",
+       "上班第一天，我特别紧张。"
+      ],
+      [
+       "Ana",
+       "En el ascensor había un señor mayor y empecé a hablar con él.",
+       "电梯里有位年长的先生，我就和他聊了起来。"
+      ],
+      [
+       "Ana",
+       "Le dije: «Dicen que el director es muy aburrido».",
+       "我对他说：“听说老板很无趣。”"
+      ],
+      [
+       "Ana",
+       "Resulta que el señor era el director. ¡Qué vergüenza!",
+       "结果那位先生就是老板。真丢人！"
+      ],
+      [
+       "Ana",
+       "Menos mal que tenía sentido del humor y se rio mucho.",
+       "幸亏他有幽默感，笑得很开心。"
+      ]
+     ],
+     "note": "轶事（anécdota）是西语日常聊天的高频话题。框架：背景 → 事件 → Resulta que…（反转）→ 结局。"
+    },
+    {
+     "t": "word",
+     "w": "anécdota"
+    },
+    {
+     "t": "word",
+     "w": "vergüenza"
+    },
+    {
+     "t": "word",
+     "w": "meter la pata"
+    },
+    {
+     "t": "word",
+     "w": "equivocarse"
+    },
+    {
+     "t": "word",
+     "w": "confundir"
+    },
+    {
+     "t": "word",
+     "w": "reírse"
+    },
+    {
+     "t": "key",
+     "title": "讲轶事的口语框架",
+     "what": [
+      "开场：<b>Te voy a contar…</b> / <b>¿Sabes lo que me pasó?</b>",
+      "背景（imperfecto）：Era mi primer día… / Estaba muy nervioso…",
+      "事件（indefinido）+ 反转：<b>Resulta que…</b>（原来）/ <b>De repente…</b>",
+      "收尾：<b>Total, que…</b>（总之）/ <b>¡Qué vergüenza!</b> / <b>Menos mal que…</b>"
+     ],
+     "why": [
+      "Resulta que 是讲故事的“包袱”：前面铺垫，这里揭晓真相。"
+     ],
+     "zh": [
+      "中文“结果……”“原来……”对应 Resulta que…；“幸亏……”对应 Menos mal que…。"
+     ],
+     "ex": [
+      [
+       "Resulta que me había equivocado de día.",
+       "原来我搞错了日子。"
+      ],
+      [
+       "Menos mal que llevaba paraguas.",
+       "幸亏我带了伞。"
+      ]
+     ],
+     "err": [
+      [
+       "Resulta que el señor fue el director.（描述身份）",
+       "Resulta que el señor era el director.",
+       "身份是背景 → era"
+      ]
+     ],
+     "sum": "<b>Te voy a contar… → 背景 → 事件 → Resulta que… → Menos mal que / Total, que…</b>",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Esperé una hora y ___ el restaurante estaba cerrado.",
+       "o": [
+        "menos mal",
+        "resulta que",
+        "de hecho"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "___ que llegaste a tiempo. Si no, perdíamos el tren.",
+       "o": [
+        "Menos mal",
+        "Al principio",
+        "Resulta"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "tener gracia"
+    },
+    {
+     "t": "word",
+     "w": "menos mal"
+    },
+    {
+     "t": "word",
+     "w": "al principio"
+    },
+    {
+     "t": "word",
+     "w": "de hecho"
+    },
+    {
+     "t": "word",
+     "w": "resulta que"
+    },
+    {
+     "t": "word",
+     "w": "gracioso"
+    },
+    {
+     "t": "key",
+     "title": "fue（评价整件事）vs era（描述当时的样子）",
+     "what": [
+      "<b>fue</b> + 形容词：对一件<b>已经结束的事</b>整体评价 —— El viaje fue horrible. Fue un momento muy gracioso.",
+      "<b>era</b> + 形容词：描述人、地方、东西<b>当时的样子</b> —— El hotel era viejo. El director era simpático."
+     ],
+     "why": [
+      "“那次旅行太糟了”是对整件事下结论 → fue；“酒店很旧”是描述 → era。"
+     ],
+     "zh": [
+      "中文都说“是……的”，西语要看是“评价一件事”还是“描写当时情况”。"
+     ],
+     "ex": [
+      [
+       "La fiesta fue genial.",
+       "派对很棒。"
+      ],
+      [
+       "La casa era grande y tenía jardín.",
+       "那房子很大，有花园。"
+      ]
+     ],
+     "err": [
+      [
+       "El examen era muy difícil y suspendí.（评价那次考试）",
+       "El examen fue muy difícil y suspendí.",
+       "评价一次性的事 → fue"
+      ]
+     ],
+     "sum": "评价整件事 → <b>fue</b>；描述当时的样子 → <b>era</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "La película ___ muy aburrida; me dormí.",
+       "o": [
+        "era",
+        "es",
+        "fue"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Mi primer jefe ___ muy exigente.",
+       "o": [
+        "fue un día",
+        "era",
+        "es"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Resulta que el señor era el director. ¡Qué vergüenza!",
+     "zh": "结果那位先生就是老板。真丢人！",
+     "focus": "Resulta que 后停顿，制造悬念"
+    },
+    {
+     "t": "c",
+     "q": "Me ___ de autobús y llegué tarde.",
+     "o": [
+      "equivocaba",
+      "equivoqué",
+      "equivoco"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Lo ___ con su hermano gemelo.",
+     "o": [
+      "confundí",
+      "confundía",
+      "confundo"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Cuando me caí, todos se ___.",
+     "o": [
+      "ríen",
+      "rieron",
+      "reían siempre"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "___ principio no entendía nada, pero luego aprendí.",
+     "a": [
+      "Al"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Metí la ___ con mi suegra.（说错话）",
+     "a": [
+      "pata"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Resulta que el señor era el director",
+     "p": [
+      "Resulta que",
+      "el señor",
+      "era",
+      "el director"
+     ],
+     "zh": "结果那位先生就是老板。"
+    },
+    {
+     "t": "dict",
+     "a": "Te voy a contar una anécdota muy graciosa."
+    },
+    {
+     "t": "tr",
+     "zh": "我当时真是尴尬极了！",
+     "a": [
+      "¡Qué vergüenza pasé!",
+      "¡Qué vergüenza!",
+      "¡Pasé mucha vergüenza!"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "轶事词：anécdota、vergüenza、meter la pata、equivocarse、confundir、reírse、tener gracia、menos mal、al principio、de hecho、resulta que、gracioso。",
+      "<b>重点</b>：轶事框架 —— 背景 → 事件 → Resulta que → Menos mal / Total。",
+      "<b>重点</b>：fue（评价整件事）vs era（描述当时）。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.4.5",
+   "title": "单元复习：一个人的一生",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "La vida de mi abuela",
+     "lines": [
+      [
+       "",
+       "Mi abuela nació en un pueblo de Galicia en 1940.",
+       "我奶奶 1940 年出生在加利西亚的一个小镇。"
+      ],
+      [
+       "",
+       "Su familia era pobre y ella trabajaba en el campo desde muy pequeña.",
+       "她家很穷，她很小就在地里干活。"
+      ],
+      [
+       "",
+       "A los veinte años se mudó a Madrid, donde conoció a mi abuelo.",
+       "二十岁时她搬到马德里，在那里认识了我爷爷。"
+      ],
+      [
+       "",
+       "Se enamoraron enseguida y se casaron un año después.",
+       "他们一见钟情，一年后结了婚。"
+      ],
+      [
+       "",
+       "Ahora tiene ochenta y cinco años y dice que echa de menos aquella época.",
+       "现在她八十五岁了，说很怀念那个年代。"
+      ]
+     ],
+     "note": "讲人生经历：出生、搬家、结婚、退休这些“节点”用 indefinido；那时家里怎样、每天做什么用 imperfecto。"
+    },
+    {
+     "t": "word",
+     "w": "crecer"
+    },
+    {
+     "t": "word",
+     "w": "mudarse"
+    },
+    {
+     "t": "word",
+     "w": "casarse"
+    },
+    {
+     "t": "word",
+     "w": "enamorarse"
+    },
+    {
+     "t": "word",
+     "w": "jubilarse"
+    },
+    {
+     "t": "word",
+     "w": "graduarse"
+    },
+    {
+     "t": "key",
+     "title": "人生经历：节点用 indefinido，描述用 imperfecto",
+     "what": [
+      "节点（一次性的事）：<b>nació, se mudó, conoció, se casó, se graduó, se jubiló</b>",
+      "描述（那段时期的情况）：<b>era pobre, trabajaba, vivían, no había…</b>",
+      "常用时间框架：<b>a los veinte años</b>（二十岁时）、<b>un año después</b>（一年后）、<b>en aquella época</b>（那个年代）"
+     ],
+     "why": [
+      "写传记、讲家族史、面试里讲自己的经历都用这个模式。"
+     ],
+     "zh": [
+      "中文“二十岁那年她搬到了马德里”—— a los veinte años se mudó a Madrid。"
+     ],
+     "ex": [
+      [
+       "A los dieciocho años empezó la carrera de Derecho.",
+       "十八岁时他开始读法律专业。"
+      ],
+      [
+       "En aquella época no había internet.",
+       "那个年代没有互联网。"
+      ]
+     ],
+     "err": [
+      [
+       "Mi abuela nacía en 1940.",
+       "Mi abuela nació en 1940.",
+       "出生是一次性事件"
+      ],
+      [
+       "En aquella época no hubo móviles.",
+       "En aquella época no había móviles.",
+       "描述年代用 imperfecto"
+      ]
+     ],
+     "sum": "人生节点 → <b>indefinido</b>；那时的情况 → <b>imperfecto</b>；<b>a los … años</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mis padres se ___ en 1995.",
+       "o": [
+        "casan",
+        "casaban",
+        "casaron"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "En su juventud mi abuelo ___ en una fábrica.",
+       "o": [
+        "trabaja",
+        "trabajaba",
+        "trabajó un día"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "A los veinte años se ___ (mudar) a Barcelona.",
+       "a": [
+        "mudó"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "juventud"
+    },
+    {
+     "t": "word",
+     "w": "vejez"
+    },
+    {
+     "t": "word",
+     "w": "matrimonio"
+    },
+    {
+     "t": "word",
+     "w": "carrera"
+    },
+    {
+     "t": "word",
+     "w": "época"
+    },
+    {
+     "t": "word",
+     "w": "echar de menos"
+    },
+    {
+     "t": "key",
+     "title": "人生动词的介词：casarse con、enamorarse de、mudarse a",
+     "what": [
+      "<b>casarse con</b> + 人：和……结婚",
+      "<b>enamorarse de</b> + 人：爱上……",
+      "<b>mudarse a</b> + 地点：搬到……；<b>graduarse en</b> + 专业 / 学校"
+     ],
+     "why": [
+      "这些自反动词的介词和中文不对应，中国学生最常写成 casarse a / enamorarse con。"
+     ],
+     "zh": [
+      "中文“和他结婚”的“和”= con；“爱上她”= de。"
+     ],
+     "ex": [
+      [
+       "Se casó con un chico de Sevilla.",
+       "她和一个塞维利亚男孩结了婚。"
+      ],
+      [
+       "Me enamoré de esta ciudad.",
+       "我爱上了这座城市。"
+      ]
+     ],
+     "err": [
+      [
+       "Se casó a Juan.",
+       "Se casó con Juan.",
+       "casarse con"
+      ],
+      [
+       "Se enamoró con ella.",
+       "Se enamoró de ella.",
+       "enamorarse de"
+      ]
+     ],
+     "sum": "<b>casarse con · enamorarse de · mudarse a · graduarse en</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mi hermana se casó ___ un chico francés.",
+       "o": [
+        "de",
+        "a",
+        "con"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Romeo se enamoró ___ Julieta.",
+       "o": [
+        "a",
+        "de",
+        "con"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "A los veinte años se mudó a Madrid, donde conoció a mi abuelo.",
+     "zh": "二十岁时她搬到马德里，在那里认识了我爷爷。",
+     "focus": "se mudó、conoció 重音在最后"
+    },
+    {
+     "t": "c",
+     "q": "Me ___ en Periodismo en 2019.",
+     "o": [
+      "graduaba",
+      "gradué",
+      "gradúo"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Mi abuelo se ___ a los sesenta y cinco años.",
+     "o": [
+      "jubila",
+      "jubiló",
+      "jubilaba"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "En aquella ___ no había internet.",
+     "o": [
+      "época",
+      "carrera",
+      "vejez"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "___ de menos a mis amigos de la universidad.（想念）",
+     "a": [
+      "Echo"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Crecí en Valencia, pero me ___ (mudar) a Madrid a los dieciocho.",
+     "a": [
+      "mudé"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Se enamoraron y se casaron un año después",
+     "p": [
+      "Se enamoraron",
+      "y se casaron",
+      "un año después"
+     ],
+     "zh": "他们相爱了，一年后结了婚。"
+    },
+    {
+     "t": "dict",
+     "a": "Su familia era pobre y ella trabajaba en el campo."
+    },
+    {
+     "t": "tr",
+     "zh": "那个年代没有手机。",
+     "a": [
+      "En aquella época no había móviles.",
+      "En esa época no había móviles."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "人生词：crecer、mudarse、casarse、enamorarse、jubilarse、graduarse、juventud、vejez、matrimonio、carrera、época、echar de menos。",
+      "<b>重点</b>：人生节点 → indefinido；那时情况 → imperfecto；a los … años。",
+      "<b>重点</b>：casarse con / enamorarse de / mudarse a。",
+      "本单元：两种过去时 —— 事件 vs 背景、打断、讲故事。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.4.6",
+   "title": "单元阅读：El primer día de Wei en Madrid",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "El primer día de Wei en Madrid",
+     "note": "先关掉译文读一遍，把所有过去时动词圈出来，想想原形是什么。",
+     "lines": [
+      [
+       "Cuando Wei llegó a Madrid, no conocía a nadie y no hablaba bien español.",
+       "魏刚到马德里时，谁也不认识，西班牙语也说不好。"
+      ],
+      [
+       "Era septiembre y todavía hacía mucho calor.",
+       "那时是九月，天气还很热。"
+      ],
+      [
+       "El primer día salió a buscar un supermercado, pero se perdió.",
+       "第一天他出门找超市，结果迷了路。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Mientras miraba el mapa en el móvil, se le acabó la batería.",
+       "他正看着手机上的地图，手机没电了。"
+      ],
+      [
+       "En ese momento una señora mayor se acercó y le preguntó si necesitaba ayuda.",
+       "就在那时，一位老太太走过来，问他需不需要帮忙。"
+      ],
+      [
+       "Wei quería decir «Busco un supermercado», pero dijo «Busco un supermarido».",
+       "魏想说“我在找超市”，却说成了“我在找超级老公”。"
+      ],
+      [
+       "La señora se rio muchísimo y Wei se puso rojo como un tomate.",
+       "老太太笑得不行，魏的脸红得像番茄。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Resulta que la señora vivía en su mismo edificio.",
+       "原来那位老太太就住在他同一栋楼里。"
+      ],
+      [
+       "Lo acompañó al supermercado y después lo invitó a un café.",
+       "她陪他去了超市，后来还请他喝了杯咖啡。"
+      ],
+      [
+       "Desde aquel día, son buenos amigos, y ella lo ayuda con el español.",
+       "从那天起他们成了好朋友，她还帮他学西班牙语。"
+      ],
+      [
+       "Total, que meter la pata a veces tiene premio.",
+       "总之，说错话有时也会有回报。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Cómo estaba Wei cuando llegó a Madrid?",
+     "o": [
+      "No conocía a nadie y hablaba poco español.",
+      "Hablaba español perfectamente.",
+      "Tenía muchos amigos."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué pasó mientras miraba el mapa?",
+     "o": [
+      "Le robaron el móvil.",
+      "Se le acabó la batería del móvil.",
+      "Empezó a llover."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Por qué se rio la señora?",
+     "o": [
+      "Porque Wei llevaba ropa rara.",
+      "Porque Wei se cayó.",
+      "Porque Wei se equivocó de palabra."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué descubrió Wei al final?",
+     "o": [
+      "Que el supermercado estaba cerrado.",
+      "Que la señora vivía en su edificio.",
+      "Que la señora era profesora."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "“Mientras miraba el mapa, se le acabó la batería” 里两种过去时的作用是：",
+     "o": [
+      "miraba 是背景，se acabó 是打断它的事件",
+      "两个都是背景",
+      "两个都是一次性事件"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "从那天起他们成了好朋友。",
+     "a": [
+      "Desde aquel día son buenos amigos.",
+      "Desde aquel día, son buenos amigos.",
+      "Desde ese día son buenos amigos."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "两种过去时：conocía / hablaba / hacía（背景）+ llegó / salió / se perdió / dijo（事件）。",
+      "打断：Mientras miraba…, se le acabó la batería。",
+      "轶事框架：Resulta que… / Total, que…；meter la pata；ponerse rojo。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "Cuando llegué a casa, mi madre ___ la cena.",
+    "o": [
+     "estaba preparando",
+     "prepara",
+     "preparó ayer"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "De repente ___ el teléfono.",
+    "o": [
+     "suena",
+     "sonó",
+     "sonaba"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Aquel día ___ mucho calor.",
+    "o": [
+     "hizo una vez",
+     "hacía",
+     "hace"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Mis abuelos se ___ en 1960.",
+    "o": [
+     "casaban",
+     "casan",
+     "casaron"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "La princesa se ___ en una rana.",
+    "o": [
+     "puso",
+     "hizo",
+     "convirtió"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "El concierto ___ increíble.",
+    "o": [
+     "era siempre",
+     "es ayer",
+     "fue"
+    ],
+    "a": 2
+   },
+   {
+    "t": "tr",
+    "zh": "我正在洗澡，电话响了。",
+    "a": [
+     "Estaba duchándome cuando sonó el teléfono.",
+     "Me estaba duchando cuando sonó el teléfono."
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "原来那位先生是老板。",
+    "a": [
+     "Resulta que el señor era el jefe.",
+     "Resulta que ese señor era el director."
+    ]
+   }
+  ]
+ }
+}

@@ -1419,6 +1419,151 @@
      ]
     }
    ]
+  },
+  {
+   "id": "es.1.6.6",
+   "title": "单元阅读：Una cena especial",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Una cena especial",
+     "note": "先关掉译文读一遍。短文只用学过的词和本单元的重点；读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "El sábado es el cumpleaños de mi madre.",
+       "周六是我妈妈的生日。"
+      ],
+      [
+       "A mi madre le encanta la comida italiana, pero a mi padre no le gusta mucho.",
+       "我妈妈特别喜欢意大利菜，可我爸爸不太喜欢。"
+      ],
+      [
+       "Por eso vamos a un restaurante español cerca de casa.",
+       "所以我们去了家附近的一家西班牙餐厅。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Mi padre quiere pescado con ensalada.",
+       "爸爸要了鱼配沙拉。"
+      ],
+      [
+       "Yo digo: «Para mí, una sopa de tomate y pollo con patatas.»",
+       "我说：“我要一份番茄汤和鸡肉配土豆。”"
+      ],
+      [
+       "Mi madre pregunta: «¿Qué me recomienda?» y el camarero recomienda la paella.",
+       "妈妈问：“您推荐什么？”服务员推荐了海鲜饭。"
+      ],
+      [
+       "De postre, comemos un helado de chocolate. ¡Qué rico está!",
+       "甜点我们吃了巧克力冰淇淋。真好吃！"
+      ],
+      [
+       "Al final, digo: «La cuenta, por favor.» Son sesenta euros. Pago con tarjeta.",
+       "最后我说：“请结账。”一共六十欧元。我刷卡付了。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Después compramos un regalo para mi madre: un bolso azul.",
+       "然后我们给妈妈买了一份礼物：一个蓝色的包。"
+      ],
+      [
+       "«¿Cuánto cuesta?» «Cuarenta y cinco euros.» «Me lo llevo.»",
+       "“多少钱？”“四十五欧元。”“我买了。”"
+      ],
+      [
+       "A mi madre le gusta mucho. ¡Es un día perfecto!",
+       "妈妈很喜欢。真是完美的一天！"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Qué le encanta a la madre?",
+     "o": [
+      "La comida china.",
+      "El pescado.",
+      "La comida italiana."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué quiere el padre?",
+     "o": [
+      "Sopa de tomate.",
+      "Paella.",
+      "Pescado con ensalada."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Cuánto es la cuenta?",
+     "o": [
+      "Cuarenta y cinco euros.",
+      "Dieciséis euros.",
+      "Sesenta euros."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿De qué color es el bolso?",
+     "o": [
+      "Azul.",
+      "Verde.",
+      "Negro."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "«A mi padre no le ___ los tomates.»",
+     "o": [
+      "gustan",
+      "gusta",
+      "gusto"
+     ],
+     "a": 0,
+     "e": "喜欢的东西 los tomates 才是主语，复数 → gustan。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "多少钱？",
+     "a": [
+      "¿Cuánto cuesta?",
+      "¿Cuánto cuesta esto?",
+      "¿Cuánto es?"
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：gustar —— A mi madre le encanta la comida italiana / a mi padre no le gusta mucho（喜欢的东西是主语）。",
+      "点餐：¿Qué me recomienda? / Para mí, … / La cuenta, por favor.",
+      "购物：¿Cuánto cuesta? / Me lo llevo. / Pago con tarjeta.",
+      "de 表示口味、材料：sopa de tomate、helado de chocolate。"
+     ]
+    }
+   ]
   }
  ],
  "test": {

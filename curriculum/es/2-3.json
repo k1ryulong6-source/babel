@@ -1,0 +1,1731 @@
+{
+ "id": "es.2.3",
+ "title": "未完成过去时",
+ "goal": "",
+ "lessons": [
+  {
+   "id": "es.2.3.1",
+   "title": "未完成过去时：规则变位",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Antes y ahora",
+     "lines": [
+      [
+       "Nieta",
+       "Abuelo, ¿cómo era tu vida cuando eras joven?",
+       "爷爷，您年轻时的生活是什么样的？"
+      ],
+      [
+       "Abuelo",
+       "Muy diferente. Trabajaba en el campo y me levantaba a las cinco.",
+       "很不一样。我在地里干活，五点起床。"
+      ],
+      [
+       "Nieta",
+       "¿Y qué hacíais por la tarde?",
+       "那你们下午做什么？"
+      ],
+      [
+       "Abuelo",
+       "Solíamos pasar el rato en la plaza. Casi nunca veíamos la tele.",
+       "我们常在广场上打发时间，几乎不看电视。"
+      ],
+      [
+       "Nieta",
+       "¿Y ahora?",
+       "那现在呢？"
+      ],
+      [
+       "Abuelo",
+       "Ahora ya no trabajo, pero todavía me levanto temprano.",
+       "现在不干活了，但还是起得很早。"
+      ]
+     ],
+     "note": "trabajaba、me levantaba、hacíais、solíamos —— 讲“以前常常怎样”，西语用另一种过去时：未完成过去时（imperfecto）。"
+    },
+    {
+     "t": "word",
+     "w": "soler"
+    },
+    {
+     "t": "word",
+     "w": "mientras"
+    },
+    {
+     "t": "word",
+     "w": "a menudo"
+    },
+    {
+     "t": "word",
+     "w": "casi nunca"
+    },
+    {
+     "t": "word",
+     "w": "por aquel entonces"
+    },
+    {
+     "t": "word",
+     "w": "de pequeño"
+    },
+    {
+     "t": "key",
+     "title": "未完成过去时：-aba / -ía",
+     "what": [
+      "<b>-ar</b>：-aba, -abas, -aba, <b>-ábamos</b>, -abais, -aban —— trabajar → trabajaba",
+      "<b>-er / -ir</b>：-ía, -ías, -ía, -íamos, -íais, -ían —— comer → comía，vivir → vivía",
+      "yo 和 él 同形（trabajaba），看上下文或加主语。"
+     ],
+     "why": [
+      "用来讲<b>过去的习惯</b>（以前常常……）和<b>过去的状态</b>（那时是……）。它不关心动作有没有结束，只描述“那段时间里的样子”。",
+      "规则非常整齐，几乎没有不规则动词（只有 ser、ir、ver 三个，下一课学）。"
+     ],
+     "zh": [
+      "中文“以前常常……”“那时候……”就是它最典型的用法：我小时候住在乡下 = Cuando era niño, vivía en el campo。"
+     ],
+     "ex": [
+      [
+       "Antes vivíamos en un piso pequeño.",
+       "我们以前住在一套小公寓里。"
+      ],
+      [
+       "Mi padre trabajaba en un banco.",
+       "我爸爸以前在银行工作。"
+      ],
+      [
+       "Todos los domingos comíamos con los abuelos.",
+       "以前每个周日我们都和爷爷奶奶吃饭。"
+      ]
+     ],
+     "err": [
+      [
+       "Antes vivía en Madrid, pero ahora vivía en Valencia.",
+       "Antes vivía en Madrid, pero ahora vivo en Valencia.",
+       "现在的事用现在时"
+      ],
+      [
+       "Nosotros trabajabamos mucho.",
+       "Nosotros trabajábamos mucho.",
+       "nosotros 要写重音 -ábamos"
+      ]
+     ],
+     "sum": "<b>-aba / -ía</b>：过去的习惯和状态；nosotros 是 <b>-ábamos</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "De pequeño (yo) ___ en un pueblo.",
+       "o": [
+        "vivo",
+        "vivía",
+        "viviré"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Antes mis padres ___ (trabajar) los sábados.",
+       "a": [
+        "trabajaban"
+       ]
+      },
+      {
+       "t": "f",
+       "q": "(Nosotros) ___ (cenar) a las diez todos los días.",
+       "a": [
+        "cenábamos"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我爸爸以前在银行工作。",
+       "a": [
+        "Mi padre trabajaba en un banco.",
+        "Antes mi padre trabajaba en un banco."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "cuando era niño"
+    },
+    {
+     "t": "word",
+     "w": "antiguo"
+    },
+    {
+     "t": "word",
+     "w": "vecino de al lado"
+    },
+    {
+     "t": "word",
+     "w": "cuidar"
+    },
+    {
+     "t": "word",
+     "w": "pasar el rato"
+    },
+    {
+     "t": "word",
+     "w": "ya no"
+    },
+    {
+     "t": "key",
+     "title": "soler + 原形；ya no：以前常……现在不了",
+     "what": [
+      "<b>soler</b> + 动词原形 = 惯常做：<b>Solía</b> ir al cine los viernes.（我以前周五常去看电影）",
+      "现在时也能用：Suelo desayunar en casa.（我一般在家吃早饭）",
+      "<b>ya no</b> + 现在时：不再…… —— Ya no voy al cine."
+     ],
+     "why": [
+      "soler 本身就是“习惯”，所以讲过去习惯时几乎总用未完成过去时 solía。",
+      "Antes… pero ya no 是谈“以前和现在”的万能句型。"
+     ],
+     "zh": [
+      "中文“以前常……，现在不……了”= Antes solía…, pero ya no…。"
+     ],
+     "ex": [
+      [
+       "Solíamos veranear en la costa.",
+       "我们以前常去海边避暑。"
+      ],
+      [
+       "Antes tocaba el piano, pero ya no.",
+       "我以前弹钢琴，现在不弹了。"
+      ]
+     ],
+     "err": [
+      [
+       "Solía a ir al cine.",
+       "Solía ir al cine.",
+       "soler 直接接原形"
+      ],
+      [
+       "No más fumo.",
+       "Ya no fumo.",
+       "“不再”用 ya no"
+      ]
+     ],
+     "sum": "<b>solía + 原形</b>（以前常）；<b>ya no</b>（不再）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "De niño ___ jugar en la calle con mis amigos.",
+       "o": [
+        "solía",
+        "solí",
+        "suelo a"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Antes comía carne, pero ___.",
+       "o": [
+        "ya sí",
+        "ya no",
+        "todavía"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Solíamos pasar el rato en la plaza.",
+     "zh": "我们常在广场上打发时间。",
+     "focus": "solíamos 重音在 lí"
+    },
+    {
+     "t": "c",
+     "q": "___ mi madre trabajaba, mi abuela me cuidaba.",
+     "o": [
+      "Mientras",
+      "A menudo",
+      "Ya no"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Por aquel ___ no teníamos coche.",
+     "o": [
+      "rato",
+      "entonces",
+      "pequeño"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Íbamos ___ a casa de mis tíos: casi todos los fines de semana.",
+     "o": [
+      "ya no",
+      "casi nunca",
+      "a menudo"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "De ___ (小时候) yo era muy tímido.",
+     "a": [
+      "pequeño",
+      "niño"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Mi ___ colegio ya no existe.（我以前的学校）",
+     "a": [
+      "antiguo"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Casi nunca veíamos la tele",
+     "p": [
+      "Casi nunca",
+      "veíamos",
+      "la tele"
+     ],
+     "zh": "我们以前几乎不看电视。"
+    },
+    {
+     "t": "dict",
+     "a": "Trabajaba en el campo y me levantaba a las cinco."
+    },
+    {
+     "t": "tr",
+     "zh": "我以前抽烟，现在不抽了。",
+     "a": [
+      "Antes fumaba, pero ya no.",
+      "Antes fumaba, pero ahora ya no."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "新词：soler、mientras、a menudo、casi nunca、por aquel entonces、de pequeño、cuando era niño、antiguo、cuidar、pasar el rato、ya no。",
+      "<b>重点</b>：未完成过去时 -aba / -ía —— 过去的习惯和状态。",
+      "<b>重点</b>：solía + 原形；Antes…, pero ya no。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.3.2",
+   "title": "ser、ir、ver：三个不规则",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Una foto antigua",
+     "lines": [
+      [
+       "Marta",
+       "¿Quién es este niño de la foto?",
+       "照片上这个小孩是谁？"
+      ],
+      [
+       "Jorge",
+       "¡Soy yo! Tenía seis años. Era muy delgado y llevaba gafas.",
+       "是我！那时六岁。很瘦，还戴着眼镜。"
+      ],
+      [
+       "Marta",
+       "¡Qué gracioso! ¿Y esta señora rubia?",
+       "真可爱！这位金发的太太呢？"
+      ],
+      [
+       "Jorge",
+       "Es mi tía Elena. Era muy cariñosa. Íbamos a su casa cada verano.",
+       "是我姨妈埃莱娜。她很和蔼。我们每年夏天都去她家。"
+      ],
+      [
+       "Marta",
+       "¿Y la veías a menudo?",
+       "你常见到她吗？"
+      ],
+      [
+       "Jorge",
+       "Sí, la veía casi todas las semanas.",
+       "嗯，几乎每周都见。"
+      ]
+     ],
+     "note": "era、íbamos、veía —— 未完成过去时只有这三个不规则动词。描述照片里的人，也正是它的用武之地。"
+    },
+    {
+     "t": "word",
+     "w": "tímido"
+    },
+    {
+     "t": "word",
+     "w": "travieso"
+    },
+    {
+     "t": "word",
+     "w": "delgado"
+    },
+    {
+     "t": "word",
+     "w": "rubio"
+    },
+    {
+     "t": "word",
+     "w": "moreno"
+    },
+    {
+     "t": "word",
+     "w": "rizado"
+    },
+    {
+     "t": "key",
+     "title": "只有三个不规则：ser → era、ir → iba、ver → veía",
+     "what": [
+      "<b>ser</b>：era, eras, era, éramos, erais, eran",
+      "<b>ir</b>：iba, ibas, iba, íbamos, ibais, iban",
+      "<b>ver</b>：veía, veías, veía, veíamos, veíais, veían"
+     ],
+     "why": [
+      "简单过去时有几十个不规则，未完成过去时只有这三个 —— 背熟就够了。",
+      "注意和简单过去时区分：fue / iba、fui / era。"
+     ],
+     "zh": [
+      "中文讲回忆“那时她很……”“我们常去……”，对应的就是 era / íbamos。"
+     ],
+     "ex": [
+      [
+       "Mi abuelo era pescador.",
+       "我爷爷以前是渔民。"
+      ],
+      [
+       "Íbamos al colegio a pie.",
+       "我们以前走路上学。"
+      ],
+      [
+       "Antes veía mucho la televisión.",
+       "我以前常看电视。"
+      ]
+     ],
+     "err": [
+      [
+       "Cuando fui niño, iba al parque.",
+       "Cuando era niño, iba al parque.",
+       "小时候的状态用 era"
+      ],
+      [
+       "Nosotros ibamos a la playa.",
+       "Nosotros íbamos a la playa.",
+       "íbamos 要写重音"
+      ]
+     ],
+     "sum": "<b>era / iba / veía</b>（只有这三个不规则）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mi abuela ___ muy simpática.",
+       "o": [
+        "iba",
+        "era",
+        "fue ayer"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Todos los veranos (nosotros) ___ a la playa.",
+       "o": [
+        "fuimos una vez",
+        "veíamos",
+        "íbamos"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "De pequeño (yo) ___ (ver) dibujos animados cada tarde.",
+       "a": [
+        "veía"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我们以前走路上学。",
+       "a": [
+        "Íbamos al colegio a pie.",
+        "Íbamos a la escuela a pie."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "liso"
+    },
+    {
+     "t": "word",
+     "w": "gafas"
+    },
+    {
+     "t": "word",
+     "w": "barba"
+    },
+    {
+     "t": "word",
+     "w": "bigote"
+    },
+    {
+     "t": "word",
+     "w": "cariñoso"
+    },
+    {
+     "t": "word",
+     "w": "pesado"
+    },
+    {
+     "t": "key",
+     "title": "描述过去的人：era + 形容词 / tenía + 头发 / llevaba + 眼镜胡子",
+     "what": [
+      "性格、外貌（本质）：<b>Era</b> alto, tímido, rubio.",
+      "头发、眼睛：<b>Tenía</b> el pelo rizado / los ojos verdes.",
+      "戴的、留的：<b>Llevaba</b> gafas / barba / bigote."
+     ],
+     "why": [
+      "描述照片或回忆里的人时，三个动词全用未完成过去时，因为是在描写“那时的样子”。"
+     ],
+     "zh": [
+      "中文“她留着长头发”—— 西语用 tener：Tenía el pelo largo；“他戴眼镜”用 llevar：Llevaba gafas。"
+     ],
+     "ex": [
+      [
+       "Mi profesor era bajo y llevaba bigote.",
+       "我的老师个子矮，留着小胡子。"
+      ],
+      [
+       "Tenía el pelo liso y muy largo.",
+       "她留着又直又长的头发。"
+      ]
+     ],
+     "err": [
+      [
+       "Era el pelo rizado.",
+       "Tenía el pelo rizado.",
+       "头发用 tener"
+      ],
+      [
+       "Tenía gafas siempre.",
+       "Siempre llevaba gafas.",
+       "戴眼镜用 llevar"
+      ]
+     ],
+     "sum": "<b>era</b> + 性格外貌；<b>tenía</b> + 头发眼睛；<b>llevaba</b> + 眼镜胡子。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mi abuelo ___ una barba blanca muy larga.",
+       "o": [
+        "iba",
+        "era",
+        "tenía"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Mi hermana ___ muy traviesa de pequeña.",
+       "o": [
+        "era",
+        "llevaba",
+        "tenía"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Era muy delgado y llevaba gafas.",
+     "zh": "我那时很瘦，还戴着眼镜。",
+     "focus": "llevaba 的 ll 读 /ʝ/"
+    },
+    {
+     "t": "c",
+     "q": "No hablaba mucho: era muy ___.",
+     "o": [
+      "travieso",
+      "tímido",
+      "rubio"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Siempre me abrazaba; era muy ___.",
+     "o": [
+      "cariñosa",
+      "delgada",
+      "pesada"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Tenía el pelo negro: era ___.",
+     "o": [
+      "rubio",
+      "liso",
+      "moreno"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Mi padre llevaba ___ y bigote.",
+     "a": [
+      "barba",
+      "gafas"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "¡Qué ___ eres! Deja de preguntar.（烦人）",
+     "a": [
+      "pesado",
+      "pesada"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Mi tía era muy cariñosa",
+     "p": [
+      "Mi tía",
+      "era",
+      "muy",
+      "cariñosa"
+     ],
+     "zh": "我姨妈很和蔼。"
+    },
+    {
+     "t": "dict",
+     "a": "Era muy delgado y llevaba gafas."
+    },
+    {
+     "t": "tr",
+     "zh": "她留着长长的卷发。",
+     "a": [
+      "Tenía el pelo largo y rizado.",
+      "Ella tenía el pelo largo y rizado."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "外貌性格：tímido、travieso、delgado、rubio、moreno、rizado、liso、gafas、barba、bigote、cariñoso、pesado。",
+      "<b>重点</b>：只有三个不规则：era、iba、veía（íbamos、éramos 写重音）。",
+      "<b>重点</b>：描述过去的人 —— era + 形容词、tenía + 头发、llevaba + 眼镜胡子。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.3.3",
+   "title": "小时候",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Mis veranos en la granja",
+     "lines": [
+      [
+       "Clara",
+       "¿Dónde pasabas los veranos de pequeña?",
+       "你小时候夏天在哪儿过？"
+      ],
+      [
+       "Inés",
+       "En la granja de mis abuelos, en el campo.",
+       "在乡下爷爷奶奶的农场。"
+      ],
+      [
+       "Clara",
+       "¡Qué bonito! ¿Qué hacías allí?",
+       "真好！你在那儿做什么？"
+      ],
+      [
+       "Inés",
+       "Por la mañana daba de comer a las gallinas y por la tarde trepaba a los árboles.",
+       "早上喂鸡，下午爬树。"
+      ],
+      [
+       "Clara",
+       "¿Y no te aburrías?",
+       "不无聊吗？"
+      ],
+      [
+       "Inés",
+       "¡Nunca! Mientras mi abuelo trabajaba en el huerto, yo jugaba con mis primos.",
+       "从不！爷爷在菜园干活的时候，我就和表兄妹们玩。"
+      ]
+     ],
+     "note": "回忆童年是西语口语考试的必考话题，也是 imperfecto 最自然的用法。"
+    },
+    {
+     "t": "word",
+     "w": "infancia"
+    },
+    {
+     "t": "word",
+     "w": "granja"
+    },
+    {
+     "t": "word",
+     "w": "campo"
+    },
+    {
+     "t": "word",
+     "w": "huerto"
+    },
+    {
+     "t": "word",
+     "w": "vaca"
+    },
+    {
+     "t": "word",
+     "w": "gallina"
+    },
+    {
+     "t": "key",
+     "title": "回忆童年：de pequeño / cuando era niño + imperfecto",
+     "what": [
+      "开头：<b>De pequeño / De pequeña</b>、<b>Cuando era niño/a</b>、<b>Cuando tenía diez años</b>",
+      "接着全部用未完成过去时：vivía、iba、jugaba、me gustaba",
+      "频率词帮忙：siempre、a menudo、todos los veranos、a veces、casi nunca"
+     ],
+     "why": [
+      "一段童年回忆里几乎所有动词都是 imperfecto，因为讲的是“那段时间里经常、一直如此”的事。"
+     ],
+     "zh": [
+      "中文“小时候我常……”不用变动词，西语一律换成 -aba / -ía。cuando era niño 用 era，不用 fui。"
+     ],
+     "ex": [
+      [
+       "Cuando tenía diez años, me encantaban los columpios.",
+       "我十岁时特别喜欢荡秋千。"
+      ],
+      [
+       "De pequeña siempre me escondía debajo de la mesa.",
+       "我小时候总躲在桌子底下。"
+      ]
+     ],
+     "err": [
+      [
+       "Cuando fui niño, jugué mucho.",
+       "Cuando era niño, jugaba mucho.",
+       "童年习惯用 imperfecto"
+      ]
+     ],
+     "sum": "<b>De pequeño / Cuando era niño</b> + imperfecto（-aba / -ía）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Cuando ___ niña, vivía en un pueblo.",
+       "o": [
+        "fui",
+        "estaba",
+        "era"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "De pequeño me ___ (encantar) los juguetes de madera.",
+       "a": [
+        "encantaban"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我小时候常爬树。",
+       "a": [
+        "De pequeño trepaba a los árboles.",
+        "Cuando era niño, trepaba a los árboles.",
+        "De pequeña trepaba a los árboles."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "juguete"
+    },
+    {
+     "t": "word",
+     "w": "muñeca"
+    },
+    {
+     "t": "word",
+     "w": "pelota"
+    },
+    {
+     "t": "word",
+     "w": "columpio"
+    },
+    {
+     "t": "word",
+     "w": "esconderse"
+    },
+    {
+     "t": "word",
+     "w": "trepar"
+    },
+    {
+     "t": "key",
+     "title": "mientras + imperfecto：两件事同时在进行",
+     "what": [
+      "<b>Mientras</b> A (imperfecto), B (imperfecto)：A 进行的同时 B 也在进行",
+      "Mientras mi madre cocinaba, yo hacía los deberes."
+     ],
+     "why": [
+      "两件“背景性”的事同时发生，都用 imperfecto。下一单元会学：一件事进行中被另一件打断时，打断的那件用简单过去时。"
+     ],
+     "zh": [
+      "中文“……的时候，……”很宽泛；西语 mientras 专指“同时进行”，后面接未完成过去时。"
+     ],
+     "ex": [
+      [
+       "Mientras mi abuelo leía, yo dibujaba.",
+       "爷爷看书的时候，我在画画。"
+      ]
+     ],
+     "err": [
+      [
+       "Mientras mi padre condujo, yo dormí.",
+       "Mientras mi padre conducía, yo dormía.",
+       "同时进行的两件事都用 imperfecto"
+      ]
+     ],
+     "sum": "<b>Mientras + imperfecto, imperfecto</b>（同时进行）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mientras mi madre ___ la cena, yo ponía la mesa.",
+       "o": [
+        "preparó",
+        "preparaba",
+        "prepara"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Mientras los niños ___ (jugar), los padres charlaban.",
+       "a": [
+        "jugaban"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Mientras mi abuelo trabajaba en el huerto, yo jugaba con mis primos.",
+     "zh": "爷爷在菜园干活的时候，我和表兄妹们玩。",
+     "focus": "mientras 后面一口气读到逗号"
+    },
+    {
+     "t": "c",
+     "q": "En la granja había vacas y ___.",
+     "o": [
+      "pelotas",
+      "gallinas",
+      "columpios"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Mi abuelo cultivaba tomates en el ___.",
+     "o": [
+      "columpio",
+      "huerto",
+      "campo de fútbol"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Mi hermana siempre jugaba con su ___.",
+     "o": [
+      "infancia",
+      "muñeca",
+      "vaca"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Tuve una ___ muy feliz.（童年）",
+     "a": [
+      "infancia"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Cuando jugábamos, mi hermano siempre se ___ (esconder) en el armario.",
+     "a": [
+      "escondía"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Jugábamos a la pelota en la plaza",
+     "p": [
+      "Jugábamos",
+      "a la pelota",
+      "en la plaza"
+     ],
+     "zh": "我们以前在广场上玩球。"
+    },
+    {
+     "t": "dict",
+     "a": "Por la mañana daba de comer a las gallinas."
+    },
+    {
+     "t": "tr",
+     "zh": "我小时候夏天都在乡下过。",
+     "a": [
+      "De pequeño pasaba los veranos en el campo.",
+      "Cuando era niño pasaba los veranos en el campo.",
+      "De pequeña pasaba los veranos en el campo."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "童年：infancia、granja、campo、huerto、vaca、gallina、juguete、muñeca、pelota、columpio、esconderse、trepar。",
+      "<b>重点</b>：De pequeño / Cuando era niño + imperfecto。",
+      "<b>重点</b>：Mientras + imperfecto（两件事同时进行）。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.3.4",
+   "title": "描述背景",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Una noche de tormenta",
+     "lines": [
+      [
+       "",
+       "Era tarde y hacía mucho viento.",
+       "天已经晚了，风很大。"
+      ],
+      [
+       "",
+       "El cielo estaba oscuro y había niebla en la carretera.",
+       "天空漆黑，公路上起了雾。"
+      ],
+      [
+       "",
+       "Yo estaba solo en casa y tenía un poco de miedo.",
+       "我一个人在家，有点害怕。"
+      ],
+      [
+       "",
+       "Todo estaba en silencio. De repente, sonó el teléfono.",
+       "四周一片寂静。突然，电话响了。"
+      ]
+     ],
+     "note": "讲故事先“搭布景”：时间、天气、地点、人物的心情 —— 这些都用 imperfecto；布景搭好，事件（sonó el teléfono）才登场。"
+    },
+    {
+     "t": "word",
+     "w": "oscuro"
+    },
+    {
+     "t": "word",
+     "w": "nublado"
+    },
+    {
+     "t": "word",
+     "w": "niebla"
+    },
+    {
+     "t": "word",
+     "w": "tormenta"
+    },
+    {
+     "t": "word",
+     "w": "sonar"
+    },
+    {
+     "t": "word",
+     "w": "ruido"
+    },
+    {
+     "t": "key",
+     "title": "背景用 imperfecto：时间、天气、地点、心情",
+     "what": [
+      "时间：<b>Era</b> tarde / <b>Eran</b> las diez.",
+      "天气：<b>Hacía</b> frío / <b>Llovía</b> / <b>Había</b> niebla.",
+      "状态、心情：<b>Estaba</b> nervioso / <b>Tenía</b> miedo / <b>Había</b> mucha gente."
+     ],
+     "why": [
+      "一个故事里，“舞台布景”用 imperfecto，“剧情动作”用简单过去时（下个单元重点练）。这一课先把布景说熟。",
+      "<b>había</b> = 那里有（hay 的过去），单复数都用 había：Había dos coches."
+     ],
+     "zh": [
+      "中文讲故事“那天晚上下着雨，我很紧张”—— 这些全是布景，西语都用 -aba / -ía。"
+     ],
+     "ex": [
+      [
+       "Eran las tres de la mañana.",
+       "那是凌晨三点。"
+      ],
+      [
+       "Llovía y la calle estaba vacía.",
+       "下着雨，街上空荡荡的。"
+      ],
+      [
+       "Había mucha gente en la estación.",
+       "车站里人很多。"
+      ]
+     ],
+     "err": [
+      [
+       "Fue tarde y llovió.（描述背景）",
+       "Era tarde y llovía.",
+       "背景用 imperfecto"
+      ],
+      [
+       "Habían muchas personas.",
+       "Había muchas personas.",
+       "había 不变复数"
+      ]
+     ],
+     "sum": "<b>Era / Hacía / Llovía / Estaba / Tenía / Había</b> —— 布景全用 imperfecto。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "___ las once de la noche.",
+       "o": [
+        "Fueron",
+        "Son ayer",
+        "Eran"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "___ mucha gente en la plaza.",
+       "o": [
+        "Hubieron",
+        "Había",
+        "Habían"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "Esa noche ___ (hacer) mucho frío.",
+       "a": [
+        "hacía"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "那时下着雨，街上空荡荡的。",
+       "a": [
+        "Llovía y la calle estaba vacía.",
+        "Estaba lloviendo y la calle estaba vacía."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "silencio"
+    },
+    {
+     "t": "word",
+     "w": "tranquilo"
+    },
+    {
+     "t": "word",
+     "w": "nervioso"
+    },
+    {
+     "t": "word",
+     "w": "preocupado"
+    },
+    {
+     "t": "word",
+     "w": "asustado"
+    },
+    {
+     "t": "word",
+     "w": "tener miedo"
+    },
+    {
+     "t": "key",
+     "title": "estar + 形容词：那时的心情和状态",
+     "what": [
+      "<b>estaba</b> + nervioso / preocupado / asustado / cansado / tranquilo",
+      "<b>tener miedo</b>（害怕）→ tenía miedo"
+     ],
+     "why": [
+      "心情是临时状态，所以用 estar；放到过去的背景里就是 estaba。注意形容词要和人的性别一致：estaba asustada。"
+     ],
+     "zh": [
+      "中文“我很担心”“她吓坏了”都对应 estar + 形容词，过去就是 estaba。"
+     ],
+     "ex": [
+      [
+       "Mi madre estaba muy preocupada.",
+       "我妈妈非常担心。"
+      ],
+      [
+       "Los niños estaban asustados.",
+       "孩子们吓坏了。"
+      ]
+     ],
+     "err": [
+      [
+       "Era nervioso antes del examen.",
+       "Estaba nervioso antes del examen.",
+       "临时心情用 estar"
+      ],
+      [
+       "Tenía mucho miedoso.",
+       "Tenía mucho miedo.",
+       "tener miedo 用名词"
+      ]
+     ],
+     "sum": "心情：<b>estaba</b> + 形容词（性数一致）；<b>tenía miedo</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Antes de la entrevista, Ana ___ muy nerviosa.",
+       "o": [
+        "estaba",
+        "tenía",
+        "era"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "El perro ___ (tener) miedo de la tormenta.",
+       "a": [
+        "tenía"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Todo estaba en silencio. De repente, sonó el teléfono.",
+     "zh": "四周一片寂静。突然，电话响了。",
+     "focus": "前半句慢，de repente 后加快"
+    },
+    {
+     "t": "c",
+     "q": "No se veía nada porque había mucha ___.",
+     "o": [
+      "tormenta",
+      "silencio",
+      "niebla"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "El cielo estaba ___ y parecía que iba a llover.",
+     "o": [
+      "nervioso",
+      "nublado",
+      "tranquilo"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Oí un ___ extraño en la cocina.",
+     "o": [
+      "silencio",
+      "ruido",
+      "miedo"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "En la biblioteca había un ___ total.",
+     "a": [
+      "silencio"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "De repente ___ (sonar) el teléfono.",
+     "a": [
+      "sonó"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "El pueblo era muy tranquilo",
+     "p": [
+      "El pueblo",
+      "era",
+      "muy",
+      "tranquilo"
+     ],
+     "zh": "那个小镇很安静。"
+    },
+    {
+     "t": "dict",
+     "a": "Era tarde y hacía mucho viento."
+    },
+    {
+     "t": "tr",
+     "zh": "我一个人在家，有点害怕。",
+     "a": [
+      "Estaba solo en casa y tenía un poco de miedo.",
+      "Estaba sola en casa y tenía un poco de miedo."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "背景词：oscuro、nublado、niebla、tormenta、sonar、ruido、silencio、tranquilo、nervioso、preocupado、asustado、tener miedo。",
+      "<b>重点</b>：布景（时间、天气、地点、心情）用 imperfecto：Era / Hacía / Había / Estaba / Tenía。",
+      "<b>重点</b>：estaba + 形容词（性数一致）；había 不变复数。",
+      "预告：布景里突然发生的事 → 简单过去时（sonó）。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.3.5",
+   "title": "单元复习：我的学校",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Mi colegio",
+     "lines": [
+      [
+       "Pablo",
+       "¿Cómo era tu colegio?",
+       "你的学校是什么样的？"
+      ],
+      [
+       "Yuki",
+       "Era pequeño y llevábamos uniforme.",
+       "很小，我们要穿校服。"
+      ],
+      [
+       "Pablo",
+       "¿Cuál era tu asignatura favorita?",
+       "你最喜欢哪门课？"
+      ],
+      [
+       "Yuki",
+       "Historia. La maestra nos contaba historias increíbles.",
+       "历史。老师给我们讲很精彩的故事。"
+      ],
+      [
+       "Pablo",
+       "¿Sacabas buenas notas?",
+       "你成绩好吗？"
+      ],
+      [
+       "Yuki",
+       "Casi siempre. Pero una vez suspendí Matemáticas y me castigaron sin tele.",
+       "基本都好。不过有一次数学挂科，被罚不许看电视。"
+      ]
+     ],
+     "note": "最后一句：una vez suspendí —— “一次”的事用简单过去时。这正是下个单元的主题：两种过去时怎么选。"
+    },
+    {
+     "t": "word",
+     "w": "maestro"
+    },
+    {
+     "t": "word",
+     "w": "recreo"
+    },
+    {
+     "t": "word",
+     "w": "pizarra"
+    },
+    {
+     "t": "word",
+     "w": "asignatura"
+    },
+    {
+     "t": "word",
+     "w": "deberes"
+    },
+    {
+     "t": "word",
+     "w": "nota"
+    },
+    {
+     "t": "key",
+     "title": "未完成过去时的五种用途",
+     "what": [
+      "① 过去的<b>习惯</b>：Todos los días iba al colegio a pie.",
+      "② 过去的<b>状态、描述</b>：El colegio era pequeño.",
+      "③ <b>背景</b>（时间、天气、心情）：Era invierno y hacía frío.",
+      "④ <b>同时进行</b>：Mientras la maestra hablaba, yo dibujaba.",
+      "⑤ <b>年龄、时刻</b>：Tenía ocho años. Eran las nueve."
+     ],
+     "why": [
+      "记住一个画面：imperfecto 是“慢镜头 / 背景画”，简单过去时是“快照 / 一个动作”。"
+     ],
+     "zh": [
+      "中文没有这种区分，中国学生常把所有过去都用一种。判断问题：是“那段时间里的样子”，还是“发生了一件事”？"
+     ],
+     "ex": [
+      [
+       "Tenía ocho años y estudiaba en un colegio pequeño.",
+       "我那时八岁，在一所小学校上学。"
+      ],
+      [
+       "Todos los días merendábamos en el recreo.",
+       "我们每天课间吃点心。"
+      ]
+     ],
+     "err": [
+      [
+       "Cuando tuve ocho años, estudié en Madrid.",
+       "Cuando tenía ocho años, estudiaba en Madrid.",
+       "年龄和习惯用 imperfecto"
+      ]
+     ],
+     "sum": "imperfecto = <b>习惯、描述、背景、同时进行、年龄时刻</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mi colegio ___ cerca de mi casa.",
+       "o": [
+        "estaba",
+        "está ayer",
+        "estuvo"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Cuando ___ diez años, me gustaba el fútbol.",
+       "o": [
+        "tengo",
+        "tuve",
+        "tenía"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Una vez ___ Matemáticas.（一次挂科）",
+       "o": [
+        "suspendía",
+        "suspendí",
+        "suspendo"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "aprobar"
+    },
+    {
+     "t": "word",
+     "w": "suspender"
+    },
+    {
+     "t": "word",
+     "w": "uniforme"
+    },
+    {
+     "t": "word",
+     "w": "horario"
+    },
+    {
+     "t": "word",
+     "w": "castigo"
+    },
+    {
+     "t": "word",
+     "w": "merendar"
+    },
+    {
+     "t": "key",
+     "title": "学校词汇的固定搭配",
+     "what": [
+      "<b>sacar</b> buenas / malas <b>notas</b>：取得好 / 坏成绩",
+      "<b>aprobar / suspender</b> un examen / una asignatura：及格 / 挂科",
+      "<b>hacer los deberes</b>：写作业；<b>llevar uniforme</b>：穿校服"
+     ],
+     "why": [
+      "“取得成绩”用 sacar，不用 tener / obtener；“写作业”用 hacer。"
+     ],
+     "zh": [
+      "中文“考得好”在西语里可以说 sacar buena nota / aprobar con buena nota。"
+     ],
+     "ex": [
+      [
+       "Siempre sacaba buenas notas en Inglés.",
+       "我英语成绩一直很好。"
+      ],
+      [
+       "¿Hiciste los deberes?",
+       "你写作业了吗？"
+      ]
+     ],
+     "err": [
+      [
+       "Tenía buenas notas cada examen.",
+       "Sacaba buenas notas en cada examen.",
+       "成绩用 sacar"
+      ],
+      [
+       "Escribía los deberes.",
+       "Hacía los deberes.",
+       "写作业用 hacer"
+      ]
+     ],
+     "sum": "<b>sacar notas · aprobar / suspender · hacer los deberes · llevar uniforme</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "De pequeño siempre ___ los deberes antes de cenar.",
+       "o": [
+        "escribía",
+        "hacía",
+        "sacaba"
+       ],
+       "a": 1
+      },
+      {
+       "t": "f",
+       "q": "En mi colegio todos ___ (llevar) uniforme.",
+       "a": [
+        "llevábamos",
+        "llevaban"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "La maestra nos contaba historias increíbles.",
+     "zh": "老师给我们讲很精彩的故事。",
+     "focus": "contaba 重音在 ta"
+    },
+    {
+     "t": "c",
+     "q": "En el ___ jugábamos al fútbol en el patio.",
+     "o": [
+      "recreo",
+      "castigo",
+      "horario"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "La maestra escribía las palabras en la ___.",
+     "o": [
+      "nota",
+      "asignatura",
+      "pizarra"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Mi ___ favorita era Música.",
+     "o": [
+      "pizarra",
+      "asignatura",
+      "maestra"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Estudié mucho y ___ (aprobar) todos los exámenes.",
+     "a": [
+      "aprobé"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Después del colegio, ___ (merendar, nosotros) pan con chocolate.",
+     "a": [
+      "merendábamos"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Siempre sacaba buenas notas",
+     "p": [
+      "Siempre",
+      "sacaba",
+      "buenas notas"
+     ],
+     "zh": "我以前成绩一直很好。"
+    },
+    {
+     "t": "dict",
+     "a": "Era pequeño y llevábamos uniforme."
+    },
+    {
+     "t": "tr",
+     "zh": "我最喜欢的科目是历史。",
+     "a": [
+      "Mi asignatura favorita era Historia.",
+      "Mi asignatura preferida era Historia."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "学校：maestro、recreo、pizarra、asignatura、deberes、nota、aprobar、suspender、uniforme、horario、castigo、merendar。",
+      "<b>重点</b>：imperfecto 五种用途 —— 习惯、描述、背景、同时进行、年龄时刻。",
+      "<b>重点</b>：sacar notas、hacer los deberes、aprobar / suspender。",
+      "下个单元：两种过去时的选择（imperfecto vs indefinido）。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.3.6",
+   "title": "单元阅读：La casa de mis abuelos",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "La casa de mis abuelos",
+     "note": "先关掉译文读一遍，把所有过去时动词圈出来，想想原形是什么。",
+     "lines": [
+      [
+       "Cuando era niña, pasaba todos los veranos en la casa de mis abuelos.",
+       "我小时候，每个夏天都在爷爷奶奶家度过。"
+      ],
+      [
+       "Vivían en un pueblo pequeño y tranquilo, cerca de las montañas.",
+       "他们住在山边一个安静的小镇上。"
+      ],
+      [
+       "La casa era antigua y tenía un jardín enorme con un huerto y un columpio.",
+       "房子很老，有个大花园，里面有菜园和秋千。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Mi abuelo era alto, llevaba bigote y siempre estaba de buen humor.",
+       "爷爷个子高，留着小胡子，总是乐呵呵的。"
+      ],
+      [
+       "Por las mañanas trabajaba en el huerto, y yo lo ayudaba a recoger tomates.",
+       "上午他在菜园干活，我帮他摘番茄。"
+      ],
+      [
+       "Mi abuela era muy cariñosa. Mientras ella cocinaba, yo le contaba mis aventuras.",
+       "奶奶很慈爱。她做饭的时候，我就给她讲我的“冒险”。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Por las tardes jugaba con los niños del pueblo. Trepábamos a los árboles y nos escondíamos en el campo.",
+       "下午我和镇上的孩子们一起玩。我们爬树，在田野里捉迷藏。"
+      ],
+      [
+       "Por la noche hacía fresco, y casi nunca veíamos la tele.",
+       "晚上很凉快，我们几乎不看电视。"
+      ],
+      [
+       "Nos sentábamos en el jardín y mi abuelo nos contaba historias de su infancia.",
+       "我们坐在花园里，听爷爷讲他小时候的故事。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Ahora la casa ya no es de mi familia, pero esos veranos siguen en mi memoria.",
+       "现在那栋房子已经不属于我们家了，但那些夏天一直留在我的记忆里。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Dónde pasaba los veranos la narradora?",
+     "o": [
+      "En una granja de amigos.",
+      "En la playa con sus padres.",
+      "En casa de sus abuelos, en un pueblo."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Cómo era su abuelo?",
+     "o": [
+      "Rubio y tímido.",
+      "Alto, con bigote y alegre.",
+      "Bajo y serio."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Qué hacía ella por las tardes?",
+     "o": [
+      "Ayudaba en la cocina.",
+      "Jugaba con los niños del pueblo.",
+      "Veía la tele."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Por qué casi todos los verbos del texto están en imperfecto?",
+     "o": [
+      "Hablan del futuro.",
+      "Describen hábitos y cómo era la vida entonces.",
+      "Son acciones de un solo día."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "“La casa ya no es de mi familia” 的意思是：",
+     "o": [
+      "那栋房子已经是我们家的了",
+      "那栋房子现在不再属于我们家",
+      "那栋房子还不属于我们家"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "奶奶做饭的时候，我给她讲故事。",
+     "a": [
+      "Mientras mi abuela cocinaba, yo le contaba historias.",
+      "Mientras la abuela cocinaba, yo le contaba historias."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "未完成过去时：pasaba、vivían、era、tenía、trabajaba、ayudaba、cocinaba、trepábamos、veíamos。",
+      "描述人：era alto、llevaba bigote、estaba de buen humor。",
+      "mientras + imperfecto；casi nunca；ya no。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "De pequeño ___ en un pueblo.",
+    "o": [
+     "viví",
+     "vivía",
+     "vivo"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Mi abuela ___ muy cariñosa.",
+    "o": [
+     "estaba de",
+     "era",
+     "fue un día"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Todos los veranos ___ a la playa.",
+    "o": [
+     "íbamos",
+     "fuimos una vez",
+     "vamos ayer"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Mientras yo ___, mi hermano veía la tele.",
+    "o": [
+     "estudiaba",
+     "estudio",
+     "estudié"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "___ mucha gente en el concierto.",
+    "o": [
+     "Habían",
+     "Había",
+     "Estaban"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Mi profesor ___ gafas y barba.",
+    "o": [
+     "hacía",
+     "llevaba",
+     "era"
+    ],
+    "a": 1
+   },
+   {
+    "t": "tr",
+    "zh": "我十岁时住在巴塞罗那。",
+    "a": [
+     "Cuando tenía diez años, vivía en Barcelona.",
+     "A los diez años vivía en Barcelona."
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "那时候我们没有车。",
+    "a": [
+     "Por aquel entonces no teníamos coche.",
+     "En aquella época no teníamos coche."
+    ]
+   }
+  ]
+ }
+}

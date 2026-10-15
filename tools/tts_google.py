@@ -48,6 +48,7 @@ def synth(text, lang, voice=None, rate=1.0, ssml=False, prons=()):
     """prons：[(词, IPA)]，强制指定发音。Chirp3-HD 用 customPronunciations，其他声音用 SSML phoneme。"""
     code, defaults = VOICES[lang]
     voice = voice or defaults[0]
+    code = "-".join(voice.split("-")[:2])  # en-GB-… 的声音要用 en-GB
     inp = {"ssml" if ssml else "text": text}
     if prons and "Chirp3" in voice:
         inp["customPronunciations"] = {"pronunciations": [{"phrase": w, "phoneticEncoding": "PHONETIC_ENCODING_IPA", "pronunciation": ipa} for w, ipa in prons]}

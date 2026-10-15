@@ -1696,6 +1696,151 @@
      ]
     }
    ]
+  },
+  {
+   "id": "en.1.7.6",
+   "title": "单元阅读：Two Coffee Shops",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Two Coffee Shops",
+     "note": "先关掉译文读一遍，只用学过的词和本单元的重点。读不懂的句子点 ▶ 听一遍，再打开译文核对。",
+     "lines": [
+      [
+       "There are two coffee shops on my street.",
+       "我住的街上有两家咖啡店。"
+      ],
+      [
+       "The first one is bigger and cheaper than the second one.",
+       "第一家比第二家更大、更便宜。"
+      ],
+      [
+       "But the second one is quieter, and its coffee is much better.",
+       "但第二家更安静，咖啡也好得多。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "The owner of the second shop is a young man called Leo.",
+       "第二家店的老板是个叫利奥的年轻人。"
+      ],
+      [
+       "He is very interested in coffee, and he is good at talking with customers.",
+       "他对咖啡很感兴趣，也很会和顾客聊天。"
+      ],
+      [
+       "He makes every cup as carefully as possible.",
+       "每一杯他都做得尽可能用心。"
+      ],
+      [
+       "Because of this, more and more people come to his shop, although it is small.",
+       "正因如此，越来越多的人来他的店，尽管店很小。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Last week, I asked him, \"Could you teach me how to make good coffee?\"",
+       "上周我问他：“你能教我怎么做好咖啡吗？”"
+      ],
+      [
+       "He said, \"Sure. But you have to practice every day, and you had better buy a good grinder.\"",
+       "他说：“当然。不过你得每天练习，最好再买一台好的磨豆机。”"
+      ],
+      [
+       "Now I am not only a customer but also his student.",
+       "现在我不仅是他的顾客，还是他的学生。"
+      ],
+      [
+       "My coffee isn't as good as his yet, but it is getting better.",
+       "我做的咖啡还没有他的好，但越来越好了。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Why do more and more people go to Leo's shop?",
+     "o": [
+      "It is bigger than the other shop.",
+      "Its coffee is cheaper.",
+      "He makes coffee very carefully."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is true about the first coffee shop?",
+     "o": [
+      "It is bigger and cheaper.",
+      "It is quieter.",
+      "Its coffee is better."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What does Leo say the writer has to do?",
+     "o": [
+      "work in his shop",
+      "practice every day",
+      "buy a coffee shop"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "Choose the correct sentence.",
+     "o": [
+      "Because of the rain, we stayed home.",
+      "Because the rain, we stayed home.",
+      "Because of it rained, we stayed home."
+     ],
+     "a": 0,
+     "e": "because of + 名词；because + 句子。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "\"My coffee isn't as good as his.\" means:",
+     "o": [
+      "Leo's coffee is better.",
+      "Our coffee is the same.",
+      "My coffee is better."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "我不仅是他的顾客，还是他的学生。",
+     "a": [
+      "I am not only his customer but also his student.",
+      "I'm not only his customer but also his student.",
+      "I am not only a customer but also his student."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "<b>重点</b>：比较 —— bigger and cheaper than / much better / as good as / as carefully as possible。",
+      "<b>重点</b>：连接 —— although（不再加 but）、because of + 名词、not only … but also。",
+      "情态动词 + 原形：Could you …?（礼貌请求）/ have to（必须）/ had better（最好）。",
+      "be interested in / be good at + 名词或 doing。"
+     ]
+    }
+   ]
   }
  ],
  "test": {
