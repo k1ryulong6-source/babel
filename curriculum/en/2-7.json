@@ -1,0 +1,1836 @@
+{
+ "id": "en.2.7",
+ "title": "Part 7 单篇阅读",
+ "goal": "邮件、广告、通知；定位与同义替换",
+ "lessons": [
+  {
+   "id": "en.2.7.1",
+   "title": "邮件与信件",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "一封招聘邮件",
+     "lines": [
+      [
+       "",
+       "To Karen Wu, from Daniel Moss in Human Resources. Subject: Your application.",
+       "收件人：凯伦·吴；发件人：人力资源部丹尼尔·莫斯；主题：您的申请"
+      ],
+      [
+       "",
+       "Dear Ms. Wu, thank you for applying for the marketing manager vacancy.",
+       "吴女士：感谢您申请市场经理一职。"
+      ],
+      [
+       "",
+       "I am pleased to inform you that you have been shortlisted for an interview.",
+       "很高兴通知您，您已入围面试名单。"
+      ],
+      [
+       "",
+       "The interview will be held on March 3 at 10 a.m. Please bring copies of your credentials.",
+       "面试定于 3 月 3 日上午 10 点，请带上您的资格证书复印件。"
+      ],
+      [
+       "",
+       "If this time is not convenient, please let me know by February 25.",
+       "如果这个时间不方便，请在 2 月 25 日前告诉我。"
+      ]
+     ],
+     "note": "Part 7 共 54 题，单篇阅读约 29 题，其中邮件和信件最多。题目几乎都是同一套：目的是什么、谁写给谁、要求对方做什么、附了什么、什么是正确的。"
+    },
+    {
+     "t": "word",
+     "w": "applicant"
+    },
+    {
+     "t": "word",
+     "w": "vacancy"
+    },
+    {
+     "t": "word",
+     "w": "recruit"
+    },
+    {
+     "t": "word",
+     "w": "resign"
+    },
+    {
+     "t": "word",
+     "w": "resignation"
+    },
+    {
+     "t": "word",
+     "w": "shortlist"
+    },
+    {
+     "t": "key",
+     "title": "邮件的结构 = 题目的位置",
+     "what": [
+      "<b>邮件头</b>（To / From / Date / Subject）：问身份、日期、主题的题，答案常在这里。",
+      "<b>第一段</b>：目的 —— I am writing to… / I'd like to… / Thank you for… / I am pleased to inform you…",
+      "<b>中间段</b>：细节 —— 时间、地点、条件、问题。",
+      "<b>最后一段</b>：请求和下一步 —— Please… / I would appreciate it if… / Feel free to… / I look forward to…；还有附件：attached / enclosed"
+     ],
+     "why": [
+      "“What is the purpose of the e-mail?” 看第一段；“What is Ms. Wu asked to do?” 看 Please 句；“What is enclosed?” 找 attached / enclosed —— 不用通读就能定位。"
+     ],
+     "zh": [
+      "中文邮件常先寒暄铺垫、最后才说目的；英文商务邮件目的在第一两句，要求在最后，这个规律非常稳定。"
+     ],
+     "ex": [
+      [
+       "I am writing to inform you that your application has been received.",
+       "特此通知，您的申请已收到。"
+      ],
+      [
+       "I would appreciate it if you could send your references by Friday.",
+       "如果您能在周五前寄来推荐信，我将不胜感激。"
+      ],
+      [
+       "Please find attached a copy of the job description.",
+       "附件是职位描述，请查收。"
+      ]
+     ],
+     "err": [
+      [
+       "目的题去最后一段找。",
+       "The purpose of an e-mail is usually stated in the first paragraph.",
+       "目的在开头，请求在结尾"
+      ]
+     ],
+     "sum": "<b>目的看开头、请求看 Please、附件找 attached / enclosed</b>；身份和日期看邮件头。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Dear Mr. Lee, I am writing to inform you that our sales manager, Ms. Holt, has resigned. —— What is the purpose of the letter?",
+       "o": [
+        "To recruit a sales manager",
+        "To announce a resignation",
+        "To arrange an appraisal"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Last paragraph: Please find enclosed a copy of your contract. —— What is included with the letter?",
+       "o": [
+        "A contract",
+        "A job description",
+        "A résumé"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Last paragraph: I would appreciate it if you could confirm your attendance by Monday. —— What is the reader asked to do?",
+       "o": [
+        "Reply by Monday",
+        "Send a résumé",
+        "Attend a meeting on Monday"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "interviewer"
+    },
+    {
+     "t": "word",
+     "w": "credential"
+    },
+    {
+     "t": "word",
+     "w": "expertise"
+    },
+    {
+     "t": "word",
+     "w": "aptitude"
+    },
+    {
+     "t": "word",
+     "w": "appraisal"
+    },
+    {
+     "t": "word",
+     "w": "recruiter"
+    },
+    {
+     "t": "key",
+     "title": "NOT / true 题：一个选项一个选项回文核对",
+     "what": [
+      "<b>What is NOT mentioned / NOT true?</b>：四个选项里三个在文中找得到，找<b>找不到或矛盾</b>的那个。",
+      "<b>What is true / indicated about…?</b>：只有一个能在文中找到依据，其他三个是“没提到”或“说反了”。",
+      "做法：先读选项，抓每个选项的<b>关键词</b>，回原文逐个打勾；这类题最花时间，可以<b>放到同一篇的最后做</b>。"
+     ],
+     "why": [
+      "NOT 题的正确答案经常是“听起来合理、但文中根本没提”的选项，所以不能凭常识判断。"
+     ],
+     "zh": [
+      "中国考生做 NOT 题容易漏看 NOT（大写也会看漏），选成了“文中提到的”。看到 NOT 先在草稿上画个圈。"
+     ],
+     "ex": [
+      [
+       "The position requires five years of experience, expertise in data analysis, and a strong aptitude for problem-solving. —— NOT mentioned: a university degree",
+       "该职位要求五年经验、数据分析专长和较强的解决问题能力。（没提学历）"
+      ]
+     ],
+     "err": [
+      [
+       "NOT 题选了文中写到的五年经验。",
+       "For a NOT question, choose the option that the text does not mention.",
+       "NOT 题找“没提到”的"
+      ]
+     ],
+     "sum": "<b>NOT 题</b>：三个打勾、一个找不到；<b>true 题</b>：一个找得到依据；都要<b>回原文核对</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Applicants must have a driver's license and at least two years of sales experience. Knowledge of Spanish is preferred. —— What is NOT a requirement for the job?",
+       "o": [
+        "A driver's license",
+        "A university degree",
+        "Sales experience"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "The interviewer will be Ms. Ramos, our head of recruiting. Interviews last about forty minutes. —— What is true about the interview?",
+       "o": [
+        "It will be with the company president.",
+        "It will be held online.",
+        "It will take less than an hour."
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Annual appraisals take place in December. Employees meet with their managers to discuss goals for the coming year. —— What is indicated about the appraisals?",
+       "o": [
+        "They include a salary increase.",
+        "They are optional.",
+        "They happen once a year."
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "I am pleased to inform you that you have been shortlisted for an interview.",
+     "zh": "很高兴通知您，您已入围面试名单。",
+     "focus": "pleased to 连读，shortlisted 重音在 short"
+    },
+    {
+     "t": "c",
+     "q": "There is a ___ in the accounting department because Mr. Hall retired.",
+     "o": [
+      "credential",
+      "recruiter",
+      "appraisal",
+      "vacancy"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "Ms. Ito handed in her letter of ___ yesterday.",
+     "o": [
+      "aptitude",
+      "vacancy",
+      "appraisal",
+      "resignation"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "Only five ___ were invited to a second interview.",
+     "o": [
+      "interviewers",
+      "applicants",
+      "vacancies",
+      "recruiters"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "We need someone with ___ in international law.",
+     "o": [
+      "appraisal",
+      "resignation",
+      "expertise",
+      "vacancy"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The company plans to ___ twenty new engineers this year.",
+     "o": [
+      "resign",
+      "shortlist",
+      "appraise",
+      "recruit"
+     ],
+     "a": 3
+    },
+    {
+     "t": "f",
+     "q": "He decided to ___ from his position to start his own business. (辞职)",
+     "a": [
+      "resign"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "You have been shortlisted for an interview.",
+     "zh": "您已入围面试名单。"
+    },
+    {
+     "t": "dict",
+     "a": "I am writing to inform you that your application has been received."
+    },
+    {
+     "t": "tr",
+     "zh": "如果这个时间不方便，请告诉我。",
+     "a": [
+      "If this time is not convenient, please let me know.",
+      "If this time isn't convenient, please let me know.",
+      "Please let me know if this time is not convenient."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "招聘词：applicant、vacancy、recruit、resign、resignation、shortlist、interviewer、credential、expertise、aptitude、appraisal、recruiter。",
+      "<b>重点</b>：邮件结构 —— 目的看第一段，请求看 Please，附件找 attached / enclosed，身份日期看邮件头。",
+      "<b>重点</b>：NOT / true 题 —— 读选项抓关键词，逐个回原文核对；NOT 题找“没提到”的。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.7.2",
+   "title": "广告与通知",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "一则活动广告",
+     "lines": [
+      [
+       "",
+       "Riverside Charity Fundraiser — Saturday, May 12, 6 p.m., Grand Hotel Banquet Hall",
+       "河畔慈善募捐晚会 —— 5 月 12 日周六晚 6 点，格兰德酒店宴会厅"
+      ],
+      [
+       "",
+       "Enjoy a three-course dinner, live music and a silent auction.",
+       "享用三道菜晚餐、现场音乐和无声拍卖。"
+      ],
+      [
+       "",
+       "Admission: $60. Children under 12 are admitted free of charge.",
+       "门票：60 美元，12 岁以下儿童免费入场。"
+      ],
+      [
+       "",
+       "Vegetarian meals are available. Please tell us about any dietary needs when you book.",
+       "提供素食。如有饮食需求，请在预订时告知。"
+      ],
+      [
+       "",
+       "This event is sponsored by Lakeside Bank. All profits go to the city children's hospital.",
+       "本活动由湖畔银行赞助，所有收益将捐给市儿童医院。"
+      ]
+     ],
+     "note": "广告和通知篇幅短，但信息密：价格、条件、期限、例外。题目最爱考<b>条件和例外</b>：谁免费、什么时候前、至少多少。"
+    },
+    {
+     "t": "word",
+     "w": "catering"
+    },
+    {
+     "t": "word",
+     "w": "banquet"
+    },
+    {
+     "t": "word",
+     "w": "beverage"
+    },
+    {
+     "t": "word",
+     "w": "refreshments"
+    },
+    {
+     "t": "word",
+     "w": "dietary"
+    },
+    {
+     "t": "word",
+     "w": "vegetarian"
+    },
+    {
+     "t": "key",
+     "title": "广告和通知的四块信息",
+     "what": [
+      "① <b>标题 / 第一句</b>：卖什么、办什么活动 → What is being advertised? / What is the purpose of the notice?",
+      "② <b>卖点</b>：特色、服务内容 → What is offered?",
+      "③ <b>条件</b>：价格、期限、资格、例外 → How can customers receive a discount? / Who can attend?",
+      "④ <b>行动</b>：怎么报名、联系谁、去哪里 → What should interested people do?"
+     ],
+     "why": [
+      "广告题第一题几乎都是“广告的是什么”，第一行通常就有答案；但要注意<b>选项会换说法</b>：Grand Hotel Banquet Hall → an event at a hotel。"
+     ],
+     "zh": [
+      "中文广告爱用大字和感叹号；英文广告则常用祈使句（Enjoy… / Book now… / Call today…），每个祈使句后面就是一个可考点。"
+     ],
+     "ex": [
+      [
+       "Book your holiday luncheon with us and get free beverages for your whole group.",
+       "在我们这里预订节日午宴，全团免费提供饮品。"
+      ],
+      [
+       "Volunteers are needed to help serve refreshments at the marathon.",
+       "马拉松活动需要志愿者帮忙提供茶点。"
+      ],
+      [
+       "To sign up, visit our website or call 555-0182.",
+       "报名请访问我们的网站或致电 555-0182。"
+      ]
+     ],
+     "err": [
+      [
+       "What is being advertised? —— 选第一段没出现的“酒店招聘”。",
+       "The advertisement is for a fundraising dinner.",
+       "答案在标题和第一句"
+      ]
+     ],
+     "sum": "<b>标题 = 卖什么；卖点 = 提供什么；条件 = 价格期限例外；行动 = 怎么报名</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Bella Catering — We cater weddings, office parties and business luncheons. Vegetarian and gluten-free menus available. —— What kind of business is advertised?",
+       "o": [
+        "An office supply store",
+        "A wedding dress shop",
+        "A food service company"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Volunteers needed! Help us serve refreshments at the Spring Fun Run on April 3. Sign up at the community center by March 25. —— What should interested people do?",
+       "o": [
+        "Bring their own refreshments",
+        "Run in the race",
+        "Register at the community center"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "The library's annual book sale is sponsored by Green Leaf Bookstore. —— What is indicated about Green Leaf Bookstore?",
+       "o": [
+        "It is supporting an event.",
+        "It is closing soon.",
+        "It is selling used books."
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "luncheon"
+    },
+    {
+     "t": "word",
+     "w": "admission"
+    },
+    {
+     "t": "word",
+     "w": "sponsor"
+    },
+    {
+     "t": "word",
+     "w": "fundraiser"
+    },
+    {
+     "t": "word",
+     "w": "volunteer"
+    },
+    {
+     "t": "word",
+     "w": "free of charge"
+    },
+    {
+     "t": "key",
+     "title": "限定词陷阱：only / all / at least / up to / except",
+     "what": [
+      "范围：<b>all</b>（全部）vs <b>some / most</b>（部分）；<b>only</b>（只有）；<b>except</b>（除了）",
+      "数量：<b>at least</b>（至少）/ <b>up to</b>（最多）/ <b>no more than</b>（不超过）/ <b>over</b>（超过）",
+      "义务：<b>must / be required to</b>（必须）vs <b>may / be encouraged to</b>（可以 / 鼓励）"
+     ],
+     "why": [
+      "错误选项常把“部分”改成“全部”、把“鼓励”改成“必须”、把“最多 50%”改成“50%”。读选项时要把这些小词和原文对一对。"
+     ],
+     "zh": [
+      "中文“最多打五折”“至少五人”也有限定，但中国考生做题时常只看数字不看限定词，被 up to / at least 骗。"
+     ],
+     "ex": [
+      [
+       "Save up to 50% on selected items.",
+       "部分商品最多可省 50%。"
+      ],
+      [
+       "Groups of at least ten receive a discount.",
+       "十人及以上团体可享折扣。"
+      ],
+      [
+       "Admission is free for all members except on holidays.",
+       "除节假日外，会员一律免费入场。"
+      ]
+     ],
+     "err": [
+      [
+       "原文 Save up to 50% on selected items → 选项 All items are half price.",
+       "Some items are discounted by as much as 50%.",
+       "up to + selected → 不是全部都打五折"
+      ],
+      [
+       "原文 Guests are encouraged to bring a dish → 选项 Guests must bring food.",
+       "Guests are invited to bring food if they wish.",
+       "encouraged ≠ must"
+      ]
+     ],
+     "sum": "对比原文和选项里的<b>小词</b>：all / some、only、at least / up to、must / may、except。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Ad: “Up to 30% off all winter coats this weekend.” Which statement is true?",
+       "o": [
+        "The sale lasts for a month.",
+        "Some coats may be discounted less than 30%.",
+        "Every coat is exactly 30% off."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Notice: “Admission to the museum is free on Sundays, except for special exhibitions.” Which statement is true?",
+       "o": [
+        "The museum is free every day.",
+        "Visitors pay for special exhibitions on Sundays.",
+        "The museum is closed on Sundays."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "“Staff are encouraged to attend the banquet.” This means the banquet is",
+       "o": [
+        "recommended but not required",
+        "only for managers",
+        "required for all staff"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "This event is sponsored by Lakeside Bank. All profits go to the city children's hospital.",
+     "zh": "本活动由湖畔银行赞助，所有收益捐给市儿童医院。",
+     "focus": "sponsored 重音在 SPON；profits 尾音 ts"
+    },
+    {
+     "t": "c",
+     "q": "The hotel provides ___ for conferences, including meals and drinks.",
+     "o": [
+      "sponsorship",
+      "admission",
+      "volunteers",
+      "catering"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "Hot and cold ___ will be served during the break.",
+     "o": [
+      "beverages",
+      "fundraisers",
+      "sponsors",
+      "banquets"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Please let us know about any ___ restrictions, such as allergies.",
+     "o": [
+      "free",
+      "dietary",
+      "vegetarian",
+      "banquet"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Our company will ___ the local marathon this year.",
+     "o": [
+      "sponsor",
+      "admit",
+      "cater",
+      "volunteer for"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The school held a ___ to raise money for new computers.",
+     "o": [
+      "refreshment",
+      "fundraiser",
+      "beverage",
+      "luncheon"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "___ to the park is free for children under five. (入场)",
+     "a": [
+      "Admission"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Children under 12 are admitted free of charge.",
+     "zh": "12 岁以下儿童免费入场。"
+    },
+    {
+     "t": "dict",
+     "a": "Vegetarian meals are available on request."
+    },
+    {
+     "t": "tr",
+     "zh": "我们需要志愿者在活动中帮忙提供茶点。",
+     "a": [
+      "We need volunteers to help serve refreshments at the event.",
+      "Volunteers are needed to help serve refreshments at the event."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "活动词：catering、banquet、beverage、refreshments、dietary、vegetarian、luncheon、admission、sponsor、fundraiser、volunteer、free of charge。",
+      "<b>重点</b>：广告四块 —— 标题（卖什么）、卖点、条件（价格期限例外）、行动（怎么报名）。",
+      "<b>重点</b>：限定词陷阱 —— all / some、only、at least / up to、must / encouraged、except。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.7.3",
+   "title": "表格与日程",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "一份出差日程",
+     "lines": [
+      [
+       "",
+       "Itinerary for Mr. James Ford — Sales Conference, Vancouver",
+       "詹姆斯·福特先生日程 —— 温哥华销售大会"
+      ],
+      [
+       "",
+       "Mon 9:00 Arrive at Terminal 2 · 14:00 Hotel check-in · 19:00 Welcome dinner",
+       "周一 9:00 抵达 2 号航站楼 · 14:00 入住酒店 · 19:00 欢迎晚宴"
+      ],
+      [
+       "",
+       "Tue 8:30 Conference opens · 12:00 Lunch with clients · 16:00 Ferry tour of the harbor*",
+       "周二 8:30 大会开幕 · 12:00 与客户午餐 · 16:00 乘渡轮游港*"
+      ],
+      [
+       "",
+       "Wed 10:00 Sightseeing with a tour guide · 15:00 Depart from Terminal 2",
+       "周三 10:00 导游带领观光 · 15:00 从 2 号航站楼离开"
+      ],
+      [
+       "",
+       "* Optional. Please book in person at the hotel front desk. Per diem: $75 a day for meals.",
+       "* 自选项目，请到酒店前台当面预订。每日餐补：75 美元。"
+      ]
+     ],
+     "note": "表格、日程、价目表、发票、订单是 Part 7 的第三大类。文字少，但<b>星号、脚注、表头</b>常藏着答案。"
+    },
+    {
+     "t": "word",
+     "w": "per diem"
+    },
+    {
+     "t": "word",
+     "w": "terminal"
+    },
+    {
+     "t": "word",
+     "w": "ferry"
+    },
+    {
+     "t": "word",
+     "w": "cruise"
+    },
+    {
+     "t": "word",
+     "w": "sightseeing"
+    },
+    {
+     "t": "word",
+     "w": "landmark"
+    },
+    {
+     "t": "key",
+     "title": "表格题：先看表头和脚注，再按行列定位",
+     "what": [
+      "① 先看<b>标题和表头</b>：这是什么表（日程 / 价目 / 订单）、每一列是什么。",
+      "② 题目里的关键词（Tuesday / ferry / $75）→ 在表里找到那一<b>行</b>，再读需要的那一<b>列</b>。",
+      "③ 一定看<b>脚注</b>：* Optional / ** Subject to change / Prices do not include tax —— 很多题就考这一行。"
+     ],
+     "why": [
+      "表格题看起来简单，错误多来自“没看脚注”和“看错行”。用手指（或光标）对着行读，别跳行。"
+     ],
+     "zh": [
+      "中国考生习惯把表格当“附带信息”扫一眼就过，但托业表格题的答案往往在最小的那行字里。"
+     ],
+     "ex": [
+      [
+       "Ferry tour of the harbor* —— * Optional. Please book in person.",
+       "渡轮游港是自选项目，要当面预订。"
+      ],
+      [
+       "Room rates do not include breakfast or parking.",
+       "房价不含早餐和停车。"
+      ]
+     ],
+     "err": [
+      [
+       "看到 Ferry tour，就认为所有人都要参加。",
+       "The ferry tour is optional, according to the note.",
+       "脚注说是自选"
+      ]
+     ],
+     "sum": "<b>表头 → 行 → 列 → 脚注</b>；星号和小字一定要读。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Based on the itinerary above, what is true about the ferry tour?",
+       "o": [
+        "It is not required.",
+        "It is on Monday.",
+        "It can be booked online."
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Based on the itinerary above, when will Mr. Ford leave Vancouver?",
+       "o": [
+        "On Tuesday evening",
+        "On Wednesday afternoon",
+        "On Wednesday morning"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Price list: Harbor cruise $45 · Lunch cruise $70 · Sunset cruise $85. *Children half price. —— How much would one child pay for the lunch cruise?",
+       "o": [
+        "$35",
+        "$45",
+        "$70"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "tour guide"
+    },
+    {
+     "t": "word",
+     "w": "wake-up call"
+    },
+    {
+     "t": "word",
+     "w": "jet lag"
+    },
+    {
+     "t": "word",
+     "w": "rush hour"
+    },
+    {
+     "t": "word",
+     "w": "ahead of schedule"
+    },
+    {
+     "t": "word",
+     "w": "in person"
+    },
+    {
+     "t": "key",
+     "title": "交叉信息：正文的一句 + 表格的一行",
+     "what": [
+      "很多表格会配一段说明或一封邮件。题目会让你把<b>两处的信息合起来</b>：",
+      "邮件：I'll join you <b>the day after the conference opens</b>. + 日程：Conference opens <b>Tuesday</b> → 答案 Wednesday",
+      "邮件：I'd like the <b>cheapest</b> option. + 价目表 → 找最便宜的那一行",
+      "这种题的答案<b>不会</b>在任何一处直接写出来，必须换算。"
+     ],
+     "why": [
+      "这是从单篇过渡到多篇阅读（第三学期）的关键能力。题干里有 the day after / the cheapest / the second / instead of 时，就要准备“对表”。"
+     ],
+     "zh": [
+      "中文阅读题很少要求跨段计算，托业会，而且是故意的。"
+     ],
+     "ex": [
+      [
+       "“My flight lands two hours before the welcome dinner.” + Welcome dinner 19:00 → lands at 17:00",
+       "飞机在欢迎晚宴前两小时降落 → 17:00"
+      ],
+      [
+       "“Because of jet lag, I'll skip the first activity on Wednesday.” + Wed 10:00 Sightseeing → he will miss the sightseeing",
+       "因为时差，周三第一个活动不参加 → 错过观光"
+      ]
+     ],
+     "err": [
+      [
+       "“I'll skip the first activity on Wednesday.” → 选 He will not attend the conference.",
+       "He will not go sightseeing on Wednesday.",
+       "要在表里找到周三第一个活动"
+      ]
+     ],
+     "sum": "看到 <b>the day after / the cheapest / the first</b> 等，就把正文和表格<b>对起来算</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Schedule: Room A — Budget meeting 9:00 · Room B — Training 11:00 · Room C — Client visit 14:00. E-mail: “I'll be in the room where the training is held.” —— Where will the writer be?",
+       "o": [
+        "Room A",
+        "Room B",
+        "Room C"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Tour prices: City walk $20 · Landmark bus tour $35 · Night cruise $50. E-mail: “Please book me the second most expensive tour.” —— Which tour will be booked?",
+       "o": [
+        "The night cruise",
+        "The city walk",
+        "The landmark bus tour"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Hotel note: Wake-up calls can be requested until 11 p.m. Guest: “I need a call at 6 a.m. but I'll be back at midnight.” —— What should the guest do?",
+       "o": [
+        "Request the call before 11 p.m.",
+        "Request the call at midnight",
+        "Call the hotel at 6 a.m."
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Please book the ferry tour in person at the hotel front desk.",
+     "zh": "请到酒店前台当面预订渡轮游。",
+     "focus": "in person 连读 /ɪnˈpɝsən/"
+    },
+    {
+     "t": "c",
+     "q": "Our flight leaves from ___ 3, so we should go to that building.",
+     "o": [
+      "Ferry",
+      "Terminal",
+      "Landmark",
+      "Cruise"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "You can take the ___ across the river to the island.",
+     "o": [
+      "ferry",
+      "per diem",
+      "terminal",
+      "landmark"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The Eiffel Tower is one of the most famous ___ in the world.",
+     "o": [
+      "cruises",
+      "terminals",
+      "landmarks",
+      "tour guides"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Traffic is heavy during ___, so leave early.",
+     "o": [
+      "rush hour",
+      "jet lag",
+      "wake-up call",
+      "per diem"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Employees on business trips receive a ___ of $60 for meals.",
+     "o": [
+      "landmark",
+      "cruise",
+      "terminal",
+      "per diem"
+     ],
+     "a": 3
+    },
+    {
+     "t": "f",
+     "q": "The project was finished two weeks ___ of schedule.",
+     "a": [
+      "ahead"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Please book in person at the hotel front desk.",
+     "zh": "请到酒店前台当面预订。"
+    },
+    {
+     "t": "dict",
+     "a": "Children under twelve pay half price."
+    },
+    {
+     "t": "tr",
+     "zh": "因为时差，我周三上午不参加观光。",
+     "a": [
+      "Because of jet lag, I will skip the sightseeing on Wednesday morning.",
+      "Because of jet lag, I won't go sightseeing on Wednesday morning.",
+      "Due to jet lag, I will not join the sightseeing on Wednesday morning."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "出行词：per diem、terminal、ferry、cruise、sightseeing、landmark、tour guide、wake-up call、jet lag、rush hour、ahead of schedule、in person。",
+      "<b>重点</b>：表格题 —— 表头 → 行 → 列 → 脚注，星号小字必读。",
+      "<b>重点</b>：交叉信息 —— the day after / the cheapest 等要把正文和表格对起来算。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.7.4",
+   "title": "同义替换",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "原文和选项说的是同一件事",
+     "lines": [
+      [
+       "",
+       "Text: The board has decided to put off the vote until next month.",
+       "原文：董事会决定把投票推迟到下个月。"
+      ],
+      [
+       "",
+       "Option: The vote has been postponed.",
+       "选项：投票被延期了。"
+      ],
+      [
+       "",
+       "Text: Ms. Kim will take over as head of sales when Mr. Baker retires.",
+       "原文：贝克先生退休后，金女士将接任销售主管。"
+      ],
+      [
+       "",
+       "Option: Ms. Kim will replace Mr. Baker.",
+       "选项：金女士将接替贝克先生。"
+      ]
+     ],
+     "note": "Part 7 的正确选项<b>几乎从不照抄原文</b>。短语动词 ↔ 单词，是最常见的替换方式。掌握这一组，阅读速度和正确率都会明显提高。"
+    },
+    {
+     "t": "word",
+     "w": "put off"
+    },
+    {
+     "t": "word",
+     "w": "take over"
+    },
+    {
+     "t": "word",
+     "w": "look into"
+    },
+    {
+     "t": "word",
+     "w": "carry out"
+    },
+    {
+     "t": "word",
+     "w": "turn down"
+    },
+    {
+     "t": "word",
+     "w": "go over"
+    },
+    {
+     "t": "key",
+     "title": "短语动词 ↔ 正式单词",
+     "what": [
+      "<b>put off</b> = postpone / delay　<b>take over</b> = replace / assume responsibility for　<b>look into</b> = investigate / examine",
+      "<b>carry out</b> = conduct / perform　<b>turn down</b> = reject / decline　<b>go over</b> = review / check",
+      "<b>hand in</b> = submit　<b>set up</b> = establish / arrange / install　<b>run out of</b> = have no more / use up",
+      "<b>account for</b> = explain / make up (a share)　<b>keep track of</b> = monitor / record　<b>make up for</b> = compensate for"
+     ],
+     "why": [
+      "原文用口语化的短语动词，选项用正式的单词，或者反过来。两边都认识，才能一眼看出是同一件事。"
+     ],
+     "zh": [
+      "中文的“推迟”“接手”“调查”是一个词，英语常用“动词 + 小品词”，小品词一换意思全变（turn down 拒绝 / turn up 出现）。"
+     ],
+     "ex": [
+      [
+       "We are looking into the cause of the delay. = We are investigating the delay.",
+       "我们正在调查延误的原因。"
+      ],
+      [
+       "The survey was carried out last month. = The survey was conducted last month.",
+       "调查是上个月进行的。"
+      ],
+      [
+       "Online sales account for 40% of our revenue.",
+       "网上销售占我们营收的 40%。"
+      ]
+     ],
+     "err": [
+      [
+       "The manager turned down the offer. → The manager accepted the offer.",
+       "The manager turned down the offer, so the manager rejected it.",
+       "turn down = 拒绝"
+      ],
+      [
+       "We ran out of paper. → We ordered extra paper.",
+       "We ran out of paper, so we had no paper left.",
+       "run out of = 用完"
+      ]
+     ],
+     "sum": "<b>put off</b>=postpone · <b>take over</b>=replace · <b>look into</b>=investigate · <b>carry out</b>=conduct · <b>turn down</b>=reject · <b>go over</b>=review · <b>hand in</b>=submit。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Text: “The city has turned down the proposal for a new stadium.” Which option means the same?",
+       "o": [
+        "The proposal was rejected.",
+        "The proposal was reviewed.",
+        "The proposal was delayed."
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Text: “Please go over the contract before Friday's meeting.” What is the reader asked to do?",
+       "o": [
+        "Cancel a meeting",
+        "Review a document",
+        "Sign a contract"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Text: “The store has run out of the blue model.” What is true?",
+       "o": [
+        "The blue model is on sale.",
+        "The blue model is the most popular.",
+        "The blue model is currently unavailable."
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Text: “Mr. Ortiz will take over the Tokyo office in April.” What will Mr. Ortiz do?",
+       "o": [
+        "Visit Tokyo on vacation",
+        "Close an office",
+        "Become responsible for an office"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "hand in"
+    },
+    {
+     "t": "word",
+     "w": "set up"
+    },
+    {
+     "t": "word",
+     "w": "run out of"
+    },
+    {
+     "t": "word",
+     "w": "account for"
+    },
+    {
+     "t": "word",
+     "w": "keep track of"
+    },
+    {
+     "t": "word",
+     "w": "make up for"
+    },
+    {
+     "t": "key",
+     "title": "“closest in meaning” 题：一词多义看语境",
+     "what": [
+      "Part 7 每套有 2–4 道：The word “…” in paragraph 2, line 3, is closest in meaning to",
+      "考的都是<b>一词多义</b>的常见词，四个选项往往都是它的某个意思，只有一个符合这里的语境：",
+      "<b>address</b>：地址 / 演讲 / 处理（address a problem = deal with）　<b>cover</b>：覆盖 / 支付（cover the cost = pay for）/ 报道 / 包括",
+      "<b>run</b>：跑 / 经营（run a store = manage）/ 运行　<b>issue</b>：问题 / 期刊的一期 / 发行　<b>terms</b>：条件 / 术语 / 学期"
+     ],
+     "why": [
+      "做法：把四个选项<b>代回原句</b>，读一遍，哪个意思通顺就选哪个。不要选“这个词最常见的意思”。"
+     ],
+     "zh": [
+      "中国考生背单词通常只背第一个意思，这类题正是考“第二、第三个意思”。"
+     ],
+     "ex": [
+      [
+       "The company will cover the cost of your travel. (cover = pay for)",
+       "公司将承担你的差旅费用。"
+      ],
+      [
+       "We need to address this issue quickly. (address = deal with)",
+       "我们需要尽快处理这个问题。"
+      ],
+      [
+       "Ms. Lin runs a small catering business. (runs = manages)",
+       "林女士经营一家小餐饮公司。"
+      ]
+     ],
+     "err": [
+      [
+       "“The insurance covers water damage.” covers = reports on",
+       "The insurance covers water damage, which means it includes water damage.",
+       "这里 cover = 包括"
+      ]
+     ],
+     "sum": "<b>代回原句读一遍</b>；常考：address = deal with，cover = pay for / include，run = manage，issue = problem / edition。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "“Our manager will address the staff at nine.” The word “address” is closest in meaning to",
+       "o": [
+        "deal with",
+        "speak to",
+        "write to"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "“The March issue of the magazine features local chefs.” The word “issue” is closest in meaning to",
+       "o": [
+        "problem",
+        "topic",
+        "edition"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "“Your membership covers entry to all events.” The word “covers” is closest in meaning to",
+       "o": [
+        "hides",
+        "includes",
+        "reports on"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Ms. Kim will take over as head of sales when Mr. Baker retires.",
+     "zh": "贝克先生退休后，金女士将接任销售主管。",
+     "focus": "take over 连读，重音在 over"
+    },
+    {
+     "t": "c",
+     "q": "The meeting has been ___ until next Tuesday because the director is sick.",
+     "o": [
+      "turned down",
+      "taken over",
+      "put off",
+      "carried out"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Technicians will ___ the new computers on Monday.",
+     "o": [
+      "put off",
+      "set up",
+      "hand in",
+      "run out of"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Please ___ your timesheets by 5 p.m. on Friday.",
+     "o": [
+      "look into",
+      "go over",
+      "make up for",
+      "hand in"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "The police are ___ the cause of the fire.",
+     "o": [
+      "making up for",
+      "looking into",
+      "accounting for",
+      "running out of"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "It's hard to ___ all our expenses without a spreadsheet.",
+     "o": [
+      "turn down",
+      "put off",
+      "take over",
+      "keep track of"
+     ],
+     "a": 3
+    },
+    {
+     "t": "f",
+     "q": "We worked on Saturday to make ___ for the lost time.",
+     "a": [
+      "up"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Online sales account for forty percent of our revenue.",
+     "zh": "网上销售占我们营收的百分之四十。"
+    },
+    {
+     "t": "dict",
+     "a": "The survey was carried out last month."
+    },
+    {
+     "t": "tr",
+     "zh": "董事会决定把投票推迟到下个月。",
+     "a": [
+      "The board decided to put off the vote until next month.",
+      "The board has decided to postpone the vote until next month.",
+      "The board decided to postpone the vote until next month."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "短语动词：put off、take over、look into、carry out、turn down、go over、hand in、set up、run out of、account for、keep track of、make up for。",
+      "<b>重点</b>：短语动词 ↔ 正式词 —— put off = postpone，look into = investigate，carry out = conduct，turn down = reject，go over = review。",
+      "<b>重点</b>：closest in meaning —— 一词多义，代回原句；address / cover / run / issue / terms。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.7.5",
+   "title": "Part 7 实战",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "一则产品召回通知",
+     "lines": [
+      [
+       "",
+       "Notice to Customers: Voluntary Recall of the Model K2 Coffee Maker",
+       "顾客通知：K2 型咖啡机主动召回"
+      ],
+      [
+       "",
+       "During a routine quality control inspection, we found a defect in one component of a small batch of K2 coffee makers.",
+       "在一次例行质检中，我们发现一小批 K2 咖啡机的一个部件有缺陷。"
+      ],
+      [
+       "",
+       "In the event of overheating, the handle may become hot. No injuries have been reported.",
+       "如果过热，把手可能变烫。目前尚无受伤报告。"
+      ],
+      [
+       "",
+       "If your coffee maker's serial number begins with 22B, please stop using it and contact us. We will replace it at no extra charge.",
+       "如果您的咖啡机序列号以 22B 开头，请停止使用并与我们联系，我们将免费为您更换。"
+      ]
+     ],
+     "note": "Part 7 单篇实战：先看题，再按题型定位。一篇通知 2–4 题，控制在 2–3 分钟。"
+    },
+    {
+     "t": "word",
+     "w": "defect"
+    },
+    {
+     "t": "word",
+     "w": "component"
+    },
+    {
+     "t": "word",
+     "w": "batch"
+    },
+    {
+     "t": "word",
+     "w": "quality control"
+    },
+    {
+     "t": "word",
+     "w": "inspect"
+    },
+    {
+     "t": "word",
+     "w": "inspection"
+    },
+    {
+     "t": "key",
+     "title": "Part 7 的做题流程",
+     "what": [
+      "① <b>先看题</b>（不看选项）：判断题型 —— 目的、细节、NOT / true、推断、词义、句子插入。",
+      "② <b>按题型定位</b>：目的看开头，细节用关键词扫读，词义题直接去指定行。",
+      "③ <b>回原文找依据，再看选项</b>：找到原句后，在选项里找它的同义替换。",
+      "④ <b>时间</b>：阅读 75 分钟，Part 5–6 用 20–25 分钟，Part 7 至少留 50 分钟；一题卡住超过 1 分钟就先猜一个、做标记。"
+     ],
+     "why": [
+      "先看题能让你“带着目的读”。单篇的问题顺序大致和原文顺序一致，第一题在前面、最后一题在后面（NOT / true 题除外）。",
+      "托业不扣分，任何一题都不要空着。"
+     ],
+     "zh": [
+      "中国考生习惯“先把文章读懂再做题”，在托业的时间压力下行不通。要做的是“为题目找证据”。"
+     ],
+     "ex": [
+      [
+       "Q: Why was the notice written? → 看第一句：Voluntary Recall of the Model K2",
+       "问目的 → 看标题和第一句"
+      ],
+      [
+       "Q: What should customers with serial number 22B do? → 扫 22B → please stop using it and contact us",
+       "问细节 → 用 22B 定位"
+      ]
+     ],
+     "err": [
+      [
+       "先把整篇读两遍，再看题。",
+       "Read the questions first, then find the answers in the text.",
+       "先看题，再定位"
+      ],
+      [
+       "一道难题想了三分钟。",
+       "If a question takes more than a minute, guess and move on.",
+       "托业不扣分，先猜再走"
+      ]
+     ],
+     "sum": "<b>先看题 → 判题型 → 定位 → 找同义替换</b>；卡住一分钟就先猜。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Based on the notice, why was the notice written?",
+       "o": [
+        "To announce a price increase",
+        "To inform customers about a product problem",
+        "To advertise a new coffee maker"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Based on the notice, what will the company do for affected customers?",
+       "o": [
+        "Repair the product for a small fee",
+        "Give a full refund in cash",
+        "Provide a new product free of charge"
+       ],
+       "a": 2,
+       "e": "replace it at no extra charge → provide a new product free of charge。"
+      },
+      {
+       "t": "c",
+       "q": "Based on the notice, what is indicated about the defect?",
+       "o": [
+        "It has not caused any injuries.",
+        "It affects all K2 coffee makers.",
+        "It was reported by customers."
+       ],
+       "a": 0,
+       "e": "No injuries have been reported；a small batch ≠ all；found during an inspection ≠ reported by customers。"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "comply with"
+    },
+    {
+     "t": "word",
+     "w": "be subject to"
+    },
+    {
+     "t": "word",
+     "w": "in the event of"
+    },
+    {
+     "t": "word",
+     "w": "at no extra charge"
+    },
+    {
+     "t": "word",
+     "w": "dependable"
+    },
+    {
+     "t": "word",
+     "w": "reputable"
+    },
+    {
+     "t": "key",
+     "title": "推断题：What is suggested / implied / most likely",
+     "what": [
+      "答案文中<b>没有直接写</b>，但能从一两句话推出来。",
+      "正确选项 = <b>原文信息的合理延伸</b>（换说法、合起来、或者反面）：a small batch → <b>Most K2 coffee makers are not affected.</b>",
+      "错误选项 = 常识上合理、但文中<b>没有依据</b>（The company will stop making coffee makers.）或<b>推过头</b>（All customers must return their products.）"
+     ],
+     "why": [
+      "判断标准：能不能在原文里指出“我是根据这一句推出来的”。指不出来，就是推过头。"
+     ],
+     "zh": [
+      "中国考生容易用常识或个人经验补充，选出“现实中可能如此”的选项。托业只认文中依据。"
+     ],
+     "ex": [
+      [
+       "“The company is known for its dependable products.” → It is suggested that the company has a good reputation.",
+       "该公司以产品可靠闻名。→ 暗示公司口碑好。"
+      ],
+      [
+       "“All suppliers must comply with the new safety rules by June.” → Some suppliers may need to make changes.",
+       "所有供应商须在六月前遵守新规。→ 有些供应商可能需要做调整。"
+      ]
+     ],
+     "err": [
+      [
+       "原文：a small batch has a defect → 选 The company will close its factory.",
+       "A small batch has a defect, so most products are probably safe.",
+       "推断不能超出原文依据"
+      ]
+     ],
+     "sum": "推断 = 能<b>指出依据句</b>的延伸；没有依据、推过头的都不选。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "“Prices are subject to change without notice.” What is implied?",
+       "o": [
+        "Prices may go up or down.",
+        "Prices will rise next month.",
+        "Prices never change."
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "“Because of high demand, delivery may take up to three weeks.” What is suggested about the product?",
+       "o": [
+        "It is expensive.",
+        "It is popular.",
+        "It is no longer made."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "“Lambert & Sons, a reputable firm with forty years of experience, will carry out the inspection.” What is suggested about Lambert & Sons?",
+       "o": [
+        "It is a new company.",
+        "It is trusted in its field.",
+        "It will sell the building."
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "During a routine quality control inspection, we found a defect in one component.",
+     "zh": "在一次例行质检中，我们发现一个部件有缺陷。",
+     "focus": "defect 名词重音可在 DE，component 重音在 PO"
+    },
+    {
+     "t": "c",
+     "q": "Each ___ of products is checked before shipping.",
+     "o": [
+      "defect",
+      "inspection",
+      "batch",
+      "component"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The engine is the most important ___ of the car.",
+     "o": [
+      "inspection",
+      "batch",
+      "defect",
+      "component"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "All factories must ___ the new safety regulations.",
+     "o": [
+      "keep track of",
+      "comply with",
+      "be subject to",
+      "in the event of"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "___ fire, please use the stairs, not the elevator.",
+     "o": [
+      "In addition",
+      "Regardless",
+      "At no extra charge",
+      "In the event of"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "Our ___ team checks every product before it leaves the factory.",
+     "o": [
+      "defect",
+      "component",
+      "batch",
+      "quality control"
+     ],
+     "a": 3
+    },
+    {
+     "t": "f",
+     "q": "The building will be ___ by city officials next week. (检查)",
+     "a": [
+      "inspected"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "We will replace it at no extra charge.",
+     "zh": "我们将免费为您更换。"
+    },
+    {
+     "t": "dict",
+     "a": "No injuries have been reported."
+    },
+    {
+     "t": "tr",
+     "zh": "所有价格如有变动，恕不另行通知。",
+     "a": [
+      "All prices are subject to change without notice.",
+      "Prices are subject to change without notice."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "质量词：defect、component、batch、quality control、inspect、inspection、comply with、be subject to、in the event of、at no extra charge、dependable、reputable。",
+      "<b>重点</b>：Part 7 流程 —— 先看题、判题型、定位、找同义替换；卡住一分钟就猜。",
+      "<b>重点</b>：推断题 —— 能指出依据句的延伸才对；没依据、推过头的不选。",
+      "单元总结：邮件看结构、广告看条件、表格看脚注和交叉信息、选项看同义替换。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.7.6",
+   "title": "单元阅读：Job Posting: Event Coordinator",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Job Posting: Event Coordinator",
+     "note": "TOEIC Part 7 式的阅读：先看题目再读文章，带着问题找答案。先关掉译文读。",
+     "lines": [
+      [
+       "Harbor View Hotel — Event Coordinator (Full-time)",
+       "海景酒店 —— 活动协调员（全职）"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Harbor View Hotel, a reputable four-star hotel in downtown Seattle, is looking for an experienced event coordinator.",
+       "海景酒店是西雅图市中心一家口碑良好的四星级酒店，现招聘一名有经验的活动协调员。"
+      ],
+      [
+       "The successful applicant will plan banquets, business luncheons and fundraisers, and work closely with our catering team.",
+       "录用者将负责策划宴会、商务午宴和募捐活动，并与我们的餐饮团队紧密合作。"
+      ],
+      [
+       "He or she will also keep track of event budgets and deal with clients' dietary requests.",
+       "此人还需管理活动预算，并处理客户的饮食需求。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Requirements: at least three years of experience in hotel or event management, and excellent communication skills.",
+       "要求：至少三年酒店或活动管理经验，出色的沟通能力。"
+      ],
+      [
+       "Knowledge of a second language is preferred but not required.",
+       "懂第二语言者优先，但非必需。"
+      ],
+      [
+       "We offer a competitive salary, health insurance, and free meals during shifts.",
+       "我们提供有竞争力的薪酬、医疗保险以及值班期间的免费餐食。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "To apply, send your résumé and two references to Ms. Laura Chen in Human Resources by April 30.",
+       "申请者请于 4 月 30 日前将简历和两封推荐信发送至人力资源部的劳拉·陈女士。"
+      ],
+      [
+       "Shortlisted applicants will be contacted for an interview in early May.",
+       "入围者将于五月初接到面试通知。"
+      ],
+      [
+       "Please note that we are unable to reply to every application.*",
+       "请注意，我们无法逐一回复所有申请。*"
+      ],
+      [
+       "* Applicants who are not contacted by May 15 may assume the position has been filled.",
+       "* 5 月 15 日前未接到通知的申请者，可视为职位已招满。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "What is the purpose of the posting?",
+     "o": [
+      "To advertise a banquet",
+      "To recruit a new employee",
+      "To announce a new hotel"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is NOT mentioned as a duty of the job?",
+     "o": [
+      "Managing event budgets",
+      "Planning business luncheons",
+      "Training new kitchen staff"
+     ],
+     "a": 2,
+     "e": "NOT 题：plan banquets / luncheons、keep track of budgets、deal with dietary requests 都写了，培训厨房员工没提。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is true about a second language?",
+     "o": [
+      "It is helpful but not necessary.",
+      "It is not mentioned.",
+      "It is required for the job."
+     ],
+     "a": 0,
+     "e": "preferred but not required —— 限定词题。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "The phrase \"keep track of\" in paragraph 1 is closest in meaning to",
+     "o": [
+      "monitor",
+      "pay for",
+      "reduce"
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is suggested about applicants who hear nothing by May 15?",
+     "o": [
+      "Their interview has been postponed.",
+      "They were not selected.",
+      "They should call Ms. Chen."
+     ],
+     "a": 1,
+     "e": "看星号脚注：may assume the position has been filled。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "入围者将于五月初接到面试通知。",
+     "a": [
+      "Shortlisted applicants will be contacted for an interview in early May.",
+      "Shortlisted candidates will be contacted for an interview in early May."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "Part 7 招聘广告：职位 → 职责 → 要求 → 待遇 → 申请方式 → 脚注。",
+      "限定词：at least、preferred but not required；同义替换：keep track of = monitor。",
+      "词：reputable、applicant、banquet、luncheon、fundraiser、catering、dietary、shortlist。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "Dear Ms. Park, I am writing to confirm your reservation for the banquet hall on June 5. —— What is the purpose of the letter?",
+    "o": [
+     "To cancel an event",
+     "To confirm a booking",
+     "To request a payment"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "“Save up to 40% on selected laptops.” Which statement is true?",
+    "o": [
+     "Laptops are free with a purchase.",
+     "Some laptops are discounted.",
+     "All laptops are 40% off."
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Schedule: Mon — Training · Tue — Site visit · Wed — Report due. E-mail: “I'll be away the day before the report is due.” When will the writer be away?",
+    "o": [
+     "Tuesday",
+     "Monday",
+     "Wednesday"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Text: “The company has decided to put off the launch.” Which option means the same?",
+    "o": [
+     "The launch has been canceled for good.",
+     "The launch was successful.",
+     "The launch has been postponed."
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "“The fee covers lunch and all materials.” The word “covers” is closest in meaning to",
+    "o": [
+     "reports",
+     "includes",
+     "protects"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "“Staff are encouraged to attend the workshop.” What is true?",
+    "o": [
+     "Only managers can attend.",
+     "Attendance is recommended.",
+     "Attendance is required."
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Applicants need a degree in finance and three years of experience. —— What is NOT mentioned as a requirement?",
+    "o": [
+     "A second language",
+     "A degree",
+     "Work experience"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "“The ferry runs every thirty minutes.” The word “runs” is closest in meaning to",
+    "o": [
+     "manages",
+     "operates",
+     "hurries"
+    ],
+    "a": 1
+   },
+   {
+    "t": "tr",
+    "zh": "请在周五前提交您的报告。",
+    "a": [
+     "Please hand in your report by Friday.",
+     "Please submit your report by Friday."
+    ]
+   }
+  ]
+ }
+}

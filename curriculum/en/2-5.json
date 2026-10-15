@@ -1,0 +1,1866 @@
+{
+ "id": "en.2.5",
+ "title": "Part 3/4 短对话与独白",
+ "goal": "听前预读、关键词定位、意图题",
+ "lessons": [
+  {
+   "id": "en.2.5.1",
+   "title": "预读题干",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "一段 Part 3 对话",
+     "lines": [
+      [
+       "W",
+       "Hi, Tom. Have you finished coordinating the booth for next month's trade show?",
+       "嗨，汤姆。下个月展会的展位你协调好了吗？"
+      ],
+      [
+       "M",
+       "Almost. The venue confirmed our space, but registration for exhibitors closes on Friday.",
+       "差不多了。场地确认了我们的位置，但参展商登记周五截止。"
+      ],
+      [
+       "W",
+       "Then let's send the form today. I can fill it out if you give me the booth number.",
+       "那我们今天就把表交了吧。你把展位号给我，我来填。"
+      ],
+      [
+       "M",
+       "Great. It's B-14. I'll e-mail it to you right after lunch.",
+       "太好了，是 B-14。我午饭后马上发邮件给你。"
+      ]
+     ],
+     "note": "Part 3 共 13 段对话、39 题；Part 4 共 10 段独白、30 题。每段只放一遍，每段 3 道题印在试卷上。高手和新手的差别不在耳朵，而在<b>听之前那几秒有没有读题</b>。"
+    },
+    {
+     "t": "word",
+     "w": "venue"
+    },
+    {
+     "t": "word",
+     "w": "keynote"
+    },
+    {
+     "t": "word",
+     "w": "registration"
+    },
+    {
+     "t": "word",
+     "w": "workshop"
+    },
+    {
+     "t": "word",
+     "w": "coordinate"
+    },
+    {
+     "t": "word",
+     "w": "trade show"
+    },
+    {
+     "t": "key",
+     "title": "听前预读：三道题 = 三个要听的信息点",
+     "what": [
+      "录音开始前，用 <b>8–10 秒</b>把三道题的<b>题干</b>扫一遍（选项来不及就先不看）。",
+      "给每道题贴标签：<b>主旨 / 目的</b>（What are the speakers discussing? / Why is the man calling?）· <b>身份 / 地点</b>（Who most likely is the woman? / Where does the conversation take place?）· <b>细节</b>（When / How much / What problem）· <b>下一步</b>（What will the man probably do next?）",
+      "三道题的答案<b>按顺序</b>出现：第 1 题在开头，第 3 题在结尾。主旨题看开头两句，下一步题看最后一句。"
+     ],
+     "why": [
+      "不预读，你只能“边听边记”，一段对话 30 秒，记不住细节。预读后，你是“带着问题去找答案”：听到 Friday 就知道是第 2 题的时间。",
+      "官方指令播放时（Directions），正是预读后面几段题目的时间，不要发呆听说明。"
+     ],
+     "zh": [
+      "中国考生习惯先听完再看题（像课堂听力），托业反过来：题在前，录音在后，录音只为题服务。"
+     ],
+     "ex": [
+      [
+       "What are the speakers mainly discussing? —— 标签：主旨 → 听开头",
+       "两人主要在讨论什么？"
+      ],
+      [
+       "When does registration close? —— 标签：细节（时间）→ 听 Friday / by / until",
+       "登记什么时候截止？"
+      ],
+      [
+       "What will the man most likely do next? —— 标签：下一步 → 听最后一句 I'll…",
+       "男士接下来最可能做什么？"
+      ]
+     ],
+     "err": [
+      [
+       "录音放完才开始读题。",
+       "Read the three questions before the conversation starts.",
+       "题目要在录音之前读"
+      ],
+      [
+       "边听边从第 3 题开始找答案。",
+       "Answers usually come in order: question 1, then 2, then 3.",
+       "答案一般按题目顺序出现"
+      ]
+     ],
+     "sum": "听前<b>读三题干、贴标签</b>：主旨听开头，细节听关键词，下一步听结尾。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "“Why is the woman calling?” 属于哪一类题？",
+       "o": [
+        "细节题：听数字",
+        "下一步题：听结尾",
+        "主旨 / 目的题：听开头"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "“What will the man probably do next?” 的答案通常在哪里？",
+       "o": [
+        "对话的开头",
+        "对话的中间",
+        "对话的最后"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "🎧 Why is the woman calling?",
+       "o": [
+        "To register for a seminar",
+        "To change the time of a speech",
+        "To book a flight"
+       ],
+       "a": 1,
+       "say": "Hi, this is Rachel from the events office. I'm calling about the keynote speech at next week's seminar. The speaker's flight has been delayed, so we need to move her talk to the afternoon.",
+       "e": "原文：Hi, this is Rachel from the events office. I'm calling about the keynote speech at next week's seminar. The speaker's flight has been delayed, so we need to move her talk to the afternoon.　开头 I'm calling about… 就是目的；So we need to move her talk = 改时间。"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "booth"
+    },
+    {
+     "t": "word",
+     "w": "exhibitor"
+    },
+    {
+     "t": "word",
+     "w": "seminar"
+    },
+    {
+     "t": "word",
+     "w": "webinar"
+    },
+    {
+     "t": "word",
+     "w": "upcoming"
+    },
+    {
+     "t": "word",
+     "w": "RSVP"
+    },
+    {
+     "t": "key",
+     "title": "题干里的人：听 the man 还是 the woman",
+     "what": [
+      "题干写 <b>the man</b> / <b>the woman</b>，就要盯住那个人的话。",
+      "<b>What does the woman ask the man to do?</b> → 听<b>女人</b>说的请求：Could you… / Can you… / Would you mind… / Please…",
+      "<b>What does the man offer to do?</b> → 听<b>男人</b>主动提出：I can… / I'll… / Let me… / Why don't I…",
+      "<b>What does the woman suggest?</b> → Why don't you… / You should… / How about… / Maybe we could…"
+     ],
+     "why": [
+      "请求、提议、建议有固定句型。预读时看到 ask / offer / suggest，就把对应句型“放在耳边”等着。"
+     ],
+     "zh": [
+      "中文“我来吧”“你帮我……一下好吗”没有固定格式；英语里 Let me… / I'll… 一出现，后面就是 offer 题的答案。"
+     ],
+     "ex": [
+      [
+       "I can fill it out if you give me the booth number.",
+       "（offer）你给我展位号，我来填。"
+      ],
+      [
+       "Could you send me the updated agenda?",
+       "（ask）能把更新后的议程发给我吗？"
+      ],
+      [
+       "Why don't you RSVP online? It's faster.",
+       "（suggest）你何不在网上回复？更快。"
+      ]
+     ],
+     "err": [
+      [
+       "offer 题去听女人的 Could you。",
+       "For an offer question, listen to the man: Let me call the venue.",
+       "offer 题听提出帮忙的那个人"
+      ],
+      [
+       "ask 题去听男人的 I'll。",
+       "For a request question, listen to the woman: Could you print the name tags?",
+       "ask 题听提出请求的那个人"
+      ]
+     ],
+     "sum": "<b>ask</b> → Could you…；<b>offer</b> → I'll / Let me…；<b>suggest</b> → Why don't you…",
+     "drill": [
+      {
+       "t": "c",
+       "q": "W: The workshop room is too small for thirty people. / M: Let me call the venue and ask for a bigger one. —— What does the man offer to do?",
+       "o": [
+        "Move some chairs",
+        "Cancel the workshop",
+        "Contact the venue"
+       ],
+       "a": 2,
+       "e": "Let me call the venue = offer。"
+      },
+      {
+       "t": "c",
+       "q": "M: Could you print the name tags before the exhibitors arrive? / W: Sure. —— What does the man ask the woman to do?",
+       "o": [
+        "Meet some exhibitors",
+        "Print some name tags",
+        "Set up a booth"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "W: I can't find the webinar link. / M: Why don't you check the confirmation e-mail? —— What does the man suggest?",
+       "o": [
+        "Checking an e-mail",
+        "Calling the host",
+        "Joining a different webinar"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Have you finished coordinating the booth for next month's trade show?",
+     "zh": "下个月展会的展位你协调好了吗？",
+     "focus": "coordinating 重音在 or；trade show 两词都重读"
+    },
+    {
+     "t": "c",
+     "q": "🎧 Where can listeners sign up for the workshops?",
+     "o": [
+      "At the registration desk",
+      "In the main hall",
+      "On the website"
+     ],
+     "a": 0,
+     "say": "Good morning, everyone. Before the keynote begins, a few reminders. Lunch will be served in the main hall at noon. This afternoon's workshops start at one thirty, and you can sign up for them at the registration desk until eleven.",
+     "e": "原文：Good morning, everyone. Before the keynote begins, a few reminders. Lunch will be served in the main hall at noon. This afternoon's workshops start at one thirty, and you can sign up for them at the registration desk until eleven."
+    },
+    {
+     "t": "c",
+     "q": "🎧 When do the workshops begin?",
+     "o": [
+      "At noon",
+      "At one thirty",
+      "At eleven"
+     ],
+     "a": 1,
+     "say": "Good morning, everyone. Before the keynote begins, a few reminders. Lunch will be served in the main hall at noon. This afternoon's workshops start at one thirty, and you can sign up for them at the registration desk until eleven.",
+     "e": "原文：Good morning, everyone. Before the keynote begins, a few reminders. Lunch will be served in the main hall at noon. This afternoon's workshops start at one thirty, and you can sign up for them at the registration desk until eleven."
+    },
+    {
+     "t": "c",
+     "q": "Who most likely are the listeners of an announcement that begins “Welcome to the twentieth annual Home Design Trade Show. Exhibitors, please make sure your booths are ready by nine”?",
+     "o": [
+      "People working at a trade show",
+      "Hotel guests",
+      "Students in a classroom"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The ___ for the conference has not been decided yet, but it will probably be a hotel downtown.",
+     "o": [
+      "booth",
+      "venue",
+      "webinar",
+      "keynote"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Please ___ by Friday so we know how many guests to expect.",
+     "o": [
+      "register for",
+      "RSVP",
+      "coordinate",
+      "exhibit"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Ms. Chen will ___ the schedule with the hotel staff. (协调)",
+     "a": [
+      "coordinate"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Registration for exhibitors closes on Friday.",
+     "zh": "参展商登记周五截止。"
+    },
+    {
+     "t": "dict",
+     "a": "I can fill it out if you give me the booth number."
+    },
+    {
+     "t": "tr",
+     "zh": "下周的研讨会改成线上了。",
+     "a": [
+      "Next week's seminar has been moved online.",
+      "Next week's seminar will be held online.",
+      "The upcoming seminar has been moved online."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "会展词：venue、keynote、registration、workshop、coordinate、trade show、booth、exhibitor、seminar、webinar、upcoming、RSVP。",
+      "<b>重点</b>：听前读三道题干、贴标签 —— 主旨听开头、细节听关键词、下一步听结尾；答案按题目顺序出现。",
+      "<b>重点</b>：ask → Could you…；offer → I'll / Let me…；suggest → Why don't you…；盯住题干里的那个人。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.5.2",
+   "title": "细节题",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "机场柜台",
+     "lines": [
+      [
+       "M",
+       "Hi, I'm booked on the connecting flight to Denver, but the screen says it's overbooked.",
+       "你好，我订了转飞丹佛的航班，但屏幕上显示超售了。"
+      ],
+      [
+       "W",
+       "I'm sorry, sir. We can put you on the four o'clock flight instead, and we'll give you a meal voucher.",
+       "很抱歉，先生。我们可以给您改到四点的航班，并给您一张餐券。"
+      ],
+      [
+       "M",
+       "Four o'clock? Actually, I'd rather take the earlier one at two, if there's a seat.",
+       "四点？其实，如果有座位的话，我更想坐两点那班。"
+      ],
+      [
+       "W",
+       "Let me check. Yes, there's one seat left at two. Your bags will arrive at carousel six.",
+       "我查一下。有，两点那班还剩一个座位。您的行李会在六号转盘。"
+      ]
+     ],
+     "note": "细节题占 Part 3/4 的一大半。两个最大的陷阱：① 选项换了说法（同义替换）；② 对话里先说一个数字，后来改口。"
+    },
+    {
+     "t": "word",
+     "w": "booking"
+    },
+    {
+     "t": "word",
+     "w": "airfare"
+    },
+    {
+     "t": "word",
+     "w": "connecting flight"
+    },
+    {
+     "t": "word",
+     "w": "overbooked"
+    },
+    {
+     "t": "word",
+     "w": "carousel"
+    },
+    {
+     "t": "word",
+     "w": "concierge"
+    },
+    {
+     "t": "key",
+     "title": "同义替换：听到的词 ≠ 选项里的词",
+     "what": [
+      "正确选项很少和录音<b>一字不差</b>，而是换了说法：overbooked → <b>There are not enough seats.</b>　free of charge → <b>at no cost</b>　call back later → <b>contact her again</b>",
+      "反过来：选项里<b>原封不动出现录音里的词</b>，常常是陷阱（“同词陷阱”）。",
+      "常见替换方向：具体 → 概括（a laptop → some equipment；Denver → another city）；动作 → 目的（fill out a form → register）。"
+     ],
+     "why": [
+      "出题人知道考生会“听到哪个词就选哪个”，所以故意把录音里的词放进错误选项。正确答案要求你<b>理解意思</b>。"
+     ],
+     "zh": [
+      "中国考生做听力习惯“对词”（听到 carousel 就选带 carousel 的），在托业这是最常见的失分方式。"
+     ],
+     "ex": [
+      [
+       "The airfare went up. → The price of a ticket increased.",
+       "机票涨价了。→ 票价上涨了。"
+      ],
+      [
+       "I'll ask the concierge. → She will speak with a hotel employee.",
+       "我去问礼宾员。→ 她会和酒店员工谈。"
+      ],
+      [
+       "Checkout is at eleven. → Guests must leave their rooms by 11 a.m.",
+       "退房时间是十一点。→ 客人须在上午 11 点前离开房间。"
+      ]
+     ],
+     "err": [
+      [
+       "录音说 The suite was too noisy，就选带 suite 的选项。",
+       "The man complained about his room.",
+       "抓意思，不抓单词"
+      ],
+      [
+       "录音说 a projector，选项写 some equipment，所以不对。",
+       "Some equipment is a correct paraphrase of a projector.",
+       "具体 → 概括是正确的替换"
+      ]
+     ],
+     "sum": "正确选项 = <b>换了说法的原意</b>；原词照搬的选项要<b>多看一眼</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "录音：“All the seats on the flight have been sold.” 哪个选项是正确的同义替换？",
+       "o": [
+        "The seats are being cleaned.",
+        "The flight is full.",
+        "The flight has been sold to another airline."
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "录音：“The excursion to the castle is free for hotel guests.” 哪个选项意思相同？",
+       "o": [
+        "The hotel is near a castle.",
+        "The castle is closed to guests.",
+        "Guests can take a trip at no cost."
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "🎧 What is causing the delay?",
+       "o": [
+        "The hotel is overbooked.",
+        "A booking was canceled.",
+        "A guest left the room late."
+       ],
+       "a": 2,
+       "say": "Hi, this is Mark at the front desk. I'm calling to let you know your suite is ready, but because of a late checkout by the previous guest, housekeeping needs another twenty minutes.",
+       "e": "原文：Hi, this is Mark at the front desk. I'm calling to let you know your suite is ready, but because of a late checkout by the previous guest, housekeeping needs another twenty minutes.　a late checkout by the previous guest → A guest left the room late。"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "suite"
+    },
+    {
+     "t": "word",
+     "w": "checkout"
+    },
+    {
+     "t": "word",
+     "w": "lodging"
+    },
+    {
+     "t": "word",
+     "w": "excursion"
+    },
+    {
+     "t": "word",
+     "w": "detour"
+    },
+    {
+     "t": "word",
+     "w": "commuter"
+    },
+    {
+     "t": "key",
+     "title": "“改口”：最后说的才算",
+     "what": [
+      "对话里先出现一个信息，又被修正：<b>Actually…</b> / <b>Oh, wait…</b> / <b>I mean…</b> / <b>Rather than A, B</b> / <b>instead</b> / <b>not A but B</b>",
+      "被改掉的那个（四点）一定会出现在错误选项里，改后的那个（两点）才是答案。",
+      "也要注意 <b>not until</b>（直到……才）和 <b>no later than</b>（不晚于）。"
+     ],
+     "why": [
+      "这是数字、时间、地点题的标准陷阱。预读看到 When / What time / How many，就要准备“听到第二个数字”。"
+     ],
+     "zh": [
+      "中文“四点吧……哦不，两点”也会改口，但英语的信号词 Actually / Instead 很短、很轻，容易漏。"
+     ],
+     "ex": [
+      [
+       "The meeting is on Tuesday. Oh, wait, it was moved to Wednesday.",
+       "会议在周二。哦，等等，改到周三了。"
+      ],
+      [
+       "Let's take the highway. Actually, there's a detour, so we'd better take Fifth Avenue instead.",
+       "走高速吧。不对，那边绕行，我们最好改走第五大道。"
+      ],
+      [
+       "The shuttle won't leave until all the commuters are on board.",
+       "所有通勤者上车后班车才会开。"
+      ]
+     ],
+     "err": [
+      [
+       "录音：“four o'clock… actually, the earlier one at two.” 答案选 four o'clock。",
+       "The man will take the two o'clock flight.",
+       "改口后的才是答案"
+      ]
+     ],
+     "sum": "<b>Actually / Oh wait / instead</b> 后面才是答案；被改掉的信息是陷阱。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 Where will the speakers meet?",
+       "o": [
+        "In a meeting room",
+        "In the hotel lobby",
+        "At the concierge desk"
+       ],
+       "a": 2,
+       "say": "Let's meet at the hotel lobby at nine. Oh, wait, the lobby is being renovated this week. Let's meet in front of the concierge desk on the second floor instead.",
+       "e": "原文：Let's meet at the hotel lobby at nine. Oh, wait, the lobby is being renovated this week. Let's meet in front of the concierge desk on the second floor instead."
+      },
+      {
+       "t": "c",
+       "q": "🎧 How many nights is the booking for?",
+       "o": [
+        "Four",
+        "Five",
+        "Three"
+       ],
+       "a": 0,
+       "say": "Your booking is for three nights. Actually, I see you extended it yesterday, so it's four nights, with checkout on Friday.",
+       "e": "原文：Your booking is for three nights. Actually, I see you extended it yesterday, so it's four nights, with checkout on Friday."
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Actually, I'd rather take the earlier one at two, if there's a seat.",
+     "zh": "其实，如果有座位，我更想坐两点那班。",
+     "focus": "Actually 后稍停，重音落在 earlier 和 two"
+    },
+    {
+     "t": "c",
+     "q": "🎧 Why has the flight been delayed?",
+     "o": [
+      "Because the flight is overbooked",
+      "Because of the weather",
+      "Because of a mechanical problem"
+     ],
+     "a": 1,
+     "say": "Attention, passengers on Flight 208 to Chicago. Because of heavy snow in Chicago, this flight has been delayed by two hours. Passengers with connecting flights should speak to an agent at Gate 12 to rebook.",
+     "e": "原文：Attention, passengers on Flight 208 to Chicago. Because of heavy snow in Chicago, this flight has been delayed by two hours. Passengers with connecting flights should speak to an agent at Gate 12 to rebook.　heavy snow → the weather。"
+    },
+    {
+     "t": "c",
+     "q": "🎧 What should some passengers do?",
+     "o": [
+      "Talk to an airline employee",
+      "Buy a new ticket online",
+      "Collect their bags at a carousel"
+     ],
+     "a": 0,
+     "say": "Attention, passengers on Flight 208 to Chicago. Because of heavy snow in Chicago, this flight has been delayed by two hours. Passengers with connecting flights should speak to an agent at Gate 12 to rebook.",
+     "e": "原文：Attention, passengers on Flight 208 to Chicago. Because of heavy snow in Chicago, this flight has been delayed by two hours. Passengers with connecting flights should speak to an agent at Gate 12 to rebook.　speak to an agent → Talk to an airline employee。"
+    },
+    {
+     "t": "c",
+     "q": "W: Did you find cheap lodging for the trip? / M: Not really. The hotels downtown were all over two hundred dollars, so I booked a room near the airport. —— Why did the man book a room near the airport?",
+     "o": [
+      "The downtown hotels were too expensive.",
+      "He has an early flight.",
+      "The airport hotel has a pool."
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "The ___ helped us reserve a table at a famous restaurant.",
+     "o": [
+      "suite",
+      "commuter",
+      "concierge",
+      "carousel"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Because of road construction, drivers must take a ___.",
+     "o": [
+      "checkout",
+      "detour",
+      "booking",
+      "excursion"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "___ has gone up by fifteen percent, so many people are traveling by train.",
+     "o": [
+      "Lodging",
+      "Airfare",
+      "Concierge",
+      "Checkout"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "Please collect your luggage from ___ number four. (行李转盘)",
+     "a": [
+      "carousel"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "We can put you on the four o'clock flight instead.",
+     "zh": "我们可以给您改到四点的航班。"
+    },
+    {
+     "t": "dict",
+     "a": "Your bags will arrive at carousel six."
+    },
+    {
+     "t": "tr",
+     "zh": "这趟航班超售了。",
+     "a": [
+      "This flight is overbooked.",
+      "The flight has been overbooked.",
+      "The flight is overbooked."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "旅行词：booking、airfare、connecting flight、overbooked、carousel、concierge、suite、checkout、lodging、excursion、detour、commuter。",
+      "<b>重点</b>：同义替换 —— 正确选项是换了说法的原意；照搬原词的选项常是陷阱。",
+      "<b>重点</b>：改口信号 Actually / Oh wait / instead —— 最后说的才算。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.5.3",
+   "title": "推断题",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "“That's the third time this week”",
+     "lines": [
+      [
+       "M",
+       "The printer on our floor is jammed again.",
+       "我们这层的打印机又卡纸了。"
+      ],
+      [
+       "W",
+       "That's the third time this week.",
+       "这周已经第三次了。"
+      ],
+      [
+       "M",
+       "I know. With the new staff joining, it's being used more than ever.",
+       "是啊。新员工一来，用得比以前都多。"
+      ],
+      [
+       "W",
+       "I'll mention it at the staffing meeting. Maybe we can get a second one.",
+       "我在人员会议上提一下。也许能再申请一台。"
+      ]
+     ],
+     "note": "“That's the third time this week.” 字面是陈述，意图是<b>抱怨</b>。Part 3/4 每套有 5 题左右考“说话人为什么说这句话”，还有大量 most likely 推断题。"
+    },
+    {
+     "t": "word",
+     "w": "telecommute"
+    },
+    {
+     "t": "word",
+     "w": "headcount"
+    },
+    {
+     "t": "word",
+     "w": "workforce"
+    },
+    {
+     "t": "word",
+     "w": "staffing"
+    },
+    {
+     "t": "word",
+     "w": "relocate"
+    },
+    {
+     "t": "word",
+     "w": "relocation"
+    },
+    {
+     "t": "key",
+     "title": "意图题：Why does the man say, “…”?",
+     "what": [
+      "题干里引了一句原话，问<b>说话人的用意</b>。答案从不是字面意思，而是这句话在<b>上下文</b>里起的作用。",
+      "常见用意：<b>抱怨</b>（That's the third time this week.）· <b>拒绝 / 婉拒</b>（I have a client meeting at two.）· <b>表示惊讶</b>（Already?）· <b>提醒 / 担心</b>（The deadline is tomorrow, though.）· <b>安慰</b>（It happens to everyone.）· <b>同意</b>（You read my mind.）",
+      "方法：预读时把引号里的话<b>先划出来</b>，听到它时注意<b>前一句和后一句</b>。"
+     ],
+     "why": [
+      "同一句话在不同上下文里用意不同：“I have a meeting at two.” 回答“两点能来吗？”是拒绝；回答“你几点有空？”是说明时间。"
+     ],
+     "zh": [
+      "中文也讲“话里有话”，但托业考生常因为没听清前文，只能按字面意思选，就掉进“字面选项”的陷阱。"
+     ],
+     "ex": [
+      [
+       "W: Can you help me with the onboarding slides? / M: I'm leaving for the airport in ten minutes.",
+       "（婉拒）帮我做入职培训幻灯片好吗？——我十分钟后去机场。"
+      ],
+      [
+       "M: The new mentor program starts next week. / W: Already? I thought it was in June.",
+       "（惊讶）导师计划下周开始。——这么快？我以为在六月。"
+      ]
+     ],
+     "err": [
+      [
+       "Why does the man say, “I'm leaving for the airport in ten minutes”? —— 选 To explain where he is going.",
+       "He says it to decline the request.",
+       "看前一句：对方在请他帮忙，所以是婉拒"
+      ]
+     ],
+     "sum": "引号题 = 问<b>用意</b>：先找<b>前一句</b>，再判断是抱怨、拒绝、惊讶还是提醒。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "W: Could you review my report this afternoon? / M: I have back-to-back interviews until six. —— Why does the man say, “I have back-to-back interviews until six”?",
+       "o": [
+        "To show he likes his job",
+        "To say he is not available",
+        "To ask for help with interviews"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "M: We hired twenty people this month. / W: That's more than last year's total! —— What does the woman imply?",
+       "o": [
+        "The number is surprisingly high.",
+        "The company should hire more.",
+        "Last year was a good year."
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "W: The elevator is out of order again. / M: That's the second time this month. —— What does the man mean?",
+       "o": [
+        "He will repair the elevator.",
+        "He prefers taking the stairs.",
+        "He is annoyed about the problem."
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "morale"
+    },
+    {
+     "t": "word",
+     "w": "retention"
+    },
+    {
+     "t": "word",
+     "w": "perk"
+    },
+    {
+     "t": "word",
+     "w": "probation"
+    },
+    {
+     "t": "word",
+     "w": "onboarding"
+    },
+    {
+     "t": "word",
+     "w": "mentor"
+    },
+    {
+     "t": "key",
+     "title": "推断题：most likely / probably / imply",
+     "what": [
+      "<b>身份</b>：Who most likely is the man? → 听职业线索：check your prescription → pharmacist；fix the pipe → plumber",
+      "<b>地点</b>：Where most likely are the speakers? → 听场景词：carousel, gate → airport；aisle, checkout → store",
+      "<b>暗示</b>：What does the woman imply? → 听语气和转折：but / though / unfortunately",
+      "推断要有<b>录音里的证据</b>，不能凭常识加戏。"
+     ],
+     "why": [
+      "most likely 的意思是“没直接说，但线索指向”。正确答案通常需要把两三个线索拼起来。"
+     ],
+     "zh": [
+      "中国考生容易“过度推断”：选一个听起来合理、但录音里没有根据的选项。"
+     ],
+     "ex": [
+      [
+       "“Welcome to your first day. I'll be your mentor during the probation period.” → The man is probably a new employee.",
+       "欢迎第一天上班，试用期我会当你的导师。→ 男士大概是新员工。"
+      ],
+      [
+       "“Our workforce has doubled, but morale is low.” → The company has grown quickly.",
+       "员工人数翻倍了，但士气很低。→ 公司扩张很快。"
+      ]
+     ],
+     "err": [
+      [
+       "录音只说 The office is relocating downtown，选 The rent downtown is cheaper。",
+       "The company is moving to a new location.",
+       "推断不能超出录音的证据"
+      ]
+     ],
+     "sum": "<b>most likely</b> = 拼线索；选项必须在录音里<b>找得到依据</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 Who most likely are the listeners?",
+       "o": [
+        "Bank customers",
+        "New employees",
+        "Job recruiters"
+       ],
+       "a": 1,
+       "say": "Welcome, everyone, to your first day at Hartley Bank. This morning we'll go over the onboarding materials, and this afternoon you'll meet the mentors who will support you during your three-month probation.",
+       "e": "原文：Welcome, everyone, to your first day at Hartley Bank. This morning we'll go over the onboarding materials, and this afternoon you'll meet the mentors who will support you during your three-month probation.　first day / onboarding / probation → 新员工。"
+      },
+      {
+       "t": "c",
+       "q": "🎧 What kind of business is the speaker calling for?",
+       "o": [
+        "A real estate office",
+        "A moving company",
+        "A travel agency"
+       ],
+       "a": 1,
+       "say": "Thanks for calling Relocation Services. All our agents are busy helping other customers. If you're moving within the city, press one. For overseas relocation, press two.",
+       "e": "原文：Thanks for calling Relocation Services. All our agents are busy helping other customers. If you're moving within the city, press one. For overseas relocation, press two."
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "That's the third time this week.",
+     "zh": "这周已经第三次了。",
+     "focus": "third 和 week 重读，语调下降，带出不满"
+    },
+    {
+     "t": "c",
+     "q": "🎧 What problem is mentioned?",
+     "o": [
+      "The office is too small.",
+      "Employees are leaving the company.",
+      "Sales have dropped."
+     ],
+     "a": 1,
+     "say": "As you know, our retention rate has dropped this year. To keep good staff, we're adding a new perk: starting in May, employees can telecommute two days a week.",
+     "e": "原文：As you know, our retention rate has dropped this year. To keep good staff, we're adding a new perk: starting in May, employees can telecommute two days a week.　retention rate has dropped = 留不住人。"
+    },
+    {
+     "t": "c",
+     "q": "🎧 What will employees be able to do in May?",
+     "o": [
+      "Take longer vacations",
+      "Work from home part of the week",
+      "Join a mentor program"
+     ],
+     "a": 1,
+     "say": "As you know, our retention rate has dropped this year. To keep good staff, we're adding a new perk: starting in May, employees can telecommute two days a week.",
+     "e": "原文：As you know, our retention rate has dropped this year. To keep good staff, we're adding a new perk: starting in May, employees can telecommute two days a week.　telecommute two days a week → work from home part of the week。"
+    },
+    {
+     "t": "c",
+     "q": "The company plans to ___ its headquarters to Singapore next year.",
+     "o": [
+      "relocate",
+      "telecommute",
+      "mentor",
+      "retain"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Free parking is one of the best ___ of working here.",
+     "o": [
+      "probation",
+      "perks",
+      "morale",
+      "headcount"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "New employees must complete a three-month ___ period.",
+     "o": [
+      "workforce",
+      "relocation",
+      "retention",
+      "probation"
+     ],
+     "a": 3
+    },
+    {
+     "t": "f",
+     "q": "Team events can improve staff ___. (士气)",
+     "a": [
+      "morale"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "The department's ___ has grown from ten to twenty-five. (人员数)",
+     "a": [
+      "headcount"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "I'll mention it at the staffing meeting.",
+     "zh": "我会在人员会议上提一下。"
+    },
+    {
+     "t": "dict",
+     "a": "That's the third time this week."
+    },
+    {
+     "t": "tr",
+     "zh": "越来越多的员工选择远程办公。",
+     "a": [
+      "More and more employees choose to telecommute.",
+      "More and more employees are choosing to telecommute.",
+      "More and more staff are telecommuting."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "人事词：telecommute、headcount、workforce、staffing、relocate、relocation、morale、retention、perk、probation、onboarding、mentor。",
+      "<b>重点</b>：引号意图题 —— 找前一句，判断是抱怨、拒绝、惊讶还是提醒，不选字面意思。",
+      "<b>重点</b>：most likely / imply —— 拼线索，选项必须在录音里有依据。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.5.4",
+   "title": "图表题",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Look at the graphic",
+     "lines": [
+      [
+       "",
+       "Graphic: Quarterly Earnings — Q1 $2.1 million · Q2 $2.6 million · Q3 $1.8 million · Q4 $2.9 million",
+       "图表：季度收益 —— 一季度 210 万 · 二季度 260 万 · 三季度 180 万 · 四季度 290 万"
+      ],
+      [
+       "W",
+       "Our earnings dropped in the summer quarter because of the factory renovation.",
+       "因为工厂翻修，我们夏季那个季度的收益下降了。"
+      ],
+      [
+       "M",
+       "Right, but we made up for it in the last quarter with the holiday clearance sale.",
+       "对，但最后一季度靠节日清仓促销补回来了。"
+      ],
+      [
+       "",
+       "Question: Look at the graphic. How much did the company earn in the quarter the woman mentions?",
+       "题目：看图表。女士提到的那个季度公司收益多少？"
+      ],
+      [
+       "",
+       "Answer: $1.8 million — the summer quarter is Q3.",
+       "答案：180 万 —— 夏季那个季度是三季度。"
+      ]
+     ],
+     "note": "Part 3 最后几段对话、Part 4 最后几段独白都配一张图（表格、日程、地图、优惠券、柱状图）。题目一定以 Look at the graphic 开头。"
+    },
+    {
+     "t": "word",
+     "w": "projection"
+    },
+    {
+     "t": "word",
+     "w": "earnings"
+    },
+    {
+     "t": "word",
+     "w": "quarterly"
+    },
+    {
+     "t": "word",
+     "w": "revenue"
+    },
+    {
+     "t": "word",
+     "w": "expenditure"
+    },
+    {
+     "t": "word",
+     "w": "surplus"
+    },
+    {
+     "t": "key",
+     "title": "图表题：选项是一列，录音说的是另一列",
+     "what": [
+      "图表题的四个选项来自图表的<b>一列</b>（如价格），而录音里说的是<b>同一行的另一列</b>（如商品名、日期、位置）。",
+      "解法：预读时看清选项是哪一列 → 听录音时盯住<b>另一列</b> → 在图上找到那一行，读出答案。",
+      "例：选项是 $1.8 million / $2.1 million…，录音不会说数字，只会说 the summer quarter / the quarter with the renovation。"
+     ],
+     "why": [
+      "如果录音直接说出了选项里的内容，这题就不用看图了 —— 出题人不会这样出。所以<b>听到选项里的词反而要警惕</b>。"
+     ],
+     "zh": [
+      "中国考生容易一直盯着选项那一列等，结果录音根本不说，一题就丢了。"
+     ],
+     "ex": [
+      [
+       "Graphic: Room 101 Marketing · Room 102 Sales · Room 103 Accounting. “I'll be in the room next to Sales.” → Q: Which room? 选项 101 / 103……",
+       "听到“销售部隔壁”，在图上找位置。"
+      ],
+      [
+       "Coupon: 10% off over $50 · 20% off over $100. “I spent about seventy dollars.” → Q: What discount will she get? → 10%",
+       "听金额，在优惠券上找折扣。"
+      ]
+     ],
+     "err": [
+      [
+       "选项是房间号，就一直等录音说 Room 103。",
+       "The options are room numbers, so listen for the department or location instead.",
+       "录音说的是另一列"
+      ]
+     ],
+     "sum": "<b>看选项是哪一列 → 听另一列 → 在图上对行</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Graphic: Flight 310 → Boston, Gate 5 · Flight 422 → Denver, Gate 8 · Flight 517 → Miami, Gate 11. 录音：“My connecting flight goes to Denver.” Look at the graphic. Which gate will the man go to?",
+       "o": [
+        "Gate 8",
+        "Gate 5",
+        "Gate 11"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Graphic: Monday — Budget review · Tuesday — Client visit · Wednesday — Staff training · Thursday — Board meeting. 录音：“Let's meet the day after the client visit.” Which day will they meet?",
+       "o": [
+        "Tuesday",
+        "Thursday",
+        "Wednesday"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "🎧 Graphic: Equipment 40% · Salaries 30% · Rent 20% · Marketing 10%. Look at the graphic. Which category will be cut?",
+       "o": [
+        "Salaries",
+        "Equipment",
+        "Rent"
+       ],
+       "a": 0,
+       "say": "Our biggest expenditure last year was on equipment, about forty percent, followed by salaries. This year, we'll try to cut the second-largest category by ten percent.",
+       "e": "原文：Our biggest expenditure last year was on equipment, about forty percent, followed by salaries. This year, we'll try to cut the second-largest category by ten percent.　second-largest → 第二大 = 工资。"
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "deficit"
+    },
+    {
+     "t": "word",
+     "w": "markdown"
+    },
+    {
+     "t": "word",
+     "w": "clearance"
+    },
+    {
+     "t": "word",
+     "w": "rebate"
+    },
+    {
+     "t": "word",
+     "w": "surcharge"
+    },
+    {
+     "t": "word",
+     "w": "floor plan"
+    },
+    {
+     "t": "key",
+     "title": "比较、增减、排名的说法",
+     "what": [
+      "增减：<b>rise / increase / go up</b> ↔ <b>drop / decline / fall / go down</b>；幅度：<b>sharply / slightly / steadily</b>",
+      "比较：<b>twice as much as</b>（两倍）· <b>the second-highest</b>（第二高）· <b>exceed / fall short of</b>（超出 / 未达到）",
+      "结果：<b>surplus</b>（盈余）↔ <b>deficit</b>（赤字）；<b>projection</b>（预测）vs actual（实际）"
+     ],
+     "why": [
+      "图表题里，录音几乎不会直接说出数字，而是用“最高的那个”“比上季度少的那个”“第二便宜的”来指代。"
+     ],
+     "zh": [
+      "中文“第二高”英语是 the second-highest，“翻倍”是 double / twice as much。顺序和中文一样，但要熟到一听就懂。"
+     ],
+     "ex": [
+      [
+       "Revenue rose sharply in the fourth quarter.",
+       "第四季度营收大幅增长。"
+      ],
+      [
+       "Our expenditure exceeded the projection by ten percent.",
+       "我们的支出比预测高出百分之十。"
+      ],
+      [
+       "The second-cheapest option includes a rebate.",
+       "第二便宜的方案含返现。"
+      ]
+     ],
+     "err": [
+      [
+       "The sales fell short the target.",
+       "The sales fell short of the target.",
+       "fall short of + 目标"
+      ],
+      [
+       "It costs twice than the old one.",
+       "It costs twice as much as the old one.",
+       "twice as much as"
+      ]
+     ],
+     "sum": "<b>rise / drop + sharply / slightly</b>；<b>the second-highest</b>；<b>exceed ↔ fall short of</b>；<b>surplus ↔ deficit</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Graphic: Plan A $40 · Plan B $55 · Plan C $70 · Plan D $85. 录音：“I'll go with the second-cheapest plan.” How much will the man pay?",
+       "o": [
+        "$70",
+        "$40",
+        "$55"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "“We spent more than we earned this year.” 说明公司有：",
+       "o": [
+        "a surplus",
+        "a rebate",
+        "a deficit"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "Sales fell ___ of our projection this quarter.",
+       "a": [
+        "short"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "We made up for it in the last quarter with the holiday clearance sale.",
+     "zh": "最后一季度靠节日清仓促销补回来了。",
+     "focus": "made up for it 连读 /meɪdʌpfɚɪt/"
+    },
+    {
+     "t": "c",
+     "q": "🎧 What is offered to customers who spend over five hundred dollars?",
+     "o": [
+      "Free delivery",
+      "Money back by mail",
+      "A thirty percent discount on chairs"
+     ],
+     "a": 1,
+     "say": "Welcome to Benson's Furniture. This week only, all sofas are marked down by thirty percent, and if you spend over five hundred dollars, you'll also receive a fifty-dollar rebate by mail. Please note that a delivery surcharge applies to orders outside the city.",
+     "e": "原文：Welcome to Benson's Furniture. This week only, all sofas are marked down by thirty percent, and if you spend over five hundred dollars, you'll also receive a fifty-dollar rebate by mail. Please note that a delivery surcharge applies to orders outside the city.　a fifty-dollar rebate by mail → money back by mail。"
+    },
+    {
+     "t": "c",
+     "q": "🎧 What will customers outside the city have to pay?",
+     "o": [
+      "A higher price for sofas",
+      "A membership fee",
+      "An extra delivery fee"
+     ],
+     "a": 2,
+     "say": "Welcome to Benson's Furniture. This week only, all sofas are marked down by thirty percent, and if you spend over five hundred dollars, you'll also receive a fifty-dollar rebate by mail. Please note that a delivery surcharge applies to orders outside the city.",
+     "e": "原文：Welcome to Benson's Furniture. This week only, all sofas are marked down by thirty percent, and if you spend over five hundred dollars, you'll also receive a fifty-dollar rebate by mail. Please note that a delivery surcharge applies to orders outside the city.　surcharge = 附加费。"
+    },
+    {
+     "t": "c",
+     "q": "Graphic (floor plan): Entrance → Reception → Room A (left) · Room B (right) · Kitchen (end of hall). 录音：“The interviews are in the room across from Room A.” Where are the interviews?",
+     "o": [
+      "Room A",
+      "The kitchen",
+      "Room B"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Thanks to strong sales, the company ended the year with a ___ of two million dollars.",
+     "o": [
+      "surcharge",
+      "markdown",
+      "surplus",
+      "deficit"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Our ___ for next year show a five percent increase in revenue.",
+     "o": [
+      "rebates",
+      "clearances",
+      "expenditures",
+      "projections"
+     ],
+     "a": 3
+    },
+    {
+     "t": "c",
+     "q": "Everything in the store must go, so we're holding a ___ sale.",
+     "o": [
+      "quarterly",
+      "deficit",
+      "clearance",
+      "projection"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "A ten-dollar ___ is added for express delivery. (附加费)",
+     "a": [
+      "surcharge"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Our earnings dropped in the summer quarter.",
+     "zh": "我们夏季那个季度的收益下降了。"
+    },
+    {
+     "t": "dict",
+     "a": "Revenue rose sharply in the fourth quarter."
+    },
+    {
+     "t": "tr",
+     "zh": "今年的支出超出了预测。",
+     "a": [
+      "This year's expenditure exceeded the projection.",
+      "Expenditures this year exceeded the projections.",
+      "This year's spending exceeded the projection."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "数字词：projection、earnings、quarterly、revenue、expenditure、surplus、deficit、markdown、clearance、rebate、surcharge、floor plan。",
+      "<b>重点</b>：图表题 —— 看清选项是哪一列，听另一列，在图上对行。",
+      "<b>重点</b>：rise / drop + sharply / slightly；the second-highest；exceed ↔ fall short of；surplus ↔ deficit。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.5.5",
+   "title": "Part 3/4 实战",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "一段 Part 4 独白",
+     "lines": [
+      [
+       "",
+       "Good morning, tenants. This is Maria from building management.",
+       "各位租户早上好，我是物业管理处的玛丽亚。"
+      ],
+      [
+       "",
+       "I'm sorry for the short notice, but the water will be shut off tomorrow from nine to noon while our plumber replaces some pipes.",
+       "很抱歉通知得比较仓促：明天九点到中午停水，我们的水管工要更换一些管道。"
+      ],
+      [
+       "",
+       "The elevator on the east side is also out of order, and an electrician will look at it this afternoon.",
+       "东侧电梯也坏了，下午会有电工来查看。"
+      ],
+      [
+       "",
+       "If you have any questions, please call the management office rather than the landlord directly.",
+       "如有任何问题，请打电话给物业办公室，不要直接联系房东。"
+      ]
+     ],
+     "note": "Part 4 独白的第一句告诉你“这是什么场合”，最后一句告诉你“听众要做什么”。抓住头尾，三道题至少能对两道。"
+    },
+    {
+     "t": "word",
+     "w": "maintenance"
+    },
+    {
+     "t": "word",
+     "w": "renovation"
+    },
+    {
+     "t": "word",
+     "w": "renovate"
+    },
+    {
+     "t": "word",
+     "w": "contractor"
+    },
+    {
+     "t": "word",
+     "w": "plumber"
+    },
+    {
+     "t": "word",
+     "w": "electrician"
+    },
+    {
+     "t": "key",
+     "title": "Part 4 五种独白：第一句就定类型",
+     "what": [
+      "<b>电话留言</b>：Hi, this is… calling from… / I'm calling about… → 问：Why is the speaker calling?",
+      "<b>公共广播</b>：Attention, passengers / shoppers… → 问：Where is the announcement being made?",
+      "<b>会议 / 培训开场</b>：Thank you all for coming. / Let's get started. → 问：Who most likely are the listeners?",
+      "<b>广告</b>：Are you looking for…? / This weekend only… → 问：What is being advertised?",
+      "<b>导游 / 介绍</b>：Welcome to… / Our first stop is… → 问：Where are the listeners?"
+     ],
+     "why": [
+      "每种独白有固定结构：开头（谁、在哪、为什么）→ 中间（细节、问题）→ 结尾（请求、下一步）。知道类型，就知道信息会在哪里出现。"
+     ],
+     "zh": [
+      "中文广播也有套路（“各位旅客请注意”），英语的开场套路更固定，听一个词就能判断场合。"
+     ],
+     "ex": [
+      [
+       "Attention, shoppers. The store will close in fifteen minutes.",
+       "各位顾客请注意，本店将在十五分钟后打烊。"
+      ],
+      [
+       "Hi, this is Dan from Lakeside Contractors. I'm calling about the renovation of your kitchen.",
+       "你好，我是湖畔承包公司的丹，打电话是关于您厨房翻修的事。"
+      ]
+     ],
+     "err": [
+      [
+       "Attention, passengers… —— 问 Where? 选 In an office.",
+       "The announcement is at an airport, a station or on a train.",
+       "passengers → 交通场所"
+      ]
+     ],
+     "sum": "<b>第一句定类型</b>：Hi, this is → 留言；Attention → 广播；Thank you for coming → 会议；Are you looking for → 广告；Welcome to → 导游。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "A talk begins: “Attention, shoppers. Our customer service desk will be closed for maintenance.” Where is the talk most likely taking place?",
+       "o": [
+        "In a store",
+        "At an airport",
+        "In a hospital"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "A talk begins: “Hi, Ms. Park. This is Leo from Greenway Electric, returning your call about the lights in your office.” What kind of talk is this?",
+       "o": [
+        "A telephone message",
+        "A radio advertisement",
+        "A tour"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "custodian"
+    },
+    {
+     "t": "word",
+     "w": "tenant"
+    },
+    {
+     "t": "word",
+     "w": "landlord"
+    },
+    {
+     "t": "word",
+     "w": "utilities"
+    },
+    {
+     "t": "word",
+     "w": "out of order"
+    },
+    {
+     "t": "word",
+     "w": "on short notice"
+    },
+    {
+     "t": "key",
+     "title": "结尾两类题：下一步 & 要求做什么",
+     "what": [
+      "<b>What will the listeners probably do next?</b> → 听最后一句：<b>Now let's… / First, I'd like you to… / Let me hand it over to…</b>",
+      "<b>What are the listeners asked to do?</b> → 听：<b>Please… / Make sure to… / Don't forget to… / I'd like you to… / Be sure to…</b>",
+      "<b>What does the speaker say she will do?</b> → 听：<b>I'll… / I'm going to…</b>"
+     ],
+     "why": [
+      "这两类题几乎每段独白都有一道，答案在最后 10 秒。前面的细节没听清，也要把结尾听好。"
+     ],
+     "zh": [
+      "中文常把要求放在开头（“请大家注意……”），英语独白常在结尾说 Please…。"
+     ],
+     "ex": [
+      [
+       "Now, let's take a short break before the next session.",
+       "现在我们先短暂休息，再开始下一场。"
+      ],
+      [
+       "Please make sure to sign out with the custodian before you leave.",
+       "离开前请务必向管理员签退。"
+      ]
+     ],
+     "err": [
+      [
+       "Q: What are listeners asked to do? —— 选说话人自己要做的 I'll call the electrician。",
+       "For an asked-to-do question, listen for Please or Make sure to.",
+       "asked to do 听 Please；speaker will do 听 I'll"
+      ]
+     ],
+     "sum": "<b>do next</b> → Now let's…；<b>asked to do</b> → Please / Make sure to…；<b>speaker will do</b> → I'll…",
+     "drill": [
+      {
+       "t": "c",
+       "q": "🎧 What will the listeners probably do next?",
+       "o": [
+        "Take a break",
+        "Watch a safety video",
+        "Go to the warehouse"
+       ],
+       "a": 2,
+       "say": "That's all for the safety update. Now, let's walk over to the warehouse so I can show you where the emergency exits are.",
+       "e": "原文：That's all for the safety update. Now, let's walk over to the warehouse so I can show you where the emergency exits are."
+      },
+      {
+       "t": "c",
+       "q": "🎧 What are the listeners asked to do?",
+       "o": [
+        "E-mail the slides",
+        "Sign a form",
+        "Return their badges"
+       ],
+       "a": 2,
+       "say": "Before you leave today, please make sure to return your visitor badges to the front desk. I'll e-mail everyone the presentation slides tonight.",
+       "e": "原文：Before you leave today, please make sure to return your visitor badges to the front desk. I'll e-mail everyone the presentation slides tonight.　please make sure to return your visitor badges。"
+      },
+      {
+       "t": "c",
+       "q": "🎧 What does the speaker say she will do?",
+       "o": [
+        "Give a presentation tomorrow",
+        "Collect the badges herself",
+        "Send some slides"
+       ],
+       "a": 2,
+       "say": "Before you leave today, please make sure to return your visitor badges to the front desk. I'll e-mail everyone the presentation slides tonight.",
+       "e": "原文：Before you leave today, please make sure to return your visitor badges to the front desk. I'll e-mail everyone the presentation slides tonight.　I'll e-mail everyone the slides → send some slides。"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "I'm sorry for the short notice, but the water will be shut off tomorrow from nine to noon.",
+     "zh": "很抱歉通知仓促，明天九点到中午停水。",
+     "focus": "shut off 连读，nine 和 noon 重读"
+    },
+    {
+     "t": "c",
+     "q": "🎧 Who most likely is the speaker?",
+     "o": [
+      "A landlord",
+      "A building manager",
+      "A plumber"
+     ],
+     "a": 1,
+     "say": "Good morning, tenants. This is Maria from building management. I'm sorry for the short notice, but the water will be shut off tomorrow from nine to noon while our plumber replaces some pipes. If you have any questions, please call the management office.",
+     "e": "原文：Good morning, tenants. This is Maria from building management. I'm sorry for the short notice, but the water will be shut off tomorrow from nine to noon while our plumber replaces some pipes. If you have any questions, please call the management office."
+    },
+    {
+     "t": "c",
+     "q": "🎧 Why does the speaker apologize?",
+     "o": [
+      "The water bill has gone up.",
+      "The plumber is late.",
+      "She is giving the information late."
+     ],
+     "a": 2,
+     "say": "Good morning, tenants. This is Maria from building management. I'm sorry for the short notice, but the water will be shut off tomorrow from nine to noon while our plumber replaces some pipes. If you have any questions, please call the management office.",
+     "e": "原文：Good morning, tenants. This is Maria from building management. I'm sorry for the short notice, but the water will be shut off tomorrow from nine to noon while our plumber replaces some pipes. If you have any questions, please call the management office.　sorry for the short notice = 通知仓促。"
+    },
+    {
+     "t": "c",
+     "q": "🎧 What are listeners asked to do if they have questions?",
+     "o": [
+      "Call an office",
+      "Visit the plumber",
+      "Send an e-mail"
+     ],
+     "a": 0,
+     "say": "Good morning, tenants. This is Maria from building management. I'm sorry for the short notice, but the water will be shut off tomorrow from nine to noon while our plumber replaces some pipes. If you have any questions, please call the management office.",
+     "e": "原文：Good morning, tenants. This is Maria from building management. I'm sorry for the short notice, but the water will be shut off tomorrow from nine to noon while our plumber replaces some pipes. If you have any questions, please call the management office."
+    },
+    {
+     "t": "c",
+     "q": "The rent includes all ___ such as water, gas and electricity.",
+     "o": [
+      "renovations",
+      "contractors",
+      "utilities",
+      "tenants"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "The ___ cleans the hallways every evening.",
+     "o": [
+      "tenant",
+      "custodian",
+      "landlord",
+      "electrician"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "The vending machine is ___, so please use the one on the second floor.",
+     "o": [
+      "on short notice",
+      "under maintenance fee",
+      "out of order",
+      "in renovation"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "We hired a ___ to renovate the lobby. (承包商)",
+     "a": [
+      "contractor"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "The water will be shut off tomorrow from nine to noon.",
+     "zh": "明天九点到中午停水。"
+    },
+    {
+     "t": "dict",
+     "a": "I'm sorry for the short notice."
+    },
+    {
+     "t": "tr",
+     "zh": "电梯在维修，请走楼梯。",
+     "a": [
+      "The elevator is under maintenance, so please use the stairs.",
+      "The elevator is being repaired. Please take the stairs.",
+      "The elevator is under maintenance. Please use the stairs."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "物业词：maintenance、renovation、renovate、contractor、plumber、electrician、custodian、tenant、landlord、utilities、out of order、on short notice。",
+      "<b>重点</b>：第一句定类型 —— 留言 / 广播 / 会议 / 广告 / 导游。",
+      "<b>重点</b>：结尾两类题 —— do next 听 Now let's；asked to do 听 Please / Make sure to；speaker will do 听 I'll。",
+      "单元总结：预读贴标签 → 抓同义替换 → 小心改口 → 引号题看前文 → 图表题听另一列。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en.2.5.6",
+   "title": "单元阅读：Trade Show Update for Exhibitors",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Trade Show Update for Exhibitors",
+     "note": "TOEIC Part 7 式的阅读：先看题目再读文章，带着问题找答案。先关掉译文读。",
+     "lines": [
+      [
+       "To: All Exhibitors",
+       "收件人：全体参展商"
+      ],
+      [
+       "From: Lena Ortiz, Event Coordinator",
+       "发件人：活动协调人莉娜·奥尔蒂斯"
+      ],
+      [
+       "Subject: Changes to the Northwest Home Trade Show",
+       "主题：西北家居展的变更"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Thank you for registering for next month's trade show. I'm writing to let you know about two changes.",
+       "感谢您报名参加下个月的展会。特此告知两项变更。"
+      ],
+      [
+       "First, the main hall at the Riverside Center is undergoing renovation, so the show has been moved to the convention center on Pine Street.",
+       "第一，河畔中心的主展厅正在翻修，展会因此改到松树街的会展中心举行。"
+      ],
+      [
+       "The new venue is larger, and a floor plan with your booth number is attached.",
+       "新场地更大，附件中有标明您展位号的平面图。"
+      ],
+      [
+       "Second, the keynote speech will now take place on the first morning, not the second.",
+       "第二，主旨演讲改在第一天上午，而不是第二天。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Because many hotels near the new venue are already overbooked, we have reserved fifty rooms at the Harbor Inn for exhibitors.",
+       "由于新场地附近很多酒店已经订满，我们为参展商在海港旅馆预留了五十间客房。"
+      ],
+      [
+       "A free shuttle will run between the hotel and the venue every twenty minutes.",
+       "酒店和会场之间每二十分钟有一班免费接驳车。"
+      ],
+      [
+       "To reserve a room at the group rate, please reply to this e-mail by June 10.",
+       "如需以团体价预订客房，请在 6 月 10 日前回复本邮件。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "I apologize for the short notice and look forward to seeing you at the show.",
+       "通知仓促，敬请谅解，期待在展会上见到您。"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Why was the location of the trade show changed?",
+     "o": [
+      "The original hall is being renovated.",
+      "Too many exhibitors registered.",
+      "The original hall was too small."
+     ],
+     "a": 0,
+     "e": "the main hall … is undergoing renovation。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is attached to the e-mail?",
+     "o": [
+      "A hotel bill",
+      "A registration form",
+      "A map of the exhibition space"
+     ],
+     "a": 2,
+     "e": "a floor plan → a map of the exhibition space。同义替换。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What is true about the keynote speech?",
+     "o": [
+      "It has been moved to an earlier day.",
+      "It has been canceled.",
+      "It will be given at the Harbor Inn."
+     ],
+     "a": 0,
+     "e": "on the first morning, not the second → 提前了。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "What are exhibitors asked to do by June 10?",
+     "o": [
+      "Reply if they want a hotel room",
+      "Send a new floor plan",
+      "Pay for their booth"
+     ],
+     "a": 0,
+     "e": "To reserve a room …, please reply to this e-mail by June 10。“要求做什么”听 / 找 please。",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "The word \"overbooked\" in paragraph 2 is closest in meaning to",
+     "o": [
+      "recently built",
+      "fully reserved",
+      "very expensive"
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "通知仓促，敬请谅解。",
+     "a": [
+      "I apologize for the short notice.",
+      "Sorry for the short notice.",
+      "We apologize for the short notice."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "Part 3/4 的技巧在阅读里同样有用：先看题，找 please（要求）、because / so（原因）、not A but B（改动）。",
+      "同义替换：floor plan → map；on the first morning, not the second → moved to an earlier day。",
+      "本单元词：venue、booth、keynote、registration、renovation、floor plan、overbooked、on short notice。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "🎧 Why is the woman calling?",
+    "o": [
+     "To sell a vacation package",
+     "To confirm a hotel booking",
+     "To discuss a problem with a flight"
+    ],
+    "a": 2,
+    "say": "Hi, Mr. Lopez. This is Karen from Sunrise Travel. I'm calling because your flight to Lima has been overbooked. We can rebook you on a flight that leaves two hours later at no extra charge. Please call me back by five today.",
+    "e": "原文：Hi, Mr. Lopez. This is Karen from Sunrise Travel. I'm calling because your flight to Lima has been overbooked. We can rebook you on a flight that leaves two hours later at no extra charge. Please call me back by five today."
+   },
+   {
+    "t": "c",
+    "q": "🎧 What does the woman ask Mr. Lopez to do?",
+    "o": [
+     "Return her call",
+     "Pay an extra charge",
+     "Go to the airport early"
+    ],
+    "a": 0,
+    "say": "Hi, Mr. Lopez. This is Karen from Sunrise Travel. I'm calling because your flight to Lima has been overbooked. We can rebook you on a flight that leaves two hours later at no extra charge. Please call me back by five today.",
+    "e": "原文：Hi, Mr. Lopez. This is Karen from Sunrise Travel. I'm calling because your flight to Lima has been overbooked. We can rebook you on a flight that leaves two hours later at no extra charge. Please call me back by five today."
+   },
+   {
+    "t": "c",
+    "q": "W: Can you cover the reception desk at three? / M: My train leaves at two thirty. —— Why does the man say, “My train leaves at two thirty”?",
+    "o": [
+     "To say he will be early",
+     "To decline the request",
+     "To ask about a train"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Graphic: Workshop 1 Marketing — 10:00 · Workshop 2 Finance — 11:30 · Workshop 3 Design — 2:00. 录音：“I'm going to the session right before lunch.” Which workshop will the speaker attend?",
+    "o": [
+     "Workshop 2",
+     "Workshop 1",
+     "Workshop 3"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "录音：“The keynote speaker canceled at the last minute.” 哪个选项是正确的同义替换？",
+    "o": [
+     "A speaker will not be able to attend.",
+     "The speaker arrived early.",
+     "The keynote will be longer."
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Our company ended the quarter with a ___ because costs were higher than revenue.",
+    "o": [
+     "surplus",
+     "deficit",
+     "rebate",
+     "perk"
+    ],
+    "a": 1
+   },
+   {
+    "t": "c",
+    "q": "Exhibitors should set up their ___ by 8 a.m.",
+    "o": [
+     "keynotes",
+     "venues",
+     "carousels",
+     "booths"
+    ],
+    "a": 3
+   },
+   {
+    "t": "c",
+    "q": "The meeting is at ten. Oh, wait, it's been moved to eleven. —— When is the meeting?",
+    "o": [
+     "At eleven",
+     "At ten thirty",
+     "At ten"
+    ],
+    "a": 0
+   },
+   {
+    "t": "tr",
+    "zh": "请务必在离开前归还访客证。",
+    "a": [
+     "Please make sure to return your visitor badge before you leave.",
+     "Please be sure to return your visitor badge before leaving."
+    ]
+   }
+  ]
+ }
+}

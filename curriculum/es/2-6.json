@@ -1,0 +1,1935 @@
+{
+ "id": "es.2.6",
+ "title": "旅行与住宿",
+ "goal": "条件式礼貌用语、将来时（规则与不规则）、条件式给建议、完成时谈经历；订房、投诉、行程、天气",
+ "lessons": [
+  {
+   "id": "es.2.6.1",
+   "title": "预订房间",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Una llamada al hotel",
+     "lines": [
+      [
+       "Recepcionista",
+       "Hotel Miramar, buenos días.",
+       "米拉玛酒店，早上好。"
+      ],
+      [
+       "Daniel",
+       "Buenos días. Me gustaría reservar una habitación doble para el fin de semana del doce.",
+       "早上好。我想订十二号那个周末的一间双人间。"
+      ],
+      [
+       "Recepcionista",
+       "Un momento. Sí, tenemos habitaciones disponibles. Son noventa euros la noche, con desayuno incluido.",
+       "请稍等。有的，有空房。每晚九十欧，含早餐。"
+      ],
+      [
+       "Daniel",
+       "Perfecto. ¿Podría darme una habitación con vista al mar?",
+       "太好了。能给我一间海景房吗？"
+      ],
+      [
+       "Recepcionista",
+       "Claro. ¿Me podría decir su nombre y un teléfono?",
+       "当然。能告诉我您的名字和一个电话吗？"
+      ],
+      [
+       "Daniel",
+       "Sí, Daniel Ruiz. Ah, ¿y sería posible cancelar sin pagar?",
+       "好，丹尼尔·鲁伊斯。对了，可以免费取消吗？"
+      ]
+     ],
+     "note": "me gustaría、¿podría…?、¿sería posible…? —— 订房、点菜、问路时，西班牙人用条件式让请求听起来更礼貌。"
+    },
+    {
+     "t": "word",
+     "w": "recepción"
+    },
+    {
+     "t": "word",
+     "w": "recepcionista"
+    },
+    {
+     "t": "word",
+     "w": "habitación doble"
+    },
+    {
+     "t": "word",
+     "w": "habitación individual"
+    },
+    {
+     "t": "word",
+     "w": "desayuno incluido"
+    },
+    {
+     "t": "word",
+     "w": "media pensión"
+    },
+    {
+     "t": "key",
+     "title": "me gustaría + 原形：礼貌地说“我想……”",
+     "what": [
+      "<b>me gustaría</b> + 动词原形 = 我想……（比 quiero 礼貌）",
+      "第一学期学过 <b>quería</b>（用于点餐、买东西），两者都比 quiero 客气。",
+      "其他人称跟 gustar 一样：<b>te / le / nos / les gustaría</b>：¿Le gustaría ver la habitación?"
+     ],
+     "why": [
+      "quiero 直接、强硬，对熟人可以；对酒店、餐厅、陌生人，用 <b>me gustaría</b> 或 <b>quería</b> 更得体。",
+      "gustaría 是 gustar 的条件式，本单元第四课会系统学条件式。"
+     ],
+     "zh": [
+      "中文“我想订房”语气中性；西语 Quiero una habitación 听起来像“我要一间房”，有点生硬。"
+     ],
+     "ex": [
+      [
+       "Me gustaría reservar una habitación individual.",
+       "我想订一间单人间。"
+      ],
+      [
+       "Nos gustaría cenar en el hotel.",
+       "我们想在酒店吃晚饭。"
+      ],
+      [
+       "¿Le gustaría confirmar la reserva ahora?",
+       "您想现在确认预订吗？"
+      ]
+     ],
+     "err": [
+      [
+       "Me gustaría una habitación doble, quiero.",
+       "Me gustaría una habitación doble.",
+       "me gustaría 本身就是“我想要”"
+      ],
+      [
+       "Me gustaría de reservar una mesa.",
+       "Me gustaría reservar una mesa.",
+       "直接接原形，不加 de"
+      ]
+     ],
+     "sum": "礼貌的“我想……”：<b>me gustaría + 原形</b> / <b>quería</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "En el hotel: «___ una habitación para dos noches.»",
+       "o": [
+        "Me gustaría reservar",
+        "Me gusta reservar",
+        "Quiero que reservar"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "¿___ gustaría ver la habitación, señora?",
+       "o": [
+        "Te gusta",
+        "Le",
+        "La"
+       ],
+       "a": 1
+      },
+      {
+       "t": "tr",
+       "zh": "我们想订一间含早餐的双人间。",
+       "a": [
+        "Nos gustaría reservar una habitación doble con desayuno incluido.",
+        "Queríamos una habitación doble con desayuno incluido.",
+        "Nos gustaría una habitación doble con desayuno incluido."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "reservar"
+    },
+    {
+     "t": "word",
+     "w": "disponible"
+    },
+    {
+     "t": "word",
+     "w": "cancelar"
+    },
+    {
+     "t": "word",
+     "w": "confirmar"
+    },
+    {
+     "t": "word",
+     "w": "temporada alta"
+    },
+    {
+     "t": "word",
+     "w": "tarifa"
+    },
+    {
+     "t": "key",
+     "title": "¿Podría…? / ¿Sería posible…?：礼貌的请求",
+     "what": [
+      "<b>¿Podría</b> + 原形…?（对 usted）/ <b>¿Podrías</b> + 原形…?（对 tú）= 您能……吗？",
+      "<b>¿Me podría</b> + 原形…? 把 me 放前面也很常见：¿Me podría decir su nombre?",
+      "<b>¿Sería posible</b> + 原形…? = ……可以吗？（更正式）"
+     ],
+     "why": [
+      "¿Puede…? 也可以，但 ¿Podría…? 更客气。酒店、客服、写邮件都用 podría。"
+     ],
+     "zh": [
+      "中文“能不能……”“可以……吗”，西语正好对应 ¿Podría…? / ¿Sería posible…?"
+     ],
+     "ex": [
+      [
+       "¿Podría confirmar la reserva por correo?",
+       "您能通过邮件确认预订吗？"
+      ],
+      [
+       "¿Me podrías ayudar con las maletas?",
+       "你能帮我拿一下行李吗？"
+      ],
+      [
+       "¿Sería posible cambiar la fecha?",
+       "可以改日期吗？"
+      ]
+     ],
+     "err": [
+      [
+       "¿Podría me dar la llave?",
+       "¿Me podría dar la llave?",
+       "代词放 podría 前或贴原形后"
+      ],
+      [
+       "¿Sería posible de cancelar?",
+       "¿Sería posible cancelar?",
+       "直接接原形"
+      ]
+     ],
+     "sum": "<b>¿(Me) podría + 原形?</b>（您能……吗）；<b>¿Sería posible + 原形?</b>（……可以吗）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Al recepcionista: «¿___ decirme la tarifa de la habitación individual?»",
+       "o": [
+        "Puedo",
+        "Podrá",
+        "Podría"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "«¿Sería posible ___ el desayuno en la habitación?»",
+       "o": [
+        "que tomar",
+        "tomar",
+        "de tomar"
+       ],
+       "a": 1
+      },
+      {
+       "t": "o",
+       "a": "¿Me podría dar una habitación con vista al mar?",
+       "p": [
+        "¿Me podría",
+        "dar",
+        "una habitación",
+        "con vista al mar?"
+       ],
+       "zh": "能给我一间海景房吗？"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Me gustaría reservar una habitación doble para el fin de semana.",
+     "zh": "我想订周末的一间双人间。",
+     "focus": "gustaría 重音在 rí"
+    },
+    {
+     "t": "c",
+     "q": "En ___ los precios de los hoteles suben mucho.",
+     "o": [
+      "temporada alta",
+      "recepción",
+      "media pensión"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Lo siento, no hay habitaciones ___ para esas fechas.",
+     "o": [
+      "disponibles",
+      "dobles",
+      "incluidas"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Con ___ tienes el desayuno y la cena.",
+     "o": [
+      "habitación individual",
+      "media pensión",
+      "tarifa"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Deje la llave en ___ cuando salga.",
+     "o": [
+      "recepción",
+      "tarifa",
+      "temporada"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "Tuve que ___ la reserva porque me puse enfermo.",
+     "a": [
+      "cancelar"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "La ___ del hotel incluye el aparcamiento. (价格)",
+     "a": [
+      "tarifa"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Me gustaría reservar una habitación doble",
+     "p": [
+      "Me gustaría",
+      "reservar",
+      "una habitación",
+      "doble"
+     ],
+     "zh": "我想订一间双人间。"
+    },
+    {
+     "t": "dict",
+     "a": "¿El precio es con desayuno incluido?"
+    },
+    {
+     "t": "tr",
+     "zh": "周五还有空房吗？",
+     "a": [
+      "¿Tienen habitaciones disponibles para el viernes?",
+      "¿Hay habitaciones disponibles para el viernes?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "订房词：recepción、recepcionista、habitación doble、habitación individual、desayuno incluido、media pensión、reservar、disponible、cancelar、confirmar、temporada alta、tarifa。",
+      "<b>重点</b>：礼貌的“我想”：me gustaría + 原形 / quería。",
+      "<b>重点</b>：礼貌请求：¿(Me) podría + 原形? / ¿Sería posible + 原形?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.6.2",
+   "title": "在酒店：问题与投诉",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "Perdone, hay un problema",
+     "lines": [
+      [
+       "Marta",
+       "Perdone, es que el aire acondicionado de la habitación no funciona.",
+       "不好意思，房间的空调坏了。"
+      ],
+      [
+       "Recepcionista",
+       "Lo siento mucho. ¿Qué habitación es?",
+       "非常抱歉。哪个房间？"
+      ],
+      [
+       "Marta",
+       "La 304. Además, el grifo del baño está roto y no hay toallas.",
+       "304。另外，浴室的水龙头坏了，也没有毛巾。"
+      ],
+      [
+       "Recepcionista",
+       "Ahora mismo le subimos toallas y llamamos al técnico.",
+       "我们马上给您送毛巾上去，再叫技术员。"
+      ],
+      [
+       "Marta",
+       "Gracias. Y otra cosa: la habitación es muy ruidosa. ¿Sería posible cambiarnos a otra?",
+       "谢谢。还有一件事：房间很吵。可以给我们换一间吗？"
+      ],
+      [
+       "Recepcionista",
+       "Por supuesto. Le doy una habitación interior, que es más tranquila.",
+       "当然。我给您换一间朝里的房间，更安静。"
+      ]
+     ],
+     "note": "Perdone, es que…（不好意思，是这样的……）+ 问题 + ¿Sería posible…? —— 礼貌投诉三步。"
+    },
+    {
+     "t": "word",
+     "w": "aire acondicionado"
+    },
+    {
+     "t": "word",
+     "w": "calefacción"
+    },
+    {
+     "t": "word",
+     "w": "toalla"
+    },
+    {
+     "t": "word",
+     "w": "sábana"
+    },
+    {
+     "t": "word",
+     "w": "almohada"
+    },
+    {
+     "t": "word",
+     "w": "grifo"
+    },
+    {
+     "t": "key",
+     "title": "描述问题：no funciona / está roto / no hay",
+     "what": [
+      "机器不好用：<b>no funciona</b>（el aire acondicionado no funciona）",
+      "东西坏了、脏了（状态）：<b>estar + 形容词 / 过去分词</b>：está roto · está sucio · está apagado",
+      "缺东西：<b>no hay</b> + 名词：no hay toallas · no hay agua caliente",
+      "形容词要跟名词性数一致：<b>la lámpara está rota</b>，<b>las sábanas están sucias</b>"
+     ],
+     "why": [
+      "说状态一定用 estar（第一学期学过 ser / estar）：está roto 是“现在坏着”，不是本质。",
+      "roto 是 romper 的不规则过去分词，当形容词用时要变性数。"
+     ],
+     "zh": [
+      "中文“空调坏了”“没有毛巾”很简单；西语要注意 estar + 形容词的性数：la ducha está rota（阴性）。"
+     ],
+     "ex": [
+      [
+       "La calefacción no funciona.",
+       "暖气不好用。"
+      ],
+      [
+       "Las sábanas están sucias.",
+       "床单是脏的。"
+      ],
+      [
+       "No hay agua caliente en la ducha.",
+       "淋浴没有热水。"
+      ]
+     ],
+     "err": [
+      [
+       "El grifo es roto.",
+       "El grifo está roto.",
+       "状态用 estar"
+      ],
+      [
+       "La ventana está roto.",
+       "La ventana está rota.",
+       "形容词跟名词变阴性"
+      ]
+     ],
+     "sum": "<b>no funciona</b>（不好用）· <b>está roto / sucio</b>（状态，性数一致）· <b>no hay</b>（缺）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "La televisión no ___.",
+       "o": [
+        "está funcionada",
+        "funciona",
+        "hay"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Las toallas ___ sucias.",
+       "o": [
+        "hay",
+        "son",
+        "están"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "La lámpara está ___ (roto).",
+       "a": [
+        "rota"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "淋浴没有热水。",
+       "a": [
+        "No hay agua caliente en la ducha.",
+        "En la ducha no hay agua caliente."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "enchufe"
+    },
+    {
+     "t": "word",
+     "w": "wifi"
+    },
+    {
+     "t": "word",
+     "w": "ruidoso"
+    },
+    {
+     "t": "word",
+     "w": "sucio"
+    },
+    {
+     "t": "word",
+     "w": "roto"
+    },
+    {
+     "t": "word",
+     "w": "funcionar"
+    },
+    {
+     "t": "key",
+     "title": "礼貌投诉：Perdone, es que… + ¿Podría…?",
+     "what": [
+      "开口：<b>Perdone</b>（对 usted）/ <b>Perdona</b>（对 tú）：不好意思",
+      "解释：<b>es que…</b>（是这样的……）引出问题，让抱怨听起来不那么冲",
+      "请求：<b>¿Podría…? / ¿Sería posible…? / ¿Me podría traer…?</b>",
+      "补充：<b>Además…</b>（另外）/ <b>Y otra cosa…</b>（还有一件事）"
+     ],
+     "why": [
+      "es que 是西语口语里非常常用的“缓冲词”：解释原因、找理由都可以用：Es que tengo prisa.（是因为我赶时间。）"
+     ],
+     "zh": [
+      "中文投诉常说“你们这个……怎么回事”，直译成西语会很不礼貌。西语习惯先道歉、再解释、再请求。"
+     ],
+     "ex": [
+      [
+       "Perdone, es que la habitación es muy ruidosa.",
+       "不好意思，房间太吵了。"
+      ],
+      [
+       "¿Me podría traer otra almohada?",
+       "能再给我拿个枕头吗？"
+      ],
+      [
+       "Y otra cosa: el wifi no funciona.",
+       "还有一件事：无线网络连不上。"
+      ]
+     ],
+     "err": [
+      [
+       "¡El aire acondicionado no funciona! ¡Cámbielo!",
+       "Perdone, es que el aire acondicionado no funciona. ¿Podría mandar a alguien?",
+       "先道歉、再解释、再礼貌请求"
+      ]
+     ],
+     "sum": "<b>Perdone, es que…</b> + 问题 + <b>¿Podría…?</b>；补充用 <b>Además / Y otra cosa</b>。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Llegas tarde a clase. Dices: «Perdone, ___ el autobús no llegaba.»",
+       "o": [
+        "además",
+        "por si acaso",
+        "es que"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "Quieres más toallas. Dices: «¿___ traer dos toallas más?»",
+       "o": [
+        "Podría me",
+        "Me podrá",
+        "Me podría"
+       ],
+       "a": 2
+      },
+      {
+       "t": "o",
+       "a": "Perdone, es que el grifo está roto",
+       "p": [
+        "Perdone,",
+        "es que",
+        "el grifo",
+        "está roto"
+       ],
+       "zh": "不好意思，水龙头坏了。"
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Perdone, es que el aire acondicionado no funciona.",
+     "zh": "不好意思，空调坏了。",
+     "focus": "es que 连读 /eske/"
+    },
+    {
+     "t": "c",
+     "q": "Hace mucho frío. ¿Puede encender la ___?",
+     "o": [
+      "almohada",
+      "toalla",
+      "calefacción"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "No puedo cargar el móvil: no encuentro el ___.",
+     "o": [
+      "grifo",
+      "wifi",
+      "enchufe"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "La habitación da a una calle muy ___.",
+     "o": [
+      "ruidosa",
+      "rota",
+      "sucia"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "El ___ del baño gotea toda la noche.",
+     "o": [
+      "grifo",
+      "sábana",
+      "enchufe"
+     ],
+     "a": 0
+    },
+    {
+     "t": "f",
+     "q": "¿Cuál es la contraseña del ___?",
+     "a": [
+      "wifi"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Las ___ de la cama están sucias. (床单)",
+     "a": [
+      "sábanas"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "El ascensor no ___, así que subimos por la escalera.",
+     "o": [
+      "funciona",
+      "hay",
+      "está roto"
+     ],
+     "a": 0
+    },
+    {
+     "t": "o",
+     "a": "¿Me podría traer otra almohada?",
+     "p": [
+      "¿Me podría",
+      "traer",
+      "otra",
+      "almohada?"
+     ],
+     "zh": "能再给我拿个枕头吗？"
+    },
+    {
+     "t": "dict",
+     "a": "Perdone, es que el aire acondicionado de la habitación no funciona."
+    },
+    {
+     "t": "tr",
+     "zh": "房间很吵，可以给我们换一间吗？",
+     "a": [
+      "La habitación es muy ruidosa. ¿Sería posible cambiarnos a otra?",
+      "La habitación es muy ruidosa. ¿Podríamos cambiarnos a otra?"
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "酒店词：aire acondicionado、calefacción、toalla、sábana、almohada、grifo、enchufe、wifi、ruidoso、sucio、roto、funcionar。",
+      "<b>重点</b>：问题三说：no funciona / está roto（性数一致）/ no hay。",
+      "<b>重点</b>：礼貌投诉：Perdone, es que… + ¿Podría…? + Además…"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.6.3",
+   "title": "计划行程：将来时",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "El Camino de Santiago",
+     "lines": [
+      [
+       "Lucas",
+       "Este verano haremos el Camino de Santiago.",
+       "今年夏天我们要走圣地亚哥朝圣之路。"
+      ],
+      [
+       "Nuria",
+       "¡Qué bien! ¿Cuántos días caminaréis?",
+       "太好了！你们要走几天？"
+      ],
+      [
+       "Lucas",
+       "Doce días. Empezaremos en León y recorreremos unos veinte kilómetros cada etapa.",
+       "十二天。我们从莱昂出发，每段大概走二十公里。"
+      ],
+      [
+       "Nuria",
+       "¿Y dónde dormiréis?",
+       "那你们住哪儿？"
+      ],
+      [
+       "Lucas",
+       "Nos alojaremos en albergues. Son baratos y conoceremos a gente de todo el mundo.",
+       "我们住朝圣者旅舍。便宜，还能认识世界各地的人。"
+      ],
+      [
+       "Nuria",
+       "Seguro que lo pasaréis genial. ¡Me enviarás fotos!",
+       "你们一定会玩得很开心。记得给我发照片！"
+      ]
+     ],
+     "note": "haremos、caminaréis、empezaremos、recorreremos、nos alojaremos —— 将来时：原形 + 词尾，规则动词完全不变词干。"
+    },
+    {
+     "t": "word",
+     "w": "itinerario"
+    },
+    {
+     "t": "word",
+     "w": "ruta"
+    },
+    {
+     "t": "word",
+     "w": "recorrer"
+    },
+    {
+     "t": "word",
+     "w": "alojarse"
+    },
+    {
+     "t": "word",
+     "w": "alojamiento"
+    },
+    {
+     "t": "word",
+     "w": "albergue"
+    },
+    {
+     "t": "key",
+     "title": "将来时：原形 + -é, -ás, -á, -emos, -éis, -án",
+     "what": [
+      "规则动词：<b>不去掉 -ar / -er / -ir</b>，直接在原形后面加词尾",
+      "caminar → caminar<b>é</b>, caminar<b>ás</b>, caminar<b>á</b>, caminar<b>emos</b>, caminar<b>éis</b>, caminar<b>án</b>",
+      "三种动词词尾<b>完全一样</b>：comeré, viviré, me alojaré"
+     ],
+     "why": [
+      "这是西语最规则的时态：一套词尾管所有动词。除 nosotros 以外都有重音符号。"
+     ],
+     "zh": [
+      "中文用“会”“将要”表将来；西语将来时一个词就够：viajaré = 我将去旅行。"
+     ],
+     "ex": [
+      [
+       "Mañana visitaremos la catedral.",
+       "明天我们会参观大教堂。"
+      ],
+      [
+       "¿Dormiréis en un albergue?",
+       "你们会住旅舍吗？"
+      ],
+      [
+       "El tren llegará a las ocho.",
+       "火车八点到。"
+      ]
+     ],
+     "err": [
+      [
+       "Nosotros caminarán mañana.",
+       "Nosotros caminaremos mañana.",
+       "nosotros 的词尾是 -emos"
+      ],
+      [
+       "Viajarémos a Perú.",
+       "Viajaremos a Perú.",
+       "nosotros 形没有重音符号"
+      ]
+     ],
+     "sum": "<b>原形 + é / ás / á / emos / éis / án</b>，三种动词一样。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "El próximo verano nosotros ___ el norte de España.",
+       "o": [
+        "recorremos",
+        "recorreremos",
+        "recorrimos"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "¿Dónde te ___ en Sevilla?",
+       "o": [
+        "alojas",
+        "alojaste",
+        "alojarás"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "Mañana (yo) ___ (visitar) las ruinas.",
+       "a": [
+        "visitaré"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我们会住在青年旅舍。",
+       "a": [
+        "Nos alojaremos en un albergue.",
+        "Dormiremos en un albergue."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "camping"
+    },
+    {
+     "t": "word",
+     "w": "tienda de campaña"
+    },
+    {
+     "t": "word",
+     "w": "saco de dormir"
+    },
+    {
+     "t": "word",
+     "w": "senderismo"
+    },
+    {
+     "t": "word",
+     "w": "etapa"
+    },
+    {
+     "t": "word",
+     "w": "parada"
+    },
+    {
+     "t": "key",
+     "title": "ir a + 原形 还是 将来时",
+     "what": [
+      "<b>ir a + 原形</b>：已经决定的计划、马上要发生的事（口语里最常用）—— Voy a reservar el albergue esta noche.",
+      "<b>将来时</b>：比较远、不那么确定的将来；<b>预测</b>、<b>承诺</b> —— Algún día recorreré Sudamérica. / Te llamaré mañana, te lo prometo.",
+      "日常对话两者常常都可以，书面语和正式计划多用将来时。"
+     ],
+     "why": [
+      "“我打算……”用 ir a；“我保证……”“将来某天……”“天气会……”用将来时。"
+     ],
+     "zh": [
+      "中文都说“会 / 要”。记住：已经安排好、马上就做 → ir a；承诺、预测、远的将来 → 将来时。"
+     ],
+     "ex": [
+      [
+       "Esta tarde vamos a montar la tienda de campaña.",
+       "今天下午我们要搭帐篷。"
+      ],
+      [
+       "Algún día haré el Camino entero.",
+       "总有一天我会走完整条朝圣之路。"
+      ],
+      [
+       "No te preocupes, te enviaré fotos.",
+       "别担心，我会给你发照片的。"
+      ]
+     ],
+     "err": [
+      [
+       "（马上要做）Ahora mismo reservaré el camping.",
+       "Ahora mismo voy a reservar el camping.",
+       "马上就做，口语里用 ir a 更自然"
+      ]
+     ],
+     "sum": "<b>计划、马上</b> → ir a + 原形；<b>承诺、预测、远的将来</b> → 将来时。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mira esas nubes. ___ a llover.",
+       "o": [
+        "Lloverá",
+        "Va",
+        "Irá"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "No te preocupes, mamá. Te ___ todos los días.",
+       "o": [
+        "llamaré",
+        "voy llamar",
+        "llamo ayer"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "Ya tengo los billetes: el sábado ___ de excursión.",
+       "o": [
+        "fuimos",
+        "vamos a ir",
+        "iremos algún día"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Empezaremos en León y recorreremos unos veinte kilómetros cada etapa.",
+     "zh": "我们从莱昂出发，每段走大约二十公里。",
+     "focus": "将来时重音在词尾：-remos 不带符号但重读 RE"
+    },
+    {
+     "t": "c",
+     "q": "Ya tenemos el ___ del viaje: diez días y cinco ciudades.",
+     "o": [
+      "camping",
+      "saco de dormir",
+      "itinerario"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "No te olvides del ___ ; por la noche hace frío.",
+     "o": [
+      "saco de dormir",
+      "albergue",
+      "senderismo"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Montamos la ___ junto al río.",
+     "o": [
+      "etapa",
+      "parada",
+      "tienda de campaña"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Me encanta hacer ___ en la montaña.",
+     "o": [
+      "itinerario",
+      "camping",
+      "senderismo"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "La primera ___ del Camino tiene veinte kilómetros.",
+     "a": [
+      "etapa"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Nos ___ (alojarse, nosotros, 将来) en un camping.",
+     "a": [
+      "alojaremos"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "La próxima ___ del autobús es la estación.",
+     "o": [
+      "etapa",
+      "ruta",
+      "parada"
+     ],
+     "a": 2
+    },
+    {
+     "t": "o",
+     "a": "Recorreremos el norte en coche",
+     "p": [
+      "Recorreremos",
+      "el norte",
+      "en coche"
+     ],
+     "zh": "我们会开车游遍北部。"
+    },
+    {
+     "t": "dict",
+     "a": "Este verano haremos el Camino de Santiago."
+    },
+    {
+     "t": "tr",
+     "zh": "我们会认识世界各地的人。",
+     "a": [
+      "Conoceremos a gente de todo el mundo.",
+      "Vamos a conocer a gente de todo el mundo."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "行程词：itinerario、ruta、recorrer、alojarse、alojamiento、albergue、camping、tienda de campaña、saco de dormir、senderismo、etapa、parada。",
+      "<b>重点</b>：将来时 = 原形 + é / ás / á / emos / éis / án。",
+      "<b>重点</b>：计划、马上 → ir a；承诺、预测、远的将来 → 将来时。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.6.4",
+   "title": "不规则将来时与条件式",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "El pronóstico del tiempo",
+     "lines": [
+      [
+       "Presentadora",
+       "Buenas noches. Mañana tendremos un día soleado en casi toda España.",
+       "晚上好。明天西班牙几乎全境都是晴天。"
+      ],
+      [
+       "Presentadora",
+       "En el sur habrá una ola de calor: en Sevilla las temperaturas llegarán a los cuarenta grados.",
+       "南部会有热浪：塞维利亚的气温将达到四十度。"
+      ],
+      [
+       "Presentadora",
+       "En el norte, en cambio, podrá haber chubascos por la tarde.",
+       "而北部下午可能会有阵雨。"
+      ],
+      [
+       "Presentadora",
+       "En los Pirineos hará mucho frío por la noche: estaremos a cinco bajo cero.",
+       "比利牛斯山夜里会很冷：将是零下五度。"
+      ],
+      [
+       "Presentadora",
+       "Si viajan al norte, no salgan sin paraguas. Yo, por si acaso, lo llevaría siempre.",
+       "如果去北部，出门别忘带伞。要是我，以防万一会一直带着。"
+      ]
+     ],
+     "note": "tendremos、habrá、podrá、hará —— 天气预报是将来时的“主场”，而且全是不规则动词。llevaría 是条件式：和将来时共用同一套不规则词干。"
+    },
+    {
+     "t": "word",
+     "w": "pronóstico"
+    },
+    {
+     "t": "word",
+     "w": "soleado"
+    },
+    {
+     "t": "word",
+     "w": "despejado"
+    },
+    {
+     "t": "word",
+     "w": "chubasco"
+    },
+    {
+     "t": "word",
+     "w": "ola de calor"
+    },
+    {
+     "t": "word",
+     "w": "temperatura"
+    },
+    {
+     "t": "key",
+     "title": "不规则将来时：变的是词干，词尾不变",
+     "what": [
+      "去掉元音：<b>tener → tendr-</b>（tendré）· <b>poner → pondr-</b> · <b>salir → saldr-</b> · <b>venir → vendr-</b> · <b>poder → podr-</b> · <b>saber → sabr-</b> · <b>haber → habr-</b>（habrá）· <b>querer → querr-</b>",
+      "完全变形：<b>hacer → har-</b>（haré）· <b>decir → dir-</b>（diré）",
+      "词尾和规则动词一样：-é, -ás, -á, -emos, -éis, -án"
+     ],
+     "why": [
+      "只有这十几个动词不规则，而且都是最常用的。好消息：它们的复合词也一样变（mantener → mantendré, deshacer → desharé）。",
+      "hay 的将来时是 <b>habrá</b>（会有）：Habrá chubascos."
+     ],
+     "zh": [
+      "中文没有动词变形，中国学生最容易写成 *tenré、*hacerá。把 tendr- / har- / dir- 当成新的“词根”来记。"
+     ],
+     "ex": [
+      [
+       "Mañana hará sol.",
+       "明天会是晴天。"
+      ],
+      [
+       "¿Podrás venir a la fiesta?",
+       "你能来派对吗？"
+      ],
+      [
+       "Saldremos temprano y volveremos tarde.",
+       "我们会早出晚归。"
+      ]
+     ],
+     "err": [
+      [
+       "Mañana haceré la maleta.",
+       "Mañana haré la maleta.",
+       "hacer → har-"
+      ],
+      [
+       "No teneré tiempo.",
+       "No tendré tiempo.",
+       "tener → tendr-"
+      ]
+     ],
+     "sum": "<b>tendr- · pondr- · saldr- · vendr- · podr- · sabr- · habr- · querr- · har- · dir-</b> + 规则词尾。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Mañana ___ mucho calor en Sevilla.",
+       "o": [
+        "hará",
+        "hace ayer",
+        "hacerá"
+       ],
+       "a": 0
+      },
+      {
+       "t": "c",
+       "q": "El fin de semana ___ chubascos en el norte.",
+       "o": [
+        "hay ayer",
+        "haberá",
+        "habrá"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "¿Cuándo (tú) ___ (saber) los resultados?",
+       "a": [
+        "sabrás"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "明天我没时间。",
+       "a": [
+        "Mañana no tendré tiempo.",
+        "No tendré tiempo mañana."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "grado"
+    },
+    {
+     "t": "word",
+     "w": "bajo cero"
+    },
+    {
+     "t": "word",
+     "w": "protector solar"
+    },
+    {
+     "t": "word",
+     "w": "paraguas"
+    },
+    {
+     "t": "word",
+     "w": "por si acaso"
+    },
+    {
+     "t": "word",
+     "w": "seguramente"
+    },
+    {
+     "t": "key",
+     "title": "条件式：将来时的词干 + -ía",
+     "what": [
+      "条件式 = <b>将来时的词干 + -ía, -ías, -ía, -íamos, -íais, -ían</b>：gustaría, podría, tendría, haría, llevaría",
+      "用途 ① <b>礼貌</b>：¿Podría…? Me gustaría… / 用途 ② <b>建议</b>：Yo que tú, llevaría paraguas.（我要是你，就带伞）/ ③ <b>假设</b>：Con más dinero, viajaría más.",
+      "<b>Yo que tú / Yo en tu lugar + 条件式</b> = 给建议的固定说法"
+     ],
+     "why": [
+      "第一课学的 me gustaría、¿podría…? 就是条件式。现在知道它的构成：和将来时同一个词干，只是词尾换成 -ía。"
+     ],
+     "zh": [
+      "中文“要是我就……”“我会……的（假设）”都对应条件式。"
+     ],
+     "ex": [
+      [
+       "Yo que tú, llevaría protector solar.",
+       "我要是你，就带防晒霜。"
+      ],
+      [
+       "Con más tiempo, haríamos senderismo.",
+       "要是有更多时间，我们就去徒步了。"
+      ],
+      [
+       "¿Tendría una habitación más tranquila?",
+       "您有没有更安静的房间？"
+      ]
+     ],
+     "err": [
+      [
+       "Yo que tú, llevaré paraguas.",
+       "Yo que tú, llevaría paraguas.",
+       "给建议用条件式"
+      ],
+      [
+       "¿Poderías ayudarme?",
+       "¿Podrías ayudarme?",
+       "poder → podr- + ías"
+      ]
+     ],
+     "sum": "<b>条件式 = 将来时词干 + ía</b>；礼貌 ¿Podría…? · 建议 Yo que tú + 条件式。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Yo que tú, ___ una chaqueta por si acaso.",
+       "o": [
+        "llevo",
+        "llevaré",
+        "llevaría"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "¿___ decirme la hora, por favor?",
+       "o": [
+        "Podría",
+        "Podía siempre",
+        "Podrá"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "Con más dinero, (yo) ___ (hacer) un viaje largo.",
+       "a": [
+        "haría"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "En el sur habrá una ola de calor: las temperaturas llegarán a los cuarenta grados.",
+     "zh": "南部会有热浪，气温将达四十度。",
+     "focus": "habrá、llegarán 重音在最后"
+    },
+    {
+     "t": "c",
+     "q": "Según el ___, mañana lloverá.",
+     "o": [
+      "pronóstico",
+      "grado",
+      "paraguas"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Esta noche el cielo estará ___ y se verán las estrellas.",
+     "o": [
+      "despejado",
+      "lluvioso",
+      "bajo cero"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "En verano, no olvides el ___ en la playa.",
+     "o": [
+      "chubasco",
+      "paraguas",
+      "protector solar"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Mañana estaremos a treinta y cinco ___.",
+     "o": [
+      "pronósticos",
+      "grados",
+      "temperaturas"
+     ],
+     "a": 1
+    },
+    {
+     "t": "c",
+     "q": "Llevaré una chaqueta ___ ; nunca se sabe.",
+     "o": [
+      "seguramente",
+      "por si acaso",
+      "bajo cero"
+     ],
+     "a": 1
+    },
+    {
+     "t": "f",
+     "q": "___ llegaremos tarde por el tráfico. (很可能)",
+     "a": [
+      "Seguramente"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Mañana (nosotros) ___ (salir) a las siete.",
+     "a": [
+      "saldremos"
+     ]
+    },
+    {
+     "t": "o",
+     "a": "Habrá chubascos por la tarde",
+     "p": [
+      "Habrá",
+      "chubascos",
+      "por la tarde"
+     ],
+     "zh": "下午会有阵雨。"
+    },
+    {
+     "t": "dict",
+     "a": "Mañana tendremos un día soleado en casi toda España."
+    },
+    {
+     "t": "tr",
+     "zh": "我要是你，就带把伞。",
+     "a": [
+      "Yo que tú, llevaría un paraguas.",
+      "Yo que tú, llevaría paraguas.",
+      "Yo en tu lugar, llevaría un paraguas."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "天气词：pronóstico、soleado、despejado、chubasco、ola de calor、temperatura、grado、bajo cero、protector solar、paraguas、por si acaso、seguramente。",
+      "<b>重点</b>：不规则将来时 —— tendr-、pondr-、saldr-、vendr-、podr-、sabr-、habr-、querr-、har-、dir-。",
+      "<b>重点</b>：条件式 = 将来时词干 + ía；礼貌、建议（Yo que tú…）、假设。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.6.5",
+   "title": "单元复习：旅行经历",
+   "steps": [
+    {
+     "t": "intro",
+     "title": "¿Has estado alguna vez en…?",
+     "lines": [
+      [
+       "Wei",
+       "¿Has estado alguna vez en el extranjero?",
+       "你出过国吗？"
+      ],
+      [
+       "Carmen",
+       "Sí, he estado en México y en Perú. Perú es el destino más impresionante que he visto.",
+       "出过，去过墨西哥和秘鲁。秘鲁是我见过最震撼的地方。"
+      ],
+      [
+       "Wei",
+       "¿Has visto Machu Picchu?",
+       "你看过马丘比丘吗？"
+      ],
+      [
+       "Carmen",
+       "¡Sí! Las ruinas son preciosas. Y he probado comidas buenísimas.",
+       "看过！遗址美极了。我还尝过特别好吃的东西。"
+      ],
+      [
+       "Wei",
+       "Yo nunca he hecho un viaje tan largo. Pero el año que viene iré a Argentina.",
+       "我从没去过这么远的地方。不过明年我会去阿根廷。"
+      ],
+      [
+       "Carmen",
+       "¡Te encantará! Yo que tú, probaría el asado.",
+       "你会爱上那里的！我要是你，一定尝尝烤肉。"
+      ]
+     ],
+     "note": "has estado、he visto、he probado、nunca he hecho（经历）+ iré、encantará（将来）+ probaría（建议）—— 本单元的时态都在这里。"
+    },
+    {
+     "t": "word",
+     "w": "alguna vez"
+    },
+    {
+     "t": "word",
+     "w": "destino"
+    },
+    {
+     "t": "word",
+     "w": "extranjero"
+    },
+    {
+     "t": "word",
+     "w": "crucero"
+    },
+    {
+     "t": "word",
+     "w": "impresionante"
+    },
+    {
+     "t": "word",
+     "w": "precioso"
+    },
+    {
+     "t": "key",
+     "title": "现在完成时谈经历：¿Has … alguna vez?",
+     "what": [
+      "问经历：<b>¿Has + 过去分词 + alguna vez?</b> —— ¿Has probado alguna vez el gazpacho?",
+      "回答：<b>Sí, he … (una vez / dos veces / muchas veces).</b> / <b>No, nunca he …</b> / <b>Todavía no he …</b>",
+      "不规则过去分词：<b>hecho · visto · dicho · puesto · vuelto · escrito · abierto · roto · muerto</b>"
+     ],
+     "why": [
+      "谈“人生到目前为止的经历”，不说具体时间，用现在完成时。一旦说出具体时间（en 2019、el verano pasado），就换成简单过去时。"
+     ],
+     "zh": [
+      "中文“我去过”的“过”= 现在完成时；“我 2019 年去了”= 简单过去时。"
+     ],
+     "ex": [
+      [
+       "He estado en Perú dos veces.",
+       "我去过秘鲁两次。"
+      ],
+      [
+       "Nunca he hecho un crucero.",
+       "我从没坐过邮轮。"
+      ],
+      [
+       "He estado en Perú. Fui en 2019 con mi hermana.",
+       "我去过秘鲁，2019 年和我姐姐去的。"
+      ]
+     ],
+     "err": [
+      [
+       "¿Has visitado alguna vez Cuba? —Sí, he visitado en 2020.",
+       "¿Has visitado alguna vez Cuba? —Sí, la visité en 2020.",
+       "说出具体时间要用简单过去时"
+      ],
+      [
+       "Nunca he hacido senderismo.",
+       "Nunca he hecho senderismo.",
+       "hacer → hecho"
+      ]
+     ],
+     "sum": "经历 → <b>he / has + 过去分词</b>（alguna vez · nunca · todavía no）；具体时间 → 简单过去时。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "¿___ alguna vez la paella?",
+       "o": [
+        "Probarás",
+        "Has probado",
+        "Probaste ayer"
+       ],
+       "a": 1
+      },
+      {
+       "t": "c",
+       "q": "Nunca ___ en el extranjero.",
+       "o": [
+        "he vivido",
+        "viviré nunca",
+        "viví en 2010"
+       ],
+       "a": 0
+      },
+      {
+       "t": "f",
+       "q": "¿Has ___ (ver) las ruinas mayas?",
+       "a": [
+        "visto"
+       ]
+      },
+      {
+       "t": "tr",
+       "zh": "我从没坐过邮轮。",
+       "a": [
+        "Nunca he hecho un crucero.",
+        "No he hecho nunca un crucero."
+       ]
+      }
+     ]
+    },
+    {
+     "t": "word",
+     "w": "ruinas"
+    },
+    {
+     "t": "word",
+     "w": "monumento"
+    },
+    {
+     "t": "word",
+     "w": "frontera"
+    },
+    {
+     "t": "word",
+     "w": "cultura"
+    },
+    {
+     "t": "word",
+     "w": "costumbre"
+    },
+    {
+     "t": "word",
+     "w": "probar"
+    },
+    {
+     "t": "key",
+     "title": "最高级：el más … de / que he visto；-ísimo",
+     "what": [
+      "<b>el / la / los / las + más + 形容词 + de</b> + 范围：Es el monumento más visitado de España.",
+      "<b>el … más + 形容词 + que he + 过去分词</b>：Es el destino más impresionante que he visto.",
+      "<b>-ísimo</b>：非常非常……：buenísimo, carísimo（-co → -quísimo：riquísimo）, preciosísimo"
+     ],
+     "why": [
+      "最高级的“在……之中”用 <b>de</b>，不用 en：la ciudad más bonita <b>de</b> España。",
+      "-ísimo 是口语里最常见的强调：La comida estaba buenísima."
+     ],
+     "zh": [
+      "中文“西班牙最……的”，“的”前面是范围；西语范围放最后，前面加 de。"
+     ],
+     "ex": [
+      [
+       "Es la playa más bonita de la isla.",
+       "这是岛上最美的海滩。"
+      ],
+      [
+       "Es la comida más rica que he probado.",
+       "这是我吃过最好吃的东西。"
+      ],
+      [
+       "El hotel era carísimo.",
+       "那家酒店贵得要命。"
+      ]
+     ],
+     "err": [
+      [
+       "Es la ciudad más bonita en España.",
+       "Es la ciudad más bonita de España.",
+       "范围用 de"
+      ],
+      [
+       "Es muy buenísimo.",
+       "Es buenísimo.",
+       "-ísimo 本身就是“非常”，不再加 muy"
+      ]
+     ],
+     "sum": "<b>el más + 形 + de</b>（范围）· <b>el más + 形 + que he visto</b> · <b>-ísimo</b>（不加 muy）。",
+     "drill": [
+      {
+       "t": "c",
+       "q": "Es el monumento más famoso ___ la ciudad.",
+       "o": [
+        "en",
+        "que",
+        "de"
+       ],
+       "a": 2
+      },
+      {
+       "t": "c",
+       "q": "La vista desde la torre es ___.",
+       "o": [
+        "más impresionante de",
+        "muy impresionantísima",
+        "impresionante"
+       ],
+       "a": 2
+      },
+      {
+       "t": "f",
+       "q": "La paella estaba ___ (buena + ísima).",
+       "a": [
+        "buenísima"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "speak",
+     "text": "Perú es el destino más impresionante que he visto.",
+     "zh": "秘鲁是我见过最震撼的地方。",
+     "focus": "impresionante 五个音节，重音在 nan"
+    },
+    {
+     "t": "c",
+     "q": "Cuba es un ___ muy popular entre los turistas.",
+     "o": [
+      "destino",
+      "crucero",
+      "monumento"
+     ],
+     "a": 0
+    },
+    {
+     "t": "c",
+     "q": "Cruzamos la ___ y entramos en Portugal.",
+     "o": [
+      "cultura",
+      "costumbre",
+      "frontera"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "En España es ___ cenar a las diez.",
+     "o": [
+      "destino",
+      "frontera",
+      "costumbre"
+     ],
+     "a": 2
+    },
+    {
+     "t": "c",
+     "q": "Visitamos las ___ romanas de Mérida.",
+     "o": [
+      "culturas",
+      "fronteras",
+      "ruinas"
+     ],
+     "a": 2
+    },
+    {
+     "t": "f",
+     "q": "Mis padres han hecho un ___ por el Mediterráneo. (邮轮旅行)",
+     "a": [
+      "crucero"
+     ]
+    },
+    {
+     "t": "f",
+     "q": "Nunca he vivido en el ___.（国外）",
+     "a": [
+      "extranjero"
+     ]
+    },
+    {
+     "t": "c",
+     "q": "Granada es una ciudad ___.",
+     "o": [
+      "preciosísimo",
+      "preciosa",
+      "precioso"
+     ],
+     "a": 1
+    },
+    {
+     "t": "o",
+     "a": "Es el destino más impresionante que he visto",
+     "p": [
+      "Es el destino",
+      "más impresionante",
+      "que",
+      "he visto"
+     ],
+     "zh": "这是我见过最震撼的地方。"
+    },
+    {
+     "t": "dict",
+     "a": "¿Has estado alguna vez en el extranjero?"
+    },
+    {
+     "t": "tr",
+     "zh": "明年我会去阿根廷。",
+     "a": [
+      "El año que viene iré a Argentina.",
+      "El próximo año iré a Argentina.",
+      "El año que viene voy a ir a Argentina."
+     ]
+    },
+    {
+     "t": "sum",
+     "points": [
+      "经历词：alguna vez、destino、extranjero、crucero、impresionante、precioso、ruinas、monumento、frontera、cultura、costumbre、probar。",
+      "<b>重点</b>：经历 → ¿Has … alguna vez? / Nunca he …；不规则分词 hecho、visto、dicho、puesto、vuelto。",
+      "<b>重点</b>：最高级 el más … de / que he visto；-ísimo。",
+      "本单元：条件式礼貌、问题与投诉、将来时（规则 / 不规则）、条件式建议、完成时谈经历。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "es.2.6.6",
+   "title": "单元阅读：Un correo desde Asturias",
+   "story": true,
+   "steps": [
+    {
+     "t": "read",
+     "title": "Un correo desde Asturias",
+     "note": "一封旅途中写的邮件：圈出将来时（-é, -á, -emos）、条件式（-ía）和现在完成时（he / ha + 分词）。",
+     "lines": [
+      [
+       "Querida Ana:",
+       "亲爱的安娜："
+      ],
+      [
+       "Te escribo desde un pequeño hotel en Asturias. Hemos llegado esta tarde después de seis horas de coche.",
+       "我在阿斯图里亚斯的一家小酒店给你写信。我们今天下午到的，开了六个小时的车。"
+      ],
+      [
+       "La habitación es preciosa, pero hemos tenido un pequeño problema: la calefacción no funcionaba.",
+       "房间很漂亮，但出了点小问题：暖气不好用。"
+      ],
+      [
+       "La recepcionista ha sido muy amable y nos ha dado otra habitación con vista al mar.",
+       "前台接待员非常好，给我们换了一间海景房。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Mañana haremos una ruta de senderismo por la costa.",
+       "明天我们会沿着海岸徒步。"
+      ],
+      [
+       "Según el pronóstico, hará sol, pero llevaremos los paraguas por si acaso. ¡Aquí llueve muchísimo!",
+       "根据天气预报会是晴天，不过我们还是会带伞以防万一。这里雨特别多！"
+      ],
+      [
+       "El sábado saldremos hacia Galicia y nos alojaremos en un albergue.",
+       "周六我们出发去加利西亚，住青年旅舍。"
+      ],
+      [
+       "",
+       ""
+      ],
+      [
+       "Nunca he probado una comida tan rica como la de aquí. Yo que tú, vendría el próximo verano.",
+       "我从没吃过像这里这么好吃的东西。我要是你，明年夏天就来。"
+      ],
+      [
+       "Si hay wifi, te enviaré fotos esta noche.",
+       "如果有网，我今晚给你发照片。"
+      ],
+      [
+       "Un abrazo, Carmen",
+       "拥抱你，卡门"
+      ]
+     ]
+    },
+    {
+     "t": "c",
+     "q": "¿Qué problema tuvieron en el hotel?",
+     "o": [
+      "La habitación era ruidosa.",
+      "No había toallas.",
+      "La calefacción no funcionaba."
+     ],
+     "a": 2,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Cómo lo solucionó la recepcionista?",
+     "o": [
+      "Les dio otra habitación.",
+      "Llamó a un técnico.",
+      "Les devolvió el dinero."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Por qué llevarán paraguas mañana?",
+     "o": [
+      "Por si acaso, porque allí llueve mucho.",
+      "Porque van a la playa.",
+      "Porque el pronóstico dice que lloverá."
+     ],
+     "a": 0,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "¿Dónde dormirán en Galicia?",
+     "o": [
+      "En un camping.",
+      "En un albergue.",
+      "En casa de Ana."
+     ],
+     "a": 1,
+     "e": "",
+     "rdq": true
+    },
+    {
+     "t": "c",
+     "q": "“Yo que tú, vendría el próximo verano” 是什么意思？",
+     "o": [
+      "你明年夏天一定要来接我",
+      "我要是你，明年夏天就来",
+      "我明年夏天会来看你"
+     ],
+     "a": 1,
+     "e": "Yo que tú + 条件式 = 给建议。",
+     "rdq": true
+    },
+    {
+     "t": "tr",
+     "zh": "根据天气预报，明天会是晴天。",
+     "a": [
+      "Según el pronóstico, mañana hará sol.",
+      "Según el pronóstico, mañana será un día soleado."
+     ],
+     "rdq": true
+    },
+    {
+     "t": "sum",
+     "points": [
+      "将来时：haremos、hará、llevaremos、saldremos、nos alojaremos、enviaré。",
+      "条件式：Yo que tú, vendría（建议）。",
+      "现在完成时：hemos llegado、hemos tenido、ha sido、nunca he probado。"
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "n": 20,
+  "extra": [
+   {
+    "t": "c",
+    "q": "Me ___ reservar una habitación individual.",
+    "o": [
+     "gustará",
+     "gusta ayer",
+     "gustaría"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "¿___ cambiar la fecha de la reserva?",
+    "o": [
+     "Sería posible",
+     "Es posible de",
+     "Será posible de"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "La ducha está ___.",
+    "o": [
+     "roto",
+     "rompe",
+     "rota"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "El año que viene ___ el Camino de Santiago.",
+    "o": [
+     "haré",
+     "haceré",
+     "hice"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Mañana ___ chubascos en el norte.",
+    "o": [
+     "habrá",
+     "haberá",
+     "hay ayer"
+    ],
+    "a": 0
+   },
+   {
+    "t": "c",
+    "q": "Yo que tú, ___ protector solar.",
+    "o": [
+     "llevé",
+     "llevaré",
+     "llevaría"
+    ],
+    "a": 2
+   },
+   {
+    "t": "c",
+    "q": "¿Has ___ alguna vez un crucero?",
+    "o": [
+     "hacido",
+     "haciendo",
+     "hecho"
+    ],
+    "a": 2
+   },
+   {
+    "t": "tr",
+    "zh": "我从没出过国。",
+    "a": [
+     "Nunca he estado en el extranjero.",
+     "No he estado nunca en el extranjero.",
+     "Nunca he viajado al extranjero."
+    ]
+   },
+   {
+    "t": "tr",
+    "zh": "这是城里最古老的古迹。",
+    "a": [
+     "Es el monumento más antiguo de la ciudad.",
+     "Este es el monumento más antiguo de la ciudad."
+    ]
+   }
+  ]
+ }
+}
