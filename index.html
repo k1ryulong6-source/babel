@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261013.0550-1b6cef";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261015.1622-89217e";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -1281,6 +1281,72 @@ html.p-ja .ph3 h1{font-family:"Shippori Mincho",var(--zhd);font-weight:800}
 .unit3{padding:10px 0;border-top:.8px dashed var(--line)}.unit3.here .uh b{color:var(--sig)}
 .unit3 .uh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.unit3 .uh b{font-size:14.5px}
 .les3{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px}
+/* ---- 课程页 ---- */
+.cx .cx-stats{display:flex;gap:18px;margin-top:10px;flex-wrap:wrap}
+.cx-stats span{font-family:"Marcellus",var(--latin),serif;font-size:13px;color:var(--muted)}.cx-stats b{font-size:22px;color:var(--ink);margin-right:1px}.cx-stats small{font-family:var(--ui);margin-left:4px;font-size:12px}
+.cx-hero{padding:18px 18px 16px;display:flex;flex-direction:column;gap:10px}
+.cx-kick{display:flex;flex-direction:column;gap:2px}.cx-where{font-size:12px;color:var(--muted);line-height:1.45}
+.cx-title{font-family:var(--zhd);font-weight:900;font-size:24px;line-height:1.3;margin:0}
+.cx-facts{display:flex;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cx-facts span{flex:1;text-align:center;padding:7px 0;font-size:11.5px;color:var(--muted);line-height:1.2}.cx-facts span+span{border-left:.8px dashed var(--line)}
+.cx-facts b{display:block;font-family:"Marcellus",var(--latin),serif;font-size:20px;color:var(--ink);font-weight:400}
+.cx-keys{background:color-mix(in srgb,var(--sig) 6%,transparent);border-left:3px solid var(--sig);padding:9px 12px 8px}
+.cx-kh{font-size:12.5px;color:var(--muted);margin-bottom:3px}.cx-kh .kbadge{font-size:11px;margin-right:6px}
+.cx-keys ol{margin:0;padding-left:20px;font-size:14.5px;line-height:1.55}.cx-keys li{margin:2px 0}.cx-keys li::marker{color:var(--sig);font-family:"Marcellus",serif}
+.cx-flow{display:flex;gap:2px;height:9px}
+.cx-flow i{position:relative;display:block;min-width:4px;background:color-mix(in srgb,var(--ink) 13%,transparent);overflow:hidden}
+.cx-flow i b{position:absolute;inset:0 auto 0 0;background:var(--ink)}
+.cx-flow i.p-key{background:color-mix(in srgb,var(--sig) 28%,transparent)}.cx-flow i.p-key b{background:var(--sig)}
+.cx-flow i.p-word{background:color-mix(in srgb,var(--ink) 22%,transparent)}
+.cx-seq{display:flex;flex-wrap:wrap;align-items:center;gap:3px 2px;font-size:11.5px;color:var(--muted);line-height:1.6}
+.cx-seq em{font-style:normal;opacity:.5;margin:0 1px}.cx-seq .p-key{color:var(--sig);font-weight:700}
+.cx-prog{margin:0;font-size:12px;color:var(--muted)}
+.cx-hero .cta3{margin-top:2px}
+.cx-path{padding:14px 16px 8px}
+.cx-uh{display:flex;justify-content:space-between;align-items:center;gap:10px}.cx-uh b{font-family:var(--zhd);font-size:17px}
+.cx-path>.mut3{margin-top:2px}
+.cx-steps{list-style:none;margin:10px 0 0;padding:0;position:relative}
+.cx-steps::before{content:"";position:absolute;left:15px;top:14px;bottom:20px;border-left:1.4px dotted var(--line)}
+.cx-l button{display:flex;align-items:center;gap:12px;width:100%;padding:8px 0;background:none;border:0;font:inherit;color:inherit;text-align:left;cursor:pointer;position:relative}
+.cx-l button:disabled{cursor:default}
+.cx-dot{flex:none;width:31px;height:31px;display:grid;place-items:center;border:1.2px solid var(--ink);border-radius:50%;background:var(--card-solid,#f1e2c0);font-family:"Marcellus",serif;font-size:14px;position:relative;z-index:1}
+.cx-l.done .cx-dot{background:var(--ink);color:var(--card-solid,#f1e2c0)}
+.cx-l.cur .cx-dot,.cx-l.next .cx-dot{border-color:var(--sig);color:var(--sig);box-shadow:0 0 0 3px color-mix(in srgb,var(--sig) 18%,transparent)}
+.cx-l.cur .cx-dot{background:conic-gradient(color-mix(in srgb,var(--sig) 22%,transparent) var(--p,0%),transparent 0)}
+.cx-l.todo .cx-dot{border-style:dashed;opacity:.7}
+.cx-l.story .cx-dot{font-family:serif;font-size:16px}
+.cx-l.test .cx-dot{border-radius:3px}
+.cx-lt{flex:1;min-width:0}.cx-lt b{display:block;font-size:14.5px;line-height:1.35}
+.cx-lt small{display:block;font-size:11.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cx-l.todo .cx-lt b{color:color-mix(in srgb,var(--ink) 75%,transparent)}
+.cx-l.next .cx-lt b,.cx-l.cur .cx-lt b{color:var(--sig)}
+.cx-tag{flex:none;font-size:11px;color:var(--muted);font-family:"Marcellus",var(--ui),serif}
+.cx-l.cur .cx-tag,.cx-l.next .cx-tag{color:var(--sig);font-weight:700}
+.cx-tools{display:grid;grid-template-columns:1fr 1fr;gap:10px}.cx-tools.one{grid-template-columns:1fr}
+.cx-tool{display:flex;gap:10px;align-items:flex-start;padding:13px 12px;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.cx-ti{flex:none;width:28px;height:28px;display:grid;place-items:center;background:var(--ink);color:var(--card-solid,#f1e2c0);font-family:var(--zhd);font-size:14px}
+.cx-tool b{display:block;font-family:var(--zhd);font-size:15px}.cx-tool small{display:block;font-size:11.5px;color:var(--muted);line-height:1.45;margin-top:2px}.cx-tool em{font-style:normal;color:var(--sig);font-weight:700}
+.cx-stage{padding:0 14px}
+.cx-stage>summary{list-style:none;display:flex;align-items:center;gap:12px;padding:14px 0;cursor:pointer}
+.cx-stage>summary::-webkit-details-marker,.cx-u>summary::-webkit-details-marker{display:none}
+.cx-sn{flex:none;width:34px;font-family:"Marcellus SC","Marcellus",serif;font-size:19px;color:var(--sig);text-align:center}
+.cx-sh{flex:1;min-width:0}.cx-sh b{display:block;font-family:var(--zhd);font-size:16px}
+.cx-sh small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:12px;color:var(--muted);line-height:1.45}
+.cx-stage[open]>summary{border-bottom:1px solid var(--line)}
+.cx-units{padding:4px 0 8px}
+.cx-u{border-top:.8px dashed var(--line)}.cx-u:first-child{border-top:0}
+.cx-u>summary,.cx-u .cx-row{list-style:none;display:flex;align-items:center;gap:10px;padding:10px 0;cursor:pointer}
+.cx-u.soon .cx-row{cursor:default;opacity:.62}
+.cx-un{flex:none;width:24px;height:24px;display:grid;place-items:center;border:1px solid var(--ink);font-family:"Marcellus",serif;font-size:12.5px}
+.cx-u.here .cx-un{background:var(--sig);border-color:var(--sig);color:#fff}.cx-u.pass .cx-un{background:var(--ink);color:var(--card-solid,#f1e2c0)}
+.cx-unt{flex:1;min-width:0}.cx-unt b{display:block;font-size:14.5px;line-height:1.35}.cx-unt small{display:block;font-size:11.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cx-u.here .cx-unt b{color:var(--sig)}
+.cx-ubar{display:flex;gap:3px;margin-top:5px}.cx-ubar i{flex:1;max-width:30px;height:4px;background:color-mix(in srgb,var(--ink) 14%,transparent)}
+.cx-ubar i.done{background:var(--ink)}.cx-ubar i.cur{background:linear-gradient(90deg,var(--sig) 50%,color-mix(in srgb,var(--sig) 25%,transparent) 50%)}.cx-ubar i.next{background:color-mix(in srgb,var(--sig) 45%,transparent)}
+.cx-us{flex:none;font-family:"Marcellus",serif;font-size:12.5px;color:var(--muted)}.cx-u.soon .cx-us{font-family:var(--ui);font-size:11px}
+.cx-u[open]>summary .cx-us{color:var(--sig)}
+.cx-steps.sm{margin:0 0 8px;padding-left:4px}.cx-steps.sm .cx-dot{width:26px;height:26px;font-size:12.5px}.cx-steps.sm::before{left:13px}.cx-steps.sm .cx-lt b{font-size:13.5px}
+
 .les3 button{width:34px;height:30px;border:1.1px solid var(--ink);background:none;font-family:"Marcellus",serif;font-size:14px;color:var(--ink);cursor:pointer}
 .les3 button.done{background:var(--ink);color:var(--card-solid)}.les3 button.cur{background:var(--sig);border-color:var(--sig);color:#fff}.les3 button.lock{border-style:dashed;opacity:.45;cursor:default}
 .grid3{display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -6814,7 +6880,7 @@ const SHEET_EN = (() => {
           outline(pen, q);
         } else {
           const d = b.q.map(p => f(p[0]) + "," + f(p[1])).join(" ");
-          pen.raw(`<polygon points="${d}" fill="none" stroke="${C}" stroke-width="0.6" stroke-dasharray="3 2.5" opacity="0.38"/><polygon points="${b.q.map(p => f(p[0] + .9) + "," + f(p[1] - .7)).join(" ")}" fill="none" stroke="${C}" stroke-width="0.5" stroke-dasharray="2.5 3" opacity="0.28"/>`);
+          pen.raw(`<polygon points="${d}" fill="${C}" fill-opacity="0.05" stroke="${C}" stroke-width="0.9" stroke-dasharray="3 2.5" opacity="0.6"/><polygon points="${b.q.map(p => f(p[0] + .9) + "," + f(p[1] - .7)).join(" ")}" fill="none" stroke="${C}" stroke-width="0.6" stroke-dasharray="2.5 3" opacity="0.4"/>`);
         }
       });
     });
@@ -6830,7 +6896,6 @@ const SHEET_EN = (() => {
     return {
       svg: `<defs>${defs}${band}<radialGradient id="ENvigU" gradientUnits="userSpaceOnUse" cx="195" cy="${f(vb.y + vb.h * .48)}" r="${f(390 * .72)}" gradientTransform="translate(195 ${f(vb.y + vb.h * .48)}) scale(1 ${f(vb.h / 390)}) translate(-195 ${f(-(vb.y + vb.h * .48))})"><stop offset="0.55" stop-color="#6b4420" stop-opacity="0"/><stop offset="1" stop-color="#5a3514" stop-opacity="0.55"/></radialGradient></defs>
 <g filter="url(#${P}coal)">${bricks}${red.join("")}${rp.svg()}</g>
-<g clip-path="url(#enband)"><rect x="${f(vb.x)}" y="630" width="${f(vb.w)}" height="230" fill="url(#ENvigU)"/><rect x="${f(vb.x)}" y="630" width="${f(vb.w)}" height="230" filter="url(#${P}grain)" opacity="0.2" style="mix-blend-mode:multiply"/></g>
 <text x="26" y="${titleY}" class="t-fell" font-style="italic" font-size="28" fill="${SEP}" opacity="0.85">Turris Babel</text>
 <text x="28" y="${titleY + 20}" class="t-fell" font-style="italic" font-size="12" fill="${SEP}" opacity="0.7">delineatio ab imo · gradus ${SK.roman(st.group)}</text>
 <text x="11" y="500" class="t-fell" font-style="italic" font-size="10" fill="${SEP}" opacity="0.7" transform="rotate(-90 11 500)">CCCXL cubiti</text>
@@ -8665,28 +8730,115 @@ const FREE_LINKS = {
 };
 // 课纲里的标题带「 · 」分隔（如「第一学期 · 补基础」），界面上换成空格
 const noDot = s => String(s ?? "").replace(/\s*·\s*/g, " ");
+/* 课时结构：按播放顺序把每一屏归到一个阶段（回顾 / 情境 / 新词 / 重点 / 练习 / 阅读 / 写作 / 小结），连续的合并成一段 */
+const CX_PH = { warm: "回顾", intro: "情境", teach: "讲解", word: "新词", key: "重点", ex: "练习", read: "阅读", write: "写作", sum: "小结" };
+function lessonShape(l) {
+  let flow = []; try { flow = v2Flow(l); } catch { }
+  const ph = s => s.warm ? "warm" : s.t === "intro" ? "intro" : s.t === "teach" || s.chk ? "teach" : s.t === "word" || s.t === "recall" ? "word" : /^k[123]$/.test(s.t) || s.kd ? "key" : s.t === "read" || s.rdq ? "read" : s.t === "write" ? "write" : s.t === "sum" ? "sum" : "ex";
+  const segs = [];
+  flow.forEach((s, i) => { const p = ph(s); if (segs.length && segs.at(-1).p === p) segs.at(-1).n++; else segs.push({ p, n: 1, from: i }); });
+  const keys = v2Keys(l).map(k => k.title);
+  return { n: flow.length, segs, keys, words: flow.filter(s => s.t === "word").length, ex: flow.filter(s => V2_EX.has(s.t) && !s.warm).length, story: !!l.story };
+}
+// 课时状态：done / cur（上了一半）/ next（下一课）/ todo
+function lessonState(id, nextId) { const r = lesRec(id); return r.done ? "done" : (r.hi || 0) > 0 ? "cur" : id === nextId ? "next" : "todo"; }
+function cxFlowHTML(sh, hi) {
+  const bar = sh.segs.map(g => { const fill = Math.max(0, Math.min(1, (hi - g.from) / g.n)); return `<i class="p-${g.p}" style="flex:${g.n}"><b style="width:${(fill * 100).toFixed(0)}%"></b></i>`; }).join("");
+  const seq = sh.segs.filter((g, i, a) => !i || a[i - 1].p !== g.p).map(g => `<span class="p-${g.p}">${CX_PH[g.p]}</span>`).join("<em>›</em>");
+  return `<div class="cx-flow">${bar}</div><div class="cx-seq">${seq}</div>`;
+}
+function cxLessonRow(u, i, nextId) {
+  const id = `${u.id}.${i}`, l = curLesson(id), st = lessonState(id, nextId), r = lesRec(id);
+  const sh = l && isV2(l) ? lessonShape(l) : null, len = sh?.n || 0;
+  const pct = st === "cur" && len ? Math.round(Math.min(1, (r.hi || 0) / len) * 100) : 0;
+  const sub = sh ? (sh.story ? "单元阅读 · 短文 + 理解题" : sh.keys.length ? "重点：" + sh.keys.map(k => k.replace(/[：:].*$/, "")).join(" · ") : `新词 ${sh.words}`) : "";
+  const tag = st === "done" ? "已学" : st === "cur" ? `${pct}%` : st === "next" ? "下一课" : l ? `约 ${lessonEst(l)} 分` : "";
+  return `<li class="cx-l ${st} ${sh?.story ? "story" : ""}" style="--p:${pct}%"><button data-l="${id}"><span class="cx-dot">${st === "done" ? "✓" : sh?.story ? "❧" : i}</span><span class="cx-lt"><b>${esc(l?.title || `第 ${i} 课`)}</b>${sub ? `<small>${esc(sub)}</small>` : ""}</span><span class="cx-tag">${tag}</span></button></li>`;
+}
+function cxTestRow(u) {
+  const ur = unitRec(u.id), last = (ur.tests || []).at(-1), all = [...Array(u.n || 5)].every((_, i) => lesRec(`${u.id}.${i + 1}`).done);
+  const txt = ur.pass ? `已结业${last ? ` · ${Math.round(last.acc * 100)}%` : ""}` : ur.rem && !ur.rem.done ? "回炉中" : all ? "可以测验了" : "学完全部课时后开放";
+  return `<li class="cx-l test ${ur.pass ? "done" : all ? "next" : "todo"}"><button ${all || ur.pass ? `data-test="${u.id}"` : "disabled"}><span class="cx-dot">${ur.pass ? "✓" : "✎"}</span><span class="cx-lt"><b>单元测验</b><small>${txt}</small></span><span class="cx-tag">${ur.pass ? "通过" : ""}</span></button></li>`;
+}
 VIEWS.course = VIEWS_JA.course = VIEWS_ES.course = async (el) => {
   const lang = curLang();
   try { await curIndex(); } catch { }
   const L = CUR.idx?.langs?.[lang], it = nextItem(lang);
   if (it.unit?.id) await curUnit(it.unit.id);
+  const pid = it.kind === "lesson" ? prevLessonId(it.id) : null; if (pid) await curUnit(unitIdOf(pid)).catch(() => { });
   if (current !== "course") return;
-  const curU = it.unit?.id;
-  el.innerHTML = `<div class="page3">
-    <header class="ph3"><div class="eye3">${lang === "ja" ? "かてい" : lang === "es" ? "Curso" : "Cursus"}</div><h1>${PLAN_NAME[lang]}课程</h1><p class="mut3">${esc(L?.goal || "")}</p></header>
-    ${it.kind === "lesson" ? `<div class="slip3 pad3"><div class="eye3">${lang === "ja" ? "つぎ" : lang === "es" ? "Próxima" : "Proximum"}</div><h3 class="t3">${esc(lessonTitle(it.id))}</h3><p class="mut3">${esc(it.unit.title)}，第 ${it.id.split(".")[3]} 课</p>${bricksHTML(lesPartsDone(it.id).length / 4)}${ctaHTML("上这一课", "", "c3-go")}</div>` : ""}
-    ${lang === "en" && !placeDone() ? `<button class="slip3 pad3 row between" id="c3-place" style="width:100%;text-align:left"><span><b>先做分级测试</b><br><small class="mut3">已经会的单元直接免修，10–20 分钟</small></span><span>›</span></button>` : ""}
-    ${keysOf(lang).length ? `<button class="slip3 pad3 row between" id="c3-keys" style="width:100%;text-align:left"><span><b>重点笔记</b><br><small class="mut3">学过 ${keysOf(lang).length} 个重点${keysDue(lang).length ? `，今天该复习 ${keysDue(lang).length} 个` : ""}</small></span><span>›</span></button>` : ""}
-    ${(() => { const pu = { en: "en.1.3", es: "es.1.2", ja: "ja.1.1" }[lang], u = (L?.stages || []).flatMap(s => s.units).find(x => x.id === pu); return u ? `<div class="slip3 pad3"><div class="eye3">新版课时试点</div><h3 class="t3">${esc(u.title)}</h3><p class="mut3">一步一屏的新教法，不受课程顺序限制，可以直接上。</p><div class="les3">${[...Array(u.n || 5)].map((_, i) => { const id = `${pu}.${i + 1}`; return `<button data-l="${id}" class="${lesRec(id).done ? "done" : "cur"}" title="${esc(lessonTitle(id))}">${i + 1}</button>`; }).join("")}</div></div>` : ""; })()}
-    ${(L?.stages || []).map(st => { const us = st.units, done = us.filter(u => unitRec(u.id).pass).length, open = us.some(u => u.id === curU); return `<details class="slip3 stage3" ${open ? "open" : ""}><summary><span><b>${esc(noDot(st.title))}</b><small>${esc(st.goal)}</small></span><span class="lg3">${done}/${us.length}</span></summary>
-      ${us.map(u => { const n = u.n || 5, ld = [...Array(n)].filter((_, i) => lesRec(`${u.id}.${i + 1}`).done).length, ur = unitRec(u.id), here = u.id === curU; return `<div class="unit3 ${here ? "here" : ""}"><div class="uh"><b>${esc(u.title)}</b><span class="mut3">${ur.pass ? "✓ 结业" : u.file ? `${ld}/${n}` : "待生成"}</span></div>${u.file ? `<div class="les3">${[...Array(n)].map((_, i) => { const id = `${u.id}.${i + 1}`, r = lesRec(id), cur = it.id === id; return `<button data-l="${id}" class="${r.done ? "done" : cur ? "cur" : "lock"}" ${r.done || cur ? "" : "disabled"} title="${esc(lessonTitle(id))}">${i + 1}</button>`; }).join("")}${ur.tests?.length ? `<span class="mut3">测验 ${Math.round(ur.tests.slice(-1)[0].acc * 100)}%</span>` : ""}</div>` : `<p class="mut3">${esc(u.goal || "")}</p>`}</div>`; }).join("")}</details>`; }).join("")}
+  const curU = it.unit?.id, units = curUnits(lang), stages = L?.stages || [];
+  const EY = { en: ["Cursus", "Proximum", "Unitas", "Mappa"], ja: ["かてい", "つぎ", "たんげん", "ちず"], es: ["Curso", "Próxima", "Unidad", "Mapa"] }[lang];
+  const ready = units.filter(u => u.file), lesTot = ready.reduce((a, u) => a + (u.n || 5), 0);
+  const lesDone = ready.reduce((a, u) => a + [...Array(u.n || 5)].filter((_, i) => lesRec(`${u.id}.${i + 1}`).done).length, 0);
+  const unitsDone = units.filter(u => unitRec(u.id).pass).length, nk = keysOf(lang).length, kd = keysDue(lang).length;
+  const weak = keysOf(lang).filter(([, r]) => r[3] >= 2 && r[3] > r[2]).length;
+  const stageOf = id => stages.findIndex(s => s.units.some(u => u.id === id));
+  const unitNo = id => { const si = stageOf(id); return si < 0 ? 0 : stages[si].units.findIndex(u => u.id === id) + 1; };
+  /* ---- 下一课 ---- */
+  let hero = "";
+  if (it.kind === "lesson") {
+    const l = curLesson(it.id), sh = l && isV2(l) ? lessonShape(l) : null, r = lesRec(it.id), hi = r.hi || 0, si = stageOf(curU);
+    const where = `${noDot(stages[si]?.title || "").split(" ")[0]} · 第 ${unitNo(curU)} 单元「${esc(it.unit.title)}」· 第 ${it.id.split(".")[3]} 课`;
+    hero = `<section class="slip3 cx-hero">
+      <div class="cx-kick"><span class="eye3">${EY[1]}</span><span class="cx-where">${where}</span></div>
+      <h2 class="cx-title">${esc(lessonTitle(it.id))}</h2>
+      ${sh ? `<div class="cx-facts"><span><b>${lessonEst(l)}</b>分钟</span>${sh.story ? `<span><b>1</b>篇短文</span>` : `<span><b>${sh.words}</b>新词</span><span><b>${sh.keys.length}</b>重点</span>`}<span><b>${sh.ex}</b>练习</span></div>
+      ${sh.keys.length ? `<div class="cx-keys"><div class="cx-kh"><span class="kbadge">重点</span>这一课讲透</div><ol>${sh.keys.map(k => `<li>${esc(k)}</li>`).join("")}</ol></div>` : ""}
+      ${cxFlowHTML(sh, hi)}
+      <p class="cx-prog">${hi ? `上次学到第 ${Math.min(hi + 1, sh.n)} / ${sh.n} 屏，从那里接着上` : `共 ${sh.n} 屏，一步一屏；中途退出会记住进度`}</p>` : ""}
+      ${ctaHTML(hi ? "接着上课" : "开始上课", "", "c3-go")}
+    </section>`;
+  } else if (it.kind === "test" || it.kind === "rem") {
+    hero = `<section class="slip3 cx-hero"><div class="cx-kick"><span class="eye3">${EY[1]}</span><span class="cx-where">第 ${unitNo(curU)} 单元「${esc(it.unit.title)}」</span></div>
+      <h2 class="cx-title">${it.kind === "rem" ? "回炉复习" : "单元测验"}</h2><p class="mut3">${it.kind === "rem" ? "把上次测验的薄弱点再练一遍，然后重新测验。" : `这个单元的课都学完了。测验 ${Math.round(PL.set.pass * 100)}% 及格就结业，下一单元解锁。`}</p>
+      ${ctaHTML(it.kind === "rem" ? "开始回炉" : "开始测验", "", "c3-test")}</section>`;
+  } else if (it.kind === "gap") hero = `<section class="slip3 cx-hero"><h2 class="cx-title">「${esc(it.unit.title)}」内容编写中</h2><p class="mut3">前面的单元已经全部结业。这个单元写好后会自动出现在这里。</p></section>`;
+  else if (it.kind === "end") hero = `<section class="slip3 cx-hero"><h2 class="cx-title">课程全部学完了</h2><p class="mut3">可以去复习、阅读和听力里继续练。</p></section>`;
+  /* ---- 本单元路线 ---- */
+  const cu = units.find(u => u.id === curU && u.file);
+  const path = cu ? `<div class="sect3"><b>本单元</b><i>${EY[2]} ${SK.roman(unitNo(cu.id))}</i></div>
+    <section class="slip3 cx-path"><div class="cx-uh"><b>${esc(cu.title)}</b><span class="lg3">${[...Array(cu.n || 5)].filter((_, i) => lesRec(`${cu.id}.${i + 1}`).done).length}/${cu.n || 5}</span></div>${cu.goal ? `<p class="mut3">${esc(cu.goal)}</p>` : ""}
+      <ol class="cx-steps">${[...Array(cu.n || 5)].map((_, i) => cxLessonRow(cu, i + 1, it.id)).join("")}${cxTestRow(cu)}</ol></section>` : "";
+  /* ---- 工具 ---- */
+  const tools = [
+    nk ? `<button class="slip3 cx-tool" id="c3-keys"><span class="cx-ti">重</span><span><b>重点笔记</b><small>学过 ${nk} 个${kd ? ` · 今天该复习 <em>${kd}</em> 个` : ""}${weak ? ` · 薄弱 ${weak} 个` : ""}</small></span></button>` : "",
+    lang === "en" && !placeDone() ? `<button class="slip3 cx-tool" id="c3-place"><span class="cx-ti">测</span><span><b>分级测试</b><small>已经会的单元直接免修，10–20 分钟</small></span></button>` : ""
+  ].filter(Boolean);
+  /* ---- 课程地图 ---- */
+  const map = stages.map((st, si) => {
+    const us = st.units, done = us.filter(u => unitRec(u.id).pass).length, open = us.some(u => u.id === curU);
+    return `<details class="slip3 cx-stage" ${open ? "open" : ""}><summary><span class="cx-sn">${SK.roman(si + 1)}</span><span class="cx-sh"><b>${esc(noDot(st.title))}</b><small>${esc(st.goal || "")}</small></span><span class="lg3">${done}/${us.length}</span></summary>
+      <div class="cx-units">${us.map((u, ui) => { const n = u.n || 5, ld = [...Array(n)].filter((_, i) => lesRec(`${u.id}.${i + 1}`).done).length, ur = unitRec(u.id), here = u.id === curU;
+        const bar = `<span class="cx-ubar">${[...Array(n)].map((_, i) => { const s = u.file ? lessonState(`${u.id}.${i + 1}`, it.id) : "todo"; return `<i class="${s}"></i>`; }).join("")}</span>`;
+        return u.file ? `<details class="cx-u ${here ? "here" : ""} ${ur.pass ? "pass" : ""}" data-u="${u.id}"><summary><span class="cx-un">${ui + 1}</span><span class="cx-unt"><b>${esc(u.title)}</b>${bar}</span><span class="cx-us">${ur.pass ? "✓" : `${ld}/${n}`}</span></summary><ol class="cx-steps sm"></ol></details>`
+          : `<div class="cx-u soon"><div class="cx-row"><span class="cx-un">${ui + 1}</span><span class="cx-unt"><b>${esc(u.title)}</b><small>${esc(u.goal || (u.plan || []).join("、"))}</small></span><span class="cx-us">编写中</span></div></div>`; }).join("")}</div></details>`;
+  }).join("");
+  el.innerHTML = `<div class="page3 cx">
+    <header class="ph3"><div class="eye3">${EY[0]}</div><h1>${PLAN_NAME[lang]}课程</h1><p class="mut3">${esc(L?.goal || "")}</p>
+      <div class="cx-stats"><span><b>${lesDone}</b>/${lesTot}<small>课时</small></span><span><b>${unitsDone}</b>/${units.length}<small>单元结业</small></span><span><b>${nk}</b><small>个重点</small></span></div></header>
+    ${hero}${path}
+    ${tools.length ? `<div class="cx-tools ${tools.length === 1 ? "one" : ""}">${tools.join("")}</div>` : ""}
+    <div class="sect3"><b>课程地图</b><i>${EY[3]}</i></div>${map}
     <div class="sect3"><b>自由练习</b><i>${lang === "ja" ? "じゆう" : "Libera"}</i></div>
     <div class="grid3">${FREE_LINKS[lang].map(([v, n, d]) => `<button class="slip3 tile3" data-v="${v}"><b>${n}</b><small>${d}</small></button>`).join("")}</div>
   </div>`;
+  const openLesson = async id => { await curUnit(unitIdOf(id)); LR.id = id; LR.parts = null; LR.quiz = null; LR.from = "course"; go("lesson"); };
+  const bind = root => {
+    $$("[data-l]", root).forEach(b => b.onclick = () => openLesson(b.dataset.l));
+    $$("[data-test]", root).forEach(b => b.onclick = () => { UT.unit = b.dataset.test; UT.quiz = null; UT.result = null; UT.rem = !!(unitRec(b.dataset.test).rem && !unitRec(b.dataset.test).rem.done); go("utest"); });
+  };
+  bind(el);
+  // 课程地图：点开单元才加载课时列表
+  $$(".cx-u[data-u]", el).forEach(d => d.addEventListener("toggle", async () => {
+    if (!d.open || d.dataset.loaded) return; d.dataset.loaded = "1";
+    const u = units.find(x => x.id === d.dataset.u); await curUnit(u.id);
+    const ol = d.querySelector("ol"); ol.innerHTML = [...Array(u.n || 5)].map((_, i) => cxLessonRow(u, i + 1, it.id)).join("") + cxTestRow(u); bind(ol);
+  }));
   $("#c3-keys", el) && ($("#c3-keys", el).onclick = keyNotesModal);
   $("#c3-place", el) && ($("#c3-place", el).onclick = () => go("place"));
-  $("#c3-go", el) && ($("#c3-go", el).onclick = () => { LR.id = it.id; LR.parts = null; LR.quiz = null; LR.from = "course"; go("lesson"); });
-  $$("[data-l]", el).forEach(b => b.onclick = async () => { await curUnit(unitIdOf(b.dataset.l)); LR.id = b.dataset.l; LR.parts = null; LR.quiz = null; LR.from = "course"; go("lesson"); });
+  $("#c3-go", el) && ($("#c3-go", el).onclick = () => openLesson(it.id));
+  $("#c3-test", el) && ($("#c3-test", el).onclick = () => { UT.unit = curU; UT.quiz = null; UT.result = null; UT.rem = it.kind === "rem"; go("utest"); });
   $$("[data-v]", el).forEach(b => b.onclick = () => { const v = b.dataset.v; if (v === "grammar") { GS.tab = "topics"; ESG.open = null; ESG.tab = "list"; } if (v === "reading") { RS.open = null; AS.open = null; ESR.open = null; } if (v === "listening") LS.open = null; if (v === "conj") CJ.sess = null; if (v === "test") TS.mode = "home"; go(v); });
 };
 
