@@ -7,7 +7,7 @@ async function server(port = 8765) {
   await new Promise(r => setTimeout(r, 700));
   return p;
 }
-async function open({ docs = {}, ls = {}, hash = '', now = null, port = 8765 } = {}) {
+async function open({ docs = {}, ls = {}, hash = '', now = null, port = 8765, init = null } = {}) {
   const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' }).catch(() => chromium.launch());
   const ctx = await browser.newContext({ serviceWorkers: 'block', viewport: { width: 390, height: 844 } });
   await ctx.route(/fonts\.(googleapis|gstatic)\.com/, r => r.abort());
@@ -15,6 +15,7 @@ async function open({ docs = {}, ls = {}, hash = '', now = null, port = 8765 } =
   const errors = [];
   page.on('pageerror', e => errors.push('pageerror: ' + e.message));
   page.on('console', m => { if (m.type() === 'error') errors.push('console: ' + m.text()); });
+  if (init) await page.addInitScript(init);  // 例如 () => { window.BABEL_APP = true; } 模拟 App 版
   if (now) await page.addInitScript(t => { const D = Date; const off = new D(t).getTime() - D.now(); globalThis.Date = class extends D { constructor(...a) { if (a.length) super(...a); else super(D.now() + off); } static now() { return D.now() + off; } }; }, now);
   await page.goto(`http://127.0.0.1:${port}/manifest.webmanifest`);
   await page.evaluate(async ({ docs, ls }) => {

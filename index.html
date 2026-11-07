@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261107.1103-6f2771";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261107.1106-113563";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -2822,8 +2822,18 @@ const NAV_ES = [["home", "今日", "Hoy"], ["pron", "发音", "Pronunciación"],
 // 日语模式的导航：六个入口
 const NAV_JA = [["home", "本日", "ほんじつ"], ["words", "単語", "たんご"], ["dict", "辞書", "じしょ"], ["reading", "読解", "どっかい"], ["corpus", "語彙庫", "ごいこ"], ["progress", "進度", "しんど"]];
 function buildNav() { } // 导航栏已取消：首页的塔就是入口
+/* 上一页：记住走过的页面（只在内存里，换语言或刷新后清空）。回首页时清空；
+   点页面上写死的“← 某页”正好回到上一页时，也当作返回，不再压一层 */
+const HIST = [];
+let histBack = false;
 function go(v, opts) {
-  if (current !== v) { Speech.stop(); track.on = false; onLeave?.(); onLeave = null; }
+  if (current !== v) {
+    Speech.stop(); track.on = false; onLeave?.(); onLeave = null;
+    if (v === "home") HIST.length = 0;
+    else if (histBack || HIST.at(-1) === v) { if (HIST.at(-1) === v) HIST.pop(); }
+    else if (current && current !== "home") { HIST.push(current); if (HIST.length > 40) HIST.shift(); }
+  }
+  histBack = false;
   Drawer.close();
   current = v;
   // App 版：从塔前进入内页时记一笔历史，安卓的返回手势回到塔前而不是直接退出
@@ -2835,6 +2845,14 @@ function go(v, opts) {
   } catch { }
   render(opts);
   window.scrollTo({ top: 0 });
+}
+const histPrev = () => HIST.at(-1) || "home";
+// 返回上一页；正在做题（沉浸模式）时先确认，避免一碰就丢了这一组的作答
+function goBack(force) {
+  if (!force && document.body.classList.contains("focus")) return confirmBox("退出这一组练习？没答完的不会保存。", "退出", () => goBack(true));
+  const prev = histPrev();
+  if (prev !== "home") histBack = true;
+  go(prev);
 }
 let onLeave = null;
 function render(opts) {
@@ -7658,11 +7676,12 @@ function pageBar() {
     bar = document.createElement("header"); bar.id = "pagebar";
     bar.innerHTML = `<button class="back" id="pb-back"><svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><path d="M20 8.4C14 8 8 8.2 2.6 8.1M7.5 2.6C5.6 4.4 4 6 2.4 8.1c1.8 1.9 3.4 3.5 5.3 5.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span></span></button><div class="pb-t"><b></b><em></em></div><div class="sync" id="sync"><i></i><span></span></div>`;
     document.body.prepend(bar);
-    $("#pb-back").onclick = () => go("home");
+    $("#pb-back").onclick = () => goBack();
   }
-  const lang = curLang(), nm = PAGE_NAMES[lang][current] || ["", ""];
-  $("#pb-back span", bar).textContent = { en: "turris", ja: "柱へ", es: "templo" }[lang];
-  $("#pb-back", bar).setAttribute("aria-label", "回到塔前");
+  const lang = curLang(), nm = PAGE_NAMES[lang][current] || ["", ""], prev = histPrev();
+  const pn = prev === "home" ? "" : (PAGE_NAMES[lang][prev] || [])[0] || "上一页";
+  $("#pb-back span", bar).textContent = pn || { en: "turris", ja: "柱へ", es: "templo" }[lang];
+  $("#pb-back", bar).setAttribute("aria-label", pn ? "返回" + pn : "回到塔前");
   $(".pb-t b", bar).textContent = nm[0]; $(".pb-t em", bar).textContent = nm[1];
   setSync();
 }
@@ -9232,11 +9251,14 @@ function bindArchiveSection(m) {
    只有独立部署的 App 版会设置 window.BABEL_APP；claude.ai 里的网页版不受影响。 */
 const APP = { prompt: null, files: null };
 if (window.BABEL_APP) {
-  // 返回手势：先关弹层，再回塔前
+  // 返回手势：先关弹层，再回上一页（上一页是塔前时回塔前；在塔前再按一次才退出）
   window.addEventListener("popstate", () => {
-    const m = $(".modal-bg"); if (m) { m.remove(); history.pushState({ babel: "inner" }, "", location.hash); return; }
-    if ($(".mlayer")) { $(".mlayer").remove(); return; }
-    if (current !== "home") go("home");
+    const keep = () => history.pushState({ babel: "inner" }, "", location.hash);
+    const m = $(".modal-bg"); if (m) { m.remove(); keep(); return; }
+    if ($(".mlayer")) { $(".mlayer").remove(); keep(); return; }
+    if (current === "home") return;
+    if (document.body.classList.contains("focus")) { keep(); return goBack(); }
+    goBack(true);
   });
   window.addEventListener("beforeinstallprompt", e => { e.preventDefault(); APP.prompt = e; });
   window.addEventListener("appinstalled", () => { APP.prompt = null; toast("已安装到桌面"); });
