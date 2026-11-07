@@ -1,6 +1,13 @@
 # babel
 BABEL Language learing app
 
+## 文档
+
+- [`docs/HANDOFF.md`](docs/HANDOFF.md)：课程编写的工作流程、进度和质量标准（写新单元前先读）。
+- [`curriculum/README.md`](curriculum/README.md)：课纲和单元文件的数据格式。
+- [`docs/LEXICON.md`](docs/LEXICON.md)：词库扩充（补例句、加新词）的任务说明，可交给 DeepSeek 等做；配套脚本 `tools/deepseek_lexicon.py`、`tools/lexicon_merge.py`。
+- [`docs/INTERMISSION_IMPORT.md`](docs/INTERMISSION_IMPORT.md)：幕间休息新闻导入的联动协议。
+
 ## 监工学习计划
 
 - 首页左上角「今日任务」：三门语言统一排课的当天清单（复习 + 欠债 + 主课课时 / 单元测验 / 回炉）。

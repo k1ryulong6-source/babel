@@ -142,4 +142,5 @@ git push -u origin <本会话的分支>
 
 - 课纲格式：`curriculum/README.md`（含 v4 重点、整句题、写作、单元阅读的格式）。
 - 播放器、排课、FSRS 复习、课程页都在 `index.html`；改应用代码前先读相关函数（`v2Flow`、`v2Render`、`lessonShape`、`VIEWS.course`、`_planEnsureToday`）。
+- 词库扩充（补例句、加新词）另见 `docs/LEXICON.md`，可以和写课分开做。
 - `main` 上另有 Intermission 新闻导入（`integrations/intermission.js`、`docs/INTERMISSION_IMPORT.md`），由别的会话维护，不要动。
