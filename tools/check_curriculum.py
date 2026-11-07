@@ -131,7 +131,7 @@ def main():
     errs, warns, stats = [], [], {}
     for lang, L in idx["langs"].items():
         lex, gram = lexicon(lang), grammar_refs(lang)
-        seen_units, n_les, n_ex, n_words = set(), 0, 0, 0
+        seen_units, n_les, n_ex, n_words, n_bank = set(), 0, 0, 0, 0
         word_owner = {}
         for st in L["stages"]:
             for u in st["units"]:
@@ -187,9 +187,15 @@ def main():
                 for k, x in enumerate(d.get("test", {}).get("extra", [])):
                     check_ex(x, f"{u['id']} 测验第{k + 1}题", errs)
                     n_ex += 1
+                nl = len(d.get("lessons", []))
+                for k, x in enumerate(d.get("bank", [])):
+                    check_ex(x, f"{u['id']} 题库第{k + 1}题", errs)
+                    if "l" in x and not (isinstance(x["l"], int) and 1 <= x["l"] <= nl):
+                        errs.append(f"{u['id']} 题库第{k + 1}题: l 应为 1–{nl} 的课时序号")
+                    n_bank += 1
                 if len(d.get("lessons", [])) != u.get("n", 5):
                     warns.append(f"{u['id']}: 课时数 {len(d.get('lessons', []))} 与目录 n={u.get('n')} 不一致")
-        stats[lang] = f"{n_les} 课 · {n_words} 新词 · {n_ex} 题"
+        stats[lang] = f"{n_les} 课 · {n_words} 新词 · {n_ex} 题" + (f" · 题库 {n_bank} 题" if n_bank else "")
     for w in warns:
         print("提醒:", w)
     for e in errs:

@@ -6,6 +6,7 @@ BABEL Language learing app
 - [`docs/HANDOFF.md`](docs/HANDOFF.md)：课程编写的工作流程、进度和质量标准（写新单元前先读）。
 - [`curriculum/README.md`](curriculum/README.md)：课纲和单元文件的数据格式。
 - [`docs/LEXICON.md`](docs/LEXICON.md)：词库扩充（补例句、加新词）的任务说明，可交给 DeepSeek 等做；配套脚本 `tools/deepseek_lexicon.py`、`tools/lexicon_merge.py`。
+- [`docs/QUESTION_BANK.md`](docs/QUESTION_BANK.md)：单元题库（每单元追加练习题）的出题说明，可交给 WorkBuddy / DeepSeek 做；配套脚本 `tools/bank_brief.py`、`tools/bank_merge.py`。
 - [`docs/INTERMISSION_IMPORT.md`](docs/INTERMISSION_IMPORT.md)：幕间休息新闻导入的联动协议。
 
 ## 监工学习计划

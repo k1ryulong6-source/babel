@@ -3,7 +3,7 @@
 <meta name="theme-color" content="#1a1612"><meta name="color-scheme" content="light">
 <meta name="description" content="巴别塔：英语、日语、西班牙语学习。塔就是首页，砖块随学习进度砌起。">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
-<script>window.BABEL_APP=1;window.BABEL_BUILD="20261015.1720-032ed1";</script>
+<script>window.BABEL_APP=1;window.BABEL_BUILD="20261107.1103-6f2771";</script>
 <style>html{-webkit-text-size-adjust:100%;color-scheme:light}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;background:#1a1612}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 <title>巴别塔</title>
@@ -2843,7 +2843,7 @@ function render(opts) {
   if (!home) { pageBar(); paperTexture(curLang()); }
   (viewOf(current) || viewOf("home"))(el, opts); updateBadges();
   // 背单词、测验、模拟时隐藏导航，进入沉浸模式
-  const focus = (current === "words" && WS.mode === "session" && WS.sess && WS.sess.pos < WS.sess.q.length) || (current === "test" && TS.run && !TS.run.graded) || (current === "grammar" && GS.tab === "mock") || (current === "lesson" && LR.quiz) || (current === "utest" && UT.quiz) || current === "mistq" || (current === "conj" && CJ.sess) || (current === "place" && PT.quiz);
+  const focus = (current === "words" && WS.mode === "session" && WS.sess && WS.sess.pos < WS.sess.q.length) || (current === "test" && TS.run && !TS.run.graded) || (current === "grammar" && GS.tab === "mock") || (current === "lesson" && LR.quiz) || (current === "utest" && UT.quiz) || (current === "ubank" && UB.quiz) || current === "mistq" || (current === "conj" && CJ.sess) || (current === "place" && PT.quiz);
   document.body.classList.toggle("focus", !!focus);
   nav3();
 }
@@ -8338,7 +8338,12 @@ const UT = { unit: null, quiz: null, result: null, rem: false };
 async function unitPool(uid_) {
   const u = await curUnit(uid_); if (!u) return null;
   if (curLang() === "es" && !ESG.list) await esLessons().catch(() => { });
-  return { u, pool: u.lessons.flatMap(planExercises), extra: (u.test?.extra || []).map(x => ({ ...x, ref: uid_ })), n: u.test?.n || 20 };
+  return { u, pool: u.lessons.flatMap(planExercises), extra: (u.test?.extra || []).map(x => ({ ...x, ref: uid_ })), bank: unitBank(u), n: u.test?.n || 20 };
+}
+// 单元题库（unit.bank）：只追加不删改，下标 bk 用来记每题做过几次、对过几次；l 是题目所属课时（1 起），用于找薄弱课时
+function unitBank(u) {
+  const ok = new Set(["c", "f", "o", "tr", "dict"]);
+  return (u?.bank || []).map((x, i) => ({ ...x, ref: x.l ? `${u.id}.${x.l}` : u.id, bk: i })).filter(x => ok.has(x.t));
 }
 VIEWS.utest = VIEWS_JA.utest = VIEWS_ES.utest = async (el) => {
   if (!UT.unit || !UT.unit.startsWith(curLang() + ".")) return go("today");
@@ -8353,7 +8358,7 @@ VIEWS.utest = VIEWS_JA.utest = VIEWS_ES.utest = async (el) => {
     ${R ? `<div class="card stack"><h2>${R.acc >= pass ? "通过 ✓" : "没有通过"}</h2><p style="font-size:18px" class="num">${R.ok} / ${R.n}（${Math.round(R.acc * 100)}%）</p>
       <p class="muted">${R.acc >= pass ? "这个单元结业了，下一单元已解锁。" : `及格线 ${Math.round(pass * 100)}%。薄弱的课时已经排进「回炉」：复习后重新测验。错题都进了错题本。`}</p>
       <div class="row"><button class="btn pri" id="ut-home">回到今日任务</button>${R.acc >= pass ? "" : `<button class="btn" id="ut-rem">现在回炉</button>`}</div></div>`
-    : `<div class="card stack"><p>从本单元 ${P.u.lessons.length} 课的练习里抽题，加上测验专用题，共 ${Math.min(P.n, P.pool.length + P.extra.length)} 题。每题只答一次，正确率 ${Math.round(pass * 100)}% 及格。</p>
+    : `<div class="card stack"><p>从本单元 ${P.u.lessons.length} 课的练习${P.bank.length ? "和题库" : ""}里抽题，加上测验专用题，共 ${Math.min(P.n, P.pool.length + P.bank.length + P.extra.length)} 题。每题只答一次，正确率 ${Math.round(pass * 100)}% 及格。</p>
       ${(ur.tests || []).length ? `<p class="muted" style="font-size:14px">之前的成绩：${ur.tests.map(t => Math.round(t.acc * 100) + "%").join("、")}</p>` : ""}
       <div class="row"><button class="btn pri" id="ut-go">开始测验</button></div></div>`}
   </div>`;
@@ -8361,7 +8366,7 @@ VIEWS.utest = VIEWS_JA.utest = VIEWS_ES.utest = async (el) => {
   $("#ut-home") && ($("#ut-home").onclick = () => { UT.result = null; go("today"); });
   $("#ut-rem") && ($("#ut-rem").onclick = () => { UT.result = null; UT.rem = true; render(); });
   $("#ut-go") && ($("#ut-go").onclick = () => {
-    const n = Math.min(P.n, P.pool.length + P.extra.length), items = shuffle([...P.extra, ...shuffle(P.pool).slice(0, Math.max(0, n - P.extra.length))]).slice(0, n);
+    const all = [...P.pool, ...P.bank], n = Math.min(P.n, all.length + P.extra.length), items = shuffle([...P.extra, ...shuffle(all).slice(0, Math.max(0, n - P.extra.length))]).slice(0, n);
     UT.quiz = quizStart(items, { title: P.u.title + "：单元测验", retry: false, onWrong: planAddMistake, onAnswer: (it, ok) => planQuizStat(ok), onDone: r => finishUnitTest(P, r) });
     render(); window.scrollTo({ top: 0 });
   });
@@ -8391,12 +8396,43 @@ function remedialView(el, P, ur) {
   $("#rm-go") && ($("#rm-go").onclick = () => {
     // 这几课的单词提前到今天复习
     for (const l of les) for (const w of [...lessonWords(l), ...lessonSpecial(l)]) { const r = prog(w); if (r && r[1] > today()) { r[1] = today(); setProg(w, r); } }
-    const more = shuffle(les.flatMap(planExercises)).slice(0, 10);
+    const more = shuffle([...les.flatMap(planExercises), ...P.bank.filter(x => rem.les.includes(x.ref))]).slice(0, 12);
     UT.quiz = quizStart(shuffle([...rem.qs, ...more]), { title: P.u.title + "：回炉", onWrong: planAddMistake, onAnswer: (it, ok) => planQuizStat(ok),
       onDone: () => { unitRecW(UT.unit).rem.done = today(); savePlanState(); UT.quiz = null; planCheck(); toast("回炉完成，可以重新测验了"); render(); } });
     render(); window.scrollTo({ top: 0 });
   });
 }
+/* ---- 单元题库练习：随时刷本单元题库里已学课时的题；没做过的先出，上次做错的其次 ---- */
+const UB = { unit: null, quiz: null, last: null };
+const UB_N = 15;
+function ubOpen(uid_) { UB.unit = uid_; UB.quiz = null; UB.last = null; go("ubank"); }
+VIEWS.ubank = VIEWS_JA.ubank = VIEWS_ES.ubank = async (el) => {
+  if (!UB.unit || !UB.unit.startsWith(curLang() + ".")) return go("course");
+  const P = await unitPool(UB.unit); if (current !== "ubank") return;
+  if (!P) { el.innerHTML = `<div class="card empty">单元内容读取失败，请联网后再试。</div>`; return; }
+  if (UB.quiz) return renderQuiz(el, UB.quiz, () => confirmBox("退出？已经答过的题会记下来。", "退出", () => { UB.quiz = null; render(); }));
+  const st = unitRec(UB.unit).bk || {}, passed = !!unitRec(UB.unit).pass;
+  const open = P.bank.filter(x => passed || !x.l || lesRec(x.ref).done);
+  const seen = open.filter(x => st[x.bk]).length, wrong = open.filter(x => st[x.bk] && !st[x.bk][2]).length, R = UB.last;
+  el.innerHTML = `<div class="stack">
+    <div class="sec-head"><div><div class="eyebrow">EXERCITATIO<span class="zh">单元题库</span></div><h1>${esc(P.u.title)}</h1></div><button class="btn sm" id="ub-back">← 课程</button></div>
+    ${R ? `<div class="notice info">这一组 ${R.n} 题，第一次就答对 ${R.ok} 题。答错的已进错题本。</div>` : ""}
+    <div class="card stack">
+      <p class="num">题库共 ${P.bank.length} 题，已学课时可做 ${open.length} 题；做过 ${seen} 题${wrong ? `，上次答错 ${wrong} 题` : ""}。</p>
+      <p class="muted" style="font-size:14px">每组 ${UB_N} 题：没做过的先出，上次答错的其次。答错的题会再出，直到做对。只出已经学完的课时的题。</p>
+      <div class="row">${open.length ? `<button class="btn pri" id="ub-go">开始一组</button>` : `<span class="muted">先学完本单元的第一课，再来做题。</span>`}</div>
+    </div>
+  </div>`;
+  $("#ub-back").onclick = () => go("course");
+  $("#ub-go") && ($("#ub-go").onclick = () => {
+    const rank = x => { const r = st[x.bk]; return !r ? 0 : !r[2] ? 1 : 2 + r[1]; };
+    const items = shuffle(open).sort((a, b) => rank(a) - rank(b)).slice(0, UB_N), done = new Set();
+    UB.quiz = quizStart(shuffle(items), { title: P.u.title + "：单元题库", onWrong: planAddMistake,
+      onAnswer: (it, ok) => { planQuizStat(ok); if (done.has(it.bk)) return; done.add(it.bk); const bk = unitRecW(UB.unit).bk ||= {}, r = bk[it.bk] ||= [0, 0, 0]; r[0]++; if (ok) r[1]++; r[2] = ok ? 1 : 0; savePlanState(); },
+      onDone: r => { UB.quiz = null; UB.last = { n: r.n, ok: r.ok }; render(); } });
+    render(); window.scrollTo({ top: 0 });
+  });
+};
 
 /* ---- 错题复习：到期的错题按 1、3、7 天间隔再考，连对两次移出错题本 ---- */
 function mistakeItem(m) {
@@ -8776,6 +8812,11 @@ function cxTestRow(u) {
   const txt = ur.pass ? `已结业${last ? ` · ${Math.round(last.acc * 100)}%` : ""}` : ur.rem && !ur.rem.done ? "回炉中" : all ? "可以测验了" : "学完全部课时后开放";
   return `<li class="cx-l test ${ur.pass ? "done" : all ? "next" : "todo"}"><button ${all || ur.pass ? `data-test="${u.id}"` : "disabled"}><span class="cx-dot">${ur.pass ? "✓" : "✎"}</span><span class="cx-lt"><b>单元测验</b><small>${txt}</small></span><span class="cx-tag">${ur.pass ? "通过" : ""}</span></button></li>`;
 }
+function cxBankRow(u) {
+  const B = CUR.units[u.id]?.bank || []; if (!B.length) return "";
+  const seen = Object.keys(unitRec(u.id).bk || {}).length;
+  return `<li class="cx-l bank"><button data-bank="${u.id}"><span class="cx-dot">☰</span><span class="cx-lt"><b>单元题库</b><small>共 ${B.length} 题 · 做过 ${Math.min(seen, B.length)} 题</small></span><span class="cx-tag">练习</span></button></li>`;
+}
 VIEWS.course = VIEWS_JA.course = VIEWS_ES.course = async (el) => {
   const lang = curLang();
   try { await curIndex(); } catch { }
@@ -8815,7 +8856,7 @@ VIEWS.course = VIEWS_JA.course = VIEWS_ES.course = async (el) => {
   const cu = units.find(u => u.id === curU && u.file);
   const path = cu ? `<div class="sect3"><b>本单元</b><i>${EY[2]} ${SK.roman(unitNo(cu.id))}</i></div>
     <section class="slip3 cx-path"><div class="cx-uh"><b>${esc(cu.title)}</b><span class="lg3">${[...Array(cu.n || 5)].filter((_, i) => lesRec(`${cu.id}.${i + 1}`).done).length}/${cu.n || 5}</span></div>${cu.goal ? `<p class="mut3">${esc(cu.goal)}</p>` : ""}
-      <ol class="cx-steps">${[...Array(cu.n || 5)].map((_, i) => cxLessonRow(cu, i + 1, it.id)).join("")}${cxTestRow(cu)}</ol></section>` : "";
+      <ol class="cx-steps">${[...Array(cu.n || 5)].map((_, i) => cxLessonRow(cu, i + 1, it.id)).join("")}${cxTestRow(cu)}${cxBankRow(cu)}</ol></section>` : "";
   /* ---- 工具 ---- */
   const tools = [
     nk ? `<button class="slip3 cx-tool" id="c3-keys"><span class="cx-ti">重</span><span><b>重点笔记</b><small>学过 ${nk} 个${kd ? ` · 今天该复习 <em>${kd}</em> 个` : ""}${weak ? ` · 薄弱 ${weak} 个` : ""}</small></span></button>` : "",
@@ -8843,13 +8884,14 @@ VIEWS.course = VIEWS_JA.course = VIEWS_ES.course = async (el) => {
   const bind = root => {
     $$("[data-l]", root).forEach(b => b.onclick = () => openLesson(b.dataset.l));
     $$("[data-test]", root).forEach(b => b.onclick = () => { UT.unit = b.dataset.test; UT.quiz = null; UT.result = null; UT.rem = !!(unitRec(b.dataset.test).rem && !unitRec(b.dataset.test).rem.done); go("utest"); });
+    $$("[data-bank]", root).forEach(b => b.onclick = () => ubOpen(b.dataset.bank));
   };
   bind(el);
   // 课程地图：点开单元才加载课时列表
   $$(".cx-u[data-u]", el).forEach(d => d.addEventListener("toggle", async () => {
     if (!d.open || d.dataset.loaded) return; d.dataset.loaded = "1";
     const u = units.find(x => x.id === d.dataset.u); await curUnit(u.id);
-    const ol = d.querySelector("ol"); ol.innerHTML = [...Array(u.n || 5)].map((_, i) => cxLessonRow(u, i + 1, it.id)).join("") + cxTestRow(u); bind(ol);
+    const ol = d.querySelector("ol"); ol.innerHTML = [...Array(u.n || 5)].map((_, i) => cxLessonRow(u, i + 1, it.id)).join("") + cxTestRow(u) + cxBankRow(u); bind(ol);
   }));
   $("#c3-keys", el) && ($("#c3-keys", el).onclick = keyNotesModal);
   $("#c3-place", el) && ($("#c3-place", el).onclick = () => go("place"));
