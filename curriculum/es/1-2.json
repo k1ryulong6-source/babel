@@ -107,7 +107,8 @@
         "Se llama",
         "Llamo"
        ],
-       "a": 0
+       "a": 0,
+       "e": "说自己的名字用 me llamo（我叫）。te llamas 是“你叫”，se llama 是“他 / 您叫”；只说 llamo 少了 me，意思变成“我打电话”。"
       },
       {
        "t": "f",
@@ -180,7 +181,8 @@
         "¿Cómo te llama usted?",
         "¿Cómo llamas tú?"
        ],
-       "a": 1
+       "a": 1,
+       "e": "对陌生的长辈用 usted：¿Cómo se llama usted?。te llamas 对熟人用；te 和 usted 不能混在一起，¿Cómo llamas tú? 少了 te。"
       },
       {
        "t": "c",
@@ -510,7 +512,8 @@
         "soy",
         "sois"
        ],
-       "a": 0
+       "a": 0,
+       "e": "ser 的变位：tú → eres。es 对应 él / ella / usted，soy 是 yo，sois 是 vosotros。"
       },
       {
        "t": "c",
@@ -521,7 +524,8 @@
         "somos",
         "eres"
        ],
-       "a": 1
+       "a": 1,
+       "e": "ellos（他们）→ son。es 是单数第三人称，somos 是“我们”，eres 是“你”。"
       },
       {
        "t": "f",
@@ -600,7 +604,8 @@
         "Es profesor.",
         "Yo es profesor."
        ],
-       "a": 1
+       "a": 1,
+       "e": "说职业时不加冠词：Soy profesor。加 un 是在强调“一位（怎样的）老师”，Es / Yo es 主语和动词都对不上。"
       },
       {
        "t": "c",
@@ -742,7 +747,8 @@
       "soy",
       "son"
      ],
-     "a": 1
+     "a": 1,
+     "e": "usted 虽然意思是“您”，动词却用第三人称单数：Usted es。eres 是 tú 的形式。"
     },
     {
      "t": "tr",
@@ -881,7 +887,8 @@
         "los",
         "un"
        ],
-       "a": 1
+       "a": 1,
+       "e": "mesa 以 -a 结尾，是阴性单数，冠词用 la。el 配阳性，los 是阳性复数，un 是不定冠词而且是阳性。"
       },
       {
        "t": "c",
@@ -981,7 +988,8 @@
         "ciudadas",
         "ciudad"
        ],
-       "a": 1
+       "a": 1,
+       "e": "以辅音结尾的名词复数加 -es：ciudad → ciudades。直接加 -s 只用于元音结尾的词。"
       },
       {
        "t": "f",
@@ -1264,7 +1272,8 @@
         "una",
         "la"
        ],
-       "a": 1
+       "a": 1,
+       "e": "第一次提到、对方不知道是哪一家，用不定冠词；hotel 是阳性 → un。el / la 用于已知的、特指的东西。"
       },
       {
        "t": "c",
@@ -1369,7 +1378,8 @@
         "de la",
         "al"
        ],
-       "a": 1
+       "a": 1,
+       "e": "de + el 必须缩合成 del：el libro del profesor。de la 用于阴性名词，al 是 a + el。"
       },
       {
        "t": "tr",
@@ -1497,7 +1507,8 @@
       "el",
       "unos"
      ],
-     "a": 1
+     "a": 1,
+     "e": "amiga 是阴性单数，第一次提到用不定冠词 una。un 配阳性，el 是特指，unos 是复数。"
     },
     {
      "t": "o",
@@ -1648,7 +1659,8 @@
         "¿Qué años tienes?",
         "¿Cuánto años tienes?"
        ],
-       "a": 1
+       "a": 1,
+       "e": "问年龄用 tener：¿Cuántos años tienes?。不能用 ser（eres）；años 是阳性复数，所以是 cuántos，不是 cuánto 或 qué。"
       },
       {
        "t": "tr",
@@ -1803,7 +1815,8 @@
       "ocho",
       "nueve"
      ],
-     "a": 2
+     "a": 2,
+     "e": "cinco（5）+ tres（3）= ocho（8）。seis 6，siete 7，nueve 9。"
     },
     {
      "t": "c",
@@ -1814,7 +1827,8 @@
       "seis",
       "tres"
      ],
-     "a": 0
+     "a": 0,
+     "e": "nueve（9）− cuatro（4）= cinco（5）。"
     },
     {
      "t": "c",
@@ -1912,7 +1926,7 @@
       "日本人"
      ],
      "a": 0,
-     "e": "",
+     "e": "第一句：Me llamo Lei. Soy chino（我是中国人）。日本人是他的同学 Kenji，西班牙人是老师。",
      "rdq": true
     },
     {
@@ -1924,7 +1938,7 @@
       "老师"
      ],
      "a": 2,
-     "e": "",
+     "e": "Mi profesora se llama Carmen：卡门是老师，从马德里来。同学是 Kenji。",
      "rdq": true
     },
     {
@@ -1936,7 +1950,7 @@
       "八个"
      ],
      "a": 2,
-     "e": "",
+     "e": "La clase es pequeña: somos ocho personas，班上一共八个人。",
      "rdq": true
     },
     {
@@ -1948,7 +1962,7 @@
       "马约尔街的咖啡馆"
      ],
      "a": 2,
-     "e": "",
+     "e": "Después de clase, Kenji y yo vamos al café de la calle Mayor：下课后去马约尔街的咖啡馆。",
      "rdq": true
     },
     {
@@ -1995,7 +2009,8 @@
      "eres",
      "estoy"
     ],
-    "a": 1
+    "a": 1,
+    "e": "yo → soy。es 是第三人称，eres 是 tú；estoy 是 estar，说身份、职业要用 ser。"
    },
    {
     "t": "c",
@@ -2006,7 +2021,8 @@
      "me",
      "le"
     ],
-    "a": 1
+    "a": 1,
+    "e": "usted 用第三人称的代词 se：¿Cómo se llama usted?。te 对应 tú，me 对应 yo。"
    },
    {
     "t": "c",
@@ -2029,7 +2045,8 @@
      "en el",
      "del"
     ],
-    "a": 1
+    "a": 1,
+    "e": "a + el 必须缩合成 al：Vamos al cine。“去”某地用 a，不用 en；del 是 de + el。"
    },
    {
     "t": "c",
@@ -2040,7 +2057,8 @@
      "japoneses",
      "japonesas"
     ],
-    "a": 1
+    "a": 1,
+    "e": "amiga 是阴性单数，形容词也要阴性单数：japonesa。japonés 是阳性，后两个是复数。"
    },
    {
     "t": "c",
@@ -2051,7 +2069,8 @@
      "noche",
      "nochs"
     ],
-    "a": 0
+    "a": 0,
+    "e": "以元音结尾的名词复数直接加 -s：noche → noches。"
    },
    {
     "t": "c",
@@ -2062,7 +2081,8 @@
      "seis",
      "siete"
     ],
-    "a": 1
+    "a": 1,
+    "e": "5 是 cinco。cuatro 4，seis 6，siete 7。"
    },
    {
     "t": "f",
