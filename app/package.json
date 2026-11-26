@@ -1,0 +1,19 @@
+{
+  "name": "babel-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "巴别塔安卓 App（试课版）：新课结构 + 新播放器",
+  "scripts": {
+    "sync": "cap sync android",
+    "apk": "cap sync android && cd android && ./gradlew assembleDebug",
+    "serve": "npx --yes http-server www -p 5173 -c-1"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.6.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.2"
+  }
+}

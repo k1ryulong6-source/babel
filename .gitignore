@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 tools/.tts_cache/
+lexicon_inbox/
+bank_inbox/

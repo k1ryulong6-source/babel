@@ -1,0 +1,1214 @@
+{
+ "id": "es.2.5.1",
+ "lang": "es",
+ "unit": "西语 2.5 · 宾格与与格代词",
+ "title": "lo / la / los / las",
+ "subtitle": "说过的东西，第二次就换成代词",
+ "minutes": 40,
+ "keyId": "es.2.5.1.k1",
+ "sections": [
+  {
+   "id": "warm",
+   "name": "开场检索",
+   "short": "检索",
+   "min": 4,
+   "intro": "先别看书，凭记忆写出以前学过的东西。想不起来也没关系，想的这一下就是在记。",
+   "screens": [
+    {
+     "id": "w1",
+     "t": "f",
+     "src": "上一课 · 人生动词的介词",
+     "ins": "填一个介词",
+     "q": "Mi hermana se casó ___ un chico de Sevilla.",
+     "zh": "我姐姐嫁给了一个塞维利亚小伙子。",
+     "a": [
+      "con"
+     ],
+     "e": "casarse <b>con</b> 某人。中文说“嫁给”，西语用 con（和……结婚），不能说 casarse a。"
+    },
+    {
+     "id": "w2",
+     "t": "tr",
+     "src": "上一课 · 人生动词的介词",
+     "ins": "翻译成西语",
+     "zh": "他们 2015 年搬到了马德里。",
+     "a": [
+      "Se mudaron a Madrid en 2015.",
+      "En 2015 se mudaron a Madrid.",
+      "Ellos se mudaron a Madrid en 2015."
+     ],
+     "e": "mudarse <b>a</b> + 地点；一次性的人生节点用简单过去时 se mudaron。"
+    },
+    {
+     "id": "w3",
+     "t": "f",
+     "src": "3 课前 · “变成”",
+     "ins": "用 convertirse 的正确形式填空",
+     "q": "Al final, la rana se ___ en un príncipe.",
+     "zh": "最后，青蛙变成了王子。",
+     "a": [
+      "convirtió"
+     ],
+     "e": "convertirse en：性质彻底改变。故事里的一次性事件用简单过去时，e→i 变音：se <b>convirtió</b>。"
+    },
+    {
+     "id": "w4",
+     "t": "tr",
+     "src": "3 课前 · “变成”",
+     "ins": "翻译成西语",
+     "zh": "她听到那个消息，脸红了。",
+     "a": [
+      "Se puso roja cuando oyó la noticia.",
+      "Cuando oyó la noticia, se puso roja.",
+      "Se puso roja al oír la noticia.",
+      "Al oír la noticia, se puso roja."
+     ],
+     "e": "暂时的情绪、脸色变化用 <b>ponerse</b> + 形容词：se puso roja。"
+    },
+    {
+     "id": "w5",
+     "t": "f",
+     "src": "上一单元 · 未完成过去时",
+     "ins": "用 soler 的正确形式填空",
+     "q": "De pequeño, yo ___ jugar en la calle con mis primos.",
+     "zh": "小时候我常和表兄弟们在街上玩。",
+     "a": [
+      "solía"
+     ],
+     "e": "过去的习惯：soler 的未完成过去时 + 原形，yo <b>solía</b> jugar。"
+    },
+    {
+     "id": "w6",
+     "t": "dict",
+     "src": "上一单元 · 未完成过去时",
+     "ins": "听写：听录音，写下整句",
+     "a": "Cuando era niña, vivía en un pueblo pequeño.",
+     "zh": "我小时候住在一个小村子里。",
+     "e": "背景描写用未完成过去时：era、vivía。注意 niña 的 ñ。"
+    }
+   ]
+  },
+  {
+   "id": "input",
+   "name": "读一读",
+   "short": "输入",
+   "min": 7,
+   "intro": "先读懂一段对话，不用管语法。读的时候留意一下，有几个小词反复出现。",
+   "screens": [
+    {
+     "id": "r1",
+     "t": "read",
+     "title": "Una falda para la boda",
+     "note": "克拉拉周六要参加婚礼，和朋友去买衣服。先整篇听一遍，再逐句读；点句子看中文。",
+     "lines": [
+      [
+       "",
+       "El sábado Clara tiene una boda y no tiene nada que ponerse.",
+       "周六克拉拉要参加一场婚礼，可她没有能穿的衣服。"
+      ],
+      [
+       "",
+       "Hoy hay rebajas, así que va al centro con su amiga Marta.",
+       "今天打折，所以她和朋友玛尔塔去了市中心。"
+      ],
+      [
+       "Dependienta",
+       "Hola, ¿os puedo ayudar?",
+       "你们好，需要帮忙吗？"
+      ],
+      [
+       "Clara",
+       "Sí, busco una falda elegante para una boda.",
+       "是的，我在找一条参加婚礼穿的、正式一点的裙子。"
+      ],
+      [
+       "Dependienta",
+       "Tenemos esta falda azul. ¿La quiere ver en su talla?",
+       "我们有这条蓝裙子。您要看看您的尺码吗？"
+      ],
+      [
+       "Clara",
+       "Sí, la quiero ver en la talla M, por favor.",
+       "好的，我想看 M 码的，谢谢。"
+      ],
+      [
+       "Dependienta",
+       "Aquí la tiene. Puede probarse la falda allí: los probadores están al fondo.",
+       "给您。您可以在那边试穿，试衣间在最里面。"
+      ],
+      [
+       "Marta",
+       "¿Qué tal te queda?",
+       "你穿着怎么样？"
+      ],
+      [
+       "Clara",
+       "Me queda bien, pero es un poco corta. ¿Y este vestido rojo? ¿Lo tienen en negro?",
+       "挺合身的，就是有点短。那这条红连衣裙呢？有黑色的吗？"
+      ],
+      [
+       "Dependienta",
+       "Perdone, no lo tenemos en negro. Solo lo tenemos en rojo.",
+       "抱歉，没有黑色的。只有红色的。"
+      ],
+      [
+       "Marta",
+       "Mira estas camisetas, ¡están a cinco euros! ¿Las compramos?",
+       "你看这些 T 恤，才五欧元！我们买吗？"
+      ],
+      [
+       "Clara",
+       "No, camisetas ya tengo muchas.",
+       "不了，T 恤我已经有很多了。"
+      ],
+      [
+       "Marta",
+       "Mira estos pantalones. ¿Los quieres probar?",
+       "你看这条裤子。要试试吗？"
+      ],
+      [
+       "Clara",
+       "No, gracias, hoy no los necesito. ¿Y las chaquetas? ¿Dónde las tienen?",
+       "不了，谢谢，今天用不着裤子。那外套呢？外套在哪儿？"
+      ],
+      [
+       "Dependienta",
+       "Las tenemos allí, al lado de los abrigos.",
+       "在那边，大衣旁边。"
+      ],
+      [
+       "Clara",
+       "¡Esta chaqueta blanca es preciosa! La compro. Y también compro la falda azul.",
+       "这件白外套真漂亮！我买了。那条蓝裙子我也买。"
+      ],
+      [
+       "Clara",
+       "Si no me queda bien en casa, ¿la puedo devolver?",
+       "要是回家穿着不合适，可以退吗？"
+      ],
+      [
+       "Dependienta",
+       "Claro, la puede devolver en treinta días. Guarde el tique.",
+       "当然，三十天内都可以退。请保留好小票。"
+      ],
+      [
+       "",
+       "",
+       ""
+      ],
+      [
+       "Marta",
+       "Oye, ¿conoces al novio?",
+       "哎，你认识新郎吗？"
+      ],
+      [
+       "Clara",
+       "Sí, lo conozco. Es el hermano de mi compañera Ana. ¿Sabes que la boda es en la playa?",
+       "认识，他是我同事安娜的哥哥。你知道婚礼在海边办吗？"
+      ],
+      [
+       "Marta",
+       "Sí, ya lo sé. Por cierto, ¿y los zapatos? ¿Ya los tienes?",
+       "嗯，我已经知道了。对了，鞋呢？你已经有了吗？"
+      ],
+      [
+       "Clara",
+       "¡Ay, no! No los tengo. ¡Vamos a otra tienda!",
+       "哎呀，没有！我还没有鞋。我们去别家店吧！"
+      ]
+     ]
+    },
+    {
+     "id": "r2",
+     "t": "c",
+     "rd": true,
+     "ins": "理解：选出正确答案",
+     "q": "¿Por qué va Clara de compras?",
+     "o": [
+      "Porque el sábado tiene una boda.",
+      "Porque hay rebajas y quiere ropa barata.",
+      "Porque necesita zapatos para el trabajo."
+     ],
+     "a": 0,
+     "why": [
+      "第一句就说了：El sábado Clara tiene una boda y no tiene nada que ponerse。",
+      "打折是她“今天”去的原因之一（así que），但真正的目的是婚礼要穿的衣服。",
+      "鞋是最后才想起来的，而且是为婚礼，不是为上班。"
+     ]
+    },
+    {
+     "id": "r3",
+     "t": "c",
+     "rd": true,
+     "ins": "理解：选出正确答案",
+     "q": "¿Qué compra Clara al final?",
+     "o": [
+      "El vestido rojo y la falda azul.",
+      "La chaqueta blanca y la falda azul.",
+      "Los pantalones y la chaqueta blanca."
+     ],
+     "a": 1,
+     "why": [
+      "红连衣裙她只是问了有没有黑色的，店里没有，她没买。",
+      "La compro（外套）+ también compro la falda azul。",
+      "裤子她说 hoy no los necesito，没买。"
+     ]
+    },
+    {
+     "id": "r4",
+     "t": "c",
+     "rd": true,
+     "ins": "理解：选出正确答案",
+     "q": "¿Qué problema tiene Clara al final?",
+     "o": [
+      "No conoce al novio.",
+      "La falda es corta y no la puede devolver.",
+      "Todavía no tiene zapatos."
+     ],
+     "a": 2,
+     "why": [
+      "她说 Sí, lo conozco，认识新郎。",
+      "店员说 la puede devolver en treinta días，可以退。",
+      "¿Ya los tienes? —No los tengo。所以要去另一家店。"
+     ]
+    },
+    {
+     "id": "r5",
+     "t": "match",
+     "ins": "短文里的词（一）：把西语和中文配对",
+     "pairs": [
+      [
+       "la talla",
+       "尺码"
+      ],
+      [
+       "el probador",
+       "试衣间"
+      ],
+      [
+       "las rebajas",
+       "打折季"
+      ],
+      [
+       "devolver",
+       "退货；归还"
+      ],
+      [
+       "quedar bien",
+       "（衣服）合身、好看"
+      ],
+      [
+       "la chaqueta",
+       "外套、夹克"
+      ]
+     ],
+     "e": "这几个词后面的练习还会出现。quedar 的用法和 gustar 一样：<b>me queda</b> bien（我穿着合适）。"
+    },
+    {
+     "id": "r6",
+     "t": "match",
+     "ins": "短文里的词（二）：衣服",
+     "pairs": [
+      [
+       "la camiseta",
+       "T 恤"
+      ],
+      [
+       "los pantalones",
+       "裤子"
+      ],
+      [
+       "la falda",
+       "裙子"
+      ],
+      [
+       "el vestido",
+       "连衣裙"
+      ],
+      [
+       "el abrigo",
+       "大衣"
+      ],
+      [
+       "probarse",
+       "试穿"
+      ]
+     ],
+     "e": "注意 <b>los pantalones</b> 是阳性复数，一条裤子也常说复数；<b>probarse</b> 是“给自己试”：Me pruebo la falda。"
+    }
+   ]
+  },
+  {
+   "id": "notice",
+   "name": "找规律",
+   "short": "发现",
+   "min": 4,
+   "intro": "先自己猜，再看答案。猜错了也比直接看规则记得牢。",
+   "screens": [
+    {
+     "id": "d1",
+     "t": "c",
+     "ins": "这四句话都来自短文。高亮的小词指的是什么？",
+     "lines": [
+      [
+       "¿<mark>La</mark> quiere ver en su talla?",
+       "（说的是那条蓝裙子）"
+      ],
+      [
+       "¿<mark>Lo</mark> tienen en negro?",
+       "（说的是那条红连衣裙）"
+      ],
+      [
+       "¿Dónde <mark>las</mark> tienen?",
+       "（说的是外套）"
+      ],
+      [
+       "No <mark>los</mark> tengo.",
+       "（说的是鞋）"
+      ]
+     ],
+     "q": "高亮的词是……",
+     "o": [
+      "前面已经说过的那件东西",
+      "冠词，相当于英语的 the",
+      "说话的人自己"
+     ],
+     "a": 0,
+     "why": [
+      "对。每个高亮的词都在替前面提过的名词：la = la falda，lo = el vestido，las = las chaquetas，los = los zapatos。",
+      "它们长得和冠词一样（la falda 的 la），但后面没有名词，直接跟动词，所以不是冠词。",
+      "如果是“我”，会用 me。这里指的都是东西。"
+     ],
+     "reveal": "这些词叫<b>直接宾语代词</b>：替代前面说过的、动作直接作用的东西。"
+    },
+    {
+     "id": "d2",
+     "t": "c",
+     "ins": "再看一眼短文",
+     "lines": [
+      [
+       "¿Y este vestido rojo? ¿<mark>Lo</mark> tienen en negro?",
+       "那这条红连衣裙呢？有黑色的吗？"
+      ]
+     ],
+     "q": "为什么这里用 lo，不用 la？",
+     "o": [
+      "因为 vestido 是阳性单数",
+      "因为 negro 是阳性",
+      "因为这是一个问句"
+     ],
+     "a": 0,
+     "why": [
+      "对。代词看它替代的名词：el vestido → lo。",
+      "很多人会被离得最近的 negro 吸引。negro 是跟着 vestido 变的形容词，代词看的也是 vestido 本身。要是说 la falda，就是 ¿La tienen en negro?",
+      "问句和陈述句用的代词一样：Lo tienen. / ¿Lo tienen?"
+     ],
+     "reveal": "规律一：代词的<b>性和数跟着被替代的名词</b>走。"
+    },
+    {
+     "id": "d3",
+     "t": "c",
+     "ins": "看代词的位置",
+     "lines": [
+      [
+       "<mark>La</mark> compro.",
+       "我买了（它）。"
+      ],
+      [
+       "No <mark>los</mark> tengo.",
+       "我没有（它们）。"
+      ],
+      [
+       "¿<mark>La</mark> puedo devolver?",
+       "我可以退（它）吗？"
+      ]
+     ],
+     "q": "代词放在哪里？",
+     "o": [
+      "变位动词的前面；有 no 时，no 在最前",
+      "动词后面，像英语的 I buy it",
+      "永远在句子最前面"
+     ],
+     "a": 0,
+     "why": [
+      "对：La compro / No los tengo / ¿La puedo devolver?（puedo 是变位动词）。",
+      "英语思维最容易这样放：compro la ✗。西语的代词要在变位动词前面。",
+      "No los tengo 里，最前面的是 no，代词紧贴在动词前，不是在句首。"
+     ],
+     "reveal": "规律二：代词放在<b>变位动词前面</b>：No + 代词 + 动词。"
+    },
+    {
+     "id": "d4",
+     "t": "c",
+     "ins": "两个 la 一样吗？",
+     "lines": [
+      [
+       "Y también compro <mark>la</mark> falda azul.",
+       "那条蓝裙子我也买。"
+      ],
+      [
+       "<mark>La</mark> compro.",
+       "我买了（它）。"
+      ]
+     ],
+     "q": "这两个 la 有什么不同？",
+     "o": [
+      "第一个后面跟名词，是冠词；第二个后面跟动词，是代词",
+      "完全一样，都是冠词",
+      "第一个是代词，第二个是冠词"
+     ],
+     "a": 0,
+     "why": [
+      "对。判断的窍门：<b>看后面跟的是什么</b>。跟名词（la falda）→ 冠词；跟动词（la compro）→ 代词。",
+      "La compro 里 la 后面是动词 compro，没有名词可以“冠”，所以只能是代词。",
+      "正好说反了：la falda 的 la 修饰名词，是冠词。"
+     ],
+     "reveal": "lo / la / los / las 是冠词还是代词，<b>看后面跟名词还是跟动词</b>。"
+    }
+   ]
+  },
+  {
+   "id": "teach",
+   "name": "讲透",
+   "short": "讲解",
+   "min": 7,
+   "intro": "把刚才发现的规律讲清楚。每屏读完先猜答案，再看解析。哪屏没懂就点“没懂”，课后会再给你复习。",
+   "screens": [
+    {
+     "id": "t1",
+     "t": "teach",
+     "title": "四个代词，对应四种名词",
+     "body": [
+      "直接宾语 = 动词直接作用的东西：compro <b>la falda</b>（买什么？裙子）。第二次说到时，不重复名词，换成代词。"
+     ],
+     "table": [
+      [
+       "",
+       "单数",
+       "复数"
+      ],
+      [
+       "阳性",
+       "el vestido → <b>lo</b>",
+       "los zapatos → <b>los</b>"
+      ],
+      [
+       "阴性",
+       "la falda → <b>la</b>",
+       "las chaquetas → <b>las</b>"
+      ]
+     ],
+     "ex": [
+      [
+       "¿Tienes el abrigo? —Sí, lo tengo.",
+       "你带大衣了吗？——带了。"
+      ],
+      [
+       "Estas camisetas, ¿las vende usted?",
+       "这些 T 恤您卖吗？"
+      ]
+     ],
+     "ask": {
+      "t": "c",
+      "q": "¿Y los pantalones? —No ___ necesito.",
+      "o": [
+       "los",
+       "las",
+       "lo"
+      ],
+      "a": 0,
+      "why": [
+       "对：pantalones 阳性复数 → los。",
+       "pantalones 以 -es 结尾，但它是阳性（los pantalones），所以是 los。",
+       "pantalones 是复数（一条裤子在西语里也常用复数），要用 los。"
+      ]
+     },
+     "recall": {
+      "t": "f",
+      "q": "¿Y los pantalones? —No ___ necesito.",
+      "a": [
+       "los"
+      ]
+     }
+    },
+    {
+     "id": "t2",
+     "t": "teach",
+     "title": "完整样例：四步换代词",
+     "body": [
+      "例句：¿Tienes <b>la llave</b>?"
+     ],
+     "steps": [
+      [
+       "① 找宾语",
+       "动词 tienes 的对象是什么？→ <b>la llave</b>（钥匙）"
+      ],
+      [
+       "② 定性数",
+       "llave 是阴性单数（la llave）"
+      ],
+      [
+       "③ 选代词",
+       "阴性单数 → <b>la</b>"
+      ],
+      [
+       "④ 放位置",
+       "放在变位动词前：Sí, <b>la</b> tengo."
+      ]
+     ],
+     "ex": [
+      [
+       "¿Tienes la llave? —Sí, la tengo.",
+       "你有钥匙吗？——有。"
+      ],
+      [
+       "¿Compras los tomates? —Sí, los compro.",
+       "你买西红柿吗？——买。"
+      ]
+     ],
+     "ask": {
+      "t": "f",
+      "ins": "这次第 ①–③ 步你自己来，填出代词",
+      "q": "¿Ves las montañas? —Sí, ___ veo.",
+      "a": [
+       "las"
+      ],
+      "e": "① 宾语 las montañas → ② 阴性复数 → ③ las → ④ 放在 veo 前：Sí, <b>las</b> veo。"
+     },
+     "recall": {
+      "t": "f",
+      "q": "¿Ves las montañas? —Sí, ___ veo.",
+      "a": [
+       "las"
+      ]
+     }
+    },
+    {
+     "id": "t3",
+     "t": "teach",
+     "title": "位置：变位动词前，no 在最前",
+     "body": [
+      "一个动词：代词 + 变位动词 → <b>La</b> compro.",
+      "否定：<b>No</b> + 代词 + 动词 → <b>No la</b> compro. no 和动词之间只能夹代词。",
+      "“想 / 能 + 原形”：两种都对 → <b>La</b> quiero ver. = Quiero ver<b>la</b>.（贴在原形后面要连写。第 4 课细讲，今天先用第一种。）"
+     ],
+     "ex": [
+      [
+       "No la compro, es muy cara.",
+       "我不买，太贵了。"
+      ],
+      [
+       "¿La puedo devolver? = ¿Puedo devolverla?",
+       "我可以退吗？"
+      ]
+     ],
+     "ask": {
+      "t": "c",
+      "q": "“我不买它（那件外套）。”哪句对？",
+      "o": [
+       "No la compro.",
+       "La no compro.",
+       "No compro la."
+      ],
+      "a": 0,
+      "why": [
+       "对：No + la + compro。",
+       "no 要放在最前面，代词紧贴动词：No la compro。",
+       "这是英语语序（I don't buy it）。西语代词不能放在变位动词后面。"
+      ]
+     },
+     "recall": {
+      "t": "c",
+      "q": "“我不买它。”",
+      "o": [
+       "No la compro.",
+       "La no compro.",
+       "No compro la."
+      ],
+      "a": 0
+     }
+    },
+    {
+     "id": "t4",
+     "t": "teach",
+     "title": "和中文比：中文能省，西语不能省",
+     "body": [
+      "中文回答时常把宾语直接省掉：“你买那条裙子吗？——买。”",
+      "西语不能光说动词，要把代词补上：—Sí, <b>la</b> compro。只说 Sí, compro 听起来像话没说完：买什么？",
+      "反过来，也不要把名词重复一遍：Sí, compro la falda 语法没错，但听起来像机器人。"
+     ],
+     "ex": [
+      [
+       "¿Compras la chaqueta? —Sí, la compro.",
+       "你买那件外套吗？——买。"
+      ],
+      [
+       "¿Haces la cena hoy? —Sí, la hago yo.",
+       "今天你做晚饭吗？——我来做。"
+      ]
+     ],
+     "ask": {
+      "t": "c",
+      "q": "¿Tienes el tique? 最自然的回答是：",
+      "o": [
+       "Sí, lo tengo.",
+       "Sí, tengo.",
+       "Sí, tengo el tique."
+      ],
+      "a": 0,
+      "why": [
+       "对：el tique → lo，放在 tengo 前。",
+       "这正是中文“有”的直译。西语 tener 后面必须有宾语，要说 lo tengo。",
+       "语法没错，但刚问完就重复名词，不自然。"
+      ]
+     },
+     "recall": {
+      "t": "tr",
+      "q": "¿Tienes el tique? —有。",
+      "zh": "把回答译成西语：¿Tienes el tique? ——有。",
+      "a": [
+       "Sí, lo tengo.",
+       "Lo tengo."
+      ]
+     }
+    },
+    {
+     "id": "t5",
+     "t": "teach",
+     "title": "人也用 lo / la；中性 lo 代替“整件事”",
+     "body": [
+      "人作宾语时前面有 a：Conozco <b>a</b> Pedro。换成代词时 <b>a 就不要了</b>：<b>Lo</b> conozco。",
+      "<b>lo</b> 还能代替一整句话、一件事，这时永远是 lo：¿Sabes que la boda es en la playa? —Sí, ya <b>lo</b> sé。",
+      "常用：Lo sé. · No lo sé. · No lo creo. · Ya lo veo."
+     ],
+     "ex": [
+      [
+       "¿Conoces al novio? —Sí, lo conozco.",
+       "你认识新郎吗？——认识。"
+      ],
+      [
+       "¿Ves a las niñas? —No, no las veo.",
+       "你看见小姑娘们了吗？——没看见。"
+      ],
+      [
+       "¿Sabes dónde está Ana? —No lo sé.",
+       "你知道安娜在哪儿吗？——不知道。"
+      ]
+     ],
+     "ask": {
+      "t": "c",
+      "q": "¿Conoces a Marta? —Sí, ___ conozco.",
+      "o": [
+       "la",
+       "a la",
+       "lo"
+      ],
+      "a": 0,
+      "why": [
+       "对：Marta 是女性单数 → la。",
+       "a 只在名词前出现（a Marta），换成代词时 a 去掉。",
+       "lo 用于男性（Pedro）或“整件事”。Marta 是女性，用 la。"
+      ]
+     },
+     "recall": {
+      "t": "f",
+      "q": "¿Conoces a Marta? —Sí, ___ conozco.",
+      "a": [
+       "la"
+      ]
+     }
+    },
+    {
+     "id": "t6",
+     "t": "teach",
+     "title": "最常犯的三个错",
+     "errs": [
+      [
+       "¿Compras la falda? —Sí, compro.",
+       "Sí, la compro.",
+       "宾语不能省，要补代词。"
+      ],
+      [
+       "Los zapatos son bonitos. La quiero.",
+       "Los quiero.",
+       "zapatos 阳性复数 → los。性数看名词。"
+      ],
+      [
+       "Compro la. / La no compro.",
+       "La compro. / No la compro.",
+       "代词在变位动词前，no 在最前。"
+      ]
+     ],
+     "ex": [
+      [
+       "Los zapatos son bonitos. Los quiero.",
+       "这双鞋很好看，我想要。"
+      ]
+     ],
+     "ask": {
+      "t": "c",
+      "q": "哪句话有错？",
+      "o": [
+       "Las camisetas, la compro.",
+       "No lo sé.",
+       "¿La puedo devolver?"
+      ],
+      "a": 0,
+      "why": [
+       "对，这句错了：camisetas 是阴性复数，要用 las：Las compro。",
+       "这句对：中性 lo 代替“那件事”。",
+       "这句对：代词在变位动词 puedo 前。"
+      ]
+     },
+     "recall": {
+      "t": "c",
+      "q": "哪句话有错？",
+      "o": [
+       "Las camisetas, la compro.",
+       "No lo sé.",
+       "¿La puedo devolver?"
+      ],
+      "a": 0
+     }
+    }
+   ]
+  },
+  {
+   "id": "practice",
+   "name": "从认到用",
+   "short": "练习",
+   "min": 10,
+   "intro": "先认，再改写，最后自己说。越往后提示越少。",
+   "screens": [
+    {
+     "id": "p1",
+     "t": "c",
+     "lv": "认",
+     "ins": "选出正确的代词",
+     "q": "¿Dónde compraste el abrigo? —___ compré en las rebajas.",
+     "o": [
+      "Lo",
+      "La",
+      "Le"
+     ],
+     "a": 0,
+     "why": [
+      "对：el abrigo 阳性单数 → lo。",
+      "abrigo 以 -o 结尾，是阳性：el abrigo → lo。",
+      "le 是下一课的间接宾语（给某人），不代替东西。"
+     ]
+    },
+    {
+     "id": "p2",
+     "t": "c",
+     "lv": "认",
+     "ins": "选出正确的代词",
+     "q": "Estas camisetas son muy baratas. ¿___ compramos?",
+     "o": [
+      "Las",
+      "Los",
+      "La"
+     ],
+     "a": 0,
+     "why": [
+      "对：camisetas 阴性复数 → las。",
+      "los 是阳性复数。camiseta 是阴性（la camiseta）。",
+      "camisetas 是复数，要用 las。"
+     ]
+    },
+    {
+     "id": "p3",
+     "t": "c",
+     "lv": "认",
+     "say": "No la tengo en casa.",
+     "ins": "听录音：代词指的最可能是什么？",
+     "q": "🔊",
+     "o": [
+      "la chaqueta",
+      "el abrigo",
+      "los zapatos"
+     ],
+     "a": 0,
+     "why": [
+      "对：听到的是 la → 阴性单数的东西。",
+      "el abrigo 要用 lo：No lo tengo en casa。",
+      "los zapatos 要用 los：No los tengo en casa。"
+     ]
+    },
+    {
+     "id": "p4",
+     "t": "f",
+     "lv": "改",
+     "ins": "填出代词",
+     "q": "—¿Tienes los billetes? —Sí, ___ tengo aquí.",
+     "a": [
+      "los"
+     ],
+     "e": "los billetes 阳性复数 → <b>los</b>。"
+    },
+    {
+     "id": "p5",
+     "t": "rw",
+     "lv": "改",
+     "ins": "用代词代替画线部分，写出整句",
+     "q": "Compro <u>la chaqueta</u>.",
+     "a": [
+      "La compro."
+     ],
+     "e": "la chaqueta → la，放在 compro 前。"
+    },
+    {
+     "id": "p6",
+     "t": "rw",
+     "lv": "改",
+     "ins": "用代词代替画线部分，写出整句",
+     "q": "No encuentro <u>las llaves</u>.",
+     "a": [
+      "No las encuentro."
+     ],
+     "e": "no + las + encuentro。"
+    },
+    {
+     "id": "p7",
+     "t": "f",
+     "lv": "改",
+     "opt": true,
+     "ins": "复习短文里的词",
+     "q": "Los ___ están al fondo, a la derecha.",
+     "zh": "试衣间在最里面，右手边。",
+     "a": [
+      "probadores"
+     ],
+     "e": "el probador（试衣间），复数 los probadores。"
+    },
+    {
+     "id": "p7b",
+     "t": "f",
+     "lv": "改",
+     "ins": "复习短文里的词：填 probarse 的正确形式",
+     "q": "Perdone, ¿puedo ___ este vestido?",
+     "zh": "请问，我可以试一下这条连衣裙吗？",
+     "a": [
+      "probarme"
+     ],
+     "e": "poder + 原形，反身代词跟着主语“我”：<b>probarme</b>。"
+    },
+    {
+     "id": "p8",
+     "t": "o",
+     "lv": "改",
+     "ins": "连词成句",
+     "zh": "我可以明天退吗？",
+     "a": "¿La puedo devolver mañana?",
+     "p": [
+      "¿La",
+      "puedo",
+      "devolver",
+      "mañana?"
+     ],
+     "e": "代词放在变位动词 puedo 前。"
+    },
+    {
+     "id": "p9",
+     "t": "rw",
+     "lv": "改",
+     "ins": "用代词代替画线部分，写出整句",
+     "q": "Espero <u>a mis amigas</u> en la puerta.",
+     "a": [
+      "Las espero en la puerta."
+     ],
+     "e": "人作宾语：a mis amigas → las（a 去掉）。"
+    },
+    {
+     "id": "p10",
+     "t": "dict",
+     "lv": "改",
+     "ins": "听写：听录音，写下整句",
+     "a": "Perdone, no la tenemos en su talla.",
+     "zh": "抱歉，没有您的尺码。",
+     "e": "no + la + tenemos；talla（尺码）。"
+    },
+    {
+     "id": "p11",
+     "t": "f",
+     "lv": "改",
+     "opt": true,
+     "ins": "复习短文里的词",
+     "q": "Esta falda no me queda ___; es muy corta.",
+     "zh": "这条裙子我穿着不合适，太短了。",
+     "a": [
+      "bien"
+     ],
+     "e": "quedar bien：合身、好看。no me queda bien。"
+    },
+    {
+     "id": "p12",
+     "t": "tr",
+     "lv": "用",
+     "ins": "翻译成西语",
+     "zh": "这条裙子很漂亮，但是我不买。",
+     "a": [
+      "Esta falda es muy bonita, pero no la compro.",
+      "La falda es muy bonita, pero no la compro.",
+      "Esta falda es preciosa, pero no la compro.",
+      "Esta falda es bonita, pero no la compro."
+     ],
+     "e": "后半句宾语不能省：pero <b>no la compro</b>。"
+    },
+    {
+     "id": "p13",
+     "t": "tr",
+     "lv": "用",
+     "ins": "翻译成西语",
+     "zh": "——你认识玛尔塔吗？——认识，我每天都见到她。",
+     "a": [
+      "¿Conoces a Marta? —Sí, la conozco. La veo todos los días.",
+      "¿Conoces a Marta? Sí, la conozco. La veo todos los días.",
+      "¿Conoces a Marta? —Sí, la conozco, la veo todos los días."
+     ],
+     "e": "conocer a Marta → la conozco；ver a Marta → la veo。"
+    },
+    {
+     "id": "p14",
+     "t": "free",
+     "lv": "用",
+     "ins": "用代词回答问题，写一句完整的话",
+     "q": "¿Cuándo vas a devolver los pantalones?",
+     "model": "Los voy a devolver mañana.",
+     "check": [
+      "用了 los（pantalones 阳性复数）",
+      "los 放在变位动词 voy 前（或贴在 devolver 后：Voy a devolverlos）",
+      "说了时间"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "output",
+   "name": "说出来",
+   "short": "输出",
+   "min": 6,
+   "intro": "把今天学的用起来：写一段，说一段。",
+   "screens": [
+    {
+     "id": "o1",
+     "t": "write",
+     "ins": "写作",
+     "prompt": "你在商店里，给朋友发消息：说说你看到了哪些衣服，买了哪些、不买哪些，为什么。写 4–5 句，至少用 3 次 lo / la / los / las。",
+     "need": {
+      "re": "(?:^|[^a-záéíóúñ])(lo|la|los|las)\\s+(?!(?:falda|chaqueta|camiseta|vestido|pantal[oó]n|zapato|abrigo|talla|tienda|ropa|boda|playa|rebaja|probador|novi[oa]|llave|foto|semana|mañana|tarde|noche|casa|cena|herman[oa]|amig[oa]|madre|padre|dependient[ae]|centro|color)(?:e?s)?(?![a-záéíóúñ]))[a-záéíóúñ]+",
+      "n": 3,
+      "label": "代词（估算）"
+     },
+     "model": "Estoy en una tienda en el centro. Hay una chaqueta negra muy bonita, pero no la compro porque es cara. Los vestidos son preciosos; me pruebo uno rojo y me queda bien, así que lo compro. Las faldas no las miro, ya tengo muchas. ¿Y tú? ¿Ya tienes los zapatos para la boda? ¡Los necesitas!",
+     "check": [
+      "每个代词的性数都和它代替的名词一致",
+      "代词放在变位动词前（no + 代词 + 动词）",
+      "第二次提到的东西用了代词，没有重复名词",
+      "至少 3 个 lo / la / los / las"
+     ]
+    },
+    {
+     "id": "o2",
+     "t": "speak",
+     "ins": "口语",
+     "prompt": "你回到商店退一条裤子。对店员说：你买了这条裤子、穿着不合适、想退掉，问能不能退。录下来再听一遍。",
+     "model": "Hola, ayer compré estos pantalones, pero no me quedan bien. Los quiero devolver. ¿Los puedo devolver? Aquí tengo el tique.",
+     "check": [
+      "说出 Los quiero devolver / ¿Los puedo devolver?",
+      "pantalones 用 los，不是 las",
+      "用了 quedar bien"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "exit",
+   "name": "出口小测",
+   "short": "小测",
+   "min": 4,
+   "intro": "5 道题，没有选项，没有提示。成绩决定这一课多快再复习。",
+   "screens": [
+    {
+     "id": "e1",
+     "t": "f",
+     "exit": true,
+     "ins": "填出代词",
+     "q": "¿Y la chaqueta? —No ___ compro, es muy cara.",
+     "a": [
+      "la"
+     ],
+     "e": "la chaqueta → la。"
+    },
+    {
+     "id": "e2",
+     "t": "rw",
+     "exit": true,
+     "ins": "用代词代替画线部分，写出整句",
+     "q": "Llamo <u>a Pedro</u> mañana.",
+     "a": [
+      "Lo llamo mañana.",
+      "Mañana lo llamo."
+     ],
+     "e": "人：a Pedro → lo，a 去掉。"
+    },
+    {
+     "id": "e3",
+     "t": "tr",
+     "exit": true,
+     "ins": "把回答译成西语",
+     "zh": "¿Y tus llaves? ——我找不到（它们）。",
+     "a": [
+      "No las encuentro.",
+      "No las puedo encontrar.",
+      "No puedo encontrarlas."
+     ],
+     "e": "las llaves → las；no + las + encuentro。"
+    },
+    {
+     "id": "e4",
+     "t": "tr",
+     "exit": true,
+     "ins": "把回答译成西语",
+     "zh": "¿Sabes que Ana se casa? ——我知道。",
+     "a": [
+      "Lo sé.",
+      "Ya lo sé.",
+      "Sí, lo sé.",
+      "Sí, ya lo sé."
+     ],
+     "e": "代替“整件事”用中性 lo：Lo sé。"
+    },
+    {
+     "id": "e5",
+     "t": "tr",
+     "exit": true,
+     "ins": "翻译成西语",
+     "zh": "这件外套我穿着很合适，我买了。",
+     "a": [
+      "Esta chaqueta me queda bien. La compro.",
+      "La chaqueta me queda bien. La compro.",
+      "Esta chaqueta me queda muy bien. La compro.",
+      "La chaqueta me queda muy bien, la compro.",
+      "Esta chaqueta me queda bien, la compro.",
+      "Esta chaqueta me queda muy bien, la compro."
+     ],
+     "e": "quedar bien + 代词 la：La compro。"
+    }
+   ]
+  }
+ ],
+ "bank": [
+  {
+   "id": "b1",
+   "t": "f",
+   "ins": "填出代词",
+   "q": "¿Dónde están mis gafas? —No ___ veo.",
+   "a": [
+    "las"
+   ],
+   "e": "las gafas 阴性复数 → las。"
+  },
+  {
+   "id": "b2",
+   "t": "rw",
+   "ins": "用代词代替画线部分，写出整句",
+   "q": "Leo <u>el periódico</u> por la mañana.",
+   "a": [
+    "Lo leo por la mañana.",
+    "Por la mañana lo leo."
+   ],
+   "e": "el periódico → lo。"
+  },
+  {
+   "id": "b3",
+   "t": "tr",
+   "ins": "翻译成西语",
+   "zh": "——你认识我父母吗？——不认识。",
+   "a": [
+    "¿Conoces a mis padres? —No, no los conozco.",
+    "¿Conoces a mis padres? No, no los conozco."
+   ],
+   "e": "a mis padres → los。"
+  },
+  {
+   "id": "b4",
+   "t": "f",
+   "ins": "填出代词",
+   "q": "Esta sopa está buenísima. ¿___ hiciste tú?",
+   "a": [
+    "la"
+   ],
+   "e": "la sopa → la。"
+  },
+  {
+   "id": "b5",
+   "t": "rw",
+   "ins": "用代词代替画线部分，写出整句",
+   "q": "No tengo <u>los documentos</u>.",
+   "a": [
+    "No los tengo."
+   ],
+   "e": "no + los + tengo。"
+  },
+  {
+   "id": "b6",
+   "t": "tr",
+   "ins": "把回答译成西语",
+   "zh": "¿Es verdad? ——我不信。",
+   "a": [
+    "No lo creo.",
+    "Yo no lo creo."
+   ],
+   "e": "中性 lo：No lo creo。"
+  },
+  {
+   "id": "b7",
+   "t": "f",
+   "ins": "填出代词",
+   "q": "¿Y las fotos de la boda? —___ tengo en el móvil.",
+   "a": [
+    "las"
+   ],
+   "e": "las fotos（阴性，虽然以 -o 结尾）→ las。"
+  },
+  {
+   "id": "b8",
+   "t": "rw",
+   "ins": "用代词代替画线部分，写出整句",
+   "q": "Invito <u>a Lucía y a Marta</u> a la fiesta.",
+   "a": [
+    "Las invito a la fiesta."
+   ],
+   "e": "两个女性 → las。"
+  },
+  {
+   "id": "b9",
+   "t": "tr",
+   "ins": "翻译成西语",
+   "zh": "这双鞋我穿着不合适，我要退掉。",
+   "a": [
+    "Estos zapatos no me quedan bien. Los voy a devolver.",
+    "Estos zapatos no me quedan bien, los voy a devolver.",
+    "Los zapatos no me quedan bien. Los voy a devolver.",
+    "Estos zapatos no me quedan bien. Voy a devolverlos."
+   ],
+   "e": "zapatos → los；los voy a devolver = voy a devolverlos。"
+  },
+  {
+   "id": "b10",
+   "t": "f",
+   "ins": "填出代词",
+   "q": "El problema es el mapa: no ___ entiendo.",
+   "a": [
+    "lo"
+   ],
+   "e": "el mapa（阳性，虽然以 -a 结尾）→ lo。"
+  }
+ ],
+ "points": [
+  "代词替代前面说过的直接宾语：<b class=\"es\">lo · la · los · las</b>，性数看被替代的名词。",
+  "放在<b>变位动词前</b>：<span class=\"es\">No la compro. ¿La puedo devolver?</span>",
+  "人作宾语也用：<span class=\"es\">a Pedro → lo</span>；整件事用中性 <span class=\"es\">lo</span>：<span class=\"es\">Ya lo sé.</span>"
+ ]
+}

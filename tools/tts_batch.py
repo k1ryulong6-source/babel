@@ -181,7 +181,7 @@ def collect_curriculum(lang):
                     if x.get("t") in ("tr", "dict"):
                         a = x.get("a")
                         out.append(a[0] if isinstance(a, list) else a)
-            for x in d.get("test", {}).get("extra", []):
+            for x in d.get("test", {}).get("extra", []) + d.get("bank", []):
                 if x.get("say"):
                     out.append(x["say"])
                 if x.get("t") in ("tr", "dict"):

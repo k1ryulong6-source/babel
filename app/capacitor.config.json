@@ -1,0 +1,8 @@
+{
+  "appId": "work.babel.app",
+  "appName": "巴别塔",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#F6F1E7"
+  }
+}
