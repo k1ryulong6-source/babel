@@ -3,3 +3,4 @@ __pycache__/
 tools/.tts_cache/
 lexicon_inbox/
 bank_inbox/
+expl_inbox/
