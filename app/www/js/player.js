@@ -175,9 +175,9 @@ export function openPlayer(app, flow, store, { onExit, onFinish, passage, onDele
     const s = cur(), canDel = !!onDelete && S.isQuestion(s), nextSec = list.findIndex(x => x.si > s.si);
     const items = [
       ["toc", "课内目录", "看所有段落，跳回学过的屏"],
-      canDel && ["del", "删除这道题", "这道题以后不再出现（可在首页恢复）"],
+      canDel && ["del", "删除这道题", "以后不再出现；选个原因（可在首页恢复）"],
       nextSec > 0 && ["skipsec", "跳过这一段", `直接去「${flow.sections[list[nextSec].si].name}」`],
-      onSkipLesson && ["skiples", "跳过整节课", "标记为已跳过，回到首页（可撤销）"],
+      onSkipLesson && ["skiples", "跳过这节课", "以后再学，或者做 5 道小测证明已经会了"],
     ].filter(Boolean);
     sheet = document.createElement("div"); sheet.className = "sheet-wrap";
     sheet.innerHTML = `<div class="scrim" data-x></div><div class="sheet" role="dialog" aria-label="更多"><div class="grab"></div>${items.map(([k, t, d]) => `<button class="mi ${k === "del" || k === "skiples" ? "warn" : ""}" data-m="${k}"><b>${t}</b><span>${d}</span></button>`).join("")}</div>`;
@@ -185,10 +185,18 @@ export function openPlayer(app, flow, store, { onExit, onFinish, passage, onDele
     $("[data-x]", sheet).onclick = closeSheet;
     $$("[data-m]", sheet).forEach(b => b.onclick = () => {
       const k = b.dataset.m;
-      if ((k === "del" || k === "skiples") && !b.dataset.armed) { b.dataset.armed = 1; b.querySelector("b").textContent = k === "del" ? "再点一次确认删除" : "再点一次确认跳过这节课"; return; }
+      if (k === "del") { // 选原因
+        $(".sheet", sheet).innerHTML = `<div class="grab"></div><h3>删除这道题</h3><p class="sub">删掉后这道题在课时和复习里都不再出现，首页可以恢复。选一个原因：</p>
+          <button class="mi" data-r="bad"><b>题目有错</b><span>可以在首页一键复制，交给写课的人修改</span></button>
+          <button class="mi" data-r="easy"><b>太简单</b><span>这种题不用再练了</span></button>
+          <button class="mi" data-r="skip"><b>不想做</b><span>就是不想做这道</span></button>
+          <button class="mi" data-x><b>取消</b></button>`;
+        $$("[data-x]", sheet).forEach(x => x.onclick = closeSheet);
+        $$("[data-r]", sheet).forEach(x => x.onclick = () => { const r = x.dataset.r; closeSheet(); tick(); close(); onDelete(s.id, r); });
+        return;
+      }
       closeSheet();
       if (k === "toc") setTimeout(openToc, 280);
-      if (k === "del") { tick(); close(); onDelete(s.id, store.i); }
       if (k === "skipsec") { (store.skipped ||= {})[flow.sections[s.si].id] = 1; store.hi = Math.max(store.hi, nextSec); toast(`已跳过「${flow.sections[s.si].name}」，想补可以从目录点回去`); go(nextSec, 1); }
       if (k === "skiples") { close(); onSkipLesson(); }
     });

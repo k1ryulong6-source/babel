@@ -2,11 +2,11 @@
 // 用法：node app/tools/walk.js [截图目录]
 const { chromium } = require("playwright");
 const http = require("http"), fs = require("fs"), path = require("path");
-const WWW = path.join(__dirname, "..", "www"), OUT = process.argv[2] || "/tmp/walk";
+const WWW = path.join(__dirname, "..", "www"), OUT = process.argv[2] || "/tmp/walk", LID = process.argv[3] || "es.1.2.1";
 fs.mkdirSync(OUT, { recursive: true });
 const TYPES = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".mp3": "audio/mpeg" };
 const srv = http.createServer((q, r) => { const f = path.join(WWW, decodeURIComponent(q.url.split("?")[0]) === "/" ? "index.html" : decodeURIComponent(q.url.split("?")[0])); fs.readFile(f, (e, d) => { if (e) { r.writeHead(404); r.end(); } else { r.writeHead(200, { "content-type": TYPES[path.extname(f)] || "application/octet-stream" }); r.end(d); } }); }).listen(0);
-const L = JSON.parse(fs.readFileSync(path.join(WWW, "lessons/es.2.5.1.json")));
+const L = JSON.parse(fs.readFileSync(path.join(WWW, `lessons/${LID}.json`)));
 const byId = {}; for (const s of L.sections.flatMap(x => x.screens).concat(L.bank)) byId[s.id] = s;
 const WRONG = new Set(["w3", "r3", "p1", "e3"]);
 const fail = []; const ok = (c, m) => { if (!c) { fail.push(m); console.log("✗", m); } };
@@ -15,11 +15,11 @@ const fail = []; const ok = (c, m) => { if (!c) { fail.push(m); console.log("✗
   const port = srv.address().port, b = await chromium.launch();
   const pg = await b.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
   const errs = []; pg.on("pageerror", e => errs.push(String(e))); pg.on("console", m => m.type() === "error" && !/404|Failed to load/.test(m.text()) && errs.push(m.text()));
-  await pg.goto(`http://localhost:${port}/`); await pg.waitForSelector("[data-start]");
+  await pg.goto(`http://localhost:${port}/`); await pg.waitForSelector("[data-start]"); await pg.waitForTimeout(700);
   await pg.screenshot({ path: `${OUT}/00-home.png` });
-  await pg.click("[data-start]");
+  await pg.click(`[data-lesson="${LID}"] [data-start]`);
   const shot = async n => pg.screenshot({ path: `${OUT}/${n}.png` });
-  const cur = () => pg.evaluate(() => window.__babel.db().lessons["es.2.5.1"].curId);
+  const cur = () => pg.evaluate(LID => window.__babel.db().lessons[LID].curId, LID);
   const intro = async () => { const o = await pg.$(".secintro"); if (o) { await pg.waitForTimeout(700); await o.click(); await pg.waitForTimeout(400); } };
   await pg.waitForTimeout(800); await shot("01-secintro"); await intro();
   let guard = 0, shotN = 2; const shots = new Set(["r1", "d2", "t1", "t2", "t6", "p3", "p8", "r5", "o1", "e2"]);
@@ -74,7 +74,7 @@ const fail = []; const ok = (c, m) => { if (!c) { fail.push(m); console.log("✗
       await pg.click("[data-primary]"); await pg.waitForTimeout(350); await intro();
       ok((await cur()) === "p6", "at p6");
       await pg.click("[data-menu]"); await pg.waitForTimeout(350); await shot(String(shotN++).padStart(2, "0") + "-menu");
-      await pg.click('[data-m="del"]'); await pg.click('[data-m="del"]'); await pg.waitForTimeout(500);
+      await pg.click('[data-m="del"]'); await pg.waitForTimeout(200); await shot(String(shotN++).padStart(2, "0") + "-del-reason"); await pg.click('[data-r="bad"]'); await pg.waitForTimeout(500);
       ok((await cur()) === "p7", "deleted p6 → p7 (got " + (await cur()) + ")");
       continue;
     }
@@ -84,9 +84,9 @@ const fail = []; const ok = (c, m) => { if (!c) { fail.push(m); console.log("✗
   }
   await pg.waitForTimeout(1200); await shot(String(shotN++).padStart(2, "0") + "-summary");
   const R = await pg.evaluate(() => window.__babel.db());
-  const lr = R.lessons["es.2.5.1"];
+  const lr = R.lessons[LID];
   ok(lr.done && lr.exit.n === 5 && lr.exit.score === 4, "exit score " + JSON.stringify(lr.exit));
-  ok(R.deleted["es.2.5.1"].includes("p6"), "p6 deleted");
+  ok(R.deleted[LID].p6 === "bad", "p6 deleted as bad");
   ok(R.carry.length === 1, "carry flagged " + R.carry.length);
   console.log("time", Math.round(lr.ms / 1000), "s; key", JSON.stringify(R.keys));
   // 复习
@@ -95,7 +95,7 @@ const fail = []; const ok = (c, m) => { if (!c) { fail.push(m); console.log("✗
   while (g2++ < 40) {
     if (await pg.$(".summary")) break;
     await intro();
-    const id = await pg.evaluate(() => window.__babel.db().lessons["es.2.5.1"].rv.curId);
+    const id = await pg.evaluate(LID => window.__babel.db().lessons[LID].rv.curId, LID);
     const base = id.replace(/^[ft]-/, "").replace(/^rc-/, ""), s = byId[base] || byId[base.split("-")[0]] || (id.startsWith("rc-") ? byId[base].recall : null) || byId[id.split("-")[1]];
     let ss = id.startsWith("rc-") ? byId[id.slice(3)].recall : id.startsWith("ew-") ? byId[id.split("-")[1]] : s;
     if (!ss) { ok(false, "review unknown " + id); break; }
@@ -106,13 +106,30 @@ const fail = []; const ok = (c, m) => { if (!c) { fail.push(m); console.log("✗
   }
   await pg.waitForTimeout(1000); await shot(String(shotN++).padStart(2, "0") + "-review-summary");
   const R2 = await pg.evaluate(() => window.__babel.db());
-  console.log("reviews", JSON.stringify(R2.lessons["es.2.5.1"].reviews), "key", JSON.stringify(R2.keys));
-  // 跳过整节课（首页）
+  console.log("reviews", JSON.stringify(R2.lessons[LID].reviews), "key", JSON.stringify(R2.keys));
+  // 首页：删除的题列表
+  await pg.click("[data-home]"); await pg.waitForTimeout(500); await pg.evaluate(() => document.querySelector(".del-box")?.scrollIntoView()); await shot(String(shotN++).padStart(2, "0") + "-home-deleted");
+  ok(!!(await pg.$(".del-i .r-bad")), "deleted list shows reason");
+  // 跳过：以后再学
   await pg.evaluate(() => { localStorage.clear(); location.reload(); }); await pg.waitForSelector("[data-skip]");
-  await pg.click("[data-skip]"); await pg.click("[data-skip]"); await pg.waitForTimeout(300);
-  ok(!!(await pg.$(".skipped")), "lesson skipped badge"); await shot(String(shotN++).padStart(2, "0") + "-skipped");
+  await pg.click(`[data-lesson="${LID}"] [data-skip]`); await pg.waitForTimeout(400); await shot(String(shotN++).padStart(2, "0") + "-skip-sheet");
+  await pg.click('[data-k="later"]'); await pg.waitForTimeout(400);
+  ok(!!(await pg.$(`[data-lesson="${LID}"] .skipped`)), "lesson skipped badge"); await shot(String(shotN++).padStart(2, "0") + "-skipped");
+  // 跳过：我已经会了 → 出口小测
+  await pg.click(`[data-lesson="${LID}"] [data-unskip]`); await pg.waitForTimeout(300);
+  await pg.click(`[data-lesson="${LID}"] [data-skip]`); await pg.waitForTimeout(400); await pg.click('[data-k="know"]'); await pg.waitForTimeout(500);
+  for (let g = 0; g < 10; g++) {
+    if (await pg.$(".summary")) break; await intro();
+    const id = await pg.evaluate(LID => window.__babel.db().lessons[LID].pl?.curId, LID); if (!id) break;
+    await answer(byId[id.slice(3)], id, false); await pg.waitForTimeout(150);
+    if (await pg.$("[data-primary]:not([disabled])")) await pg.click("[data-primary]"); await pg.waitForTimeout(330);
+  }
+  await pg.waitForTimeout(800); await shot(String(shotN++).padStart(2, "0") + "-placement");
+  const R3 = await pg.evaluate(LID => window.__babel.db().lessons[LID], LID);
+  ok(R3.done && R3.tested && R3.placement.pass, "placement passed " + JSON.stringify(R3.placement));
+  await pg.click("[data-home]"); await pg.waitForTimeout(400);
   // 深色模式首页
-  await pg.emulateMedia({ colorScheme: "dark" }); await pg.click("[data-start]"); await pg.waitForTimeout(800); await intro(); await shot(String(shotN++).padStart(2, "0") + "-dark");
+  await pg.emulateMedia({ colorScheme: "dark" }); await pg.click(`[data-lesson="${LID}"] [data-start]`); await pg.waitForTimeout(800); await intro(); await shot(String(shotN++).padStart(2, "0") + "-dark");
   ok(errs.length === 0, "errors: " + errs.join(" | "));
   console.log(fail.length ? `FAIL ${fail.length}` : "ALL OK");
   await b.close(); srv.close();

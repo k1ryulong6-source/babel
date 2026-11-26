@@ -1205,5 +1205,10 @@
    ],
    "e": "el mapa（阳性，虽然以 -a 结尾）→ lo。"
   }
+ ],
+ "points": [
+  "代词替代前面说过的直接宾语：<b class=\"es\">lo · la · los · las</b>，性数看被替代的名词。",
+  "放在<b>变位动词前</b>：<span class=\"es\">No la compro. ¿La puedo devolver?</span>",
+  "人作宾语也用：<span class=\"es\">a Pedro → lo</span>；整件事用中性 <span class=\"es\">lo</span>：<span class=\"es\">Ya lo sé.</span>"
  ]
 }

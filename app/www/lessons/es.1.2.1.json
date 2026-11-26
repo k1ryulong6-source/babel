@@ -1,0 +1,1257 @@
+{
+ "id": "es.1.2.1",
+ "lang": "es",
+ "unit": "西语 1.2 · 你好，我是……",
+ "title": "Me llamo…",
+ "subtitle": "说自己叫什么、问别人叫什么，分清“你”和“您”",
+ "minutes": 40,
+ "keyId": "es.1.2.1.k1",
+ "points": [
+  "说名字：<span class=\"es\">Me llamo</span> + 名字；三种形式 <span class=\"es\">me llamo · te llamas · se llama</span>。",
+  "问名字用 <span class=\"es\">cómo</span>，不用 qué：<span class=\"es\">¿Cómo te llamas?</span>",
+  "<span class=\"es\">usted</span>（您）的动词和“他 / 她”一样：<span class=\"es\">¿Cómo se llama usted? ¿Cómo está?</span>",
+  "<span class=\"es\">encantado / encantada</span> 跟着说话人自己的性别变。"
+ ],
+ "sections": [
+  {
+   "id": "warm",
+   "name": "开场检索",
+   "short": "检索",
+   "min": 4,
+   "intro": "先别看书，凭记忆写出上个单元学过的东西。想不起来也没关系，想的这一下就是在记。",
+   "screens": [
+    {
+     "id": "w1",
+     "t": "tr",
+     "src": "上一课 · 问候和语调",
+     "ins": "翻译成西语",
+     "zh": "早上好，你好吗？",
+     "a": [
+      "Buenos días, ¿cómo estás?",
+      "Buenos días. ¿Cómo estás?",
+      "Buenos días, ¿qué tal?",
+      "Buenos días. ¿Qué tal?"
+     ],
+     "e": "buenos días 连读；问句前面要写倒问号 ¿。"
+    },
+    {
+     "id": "w2",
+     "t": "f",
+     "src": "上一课 · 问候和语调",
+     "ins": "填一个词",
+     "q": "Muy bien, gracias. ¿Y ___?",
+     "zh": "很好，谢谢。你呢？",
+     "a": [
+      "tú"
+     ],
+     "e": "“你”是 <b>tú</b>，带重音符号；不带符号的 tu 是“你的”。"
+    },
+    {
+     "id": "w3",
+     "t": "dict",
+     "src": "3 课前 · r 和 rr",
+     "ins": "听写：听录音，写下整句",
+     "a": "El perro come arroz.",
+     "zh": "狗吃米饭。",
+     "e": "perro、arroz 是颤音 rr；pero（但是）只有一个 r，意思完全不同。"
+    },
+    {
+     "id": "w4",
+     "t": "tr",
+     "src": "3 课前 · r 和 rr",
+     "ins": "翻译成西语",
+     "zh": "没关系。",
+     "a": [
+      "No pasa nada.",
+      "No importa."
+     ],
+     "e": "No pasa nada：字面“什么也没发生”。"
+    },
+    {
+     "id": "w5",
+     "t": "rw",
+     "src": "上一单元 · 字母读音",
+     "ins": "把这个词写对（补上它缺的符号）",
+     "q": "manana（明天）",
+     "a": [
+      "mañana"
+     ],
+     "e": "“明天”是 <b>mañana</b>，ñ 读 ny：ma-NYA-na。"
+    },
+    {
+     "id": "w6",
+     "t": "tr",
+     "src": "上一单元 · 字母读音",
+     "ins": "翻译成西语",
+     "zh": "几点了？",
+     "a": [
+      "¿Qué hora es?"
+     ],
+     "e": "hora 的 h 不发音。"
+    }
+   ]
+  },
+  {
+   "id": "input",
+   "name": "读一读",
+   "short": "输入",
+   "min": 7,
+   "intro": "先读懂一段对话，不用管语法。读的时候留意：大家都在说名字，但说法不太一样。",
+   "screens": [
+    {
+     "id": "r1",
+     "t": "read",
+     "title": "El primer día de clase",
+     "note": "王磊在马德里上西语课，第一天认识同学和老师。先整篇听一遍，再逐句读；点句子看中文。",
+     "lines": [
+      [
+       "",
+       "Es el primer día de clase en una escuela de español de Madrid.",
+       "今天是马德里一所西语学校开课的第一天。"
+      ],
+      [
+       "Ana",
+       "Hola, me llamo Ana. ¿Cómo te llamas?",
+       "你好，我叫安娜。你叫什么名字？"
+      ],
+      [
+       "Wang Lei",
+       "Hola, me llamo Wang Lei. Soy estudiante.",
+       "你好，我叫王磊。我是学生。"
+      ],
+      [
+       "Ana",
+       "Encantada. Yo también soy estudiante.",
+       "很高兴认识你。我也是学生。"
+      ],
+      [
+       "Wang Lei",
+       "Mucho gusto. Y él, ¿cómo se llama?",
+       "很高兴认识你。那他叫什么？"
+      ],
+      [
+       "Ana",
+       "Se llama Pablo. Es mi amigo y compañero de clase.",
+       "他叫巴勃罗。是我的朋友，也是同学。"
+      ],
+      [
+       "Pablo",
+       "¡Hola, Wang Lei! ¿Qué tal?",
+       "你好，王磊！你好吗？"
+      ],
+      [
+       "",
+       "",
+       ""
+      ],
+      [
+       "",
+       "Entra un señor con muchos libros.",
+       "一位先生抱着很多书走进来。"
+      ],
+      [
+       "Wang Lei",
+       "Buenos días. Perdón, ¿cómo se llama usted?",
+       "早上好。请问，您叫什么名字？"
+      ],
+      [
+       "Profesor",
+       "Me llamo Antonio García. Soy el profesor.",
+       "我叫安东尼奥·加西亚。我是老师。"
+      ],
+      [
+       "Wang Lei",
+       "Encantado, señor García. ¿Cómo está?",
+       "很高兴认识您，加西亚先生。您好吗？"
+      ],
+      [
+       "Profesor",
+       "Muy bien, gracias. ¿Y tú? ¿Cómo te llamas?",
+       "很好，谢谢。你呢？你叫什么名字？"
+      ],
+      [
+       "Wang Lei",
+       "Me llamo Wang Lei.",
+       "我叫王磊。"
+      ],
+      [
+       "Profesor",
+       "¿Wang es tu nombre?",
+       "王是你的名字吗？"
+      ],
+      [
+       "Wang Lei",
+       "No, Wang es mi apellido. Mi nombre es Lei.",
+       "不是，王是我的姓。我的名字是磊。"
+      ],
+      [
+       "Profesor",
+       "Vale, Lei. Bienvenido a la clase.",
+       "好的，磊。欢迎来上课。"
+      ],
+      [
+       "Wang Lei",
+       "Gracias. ¿Puede repetir su nombre, por favor?",
+       "谢谢。您能再说一遍您的名字吗？"
+      ],
+      [
+       "Profesor",
+       "Claro. Me llamo Antonio García.",
+       "当然。我叫安东尼奥·加西亚。"
+      ],
+      [
+       "Wang Lei",
+       "Muchas gracias.",
+       "非常感谢。"
+      ],
+      [
+       "Profesor",
+       "De nada.",
+       "不客气。"
+      ],
+      [
+       "",
+       "",
+       ""
+      ],
+      [
+       "Ana",
+       "Oye, Lei, ¿cómo se llama el profesor?",
+       "哎，磊，老师叫什么名字？"
+      ],
+      [
+       "Wang Lei",
+       "Se llama Antonio García.",
+       "他叫安东尼奥·加西亚。"
+      ]
+     ]
+    },
+    {
+     "id": "r2",
+     "t": "c",
+     "rd": true,
+     "ins": "理解：选出正确答案",
+     "q": "¿Quién es Pablo?",
+     "o": [
+      "Un amigo y compañero de clase de Ana.",
+      "El profesor de español.",
+      "Un amigo de Wang Lei de China."
+     ],
+     "a": 0,
+     "why": [
+      "Ana 说：Es mi amigo y compañero de clase。",
+      "老师是 Antonio García，他抱着书进来时 Pablo 已经在教室了。",
+      "Pablo 和王磊是第一次见面，他说 ¿Qué tal? 打招呼。"
+     ]
+    },
+    {
+     "id": "r3",
+     "t": "c",
+     "rd": true,
+     "ins": "理解：选出正确答案",
+     "q": "¿Cuál es el apellido de Wang Lei?",
+     "o": [
+      "Wang",
+      "Lei",
+      "García"
+     ],
+     "a": 0,
+     "why": [
+      "Wang es mi apellido。apellido 是“姓”。",
+      "Mi nombre es Lei：Lei 是名字（nombre），不是姓。",
+      "García 是老师的姓。"
+     ]
+    },
+    {
+     "id": "r4",
+     "t": "c",
+     "rd": true,
+     "ins": "理解：选出正确答案",
+     "q": "¿Por qué Wang Lei dice «¿Puede repetir su nombre?»?",
+     "o": [
+      "Porque no entiende bien el nombre del profesor.",
+      "Porque el profesor no sabe su nombre.",
+      "Porque quiere decir su apellido."
+     ],
+     "a": 0,
+     "why": [
+      "他想再听一遍老师的名字，所以老师又说了一遍：Me llamo Antonio García。",
+      "老师已经问过并知道他的名字了。",
+      "他的姓刚才已经说过了（Wang es mi apellido）。"
+     ]
+    },
+    {
+     "id": "r5",
+     "t": "match",
+     "ins": "短文里的词（一）：人",
+     "pairs": [
+      [
+       "el nombre",
+       "名字"
+      ],
+      [
+       "el señor",
+       "先生"
+      ],
+      [
+       "el amigo",
+       "朋友"
+      ],
+      [
+       "el estudiante",
+       "学生"
+      ],
+      [
+       "el profesor",
+       "老师"
+      ],
+      [
+       "el compañero",
+       "同学、同伴"
+      ]
+     ],
+     "e": "女老师是 la profesora，女同学是 la compañera；estudiante 男女同形（el / la estudiante）。“姓”是 el apellido。"
+    },
+    {
+     "id": "r6",
+     "t": "match",
+     "ins": "短文里的词（二）：常用表达",
+     "pairs": [
+      [
+       "de nada",
+       "不客气"
+      ],
+      [
+       "por favor",
+       "请"
+      ],
+      [
+       "vale",
+       "好的、行"
+      ],
+      [
+       "¿Cómo te llamas?",
+       "你叫什么名字？"
+      ],
+      [
+       "me llamo",
+       "我叫"
+      ],
+      [
+       "¿Y usted?",
+       "您呢？"
+      ]
+     ],
+     "e": "vale 是西班牙口语，拉美多说 está bien。对朋友说“你呢？”是 ¿Y tú?"
+    }
+   ]
+  },
+  {
+   "id": "notice",
+   "name": "找规律",
+   "short": "发现",
+   "min": 4,
+   "intro": "先自己猜，再看答案。猜错了也比直接看规则记得牢。",
+   "screens": [
+    {
+     "id": "d1",
+     "t": "c",
+     "ins": "这三句都在说名字，看高亮的词尾",
+     "lines": [
+      [
+       "Me <mark>llamo</mark> Ana.",
+       "我叫安娜。"
+      ],
+      [
+       "¿Cómo te <mark>llamas</mark>?",
+       "你叫什么名字？"
+      ],
+      [
+       "Se <mark>llama</mark> Pablo.",
+       "他叫巴勃罗。"
+      ]
+     ],
+     "q": "llamo / llamas / llama 的词尾为什么不一样？",
+     "o": [
+      "跟着“谁叫”变：我、你、他",
+      "跟着名字是男是女变",
+      "问句和陈述句的词尾不一样"
+     ],
+     "a": 0,
+     "why": [
+      "对。我 → llam<b>o</b>，你 → llam<b>as</b>，他 / 她 → llam<b>a</b>。西语动词的词尾告诉你主语是谁。",
+      "Ana 是女生、Pablo 是男生，但 llama 对两个人都一样：Se llama Ana. / Se llama Pablo。",
+      "¿Cómo te llamas? 是问句，Me llamo Ana 是陈述句，词尾不同是因为一个是“你”、一个是“我”。"
+     ],
+     "reveal": "规律一：动词的<b>词尾跟着主语变</b>：llam<b>o</b>（我）· llam<b>as</b>（你）· llam<b>a</b>（他 / 她 / 您）。"
+    },
+    {
+     "id": "d2",
+     "t": "c",
+     "ins": "再看动词前面的小词",
+     "lines": [
+      [
+       "<mark>Me</mark> llamo Ana.",
+       "我叫安娜。"
+      ],
+      [
+       "¿Cómo <mark>te</mark> llamas?",
+       "你叫什么名字？"
+      ],
+      [
+       "<mark>Se</mark> llama Pablo.",
+       "他叫巴勃罗。"
+      ]
+     ],
+     "q": "me / te / se 是什么意思？",
+     "o": [
+      "“自己”：我把自己叫作……",
+      "语气词，可以省略",
+      "“我的 / 你的 / 他的”"
+     ],
+     "a": 0,
+     "why": [
+      "对。llamar 是“叫、称呼”，llamarse 是“把<b>自己</b>叫作”：Me llamo Ana = 我把自己叫作安娜。",
+      "不能省：Llamo Ana 的意思变成了“我给安娜打电话”。",
+      "“我的名字”是 mi nombre。me 不是“我的”，是“我自己”。"
+     ],
+     "reveal": "规律二：<b>me / te / se</b> 是“自己”，放在动词<b>前面</b>，和词尾一起变：me llamo · te llamas · se llama。"
+    },
+    {
+     "id": "d3",
+     "t": "c",
+     "ins": "王磊和老师互相说话时，说法不一样",
+     "lines": [
+      [
+       "¿Cómo se <mark>llama usted</mark>?",
+       "王磊对老师：您叫什么名字？"
+      ],
+      [
+       "¿Cómo <mark>está</mark>?",
+       "王磊对老师：您好吗？"
+      ],
+      [
+       "¿Cómo te <mark>llamas</mark>?",
+       "老师对王磊：你叫什么名字？"
+      ],
+      [
+       "¿Y <mark>tú</mark>?",
+       "老师对王磊：你呢？"
+      ]
+     ],
+     "q": "为什么王磊对老师说 se llama / está，老师对王磊说 te llamas / tú？",
+     "o": [
+      "王磊对老师用“您”（usted），动词用“他”的形式",
+      "因为老师是男的，所以用 se",
+      "问老师的时候要用问句的形式"
+     ],
+     "a": 0,
+     "why": [
+      "对。学生对老师、陌生人说“您”（usted），动词和“他 / 她”一样：se llama、está。老师对学生说“你”（tú）：te llamas。",
+      "Ana 是女生，她也说 Se llama Pablo；se llama 和性别无关，和“谁”有关。",
+      "两边都是问句。区别在“你”还是“您”。"
+     ],
+     "reveal": "规律三：<b>usted（您）用“他 / 她”的动词形式</b>：¿Cómo se llama usted? ¿Cómo está?"
+    },
+    {
+     "id": "d4",
+     "t": "c",
+     "ins": "第一次见面，两个人说的不一样",
+     "lines": [
+      [
+       "<mark>Encantada</mark>.",
+       "安娜（女）：很高兴认识你。"
+      ],
+      [
+       "<mark>Encantado</mark>, señor García.",
+       "王磊（男）：很高兴认识您，加西亚先生。"
+      ]
+     ],
+     "q": "为什么一个说 encantada，一个说 encantado？",
+     "o": [
+      "跟着说话人自己的性别：女生 -a，男生 -o",
+      "跟着对方的性别",
+      "对老师说 -o，对同学说 -a"
+     ],
+     "a": 0,
+     "why": [
+      "对。encantado 字面是“（我）很高兴”，描述的是说话人自己。",
+      "最常见的误会。王磊对男老师说 encantado，Ana 对男生王磊说 encantada：看的是自己，不是对方。",
+      "Ana 对同学说 -a，是因为她自己是女生。"
+     ],
+     "reveal": "<b>encantado / encantada</b> 跟着<b>说话人自己</b>的性别；不想管性别就说 <b>Mucho gusto</b>。"
+    }
+   ]
+  },
+  {
+   "id": "teach",
+   "name": "讲透",
+   "short": "讲解",
+   "min": 8,
+   "intro": "把刚才发现的规律讲清楚。每屏读完先猜答案，再看解析。哪屏没懂就点“没懂”，课后会再给你复习。",
+   "screens": [
+    {
+     "id": "t1",
+     "t": "teach",
+     "title": "三种形式：我叫、你叫、他叫",
+     "body": [
+      "西语不说“我的名字是”（也可以说，但不常用），而是说 <b>Me llamo</b> + 名字。“自己”和动词词尾一起变："
+     ],
+     "table": [
+      [
+       "谁",
+       "说法",
+       "例句"
+      ],
+      [
+       "我",
+       "<b>me llamo</b>",
+       "Me llamo Ana."
+      ],
+      [
+       "你",
+       "<b>te llamas</b>",
+       "¿Cómo te llamas?"
+      ],
+      [
+       "他 / 她 / 您",
+       "<b>se llama</b>",
+       "Se llama Pablo."
+      ]
+     ],
+     "ex": [
+      [
+       "Me llamo Lucía.",
+       "我叫露西娅。"
+      ],
+      [
+       "Él se llama Pablo.",
+       "他叫巴勃罗。"
+      ],
+      [
+       "¿Cómo se llama tu profesora?",
+       "你的老师（女）叫什么？"
+      ]
+     ],
+     "ask": {
+      "t": "c",
+      "q": "Ella ___ Carmen.",
+      "o": [
+       "se llama",
+       "me llamo",
+       "te llamas"
+      ],
+      "a": 0,
+      "why": [
+       "对：她 → se llama。",
+       "me llamo 是“我叫”。这里说的是“她”。",
+       "te llamas 是“你叫”。"
+      ]
+     },
+     "recall": {
+      "t": "f",
+      "q": "Ella se ___ Carmen.",
+      "a": [
+       "llama"
+      ]
+     }
+    },
+    {
+     "id": "t2",
+     "t": "teach",
+     "title": "问名字：为什么用 cómo，不用 qué",
+     "body": [
+      "llamarse 是“把自己叫作”，所以问名字其实是问“你<b>怎样</b>称呼你自己？” → 用 <b>cómo</b>（怎样）。",
+      "中文说“你叫<b>什么</b>”，很容易直译成 ¿Qué te llamas? ✗"
+     ],
+     "steps": [
+      [
+       "① 对谁说？",
+       "对同学 → 用“你”（tú）"
+      ],
+      [
+       "② 选动词",
+       "你 → <b>te llamas</b>"
+      ],
+      [
+       "③ 疑问词",
+       "问名字 → <b>cómo</b>"
+      ],
+      [
+       "④ 写出来",
+       "<b>¿Cómo te llamas?</b>（前面倒问号 ¿）"
+      ]
+     ],
+     "ex": [
+      [
+       "¿Cómo te llamas?",
+       "你叫什么名字？"
+      ],
+      [
+       "¿Cómo se llama ella?",
+       "她叫什么名字？"
+      ]
+     ],
+     "ask": {
+      "t": "f",
+      "ins": "这次 ①–③ 你自己来：问“那个女生叫什么？”",
+      "q": "¿Cómo ___ llama ella?",
+      "a": [
+       "se"
+      ],
+      "e": "① 问“她” → ② 她 → se llama → ③ cómo：¿Cómo <b>se</b> llama ella?"
+     },
+     "recall": {
+      "t": "f",
+      "q": "¿Cómo ___ llama ella?",
+      "a": [
+       "se"
+      ]
+     }
+    },
+    {
+     "id": "t3",
+     "t": "teach",
+     "title": "“你”和“您”：tú 与 usted",
+     "body": [
+      "<b>tú</b>：朋友、同学、家人、小孩，动词用“你”的形式：te llamas、estás。",
+      "<b>usted</b>：长辈、陌生人、顾客、上司，动词用<b>第三人称</b>，和“他 / 她”一样：se llama、está。",
+      "usted 来自古老的 vuestra merced（阁下），本来就是“他”的称呼，所以动词一直按“他”变。书面缩写 Ud.。"
+     ],
+     "table": [
+      [
+       "",
+       "tú（你）",
+       "usted（您）"
+      ],
+      [
+       "叫什么",
+       "¿Cómo <b>te llamas</b>?",
+       "¿Cómo <b>se llama</b> usted?"
+      ],
+      [
+       "好吗",
+       "¿Cómo <b>estás</b>?",
+       "¿Cómo <b>está</b>?"
+      ],
+      [
+       "你呢",
+       "¿Y <b>tú</b>?",
+       "¿Y <b>usted</b>?"
+      ]
+     ],
+     "ex": [
+      [
+       "¿Cómo se llama usted?",
+       "您叫什么名字？"
+      ],
+      [
+       "Muy bien, gracias. ¿Y usted?",
+       "很好，谢谢。您呢？"
+      ]
+     ],
+     "ask": {
+      "t": "c",
+      "q": "在酒店前台问一位老先生的名字：",
+      "o": [
+       "¿Cómo se llama usted?",
+       "¿Cómo te llamas?",
+       "¿Cómo te llama usted?"
+      ],
+      "a": 0,
+      "why": [
+       "对：对陌生长辈用 usted，动词 se llama。",
+       "te llamas 是对朋友、同学说的，对老先生不够礼貌。",
+       "usted 要配第三人称 se llama；te 是“你自己”，和 usted 对不上。"
+      ]
+     },
+     "recall": {
+      "t": "tr",
+      "zh": "您叫什么名字？",
+      "a": [
+       "¿Cómo se llama usted?",
+       "¿Cómo se llama?"
+      ]
+     }
+    },
+    {
+     "id": "t4",
+     "t": "teach",
+     "title": "和中文比：中文换一个字，西语连动词一起换",
+     "body": [
+      "中文“你好吗 → 您好吗”只把“你”换成“您”，动词不变。",
+      "西语换成 usted 以后，<b>动词也要跟着变</b>：¿Cómo est<b>ás</b>? → ¿Cómo est<b>á</b>?",
+      "另外，中文“我叫王磊”里没有“自己”；西语一定要有 me：<b>Me</b> llamo Wang Lei。拿不准时先用 usted，对方说 Puedes tutearme（可以用 tú）再换。"
+     ],
+     "ex": [
+      [
+       "¿Cómo estás, Ana?",
+       "你好吗，安娜？"
+      ],
+      [
+       "¿Cómo está, señor García?",
+       "您好吗，加西亚先生？"
+      ]
+     ],
+     "ask": {
+      "t": "c",
+      "q": "Buenos días, señor. ¿Cómo ___ usted?",
+      "o": [
+       "está",
+       "estás",
+       "estoy"
+      ],
+      "a": 0,
+      "why": [
+       "对：usted 配“他”的形式 está。",
+       "estás 是对“你”说的。句子里已经有 usted 了。",
+       "estoy 是“我好”，回答的时候才用：Estoy bien。"
+      ]
+     },
+     "recall": {
+      "t": "f",
+      "q": "Buenos días, señor. ¿Cómo ___ usted?",
+      "a": [
+       "está"
+      ]
+     }
+    },
+    {
+     "id": "t5",
+     "t": "teach",
+     "title": "几句离不开的礼貌话",
+     "body": [
+      "请求时句末加 <b>por favor</b>（请）。别人说 Gracias，回答 <b>De nada</b>（不客气）。",
+      "<b>Vale</b> 是西班牙口语的“好的、行”，拉美多说 Está bien。",
+      "初次见面：<b>Encantado</b>（男生说）/ <b>Encantada</b>（女生说），或者都可以说 <b>Mucho gusto</b>。"
+     ],
+     "ex": [
+      [
+       "Un café, por favor.",
+       "请来一杯咖啡。"
+      ],
+      [
+       "—Gracias. —De nada.",
+       "“谢谢。”“不客气。”"
+      ],
+      [
+       "—¿Vamos? —Vale.",
+       "“走吗？”“好。”"
+      ]
+     ],
+     "ask": {
+      "t": "c",
+      "q": "女生说“很高兴认识你”：",
+      "o": [
+       "Encantada.",
+       "Encantado.",
+       "Encantados."
+      ],
+      "a": 0,
+      "why": [
+       "对：说话人是女生 → encantada。",
+       "encantado 是男生说的。看说话人自己，不看对方。",
+       "encantados 是复数，几个人一起说时才用。"
+      ]
+     },
+     "recall": {
+      "t": "f",
+      "q": "—Gracias. —De ___.",
+      "a": [
+       "nada"
+      ]
+     }
+    },
+    {
+     "id": "t6",
+     "t": "teach",
+     "title": "最常犯的三个错",
+     "errs": [
+      [
+       "¿Qué te llamas?",
+       "¿Cómo te llamas?",
+       "问名字用 cómo（怎样称呼自己）。"
+      ],
+      [
+       "Yo llamo Ana.",
+       "Me llamo Ana.",
+       "少了 me（自己）；Llamo a Ana 是“我给安娜打电话”。"
+      ],
+      [
+       "¿Cómo te llama usted?",
+       "¿Cómo se llama usted?",
+       "usted 配 se llama。"
+      ]
+     ],
+     "ex": [
+      [
+       "Me llamo Ana. ¿Cómo te llamas?",
+       "我叫安娜。你叫什么名字？"
+      ]
+     ],
+     "ask": {
+      "t": "c",
+      "q": "哪句话有错？",
+      "o": [
+       "¿Qué te llamas?",
+       "Me llamo Lei.",
+       "¿Cómo se llama usted?"
+      ],
+      "a": 0,
+      "why": [
+       "对，这句错了：问名字要用 cómo：¿Cómo te llamas?",
+       "这句对：me + llamo。",
+       "这句对：usted 配 se llama。"
+      ]
+     },
+     "recall": {
+      "t": "c",
+      "q": "哪句话有错？",
+      "o": [
+       "¿Qué te llamas?",
+       "Me llamo Lei.",
+       "¿Cómo se llama usted?"
+      ],
+      "a": 0
+     }
+    }
+   ]
+  },
+  {
+   "id": "practice",
+   "name": "从认到用",
+   "short": "练习",
+   "min": 10,
+   "intro": "先认，再改写，最后自己说。越往后提示越少。",
+   "screens": [
+    {
+     "id": "p1",
+     "t": "c",
+     "lv": "认",
+     "ins": "选出正确的说法",
+     "q": "—¿Cómo te llamas? —___ Pedro.",
+     "o": [
+      "Me llamo",
+      "Te llamas",
+      "Se llama"
+     ],
+     "a": 0,
+     "why": [
+      "对：问“你叫什么”，回答“我叫”：Me llamo Pedro。",
+      "te llamas 是“你叫”，是对方的说法，回答时要换成“我”。",
+      "se llama 是“他叫”，除非在说别人。"
+     ]
+    },
+    {
+     "id": "p2",
+     "t": "c",
+     "lv": "认",
+     "say": "¿Cómo se llama usted?",
+     "ins": "听录音：说话人最可能在跟谁说话？",
+     "q": "🔊",
+     "o": [
+      "一位不熟的长辈",
+      "一个好朋友",
+      "自己的妹妹"
+     ],
+     "a": 0,
+     "why": [
+      "对：听到的是 se llama usted，是对“您”说的。",
+      "对好朋友会说 ¿Cómo te llamas?（其实好朋友不用问名字）。",
+      "对家人用 tú。"
+     ]
+    },
+    {
+     "id": "p3",
+     "t": "c",
+     "lv": "认",
+     "opt": true,
+     "ins": "选出最自然的回答",
+     "q": "—Gracias. —___",
+     "o": [
+      "De nada.",
+      "Por favor.",
+      "Vale."
+     ],
+     "a": 0,
+     "why": [
+      "对：谢谢 → 不客气。",
+      "por favor 是请求时说的“请”。",
+      "vale 是“好的”，用来答应别人，不是回应感谢。"
+     ]
+    },
+    {
+     "id": "p4",
+     "t": "f",
+     "lv": "改",
+     "ins": "填出动词",
+     "q": "Él se ___ Javier.",
+     "zh": "他叫哈维尔。",
+     "a": [
+      "llama"
+     ],
+     "e": "他 → se <b>llama</b>。"
+    },
+    {
+     "id": "p5",
+     "t": "f",
+     "lv": "改",
+     "ins": "填出动词",
+     "q": "Yo me ___ Lucía.",
+     "zh": "我叫露西娅。",
+     "a": [
+      "llamo"
+     ],
+     "e": "我 → me <b>llamo</b>。yo 一般可以省略。"
+    },
+    {
+     "id": "p6",
+     "t": "rw",
+     "lv": "改",
+     "ins": "改成对“您”（usted）说，写出整句",
+     "q": "¿Cómo te llamas?",
+     "a": [
+      "¿Cómo se llama usted?",
+      "¿Cómo se llama?"
+     ],
+     "e": "te llamas → se llama usted。"
+    },
+    {
+     "id": "p7",
+     "t": "rw",
+     "lv": "改",
+     "ins": "改成对朋友（tú）说，写出整句",
+     "q": "¿Cómo está usted?",
+     "a": [
+      "¿Cómo estás?",
+      "¿Cómo estás tú?"
+     ],
+     "e": "está usted → estás。"
+    },
+    {
+     "id": "p8",
+     "t": "o",
+     "lv": "改",
+     "ins": "连词成句",
+     "zh": "我叫安娜，我是学生。",
+     "a": "Me llamo Ana y soy estudiante.",
+     "p": [
+      "Me",
+      "llamo",
+      "Ana",
+      "y",
+      "soy",
+      "estudiante."
+     ],
+     "e": "me 放在 llamo 前面。"
+    },
+    {
+     "id": "p9",
+     "t": "f",
+     "lv": "改",
+     "opt": true,
+     "ins": "复习短文里的词",
+     "q": "Mi ___ es Lei y mi apellido es Wang.",
+     "zh": "我的名字是磊，我姓王。",
+     "a": [
+      "nombre"
+     ],
+     "e": "nombre 名字，apellido 姓。"
+    },
+    {
+     "id": "p10",
+     "t": "f",
+     "lv": "改",
+     "ins": "复习短文里的词",
+     "q": "Un café, por ___.",
+     "zh": "请来一杯咖啡。",
+     "a": [
+      "favor"
+     ],
+     "e": "por favor：请。"
+    },
+    {
+     "id": "p11",
+     "t": "dict",
+     "lv": "改",
+     "ins": "听写：听录音，写下整句",
+     "a": "Hola, me llamo Ana. ¿Cómo te llamas?",
+     "zh": "你好，我叫安娜。你叫什么名字？",
+     "e": "llamo、llamas 的 ll 读得像“呀”的开头。"
+    },
+    {
+     "id": "p12",
+     "t": "f",
+     "lv": "改",
+     "opt": true,
+     "ins": "复习短文里的词",
+     "q": "Pablo es mi ___ de clase.",
+     "zh": "巴勃罗是我的同学。",
+     "a": [
+      "compañero"
+     ],
+     "e": "compañero：com（一起）+ pañ（面包），一起吃面包的人 → 同伴。"
+    },
+    {
+     "id": "p13",
+     "t": "tr",
+     "lv": "用",
+     "ins": "翻译成西语",
+     "zh": "你好，我叫王丽。你叫什么名字？",
+     "a": [
+      "Hola, me llamo Wang Li. ¿Cómo te llamas?",
+      "Hola, me llamo Wang Li, ¿cómo te llamas?",
+      "Hola, soy Wang Li. ¿Cómo te llamas?"
+     ],
+     "e": "Me llamo + 名字；问名字 ¿Cómo te llamas?"
+    },
+    {
+     "id": "p14",
+     "t": "tr",
+     "lv": "用",
+     "ins": "翻译成西语",
+     "zh": "早上好，先生。您叫什么名字？",
+     "a": [
+      "Buenos días, señor. ¿Cómo se llama usted?",
+      "Buenos días, señor, ¿cómo se llama usted?",
+      "Buenos días, señor. ¿Cómo se llama?",
+      "Buenos días, señor, ¿cómo se llama?"
+     ],
+     "e": "对先生用 usted：¿Cómo se llama usted?"
+    },
+    {
+     "id": "p15",
+     "t": "free",
+     "lv": "用",
+     "ins": "用西语回答，写一两句完整的话",
+     "q": "¿Cómo te llamas?",
+     "model": "Me llamo Lei. Mucho gusto.",
+     "check": [
+      "用了 Me llamo（不是 Yo llamo）",
+      "如果说了很高兴认识你：男生 encantado，女生 encantada，或 mucho gusto"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "output",
+   "name": "说出来",
+   "short": "输出",
+   "min": 5,
+   "intro": "把今天学的用起来：写一段，说一段。",
+   "screens": [
+    {
+     "id": "o1",
+     "t": "write",
+     "ins": "写作",
+     "prompt": "开学第一天，在班级群里写一段自我介绍：打招呼，说你叫什么，介绍一个同学叫什么，再问老师（用“您”）叫什么。写 4–5 句。",
+     "need": {
+      "re": "(?:^|[^a-záéíóúñ])(llamo|llamas|llama)(?![a-záéíóúñ])",
+      "n": 3,
+      "label": "llamarse"
+     },
+     "model": "¡Hola a todos! Me llamo Lei y soy estudiante. Mi compañera se llama Ana. Profesor, ¿cómo se llama usted? Mucho gusto.",
+     "check": [
+      "说自己用了 me llamo",
+      "介绍同学用了 se llama",
+      "问老师用了 usted：¿Cómo se llama usted?",
+      "问句前面写了倒问号 ¿"
+     ]
+    },
+    {
+     "id": "o2",
+     "t": "speak",
+     "ins": "口语",
+     "prompt": "在学校前台遇到一位老先生：问候他，介绍你自己，问他叫什么，最后说很高兴认识您。录下来再听一遍。",
+     "model": "Buenos días, señor. Me llamo Wang Lei. ¿Cómo se llama usted? Encantado.",
+     "check": [
+      "对老先生用了 usted：se llama usted",
+      "Me llamo 的 ll 读得像“呀”",
+      "男生说 encantado，女生说 encantada"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "exit",
+   "name": "出口小测",
+   "short": "小测",
+   "min": 4,
+   "intro": "5 道题，没有选项，没有提示。成绩决定这一课多快再复习。",
+   "screens": [
+    {
+     "id": "e1",
+     "t": "f",
+     "exit": true,
+     "ins": "填一个词",
+     "q": "—¿Cómo te llamas? —___ llamo Marta.",
+     "a": [
+      "me"
+     ],
+     "e": "我叫 → <b>me</b> llamo。"
+    },
+    {
+     "id": "e2",
+     "t": "tr",
+     "exit": true,
+     "ins": "翻译成西语",
+     "zh": "她叫卡门。",
+     "a": [
+      "Se llama Carmen.",
+      "Ella se llama Carmen."
+     ],
+     "e": "她 → se llama。"
+    },
+    {
+     "id": "e3",
+     "t": "tr",
+     "exit": true,
+     "ins": "翻译成西语",
+     "zh": "您叫什么名字？",
+     "a": [
+      "¿Cómo se llama usted?",
+      "¿Cómo se llama?"
+     ],
+     "e": "问名字用 cómo；usted 配 se llama。"
+    },
+    {
+     "id": "e4",
+     "t": "tr",
+     "exit": true,
+     "ins": "翻译成西语",
+     "zh": "——谢谢。——不客气。",
+     "a": [
+      "—Gracias. —De nada.",
+      "Gracias. De nada.",
+      "Gracias, de nada."
+     ],
+     "e": "gracias → de nada。"
+    },
+    {
+     "id": "e5",
+     "t": "tr",
+     "exit": true,
+     "ins": "翻译成西语（说话人是女生）",
+     "zh": "我叫露西娅，很高兴认识你。",
+     "a": [
+      "Me llamo Lucía, encantada.",
+      "Me llamo Lucía. Encantada.",
+      "Me llamo Lucía, mucho gusto.",
+      "Me llamo Lucía. Mucho gusto.",
+      "Hola, me llamo Lucía, encantada.",
+      "Hola, me llamo Lucía. Encantada."
+     ],
+     "e": "女生说 <b>encantada</b>，或者说 mucho gusto。"
+    }
+   ]
+  }
+ ],
+ "bank": [
+  {
+   "id": "b1",
+   "t": "f",
+   "ins": "填一个词",
+   "q": "¿Cómo ___ llamas?",
+   "a": [
+    "te"
+   ],
+   "e": "你 → te llamas。"
+  },
+  {
+   "id": "b2",
+   "t": "tr",
+   "ins": "翻译成西语",
+   "zh": "他叫巴勃罗。",
+   "a": [
+    "Se llama Pablo.",
+    "Él se llama Pablo."
+   ],
+   "e": "他 → se llama。"
+  },
+  {
+   "id": "b3",
+   "t": "rw",
+   "ins": "改成对“您”（usted）说，写出整句",
+   "q": "¿Y tú?",
+   "a": [
+    "¿Y usted?"
+   ],
+   "e": "tú → usted。"
+  },
+  {
+   "id": "b4",
+   "t": "f",
+   "ins": "填出动词",
+   "q": "Usted se ___ Antonio, ¿verdad?",
+   "a": [
+    "llama"
+   ],
+   "e": "usted 配 se llama。"
+  },
+  {
+   "id": "b5",
+   "t": "tr",
+   "ins": "翻译成西语",
+   "zh": "请来一杯咖啡。",
+   "a": [
+    "Un café, por favor."
+   ],
+   "e": "por favor 放在句末。"
+  },
+  {
+   "id": "b6",
+   "t": "tr",
+   "ins": "翻译成西语",
+   "zh": "我的老师叫加西亚。",
+   "a": [
+    "Mi profesor se llama García.",
+    "Mi profesora se llama García."
+   ],
+   "e": "mi profesor + se llama。"
+  },
+  {
+   "id": "b7",
+   "t": "tr",
+   "ins": "翻译成西语",
+   "zh": "——你叫什么名字？——我叫胡安。",
+   "a": [
+    "¿Cómo te llamas? —Me llamo Juan.",
+    "¿Cómo te llamas? Me llamo Juan.",
+    "—¿Cómo te llamas? —Me llamo Juan."
+   ],
+   "e": "¿Cómo te llamas? → Me llamo …"
+  },
+  {
+   "id": "b8",
+   "t": "tr",
+   "ins": "翻译成西语",
+   "zh": "您好吗？（对老师说）",
+   "a": [
+    "¿Cómo está?",
+    "¿Cómo está usted?"
+   ],
+   "e": "usted 配 está。"
+  },
+  {
+   "id": "b9",
+   "t": "f",
+   "ins": "填一个词",
+   "q": "Wang es mi ___ y Lei es mi nombre.",
+   "a": [
+    "apellido"
+   ],
+   "e": "apellido：姓。"
+  },
+  {
+   "id": "b10",
+   "t": "tr",
+   "ins": "翻译成西语（说话人是男生）",
+   "zh": "很高兴认识您，加西亚先生。",
+   "a": [
+    "Encantado, señor García.",
+    "Mucho gusto, señor García."
+   ],
+   "e": "男生说 encantado。"
+  }
+ ]
+}

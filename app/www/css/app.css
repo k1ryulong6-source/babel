@@ -323,3 +323,15 @@ mark { background: linear-gradient(transparent 12%, var(--mark) 12%, var(--mark)
 .row2 { display: flex; gap: var(--s2); } .row2 .btn { flex: 1; justify-content: center; }
 .zh-r > span { min-height: 0; overflow: hidden; }
 .screen.static .wsteps li, .screen.static .tok { animation: none; }
+
+.sheet-wrap.fixed { position: fixed; }
+.more-h { font-size: var(--f-sm); color: var(--ink-3); font-weight: 650; letter-spacing: .06em; margin: var(--s5) 4px var(--s3); }
+.lcard.compact h1 { font-size: 28px; }
+.del-box { margin-top: var(--s4); padding: var(--s4) 0 0; border-top: 1px solid var(--line); }
+.del-list { display: grid; gap: 6px; margin: var(--s3) 0; }
+.del-i { display: flex; align-items: center; gap: var(--s2); text-align: left; padding: 10px 12px; border-radius: 12px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); font-size: var(--f-sm); }
+.del-i .q { flex: 1; font-family: var(--serif); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.del-i .u { color: var(--accent); font-weight: 650; font-size: var(--f-xs); }
+.del-i .r { font-size: var(--f-xs); font-weight: 650; padding: 2px 8px; border-radius: 99px; background: var(--surface-2); color: var(--ink-2); flex: none; }
+.del-i .r-bad { background: var(--bad-soft); color: var(--bad); }
+.rcard h2 .es { font-family: var(--serif); }
