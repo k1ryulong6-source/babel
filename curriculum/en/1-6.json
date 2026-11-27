@@ -119,7 +119,8 @@
         "are",
         "is"
        ],
-       "a": 1
+       "a": 1,
+       "e": "they 用 be 动词的过去式 were。was 用于 I / he / she / it。"
       },
       {
        "t": "c",
@@ -129,7 +130,8 @@
         "studied",
         "studed"
        ],
-       "a": 1
+       "a": 1,
+       "e": "辅音 + y 结尾，变 y 为 i 再加 ed：studied。"
       },
       {
        "t": "c",
@@ -140,7 +142,8 @@
         "readed",
         "reading"
        ],
-       "a": 0
+       "a": 0,
+       "e": "Did 后面的动词用原形：Did you read the email?。read 的原形和过去式拼写相同，但这里读 /riːd/。"
       },
       {
        "t": "tr",
@@ -224,7 +227,8 @@
         "/d/",
         "/ɪd/"
        ],
-       "a": 2
+       "a": 2,
+       "e": "t、d 结尾的动词，-ed 读 /ɪd/：wanted /ˈwɒntɪd/，多一个音节。"
       },
       {
        "t": "c",
@@ -234,7 +238,8 @@
         "2",
         "3"
        ],
-       "a": 0
+       "a": 0,
+       "e": "worked 的 -ed 读 /t/，不加音节，还是一个音节 /wɜːkt/。中国学生常读成 work-ed 两个音节。"
       },
       {
        "t": "c",
@@ -244,7 +249,8 @@
         "/d/",
         "/ɪd/"
        ],
-       "a": 1
+       "a": 1,
+       "e": "元音或浊辅音结尾，-ed 读 /d/：played /pleɪd/。"
       }
      ]
     },
@@ -311,7 +317,8 @@
       "stopt",
       "stopd"
      ],
-     "a": 1
+     "a": 1,
+     "e": "重读闭音节、一个元音 + 一个辅音结尾，双写辅音再加 ed：stopped。"
     },
     {
      "t": "f",
@@ -472,7 +479,8 @@
         "brought",
         "buied"
        ],
-       "a": 1
+       "a": 1,
+       "e": "buy → bought。brought 是 bring 的过去式，两个最容易混。"
       },
       {
        "t": "c",
@@ -483,7 +491,8 @@
         "thank",
         "taught"
        ],
-       "a": 1
+       "a": 1,
+       "e": "think → thought。taught 是 teach 的过去式，thank 是“感谢”。"
       },
       {
        "t": "c",
@@ -493,7 +502,8 @@
         "put",
         "puted"
        ],
-       "a": 1
+       "a": 1,
+       "e": "put 的过去式和原形相同：put（cut、hit、let 也一样）。"
       },
       {
        "t": "f",
@@ -600,7 +610,8 @@
       "has",
       "haved"
      ],
-     "a": 1
+     "a": 1,
+     "e": "last weekend 是过去时间，have 的过去式是 had。"
     },
     {
      "t": "c",
@@ -611,7 +622,8 @@
       "telled",
       "tells"
      ],
-     "a": 1
+     "a": 1,
+     "e": "yesterday 是过去时间，tell → told（不规则）。"
     },
     {
      "t": "f",
@@ -752,7 +764,8 @@
         "am going to",
         "going to"
        ],
-       "a": 0
+       "a": 0,
+       "e": "说话这一刻临时决定，用 will：I'll get it。be going to 用于事先计划好的事。"
       },
       {
        "t": "c",
@@ -763,7 +776,8 @@
         "going",
         "rains"
        ],
-       "a": 1
+       "a": 1,
+       "e": "根据眼前的迹象（乌云）判断马上会发生，用 be going to。"
       },
       {
        "t": "c",
@@ -774,7 +788,8 @@
         "going",
         "visit"
        ],
-       "a": 1
+       "a": 1,
+       "e": "已经计划好的事用 be going to。will 多用于临时决定或预测。"
       },
       {
        "t": "tr",
@@ -862,7 +877,8 @@
         "got",
         "getting"
        ],
-       "a": 0
+       "a": 0,
+       "e": "when 引导的时间状语从句里，用一般现在时表示将来：when I get home。"
       },
       {
        "t": "c",
@@ -872,7 +888,8 @@
         "will rain",
         "rained"
        ],
-       "a": 0
+       "a": 0,
+       "e": "if 引导的条件从句里，用一般现在时表示将来：If it rains tomorrow。"
       },
       {
        "t": "tr",
@@ -1076,7 +1093,8 @@
         "see",
         "has seen"
        ],
-       "a": 1
+       "a": 1,
+       "e": "last week 是明确的过去时间，只能用一般过去时 saw，不能用现在完成时。"
       },
       {
        "t": "c",
@@ -1087,7 +1105,8 @@
         "have lived",
         "am living"
        ],
-       "a": 2
+       "a": 2,
+       "e": "since + 时间点，从过去持续到现在，用现在完成时 have lived。"
       },
       {
        "t": "c",
@@ -1098,7 +1117,8 @@
         "yet",
         "ago"
        ],
-       "a": 0
+       "a": 0,
+       "e": "问“曾经有没有”用 Have you ever。never 是从来没有，yet 用于否定句和疑问句的“还没、已经”，ago 不和完成时连用。"
       },
       {
        "t": "tr",
@@ -1203,7 +1223,8 @@
         "went",
         "goes"
        ],
-       "a": 1
+       "a": 1,
+       "e": "has gone to = 去了某地还没回来（人还在那里）。has been to 是去过、已经回来了。"
       }
      ]
     },
@@ -1400,7 +1421,8 @@
         "watched",
         "has watched"
        ],
-       "a": 0
+       "a": 0,
+       "e": "every evening 表示习惯，用一般现在时 watches。"
       },
       {
        "t": "c",
@@ -1411,7 +1433,8 @@
         "cooked",
         "has cooked"
        ],
-       "a": 1
+       "a": 1,
+       "e": "Don't call now 说明此刻她正在做饭，用现在进行时 is cooking。"
       },
       {
        "t": "c",
@@ -1422,7 +1445,8 @@
         "have known",
         "are knowing"
        ],
-       "a": 2
+       "a": 2,
+       "e": "since childhood 从小到现在一直认识，用现在完成时。know 是状态动词，不用进行时。"
       },
       {
        "t": "c",
@@ -1433,7 +1457,8 @@
         "have lost",
         "am losing"
        ],
-       "a": 1
+       "a": 1,
+       "e": "yesterday 是明确的过去时间，用一般过去时 lost。"
       },
       {
        "t": "c",
@@ -1444,7 +1469,8 @@
         "has",
         "was"
        ],
-       "a": 0
+       "a": 0,
+       "e": "I think 表示主观预测，用 will。"
       }
      ]
     },
@@ -1529,7 +1555,8 @@
         "I'm used to getting up early.",
         "I use to get up early."
        ],
-       "a": 1
+       "a": 1,
+       "e": "be used to + doing = 习惯于（做某事）。used to do 是“过去常常”，现在已经不这样了。"
       },
       {
        "t": "tr",
@@ -1694,7 +1721,7 @@
       "lost the map"
      ],
      "a": 0,
-     "e": "",
+     "e": "I got on the wrong train：坐错了火车。",
      "rdq": true
     },
     {
@@ -1706,7 +1733,7 @@
       "three days"
      ],
      "a": 1,
-     "e": "",
+     "e": "I stayed in Kyoto for five days：在京都住了五天。",
      "rdq": true
     },
     {
@@ -1718,7 +1745,7 @@
       "two"
      ],
      "a": 0,
-     "e": "",
+     "e": "I have been to three countries：去过三个国家。",
      "rdq": true
     },
     {
@@ -1779,7 +1806,8 @@
      "have gone",
      "will go"
     ],
-    "a": 1
+    "a": 1,
+    "e": "last night 是过去时间，go → went。"
    },
    {
     "t": "c",
@@ -1790,7 +1818,8 @@
      "has worked",
      "is working"
     ],
-    "a": 2
+    "a": 2,
+    "e": "for five years 从过去持续到现在，用现在完成时 has worked。"
    },
    {
     "t": "c",
@@ -1801,7 +1830,8 @@
      "attends",
      "attending"
     ],
-    "a": 0
+    "a": 0,
+    "e": "Did 后面的动词用原形：attend。"
    },
    {
     "t": "c",
@@ -1812,7 +1842,8 @@
      "written",
      "writ"
     ],
-    "a": 1
+    "a": 1,
+    "e": "write → wrote（过去式）。written 是过去分词，用于完成时和被动。"
    },
    {
     "t": "c",
@@ -1823,7 +1854,8 @@
      "buying",
      "bought"
     ],
-    "a": 1
+    "a": 1,
+    "e": "be going to 后面接动词原形：going to buy。"
    },
    {
     "t": "c",
@@ -1834,7 +1866,8 @@
      "was",
      "be"
     ],
-    "a": 0
+    "a": 0,
+    "e": "when 引导的时间状语从句里，用一般现在时表示将来：When I am older。"
    },
    {
     "t": "c",

@@ -120,7 +120,8 @@
         "gusto",
         "gustas"
        ],
-       "a": 1
+       "a": 1,
+       "e": "gustar 的主语是被喜欢的东西：las frutas 是复数 → gustan。“我”用 me 表示，动词不跟着 yo 变。"
       },
       {
        "t": "c",
@@ -131,7 +132,8 @@
         "le",
         "les"
        ],
-       "a": 2
+       "a": 2,
+       "e": "a mi madre（给她）对应第三人称间接宾语代词 le。me 是我，te 是你，les 是他们。"
       },
       {
        "t": "c",
@@ -142,7 +144,8 @@
         "gustamos",
         "gustar"
        ],
-       "a": 0
+       "a": 0,
+       "e": "gustar 后面接动词原形（cocinar）时一律用单数 gusta。nos 表示“我们”，动词不变成 gustamos。"
       },
       {
        "t": "f",
@@ -230,7 +233,8 @@
         "sí",
         "no"
        ],
-       "a": 0
+       "a": 0,
+       "e": "对方喜欢、我也喜欢，用 también。tampoco 用于附和否定的话。"
       },
       {
        "t": "c",
@@ -239,7 +243,8 @@
         "también",
         "tampoco"
        ],
-       "a": 1
+       "a": 1,
+       "e": "对方说不喜欢、我也不喜欢，用 tampoco（也不）。también 只附和肯定的话。"
       }
      ]
     },
@@ -423,7 +428,8 @@
         "quiere",
         "queremos"
        ],
-       "a": 0
+       "a": 0,
+       "e": "querer 是 e → ie 的变干动词，yo → quiero。quieres 是 tú，quiere 是第三人称。"
       },
       {
        "t": "c",
@@ -434,7 +440,8 @@
         "Puedes",
         "Pueden"
        ],
-       "a": 1
+       "a": 1,
+       "e": "对 usted（您）说话用第三人称：¿Puede traer la cuenta?。puedo 是“我能”，puedes 对 tú。"
       },
       {
        "t": "c",
@@ -445,7 +452,8 @@
         "pueden",
         "puedo"
        ],
-       "a": 0
+       "a": 0,
+       "e": "poder 的 nosotros 不变干：podemos。puedemos 是常见错误。"
       },
       {
        "t": "f",
@@ -518,7 +526,8 @@
         "La cuenta, por favor.",
         "El postre, por favor."
        ],
-       "a": 1
+       "a": 1,
+       "e": "结账说 La cuenta, por favor。menú 是菜单，postre 是甜点。"
       },
       {
        "t": "f",
@@ -736,7 +745,8 @@
         "naranja zumo",
         "zumo por naranja"
        ],
-       "a": 1
+       "a": 1,
+       "e": "名词修饰名词用 de 连接：zumo de naranja。西语不能像中文那样直接把两个名词放在一起。"
       },
       {
        "t": "c",
@@ -747,7 +757,8 @@
         "poco",
         "una poca"
        ],
-       "a": 1
+       "a": 1,
+       "e": "un poco de + 不可数名词 = 一点儿：un poco de leche。只说 un poco 后面不能直接接名词。"
       },
       {
        "t": "f",
@@ -834,7 +845,8 @@
       "tomo un",
       "es"
      ],
-     "a": 0
+     "a": 0,
+     "e": "吃米饭用 comer：como arroz。beber 是喝，tomar un 后面要接单数名词。"
     },
     {
      "t": "c",
@@ -845,7 +857,8 @@
       "12 点",
       "16 点"
      ],
-     "a": 1
+     "a": 1,
+     "e": "西班牙人晚饭通常在 21 点以后，午饭在 14 点左右，比中国晚得多。"
     },
     {
      "t": "dict",
@@ -986,7 +999,8 @@
         "costan",
         "cuestas"
        ],
-       "a": 1
+       "a": 1,
+       "e": "主语 los zapatos 是复数，costar 变干后用复数 cuestan。costan 没变干。"
       },
       {
        "t": "c",
@@ -997,7 +1011,8 @@
         "costa",
         "costar"
        ],
-       "a": 0
+       "a": 0,
+       "e": "主语 este bolso 是单数 → cuesta（o → ue 变干）。costa 没变干。"
       },
       {
        "t": "c",
@@ -1008,7 +1023,8 @@
         "baratos",
         "baratas"
        ],
-       "a": 1
+       "a": 1,
+       "e": "camisa 是阴性单数，形容词也要阴性单数：barata。"
       },
       {
        "t": "c",
@@ -1018,7 +1034,8 @@
         "¿Puedo pagar en tarjeta?",
         "¿Puedo pagar por tarjeta?"
        ],
-       "a": 0
+       "a": 0,
+       "e": "用卡付款说 pagar con tarjeta，con 表示工具、方式。"
       },
       {
        "t": "tr",
@@ -1235,7 +1252,8 @@
         "esto",
         "estos"
        ],
-       "a": 2
+       "a": 2,
+       "e": "问不知道是什么的东西用中性的 esto：¿Qué es esto?。este、esta 后面要接名词或指具体的阴阳性名词。"
       },
       {
        "t": "c",
@@ -1246,7 +1264,8 @@
         "Estos",
         "Estas"
        ],
-       "a": 2
+       "a": 2,
+       "e": "zapatos 是阳性复数 → estos。"
       },
       {
        "t": "tr",
@@ -1325,7 +1344,8 @@
         "blancos",
         "blancas"
        ],
-       "a": 1
+       "a": 1,
+       "e": "颜色形容词也要和名词性数一致：una camisa blanca。"
       },
       {
        "t": "c",
@@ -1336,7 +1356,8 @@
         "verdas",
         "verdos"
        ],
-       "a": 1
+       "a": 1,
+       "e": "以 -e 结尾的形容词只变数，不变性：los coches verdes。没有 verdas、verdos。"
       },
       {
        "t": "f",
@@ -1493,7 +1514,7 @@
       "La comida italiana."
      ],
      "a": 2,
-     "e": "",
+     "e": "A mi madre le encanta la comida italiana：妈妈很爱意大利菜。",
      "rdq": true
     },
     {
@@ -1505,7 +1526,7 @@
       "Pescado con ensalada."
      ],
      "a": 2,
-     "e": "",
+     "e": "Mi padre quiere pescado con ensalada：鱼配沙拉。番茄汤是“我”点的。",
      "rdq": true
     },
     {
@@ -1517,7 +1538,7 @@
       "Sesenta euros."
      ],
      "a": 2,
-     "e": "",
+     "e": "La cuenta, por favor. Son sesenta euros：六十欧元。四十五欧元是包的价钱。",
      "rdq": true
     },
     {
@@ -1529,7 +1550,7 @@
       "Negro."
      ],
      "a": 0,
-     "e": "",
+     "e": "Compramos un regalo para mi madre: un bolso azul：蓝色的包。",
      "rdq": true
     },
     {
@@ -1578,7 +1599,8 @@
      "gusto",
      "gustas"
     ],
-    "a": 1
+    "a": 1,
+    "e": "los helados 是复数 → gustan。"
    },
    {
     "t": "c",
@@ -1589,7 +1611,8 @@
      "nos",
      "me"
     ],
-    "a": 1
+    "a": 1,
+    "e": "a ellos（他们）对应复数间接宾语代词 les。le 是单数。"
    },
    {
     "t": "c",
@@ -1600,7 +1623,8 @@
      "queremos",
      "quieren"
     ],
-    "a": 0
+    "a": 0,
+    "e": "yo → quiero（e → ie 变干）。quiere 是第三人称。"
    },
    {
     "t": "c",
@@ -1611,7 +1635,8 @@
      "puede",
      "puedo"
     ],
-    "a": 0
+    "a": 0,
+    "e": "tú → puedes（o → ue 变干）。podes 是阿根廷等地的 vos 形式，不是标准的 tú 形式；puede 是第三人称。"
    },
    {
     "t": "c",
@@ -1622,7 +1647,8 @@
      "cuestas",
      "costa"
     ],
-    "a": 1
+    "a": 1,
+    "e": "主语 estas naranjas 是复数 → cuestan。"
    },
    {
     "t": "c",
@@ -1633,7 +1659,8 @@
      "Aquella",
      "Aquel"
     ],
-    "a": 2
+    "a": 2,
+    "e": "远处那个（离双方都远）用 aquella（阴性）。esta 是这，esa 是离听话人近的那个，aquel 是阳性。"
    },
    {
     "t": "c",
@@ -1644,7 +1671,8 @@
      "rojos",
      "rojas"
     ],
-    "a": 3
+    "a": 3,
+    "e": "flores 是阴性复数 → rojas。"
    },
    {
     "t": "f",
