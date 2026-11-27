@@ -125,7 +125,8 @@
         "voy a",
         "ir a"
        ],
-       "a": 2
+       "a": 2,
+       "e": "ir a + 动词原形 = 打算做某事：voy a ver。只说 voy 少了 a，vas a 是 tú，ir a 没变位。"
       },
       {
        "t": "c",
@@ -136,7 +137,8 @@
         "va",
         "vamos"
        ],
-       "a": 0
+       "a": 0,
+       "e": "ir a 结构里 ir 要跟主语变位：tú → vas（¿Qué vas a hacer?）。"
       },
       {
        "t": "c",
@@ -147,7 +149,8 @@
         "en",
         "por"
        ],
-       "a": 1
+       "a": 1,
+       "e": "ir 后面接 a 再接动词原形：van a viajar。de、en、por 都不对。"
       },
       {
        "t": "f",
@@ -228,7 +231,8 @@
       "¡Feliz fiesta!",
       "¡Buen viaje!"
      ],
-     "a": 1
+     "a": 1,
+     "e": "“生日快乐”固定说 ¡Feliz cumpleaños!。buen 不和 cumpleaños 搭配，¡Buen viaje! 是“一路顺风”。"
     },
     {
      "t": "o",
@@ -377,7 +381,8 @@
         "empiezan",
         "empezamos"
        ],
-       "a": 0
+       "a": 0,
+       "e": "empezar 是 e → ie 的变干动词，主语 la película 单数 → empieza。empeza 没变干。"
       },
       {
        "t": "c",
@@ -388,7 +393,8 @@
         "vuelven",
         "volvamos"
        ],
-       "a": 1
+       "a": 1,
+       "e": "volver 的 nosotros 不变干：volvemos。vuelvemos 是常见错误，volvamos 是虚拟式。"
       },
       {
        "t": "c",
@@ -399,7 +405,8 @@
         "duermes",
         "dormimos"
        ],
-       "a": 1
+       "a": 1,
+       "e": "dormir 是 o → ue 变干，yo → duermo。dormo 没变干。"
       },
       {
        "t": "c",
@@ -410,7 +417,8 @@
         "juega",
         "jugamos"
        ],
-       "a": 1
+       "a": 1,
+       "e": "jugar 是唯一 u → ue 变干的动词，tú → juegas。jugas 没变干。"
       },
       {
        "t": "c",
@@ -421,7 +429,8 @@
         "entiende",
         "entendemos"
        ],
-       "a": 1
+       "a": 1,
+       "e": "entender 是 e → ie 变干，yo → entiendo。"
       },
       {
        "t": "tr",
@@ -649,7 +658,8 @@
         "hace",
         "hacemos"
        ],
-       "a": 1
+       "a": 1,
+       "e": "hacer 的 yo 形式不规则：hago。haco 不存在。"
       },
       {
        "t": "c",
@@ -660,7 +670,8 @@
         "sale",
         "salimos"
        ],
-       "a": 1
+       "a": 1,
+       "e": "salir 的 yo 形式不规则：salgo。salo 不存在。"
       },
       {
        "t": "f",
@@ -750,7 +761,8 @@
         "Conoce",
         "Sabo"
        ],
-       "a": 1
+       "a": 1,
+       "e": "认识人、熟悉地方用 conocer：Conozco a tu hermana。saber 是知道事实、会做某事。"
       },
       {
        "t": "c",
@@ -761,7 +773,8 @@
         "sabo",
         "sabe"
        ],
-       "a": 1
+       "a": 1,
+       "e": "会做某事（游泳）用 saber + 动词原形：No sé nadar。conocer 用于认识人或地方。"
       },
       {
        "t": "c",
@@ -990,7 +1003,8 @@
         "está",
         "es"
        ],
-       "a": 1
+       "a": 1,
+       "e": "天气冷热用 hacer：Hace mucho calor。hay 说存在，estar / ser 不用来说天气。"
       },
       {
        "t": "c",
@@ -1001,7 +1015,8 @@
         "hace nieve",
         "es nieve"
        ],
-       "a": 0
+       "a": 0,
+       "e": "下雪用动词 nevar，第三人称单数 nieva。hace nieve、es nieve 都不说。"
       },
       {
        "t": "c",
@@ -1012,7 +1027,8 @@
         "Estoy frío.",
         "Soy frío."
        ],
-       "a": 1
+       "a": 1,
+       "e": "人觉得冷用 tener：Tengo frío。Hace frío 是“天气冷”，Estoy frío 意思不对。"
       },
       {
        "t": "c",
@@ -1023,7 +1039,8 @@
         "está",
         "es"
        ],
-       "a": 1
+       "a": 1,
+       "e": "问天气固定说 ¿Qué tiempo hace?。"
       },
       {
        "t": "tr",
@@ -1236,7 +1253,8 @@
         "a",
         "de"
        ],
-       "a": 1
+       "a": 1,
+       "e": "jugar a + 运动，a + el 缩合成 al：Juego al fútbol。"
       },
       {
        "t": "c",
@@ -1246,7 +1264,8 @@
         "dos vez por semana",
         "dos veces de semana"
        ],
-       "a": 0
+       "a": 0,
+       "e": "次数说 dos veces a la semana（一周两次）。vez 的复数是 veces。"
       },
       {
        "t": "f",
@@ -1322,7 +1341,8 @@
         "no",
         "tampoco"
        ],
-       "a": 0
+       "a": 0,
+       "e": "no + 动词 + nada = 一点也不：No me gusta nada。nunca 是“从不”。"
       },
       {
        "t": "c",
@@ -1333,7 +1353,8 @@
         "libra",
         "librar"
        ],
-       "a": 0
+       "a": 0,
+       "e": "tiempo libre = 空闲时间，libre 男女同形。libro 是书。"
       },
       {
        "t": "tr",
@@ -1496,7 +1517,7 @@
       "La ciudad."
      ],
      "a": 0,
-     "e": "",
+     "e": "Ella prefiere la playa：艾莲娜更喜欢海滩，“我”更喜欢山。",
      "rdq": true
     },
     {
@@ -1508,7 +1529,7 @@
       "Cuatro."
      ],
      "a": 1,
-     "e": "",
+     "e": "Primero cuatro días en la playa y luego tres días en los Pirineos：山里三天。",
      "rdq": true
     },
     {
@@ -1520,7 +1541,7 @@
       "Porque va a llover."
      ],
      "a": 1,
-     "e": "",
+     "e": "En la montaña hace más frío, sobre todo por la noche. Por eso pongo ropa de invierno。",
      "rdq": true
     },
     {
@@ -1580,7 +1601,8 @@
      "en",
      "para"
     ],
-    "a": 1
+    "a": 1,
+    "e": "ir a + 动词原形：voy a estudiar。"
    },
    {
     "t": "c",
@@ -1591,7 +1613,8 @@
      "vuelva",
      "volvemos"
     ],
-    "a": 1
+    "a": 1,
+    "e": "volver 变干 o → ue，ella → vuelve。vuelva 是虚拟式。"
    },
    {
     "t": "c",
@@ -1602,7 +1625,8 @@
      "sabo",
      "sabe"
     ],
-    "a": 1
+    "a": 1,
+    "e": "知道一个事实（答案）用 saber：No sé la respuesta。conocer 用于人、地方。"
    },
    {
     "t": "c",
@@ -1613,7 +1637,8 @@
      "Está",
      "Es"
     ],
-    "a": 1
+    "a": 1,
+    "e": "刮风也用 hacer：Hace mucho viento。"
    },
    {
     "t": "c",
@@ -1624,7 +1649,8 @@
      "juegan",
      "jugáis"
     ],
-    "a": 1
+    "a": 1,
+    "e": "jugar 的 nosotros 不变干：jugamos。"
    },
    {
     "t": "c",
@@ -1635,7 +1661,8 @@
      "pone",
      "ponemos"
     ],
-    "a": 1
+    "a": 1,
+    "e": "poner 的 yo 形式不规则：pongo。pono 不存在。"
    },
    {
     "t": "c",
@@ -1646,7 +1673,8 @@
      "vamos a",
      "ir"
     ],
-    "a": 0
+    "a": 0,
+    "e": "ir a 结构，tú → vas。"
    },
    {
     "t": "f",

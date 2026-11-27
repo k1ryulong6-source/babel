@@ -124,7 +124,8 @@
         "interested",
         "interest"
        ],
-       "a": 1
+       "a": 1,
+       "e": "-ed 形容词描述人的感受：I was interested（我感兴趣）。-ing 描述事物的性质：the story is interesting。"
       },
       {
        "t": "c",
@@ -134,7 +135,8 @@
         "boring",
         "bore"
        ],
-       "a": 1
+       "a": 1,
+       "e": "-ing 形容词描述事物让人怎样：the lecture was boring（讲座无聊）。bored 是人觉得无聊。"
       },
       {
        "t": "tr",
@@ -225,7 +227,8 @@
         "goodly",
         "nice"
        ],
-       "a": 1
+       "a": 1,
+       "e": "修饰动词 sing 用副词 well。good 是形容词。"
       },
       {
        "t": "c",
@@ -236,7 +239,8 @@
         "harder than",
         "hardness"
        ],
-       "a": 0
+       "a": 0,
+       "e": "hard 本身既是形容词也是副词：work hard = 努力工作。hardly 是“几乎不”，意思相反。"
       },
       {
        "t": "c",
@@ -246,7 +250,8 @@
         "hardly",
         "hardy"
        ],
-       "a": 1
+       "a": 1,
+       "e": "hardly = 几乎不：I can hardly hear you（几乎听不见）。hard 是努力，hardy 是耐寒的。"
       },
       {
        "t": "c",
@@ -257,7 +262,8 @@
         "care",
         "caring"
        ],
-       "a": 1
+       "a": 1,
+       "e": "修饰动词 drive 用副词 carefully。"
       }
      ]
     },
@@ -476,7 +482,8 @@
         "cheapest",
         "more cheap"
        ],
-       "a": 1
+       "a": 1,
+       "e": "单音节形容词比较级加 -er：cheaper（than 提示比较级）。"
       },
       {
        "t": "c",
@@ -487,7 +494,8 @@
         "hottest",
         "most hot"
        ],
-       "a": 2
+       "a": 2,
+       "e": "the + 最高级，hot 双写 t：hottest。"
       },
       {
        "t": "c",
@@ -498,7 +506,8 @@
         "best",
         "more good"
        ],
-       "a": 1
+       "a": 1,
+       "e": "good 的比较级不规则：better。"
       },
       {
        "t": "c",
@@ -508,7 +517,8 @@
         "more expensive",
         "most expensive"
        ],
-       "a": 1
+       "a": 1,
+       "e": "多音节形容词用 more：more expensive。没有 expensiver 这个形式。"
       },
       {
        "t": "tr",
@@ -591,7 +601,8 @@
         "tallest",
         "more tall"
        ],
-       "a": 0
+       "a": 0,
+       "e": "as + 形容词原级 + as：as tall as。"
       },
       {
        "t": "f",
@@ -808,7 +819,8 @@
         "in",
         "by"
        ],
-       "a": 2
+       "a": 2,
+       "e": "年份前用 in：in 1998。"
       },
       {
        "t": "c",
@@ -819,7 +831,8 @@
         "in",
         "by"
        ],
-       "a": 1
+       "a": 1,
+       "e": "星期几用 on：on Monday。"
       },
       {
        "t": "c",
@@ -830,7 +843,8 @@
         "in",
         "for"
        ],
-       "a": 0
+       "a": 0,
+       "e": "具体时刻用 at：at 9 a.m.。"
       },
       {
        "t": "c",
@@ -841,7 +855,8 @@
         "at",
         "（不加）"
        ],
-       "a": 3
+       "a": 3,
+       "e": "时间前有 next、last、this、every 时不加介词：next Friday。"
       }
      ]
     },
@@ -930,7 +945,8 @@
         "in",
         "to"
        ],
-       "a": 1
+       "a": 1,
+       "e": "在桌面上用 on。"
       },
       {
        "t": "c",
@@ -941,7 +957,8 @@
         "at",
         "by"
        ],
-       "a": 1
+       "a": 1,
+       "e": "在火车、公交、飞机这类大型交通工具上用 on。"
       },
       {
        "t": "c",
@@ -951,7 +968,8 @@
         "in",
         "at"
        ],
-       "a": 1
+       "a": 1,
+       "e": "在出租车、小汽车里用 in（只能坐着、不能站起来走动的）。"
       },
       {
        "t": "f",
@@ -1156,7 +1174,8 @@
         "Because I was sick, so I stayed home.",
         "Because I was sick, I stayed home."
        ],
-       "a": 1
+       "a": 1,
+       "e": "英语里 because 和 so 不能同时用，用一个就够了。中文“因为、所以”连用最容易带出这个错。"
       },
       {
        "t": "c",
@@ -1165,7 +1184,8 @@
         "Although it rained, but we went out.",
         "Although it rained, we went out."
        ],
-       "a": 1
+       "a": 1,
+       "e": "although 和 but 不能同时用。中文“虽然、但是”连用最容易带出这个错。"
       },
       {
        "t": "c",
@@ -1176,7 +1196,8 @@
         "so",
         "although"
        ],
-       "a": 2
+       "a": 2,
+       "e": "前面是原因（下雨），后面是结果（打车），用 so。"
       },
       {
        "t": "tr",
@@ -1266,7 +1287,8 @@
         "so",
         "although"
        ],
-       "a": 1
+       "a": 1,
+       "e": "because of 后面接名词：because of the snow。because 后面接句子。"
       },
       {
        "t": "c",
@@ -1276,7 +1298,8 @@
         "because of",
         "so"
        ],
-       "a": 0
+       "a": 0,
+       "e": "后面是完整的句子（the bus didn't come），用 because。because of 只接名词。"
       },
       {
        "t": "c",
@@ -1287,7 +1310,8 @@
         "but",
         "so"
        ],
-       "a": 1
+       "a": 1,
+       "e": "二选一用 or。and 是两个都要。"
       }
      ]
     },
@@ -1483,7 +1507,8 @@
         "speaking",
         "to speak"
        ],
-       "a": 0
+       "a": 0,
+       "e": "情态动词后接动词原形：can speak。"
       },
       {
        "t": "c",
@@ -1494,7 +1519,8 @@
         "Should",
         "Have"
        ],
-       "a": 1
+       "a": 1,
+       "e": "礼貌地请求别人帮忙用 Could you。must、should 是义务和建议，Have 不能这样提问。"
       },
       {
        "t": "tr",
@@ -1586,7 +1612,8 @@
         "don't have to",
         "needn't"
        ],
-       "a": 0
+       "a": 0,
+       "e": "mustn't = 禁止（不允许吸烟）。don't have to / needn't 是“不必”，意思完全不同。"
       },
       {
        "t": "c",
@@ -1596,7 +1623,8 @@
         "don't have to",
         "can't"
        ],
-       "a": 1
+       "a": 1,
+       "e": "星期天不用早起：don't have to（不必）。mustn't 是“禁止”。"
       },
       {
        "t": "f",
@@ -1770,7 +1798,7 @@
       "He makes coffee very carefully."
      ],
      "a": 2,
-     "e": "",
+     "e": "He makes every cup as carefully as possible. Because of this, more and more people come。",
      "rdq": true
     },
     {
@@ -1782,7 +1810,7 @@
       "Its coffee is better."
      ],
      "a": 0,
-     "e": "",
+     "e": "The first one is bigger and cheaper than the second one：更大，也更便宜。",
      "rdq": true
     },
     {
@@ -1794,7 +1822,7 @@
       "buy a coffee shop"
      ],
      "a": 1,
-     "e": "",
+     "e": "you have to practice every day：必须每天练习。",
      "rdq": true
     },
     {
@@ -1818,7 +1846,7 @@
       "My coffee is better."
      ],
      "a": 0,
-     "e": "",
+     "e": "not as good as = 不如：我的咖啡不如他的，所以 Leo 的更好。",
      "rdq": true
     },
     {
@@ -1855,7 +1883,8 @@
      "quicker than",
      "quickness"
     ],
-    "a": 1
+    "a": 1,
+    "e": "修饰动词 answer 用副词 quickly。"
    },
    {
     "t": "c",
@@ -1866,7 +1895,8 @@
      "best",
      "most good"
     ],
-    "a": 2
+    "a": 2,
+    "e": "the + 最高级：the best movie。"
    },
    {
     "t": "c",
@@ -1877,7 +1907,8 @@
      "at",
      "by"
     ],
-    "a": 1
+    "a": 1,
+    "e": "具体日期用 on：on March 3rd。"
    },
    {
     "t": "c",
@@ -1888,7 +1919,8 @@
      "in",
      "to"
     ],
-    "a": 0
+    "a": 0,
+    "e": "在车站这种具体地点用 at：at the station。"
    },
    {
     "t": "c",
@@ -1899,7 +1931,8 @@
      "but",
      "or"
     ],
-    "a": 1
+    "a": 1,
+    "e": "后面接原因（太冷），用 because。"
    },
    {
     "t": "c",
@@ -1910,7 +1943,8 @@
      "could",
      "might"
     ],
-    "a": 0
+    "a": 0,
+    "e": "法律规定必须做：must。may、could、might 都是可能、允许。"
    },
    {
     "t": "c",
@@ -1921,7 +1955,8 @@
      "bore",
      "boredom"
     ],
-    "a": 1
+    "a": 1,
+    "e": "人觉得无聊用 bored：I was bored。boring 描述让人无聊的事物。"
    },
    {
     "t": "f",
