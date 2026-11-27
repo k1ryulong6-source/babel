@@ -1900,5 +1900,661 @@
     "zh": "我们上周末玩得很开心。"
    }
   ]
- }
+ },
+ "bank": [
+  {
+   "l": 1,
+   "t": "c",
+   "q": "At nine yesterday, everything ___ ready for the party.",
+   "o": [
+    "is",
+    "are",
+    "was",
+    "were"
+   ],
+   "e": "昨天九点用过去时，everything 是单数，用 was，不能用 were。",
+   "a": 2
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "We didn't ___ the new policy at the meeting yesterday.",
+   "o": [
+    "considered",
+    "considering",
+    "considers",
+    "consider"
+   ],
+   "e": "didn't 已标出过去，后接原形 consider，不能再加 ed。",
+   "a": 3
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "The -ed ending in helped sounds like the -ed ending in ___.",
+   "o": [
+    "asked",
+    "played",
+    "needed",
+    "called"
+   ],
+   "e": "help 和 ask 末音是清辅音，后接 /t/。needed 多一个音节。",
+   "a": 0
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "Of these four words, only ___ has an -ed ending that sounds like /d/.",
+   "o": [
+    "looked",
+    "loved",
+    "started",
+    "watched"
+   ],
+   "e": "love 的 /v/ 是浊音，后接 /d/。started 多一个音节。",
+   "a": 1
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "The -ed ending adds a syllable to both needed and ___.",
+   "o": [
+    "watched",
+    "ended",
+    "lived",
+    "played"
+   ],
+   "e": "need 和 end 都以 /d/ 收尾，加 /ɪd/ 才多一个音节。",
+   "a": 1
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "In 'They opened the door and looked at me,' the two -ed endings are ___, in that order.",
+   "o": [
+    "/ɪd/ and /t/",
+    "/d/ and /t/",
+    "/t/ and /d/",
+    "/d/ and /ɪd/"
+   ],
+   "e": "open 末音 /n/ 后读 /d/，look 末音 /k/ 后读 /t/。",
+   "a": 1
+  },
+  {
+   "l": 1,
+   "t": "f",
+   "q": "The first way didn't work, so we ___ (try) another way.",
+   "a": [
+    "tried"
+   ],
+   "e": "两件事都已经发生。try 以辅音加 y 结尾，先把 y 改为 i，再加 ed，写成 tried。"
+  },
+  {
+   "l": 1,
+   "t": "f",
+   "q": "The music ___ (not be) too loud at the party last night.",
+   "a": [
+    "wasn't",
+    "was not"
+   ],
+   "e": "昨晚的情况用过去式，music 是不可数名词，用 was。直接在 was 后加 not，不能借用 didn't。"
+  },
+  {
+   "l": 1,
+   "t": "tr",
+   "zh": "小时候我很喜欢音乐。",
+   "a": [
+    "I loved music when I was a child.",
+    "When I was a child, I loved music."
+   ],
+   "e": "两个分句都说小时候的事，用 loved 和 was。when 从句放句首也可以，后面加逗号。"
+  },
+  {
+   "l": 1,
+   "t": "tr",
+   "zh": "会议为什么提前结束了？",
+   "a": [
+    "Why did the meeting end early?",
+    "Why did the meeting finish early?"
+   ],
+   "e": "问已经结束的会议，用 Why did 开头。did 后的 end 或 finish 用原形，不能再加 ed。"
+  },
+  {
+   "l": 1,
+   "t": "o",
+   "a": "The music stopped when she opened the door.",
+   "zh": "她开门时，音乐停了。",
+   "e": "先说音乐停了，再用 when 交代时间。stop 要双写 p 再加 ed，open 直接加 ed。"
+  },
+  {
+   "l": 1,
+   "t": "dict",
+   "a": "They started the meeting and talked about the new policy.",
+   "e": "started 的词尾读 /ɪd/，多一个音节。talked 的词尾读 /t/，不另加音节，听写时也要补上 ed。"
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "The class ___ ten minutes late yesterday.",
+   "o": [
+    "begun",
+    "begins",
+    "begin",
+    "began"
+   ],
+   "e": "昨天用过去式 began。begun 是过去分词，不能单独用。",
+   "a": 3
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "Our teacher ___ us how to use the new system last week.",
+   "o": [
+    "taught",
+    "teaches",
+    "teached",
+    "teach"
+   ],
+   "e": "last week 用过去式。teach 变 taught，不能直接加 ed。",
+   "a": 0
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "The team ___ the old system when it moved to a new office.",
+   "o": [
+    "keeped",
+    "keep",
+    "keeps",
+    "kept"
+   ],
+   "e": "搬办公室和保留系统都是过去的事，keep 变 kept，不能直接加 ed。",
+   "a": 3
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "Last year, it ___ ten dollars to take the bus from here to the city.",
+   "o": [
+    "cost",
+    "costing",
+    "costed",
+    "costs"
+   ],
+   "e": "这里 cost 表示花多少钱，过去式拼写不变，不能写成 costed。",
+   "a": 0
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "I opened the door and ___ the students come in.",
+   "o": [
+    "letting",
+    "lets",
+    "let",
+    "let's"
+   ],
+   "e": "动作和 opened 并列，let 过去式不变。let's 表提议。",
+   "a": 2
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "After two hours of work yesterday, we ___ a break.",
+   "o": [
+    "take",
+    "takes",
+    "took",
+    "taking"
+   ],
+   "e": "take a break 表示休息一下。昨天发生的事用 took。",
+   "a": 2
+  },
+  {
+   "l": 2,
+   "t": "f",
+   "q": "The company ___ (send) the information to all of us last Friday.",
+   "a": [
+    "sent"
+   ],
+   "e": "上周五已经过去，send 的过去式是 sent，末尾的 d 变成 t，不能写成 sended。"
+  },
+  {
+   "l": 2,
+   "t": "f",
+   "q": "I ___ (sleep) for only four hours that night, so I was tired the next morning.",
+   "a": [
+    "slept"
+   ],
+   "e": "那晚的睡眠已经结束，sleep 的过去式是 slept。ee 变成 e，末尾加 t。"
+  },
+  {
+   "l": 2,
+   "t": "tr",
+   "zh": "他昨天把自己的书带到了办公室。",
+   "a": [
+    "He brought his book to the office yesterday.",
+    "Yesterday he brought his book to the office."
+   ],
+   "e": "昨天带过去用 bring 的过去式 brought。bought 是 buy 的过去式，表示买下。"
+  },
+  {
+   "l": 2,
+   "t": "tr",
+   "zh": "我们昨天午饭后去游泳了。",
+   "a": [
+    "We swam after lunch yesterday.",
+    "Yesterday we swam after lunch."
+   ],
+   "e": "昨天午饭后是过去时间，swim 的过去式把 i 改为 a，写成 swam。after lunch 中间不用加冠词。"
+  },
+  {
+   "l": 2,
+   "t": "o",
+   "a": "She wrote his name on a piece of paper.",
+   "zh": "她把他的名字写在了一张纸上。",
+   "e": "用 write 的过去式 wrote，后接写下的内容 his name。on a piece of paper 说明写在哪里。"
+  },
+  {
+   "l": 2,
+   "t": "dict",
+   "a": "I went to the market and found my friend there.",
+   "e": "went 和 found 分别是 go 和 find 的过去式。听到 and 后也要写过去式，两件事都发生在过去。"
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "We made a plan yesterday. We are ___ a course at the local college next week.",
+   "o": [
+    "going to took",
+    "going take",
+    "going to taking",
+    "going to take"
+   ],
+   "e": "昨天已定计划，用 are going to 加原形 take，to 不能省。",
+   "a": 3
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "You look tired. Sit down and I'll ___ you some water.",
+   "o": [
+    "bringing",
+    "brings",
+    "bring",
+    "brought"
+   ],
+   "e": "看到对方累就主动帮忙，用 I'll。will 后接原形 bring。",
+   "a": 2
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "Look at that glass! It ___ going to fall off the table.",
+   "o": [
+    "is",
+    "will",
+    "be",
+    "are"
+   ],
+   "e": "看见迹象后作预测，用 be going to。主语 it 要配 is。",
+   "a": 0
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "If there ___ enough time, we'll go to the market.",
+   "o": [
+    "are",
+    "is",
+    "will be",
+    "be"
+   ],
+   "e": "if 条件从句用现在时。time 不可数，用 is，主句才用 will。",
+   "a": 1
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "When the next bus ___, we'll get on it.",
+   "o": [
+    "comes",
+    "come",
+    "will come",
+    "coming"
+   ],
+   "e": "when 从句用现在时表将来。bus 是单数，come 要加 s。",
+   "a": 0
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "We'll go home as soon as the meeting ___.",
+   "o": [
+    "ending",
+    "ends",
+    "end",
+    "will end"
+   ],
+   "e": "从句用现在时，不加 will。meeting 是单数，用 ends。",
+   "a": 1
+  },
+  {
+   "l": 3,
+   "t": "f",
+   "q": "When we ___ (reach) the city, we'll look for a place to eat.",
+   "a": [
+    "reach"
+   ],
+   "e": "到达城市虽是将来的事，when 引导的时间从句用一般现在时。主语是 we，写 reach，不加 s 或 will。"
+  },
+  {
+   "l": 3,
+   "t": "f",
+   "q": "I ___ (will, not) tell anyone. You can tell me everything.",
+   "a": [
+    "won't",
+    "will not"
+   ],
+   "e": "说话人在承诺保密，用 will 的否定式。缩写是 won't，不能写成 willn't，之后的 tell 用原形。"
+  },
+  {
+   "l": 3,
+   "t": "tr",
+   "zh": "我们打算这周末在家做饭。",
+   "a": [
+    "We're going to cook at home this weekend.",
+    "We are going to cook at home this weekend.",
+    "This weekend, we're going to cook at home."
+   ],
+   "e": "说的是已经有的打算，用 we're going to 加原形 cook。this weekend 前不用加 on。"
+  },
+  {
+   "l": 3,
+   "t": "tr",
+   "zh": "如果商店开着，我就给你买一本书。",
+   "a": [
+    "If the shop is open, I'll buy you a book.",
+    "I'll buy you a book if the shop is open.",
+    "If the store is open, I will buy you a book."
+   ],
+   "e": "商店开着是条件，用 if the shop is open。主句用 will 表示将来，if 从句里的 is 不改成 will be。"
+  },
+  {
+   "l": 3,
+   "t": "o",
+   "a": "As soon as the door opens, we'll go in.",
+   "zh": "门一开，我们就进去。",
+   "e": "as soon as 引出时间从句，放句首时用逗号隔开。door 是单数，从句用 opens，主句用 we'll。"
+  },
+  {
+   "l": 3,
+   "t": "dict",
+   "a": "I think the local team will play well next week.",
+   "e": "I think 引出对下周比赛的预测，用 will play。will 后不能用 plays，well 说明打得怎么样。"
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "The students ___ already called their parents.",
+   "o": [
+    "have",
+    "has",
+    "did",
+    "are"
+   ],
+   "e": "students 是复数，用 have 接过去分词 called，不能用 has。",
+   "a": 0
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "We ___ our art class at three yesterday.",
+   "o": [
+    "have started",
+    "are starting",
+    "started",
+    "start"
+   ],
+   "e": "昨天三点是明确的过去时间，用 started，不能用现在完成时。",
+   "a": 2
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "She has ___ the class, so she can take the next one now.",
+   "o": [
+    "passes",
+    "passing",
+    "passed",
+    "pass"
+   ],
+   "e": "通过这门课的结果是现在能上下一门。has 后接过去分词 passed。",
+   "a": 2
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "We haven't had a class ___ two weeks.",
+   "o": [
+    "at",
+    "for",
+    "from",
+    "since"
+   ],
+   "e": "two weeks 是时长，用 for。since 后面要给出起点。",
+   "a": 1
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "She has worked in this field ___ she left college.",
+   "o": [
+    "from",
+    "at",
+    "during",
+    "since"
+   ],
+   "e": "离开大学是起点，用 since。during 后接名词，不能接从句。",
+   "a": 3
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "Have your parents ___ your new home yet?",
+   "o": [
+    "see",
+    "seen",
+    "saw",
+    "seeing"
+   ],
+   "e": "yet 问到现在是否见过，have 后用 seen，saw 是过去式。",
+   "a": 1
+  },
+  {
+   "l": 4,
+   "t": "f",
+   "q": "Our team hasn't ___ (lose) a game this year.",
+   "a": [
+    "lost"
+   ],
+   "e": "说今年到目前为止的战绩。hasn't 后接 lose 的过去分词 lost，这里不能留原形。"
+  },
+  {
+   "l": 4,
+   "t": "f",
+   "q": "I ___ (meet) the new teacher two days ago.",
+   "a": [
+    "met"
+   ],
+   "e": "two days ago 指两天前，用一般过去时。meet 的过去式是 met，不能用 have met。"
+  },
+  {
+   "l": 4,
+   "t": "tr",
+   "zh": "到目前为止，我们已经读了两本书。",
+   "a": [
+    "So far, we've read two books.",
+    "We have read two books so far.",
+    "We've read two books so far."
+   ],
+   "e": "so far 统计到现在读完的书，用 have read。read 在这里是过去分词，拼写同原形，读 /red/。"
+  },
+  {
+   "l": 4,
+   "t": "tr",
+   "zh": "从去年五月起，她就是我们队的一员。",
+   "a": [
+    "She has been a member of our team since last May.",
+    "She's been a member of our team since last May.",
+    "Since last May, she has been a member of our team."
+   ],
+   "e": "她从去年五月到现在都是队员，用 has been。last May 是起点，前面用 since，不能用 for。"
+  },
+  {
+   "l": 4,
+   "t": "o",
+   "a": "My sister has gone to the office to get her phone.",
+   "zh": "我姐姐去办公室拿手机了，还没回来。",
+   "e": "姐姐去拿手机还没回来，用 has gone to the office。to get her phone 放在后面交代目的。换成 has been to 就成了去过。"
+  },
+  {
+   "l": 4,
+   "t": "dict",
+   "a": "My parents have both been to Japan, so they know it well.",
+   "e": "听到 both 可知两人都有这段经历，用 have both been to。have gone to 会让人理解成两人去了还没回来。"
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "This shop opens at nine every morning and ___ food until six.",
+   "o": [
+    "sell",
+    "selling",
+    "sells",
+    "sold"
+   ],
+   "e": "说店铺每天的营业安排，用一般现在时。shop 是单数，用 sells。",
+   "a": 2
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "Please wait here. The teacher ___ to a student at the moment.",
+   "o": [
+    "has talked",
+    "talked",
+    "is talking",
+    "talks"
+   ],
+   "e": "让人等是因为谈话正在进行，用 is talking。talks 表习惯。",
+   "a": 2
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "The bus ___ at six yesterday morning, so we were at school by seven.",
+   "o": [
+    "has left",
+    "is leaving",
+    "leaves",
+    "left"
+   ],
+   "e": "昨天早上六点是明确的过去时间，用 left，不能用 has left。",
+   "a": 3
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "The school ___ the same books since last year, and it still uses them.",
+   "o": [
+    "is using",
+    "uses",
+    "has used",
+    "used"
+   ],
+   "e": "从去年持续到现在，用 has used。used 只交代过去。",
+   "a": 2
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "My father ___ sell books at the market, but now he works at a school.",
+   "o": [
+    "used",
+    "use to",
+    "used to",
+    "uses to"
+   ],
+   "e": "以前卖书，现在换了工作。肯定句用 used to，不能漏掉 d。",
+   "a": 2
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "Did your family ___ to go shopping together on Sundays?",
+   "o": [
+    "uses",
+    "used",
+    "using",
+    "use"
+   ],
+   "e": "问过去的习惯，用 Did 加主语再接 use to。used 多标了一次过去。",
+   "a": 3
+  },
+  {
+   "l": 5,
+   "t": "f",
+   "q": "From now on, I ___ (be) on time for class. I promise.",
+   "a": [
+    "will be"
+   ],
+   "e": "from now on 指从现在起，I promise 表明是在作承诺，用 will be。will 后用原形 be，不能写成 will am。"
+  },
+  {
+   "l": 5,
+   "t": "f",
+   "q": "My sister ___ (not use) to eat breakfast. Now she eats it every morning.",
+   "a": [
+    "didn't use",
+    "did not use"
+   ],
+   "e": "后一句说明她现在每天吃早餐，前一句说以前没有这个习惯。didn't 已标出过去，后面写 use to。"
+  },
+  {
+   "l": 5,
+   "t": "tr",
+   "zh": "我已经习惯每天写一份报告了。",
+   "a": [
+    "I'm used to writing a report every day.",
+    "I am used to writing a report every day.",
+    "I'm used to writing a report each day."
+   ],
+   "e": "说现在已经习惯，用 be used to 加 writing。used to write 表示以前常写，意思变了。"
+  },
+  {
+   "l": 5,
+   "t": "tr",
+   "zh": "我明天会把这份报告发给你。",
+   "a": [
+    "I'll send you this report tomorrow.",
+    "I will send this report to you tomorrow.",
+    "Tomorrow I'll send you this report."
+   ],
+   "e": "说的是明天要做的事，用 will send。把人放在报告前可以直接用 send you this report，换顺序时要在 you 前加 to。"
+  },
+  {
+   "l": 5,
+   "t": "o",
+   "a": "I sometimes read business books on the bus.",
+   "zh": "我有时在公交车上读商务类书籍。",
+   "e": "sometimes 说明频率，这里放在动词 read 前。读书是平时的习惯，用一般现在时，on the bus 说明地点。"
+  },
+  {
+   "l": 5,
+   "t": "dict",
+   "a": "My former teacher now works at the local college.",
+   "e": "former 修饰 teacher，表示以前教过我。now 说明现状，任职用一般现在时，teacher 是单数，works 要保留 s。"
+  }
+ ]
 }
