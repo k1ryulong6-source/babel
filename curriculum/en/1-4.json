@@ -116,7 +116,8 @@
         "children",
         "childrens"
        ],
-       "a": 2
+       "a": 2,
+       "e": "child 的复数是不规则的 children，本身已经是复数，不能再加 s。"
       },
       {
        "t": "c",
@@ -127,7 +128,8 @@
         "cityes",
         "city"
        ],
-       "a": 1
+       "a": 1,
+       "e": "辅音 + y 结尾，把 y 变 i 再加 es：cities。"
       },
       {
        "t": "c",
@@ -138,7 +140,8 @@
         "knifs",
         "knive"
        ],
-       "a": 1
+       "a": 1,
+       "e": "f / fe 结尾的名词多数变 ves：knife → knives，leaf → leaves。"
       },
       {
        "t": "tr",
@@ -224,7 +227,8 @@
         "friend's",
         "a friend"
        ],
-       "a": 1
+       "a": 1,
+       "e": "one of + 复数名词：one of my best friends。“其中之一”一定是从多个里选。"
       },
       {
        "t": "c",
@@ -235,7 +239,8 @@
         "be",
         "am"
        ],
-       "a": 0
+       "a": 0,
+       "e": "one of the students 的主语是 one，所以动词用单数 is，不受 students 影响。"
       },
       {
        "t": "tr",
@@ -453,7 +458,8 @@
         "information",
         "student"
        ],
-       "a": 2
+       "a": 2,
+       "e": "information（信息）不可数，不能加 s、不能用 an。book、chair、student 都可数。"
       },
       {
        "t": "c",
@@ -464,7 +470,8 @@
         "an advice",
         "advise"
        ],
-       "a": 0
+       "a": 0,
+       "e": "advice（建议）不可数：some advice。advise 是动词。要说一条建议用 a piece of advice。"
       },
       {
        "t": "c",
@@ -475,7 +482,8 @@
         "were",
         "be"
        ],
-       "a": 0
+       "a": 0,
+       "e": "news 虽然以 s 结尾，却是不可数名词，动词用单数 is。"
       },
       {
        "t": "tr",
@@ -573,7 +581,8 @@
         "a",
         "few"
        ],
-       "a": 1
+       "a": 1,
+       "e": "money 不可数，用 much 修饰。many 和 few 修饰可数名词复数。"
       },
       {
        "t": "c",
@@ -584,7 +593,8 @@
         "lot",
         "any"
        ],
-       "a": 1
+       "a": 1,
+       "e": "students 可数复数，问数量用 How many。How much 问不可数名词的量或价格。"
       },
       {
        "t": "c",
@@ -595,7 +605,8 @@
         "much",
         "a"
        ],
-       "a": 1
+       "a": 1,
+       "e": "否定句和疑问句里一般用 any：Do you have any questions? some 多用于肯定句或请人吃东西时。"
       },
       {
        "t": "f",
@@ -793,7 +804,8 @@
         "the",
         "/"
        ],
-       "a": 1
+       "a": 1,
+       "e": "hour 的 h 不发音，开头是元音音素，用 an：an hour。看读音，不看字母。"
       },
       {
        "t": "c",
@@ -804,7 +816,8 @@
         "the",
         "/"
        ],
-       "a": 0
+       "a": 0,
+       "e": "university 读 /juː-/，开头是辅音音素 /j/，用 a：a university。"
       },
       {
        "t": "c",
@@ -815,7 +828,8 @@
         "the",
         "/"
        ],
-       "a": 1
+       "a": 1,
+       "e": "honest 的 h 不发音，读音以元音开头，用 an。"
       }
      ]
     },
@@ -905,7 +919,8 @@
         "the",
         "/"
        ],
-       "a": 3
+       "a": 3,
+       "e": "球类运动前不加冠词：play tennis。乐器前才加 the（play the piano）。"
       },
       {
        "t": "c",
@@ -916,7 +931,8 @@
         "The",
         "/"
        ],
-       "a": 2
+       "a": 2,
+       "e": "世界上独一无二的东西用 the：the sun、the moon、the earth。"
       },
       {
        "t": "f",
@@ -1128,7 +1144,8 @@
         "my",
         "mine"
        ],
-       "a": 1
+       "a": 1,
+       "e": "动词 give 后面的人用宾格：give me。I 是主格，my、mine 是所有格。"
       },
       {
        "t": "c",
@@ -1139,7 +1156,8 @@
         "hers",
         "herself"
        ],
-       "a": 1
+       "a": 1,
+       "e": "介词 for 后面用宾格：for her。she 是主格，hers 是“她的东西”。"
       },
       {
        "t": "tr",
@@ -1233,7 +1251,8 @@
         "you",
         "yourself"
        ],
-       "a": 1
+       "a": 1,
+       "e": "放在句末、后面没有名词时用名词性物主代词：yours = your pen。your 后面必须接名词。"
       },
       {
        "t": "c",
@@ -1244,7 +1263,8 @@
         "it",
         "itself"
        ],
-       "a": 1
+       "a": 1,
+       "e": "its（它的）没有撇号；it's 是 it is 的缩写。"
       },
       {
        "t": "f",
@@ -1262,7 +1282,8 @@
         "themselves",
         "theirs"
        ],
-       "a": 2
+       "a": 2,
+       "e": "by + 反身代词 = 独自、靠自己：by themselves。"
       }
      ]
     },
@@ -1489,7 +1510,8 @@
         "parents's",
         "parents"
        ],
-       "a": 1
+       "a": 1,
+       "e": "以 s 结尾的复数名词，所有格只加撇号：parents' room。parent's 是一个家长的。"
       },
       {
        "t": "c",
@@ -1500,7 +1522,8 @@
         "childs'",
         "children"
        ],
-       "a": 1
+       "a": 1,
+       "e": "不以 s 结尾的复数（children）照常加 's：children's toys。"
       },
       {
        "t": "f",
@@ -1608,7 +1631,8 @@
       "Here is Anna.",
       "It's me Anna."
      ],
-     "a": 1
+     "a": 1,
+     "e": "打电话报自己的名字说 This is Anna。I am Anna 用于当面自我介绍。"
     },
     {
      "t": "o",
@@ -1720,7 +1744,7 @@
       "a new kitchen"
      ],
      "a": 1,
-     "e": "",
+     "e": "The house is old, but it has a big garden：有一个大花园。",
      "rdq": true
     },
     {
@@ -1732,7 +1756,7 @@
       "She wants to buy her house."
      ],
      "a": 1,
-     "e": "",
+     "e": "Anna needs some information about schools：她想了解学校的信息。",
      "rdq": true
     },
     {
@@ -1744,7 +1768,7 @@
       "on foot"
      ],
      "a": 0,
-     "e": "",
+     "e": "My son goes there by bus：坐公交车上学。",
      "rdq": true
     },
     {
@@ -1756,7 +1780,7 @@
       "in the house"
      ],
      "a": 1,
-     "e": "",
+     "e": "The girl finds it under a tree：在一棵树下找到的。",
      "rdq": true
     },
     {
@@ -1803,7 +1827,8 @@
      "womens",
      "woman"
     ],
-    "a": 1
+    "a": 1,
+    "e": "woman 的复数是 women（只改元音），不能再加 s。"
    },
    {
     "t": "c",
@@ -1814,7 +1839,8 @@
      "an information",
      "information's"
     ],
-    "a": 1
+    "a": 1,
+    "e": "information 不可数，不能加 s、不能用 an。"
    },
    {
     "t": "c",
@@ -1825,7 +1851,8 @@
      "lot",
      "few"
     ],
-    "a": 1
+    "a": 1,
+    "e": "water 不可数，用 How much。"
    },
    {
     "t": "c",
@@ -1836,7 +1863,8 @@
      "the",
      "/"
     ],
-    "a": 1
+    "a": 1,
+    "e": "honest 的 h 不发音，读音以元音开头，用 an。"
    },
    {
     "t": "c",
@@ -1847,7 +1875,8 @@
      "/",
      "an"
     ],
-    "a": 2
+    "a": 2,
+    "e": "by + 交通工具时不加冠词：by bus、by car、by train。"
    },
    {
     "t": "c",
@@ -1858,7 +1887,8 @@
      "she",
      "herself"
     ],
-    "a": 1
+    "a": 1,
+    "e": "放在句末、后面没有名词时用名词性物主代词 hers。her 后面必须接名词。"
    },
    {
     "t": "c",
@@ -1869,7 +1899,8 @@
      "those",
      "it"
     ],
-    "a": 2
+    "a": 2,
+    "e": "birds 是复数，指示词也要复数：those（那些）。this / that 是单数，it 不能当限定词。"
    },
    {
     "t": "f",

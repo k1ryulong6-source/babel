@@ -120,7 +120,8 @@
         "trabaja",
         "trabajamos"
        ],
-       "a": 0
+       "a": 0,
+       "e": "yo → 去掉 -ar 加 -o：trabajo。trabajas 是 tú，trabaja 是 él / ella，trabajamos 是 nosotros。"
       },
       {
        "t": "c",
@@ -131,7 +132,8 @@
         "escucha",
         "escuchan"
        ],
-       "a": 1
+       "a": 1,
+       "e": "tú → -as：escuchas。escucho 是 yo，escucha 是第三人称单数，escuchan 是复数。"
       },
       {
        "t": "c",
@@ -142,7 +144,8 @@
         "hablamos",
         "hablas"
        ],
-       "a": 1
+       "a": 1,
+       "e": "ellos → -an：hablan。habla 是单数，hablamos 是“我们”，hablas 是 tú。"
       },
       {
        "t": "f",
@@ -237,7 +240,8 @@
       "estudiamos",
       "estudiáis"
      ],
-     "a": 2
+     "a": 2,
+     "e": "nosotros → -amos：estudiamos。estudiáis 是 vosotros，estudian 是 ellos。"
     },
     {
      "t": "f",
@@ -392,7 +396,8 @@
         "vivemos",
         "viven"
        ],
-       "a": 1
+       "a": 1,
+       "e": "-ir 动词的 nosotros 是 -imos：vivimos。-emos 是 -er 动词的词尾，vivir 不用。"
       },
       {
        "t": "c",
@@ -403,7 +408,8 @@
         "leo",
         "leen"
        ],
-       "a": 0
+       "a": 0,
+       "e": "tú → -es：lees（leer 是 -er 动词）。lee 是第三人称，leo 是 yo。"
       },
       {
        "t": "c",
@@ -414,7 +420,8 @@
         "bebemos",
         "bebes"
        ],
-       "a": 1
+       "a": 1,
+       "e": "ellos → -en：beben。bebe 是单数，bebemos 是“我们”。"
       },
       {
        "t": "f",
@@ -500,7 +507,8 @@
       "aprendéis",
       "aprenden"
      ],
-     "a": 1
+     "a": 1,
+     "e": "-er 动词的 nosotros 是 -emos：aprendemos。aprendí 是过去时，aprenden 是 ellos。"
     },
     {
      "t": "o",
@@ -641,7 +649,8 @@
         "se levanta",
         "te levantas"
        ],
-       "a": 1
+       "a": 1,
+       "e": "levantarse（起床）是自反动词，yo 要加 me：me levanto。只说 levanto 意思变成“举起（某物）”。"
       },
       {
        "t": "c",
@@ -652,7 +661,8 @@
         "nos ducharnos",
         "duchamos"
        ],
-       "a": 0
+       "a": 0,
+       "e": "nosotros 的自反代词是 nos，动词变 -amos：nos duchamos。se 配 ellos，nos ducharnos 动词没变位。"
       },
       {
        "t": "f",
@@ -730,7 +740,8 @@
         "se acuesta",
         "acuestas"
        ],
-       "a": 0
+       "a": 0,
+       "e": "tú 的自反代词是 te，动词变 -as：te acuestas。me 配 yo，se 配第三人称。"
       },
       {
        "t": "c",
@@ -739,7 +750,8 @@
         "nos acuestamos",
         "nos acostamos"
        ],
-       "a": 1
+       "a": 1,
+       "e": "acostarse 是 o → ue 的变干动词，但 nosotros 不变干：nos acostamos。nos acuestamos 是常见错误。"
       }
      ]
     },
@@ -798,7 +810,8 @@
       "cenar",
       "comer"
      ],
-     "a": 2
+     "a": 2,
+     "e": "cenar = 吃晚饭。desayunar 早饭，almorzar 午饭，comer 吃（西班牙常指吃午饭）。"
     },
     {
      "t": "o",
@@ -946,7 +959,8 @@
         "Es la dos y media.",
         "Son las dos y cuarto."
        ],
-       "a": 0
+       "a": 0,
+       "e": "2 点以后用复数 son las：Son las dos y media（半 = media）。y cuarto 是一刻钟（2:15）。"
       },
       {
        "t": "c",
@@ -957,7 +971,8 @@
         "Es las una.",
         "Son las uno."
        ],
-       "a": 1
+       "a": 1,
+       "e": "1 点用单数 Es la una。只有一点钟是单数，la 和 una 都是阴性。"
       },
       {
        "t": "c",
@@ -967,7 +982,8 @@
         "Son las cinco menos cuarto.",
         "Son las cuatro menos cuarto."
        ],
-       "a": 1
+       "a": 1,
+       "e": "4:45 习惯说“5 点差一刻”：Son las cinco menos cuarto。cuatro menos cuarto 是 3:45。"
       },
       {
        "t": "c",
@@ -978,7 +994,8 @@
         "de",
         "por"
        ],
-       "a": 1
+       "a": 1,
+       "e": "在几点（发生某事）用 a：empieza a las nueve。en、de、por 都不用来说时刻。"
       },
       {
        "t": "tr",
@@ -1049,7 +1066,8 @@
         "Nunca bebo café.",
         "A veces bebo café."
        ],
-       "a": 1
+       "a": 1,
+       "e": "nunca = 从不，直接放在动词前就是否定。siempre 总是，a veces 有时。"
       },
       {
        "t": "f",
@@ -1253,7 +1271,8 @@
         "en viernes",
         "viernes"
        ],
-       "a": 1
+       "a": 1,
+       "e": "星期前加 los（复数）表示“每周的那一天”：los viernes。el viernes 是“这个周五”。"
       },
       {
        "t": "c",
@@ -1263,7 +1282,8 @@
         "El sábado trabajo.",
         "A sábado trabajo."
        ],
-       "a": 1
+       "a": 1,
+       "e": "说具体某一天（这个周六）用 el + 星期，不加介词：El sábado trabajo。en、a 都是错的。"
       },
       {
        "t": "c",
@@ -1274,7 +1294,8 @@
         "hay",
         "son"
        ],
-       "a": 0
+       "a": 0,
+       "e": "问今天星期几：¿Qué día es hoy?，用 ser。estar 说位置、状态，hay 说存在。"
       },
       {
        "t": "tr",
@@ -1357,7 +1378,8 @@
       "jueves",
       "lunes"
      ],
-     "a": 1
+     "a": 1,
+     "e": "miércoles = 星期三。martes 星期二，jueves 星期四，lunes 星期一。"
     },
     {
      "t": "f",
@@ -1460,7 +1482,7 @@
       "A las siete."
      ],
      "a": 2,
-     "e": "",
+     "e": "De lunes a viernes, se levanta a las siete：七点起床。",
      "rdq": true
     },
     {
@@ -1472,7 +1494,7 @@
       "Estudia inglés."
      ],
      "a": 2,
-     "e": "",
+     "e": "Por la tarde, estudia inglés en una academia：下午学英语。给朋友做饭是周日。",
      "rdq": true
     },
     {
@@ -1484,7 +1506,7 @@
       "Trabaja en la oficina."
      ],
      "a": 1,
-     "e": "",
+     "e": "Los sábados no trabaja. Se levanta tarde, compra fruta en el mercado y llama a su madre。",
      "rdq": true
     },
     {
@@ -1545,7 +1567,8 @@
      "trabajan",
      "trabajas"
     ],
-    "a": 0
+    "a": 0,
+    "e": "mi hermano 是第三人称单数 → trabaja。"
    },
    {
     "t": "c",
@@ -1556,7 +1579,8 @@
      "viven",
      "vivimos"
     ],
-    "a": 0
+    "a": 0,
+    "e": "vosotros 的 -ir 动词词尾是 -ís：vivís。-éis 是 -er 动词的词尾（coméis）。"
    },
    {
     "t": "c",
@@ -1567,7 +1591,8 @@
      "se acuesta",
      "me acosto"
     ],
-    "a": 1
+    "a": 1,
+    "e": "acostarse 的 yo 要变干 o → ue，还要加 me：me acuesto。me acosto 没变干，se acuesta 是第三人称。"
    },
    {
     "t": "c",
@@ -1578,7 +1603,8 @@
      "Es las tres y cuarto.",
      "Son las cuatro menos cuarto."
     ],
-    "a": 0
+    "a": 0,
+    "e": "3:15 = 三点一刻：Son las tres y cuarto。y media 是 3:30，menos cuarto 是 3:45；三点要用复数 son。"
    },
    {
     "t": "c",
@@ -1589,7 +1615,8 @@
      "Domingos descanso en.",
      "A domingo descanso."
     ],
-    "a": 1
+    "a": 1,
+    "e": "具体某一天用 el + 星期：El domingo descanso。不加 en、a。"
    },
    {
     "t": "c",
@@ -1600,7 +1627,8 @@
      "lee",
      "leemos"
     ],
-    "a": 0
+    "a": 0,
+    "e": "tú → -es：lees。leo 是 yo，lee 是第三人称，leemos 是“我们”。"
    },
    {
     "t": "c",
@@ -1611,7 +1639,8 @@
      "a veces",
      "ahora"
     ],
-    "a": 2
+    "a": 2,
+    "e": "a veces = 有时。siempre 总是，nunca 从不，ahora 现在。"
    },
    {
     "t": "f",
