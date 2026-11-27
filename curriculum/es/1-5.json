@@ -1638,5 +1638,612 @@
     "zh": "地铁在哪？"
    }
   ]
- }
+ },
+ "bank": [
+  {
+   "l": 1,
+   "t": "c",
+   "q": "Mi madre y mi hermana ___ aquí. Mi padre está allí.",
+   "o": [
+    "está",
+    "están",
+    "son"
+   ],
+   "e": "两个人在这里，用复数 están。son 表身份，está 只配单数。",
+   "a": 1
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "Tú ___ delante de la puerta y yo estoy en la habitación.",
+   "o": [
+    "eres",
+    "estás",
+    "estáis"
+   ],
+   "e": "tú 的位置用 estás。eres 表身份，estáis 配复数主语。",
+   "a": 1
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "El semáforo está entre el hotel ___ la casa.",
+   "o": [
+    "o",
+    "y",
+    "de"
+   ],
+   "e": "entre A y B 表示在两处之间。o 表选择，de 不连接两个参照点。",
+   "a": 1
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "La cocina está enfrente ___ dormitorio.",
+   "o": [
+    "del",
+    "de los",
+    "de la"
+   ],
+   "e": "enfrente de 加阳性单数 el，缩合成 del。另两项性或数不符。",
+   "a": 0
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "¿Está cerca tu casa? —Sí, está ___ tres minutos de aquí.",
+   "o": [
+    "en",
+    "a",
+    "de"
+   ],
+   "e": "a tres minutos 表示相距三分钟。en 表所需时间，de 引出起点。",
+   "a": 1
+  },
+  {
+   "l": 1,
+   "t": "f",
+   "q": "¿Dónde están tus padres? —Mi madre ___ (estar) aquí, pero mi padre está en casa.",
+   "a": [
+    "está"
+   ],
+   "e": "问的是父母两人的位置，但空格的主语只有 mi madre，所以用第三人称单数 está。"
+  },
+  {
+   "l": 1,
+   "t": "f",
+   "q": "¿___ (estar, vosotros) delante del hotel? —Sí, estamos aquí.",
+   "a": [
+    "Estáis"
+   ],
+   "e": "问对方几个人的位置，vosotros 配 estáis。回答者把自己算在里面，所以答 estamos。"
+  },
+  {
+   "l": 1,
+   "t": "f",
+   "q": "Tú y yo ___ (estar) al lado del semáforo.",
+   "a": [
+    "estamos"
+   ],
+   "e": "tú y yo 合起来是 nosotros，地点要用 estamos。别只看到 tú 就填 estás。"
+  },
+  {
+   "l": 1,
+   "t": "tr",
+   "zh": "我们的车在这儿，你的车在那儿。",
+   "a": [
+    "Nuestro coche está aquí y tu coche está allí.",
+    "Aquí está nuestro coche y allí está tu coche."
+   ],
+   "e": "两辆车各有一个单数主语，各用 está。aquí 指这儿，allí 指那儿，两者对调会改变意思。"
+  },
+  {
+   "l": 1,
+   "t": "tr",
+   "zh": "你在我们家附近吗？",
+   "a": [
+    "¿Estás cerca de nuestra casa?",
+    "¿Tú estás cerca de nuestra casa?"
+   ],
+   "e": "问 tú 的位置用 estás，主语可省略。cerca 后面接参照地点时要有 de。"
+  },
+  {
+   "l": 1,
+   "t": "o",
+   "zh": "钥匙在门后面。",
+   "a": "Las llaves están detrás de la puerta.",
+   "e": "Las llaves 是复数，位置动词用 están。detrás de 是在后面，delante de 则是在前面。"
+  },
+  {
+   "l": 1,
+   "t": "o",
+   "zh": "我家在那家店的左边。",
+   "a": "Mi casa está a la izquierda de esa tienda.",
+   "e": "Mi casa 的位置用 está。a la izquierda de 表示在参照物左边，别把表示参照物的 de 漏掉。"
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "¿Vas al museo? —No. Estoy ___ museo y luego voy a casa.",
+   "o": [
+    "en la",
+    "en el",
+    "al"
+   ],
+   "e": "已经在博物馆里，用 en el。al 表去，museo 不用 la。",
+   "a": 1
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "No voy a casa. Primero voy ___ hospital y luego a la farmacia.",
+   "o": [
+    "a el",
+    "al",
+    "a la"
+   ],
+   "e": "去医院用 a，hospital 是阳性，a 加 el 必须缩合为 al。",
+   "a": 1
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "Señora, ___ usted, ¿esta es la calle Mayor?",
+   "o": [
+    "perdone",
+    "perdonas",
+    "perdono"
+   ],
+   "e": "对 usted 礼貌开口用 perdone。另两项分别配 tú 和 yo。",
+   "a": 0
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "Quiero ver una película. Voy al ___.",
+   "o": [
+    "cine",
+    "hospital",
+    "banco"
+   ],
+   "e": "去看电影用 cine。hospital 是医院，banco 是银行。",
+   "a": 0
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "¿Hay una farmacia en esta calle? —Sí, al lado del banco. —Muchas ___, muy amable.",
+   "o": [
+    "gracias",
+    "noches",
+    "tardes"
+   ],
+   "e": "问路后用 muchas gracias 道谢，两项时段词不合语境。",
+   "a": 0
+  },
+  {
+   "l": 2,
+   "t": "f",
+   "q": "¿___ (estar, tú) en la plaza o en el parque?",
+   "a": [
+    "Estás"
+   ],
+   "e": "问对方现在在哪儿，用 tú 的 estás。后面两个地点都用 en，别把它当作去往的方向。"
+  },
+  {
+   "l": 2,
+   "t": "f",
+   "q": "Después de comer, ___ (ir, nosotros) a la plaza y tomamos un café allí.",
+   "a": [
+    "vamos"
+   ],
+   "e": "nosotros 对应 vamos，a la plaza 是去的地方。voy 的主语是 yo，不能配 nosotros。"
+  },
+  {
+   "l": 2,
+   "t": "f",
+   "q": "El banco y la farmacia ___ (estar) en esta calle. El hospital está en otra calle.",
+   "a": [
+    "están"
+   ],
+   "e": "银行和药店是两个地点，合起来用 están。后一句只有医院，所以用单数 está。"
+  },
+  {
+   "l": 2,
+   "t": "tr",
+   "zh": "我们先去药店，再去公园。",
+   "a": [
+    "Primero vamos a la farmacia y luego al parque.",
+    "Vamos primero a la farmacia y después al parque."
+   ],
+   "e": "两个目的地都由 a 引出。farmacia 前保留 a la，parque 前把 a el 缩合成 al。"
+  },
+  {
+   "l": 2,
+   "t": "tr",
+   "zh": "我在电影院，你在博物馆吗？",
+   "a": [
+    "Estoy en el cine. ¿Estás en el museo?",
+    "Yo estoy en el cine. ¿Tú estás en el museo?"
+   ],
+   "e": "yo 配 estoy，tú 配 estás。两句都在说位置，地点前用 en，写成 al 就成了表示方向的搭配。"
+  },
+  {
+   "l": 2,
+   "t": "o",
+   "zh": "银行就在这条街上，在那家店对面。",
+   "a": "El banco está en esta calle, enfrente de la tienda.",
+   "e": "en esta calle 说明银行所在的街道，enfrente de la tienda 再说具体位置。别把 en 换成表示去向的 a。"
+  },
+  {
+   "l": 2,
+   "t": "o",
+   "zh": "打扰一下，这条街上或广场上有公园吗？",
+   "a": "Perdone, ¿hay un parque en esta calle o en la plaza?",
+   "e": "用 Perdone 礼貌开头，hay un parque 询问有没有公园。o 表两个地点选其一，换成 y 就问两处都有。"
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "¿A qué hora ___ vosotros a la estación en taxi?",
+   "o": [
+    "vais",
+    "vamos",
+    "van"
+   ],
+   "e": "vosotros 配 vais。vamos 是我们去，van 是他们或各位去。",
+   "a": 0
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "Mi hermana y yo ___ a casa a pie, pero mis padres van en coche.",
+   "o": [
+    "vais",
+    "van",
+    "vamos"
+   ],
+   "e": "我和姐姐用 vamos。van 和 vais 都不把说话者算进去。",
+   "a": 2
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "Cogemos un taxi para ir a la estación. Vamos ___ a la estación.",
+   "o": [
+    "a pie",
+    "en taxi",
+    "en tren"
+   ],
+   "e": "前句说乘出租车，用 en taxi。另两项是坐火车和步行。",
+   "a": 1
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "Vamos de casa al parque a pie. Del parque al cine cogemos el autobús. ¿Cómo vamos al parque? —Vamos ___.",
+   "o": [
+    "en coche",
+    "en autobús",
+    "a pie"
+   ],
+   "e": "去公园是 a pie。公交是下一段去影院时坐的，没提坐汽车。",
+   "a": 2
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "¿Cómo va tu padre al trabajo? —Él ___ el metro.",
+   "o": [
+    "coges",
+    "cogemos",
+    "coge"
+   ],
+   "e": "乘地铁可说 coger el metro。él 配 coge，另两项人称不符。",
+   "a": 2
+  },
+  {
+   "l": 3,
+   "t": "f",
+   "q": "Mis padres van al banco. Mi hermana ___ (ir) con ellos.",
+   "a": [
+    "va"
+   ],
+   "e": "这一句的主语是 mi hermana，第三人称单数用 va。con ellos 表示跟他们一起，不能因此填 van。"
+  },
+  {
+   "l": 3,
+   "t": "f",
+   "q": "Yo voy en autobús. ¿Y tú? ¿También ___ (ir) en autobús?",
+   "a": [
+    "vas"
+   ],
+   "e": "前一句主语是 yo，用 voy。后面转而问 tú，ir 要变成 vas。en autobús 仍表示乘公交。"
+  },
+  {
+   "l": 3,
+   "t": "f",
+   "q": "El sábado mi hermano va en tren y yo ___ (ir) en coche.",
+   "a": [
+    "voy"
+   ],
+   "e": "ir 的 yo 形式是 voy；va 配前半句的 mi hermano，不能沿用到 yo。"
+  },
+  {
+   "l": 3,
+   "t": "tr",
+   "zh": "我先坐公交车去车站，再坐火车去马德里。",
+   "a": [
+    "Voy en autobús a la estación y luego voy en tren a Madrid.",
+    "Primero voy a la estación en autobús y después voy a Madrid en tren."
+   ],
+   "e": "voy 配第一人称。坐公交和火车都用 en，两个目的地都用 a，别把交通和目的地的介词对调。"
+  },
+  {
+   "l": 3,
+   "t": "tr",
+   "zh": "你步行去公园还是骑自行车去？",
+   "a": [
+    "¿Vas al parque a pie o en bicicleta?",
+    "¿Vas a pie o en bicicleta al parque?"
+   ],
+   "e": "问 tú 用 vas。步行是固定搭配 a pie，骑车用 en bicicleta；o 表示在两种方式里选择。"
+  },
+  {
+   "l": 3,
+   "t": "o",
+   "zh": "我想买两张十点那班火车的票。",
+   "a": "Quiero comprar dos billetes para el tren de las diez.",
+   "e": "dos 后面用复数 billetes，de las diez 修饰 tren，指十点那班车。a las diez 则会被听成买票的时间。"
+  },
+  {
+   "l": 3,
+   "t": "o",
+   "zh": "医院很远，我们坐出租车去那里。",
+   "a": "El hospital está lejos y vamos allí en taxi.",
+   "e": "距离用 está lejos，说我们去用 vamos。en taxi 交代乘车方式，别把 en 换成表示去向的 a。"
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "___ usted la plaza. La farmacia está enfrente.",
+   "o": [
+    "Cruzo",
+    "Cruce",
+    "Cruzas"
+   ],
+   "e": "请 usted 过广场用 cruce。另两项配 tú 和 yo。",
+   "a": 1
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "La estación está a la derecha. Primero cruce la plaza y después ___ usted a la derecha.",
+   "o": [
+    "giras",
+    "gire",
+    "giro"
+   ],
+   "e": "对 usted 指路用 gire。giras、giro 人称不符。",
+   "a": 1
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "Nosotros no ___ la dirección en el mapa. ¿Está aquí?",
+   "o": [
+    "encuentran",
+    "encontramos",
+    "encuentro"
+   ],
+   "e": "我们用 encontramos，保留 o。另两项人称错。",
+   "a": 1
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "Mis padres buscan la estación en el mapa y la ___ al lado del parque.",
+   "o": [
+    "encuentran",
+    "encontráis",
+    "encontran"
+   ],
+   "e": "父母用 encuentran，o 变 ue。另两项错在人称或词干。",
+   "a": 0
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "Para ir al centro, ___ usted por esta calle hasta el semáforo.",
+   "o": [
+    "sigues",
+    "siga",
+    "sigo"
+   ],
+   "e": "给 usted 指路用 siga。sigues 配 tú，sigo 是我沿路走。",
+   "a": 1
+  },
+  {
+   "l": 4,
+   "t": "f",
+   "q": "Tú ___ (encontrar) el banco en el mapa, pero yo no.",
+   "a": [
+    "encuentras"
+   ],
+   "e": "tú 的词干要从 o 变成 ue，词尾是 -as。encuentro 配 yo，不能填进 tú 后面。"
+  },
+  {
+   "l": 4,
+   "t": "f",
+   "q": "¿Qué ___ (buscar, vosotros) en ese mapa? —La dirección del museo.",
+   "a": [
+    "buscáis"
+   ],
+   "e": "buscar 表示正在找什么，vosotros 的规则词尾是 -áis。buscan 是第三人称复数。"
+  },
+  {
+   "l": 4,
+   "t": "f",
+   "q": "Mis padres no encuentran el cine en el mapa. Yo sí ___ encuentro.",
+   "a": [
+    "lo"
+   ],
+   "e": "lo 指前面的 el cine，阳性单数，放在 encuentro 前面。la 要指阴性名词。"
+  },
+  {
+   "l": 4,
+   "t": "tr",
+   "zh": "请先穿过广场，然后走左边第二条街。（用 usted）",
+   "a": [
+    "Primero cruce la plaza y luego tome la segunda calle a la izquierda.",
+    "Cruce la plaza primero y después tome la segunda calle a la izquierda."
+   ],
+   "e": "对 usted 说 cruce、tome；cruza、toma 是对 tú 的命令。segunda 指第二条，izquierda 指左边。"
+  },
+  {
+   "l": 4,
+   "t": "tr",
+   "zh": "我们在地图上找不到这条街。",
+   "a": [
+    "No encontramos esta calle en el mapa.",
+    "En el mapa no encontramos esta calle."
+   ],
+   "e": "找不到说 no encontramos，nosotros 的词干保留 o。no buscamos 只表示我们没有找。"
+  },
+  {
+   "l": 4,
+   "t": "o",
+   "zh": "左转，然后一直走到银行。（用 tú）",
+   "a": "Gira a la izquierda y sigue hasta el banco.",
+   "e": "对 tú 用 gira 和 sigue，gire 和 siga 是对 usted。hasta el banco 指走到银行为止。"
+  },
+  {
+   "l": 4,
+   "t": "o",
+   "zh": "我在找医院。怎么走过去？",
+   "a": "Busco el hospital. ¿Cómo llego allí a pie?",
+   "e": "用 busco 说正在找，llego 问自己如何到达。allí 指医院，a pie 指步行，别写成 en pie。"
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "Tú ___ estudiante y tu hermana es profesora.",
+   "o": [
+    "eres",
+    "estás",
+    "es"
+   ],
+   "e": "学生是身份，tú 用 eres。estás 表状态，es 配他或她。",
+   "a": 0
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "Mis padres ___ de España, pero ahora están en China.",
+   "o": [
+    "son",
+    "somos",
+    "están"
+   ],
+   "e": "说来自哪里用 ser de。están 用于后面的所在地，somos 配我们。",
+   "a": 0
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "Hoy yo ___ enferma y no voy al trabajo.",
+   "o": [
+    "está",
+    "estoy",
+    "soy"
+   ],
+   "e": "生病用 estoy。soy 表身份，está 配第三人称。",
+   "a": 1
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "¿Están abiertos el banco y el museo? —No, ahora los dos están ___.",
+   "o": [
+    "cerrados",
+    "cerrado",
+    "cerradas"
+   ],
+   "e": "两处都关着，用 estar。两者都是阳性，形容词要用阳性复数。",
+   "a": 0
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "¿Tienes que estudiar esta tarde? —No, ___ libre esta tarde.",
+   "o": [
+    "soy",
+    "estoy",
+    "estamos"
+   ],
+   "e": "有空用 estoy libre。soy libre 指自由，另项数不搭。",
+   "a": 1
+  },
+  {
+   "l": 5,
+   "t": "f",
+   "q": "Mi madre y mi tía ___ (ser o estar) médicas. Las dos trabajan en el hospital.",
+   "a": [
+    "son"
+   ],
+   "e": "médicas 说的是两人的职业，第三人称复数用 son。要说她们人在医院才用 están。"
+  },
+  {
+   "l": 5,
+   "t": "f",
+   "q": "¿Por qué no vas al cine? —No voy porque ___ (ser o estar) ocupado.",
+   "a": [
+    "estoy"
+   ],
+   "e": "说自己此刻忙，用 estar 的 yo 形式 estoy。soy 用于介绍身份或描述特征。"
+  },
+  {
+   "l": 5,
+   "t": "f",
+   "q": "¿___ (ser o estar, tú) contenta con tu coche nuevo? —Sí, mucho.",
+   "a": [
+    "Estás"
+   ],
+   "e": "contenta 说的是对新车感到满意，用 estar。问 tú 要用 estás，别套用问身份的 eres。"
+  },
+  {
+   "l": 5,
+   "t": "tr",
+   "zh": "这家店很小，不过星期日也营业。",
+   "a": [
+    "Esta tienda es muy pequeña, pero también está abierta los domingos.",
+    "Esta tienda es muy pequeña, pero los domingos también está abierta."
+   ],
+   "e": "店小是特征，用 es。开着是营业状态，用 está。tienda 是阴性，所以写 pequeña 和 abierta。"
+  },
+  {
+   "l": 5,
+   "t": "tr",
+   "zh": "今天我很难过，因为我姐姐病了。",
+   "a": [
+    "Hoy estoy muy triste porque mi hermana está enferma.",
+    "Estoy muy triste hoy porque mi hermana está enferma."
+   ],
+   "e": "心情和身体状况都用 estar。yo 配 estoy，mi hermana 配 está；enferma 要用阴性，triste 不分阴阳性。"
+  },
+  {
+   "l": 5,
+   "t": "o",
+   "zh": "你爸爸是西班牙语老师。",
+   "a": "Tu padre es profesor de español.",
+   "e": "这里在说职业，用 es，直接接 profesor。用 está 会把职业误当成状态。"
+  },
+  {
+   "l": 5,
+   "t": "o",
+   "zh": "我姐姐正忙，我哥哥有空。",
+   "a": "Mi hermana está ocupada y mi hermano está libre.",
+   "e": "忙和有空都是当前状态，两处都用 está。ocupada 和 hermana 一致，libre 不随阴阳性变化。"
+  }
+ ]
 }

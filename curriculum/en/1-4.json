@@ -1920,5 +1920,653 @@
     "zh": "来几个人？"
    }
   ]
- }
+ },
+ "bank": [
+  {
+   "l": 1,
+   "t": "c",
+   "q": "Please put both ___ under the table.",
+   "o": [
+    "box",
+    "boxies",
+    "boxes",
+    "boxs"
+   ],
+   "e": "both 指两个，box 以 x 结尾，复数加 es，不能只加 s。",
+   "a": 2
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "Two ___ work here at night.",
+   "o": [
+    "man",
+    "mens",
+    "mans",
+    "men"
+   ],
+   "e": "two 后要用复数。man 变 men，不能在两种词形后加 s。",
+   "a": 3
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "We have one long day and two short ___ this week.",
+   "o": [
+    "dayes",
+    "daies",
+    "day",
+    "days"
+   ],
+   "e": "day 的 y 前是元音字母 a，复数保留 y，只加 s。",
+   "a": 3
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "We need both buses today. One ___ is for the students.",
+   "o": [
+    "the buses",
+    "of the bus",
+    "of buses",
+    "of the buses"
+   ],
+   "e": "从已提到的两辆车里选一辆，用 of the buses，bus 是单数。",
+   "a": 3
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "One of my friends ___ the night bus every day.",
+   "o": [
+    "take",
+    "taking",
+    "takes",
+    "to take"
+   ],
+   "e": "主语中心是 one，习惯动作用 takes。friends 不决定谓语形式。",
+   "a": 2
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "This little tree has only three ___.",
+   "o": [
+    "leaves",
+    "leafs",
+    "leafes",
+    "leaf"
+   ],
+   "e": "three 后用复数。把 leaf 末尾的 f 改成 ves，不能直接加 s。",
+   "a": 0
+  },
+  {
+   "l": 1,
+   "t": "f",
+   "q": "This program is for two ___ (family).",
+   "a": [
+    "families"
+   ],
+   "e": "two 后要用复数。family 的 y 前是辅音字母 l，要把 y 改成 i 再加 es，不能直接加 s。"
+  },
+  {
+   "l": 1,
+   "t": "f",
+   "q": "I can see three ___ (mouse) in the photo.",
+   "a": [
+    "mice"
+   ],
+   "e": "three 后要用复数。mouse 的复数是 mice，不能按一般规则写成 mouses。"
+  },
+  {
+   "l": 1,
+   "t": "tr",
+   "zh": "这两栋房子里，有一栋离学校很远。",
+   "a": [
+    "One of these two houses is far from the school.",
+    "One of the two houses is far from the school."
+   ],
+   "e": "用 one of 从两栋房子中选一栋。two 后写 houses，谓语跟着 one，写 is。far from 表示离某处远。"
+  },
+  {
+   "l": 1,
+   "t": "tr",
+   "zh": "两辆公交车都晚点了。",
+   "a": [
+    "Both buses are late.",
+    "The two buses are both late."
+   ],
+   "e": "bus 以 s 结尾，复数加 es。both 可以放在 buses 前，也可以放在 are 后，谓语仍用 are。"
+  },
+  {
+   "l": 1,
+   "t": "o",
+   "a": "I want to read one of your books.",
+   "zh": "我想读你的一本书。",
+   "e": "先排出 want to read，再把 one of your books 放在 read 后作宾语。of 后是作为一组的书，所以 books 要用复数。"
+  },
+  {
+   "l": 1,
+   "t": "dict",
+   "a": "We provide services for lots of people.",
+   "e": "services 指提供的多种服务，要写复数。lots of 表示许多，people 已是复数，别再加 s。"
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "We need ___ for the new house.",
+   "o": [
+    "furniture",
+    "furnitures",
+    "two furniture",
+    "a furniture"
+   ],
+   "e": "furniture 是不可数名词，不能加 s，也不能直接用 a 或数字。",
+   "a": 0
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "We need two ___ of information: the time and the place.",
+   "o": [
+    "pieces'",
+    "piece's",
+    "piece",
+    "pieces"
+   ],
+   "e": "information 不可数，two 数的是 pieces，复数不用撇号。",
+   "a": 3
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "We can play a game after we do ___.",
+   "o": [
+    "a homework",
+    "two homework",
+    "our homeworks",
+    "our homework"
+   ],
+   "e": "homework 不可数，可以加 our，不能加 s、a 或直接加数字。",
+   "a": 3
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "How ___ games can we play before lunch?",
+   "o": [
+    "some",
+    "much",
+    "any",
+    "many"
+   ],
+   "e": "games 是可数复数，问数量用 How many。much 问不可数量。",
+   "a": 3
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "There isn't ___ water in this glass.",
+   "o": [
+    "few",
+    "several",
+    "many",
+    "much"
+   ],
+   "e": "否定句可用 much 修饰不可数的 water，其余选项修饰可数复数。",
+   "a": 3
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "I have ___ news for you.",
+   "o": [
+    "any",
+    "a",
+    "some",
+    "many"
+   ],
+   "e": "肯定句用 some 表示有些，any 常用于否定句。news 不可数。",
+   "a": 2
+  },
+  {
+   "l": 2,
+   "t": "f",
+   "q": "Please bring me two ___ (glass) of water.",
+   "a": [
+    "glasses"
+   ],
+   "e": "water 不可数，这里数的是杯子。glass 以 s 结尾，复数加 es，别把复数加在 water 上。"
+  },
+  {
+   "l": 2,
+   "t": "f",
+   "q": "There aren't ___ books in this box at all. (Use 'some' or 'any'.)",
+   "a": [
+    "any"
+   ],
+   "e": "aren't 和 at all 表示一本书也没有，用 any。some 通常用在肯定句里表示有一些。"
+  },
+  {
+   "l": 2,
+   "t": "tr",
+   "zh": "我父亲能给你两条建议。",
+   "a": [
+    "My father can give you two pieces of advice.",
+    "My father can give two pieces of advice to you."
+   ],
+   "e": "advice 不可数，给建议计数时用 two pieces of advice。you 可以紧跟 give，或放在句末用 to 引出。"
+  },
+  {
+   "l": 2,
+   "t": "tr",
+   "zh": "你每天工作多少小时？",
+   "a": [
+    "How many hours do you work every day?",
+    "How many hours a day do you work?"
+   ],
+   "e": "这里问的是几个小时。hour 可数，要用 How many hours，不能用 How much hours。"
+  },
+  {
+   "l": 2,
+   "t": "o",
+   "a": "How much money do you need for the bus?",
+   "zh": "你坐公交车需要多少钱？",
+   "e": "money 不可数，把 How much money 整体放在句首，再接 do you need。别把 money 拆到 need 后面。"
+  },
+  {
+   "l": 2,
+   "t": "dict",
+   "a": "I often listen to music at night.",
+   "e": "写出 listen to 里的 to。music 在这里指音乐，不可数，不能写成 musics。"
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "Can I have ___ before I go to work?",
+   "o": [
+    "an apple and an glass of water",
+    "an apple and a glass of water",
+    "a apple and a glass of water",
+    "a apple and an glass of water"
+   ],
+   "e": "apple 以元音音素开头，用 an。glass 以 /ɡ/ 开头，用 a。",
+   "a": 1
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "You don't need to come back, so buy ___.",
+   "o": [
+    "one-way ticket",
+    "an one-way ticket",
+    "a one-way ticket",
+    "a one-way tickets"
+   ],
+   "e": "one-way 以 /w/ 开头，用 a。单数 ticket 需要限定词。",
+   "a": 2
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "You need ___ for this job.",
+   "o": [
+    "an MBAs",
+    "a MBA",
+    "a MBAs",
+    "an MBA"
+   ],
+   "e": "MBA 的 M 读 /em/，开头是元音。an 后用单数 MBA。",
+   "a": 3
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "The city is far from here, but we can get there ___ in an hour.",
+   "o": [
+    "by the car",
+    "by an car",
+    "by a car",
+    "by car"
+   ],
+   "e": "表示交通方式时用 by car，car 前不加冠词。",
+   "a": 3
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "Can you ___? We have time for one game.",
+   "o": [
+    "play a chess",
+    "play an chess",
+    "play chess",
+    "play the chess"
+   ],
+   "e": "chess 在这里指棋类活动。play chess 中不加冠词。",
+   "a": 2
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "I can't sleep well ___.",
+   "o": [
+    "at the night",
+    "at a night",
+    "at an night",
+    "at night"
+   ],
+   "e": "at night 是固定搭配，表示在夜里，night 前不加冠词。",
+   "a": 3
+  },
+  {
+   "l": 3,
+   "t": "f",
+   "q": "I need ___ uniform for my new job. (Use 'a' or 'an'.)",
+   "a": [
+    "a"
+   ],
+   "e": "uniform 的首字母是 u，开头读的却是辅音 /j/，因此用 a。按首字母写 an 会出错。"
+  },
+  {
+   "l": 3,
+   "t": "f",
+   "q": "Do you often have ___ at home or at school? (Use 'lunch', 'a lunch' or 'the lunch'.)",
+   "a": [
+    "lunch"
+   ],
+   "e": "这里问平时在哪里吃午饭，直接说 have lunch。说某一顿特定的午饭时才需要用 the lunch。"
+  },
+  {
+   "l": 3,
+   "t": "tr",
+   "zh": "午饭后我们有一个小时。",
+   "a": [
+    "We have an hour after lunch.",
+    "We have one hour after lunch.",
+    "After lunch, we have an hour."
+   ],
+   "e": "hour 的 h 不发音，因此说 an hour。也可用 one 表示数量。after lunch 说的是用餐时间，lunch 前不加冠词。"
+  },
+  {
+   "l": 3,
+   "t": "tr",
+   "zh": "我父亲在家学英语。",
+   "a": [
+    "My father studies English at home.",
+    "At home, my father studies English."
+   ],
+   "e": "English 是语言名，前面不加 the。at home 表示在家，home 前也不加冠词。"
+  },
+  {
+   "l": 3,
+   "t": "o",
+   "a": "We can meet after dinner.",
+   "zh": "我们可以晚饭后见面。",
+   "e": "can 后接动词原形 meet，时间放在后面。after dinner 指吃完晚饭以后，dinner 前不用加冠词。"
+  },
+  {
+   "l": 3,
+   "t": "dict",
+   "a": "I meet a friend for lunch every week.",
+   "e": "friend 的开头是辅音 /f/，前面有 a。for lunch 里的 lunch 是餐名，直接写。"
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "My father is at the station now. We can meet ___ there.",
+   "o": [
+    "he",
+    "him",
+    "his",
+    "he's"
+   ],
+   "e": "见面对象作 meet 的宾语，用 him。he 是主格，his 表所属。",
+   "a": 1
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "Can our teacher come with you and ___?",
+   "o": [
+    "my",
+    "I",
+    "I'm",
+    "me"
+   ],
+   "e": "you 和 me 都跟在介词 with 后。这里用宾格 me，不能用主格 I。",
+   "a": 3
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "___ want to learn more about this city.",
+   "o": [
+    "We",
+    "Us",
+    "We're",
+    "Our"
+   ],
+   "e": "want 前缺主语，用 We。Us 是宾格，We're 会多出一个 are。",
+   "a": 0
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "I know where my books are. Do you know where ___ are?",
+   "o": [
+    "you're",
+    "yourself",
+    "your",
+    "yours"
+   ],
+   "e": "yours 指你的书。your 要接名词，you're 已含 are。",
+   "a": 3
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "This company provides a good service, but I don't know ___ name.",
+   "o": [
+    "it's",
+    "itself",
+    "its",
+    "it"
+   ],
+   "e": "its name 指这家公司的名字。it's 含有动词，不能用来修饰名词。",
+   "a": 2
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "We can meet in ___ room. It is big.",
+   "o": [
+    "we",
+    "us",
+    "our",
+    "ours"
+   ],
+   "e": "room 前需要 our 表所属。ours 单独用，we 和 us 不表所属。",
+   "a": 2
+  },
+  {
+   "l": 4,
+   "t": "f",
+   "q": "We need help. Can you show ___ (we) the way?",
+   "a": [
+    "us"
+   ],
+   "e": "show 后面先接接受帮助的人，再接 the way。这里的人是动作的对象，所以 we 要变成 us。"
+  },
+  {
+   "l": 4,
+   "t": "f",
+   "q": "The big room is our room. The small room is ___ (they).",
+   "a": [
+    "theirs"
+   ],
+   "e": "空后没有名词，用 theirs 代替 their room。their 后要接名词，them 只作宾格。"
+  },
+  {
+   "l": 4,
+   "t": "tr",
+   "zh": "她可以和我一起去学校。",
+   "a": [
+    "She can go to school with me.",
+    "She can go with me to school."
+   ],
+   "e": "句首的她是主语，用 She。跟在介词 with 后的我要用宾格 me，不能写 with I。"
+  },
+  {
+   "l": 4,
+   "t": "tr",
+   "zh": "我的一个朋友在这家公司工作。",
+   "a": [
+    "A friend of mine works at this company.",
+    "One of my friends works for this company."
+   ],
+   "e": "a friend of 后用 mine，不能用 my。也可说 one of my friends，这时 my 后接复数名词。"
+  },
+  {
+   "l": 4,
+   "t": "o",
+   "a": "Do you know their names?",
+   "zh": "你知道他们的名字吗？",
+   "e": "一般疑问句先用 Do you know，再接宾语 their names。their 修饰 names，不能把两词倒过来。"
+  },
+  {
+   "l": 4,
+   "t": "dict",
+   "a": "I can do the work by myself.",
+   "e": "by myself 表示独自完成，和主语 I 对应。不要写成 by me，也别把 myself 拆开。"
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "I have two maps here. Can we use ___ maps to find the city?",
+   "o": [
+    "this",
+    "those",
+    "that",
+    "these"
+   ],
+   "e": "here 指身边，maps 是复数，选 these。those 指较远处。",
+   "a": 3
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "Can you see ___ car over there?",
+   "o": [
+    "those",
+    "that",
+    "this",
+    "these"
+   ],
+   "e": "over there 指远处，car 是单数，用 that。this 指近处。",
+   "a": 1
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "We have one dog. ___ name is Max.",
+   "o": [
+    "Our dogs'",
+    "Our dog's",
+    "Our dogs's",
+    "Our dog"
+   ],
+   "e": "只有一只狗，dog 后加 's。dogs' 是复数所有格。",
+   "a": 1
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "All four ___ books are on this table.",
+   "o": [
+    "students",
+    "student's",
+    "students'",
+    "students's"
+   ],
+   "e": "four 对应复数 students。词尾已有 s，表示所属时只加撇号。",
+   "a": 2
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "Two women are here for their bags. Please put both ___ bags in the car.",
+   "o": [
+    "women's",
+    "women'",
+    "woman's",
+    "womens'"
+   ],
+   "e": "两位女士用 women。词尾没有 s，所有格加 's。",
+   "a": 0
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "I need the books over there. Can you bring ___ to me?",
+   "o": [
+    "these",
+    "that",
+    "this",
+    "those"
+   ],
+   "e": "远处的几本书用 those 指代。these 指近处，that 是单数。",
+   "a": 3
+  },
+  {
+   "l": 5,
+   "t": "f",
+   "q": "Look at ___ photo in my hand. (Use 'this', 'that', 'these' or 'those'.)",
+   "a": [
+    "this"
+   ],
+   "e": "照片在说话人手里，而且只有一张，用近处单数 this。these 指多张，that 指较远处。"
+  },
+  {
+   "l": 5,
+   "t": "f",
+   "q": "The front ___ the car is black, but the back is white.",
+   "a": [
+    "of"
+   ],
+   "e": "the front of the car 表示汽车的前部。把部位放在 of 前，整体放在 of 后。from 表示来源，放在这里不能表达所属。"
+  },
+  {
+   "l": 5,
+   "t": "tr",
+   "zh": "你想用这支笔吗？",
+   "a": [
+    "Do you want to use this pen?",
+    "Would you like to use this pen?"
+   ],
+   "e": "用 this 指近处的一支笔。those 指远处的多个物品，these 也得和复数名词搭配。"
+  },
+  {
+   "l": 5,
+   "t": "tr",
+   "zh": "那些书是孩子们的。",
+   "a": [
+    "Those books are the children's.",
+    "Those are the children's books."
+   ],
+   "e": "those 指远处的多本书。children 已是复数，词尾没有 s，所有格要加 's，不能写成 childrens'。"
+  },
+  {
+   "l": 5,
+   "t": "o",
+   "a": "I like the end of this story.",
+   "zh": "我喜欢这个故事的结尾。",
+   "e": "先排 I like，再接喜欢的事物 the end of this story。the end 在 of 前，this story 在 of 后，顺序不能颠倒。"
+  },
+  {
+   "l": 5,
+   "t": "dict",
+   "a": "Both teams' names are on the board.",
+   "e": "both 指两支队，teams 是复数。撇号放在 s 后面，teams' names 表示两支队各自的名字。"
+  }
+ ]
 }
