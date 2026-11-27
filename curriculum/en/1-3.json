@@ -612,7 +612,8 @@
         "I study at home every day.",
         "Every day I at home study."
        ],
-       "a": 1
+       "a": 1,
+       "e": "英语的基本语序是 主语 + 动词 + 宾语 + 地点 + 时间：I study at home every day。地点和时间不能插在主语和动词之间。"
       },
       {
        "t": "tr",
@@ -905,7 +906,8 @@
         "Your idea sounds good.",
         "Your idea sounds goodly."
        ],
-       "a": 1
+       "a": 1,
+       "e": "sound（听起来）是系动词，后面接形容词 good，不接副词 well。goodly 不是这个意思。"
       },
       {
        "t": "tr",
@@ -1140,7 +1142,8 @@
       "主 + 谓 + 人 + 物",
       "主 + 谓 + 宾 + 补"
      ],
-     "a": 2
+     "a": 2,
+     "e": "call him Max：him 是宾语，Max 补充说明 him 是什么，所以是 主 + 谓 + 宾 + 补。"
     },
     {
      "t": "f",
@@ -1328,7 +1331,8 @@
         "I am agree with you.",
         "I agreeing."
        ],
-       "a": 1
+       "a": 1,
+       "e": "agree 本身就是动词，不能再加 am：I agree（with you）。中文“我是同意的”最容易带出这个错。"
       },
       {
        "t": "c",
@@ -1484,7 +1488,8 @@
       "Are",
       "Do"
      ],
-     "a": 1
+     "a": 1,
+     "e": "he 是第三人称单数，be 动词用 is：Is he your brother?"
     },
     {
      "t": "c",
@@ -1495,7 +1500,8 @@
       "am",
       "be"
      ],
-     "a": 1
+     "a": 1,
+     "e": "they 是复数，用 are：They are from Korea."
     },
     {
      "t": "f",
@@ -1643,7 +1649,8 @@
         "I want going home.",
         "I wanting go home."
        ],
-       "a": 1
+       "a": 1,
+       "e": "want 后面接 to + 动词原形：I want to go home。"
       },
       {
        "t": "c",
@@ -1743,7 +1750,8 @@
         "drinking",
         "is drink"
        ],
-       "a": 1
+       "a": 1,
+       "e": "主语 she 是第三人称单数，一般现在时动词加 s：drinks。"
       },
       {
        "t": "c",
@@ -1826,7 +1834,8 @@
         "it's late. I'm tired",
         "It's late I'm tired."
        ],
-       "a": 1
+       "a": 1,
+       "e": "两个完整的句子要用句号隔开（或用 and 连接），只用逗号是英语里常见的错误。句首要大写，句末要有标点。"
       },
       {
        "t": "c",
@@ -1952,7 +1961,8 @@
       "I met him at the station yesterday.",
       "Yesterday at the station him I met."
      ],
-     "a": 1
+     "a": 1,
+     "e": "英语语序：主语 + 动词 + 宾语 + 地点 + 时间：I met him at the station yesterday。"
     },
     {
      "t": "f",
@@ -2061,7 +2071,7 @@
       "He reads a story to his daughter."
      ],
      "a": 0,
-     "e": "",
+     "e": "He reads the news and drinks a cup of coffee：看新闻、喝咖啡。",
      "rdq": true
     },
     {
@@ -2073,7 +2083,7 @@
       "It is not easy, but he likes it."
      ],
      "a": 2,
-     "e": "",
+     "e": "His job is not easy, but he likes it：工作不轻松，但他喜欢。",
      "rdq": true
     },
     {
@@ -2133,7 +2143,8 @@
      "形容词",
      "副词"
     ],
-    "a": 2
+    "a": 2,
+    "e": "famous（有名的）是形容词，常见的形容词词尾有 -ous、-ful、-able。"
    },
    {
     "t": "c",
@@ -2144,7 +2155,8 @@
      "He very busy.",
      "He busys."
     ],
-    "a": 1
+    "a": 1,
+    "e": "形容词不能直接当谓语，前面要有 be 动词：He is busy。中文“他很忙”没有“是”，最容易漏掉 is。"
    },
    {
     "t": "c",
@@ -2155,7 +2167,8 @@
      "nicer than",
      "to nice"
     ],
-    "a": 1
+    "a": 1,
+    "e": "smell（闻起来）是系动词，后面接形容词 nice，不接副词 nicely。"
    },
    {
     "t": "c",
@@ -2166,7 +2179,8 @@
      "am",
      "be"
     ],
-    "a": 1
+    "a": 1,
+    "e": "they 是复数，用 are。"
    },
    {
     "t": "c",
@@ -2177,7 +2191,8 @@
      "going",
      "is go"
     ],
-    "a": 1
+    "a": 1,
+    "e": "Tom 是第三人称单数，一般现在时 go 要变成 goes。"
    },
    {
     "t": "c",
@@ -2188,7 +2203,8 @@
      "with",
      "at"
     ],
-    "a": 1
+    "a": 1,
+    "e": "给某人买东西用 buy something for someone：a gift for his wife。to 用于 give、send 这类“交给”的动词。"
    },
    {
     "t": "c",
@@ -2199,7 +2215,8 @@
      "I agreeing with you.",
      "I am agrees with you."
     ],
-    "a": 1
+    "a": 1,
+    "e": "agree 本身就是动词，不能加 am：I agree with you。"
    },
    {
     "t": "f",
