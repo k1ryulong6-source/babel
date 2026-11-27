@@ -2000,5 +2000,654 @@
     "zh": "非常感谢。"
    }
   ]
- }
+ },
+ "bank": [
+  {
+   "l": 1,
+   "t": "c",
+   "q": "I work after five. 单独比较 work 和 five 的词尾辅音，___。",
+   "o": [
+    "只有 work 的词尾是浊音",
+    "两个词尾都是浊音",
+    "只有 five 的词尾是浊音",
+    "两个词尾都是清音"
+   ],
+   "e": "five 末尾 /v/ 振动声带。work 末尾 /k/ 是清音。",
+   "a": 2
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "用同样的语速单独读 ice 和 eyes 时，eyes 的元音通常 ___。",
+   "o": [
+    "和 ice 的元音一样长",
+    "比 ice 多分出一个音节",
+    "比 ice 的元音长",
+    "比 ice 的元音短"
+   ],
+   "e": "两词都有一个 /aɪ/。eyes 末尾是浊音 /z/，前面的元音通常更长。",
+   "a": 2
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "Call me after work. 如果把 after 的 /f/ 读成了 /v/，要纠正的是 ___。",
+   "o": [
+    "保持声带振动，同时把双唇闭紧",
+    "保持上齿接触下唇，同时停止声带振动",
+    "保持上齿接触下唇，同时加强声带振动",
+    "停止声带振动，同时把舌尖顶住上齿龈"
+   ],
+   "e": "/f/ 和 /v/ 都用上齿接触下唇。读 /f/ 时声带不振动。",
+   "a": 1
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "She calls me after work. She looks at the map. calls 和 looks 的三单后缀依次读 ___。",
+   "o": [
+    "/z/、/z/",
+    "/s/、/s/",
+    "/s/、/z/",
+    "/z/、/s/"
+   ],
+   "e": "call 的 /l/ 是浊音，接 /z/。look 的清音 /k/ 接 /s/。",
+   "a": 3
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "She sees the bus. 把这一句改成 She sees three buses. 后，sees 和 buses 的后缀依次读 ___。",
+   "o": [
+    "/z/、/ɪz/",
+    "/z/、/z/",
+    "/ɪz/、/s/",
+    "/s/、/ɪz/"
+   ],
+   "e": "see 的元音后读 /z/。bus 的 /s/ 后加 /ɪz/，多一个音节。",
+   "a": 0
+  },
+  {
+   "l": 1,
+   "t": "c",
+   "q": "The child ___ to go home.",
+   "o": [
+    "wants",
+    "to want",
+    "wanting",
+    "want"
+   ],
+   "e": "child 是第三人称单数，谓语用 wants。/t/ 后的 s 读 /s/。",
+   "a": 0
+  },
+  {
+   "l": 1,
+   "t": "f",
+   "q": "把 give 的词尾辅音换成发音部位相同的清辅音。请写出换成的音 ___。",
+   "a": [
+    "/f/",
+    "f"
+   ],
+   "e": "give 末尾的 /v/ 用上齿轻触下唇。保持接触和气流，让声带停止振动，就读出了 /f/。如果还在振动，读出来仍是 /v/。"
+  },
+  {
+   "l": 1,
+   "t": "f",
+   "q": "I have a pen. 把 pen 改成复数后，原来的词尾辅音和复数后缀连起来读 ___（写出两个音的音标）。",
+   "a": [
+    "/nz/",
+    "nz"
+   ],
+   "e": "pen 末尾的 /n/ 是浊音，复数后缀接 /z/，合起来读 /nz/。照着字母 s 读成 /ns/ 就把后缀读成清音了。"
+  },
+  {
+   "l": 1,
+   "t": "tr",
+   "zh": "你可以下班后给我打电话。",
+   "a": [
+    "You can call me after work.",
+    "You may call me after work."
+   ],
+   "e": "can 和 may 后都直接接动词原形。call me 已经说明打给谁，中间不用加 to。after work 表示下班后，work 末尾的清音 /k/ 要保留。"
+  },
+  {
+   "l": 1,
+   "t": "tr",
+   "zh": "他也在这里工作。",
+   "a": [
+    "He also works here.",
+    "He works here, too."
+   ],
+   "e": "also 放在 works 前，too 放在句尾，都表示“也”。he 作主语，一般现在时要写 works。词干结尾是清音 /k/，所以 s 读 /s/，漏掉它就听不出三单词尾。"
+  },
+  {
+   "l": 1,
+   "t": "o",
+   "a": "When should I call you?",
+   "zh": "我应该什么时候给你打电话？",
+   "e": "When 放句首，后面按 should、主语 I、动词原形 call 的顺序排。you 是 call 的宾语。把 I 放在 should 前会排成陈述句语序。"
+  },
+  {
+   "l": 1,
+   "t": "dict",
+   "a": "She likes her new bag.",
+   "e": "she 后面的 likes 要写出 s，/k/ 后的这个音读 /s/。bag 末尾是浊辅音 /ɡ/，前面的元音比 back 长，别把词尾写成 ck。"
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "Thank you for that. 句首 Thank 和句末 that 的 th 依次读 ___。",
+   "o": [
+    "/θ/、/ð/",
+    "/θ/、/θ/",
+    "/ð/、/ð/",
+    "/ð/、/θ/"
+   ],
+   "e": "两处舌尖都在齿间。Thank 的声带不振动，that 的声带振动。",
+   "a": 0
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "My mother is at work. 有人把 mother 中间的 th 读成了 /d/。应调整为 ___。",
+   "o": [
+    "舌尖轻放在齿间，气流持续，声带不振动",
+    "舌尖轻放在齿间，气流持续，声带振动",
+    "上齿轻触下唇，气流持续，声带振动",
+    "舌尖顶住上齿龈，先堵住气流再放开"
+   ],
+   "e": "mother 用 /ð/，齿间留缝且声带振动。读 /d/ 时气流会先被堵住。",
+   "a": 1
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "We go through the city. 把 through 的词首误读成 /f/ 时，应把发音动作改为 ___。",
+   "o": [
+    "上齿轻触下唇吹气，声带振动",
+    "舌尖放在齿间吹气，声带不振动",
+    "舌尖放在齿间吹气，声带振动",
+    "上齿轻触下唇吹气，声带不振动"
+   ],
+   "e": "through 开头是清齿间音 /θ/。上齿碰下唇就会读成 /f/ 或 /v/。",
+   "a": 1
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "We have a van. We 和 van 的词首辅音依次是 ___。",
+   "o": [
+    "/w/、/w/",
+    "/v/、/w/",
+    "/v/、/v/",
+    "/w/、/v/"
+   ],
+   "e": "We 的 /w/ 要圆唇，牙齿不碰嘴唇。van 的 /v/ 要上齿碰下唇。",
+   "a": 3
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "The child can play. 与 play 中的 /l/ 发音动作相同的是 ___。",
+   "o": [
+    "long 的词首",
+    "right 的词首",
+    "van 的词首",
+    "think 的词首"
+   ],
+   "e": "两处 /l/ 都要舌尖顶上齿龈。right 的 /r/ 舌尖不接触。",
+   "a": 0
+  },
+  {
+   "l": 2,
+   "t": "c",
+   "q": "We still ___ more time.",
+   "o": [
+    "to need",
+    "needing",
+    "needs",
+    "need"
+   ],
+   "e": "we 后用 need 作谓语。needs 是三单，另外两项不能单独作谓语。",
+   "a": 3
+  },
+  {
+   "l": 2,
+   "t": "f",
+   "q": "___ you for the book.（用本课句型表示感谢，填一个以 /θ/ 开头的词。）",
+   "a": [
+    "Thank"
+   ],
+   "e": "Thank you for 后面接感谢的原因，这里是 the book。Thank 开头让舌尖在齿间轻轻出气。舌尖缩回齿后容易误读成 /s/。"
+  },
+  {
+   "l": 2,
+   "t": "f",
+   "q": "I don't feel ___ today.（填一个以 /w/ 开头、以 /l/ 结尾，表示身体好的词。）",
+   "a": [
+    "well"
+   ],
+   "e": "feel well 表示身体感觉好。well 开头双唇收圆，别用上齿碰下唇发成 /v/。结尾的 /l/ 仍要抬舌尖。"
+  },
+  {
+   "l": 2,
+   "t": "tr",
+   "zh": "你能拿上这些书吗？",
+   "a": [
+    "Can you take these books?",
+    "Could you take these books?"
+   ],
+   "e": "Can you 或 Could you 后接原形 take，都能用来请求别人拿上书。these 修饰复数 books，开头的 th 要在齿间振动声带，别念成 /d/。"
+  },
+  {
+   "l": 2,
+   "t": "tr",
+   "zh": "我们现在需要更多时间。",
+   "a": [
+    "We need more time now.",
+    "Now we need more time."
+   ],
+   "e": "now 放在开头或末尾都可以。need more time 表示需要更多时间，need 后面可以直接接这个名词短语。We 开头要用双唇收圆的 /w/，别咬下唇。"
+  },
+  {
+   "l": 2,
+   "t": "o",
+   "a": "That light is red.",
+   "zh": "那盏灯是红色的。",
+   "e": "That light 是主语，接 is 和表示颜色的 red。朗读时，light 开头舌尖顶住上齿龈，red 开头舌尖不能顶住，否则容易把 red 的词首也读成 /l/。"
+  },
+  {
+   "l": 2,
+   "t": "dict",
+   "a": "We still have three books.",
+   "e": "We 的 /w/ 用双唇收圆，have 的 /v/ 要上齿轻触下唇。three 开头的 /θ/ 要伸舌尖，误听成 /f/ 就会写成 free。three 后的 books 要加复数 s。"
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "I can see a light. 读 light 时，中间的 igh 应 ___。",
+   "o": [
+    "读 /aɪ/，在 /t/ 前补 /h/",
+    "读 /aɪ/，在 /t/ 前补 /ɡ/",
+    "读 /aɪ/，然后直接接 /t/",
+    "读 /aɪ/，在 /t/ 前补 /f/"
+   ],
+   "e": "igh 整体读 /aɪ/，紧跟 /t/。把 gh 念出来会多加辅音。",
+   "a": 2
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "I know the word. I can write it now. know 和 write 的词首依次是 ___。",
+   "o": [
+    "/n/、/r/",
+    "/kn/、/wr/",
+    "/n/、/wr/",
+    "/kn/、/r/"
+   ],
+   "e": "kn 的 k 和 wr 的 w 都不出声，分别直接读 /n/、/r/。",
+   "a": 0
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "I'll be back in an hour. hour 前用 an，是因为 hour ___。",
+   "o": [
+    "第一个音是 /w/",
+    "第一个音是 /h/",
+    "第一个音是元音",
+    "第一个音是 /r/"
+   ],
+   "e": "hour 的 h 不出声，从双元音 /aʊ/ 起读。选 a 或 an 要听词首。",
+   "a": 2
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "Go up to the top. 单独练习 top 的词尾收音时，应该 ___。",
+   "o": [
+    "双唇闭合做出 /p/，接着补一个 /ə/",
+    "双唇闭合做出 /p/，接着补一个 /ɪ/",
+    "嘴唇一直张开，省掉 /p/",
+    "双唇闭合做出 /p/，不再加元音"
+   ],
+   "e": "top 用闭唇的 /p/ 收尾。加元音会多一拍，省掉 /p/ 也不对。",
+   "a": 3
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "I'll take the book to school. 读 school 开头的 /sk/ 时，正确的做法是 ___。",
+   "o": [
+    "只读 /s/，省去 /k/",
+    "只读 /k/，省去 /s/",
+    "从 /s/ 直接转到 /k/",
+    "读成 /sək/，在中间补一拍"
+   ],
+   "e": "/s/ 和 /k/ 要在同一音节里相连。插入 /ə/ 会多出一个音节。",
+   "a": 2
+  },
+  {
+   "l": 3,
+   "t": "c",
+   "q": "I like this text. 单独读 text 时，元音后的辅音依次是 ___。",
+   "o": [
+    "/kət/",
+    "/kst/",
+    "/ks/",
+    "/st/"
+   ],
+   "e": "x 读 /ks/，再紧接 /t/。只读 /ks/ 会漏掉 /t/。",
+   "a": 1
+  },
+  {
+   "l": 3,
+   "t": "f",
+   "q": "Is this your ___?（指着一把梳子询问失主，填一个以 mb 结尾的词。）",
+   "a": [
+    "comb"
+   ],
+   "e": "comb 表示梳子。词尾 mb 只读 /m/，拼写仍需保留 b。漏写 b 或把 b 也读出来都不对。"
+  },
+  {
+   "l": 3,
+   "t": "f",
+   "q": "The child is five years ___.（填一个以 /ld/ 收尾的词。）",
+   "a": [
+    "old"
+   ],
+   "e": "five years old 表示五岁。old 前面要有表示年龄的词组，词尾的 /l/ 紧接 /d/，中间加元音会多出一个音节。"
+  },
+  {
+   "l": 3,
+   "t": "tr",
+   "zh": "别把书放在这里。",
+   "a": [
+    "Don't put the book here.",
+    "Please don't put the book here."
+   ],
+   "e": "用 Don't 加动词原形来表示禁止，句首加 Please 能让语气更客气。put 后先接 the book，再用 here 说明放在哪儿。put 的 /t/ 要收住，后面别补元音。"
+  },
+  {
+   "l": 3,
+   "t": "tr",
+   "zh": "我能看见那把刀。",
+   "a": [
+    "I can see that knife.",
+    "I can see the knife."
+   ],
+   "e": "can 后接动词原形 see。that 可以指明是哪一把，双方都清楚时也可用 the。knife 的 kn 从 /n/ 起读，写的时候不能漏掉 k。"
+  },
+  {
+   "l": 3,
+   "t": "o",
+   "a": "Do you have another book?",
+   "zh": "你还有另一本书吗？",
+   "e": "Do 放句首构成问句，后接 you 和 have。another 直接修饰单数 book，中间不能再加 a。book 到 /k/ 就收住，别补元音。"
+  },
+  {
+   "l": 3,
+   "t": "dict",
+   "a": "Please leave the book on the desk.",
+   "e": "leave the book on the desk 表示把书留在桌上。desk 的词尾 /s/ 和 /k/ 紧接着读，中间或后面加元音都会让它听成多一个音节。"
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "We are in the same group. same 和 group 的音节数依次是 ___。",
+   "o": [
+    "2、1",
+    "1、1",
+    "2、2",
+    "1、2"
+   ],
+   "e": "两词各有一个元音 /eɪ/、/uː/。按读音数拍，别按字母数。",
+   "a": 1
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "I live in this country. 朗读 country 时，它有 ___。",
+   "o": [
+    "两个音节，首音节主重读",
+    "三个音节，首音节主重读",
+    "两个音节，末音节主重读",
+    "一个音节，整个词只有一拍"
+   ],
+   "e": "country 分两拍，COUN·try。ou 合读一个元音，别拆成两拍。",
+   "a": 0
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "Keep a record. We can record this. 两处 record 的重音位置依次是 ___。",
+   "o": [
+    "第二个音节、第一个音节",
+    "第二个音节、第二个音节",
+    "第一个音节、第一个音节",
+    "第一个音节、第二个音节"
+   ],
+   "e": "a 后这里是名词 RE·cord，can 后是动词 re·CORD。",
+   "a": 3
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "按课上的分法读 in-for-ma-tion 和 e-co-nom-ic，这两个词的主重音都落在 ___。",
+   "o": [
+    "倒数第二个音节",
+    "最后一个音节",
+    "第一个音节",
+    "倒数第三个音节"
+   ],
+   "e": "两词分别重读 MA 和 NOM。重音在词尾 -tion、-ic 的前一拍。",
+   "a": 0
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "I'm happy. 有人把 happy 的两拍读得一样响、一样长。要读出单词重音，应 ___。",
+   "o": [
+    "把两拍都缩短，响度保持相同",
+    "让第二拍更突出，第一拍短而轻",
+    "让第一拍更突出，第二拍短而轻",
+    "把两拍都拉长，响度保持相同"
+   ],
+   "e": "happy 的主重音在第一拍 HAP，两拍读得一样会丢掉重音。",
+   "a": 2
+  },
+  {
+   "l": 4,
+   "t": "c",
+   "q": "We can ___ now.",
+   "o": [
+    "begins",
+    "begin",
+    "beginning",
+    "to begin"
+   ],
+   "e": "can 后接原形 begin，不能加 to 或词尾，朗读时重音在 GIN。",
+   "a": 1
+  },
+  {
+   "l": 4,
+   "t": "f",
+   "q": "This way. way 的 /eɪ/ 从 /e/ 滑到 /ɪ/，请用阿拉伯数字写出 way 的音节数 ___。",
+   "a": [
+    "1"
+   ],
+   "e": "从 /e/ 滑到 /ɪ/ 的过程都在同一拍里，/eɪ/ 只算一个元音。把滑动的起点和终点分成两拍，会多算一个音节。"
+  },
+  {
+   "l": 4,
+   "t": "f",
+   "q": "I know that man. ___, we work at the same school.（填本课表示“事实上”的短语。）",
+   "a": [
+    "In fact"
+   ],
+   "e": "In fact 放在句首，接着补充两个人在同一所学校工作这个事实。短语里的介词固定用 in，把它换成 at 就不成这个搭配了。"
+  },
+  {
+   "l": 4,
+   "t": "tr",
+   "zh": "这三个学生在同一组。",
+   "a": [
+    "These three students are in the same group.",
+    "The three students are in the same group."
+   ],
+   "e": "these three 指眼前的三个人，双方都知道是哪三个人时也可用 the three。students 是复数，后面用 are。students 有两拍，重音在 STU，末尾连在一起的辅音不另算一拍。"
+  },
+  {
+   "l": 4,
+   "t": "tr",
+   "zh": "我们至少需要五个小时。",
+   "a": [
+    "We need at least five hours.",
+    "We need five hours at least."
+   ],
+   "e": "at least 说明时间的下限，可以放在 five hours 前面，也可以放在句尾。别漏掉 at，也别把 hours 写成单数。"
+  },
+  {
+   "l": 4,
+   "t": "o",
+   "a": "Why do we need a new group?",
+   "zh": "我们为什么需要一个新的小组？",
+   "e": "Why 后用 do 引出问句，再放主语 we 和原形 need。new 放在 group 前修饰它。group 只有 /uː/ 一个元音，开头的 /ɡr/ 不另起一拍。"
+  },
+  {
+   "l": 4,
+   "t": "dict",
+   "a": "This is a great country.",
+   "e": "great 里的 ea 读 /eɪ/，整词只有一拍。country 有两拍，首音节重读，第二拍虽轻也要写全单词。单数 country 前别漏了 a。"
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "Look at the map. 按本课的辅音接元音规则，符合连读条件的相邻词是 ___。",
+   "o": [
+    "the 和 map",
+    "at 和 the",
+    "Look 和 at",
+    "以上三处都符合"
+   ],
+   "e": "Look 末尾 /k/ 接 at 开头的元音。the 和 map 都以辅音起头。",
+   "a": 2
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "We need to talk. 语气平常，没有特别强调 to 时，to 最接近 ___。",
+   "o": [
+    "/tɑː/",
+    "/tʊ/",
+    "/tuː/",
+    "/tə/"
+   ],
+   "e": "这里的 to 轻读为 /tə/，元音短。/tuː/ 是它的强读形式。",
+   "a": 3
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "把口语说法 I wanna see it. 改成标准书面写法。I ___ see it.",
+   "o": [
+    "wanna",
+    "wants to",
+    "want",
+    "want to"
+   ],
+   "e": "wanna 是口语合音。主语 I 后写 want to，别漏写 to。",
+   "a": 3
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "Can you show me the way? 对方回答 Of course I can. 答句末尾的 can 应用 ___。",
+   "o": [
+    "肯定式弱读 /kən/",
+    "完全不发音",
+    "否定式强读 /kænt/",
+    "肯定式强读 /kæn/"
+   ],
+   "e": "句末 can 后没有动词，读强式 /kæn/。听到重音也不能直接判成否定。",
+   "a": 3
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "平常语气下，I can show you. 和 I can't show you. 中的情态动词应分别 ___。",
+   "o": [
+    "重读 can，轻读 can't",
+    "轻读 can，重读 can't",
+    "两处都读成肯定式 /kæn/",
+    "两处都读成弱式 /kən/"
+   ],
+   "e": "肯定式 can 通常弱读 /kən/。否定式 can't 的元音更饱满。",
+   "a": 1
+  },
+  {
+   "l": 5,
+   "t": "c",
+   "q": "分辨 We can start. 和 We can't start. 时，如果情态动词结尾的 /t/ 听不清，应优先听 ___。",
+   "o": [
+    "情态动词的轻重和元音",
+    "we 的元音有没有变短",
+    "start 的词首有没有 /s/",
+    "start 的词尾有没有 /t/"
+   ],
+   "e": "两句的 start 一样。/t/ 听不清时，靠情态动词的元音和重音。",
+   "a": 0
+  },
+  {
+   "l": 5,
+   "t": "f",
+   "q": "We ___ start now.（填入弱读为 /kən/ 的词，写出标准拼写。）",
+   "a": [
+    "can"
+   ],
+   "e": "轻短的 /kən/ 是肯定式 can 的弱读，后面跟原形 start。can't 的元音通常更饱满，不能因为只听清后面的动词就写成否定。"
+  },
+  {
+   "l": 5,
+   "t": "f",
+   "q": "Could you turn ___ the light?（填一个以元音开头的词，构成表示关灯的短语。）",
+   "a": [
+    "off"
+   ],
+   "e": "turn off the light 表示关灯。off 开头是元音，前面的 /n/ 可以紧接上去。填 on 会把动作变成开灯。"
+  },
+  {
+   "l": 5,
+   "t": "tr",
+   "zh": "我现在不能跟你说话。",
+   "a": [
+    "I can't talk to you now.",
+    "I can't talk with you now."
+   ],
+   "e": "用 can't 加动词原形 talk 表示不能，talk to 和 talk with 都能表示跟某人说话。朗读时 can't 要读清楚，误读成轻短的 /kən/ 会让人听成能说话。"
+  },
+  {
+   "l": 5,
+   "t": "tr",
+   "zh": "你想先看这部分吗？",
+   "a": [
+    "Do you want to see this part first?",
+    "Do you want to look at this part first?"
+   ],
+   "e": "Do you want to 后接 see 或 look at，first 放在句尾说明先看。to 在口语里常读得很轻，书写时要保留。用 look 表示看这部分时，还要写出 at。"
+  },
+  {
+   "l": 5,
+   "t": "o",
+   "a": "Where can I put my bag?",
+   "zh": "我可以把包放在哪儿？",
+   "e": "Where 放在句首，后面按 can、I、put、my bag 排列。can 后的 put 用原形，别加 to。语气平常时 can 可以轻读，后面的 put 仍要读清楚。"
+  },
+  {
+   "l": 5,
+   "t": "dict",
+   "a": "Put it on the desk and show me.",
+   "e": "put 和 it、it 和 on 可以连读，拼写仍是分开的词。and 可能弱读成 /ən/，听得轻也要写出来，它连接前后两个动作。"
+  }
+ ]
 }
