@@ -118,7 +118,8 @@
         "has",
         "hemos"
        ],
-       "a": 0
+       "a": 0,
+       "e": "现在完成时 = haber + 过去分词，yo → he：he comido。ha 是第三人称，has 是 tú，hemos 是“我们”。"
       },
       {
        "t": "c",
@@ -129,7 +130,8 @@
         "ha",
         "han"
        ],
-       "a": 1
+       "a": 1,
+       "e": "tú → has：¿Has visto la película?。"
       },
       {
        "t": "c",
@@ -140,7 +142,8 @@
         "hacho",
         "hizo"
        ],
-       "a": 1
+       "a": 1,
+       "e": "hacer 的过去分词不规则：hecho。hizo 是简单过去时。"
       },
       {
        "t": "c",
@@ -151,7 +154,8 @@
         "escribo",
         "escribí"
        ],
-       "a": 1
+       "a": 1,
+       "e": "escribir 的过去分词不规则：escrito。escribí 是简单过去时。"
       }
      ]
     },
@@ -222,7 +226,8 @@
         "Nunca no.",
         "No todavía."
        ],
-       "a": 0
+       "a": 0,
+       "e": "“还没有”说 Todavía no。Ya no 是“不再”，No todavía 语序不对。"
       },
       {
        "t": "f",
@@ -429,7 +434,8 @@
         "tan",
         "muy"
        ],
-       "a": 0
+       "a": 0,
+       "e": "比较级：más + 形容词 + que：más rápido que。tan 用于“一样”，配 como。"
       },
       {
        "t": "c",
@@ -440,7 +446,8 @@
         "de",
         "más"
        ],
-       "a": 1
+       "a": 1,
+       "e": "同级比较：tan + 形容词 + como：tan alta como。"
       },
       {
        "t": "c",
@@ -451,7 +458,8 @@
         "en",
         "como"
        ],
-       "a": 1
+       "a": 1,
+       "e": "最高级的范围用 de：la más bonita de España。不用 en。"
       },
       {
        "t": "f",
@@ -521,7 +529,8 @@
         "mayor",
         "bien"
        ],
-       "a": 1
+       "a": 1,
+       "e": "bueno 的比较级不规则：mejor。más bueno 一般不说。"
       },
       {
        "t": "c",
@@ -532,7 +541,8 @@
         "mejor",
         "grande"
        ],
-       "a": 1
+       "a": 1,
+       "e": "年纪更大用 mayor。más vieja 说人显得不礼貌，mejor 是“更好”。"
       },
       {
        "t": "tr",
@@ -742,7 +752,8 @@
         "dolor",
         "dolo"
        ],
-       "a": 0
+       "a": 0,
+       "e": "doler 的用法和 gustar 一样，主语是疼的部位：la cabeza 单数 → duele。"
       },
       {
        "t": "c",
@@ -753,7 +764,8 @@
         "doler",
         "duela"
        ],
-       "a": 1
+       "a": 1,
+       "e": "los ojos 是复数 → duelen。"
       },
       {
        "t": "c",
@@ -763,7 +775,8 @@
         "Me duele la mano.",
         "Me duelen la mano."
        ],
-       "a": 1
+       "a": 1,
+       "e": "身体部位前用定冠词，不用物主词：Me duele la mano。me 已经说明是“我的”。"
       },
       {
        "t": "c",
@@ -774,7 +787,8 @@
         "a",
         "del"
        ],
-       "a": 1
+       "a": 1,
+       "e": "tener dolor de + 部位：dolor de estómago。"
       },
       {
        "t": "tr",
@@ -852,7 +866,8 @@
       "¡Feliz cumpleaños!",
       "¡Buen provecho!"
      ],
-     "a": 1
+     "a": 1,
+     "e": "对病人说 ¡Que te mejores!（祝你早日康复）。¡Buen provecho! 是“慢用”，¡Buen viaje! 是“一路顺风”。"
     },
     {
      "t": "f",
@@ -1033,7 +1048,8 @@
         "le",
         "los"
        ],
-       "a": 0
+       "a": 0,
+       "e": "mi libro 是阳性单数 → lo。宾语代词放在变位动词前面。"
       },
       {
        "t": "c",
@@ -1044,7 +1060,8 @@
         "los",
         "las"
        ],
-       "a": 3
+       "a": 3,
+       "e": "las fotos 是阴性复数 → las。"
       },
       {
        "t": "c",
@@ -1054,7 +1071,8 @@
         "Mando te un mensaje.",
         "Te mensajeo."
        ],
-       "a": 0
+       "a": 0,
+       "e": "间接宾语代词 te 放在变位动词前面：Te mando un mensaje。西语没有 mensajear 这个常用动词。"
       },
       {
        "t": "f",
@@ -1133,7 +1151,8 @@
       "¿Hola qué?",
       "¿Bueno sí?"
      ],
-     "a": 0
+     "a": 0,
+     "e": "西班牙人接电话常说 ¿Diga? 或 ¿Sí?。墨西哥人常说 ¿Bueno?。"
     },
     {
      "t": "o",
@@ -1292,7 +1311,8 @@
         "hay",
         "tiene"
        ],
-       "a": 0
+       "a": 0,
+       "e": "职业是身份，用 ser：Mi madre es abogada。"
       },
       {
        "t": "c",
@@ -1303,7 +1323,8 @@
         "hay",
         "son"
        ],
-       "a": 1
+       "a": 1,
+       "e": "此刻在哪儿用 estar：está en la oficina。"
       },
       {
        "t": "c",
@@ -1314,7 +1335,8 @@
         "gusto",
         "gustas"
        ],
-       "a": 0
+       "a": 0,
+       "e": "mi trabajo 单数 → gusta。"
       },
       {
        "t": "c",
@@ -1325,7 +1347,8 @@
         "vas",
         "he"
        ],
-       "a": 0
+       "a": 0,
+       "e": "后面已经有 a，只缺 ir 的变位：voy（a estudiar）。选 voy a 就重复了 a。"
       },
       {
        "t": "c",
@@ -1336,7 +1359,8 @@
         "trabajar",
         "trabajas"
        ],
-       "a": 1
+       "a": 1,
+       "e": "yo → trabajo。trabaja 是第三人称，trabajas 是 tú。"
       }
      ]
     },
@@ -1518,7 +1542,7 @@
       "Su jefe le ha dado un proyecto nuevo."
      ],
      "a": 2,
-     "e": "",
+     "e": "El lunes su jefe le ha dado un proyecto nuevo y muy importante。",
      "rdq": true
     },
     {
@@ -1530,7 +1554,7 @@
       "El estómago."
      ],
      "a": 1,
-     "e": "",
+     "e": "Hoy le duele la cabeza y también la espalda：头和背疼。",
      "rdq": true
     },
     {
@@ -1542,7 +1566,7 @@
       "Que tiene que trabajar más."
      ],
      "a": 1,
-     "e": "",
+     "e": "La médica le ha dicho: «Necesita descansar más»：需要多休息。",
      "rdq": true
     },
     {
@@ -1554,7 +1578,7 @@
       "Sí, ya lo ha terminado."
      ],
      "a": 1,
-     "e": "",
+     "e": "Javier todavía no ha terminado el proyecto：还没做完。",
      "rdq": true
     },
     {
@@ -1601,7 +1625,8 @@
      "He",
      "Han"
     ],
-    "a": 0
+    "a": 0,
+    "e": "tú → has：¿Has estado en Perú?"
    },
    {
     "t": "c",
@@ -1612,7 +1637,8 @@
      "veído",
      "vito"
     ],
-    "a": 1
+    "a": 1,
+    "e": "ver 的过去分词不规则：visto。"
    },
    {
     "t": "c",
@@ -1623,7 +1649,8 @@
      "menor",
      "tan"
     ],
-    "a": 0
+    "a": 0,
+    "e": "menos + 形容词 + que = 没有那么（贵）：menos caro que（比飞机便宜）。mejor、menor 后面不接形容词。"
    },
    {
     "t": "c",
@@ -1634,7 +1661,8 @@
      "doler",
      "dolor"
     ],
-    "a": 1
+    "a": 1,
+    "e": "las piernas 是复数 → duelen。"
    },
    {
     "t": "c",
@@ -1645,7 +1673,8 @@
      "los",
      "las"
     ],
-    "a": 3
+    "a": 3,
+    "e": "las llaves 是阴性复数 → las。"
    },
    {
     "t": "c",
@@ -1656,7 +1685,8 @@
      "mejor",
      "más grande"
     ],
-    "a": 0
+    "a": 0,
+    "e": "年纪更大用 mayor，后面已有 que，所以选 mayor。más viejo que 多了一个 que。"
    },
    {
     "t": "c",
@@ -1667,7 +1697,8 @@
      "hay",
      "tiene"
     ],
-    "a": 0
+    "a": 0,
+    "e": "职业是身份，用 ser：es policía。"
    },
    {
     "t": "f",

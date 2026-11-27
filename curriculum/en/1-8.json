@@ -115,7 +115,8 @@
         "is make",
         "making"
        ],
-       "a": 1
+       "a": 1,
+       "e": "车是在日本被制造的，用被动语态 was made。made 单用缺少 be 动词。"
       },
       {
        "t": "c",
@@ -126,7 +127,8 @@
         "am born",
         "borned"
        ],
-       "a": 1
+       "a": 1,
+       "e": "“出生”在英语里是被动：I was born。中国学生常漏掉 was。"
       },
       {
        "t": "c",
@@ -137,7 +139,8 @@
         "delivered",
         "is delivered"
        ],
-       "a": 1
+       "a": 1,
+       "e": "信件每天早上被投递，一般现在时的被动：are delivered（letters 是复数）。"
       },
       {
        "t": "tr",
@@ -224,7 +227,8 @@
         "didn't clean",
         "isn't clean"
        ],
-       "a": 1
+       "a": 1,
+       "e": "yet 提示现在完成时，房间被打扫用被动：hasn't been cleaned。"
       },
       {
        "t": "f",
@@ -242,7 +246,8 @@
         "from",
         "with"
        ],
-       "a": 0
+       "a": 0,
+       "e": "be made of = 由（材料）制成，看得出原材料：made of wood。made from 用于看不出原料的（纸 from wood）。"
       },
       {
        "t": "tr",
@@ -434,7 +439,8 @@
         "to lock",
         "locking"
        ],
-       "a": 1
+       "a": 1,
+       "e": "remember to do = 记得要去做（还没做）。remember doing 是记得做过。"
       },
       {
        "t": "c",
@@ -445,7 +451,8 @@
         "running",
         "ran"
        ],
-       "a": 2
+       "a": 2,
+       "e": "stop doing = 停止正在做的事：stopped running。stop to do 是停下来去做另一件事。"
       },
       {
        "t": "c",
@@ -456,7 +463,8 @@
         "listening",
         "listened"
        ],
-       "a": 2
+       "a": 2,
+       "e": "enjoy 后面只接动名词：enjoy listening。"
       },
       {
        "t": "c",
@@ -467,7 +475,8 @@
         "finding",
         "found"
        ],
-       "a": 1
+       "a": 1,
+       "e": "decide 后面接 to do：decided to find。"
       }
      ]
     },
@@ -549,7 +558,8 @@
         "heard",
         "be heard"
        ],
-       "a": 1
+       "a": 1,
+       "e": "look forward to 里的 to 是介词，后面接动名词：hearing。"
       },
       {
        "t": "f",
@@ -757,7 +767,8 @@
         "whose",
         "where"
        ],
-       "a": 1
+       "a": 1,
+       "e": "先行词是人（the woman），关系代词作主语用 who。"
       },
       {
        "t": "c",
@@ -768,7 +779,8 @@
         "whose",
         "where"
        ],
-       "a": 1
+       "a": 1,
+       "e": "先行词是物（the phone），用 which（或 that）。"
       },
       {
        "t": "tr",
@@ -852,7 +864,8 @@
         "whose",
         "that"
        ],
-       "a": 2
+       "a": 2,
+       "e": "后面是名词 mother，表示“他的”，用 whose。"
       },
       {
        "t": "c",
@@ -861,7 +874,8 @@
         "The man who called is here.",
         "The movie that we saw was great."
        ],
-       "a": 1
+       "a": 1,
+       "e": "关系代词在从句里作宾语时可以省略：the movie (that) we saw。作主语时（who called）不能省略。"
       },
       {
        "t": "f",
@@ -1060,7 +1074,8 @@
         "the station is",
         "does the station"
        ],
-       "a": 1
+       "a": 1,
+       "e": "间接疑问句用陈述语序：where the station is。"
       },
       {
        "t": "c",
@@ -1071,7 +1086,8 @@
         "does it",
         "it"
        ],
-       "a": 1
+       "a": 1,
+       "e": "间接疑问句用陈述语序：what time it is。"
       },
       {
        "t": "c",
@@ -1082,7 +1098,8 @@
         "what",
         "which"
        ],
-       "a": 1
+       "a": 1,
+       "e": "“是否”用 whether（或 if），常和 or not 连用。"
       },
       {
        "t": "tr",
@@ -1161,7 +1178,8 @@
         "I think it won't rain.",
         "I don't think it will rain."
        ],
-       "a": 1
+       "a": 1,
+       "e": "英语习惯把否定放在 think 上：I don't think it will rain。"
       },
       {
        "t": "f",
@@ -1385,7 +1403,8 @@
         "working",
         "is work"
        ],
-       "a": 1
+       "a": 1,
+       "e": "my sister 是第三人称单数 → works。"
       },
       {
        "t": "c",
@@ -1396,7 +1415,8 @@
         "have finished",
         "will finish"
        ],
-       "a": 2
+       "a": 2,
+       "e": "already 提示现在完成时：have finished。"
       },
       {
        "t": "c",
@@ -1407,7 +1427,8 @@
         "is sent",
         "sends"
        ],
-       "a": 1
+       "a": 1,
+       "e": "邮件被发送，yesterday 是过去，用过去时被动 was sent。"
       },
       {
        "t": "c",
@@ -1418,7 +1439,8 @@
         "don't",
         "doesn't"
        ],
-       "a": 0
+       "a": 0,
+       "e": "traffic 不可数，用 There isn't much traffic。"
       },
       {
        "t": "c",
@@ -1429,7 +1451,8 @@
         "wants he",
         "he does want"
        ],
-       "a": 1
+       "a": 1,
+       "e": "间接疑问句用陈述语序：what he wants。"
       }
      ]
     },
@@ -1520,7 +1543,8 @@
       "tallest",
       "most tall"
      ],
-     "a": 2
+     "a": 2,
+     "e": "the + 最高级：the tallest。"
     },
     {
      "t": "f",
@@ -1629,7 +1653,7 @@
       "It is made of moon stone."
      ],
      "a": 0,
-     "e": "",
+     "e": "It is called the Moon Bridge because it looks like a half moon：像半个月亮。",
      "rdq": true
     },
     {
@@ -1641,7 +1665,7 @@
       "build a new road"
      ],
      "a": 2,
-     "e": "",
+     "e": "Last year, the city decided to build a new road：建一条新路。",
      "rdq": true
     },
     {
@@ -1653,7 +1677,7 @@
       "He moved to another city."
      ],
      "a": 1,
-     "e": "",
+     "e": "He wrote a letter to the newspaper：给报社写了一封信。",
      "rdq": true
     },
     {
@@ -1665,7 +1689,7 @@
       "The road was not built."
      ],
      "a": 0,
-     "e": "",
+     "e": "in the end, the plan was changed：计划改了，桥保住了。",
      "rdq": true
     },
     {
@@ -1714,7 +1738,8 @@
      "spoke",
      "is speaking"
     ],
-    "a": 1
+    "a": 1,
+    "e": "英语被全世界使用，用被动：is spoken。"
    },
    {
     "t": "c",
@@ -1725,7 +1750,8 @@
      "closing",
      "closed"
     ],
-    "a": 2
+    "a": 2,
+    "e": "Do you mind 后面接动名词：closing。"
    },
    {
     "t": "c",
@@ -1736,7 +1762,8 @@
      "whose",
      "where"
     ],
-    "a": 1
+    "a": 1,
+    "e": "先行词是人（the man），关系代词作主语用 who。"
    },
    {
     "t": "c",
@@ -1747,7 +1774,8 @@
      "does this",
      "this"
     ],
-    "a": 1
+    "a": 1,
+    "e": "间接疑问句用陈述语序：how much this is。"
    },
    {
     "t": "c",
@@ -1758,7 +1786,8 @@
      "seeing",
      "seen"
     ],
-    "a": 1
+    "a": 1,
+    "e": "hope 后面接 to do：hope to see。"
    },
    {
     "t": "c",
@@ -1769,7 +1798,8 @@
      "cleaned",
      "cleaning"
     ],
-    "a": 1
+    "a": 1,
+    "e": "窗户每周被擦，一般现在时的被动：are cleaned。"
    },
    {
     "t": "c",
@@ -1780,7 +1810,8 @@
      "what",
      "which"
     ],
-    "a": 0
+    "a": 0,
+    "e": "“是否”用 if 或 whether。that 后面接的是确定的事实。"
    },
    {
     "t": "f",
