@@ -115,7 +115,8 @@
         "studies",
         "studying"
        ],
-       "a": 2
+       "a": 2,
+       "e": "主语 she 是第三人称单数，辅音 + y 的动词变 -ies：studies。"
       },
       {
        "t": "c",
@@ -126,7 +127,8 @@
         "left",
         "leaving"
        ],
-       "a": 1
+       "a": 1,
+       "e": "时刻表上定好的事（火车几点开）用一般现在时表示将来：The train leaves at 7:30 tomorrow。"
       },
       {
        "t": "c",
@@ -137,7 +139,8 @@
         "haves",
         "having"
        ],
-       "a": 1
+       "a": 1,
+       "e": "have 的第三人称单数是不规则的 has。"
       },
       {
        "t": "tr",
@@ -225,7 +228,8 @@
         "He is always late.",
         "Always he is late."
        ],
-       "a": 1
+       "a": 1,
+       "e": "频率副词放在 be 动词后面：He is always late。"
       },
       {
        "t": "c",
@@ -236,7 +240,8 @@
         "usually drink",
         "is usually drink"
        ],
-       "a": 1
+       "a": 1,
+       "e": "频率副词放在实义动词前面：She usually drinks coffee。主语是 she，动词要加 s。"
       },
       {
        "t": "f",
@@ -453,7 +458,8 @@
         "isn't",
         "not"
        ],
-       "a": 1
+       "a": 1,
+       "e": "第三人称单数的否定用 doesn't：He doesn't like fish。"
       },
       {
        "t": "c",
@@ -464,7 +470,8 @@
         "watching",
         "watched"
        ],
-       "a": 1
+       "a": 1,
+       "e": "doesn't 后面的动词用原形：doesn't watch。s 已经加在 does 上了。"
       },
       {
        "t": "c",
@@ -475,7 +482,8 @@
         "Are",
         "Is"
        ],
-       "a": 0
+       "a": 0,
+       "e": "your parents 是复数，用 Do 提问。"
       },
       {
        "t": "f",
@@ -569,7 +577,8 @@
         "Are",
         "Is"
        ],
-       "a": 2
+       "a": 2,
+       "e": "hungry 是形容词，句子用 be 动词提问：Are you hungry? 不能用 do。"
       },
       {
        "t": "c",
@@ -580,7 +589,8 @@
         "Do",
         "Are"
        ],
-       "a": 1
+       "a": 1,
+       "e": "主语 she，实义动词 speak 提问用 Does。"
       },
       {
        "t": "tr",
@@ -654,7 +664,8 @@
       "What you do?",
       "What does you do?"
      ],
-     "a": 1
+     "a": 1,
+     "e": "问职业固定说 What do you do?。What are you do 把 be 和 do 混在一起了。"
     },
     {
      "t": "o",
@@ -795,7 +806,8 @@
         "is knocking",
         "knocked"
        ],
-       "a": 2
+       "a": 2,
+       "e": "Listen! 表示说话这一刻正在发生，用现在进行时 is knocking。"
       },
       {
        "t": "c",
@@ -805,7 +817,8 @@
         "is walking / takes",
         "walk / take"
        ],
-       "a": 0
+       "a": 0,
+       "e": "usually 表示习惯，用一般现在时 walks；today 是今天这一次的情况，用进行时 is taking。"
       },
       {
        "t": "c",
@@ -815,7 +828,8 @@
         "running",
         "runnig"
        ],
-       "a": 1
+       "a": 1,
+       "e": "重读闭音节、一个元音 + 一个辅音结尾，双写辅音再加 -ing：running。"
       },
       {
        "t": "tr",
@@ -902,7 +916,8 @@
         "knowing",
         "knows"
        ],
-       "a": 0
+       "a": 0,
+       "e": "know 是表示状态的动词，一般不用进行时：I know the answer now。"
       },
       {
        "t": "c",
@@ -912,7 +927,8 @@
         "I have a car.",
         "I'm have a car."
        ],
-       "a": 1
+       "a": 1,
+       "e": "have 表示“拥有”时不用进行时：I have a car。"
       },
       {
        "t": "c",
@@ -921,7 +937,8 @@
         "I'm having lunch now.",
         "I have lunch now.（此刻）"
        ],
-       "a": 0
+       "a": 0,
+       "e": "have 表示“吃、喝”等动作时可以用进行时：I'm having lunch now（此刻正在吃）。"
       }
      ]
     },
@@ -1124,7 +1141,8 @@
         "Is there a station near here?",
         "Is a station near here?"
        ],
-       "a": 1
+       "a": 1,
+       "e": "问某处有没有某物用 Is there：Is there a station near here?。has 不能表示“存在”。"
       },
       {
        "t": "c",
@@ -1135,7 +1153,8 @@
         "has",
         "have"
        ],
-       "a": 1
+       "a": 1,
+       "e": "a lot of people 是复数，用 There are。"
       },
       {
        "t": "c",
@@ -1225,7 +1244,8 @@
         "is",
         "are"
        ],
-       "a": 0
+       "a": 0,
+       "e": "There be 的单复数看紧跟着的第一个名词：a pen 是单数 → There is。"
       },
       {
        "t": "f",
@@ -1442,7 +1462,8 @@
         "Whom",
         "Whose"
        ],
-       "a": 0
+       "a": 0,
+       "e": "Who 作主语时直接接动词，不用 did：Who broke the window?。"
       },
       {
        "t": "c",
@@ -1452,7 +1473,8 @@
         "Where do you live?",
         "Where you do live?"
        ],
-       "a": 1
+       "a": 1,
+       "e": "特殊疑问句要加助动词 do：Where do you live?"
       },
       {
        "t": "tr",
@@ -1546,7 +1568,8 @@
         "How many",
         "How much"
        ],
-       "a": 1
+       "a": 1,
+       "e": "问频率用 How often，回答是 twice a week。How long 问时长，How many 问数量。"
       },
       {
        "t": "f",
@@ -1564,7 +1587,8 @@
         "Where",
         "When"
        ],
-       "a": 1
+       "a": 1,
+       "e": "问方式（怎么去）用 How，回答 by train。"
       }
      ]
     },
@@ -1631,7 +1655,8 @@
       "When",
       "Who"
      ],
-     "a": 2
+     "a": 2,
+     "e": "问时间（几月）用 When。What 也可以问日期，但这里回答是 In May，所以是 When。"
     },
     {
      "t": "o",
@@ -1743,7 +1768,7 @@
       "in a café near her home"
      ],
      "a": 2,
-     "e": "",
+     "e": "Right now, she is sitting in a café near her home：在家附近的咖啡馆。",
      "rdq": true
     },
     {
@@ -1755,7 +1780,7 @@
       "She is shopping."
      ],
      "a": 0,
-     "e": "",
+     "e": "I'm on the bus. There's a lot of traffic：堵车。",
      "rdq": true
     },
     {
@@ -1767,7 +1792,7 @@
       "walking a dog"
      ],
      "a": 0,
-     "e": "",
+     "e": "two children are playing in the park across the street：在公园里玩。",
      "rdq": true
     },
     {
@@ -1779,7 +1804,7 @@
       "once a year"
      ],
      "a": 0,
-     "e": "",
+     "e": "How often does Maria come here? Almost every week。",
      "rdq": true
     },
     {
@@ -1827,7 +1852,8 @@
      "is listen",
      "listening"
     ],
-    "a": 1
+    "a": 1,
+    "e": "主语 he 是第三人称单数，listen 要加 s：listens。"
    },
    {
     "t": "c",
@@ -1838,7 +1864,8 @@
      "Is",
      "Are"
     ],
-    "a": 1
+    "a": 1,
+    "e": "主语 she，实义动词 speak 提问用 Does。"
    },
    {
     "t": "c",
@@ -1849,7 +1876,8 @@
      "are playing",
      "played"
     ],
-    "a": 2
+    "a": 2,
+    "e": "Look! 表示此刻正在发生，用现在进行时 are playing。"
    },
    {
     "t": "c",
@@ -1860,7 +1888,8 @@
      "has",
      "have"
     ],
-    "a": 1
+    "a": 1,
+    "e": "two cats 是复数，用 There are。"
    },
    {
     "t": "c",
@@ -1871,7 +1900,8 @@
      "When",
      "Why"
     ],
-    "a": 1
+    "a": 1,
+    "e": "问地点用 Where，回答 In Kyoto。"
    },
    {
     "t": "c",
@@ -1882,7 +1912,8 @@
      "doesn't have",
      "not have"
     ],
-    "a": 1
+    "a": 1,
+    "e": "主语 I，实义动词 have 的否定用 don't have。am not have 把 be 和 do 混在一起了。"
    },
    {
     "t": "c",
@@ -1893,7 +1924,8 @@
      "sitteing",
      "sitt"
     ],
-    "a": 1
+    "a": 1,
+    "e": "sit 是一个元音 + 一个辅音结尾，双写 t 再加 -ing：sitting。"
    },
    {
     "t": "f",

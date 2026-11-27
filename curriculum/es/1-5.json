@@ -139,7 +139,8 @@
         "hay",
         "son"
        ],
-       "a": 1
+       "a": 1,
+       "e": "问特定的东西（el baño）在哪儿用 estar：¿Dónde está el baño?。hay 用于“有没有”，后面不接定冠词。"
       },
       {
        "t": "c",
@@ -150,7 +151,8 @@
         "están",
         "hay"
        ],
-       "a": 1
+       "a": 1,
+       "e": "说人在某处用 estar：Estamos en casa。somos 说身份、性质；hay 不跟主语连用。"
       },
       {
        "t": "f",
@@ -167,7 +169,8 @@
         "a la izquierda"
        ],
        "a": 1,
-       "say": "a la izquierda"
+       "say": "a la izquierda",
+       "e": "听到的是 izquierda：左边。右边是 derecha。"
       },
       {
        "t": "tr",
@@ -245,7 +248,8 @@
       "lado",
       "en lado"
      ],
-     "a": 0
+     "a": 0,
+     "e": "al lado de = 在旁边，要有冠词 al（a + el）：al lado de la farmacia。"
     },
     {
      "t": "c",
@@ -256,7 +260,8 @@
       "a la izquierda",
       "en la esquina"
      ],
-     "a": 1
+     "a": 1,
+     "e": "todo recto = 一直走。a la derecha 向右，a la izquierda 向左，en la esquina 在拐角。"
     },
     {
      "t": "o",
@@ -398,7 +403,8 @@
         "a el",
         "en la"
        ],
-       "a": 1
+       "a": 1,
+       "e": "farmacia 是阴性，a + la 不缩合：a la farmacia。只有 a + el 才缩合成 al。"
       },
       {
        "t": "c",
@@ -409,7 +415,8 @@
         "al",
         "de"
        ],
-       "a": 1
+       "a": 1,
+       "e": "说在某处用 en：Estoy en el parque。a 表示方向“去”，al 是 a + el。"
       },
       {
        "t": "c",
@@ -420,7 +427,8 @@
         "Es",
         "Son"
        ],
-       "a": 1
+       "a": 1,
+       "e": "说某处有（一家）电影院用 hay：Hay un cine。está 用于特定的东西在哪儿。"
       },
       {
        "t": "c",
@@ -431,7 +439,8 @@
         "es",
         "tiene"
        ],
-       "a": 1
+       "a": 1,
+       "e": "说特定的东西（el hospital）在哪儿用 estar：está cerca de aquí。"
       },
       {
        "t": "tr",
@@ -667,7 +676,8 @@
         "vas",
         "vamos"
        ],
-       "a": 1
+       "a": 1,
+       "e": "ir 是不规则动词，yo → voy。va 是第三人称，vas 是 tú，vamos 是“我们”。"
       },
       {
        "t": "c",
@@ -677,7 +687,8 @@
         "Voy en autobús.",
         "Voy a autobús."
        ],
-       "a": 1
+       "a": 1,
+       "e": "坐交通工具用 en：en autobús、en tren。por、a 都不用。"
       },
       {
        "t": "c",
@@ -687,7 +698,8 @@
         "Voy a pie.",
         "Voy de pie."
        ],
-       "a": 1
+       "a": 1,
+       "e": "走路去是固定说法 a pie。de pie 是“站着”，en pie 不这么用。"
       },
       {
        "t": "f",
@@ -906,7 +918,8 @@
         "Gira la izquierda.",
         "Gire en izquierda."
        ],
-       "a": 0
+       "a": 0,
+       "e": "对 usted 的命令式：-ar 动词词尾变 -e：Gire a la izquierda。gira 是对 tú 说的，而且方向前要有 a。"
       },
       {
        "t": "f",
@@ -922,7 +935,8 @@
         "Toma la primera calle.",
         "Tome la primera calle."
        ],
-       "a": 1
+       "a": 1,
+       "e": "对 usted 的命令式：tomar → tome。toma 是对 tú 说的。"
       }
      ]
     },
@@ -985,7 +999,8 @@
         "encuentra",
         "encontramos"
        ],
-       "a": 1
+       "a": 1,
+       "e": "encontrar 是 o → ue 的变干动词，yo → encuentro。encontro 没变干，encuentra 是第三人称。"
       },
       {
        "t": "c",
@@ -996,7 +1011,8 @@
         "busca",
         "buscamos"
        ],
-       "a": 0
+       "a": 0,
+       "e": "buscar 是规则动词，yo → busco。buscas 是 tú，busca 是第三人称。"
       },
       {
        "t": "c",
@@ -1007,7 +1023,8 @@
         "llega",
         "llegar"
        ],
-       "a": 0
+       "a": 0,
+       "e": "问路时说“我怎么到”：¿Cómo llego a la estación?。llegas 问的是“你”，llegar 是原形。"
       },
       {
        "t": "tr",
@@ -1201,7 +1218,8 @@
         "hay",
         "tengo"
        ],
-       "a": 1
+       "a": 1,
+       "e": "今天很累是暂时状态，用 estar：Estoy muy cansado。soy 说性格、身份。"
       },
       {
        "t": "c",
@@ -1212,7 +1230,8 @@
         "hay",
         "tiene"
        ],
-       "a": 0
+       "a": 0,
+       "e": "性格（人很好）是本质特征，用 ser：Mi hermano es muy simpático。"
       },
       {
        "t": "c",
@@ -1223,7 +1242,8 @@
         "hay",
         "son"
        ],
-       "a": 1
+       "a": 1,
+       "e": "关着门是暂时状态，用 estar：está cerrada。cerrada 和 farmacia 一样是阴性。"
       },
       {
        "t": "c",
@@ -1233,7 +1253,8 @@
         "Estoy listo.",
         "Tengo listo."
        ],
-       "a": 1
+       "a": 1,
+       "e": "listo 用 estar 是“准备好了”：Estoy listo。用 ser 意思变成“聪明”。"
       },
       {
        "t": "c",
@@ -1244,7 +1265,8 @@
         "cansados",
         "cansadas"
        ],
-       "a": 1
+       "a": 1,
+       "e": "ella 是女性单数，形容词也要阴性单数：cansada。"
       },
       {
        "t": "tr",
@@ -1434,7 +1456,7 @@
       "Lejos del centro."
      ],
      "a": 1,
-     "e": "",
+     "e": "Mi hotel está en el centro, cerca de la Plaza Mayor：在市中心，马约尔广场附近。",
      "rdq": true
     },
     {
@@ -1446,7 +1468,7 @@
       "Coja un taxi."
      ],
      "a": 1,
-     "e": "",
+     "e": "Siga todo recto y gire a la derecha en el semáforo：一直走，在红绿灯右转。",
      "rdq": true
     },
     {
@@ -1458,7 +1480,7 @@
       "En taxi."
      ],
      "a": 0,
-     "e": "",
+     "e": "Voy a pie porque quiero ver la ciudad：她走路去，想看看城市。",
      "rdq": true
     },
     {
@@ -1470,7 +1492,7 @@
       "Aburrida."
      ],
      "a": 0,
-     "e": "",
+     "e": "Después de tres horas, estoy cansada pero contenta：累但开心。",
      "rdq": true
     },
     {
@@ -1518,7 +1540,8 @@
      "hay",
      "son"
     ],
-    "a": 1
+    "a": 1,
+    "e": "问特定的东西（la plaza）在哪儿用 estar。"
    },
    {
     "t": "c",
@@ -1529,7 +1552,8 @@
      "Son",
      "Es"
     ],
-    "a": 1
+    "a": 1,
+    "e": "说某处有两家药店用 hay，hay 不变复数。están 用于特定的东西。"
    },
    {
     "t": "c",
@@ -1540,7 +1564,8 @@
      "en el",
      "del"
     ],
-    "a": 1
+    "a": 1,
+    "e": "a + el 必须缩合成 al：Vamos al museo。"
    },
    {
     "t": "c",
@@ -1551,7 +1576,8 @@
      "por",
      "de"
     ],
-    "a": 0
+    "a": 0,
+    "e": "坐交通工具用 en：en bicicleta。a pie 只用于走路。"
    },
    {
     "t": "c",
@@ -1562,7 +1588,8 @@
      "están",
      "hay"
     ],
-    "a": 1
+    "a": 1,
+    "e": "contentos 是此刻的心情，用 estar：Estamos contentos。"
    },
    {
     "t": "c",
@@ -1571,7 +1598,8 @@
      "es",
      "está"
     ],
-    "a": 0
+    "a": 0,
+    "e": "片子本身无聊（性质）用 ser：es aburrida。用 estar 意思变成“人感到无聊”。"
    },
    {
     "t": "c",
@@ -1582,7 +1610,8 @@
      "Seguir recto.",
      "Sigo todo recto."
     ],
-    "a": 0
+    "a": 0,
+    "e": "对 usted 的命令式：seguir → siga（e → i 变干）。sigue 是对 tú 说的，sigo 是“我跟着”。"
    },
    {
     "t": "f",
